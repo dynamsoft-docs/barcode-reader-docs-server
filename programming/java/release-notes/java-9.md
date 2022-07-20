@@ -16,8 +16,6 @@ needGenerateH3Content: false
 
 <div class="fold-panel-start"></div>
 
-{%- include release-notes/product-highlight-9.2.0.md -%}
-
 <div class="fold-panel-end"></div>
 
 ### Edition Highlights
@@ -37,8 +35,6 @@ needGenerateH3Content: false
 ### Version Highlights <i class="fa fa-caret-down"></i>
 
 <div class="fold-panel-start"></div>
-
-{%- include release-notes/product-highlight-9.0.0.md -%}
 
 <div class="fold-panel-end"></div>
 
