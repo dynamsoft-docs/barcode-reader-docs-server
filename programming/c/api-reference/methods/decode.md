@@ -220,7 +220,7 @@ DBR_API int DBR_InitIntermediateResult (IntermediateResultType intermediateResul
 ```   
    
 **Parameters**  
-`[in]	intermediateResultType` The type of the intermediate result defined by [`EnumIntermediateResultType`](../../../../parameters/enum/result-enums.md#intermediateresulttype).  
+`[in]	intermediateResultType` The type of the intermediate result defined by [`EnumIntermediateResultType`](../../../../programming/c-cplusplus/enumeration/result-enums.md#intermediateresulttype).  
 `[in, out]	pIntermediateResult` The intermediate result struct of type [`IntermediateResult`](../../../c-cplusplus/struct/IntermediateResult.md).
 
 **Return Value**  

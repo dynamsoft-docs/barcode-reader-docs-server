@@ -221,7 +221,7 @@ int dynamsoft::dbr::CBarcodeReader::InitIntermediateResult(IntermediateResultTyp
 ```   
    
 **Parameters**  
-`[in]	intermediateResultType` The type of the intermediate result to init. Please see [`EnumIntermediateResultType`](../../../../parameters/enum/result-enums.md#intermediateresulttype).  
+`[in]	intermediateResultType` The type of the intermediate result to init. Please see [`EnumIntermediateResultType`](../../../../programming/c-cplusplus/enumeration/result-enums.md#intermediateresulttype).  
 `[in, out]	pIntermediateResult` The resulting [`IntermediateResult`](../../../c-cplusplus/struct/IntermediateResult.md) struct.  
 
 **Return Value**  
