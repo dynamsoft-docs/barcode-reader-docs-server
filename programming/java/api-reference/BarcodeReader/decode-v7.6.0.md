@@ -46,7 +46,7 @@ TextResult[] result = reader.decodeFile("your file path", "");
 reader.destroy();
 ```
 
-&nbsp;
+
 
 
 
@@ -79,7 +79,7 @@ TextResult[] result = reader.decodeFileInMemory(bufferBytes, "");
 reader.destroy();
 ```
 
-&nbsp;
+
 
 ```java
 TextResult[] com.dynamsoft.barcode.BarcodeReader.decodeFileInMemory(InputStream fileStream, String templateName) throws BarcodeReaderException, IOException
@@ -103,7 +103,7 @@ TextResult[] result = reader.decodeFileInMemory(fis, "");
 reader.destroy();
 ```
 
-&nbsp;
+
 
 
 
@@ -144,7 +144,7 @@ TextResult[] result = reader.decodeBuffer(bufferBytes, iWidth,  iHeight, iStride
 reader.destroy();
 ```
 
-&nbsp;
+
 
 
 
@@ -175,7 +175,7 @@ TextResult[] result = reader.decodeBase64String("file in base64 string", "");
 reader.destroy();
 ```
 
-&nbsp;
+
 
 
 

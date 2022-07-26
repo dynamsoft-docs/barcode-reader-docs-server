@@ -49,7 +49,7 @@ reader->InitLicense("t0260NwAAAHV***************");
 delete reader;
 ```
 
-&nbsp;
+
 
 
 
@@ -70,7 +70,7 @@ int dynamsoft::dbr::CBarcodeReader::InitLicenseFromServer (const char* pLicenseS
 Returns error code (returns 0 if the function operates successfully).    
 *You can call [`GetErrorString`](status-retrieval.md#geterrorstring) to get detailed error message.*
 
-&nbsp;
+
 
 
 
@@ -93,7 +93,7 @@ int dynamsoft::dbr::CBarcodeReader::InitLicenseFromLicenseContent (const char* p
 Returns error code (returns 0 if the function operates successfully).    
 *You can call [`GetErrorString`](status-retrieval.md#geterrorstring) to get detailed error message.*
 
-&nbsp;
+
 
 
 
@@ -118,7 +118,7 @@ Returns error code (returns 0 if the function operates successfully).
 #### Remark
 [`InitLicenseFromServer`](#initlicensefromserver) has to be successfully called before calling this method.
 
-&nbsp;
+
 
 
 
@@ -142,7 +142,7 @@ Returns error code (returns 0 if the function operates successfully).
 #### Remarks
 [`InitLicenseFromServer`](#initlicensefromserver) has to be successfully called before calling this method.
 
-&nbsp;
+
 
 
 
@@ -166,7 +166,7 @@ void dynamsoft::dbr::CBarcodeReader::FreeLicenseString (char** content)
 
 
 
-&nbsp;
+
 
 
 ## InitLTSConnectionParameters
@@ -191,7 +191,7 @@ paramters.handshakeCode = "Your handshake code";
 dynamsoft::dbr::CBarcodeReader::InitLicenseFromLTS(&paramters);
 ```
 
-&nbsp;
+
 
 ## InitLicenseFromLTS
 Initializes the barcode reader license and connects to the specified server for online verification.
@@ -218,5 +218,5 @@ paramters.handshakeCode = "Your handshake code";
 dynamsoft::dbr::CBarcodeReader::InitLicenseFromLTS(&paramters);
 ```
 
-&nbsp;
+
 

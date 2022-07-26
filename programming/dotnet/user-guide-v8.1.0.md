@@ -21,7 +21,7 @@ noTitleIndex: true
 - Framework supported: .NET Framework 2.0, .NET Framework 4.0
 
 
-&nbsp;
+
 
 
 ## Installation
@@ -30,7 +30,7 @@ To install Dynamsoft Barcode Reader Windows Edition on your development machine,
 After installation, you can find samples for supported platforms in the **Samples** folder under the installation folder. 
 
 
-&nbsp;
+
 
 
 ## Getting Started: HelloWorld
@@ -88,7 +88,7 @@ After installation, you can find samples for supported platforms in the **Sample
 
  If you got the error "An exception of type 'Dynamsoft.DBR.BarcodeReaderException' occurred in Dynamsoft.BarcodeReader.dll" or "Failed to load module dll", please double check if you copied `x64` and `x86` folders as stated in Step #4.
 
-&nbsp;
+
 
 
 ## Decoding Methods
@@ -104,7 +104,7 @@ current page.
 You can find more samples in more programming languages at [Code Gallery](https://www.dynamsoft.com/Downloads/Dynamic-Barcode-Reader-Sample-Download.aspx).
 
 
-&nbsp;
+
 
 
 ## Barcode Reading Settings

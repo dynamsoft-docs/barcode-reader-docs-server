@@ -25,13 +25,13 @@ public class FrameDecodingParameters
 | [`Width`](#width) | *int* |
 | [`Height`](#height) | *int* |
 | [`Stride`](#stride) | *int* |
-| [`ImagePixelFormat`](#imagepixelformat) | [`EnumImagePixelFormat`]({{ site.enumerations }}other-enums.html#imagepixelformat) |
+| [`ImagePixelFormat`](#imagepixelformat) | [`EnumImagePixelFormat`]({{ site.dotnet_enumerations }}other-enums.html#imagepixelformat) |
 | [`Region`](#region) | *[`RegionDefinition`](../struct/RegionDefinition.md)* |
 | [`Threshold`](#threshold) | *float* |
 | [`FPS`](#fps) | *int* |
 | [`AutoFilter`](#autofilter) | *int* |
-| [`ClarityCalculationMethod`](#claritycalculationmethod) | [`EnumClarityCalculationMethod`]({{ site.enumerations }}frame-decoding-enums.html#claritycalculationmethod) |
-| [`ClarityFilterMode`](#clarityfiltermode) | [`EnumClarityFilterMode`]({{ site.enumerations }}frame-decoding-enums.html#clarityfiltermode) |
+| [`ClarityCalculationMethod`](#claritycalculationmethod) | [`EnumClarityCalculationMethod`]({{ site.dotnet_enumerations }}frame-decoding-enums.html#claritycalculationmethod) |
+| [`ClarityFilterMode`](#clarityfiltermode) | [`EnumClarityFilterMode`]({{ site.dotnet_enumerations }}frame-decoding-enums.html#clarityfiltermode) |
 
 
 ### MaxQueueLength
@@ -107,7 +107,7 @@ EnumImagePixelFormat Dynamsoft.Barcode.FrameDecodingParameters.ImagePixelFormat
 ```
 
 - **Value range**   
-    Any one value of [`ImagePixelFormat`]({{ site.enumerations }}other-enums.html#imagepixelformat) Enumeration items.
+    Any one value of [`ImagePixelFormat`]({{ site.dotnet_enumerations }}other-enums.html#imagepixelformat) Enumeration items.
       
 - **Default value**   
     `EnumImagePixelFormat.IPF_GRAYSCALED`
@@ -183,7 +183,7 @@ EnumClarityCalculationMethod Dynamsoft.Barcode.FrameDecodingParameters.ClarityCa
 ```
 
 - **Value range**   
-    Any one of the [`ClarityCalculationMethod`]({{ site.enumerations }}frame-decoding-enums.html#claritycalculationmethod) Enumeration items.   
+    Any one of the [`ClarityCalculationMethod`]({{ site.dotnet_enumerations }}frame-decoding-enums.html#claritycalculationmethod) Enumeration items.   
       
 - **Default value**   
     EnumClarityCalculationMethod.ECCM_CONTRAST       
@@ -196,7 +196,7 @@ EnumClarityFilterMode Dynamsoft.Barcode.FrameDecodingParameters.ClarityFilterMod
 ```
 
 - **Value range**   
-    Any one of the [`ClarityFilterMode`]({{ site.enumerations }}frame-decoding-enums.html#clarityfiltermode) Enumeration items.   
+    Any one of the [`ClarityFilterMode`]({{ site.dotnet_enumerations }}frame-decoding-enums.html#clarityfiltermode) Enumeration items.   
       
 - **Default value**   
     EnumClarityFilterMode.CFM_GENERAL   

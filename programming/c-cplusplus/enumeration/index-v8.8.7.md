@@ -4,7 +4,6 @@ title: Dynamsoft Barcode Reader Enumerations - Main Page
 description: This article shows the main page of Dynamsoft Barcode Reader Enumerations.
 keywords: enumerations
 needAutoGenerateSidebar: false
-breadcrumbText: Enumerations
 permalink: /programming/c-cplusplus/enumeration/index-v8.8.7.html
 ---
 

@@ -17,7 +17,7 @@ breadcrumbText: API Reference
 - [Enumerations](#enumerations)
 
      
-&nbsp; 
+ 
 
 
 ## BarcodeReader Methods
@@ -30,7 +30,7 @@ breadcrumbText: API Reference
   | [`destroy`](BarcodeReader/initialize-and-destroy.md#destroy) | Destroys an instance of `BarcodeReader` object.|
    
    
-&nbsp; 
+ 
    
    
 ### Decode
@@ -44,7 +44,7 @@ breadcrumbText: API Reference
   | [`decodeBufferedImage`](BarcodeReader/decode.md#decodebufferedimage) | Decodes barcode from a buffered image (bitmap). |
    
    
-&nbsp; 
+ 
    
    
    
@@ -73,7 +73,7 @@ breadcrumbText: API Reference
   | [`outputSettingsToString`](BarcodeReader/parameter-and-runtime-settings-advanced.md#outputsettingstostring) | Output runtime settings to a string. |
    
       
-&nbsp; 
+ 
 
    
 ### License
@@ -86,7 +86,7 @@ breadcrumbText: API Reference
   | [`outputLicenseToString`](BarcodeReader/license.md#outputlicensetostring) | Output the license content to a string from the license server. |
    
    
-&nbsp; 
+ 
    
    
 ### Result
@@ -96,7 +96,7 @@ breadcrumbText: API Reference
   | [`getIntermediateResults`](BarcodeReader/result.md#getintermediateresults) | Get intermediate results. |
    
       
-&nbsp; 
+ 
 
    
 ### Status Retrieval
@@ -106,7 +106,7 @@ breadcrumbText: API Reference
   | [`getVersion`](BarcodeReader/status-retrieval.md#getversion) | Get version information of SDK.|
    
       
-&nbsp; 
+ 
 
    
 ### Video
@@ -143,7 +143,7 @@ breadcrumbText: API Reference
    
   
    
-&nbsp; 
+ 
 
 ## Interface
 
@@ -153,13 +153,13 @@ breadcrumbText: API Reference
   | [`IntermediateResultCallback`](interface.md#intermediateresultcallback) | Represents the method that will handle the intermediate result array returned by the SDK. |
   | [`TextResultCallback`](interface.md#cb_textresult) | Represents the method that will handle the text result array returned by the SDK. | 
 
-&nbsp;
 
 
-## [Error Code]({{ site.enumerations }}error-code.html)
+
+## [Error Code]({{ site.java_enumerations }}error-code.html)
 		
 
-&nbsp;
+
 
 ## Classes
 - [`AztecDetails`](class/AztecDetails.md)	 
@@ -184,38 +184,38 @@ breadcrumbText: API Reference
 - [`TextResult`](class/TextResult.md)		
 
 
-&nbsp; 
+ 
 
 
 ## Enumerations
-- [`EnumAccompanyingTextRecognitionMode`]({{ site.enumerations }}parameter-mode-enums.html#accompanyingtextrecognitionmode)	
-- [`EnumBarcodeColourMode`]({{ site.enumerations }}parameter-mode-enums.html#barcodecolourmode)	
-- [`EnumBarcodeComplementMode`]({{ site.enumerations }}parameter-mode-enums.html#barcodecomplementmode)	
-- [`EnumBarcodeFormat`]({{ site.enumerations }}format-enums.html#barcodeformat)	
-- [`EnumBarcodeFormat_2`]({{ site.enumerations }}format-enums.html#barcodeformat_2)	
-- [`EnumBinarizationMode`]({{ site.enumerations }}parameter-mode-enums.html#binarizationmode)
-- [`EnumClarityCalculationMethod`]({{ site.enumerations }}frame-decoding-enums.html#claritycalculationmethod) 
-- [`EnumClarityFilterMode`]({{ site.enumerations }}frame-decoding-enums.html#clarityfiltermode) 
-- [`EnumColourClusteringMode`]({{ site.enumerations }}parameter-mode-enums.html#colourclusteringmode)	
-- [`EnumColourConversionMode`]({{ site.enumerations }}parameter-mode-enums.html#colourconversionmode)	
-- [`EnumConflictMode`]({{ site.enumerations }}parameter-mode-enums.html#conflictmode)	
-- [`EnumDeformationResistingMode`]({{ site.enumerations }}parameter-mode-enums.html#deformationresistingmode)	
-- [`EnumDPMCodeReadingMode`]({{ site.enumerations }}parameter-mode-enums.html#dpmcodereadingmode)	
-- [`EnumGrayscaleTransformationMode`]({{ site.enumerations }}parameter-mode-enums.html#grayscaletransformationmode)	
-- [`EnumImagePixelFormat`]({{ site.enumerations }}other-enums.html#imagepixelformat)	
-- [`EnumImagePreprocessingMode`]({{ site.enumerations }}parameter-mode-enums.html#imagepreprocessingmode)	
-- [`EnumIMResultDataType`]({{ site.enumerations }}result-enums.html#imresultdatatype)	
-- [`EnumIntermediateResultSavingMode`]({{ site.enumerations }}result-enums.html#intermediateresultsavingmode)	
-- [`EnumIntermediateResultType`]({{ site.enumerations }}result-enums.html#intermediateresulttype)	
-- [`EnumLocalizationMode`]({{ site.enumerations }}parameter-mode-enums.html#localizationmode)
-- [`EnumPDFReadingMode`]({{ site.enumerations }}parameter-mode-enums.html#pdfreadingmode)   
-- [`EnumQRCodeErrorCorrectionLevel`]({{ site.enumerations }}other-enums.html#qrcodeerrorcorrectionlevel)	
-- [`EnumRegionPredetectionMode`]({{ site.enumerations }}parameter-mode-enums.html#regionpredetectionmode)	
-- [`EnumResultCoordinateType`]({{ site.enumerations }}result-enums.html#resultcoordinatetype)	
-- [`EnumResultType`]({{ site.enumerations }}result-enums.html#resulttype)	
-- [`EnumScaleUpMode`]({{ site.enumerations }}parameter-mode-enums.html#scaleupmode)	
-- [`EnumTerminatePhase`]({{ site.enumerations }}parameter-mode-enums.html#terminatephase)	
-- [`EnumTextAssistedCorrectionMode`]({{ site.enumerations }}parameter-mode-enums.html#textassistedcorrectionmode)	
-- [`EnumTextFilterMode`]({{ site.enumerations }}parameter-mode-enums.html#textfiltermode)	
-- [`EnumTextResultOrderMode`]({{ site.enumerations }}result-enums.html#textresultordermode)	
-- [`EnumTextureDetectionMode`]({{ site.enumerations }}parameter-mode-enums.html#texturedetectionmode)
+- [`EnumAccompanyingTextRecognitionMode`]({{ site.java_enumerations }}parameter-mode-enums.html#accompanyingtextrecognitionmode)	
+- [`EnumBarcodeColourMode`]({{ site.java_enumerations }}parameter-mode-enums.html#barcodecolourmode)	
+- [`EnumBarcodeComplementMode`]({{ site.java_enumerations }}parameter-mode-enums.html#barcodecomplementmode)	
+- [`EnumBarcodeFormat`]({{ site.java_enumerations }}format-enums.html#barcodeformat)	
+- [`EnumBarcodeFormat_2`]({{ site.java_enumerations }}format-enums.html#barcodeformat_2)	
+- [`EnumBinarizationMode`]({{ site.java_enumerations }}parameter-mode-enums.html#binarizationmode)
+- [`EnumClarityCalculationMethod`]({{ site.java_enumerations }}frame-decoding-enums.html#claritycalculationmethod) 
+- [`EnumClarityFilterMode`]({{ site.java_enumerations }}frame-decoding-enums.html#clarityfiltermode) 
+- [`EnumColourClusteringMode`]({{ site.java_enumerations }}parameter-mode-enums.html#colourclusteringmode)	
+- [`EnumColourConversionMode`]({{ site.java_enumerations }}parameter-mode-enums.html#colourconversionmode)	
+- [`EnumConflictMode`]({{ site.java_enumerations }}parameter-mode-enums.html#conflictmode)	
+- [`EnumDeformationResistingMode`]({{ site.java_enumerations }}parameter-mode-enums.html#deformationresistingmode)	
+- [`EnumDPMCodeReadingMode`]({{ site.java_enumerations }}parameter-mode-enums.html#dpmcodereadingmode)	
+- [`EnumGrayscaleTransformationMode`]({{ site.java_enumerations }}parameter-mode-enums.html#grayscaletransformationmode)	
+- [`EnumImagePixelFormat`]({{ site.java_enumerations }}other-enums.html#imagepixelformat)	
+- [`EnumImagePreprocessingMode`]({{ site.java_enumerations }}parameter-mode-enums.html#imagepreprocessingmode)	
+- [`EnumIMResultDataType`]({{ site.java_enumerations }}result-enums.html#imresultdatatype)	
+- [`EnumIntermediateResultSavingMode`]({{ site.java_enumerations }}result-enums.html#intermediateresultsavingmode)	
+- [`EnumIntermediateResultType`]({{ site.java_enumerations }}result-enums.html#intermediateresulttype)	
+- [`EnumLocalizationMode`]({{ site.java_enumerations }}parameter-mode-enums.html#localizationmode)
+- [`EnumPDFReadingMode`]({{ site.java_enumerations }}parameter-mode-enums.html#pdfreadingmode)   
+- [`EnumQRCodeErrorCorrectionLevel`]({{ site.java_enumerations }}other-enums.html#qrcodeerrorcorrectionlevel)	
+- [`EnumRegionPredetectionMode`]({{ site.java_enumerations }}parameter-mode-enums.html#regionpredetectionmode)	
+- [`EnumResultCoordinateType`]({{ site.java_enumerations }}result-enums.html#resultcoordinatetype)	
+- [`EnumResultType`]({{ site.java_enumerations }}result-enums.html#resulttype)	
+- [`EnumScaleUpMode`]({{ site.java_enumerations }}parameter-mode-enums.html#scaleupmode)	
+- [`EnumTerminatePhase`]({{ site.java_enumerations }}parameter-mode-enums.html#terminatephase)	
+- [`EnumTextAssistedCorrectionMode`]({{ site.java_enumerations }}parameter-mode-enums.html#textassistedcorrectionmode)	
+- [`EnumTextFilterMode`]({{ site.java_enumerations }}parameter-mode-enums.html#textfiltermode)	
+- [`EnumTextResultOrderMode`]({{ site.java_enumerations }}result-enums.html#textresultordermode)	
+- [`EnumTextureDetectionMode`]({{ site.java_enumerations }}parameter-mode-enums.html#texturedetectionmode)

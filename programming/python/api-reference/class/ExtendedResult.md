@@ -20,10 +20,10 @@ class ExtendedResult
   
 | Attribute | Type |
 |---------- | ---- |
-| [`result_type`](#result_type) | [`EnumResultType`]({{ site.enumerations }}result-enums.html#resulttype) |
-| [`barcode_format`](#barcode_format) | [`EnumBarcodeFormat`]({{ site.enumerations }}format-enums.html#barcodeformat) |
+| [`result_type`](#result_type) | [`EnumResultType`]({{ site.python_enumerations }}result-enums.html#resulttype) |
+| [`barcode_format`](#barcode_format) | [`EnumBarcodeFormat`]({{ site.python_enumerations }}format-enums.html#barcodeformat) |
 | [`barcode_format_string`](#barcode_format_string) | *str* |
-| [`barcode_format_2`](#barcode_format_2) | [`EnumBarcodeFormat_2`]({{ site.enumerations }}format-enums.html#barcodeformat_2) |
+| [`barcode_format_2`](#barcode_format_2) | [`EnumBarcodeFormat_2`]({{ site.python_enumerations }}format-enums.html#barcodeformat_2) |
 | [`barcode_format_string_2`](#barcode_format_string_2) | *str* | 
 | [`confidence`](#confidence) | *int* | 
 | [`bytes`](#bytes) | *bytearray* | 

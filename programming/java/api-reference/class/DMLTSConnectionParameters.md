@@ -105,13 +105,13 @@ int com.dynamsoft.dbr.DMLTSConnectionParameters.deploymentType
 ```
 
 **Value Range**     
-    Any one of the [`EnumDMDeploymentType`]({{ site.enumerations }}other-enums.html#dm_deploymenttype) Enumeration items.   
+    Any one of the [`EnumDMDeploymentType`]({{ site.java_enumerations }}other-enums.html#dm_deploymenttype) Enumeration items.   
       
 **Default Value**     
     DM_DT_DESKTOP   
     
 **See Also**      
-    [`EnumDMDeploymentType`]({{ site.enumerations }}other-enums.html#dm_deploymenttype)    
+    [`EnumDMDeploymentType`]({{ site.java_enumerations }}other-enums.html#dm_deploymenttype)    
 
 ### chargeWay
 
@@ -122,13 +122,13 @@ int com.dynamsoft.dbr.DMLTSConnectionParameters.chargeWay
 ```
 
 **Value Range**     
-    Any one of the [`EnumDMChargeWay`]({{ site.enumerations }}other-enums.html#dm_chargeWay) Enumeration items.   
+    Any one of the [`EnumDMChargeWay`]({{ site.java_enumerations }}other-enums.html#dm_chargeWay) Enumeration items.   
       
 **Default Value**     
     DM_CW_AUTO   
     
 **See Also**      
-    [`EnumDMChargeWay`]({{ site.enumerations }}other-enums.html#dm_chargeWay)    
+    [`EnumDMChargeWay`]({{ site.java_enumerations }}other-enums.html#dm_chargeWay)    
 
 
 ### uuidGenerationMethod
@@ -140,13 +140,13 @@ int com.dynamsoft.dbr.DMLTSConnectionParameters.uuidGenerationMethod
 ```
 
 **Value Range**     
-    Any one of the [`EnumDMUUIDGenerationMethod`]({{ site.enumerations }}other-enums.html#dm_uuidgenerationmethod) Enumeration items.   
+    Any one of the [`EnumDMUUIDGenerationMethod`]({{ site.java_enumerations }}other-enums.html#dm_uuidgenerationmethod) Enumeration items.   
       
 **Default Value**     
     DM_UUIDGM_RANDOM   
     
 **See Also**      
-    [`EnumDMUUIDGenerationMethod`]({{ site.enumerations }}other-enums.html#dm_uuidgenerationmethod)    
+    [`EnumDMUUIDGenerationMethod`]({{ site.java_enumerations }}other-enums.html#dm_uuidgenerationmethod)    
 
 ### maxBufferDays
 
@@ -172,13 +172,13 @@ int[] com.dynamsoft.dbr.DMLTSConnectionParameters.limitedLicenseModules
 ```
 
 **Value Range**     
-    Each array item can be any one of the [`EnumDMLicenseModule`]({{ site.enumerations }}other-enums.html#dm_licensemodule) Enumeration items.   
+    Each array item can be any one of the [`EnumDMLicenseModule`]({{ site.java_enumerations }}other-enums.html#dm_licensemodule) Enumeration items.   
       
 **Default Value**     
     null   
     
 **See Also**      
-    [`EnumDMLicenseModule`]({{ site.enumerations }}other-enums.html#dm_licensemodule)    
+    [`EnumDMLicenseModule`]({{ site.java_enumerations }}other-enums.html#dm_licensemodule)    
 
 
 ### maxConcurrentInstanceCount
@@ -213,7 +213,7 @@ Sets the products to get the license for. Product values can be combined.
 int com.dynamsoft.dbr.DMLTSConnectionParameters.products
 ```
 **Value Range**     
-    A combined value of [`Product`]({{ site.enumerations }}other-enums.html#product) Enumeration items
+    A combined value of [`Product`]({{ site.java_enumerations }}other-enums.html#product) Enumeration items
       
 **Default Value**     
     `PROD_ALL`

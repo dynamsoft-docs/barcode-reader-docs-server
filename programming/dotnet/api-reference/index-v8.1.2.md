@@ -18,7 +18,7 @@ breadcrumbText: API Reference
 - [Enumerations](#enumerations)
 
      
-&nbsp; 
+ 
 
 
 ## BarcodeReader Methods
@@ -30,7 +30,7 @@ breadcrumbText: API Reference
   | [`BarcodeReader`](BarcodeReader/constructor-and-destructor.md#barcodereader) | Constructor of `BarcodeReader` object.|
   | [`Dispose`](BarcodeReader/constructor-and-destructor.md#dispose) | Destroys an instance of Dynamsoft Barcode Reader. |
    
-&nbsp; 
+ 
    
    
 ### Decode
@@ -46,7 +46,7 @@ breadcrumbText: API Reference
   | [`DecodeIntermediateResults`](BarcodeReader/decode.md#decodeintermediateresults) | Decodes barcode from intermediate results. |
    
    
-&nbsp; 
+ 
    
    
    
@@ -75,7 +75,7 @@ breadcrumbText: API Reference
   | [`OutputSettingsToString`](BarcodeReader/parameter-and-runtime-settings-advanced.md#outputsettingstostring) | Outputs runtime settings to a string. |
    
       
-&nbsp; 
+ 
 
    
 ### License
@@ -89,7 +89,7 @@ breadcrumbText: API Reference
   | [`InitLicenseFromLTS`](BarcodeReader/license.md#initlicensefromlts) | Initializes the barcode reader license and connects to the specified server for online verification. |
    
    
-&nbsp; 
+ 
    
    
 ### Status Retrieval
@@ -99,7 +99,7 @@ breadcrumbText: API Reference
   | [`GetVersion`](BarcodeReader/status-retrieval.md#getversion) | Gets version information of SDK. |
    
       
-&nbsp; 
+ 
 
    
 ### Video
@@ -135,7 +135,7 @@ breadcrumbText: API Reference
    | [`GetLengthOfFrameQueue`](BarcodeReader/video.md#getlengthofframequeue) | Gets length of current inner frame queue. |
  
    
-&nbsp; 
+ 
 
 
 ### Result
@@ -145,7 +145,7 @@ breadcrumbText: API Reference
    | [`GetIntermediateResults`](BarcodeReader/result.md#getintermediateresults) | Returns intermediate results containing the original image, the colour clustered image, the binarized Image, contours, Lines, TextBlocks, etc.  |
 
 
-&nbsp; 
+ 
 
 
 ## `BarcodeReader` Attributes
@@ -155,7 +155,7 @@ breadcrumbText: API Reference
   | `ProductKeys`  | Product keys used for Dynamsoft Barcode Reader. |
   
    
-&nbsp; 
+ 
 
 
 ## Function Pointers
@@ -167,13 +167,13 @@ breadcrumbText: API Reference
   | [`CB_TextResult`](function-pointer.md#cb_textresult) | Represents the method that will handle the text result array returned by the SDK. | 
 
 
-&nbsp;
 
 
-## [Error Code]({{ site.enumerations }}error-code.html)
+
+## [Error Code]({{ site.dotnet_enumerations }}error-code.html)
 		
 
-&nbsp;
+
 
 
 ## Structs
@@ -183,7 +183,7 @@ breadcrumbText: API Reference
 - [`RegionDefinition`](struct/RegionDefinition.md)		
 
 
-&nbsp; 
+ 
 
 
 ## Classes
@@ -209,39 +209,39 @@ breadcrumbText: API Reference
 
 
 ## Enumerations
-- [`AccompanyingTextRecognitionMode`]({{ site.enumerations }}parameter-mode-enums.html#accompanyingtextrecognitionmode)	
-- [`BarcodeColourMode`]({{ site.enumerations }}parameter-mode-enums.html#barcodecolourmode)	
-- [`BarcodeComplementMode`]({{ site.enumerations }}parameter-mode-enums.html#barcodecomplementmode)	
-- [`BarcodeFormat`]({{ site.enumerations }}format-enums.html#barcodeformat)	
-- [`BarcodeFormat_2`]({{ site.enumerations }}format-enums.html#barcodeformat_2)	
-- [`BinarizationMode`]({{ site.enumerations }}parameter-mode-enums.html#binarizationmode)
-- [`ClarityCalculationMethod`]({{ site.enumerations }}frame-decoding-enums.html#claritycalculationmethod) 
-- [`ClarityFilterMode`]({{ site.enumerations }}frame-decoding-enums.html#clarityfiltermode) 
-- [`ColourClusteringMode`]({{ site.enumerations }}parameter-mode-enums.html#colourclusteringmode)	
-- [`ColourConversionMode`]({{ site.enumerations }}parameter-mode-enums.html#colourconversionmode)	
-- [`ConflictMode`]({{ site.enumerations }}parameter-mode-enums.html#conflictmode)	
-- [`DeblurMode`]({{ site.enumerations }}parameter-mode-enums.html#deblurmode)
-- [`DeformationResistingMode`]({{ site.enumerations }}parameter-mode-enums.html#deformationresistingmode)
-- [`DM_ChargeWay`]({{ site.enumerations }}other-enums.html#dm_chargeway)
-- [`DM_DeploymentType`]({{ site.enumerations }}other-enums.html#dm_deploymenttype)
-- [`DM_LicenseModule`]({{ site.enumerations }}other-enums.html#dm_licensemodule)
-- [`DM_UUIDGenerationMethod`]({{ site.enumerations }}other-enums.html#dm_uuidgenerationmethod)
-- [`DPMCodeReadingMode`]({{ site.enumerations }}parameter-mode-enums.html#dpmcodereadingmode)
-- [`GrayscaleTransformationMode`]({{ site.enumerations }}parameter-mode-enums.html#grayscaletransformationmode)	
-- [`ImagePixelFormat`]({{ site.enumerations }}other-enums.html#imagepixelformat)	
-- [`ImagePreprocessingMode`]({{ site.enumerations }}parameter-mode-enums.html#imagepreprocessingmode)	
-- [`IMResultDataType`]({{ site.enumerations }}result-enums.html#imresultdatatype)	
-- [`IntermediateResultSavingMode`]({{ site.enumerations }}result-enums.html#intermediateresultsavingmode)	
-- [`IntermediateResultType`]({{ site.enumerations }}result-enums.html#intermediateresulttype)	
-- [`LocalizationMode`]({{ site.enumerations }}parameter-mode-enums.html#localizationmode)
-- [`PDFReadingMode`]({{ site.enumerations }}parameter-mode-enums.html#pdfreadingmode)   
-- [`QRCodeErrorCorrectionLevel`]({{ site.enumerations }}other-enums.html#qrcodeerrorcorrectionlevel)	
-- [`RegionPredetectionMode`]({{ site.enumerations }}parameter-mode-enums.html#regionpredetectionmode)	
-- [`ResultCoordinateType`]({{ site.enumerations }}result-enums.html#resultcoordinatetype)	
-- [`ResultType`]({{ site.enumerations }}result-enums.html#resulttype)	
-- [`ScaleUpMode`]({{ site.enumerations }}parameter-mode-enums.html#scaleupmode)	
-- [`TerminatePhase`]({{ site.enumerations }}parameter-mode-enums.html#terminatephase)	
-- [`TextAssistedCorrectionMode`]({{ site.enumerations }}parameter-mode-enums.html#textassistedcorrectionmode)	
-- [`TextFilterMode`]({{ site.enumerations }}parameter-mode-enums.html#textfiltermode)	
-- [`TextResultOrderMode`]({{ site.enumerations }}result-enums.html#textresultordermode)	
-- [`TextureDetectionMode`]({{ site.enumerations }}parameter-mode-enums.html#texturedetectionmode)
+- [`AccompanyingTextRecognitionMode`]({{ site.dotnet_enumerations }}parameter-mode-enums.html#accompanyingtextrecognitionmode)	
+- [`BarcodeColourMode`]({{ site.dotnet_enumerations }}parameter-mode-enums.html#barcodecolourmode)	
+- [`BarcodeComplementMode`]({{ site.dotnet_enumerations }}parameter-mode-enums.html#barcodecomplementmode)	
+- [`BarcodeFormat`]({{ site.dotnet_enumerations }}format-enums.html#barcodeformat)	
+- [`BarcodeFormat_2`]({{ site.dotnet_enumerations }}format-enums.html#barcodeformat_2)	
+- [`BinarizationMode`]({{ site.dotnet_enumerations }}parameter-mode-enums.html#binarizationmode)
+- [`ClarityCalculationMethod`]({{ site.dotnet_enumerations }}frame-decoding-enums.html#claritycalculationmethod) 
+- [`ClarityFilterMode`]({{ site.dotnet_enumerations }}frame-decoding-enums.html#clarityfiltermode) 
+- [`ColourClusteringMode`]({{ site.dotnet_enumerations }}parameter-mode-enums.html#colourclusteringmode)	
+- [`ColourConversionMode`]({{ site.dotnet_enumerations }}parameter-mode-enums.html#colourconversionmode)	
+- [`ConflictMode`]({{ site.dotnet_enumerations }}parameter-mode-enums.html#conflictmode)	
+- [`DeblurMode`]({{ site.dotnet_enumerations }}parameter-mode-enums.html#deblurmode)
+- [`DeformationResistingMode`]({{ site.dotnet_enumerations }}parameter-mode-enums.html#deformationresistingmode)
+- [`DM_ChargeWay`]({{ site.dotnet_enumerations }}other-enums.html#dm_chargeway)
+- [`DM_DeploymentType`]({{ site.dotnet_enumerations }}other-enums.html#dm_deploymenttype)
+- [`DM_LicenseModule`]({{ site.dotnet_enumerations }}other-enums.html#dm_licensemodule)
+- [`DM_UUIDGenerationMethod`]({{ site.dotnet_enumerations }}other-enums.html#dm_uuidgenerationmethod)
+- [`DPMCodeReadingMode`]({{ site.dotnet_enumerations }}parameter-mode-enums.html#dpmcodereadingmode)
+- [`GrayscaleTransformationMode`]({{ site.dotnet_enumerations }}parameter-mode-enums.html#grayscaletransformationmode)	
+- [`ImagePixelFormat`]({{ site.dotnet_enumerations }}other-enums.html#imagepixelformat)	
+- [`ImagePreprocessingMode`]({{ site.dotnet_enumerations }}parameter-mode-enums.html#imagepreprocessingmode)	
+- [`IMResultDataType`]({{ site.dotnet_enumerations }}result-enums.html#imresultdatatype)	
+- [`IntermediateResultSavingMode`]({{ site.dotnet_enumerations }}result-enums.html#intermediateresultsavingmode)	
+- [`IntermediateResultType`]({{ site.dotnet_enumerations }}result-enums.html#intermediateresulttype)	
+- [`LocalizationMode`]({{ site.dotnet_enumerations }}parameter-mode-enums.html#localizationmode)
+- [`PDFReadingMode`]({{ site.dotnet_enumerations }}parameter-mode-enums.html#pdfreadingmode)   
+- [`QRCodeErrorCorrectionLevel`]({{ site.dotnet_enumerations }}other-enums.html#qrcodeerrorcorrectionlevel)	
+- [`RegionPredetectionMode`]({{ site.dotnet_enumerations }}parameter-mode-enums.html#regionpredetectionmode)	
+- [`ResultCoordinateType`]({{ site.dotnet_enumerations }}result-enums.html#resultcoordinatetype)	
+- [`ResultType`]({{ site.dotnet_enumerations }}result-enums.html#resulttype)	
+- [`ScaleUpMode`]({{ site.dotnet_enumerations }}parameter-mode-enums.html#scaleupmode)	
+- [`TerminatePhase`]({{ site.dotnet_enumerations }}parameter-mode-enums.html#terminatephase)	
+- [`TextAssistedCorrectionMode`]({{ site.dotnet_enumerations }}parameter-mode-enums.html#textassistedcorrectionmode)	
+- [`TextFilterMode`]({{ site.dotnet_enumerations }}parameter-mode-enums.html#textfiltermode)	
+- [`TextResultOrderMode`]({{ site.dotnet_enumerations }}result-enums.html#textresultordermode)	
+- [`TextureDetectionMode`]({{ site.dotnet_enumerations }}parameter-mode-enums.html#texturedetectionmode)

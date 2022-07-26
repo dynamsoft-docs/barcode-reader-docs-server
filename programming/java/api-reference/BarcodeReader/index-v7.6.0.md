@@ -18,7 +18,7 @@ breadcrumbText: BarcodeReader Methods
   | [`destroy`](initialize-and-destroy.md#destroy) | Destroys an instance of `BarcodeReader` object.|
    
    
-&nbsp; 
+ 
    
    
 ## Decode
@@ -32,7 +32,7 @@ breadcrumbText: BarcodeReader Methods
   | [`decodeBufferedImage`](decode.md#decodebufferedimage) | Decodes barcode from a buffered imag (bitmap). |
    
    
-&nbsp; 
+ 
    
    
    
@@ -61,7 +61,7 @@ breadcrumbText: BarcodeReader Methods
   | [`outputSettingsToString`](parameter-and-runtime-settings-advanced.md#outputsettingstostring) | Output runtime settings to a string. |
    
       
-&nbsp; 
+ 
 
    
 ## License
@@ -74,7 +74,7 @@ breadcrumbText: BarcodeReader Methods
   | [`outputLicenseToString`](license.md#outputlicensetostring) | Output the license content to a string from the license server. |
    
    
-&nbsp; 
+ 
    
    
 ## Result
@@ -84,7 +84,7 @@ breadcrumbText: BarcodeReader Methods
   | [`getIntermediateResults`](result.md#getintermediateresults) | Get intermediate results. |
    
       
-&nbsp; 
+ 
 
    
 ## Status Retrieval
@@ -94,7 +94,7 @@ breadcrumbText: BarcodeReader Methods
   | [`getVersion`](status-retrieval.md#getversion) | Get version information of SDK.|
    
       
-&nbsp; 
+ 
 
    
 ## Video

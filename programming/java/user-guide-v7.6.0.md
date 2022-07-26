@@ -19,7 +19,7 @@ needGenerateH3Content: true
    - JDK 1.7 and above. 
 
 
-&nbsp;
+
 
 
 ## Installation
@@ -51,7 +51,7 @@ You can add Dynamsoft Barcode Reader as the dependency to pom.xml like this:
    ```
 
    
-&nbsp; 
+ 
 
 
 ## Getting Started: HelloWorld
@@ -86,7 +86,7 @@ You can add Dynamsoft Barcode Reader as the dependency to pom.xml like this:
 5. Run the project
 
 
-&nbsp; 
+ 
 
 
 ## Decoding Methods
@@ -100,7 +100,7 @@ The SDK provides multiple decoding methods that support reading barcodes from di
 You can find more samples in more programming languages at [Code Gallery](https://www.dynamsoft.com/Downloads/Dynamic-Barcode-Reader-Sample-Download.aspx) or [Github Repositories](https://github.com/dynamsoft-dbr?q=java&type=&language=).
 
 
-&nbsp; 
+ 
 
 
 ## Barcode Reading Settings
@@ -122,7 +122,7 @@ For more scanning settings guide, check out the [How To](#how-to-guide) section.
 #### Specify Barcode Type to Read
 By default, the SDK will read all the supported barcode formats except Postal Codes and DotCode from the image. (See [Product Overview]({{ site.introduction }}overview.html) for the full supported barcode list.) 
 
-If your full license only covers some barcode formats, you can use `BarcodeFormatIds` and `BarcodeFormatIds_2` to specify the barcode format(s). Check out [`BarcodeFormat`]({{ site.enumerations }}format-enums.html#barcodeformat) and [`BarcodeFormat_2`]({{ site.enumerations }}format-enums.html#barcodeformat_2).
+If your full license only covers some barcode formats, you can use `BarcodeFormatIds` and `BarcodeFormatIds_2` to specify the barcode format(s). Check out [`BarcodeFormat`]({{ site.java_enumerations }}format-enums.html#barcodeformat) and [`BarcodeFormat_2`]({{ site.java_enumerations }}format-enums.html#barcodeformat_2).
 
 For example, to enable only 1D barcode reading, you can use the following code:
 
@@ -263,7 +263,7 @@ Below is a template for your reference. To learn more about the APIs, you can ch
 ```
 
 
-&nbsp; 
+ 
 
 
 

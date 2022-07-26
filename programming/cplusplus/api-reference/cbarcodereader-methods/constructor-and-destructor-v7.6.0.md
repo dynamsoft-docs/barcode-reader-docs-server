@@ -27,7 +27,7 @@ Default constructor of a `CBarcodeReader` object.
 CBarcodeReader::CBarcodeReader()
 ```
 
-&nbsp;
+
 
 
 

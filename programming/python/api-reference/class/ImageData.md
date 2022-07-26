@@ -24,7 +24,7 @@ class ImageData
 | [`width`](#width) | *int* |
 | [`height`](#height) | *int* |
 | [`stride`](#stride) | *int* |
-| [`image_pixel_format`](#image_pixel_format) | [`ImagePixelFormat`]({{ site.enumerations }}other-enums.html#imagepixelformat) |
+| [`image_pixel_format`](#image_pixel_format) | [`ImagePixelFormat`]({{ site.python_enumerations }}other-enums.html#imagepixelformat) |
 
 
 ### bytes

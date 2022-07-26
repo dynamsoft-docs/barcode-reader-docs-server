@@ -24,18 +24,21 @@ dotnet_api: /barcode-reader/docs/server/programming/dotnet/api-reference/
 dotnet_methods: /barcode-reader/docs/server/programming/dotnet/api-reference/BarcodeReader/
 dotnet_class: /barcode-reader/docs/server/programming/dotnet/api-reference/class/
 dotnet_release_notes: /barcode-reader/docs/server/programming/dotnet/release-notes/
+dotnet_enumerations: /barcode-reader/docs/server/programming/dotnet/api-reference/enumeration/
 
 java: /barcode-reader/docs/server/programming/java/
 java_api: /barcode-reader/docs/server/programming/java/api-reference/
 java_methods: /barcode-reader/docs/server/programming/java/api-reference/BarcodeReader/
 java_class: /barcode-reader/docs/server/programming/java/api-reference/class/
 java_release_notes: /barcode-reader/docs/server/programming/java/release-notes/
+java_enumerations: /barcode-reader/docs/server/programming/java/api-reference/enumeration/
 
 python: /barcode-reader/docs/server/programming/python/
 python_api: /barcode-reader/docs/server/programming/python/api-reference/
 python_methods: /barcode-reader/docs/server/programming/python/api-reference/BarcodeReader/
 python_class: /barcode-reader/docs/server/programming/python/api-reference/class/
 python_release_notes: /barcode-reader/docs/server/programming/python/release-notes/
+python_enumerations: /barcode-reader/docs/server/programming/python/api-reference/enumeration/
 
 assets: /barcode-reader/docs/server/assets/
 edit_icon: /barcode-reader/docs/server/assets/img-icon/edit-icon.png

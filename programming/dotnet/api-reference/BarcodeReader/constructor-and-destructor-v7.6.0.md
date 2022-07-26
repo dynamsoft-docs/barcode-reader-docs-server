@@ -50,7 +50,7 @@ Dynamsoft.Barcode.BarcodeReader.BarcodeReader(string modulePath, string productK
 `[in] modulePath` <*string*> : The path where you store these DLLs.  
 `[in] productKey` <*string*> : Product key. 
 
-&nbsp;
+
 
 
 ## Dispose

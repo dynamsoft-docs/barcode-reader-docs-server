@@ -74,7 +74,7 @@ DBR_SetModeArgument(barcodeReader, "BinarizationModes", 0, "EnableFillBinaryVaca
 DBR_DestroyInstance(barcodeReader);
 ```
 
-&nbsp;
+
 
 
 
@@ -133,7 +133,7 @@ DBR_GetModeArgument(barcodeReader, "BinarizationModes", 0, "EnableFillBinaryVaca
 DBR_DestroyInstance(barcodeReader);
 ```
 
-&nbsp;
+
 
 
 
@@ -163,7 +163,7 @@ int errorCode = DBR_GetRuntimeSettings(barcodeReader, &settings);
 DBR_DestroyInstance(barcodeReader);
 ```
 
-&nbsp;
+
 
 
 
@@ -198,7 +198,7 @@ DBR_UpdateRuntimeSettings(barcodeReader, &settings, errorMessage, 256);
 DBR_DestroyInstance(barcodeReader);
 ```
 
-&nbsp;
+
 
 
 

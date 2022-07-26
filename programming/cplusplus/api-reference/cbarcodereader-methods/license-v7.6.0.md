@@ -47,7 +47,7 @@ reader->InitLicense("t0260NwAAAHV***************");
 delete reader;
 ```
 
-&nbsp;
+
 
 
 
@@ -68,7 +68,7 @@ int CBarcodeReader::InitLicenseFromServer (const char* pLicenseServer, const cha
 Returns error code (returns 0 if the function operates successfully).    
 *You can call [`GetErrorString`](status-retrieval.md#geterrorstring) to get detailed error message.*
 
-&nbsp;
+
 
 
 
@@ -91,7 +91,7 @@ int CBarcodeReader::InitLicenseFromLicenseContent (const char* pLicenseKey, cons
 Returns error code (returns 0 if the function operates successfully).    
 *You can call [`GetErrorString`](status-retrieval.md#geterrorstring) to get detailed error message.*
 
-&nbsp;
+
 
 
 
@@ -116,7 +116,7 @@ Returns error code (returns 0 if the function operates successfully).
 #### Remark
 [`InitLicenseFromServer`](#initlicensefromserver) has to be successfully called before calling this method.
 
-&nbsp;
+
 
 
 
@@ -140,7 +140,7 @@ Returns error code (returns 0 if the function operates successfully).
 #### Remarks
 [`InitLicenseFromServer`](#initlicensefromserver) has to be successfully called before calling this method.
 
-&nbsp;
+
 
 
 

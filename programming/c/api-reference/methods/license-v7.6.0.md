@@ -46,7 +46,7 @@ DBR_InitLicense(barcodeReader, "t0260NwAAAHV***************");
 DBR_DestroyInstance(barcodeReader);
 ```
 
-&nbsp;
+
 
 
 
@@ -68,7 +68,7 @@ DBR_API int DBR_InitLicenseFromServer (void* barcodeReader, const char* pLicense
 Returns error code (returns 0 if the function operates successfully).    
 *You can call [`DBR_GetErrorString`](status-retrieval.md#dbr_geterrorstring) to get detailed error message.*
 
-&nbsp;
+
 
 
 
@@ -90,7 +90,7 @@ DBR_API int DBR_InitLicenseFromLicenseContent (void* barcodeReader, const char* 
 Returns error code (returns 0 if the function operates successfully).    
 *You can call [`DBR_GetErrorString`](status-retrieval.md#dbr_geterrorstring) to get detailed error message.*
 
-&nbsp;
+
 
 
 
@@ -115,7 +115,7 @@ Returns error code (returns 0 if the function operates successfully).
 #### Remark
 [`DBR_InitLicenseFromServer`](#dbr_initlicensefromserver) has to be successfully called before calling this method.
 
-&nbsp;
+
 
 
 
@@ -140,7 +140,7 @@ Returns error code (returns 0 if the function operates successfully).
 #### Remark
 [`DBR_InitLicenseFromServer`](#dbr_initlicensefromserver) has to be successfully called before calling this method.
 
-&nbsp;
+
 
 
 

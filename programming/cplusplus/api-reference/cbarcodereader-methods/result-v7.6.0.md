@@ -49,7 +49,7 @@ CBarcodeReader::FreeTextResults(&pResults);
 delete reader;
 ```
 
-&nbsp;
+
 
 
 
@@ -76,7 +76,7 @@ CBarcodeReader::FreeTextResults(&pResults);
 delete reader;
 ```
 
-&nbsp;
+
 
 
 
@@ -113,7 +113,7 @@ delete pSettings;
 delete reader;
 ```
 
-&nbsp;
+
 
 
 

@@ -4,7 +4,6 @@ title: Dynamsoft Barcode Reader Enumerations - Main Page
 description: This article shows the main page of Dynamsoft Barcode Reader Enumerations.
 keywords: enumerations
 needAutoGenerateSidebar: false
-breadcrumbText: Enumerations
 permalink: /programming/c-cplusplus/enumeration/index-v8.2.5.html
 ---
 
@@ -70,5 +69,3 @@ permalink: /programming/c-cplusplus/enumeration/index-v8.2.5.html
   | [`QRCodeErrorCorrectionLevel`](other-enums.md#qrcodeerrorcorrectionlevel) | Describes the QR Code error correction level. |
 
 ## [Error Code](error-code.md)
-  
-

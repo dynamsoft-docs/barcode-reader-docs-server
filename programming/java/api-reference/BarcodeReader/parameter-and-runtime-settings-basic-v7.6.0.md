@@ -67,7 +67,7 @@ reader.setModeArgument("BinarizationModes", 0, "EnableFillBinaryVacancy", "1");
 reader.destroy();
 ```
 
-&nbsp;
+
 
 
 
@@ -120,7 +120,7 @@ String argumentValue = reader.getModeArgument("BinarizationModes", 0, "EnableFil
 reader.destroy();
 ```
 
-&nbsp;
+
 
 
 
@@ -147,7 +147,7 @@ PublicRuntimeSettings settings = reader.getRuntimeSettings();
 reader.destroy();
 ```
 
-&nbsp;
+
 
 
 
@@ -176,7 +176,7 @@ reader.updateRuntimeSettings(settings);
 reader.destroy();
 ```
 
-&nbsp;
+
 
 
 

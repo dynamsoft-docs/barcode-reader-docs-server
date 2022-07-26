@@ -102,13 +102,13 @@ int com.dynamsoft.dbr.DMLTSConnectionParameters.deploymentType
 ```
 
 - **Value range**   
-    Any one of the [`EnumDMDeploymentType`]({{ site.enumerations }}other-enums.html#dm_deploymenttype) Enumeration items.   
+    Any one of the [`EnumDMDeploymentType`]({{ site.java_enumerations }}other-enums.html#dm_deploymenttype) Enumeration items.   
       
 - **Default value**   
     DM_DT_DESKTOP   
     
 - **See also**  
-    [`EnumDMDeploymentType`]({{ site.enumerations }}other-enums.html#dm_deploymenttype)    
+    [`EnumDMDeploymentType`]({{ site.java_enumerations }}other-enums.html#dm_deploymenttype)    
 
 ### chargeWay
 
@@ -119,13 +119,13 @@ int com.dynamsoft.dbr.DMLTSConnectionParameters.chargeWay
 ```
 
 - **Value range**   
-    Any one of the [`EnumDMChargeWay`]({{ site.enumerations }}other-enums.html#dm_chargeWay) Enumeration items.   
+    Any one of the [`EnumDMChargeWay`]({{ site.java_enumerations }}other-enums.html#dm_chargeWay) Enumeration items.   
       
 - **Default value**   
     DM_CW_AUTO   
     
 - **See also**  
-    [`EnumDMChargeWay`]({{ site.enumerations }}other-enums.html#dm_chargeWay)    
+    [`EnumDMChargeWay`]({{ site.java_enumerations }}other-enums.html#dm_chargeWay)    
 
 
 ### uuidGenerationMethod
@@ -137,13 +137,13 @@ int com.dynamsoft.dbr.DMLTSConnectionParameters.uuidGenerationMethod
 ```
 
 - **Value range**   
-    Any one of the [`EnumDMUUIDGenerationMethod`]({{ site.enumerations }}other-enums.html#dm_uuidgenerationmethod) Enumeration items.   
+    Any one of the [`EnumDMUUIDGenerationMethod`]({{ site.java_enumerations }}other-enums.html#dm_uuidgenerationmethod) Enumeration items.   
       
 - **Default value**   
     DM_UUIDGM_RANDOM   
     
 - **See also**  
-    [`EnumDMUUIDGenerationMethod`]({{ site.enumerations }}other-enums.html#dm_uuidgenerationmethod)    
+    [`EnumDMUUIDGenerationMethod`]({{ site.java_enumerations }}other-enums.html#dm_uuidgenerationmethod)    
 
 ### maxBufferDays
 
@@ -169,11 +169,11 @@ int[] com.dynamsoft.dbr.DMLTSConnectionParameters.limitedLicenseModules
 ```
 
 - **Value range**   
-    Each array item can be any one of the [`EnumDMLicenseModule`]({{ site.enumerations }}other-enums.html#dm_licensemodule) Enumeration items.   
+    Each array item can be any one of the [`EnumDMLicenseModule`]({{ site.java_enumerations }}other-enums.html#dm_licensemodule) Enumeration items.   
       
 - **Default value**   
     null   
     
 - **See also**  
-    [`EnumDMLicenseModule`]({{ site.enumerations }}other-enums.html#dm_licensemodule)    
+    [`EnumDMLicenseModule`]({{ site.java_enumerations }}other-enums.html#dm_licensemodule)    
 

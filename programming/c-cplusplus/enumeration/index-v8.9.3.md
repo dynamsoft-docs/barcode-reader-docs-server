@@ -4,7 +4,6 @@ title: Dynamsoft Barcode Reader Enumerations - Main Page
 description: This article shows the main page of Dynamsoft Barcode Reader Enumerations.
 keywords: enumerations
 needAutoGenerateSidebar: false
-breadcrumbText: Enumerations
 permalink: /programming/c-cplusplus/enumeration/index-v8.9.3.html
 ---
 
@@ -69,6 +68,5 @@ permalink: /programming/c-cplusplus/enumeration/index-v8.9.3.html
   | [`ImagePixelFormat`](other-enums.md#imagepixelformat) | Describes the image pixel format. |
   | [`QRCodeErrorCorrectionLevel`](other-enums.md#qrcodeerrorcorrectionlevel) | Describes the QR Code error correction level. |
   | [`Product`](other-enums.md#product) | Describes Dynamsoft products. |
-  | [`EnumPresetTemplate`](other-enums.md#enumpresettemplate) | The preset parameter setting templates. |
 
 ## [Error Code](error-code.md)

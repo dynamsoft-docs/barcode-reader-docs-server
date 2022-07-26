@@ -20,7 +20,7 @@ needGenerateH3Content: true
 - Framework supported: .NET Framework 2.0, .NET Framework 4.0
 
 
-&nbsp;
+
 
 
 ## Installation
@@ -29,7 +29,7 @@ To install Dynamsoft Barcode Reader Windows Edition on your development machine,
 After installation, you can find samples for supported platforms in the **Samples** folder under the installation folder. 
 
 
-&nbsp;
+
 
 
 ## Getting Started: HelloWorld
@@ -81,7 +81,7 @@ After installation, you can find samples for supported platforms in the **Sample
 4. Run the project.
 
 
-&nbsp;
+
 
 
 ## Decoding Methods
@@ -97,7 +97,7 @@ current page.
 You can find more samples in more programming languages at [Code Gallery](https://www.dynamsoft.com/Downloads/Dynamic-Barcode-Reader-Sample-Download.aspx).
 
 
-&nbsp;
+
 
 
 ## Barcode Reading Settings
@@ -299,5 +299,5 @@ Below is a template for your reference. To learn more about the APIs, you can ch
 ```
 
 
-&nbsp;
+
 

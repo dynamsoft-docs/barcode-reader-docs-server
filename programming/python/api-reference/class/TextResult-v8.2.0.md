@@ -20,9 +20,9 @@ public class TextResult
   
 | Attribute | Type |
 |---------- | ---- |
-| [`barcode_format`](#barcode_format) | [`EnumBarcodeFormat`]({{ site.enumerations }}format-enums.html#barcodeformat) |
+| [`barcode_format`](#barcode_format) | [`EnumBarcodeFormat`]({{ site.python_enumerations }}format-enums.html#barcodeformat) |
 | [`barcode_format_string`](#barcode_format_string) | *str* |
-| [`barcode_format_2`](#barcode_format_2) | [`EnumBarcodeFormat_2`]({{ site.enumerations }}format-enums.html#barcodeformat_2) |
+| [`barcode_format_2`](#barcode_format_2) | [`EnumBarcodeFormat_2`]({{ site.python_enumerations }}format-enums.html#barcodeformat_2) |
 | [`barcode_format_string_2`](#barcode_format_string_2) | *str* |
 | [`barcode_text`](#barcode_text) | *str* |
 | [`barcode_bytes`](#barcode_bytes) | *bytearray* |

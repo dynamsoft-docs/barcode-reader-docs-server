@@ -24,31 +24,31 @@ public class IntermediateResult
 | Attribute | Type |
 |---------- | ---- |
 | [`Results`](#results) | *object[ ]* |
-| [`DataType`](#datatype) | [`EnumIMResultDataType`]({{ site.enumerations }}result-enums.html#imresultdatatype) |
-| [`ResultType`](#resulttype) | [`EnumIntermediateResultType`]({{ site.enumerations }}result-enums.html#intermediateresulttype) |
-| [`BarcodeComplementMode`](#barcodecomplementmode) | [`EnumBarcodeComplementMode`]({{ site.enumerations }}parameter-mode-enums.html#barcodecomplementmode) |
+| [`DataType`](#datatype) | [`EnumIMResultDataType`]({{ site.dotnet_enumerations }}result-enums.html#imresultdatatype) |
+| [`ResultType`](#resulttype) | [`EnumIntermediateResultType`]({{ site.dotnet_enumerations }}result-enums.html#intermediateresulttype) |
+| [`BarcodeComplementMode`](#barcodecomplementmode) | [`EnumBarcodeComplementMode`]({{ site.dotnet_enumerations }}parameter-mode-enums.html#barcodecomplementmode) |
 | [`BCMIndex`](#bcmindex) | *int* |
-| [`DeformationResistingMode`](#deformationresistingmode) | [`EnumDeformationResistingMode`]({{ site.enumerations }}parameter-mode-enums.html#deformationresistingmode) |
+| [`DeformationResistingMode`](#deformationresistingmode) | [`EnumDeformationResistingMode`]({{ site.dotnet_enumerations }}parameter-mode-enums.html#deformationresistingmode) |
 | [`DRMIndex`](#drmindex) | *int* |
-| [`DPMCodeReadingMode`](#dpmcodereadingmode) | [`EnumDPMCodeReadingMode`]({{ site.enumerations }}parameter-mode-enums.html#dpmcodereadingmode) |
+| [`DPMCodeReadingMode`](#dpmcodereadingmode) | [`EnumDPMCodeReadingMode`]({{ site.dotnet_enumerations }}parameter-mode-enums.html#dpmcodereadingmode) |
 | [`DPMCRMIndex`](#dpmcrmindex) | *int* |
 | [`RotationMatrix`](#rotationmatrix) | *double[ ]* |
-| [`TextFilterMode`](#textfiltermode) | [`EnumTextFilterMode`]({{ site.enumerations }}parameter-mode-enums.html#textfiltermode) |
+| [`TextFilterMode`](#textfiltermode) | [`EnumTextFilterMode`]({{ site.dotnet_enumerations }}parameter-mode-enums.html#textfiltermode) |
 | [`TFMIndex`](#tfmindex) | *int* |
-| [`LocalizationMode`](#localizationmode) | [`EnumLocalizationMode`]({{ site.enumerations }}parameter-mode-enums.html#localizationmode) |
+| [`LocalizationMode`](#localizationmode) | [`EnumLocalizationMode`]({{ site.dotnet_enumerations }}parameter-mode-enums.html#localizationmode) |
 | [`LMIndex`](#lmindex) | *int* |
-| [`BinarizationMode`](#binarizationmode) | [`EnumBinarizationMode`]({{ site.enumerations }}parameter-mode-enums.html#binarizationmode) |
+| [`BinarizationMode`](#binarizationmode) | [`EnumBinarizationMode`]({{ site.dotnet_enumerations }}parameter-mode-enums.html#binarizationmode) |
 | [`BMIndex`](#bmindex) | *int* |
-| [`ImagePreprocessingMode`](#imagepreprocessingmode) | [`EnumImagePreprocessingMode`]({{ site.enumerations }}parameter-mode-enums.html#imagepreprocessingmode) |
+| [`ImagePreprocessingMode`](#imagepreprocessingmode) | [`EnumImagePreprocessingMode`]({{ site.dotnet_enumerations }}parameter-mode-enums.html#imagepreprocessingmode) |
 | [`IPMIndex`](#ipmindex) | *int* |
 | [`ROIId`](#roiid) | *int* |
-| [`RegionPredetectionMode`](#regionpredetectionmode) | [`EnumRegionPredetectionMode`]({{ site.enumerations }}parameter-mode-enums.html#regionpredetectionmode) |
+| [`RegionPredetectionMode`](#regionpredetectionmode) | [`EnumRegionPredetectionMode`]({{ site.dotnet_enumerations }}parameter-mode-enums.html#regionpredetectionmode) |
 | [`RPMIndex`](#rpmindex) | *int* |
-| [`GrayscaleTransformationMode`](#grayscaletransformationmode) | [`EnumGrayscaleTransformationMode`]({{ site.enumerations }}parameter-mode-enums.html#grayscaletransformationmode) |
+| [`GrayscaleTransformationMode`](#grayscaletransformationmode) | [`EnumGrayscaleTransformationMode`]({{ site.dotnet_enumerations }}parameter-mode-enums.html#grayscaletransformationmode) |
 | [`GTMIndex`](#gtmindex) | *int* |
-| [`ColourConversionMode`](#colourconversionmode) | [`EnumColourConversionMode`]({{ site.enumerations }}parameter-mode-enums.html#colourconversionmode) |
+| [`ColourConversionMode`](#colourconversionmode) | [`EnumColourConversionMode`]({{ site.dotnet_enumerations }}parameter-mode-enums.html#colourconversionmode) |
 | [`CICMIndex`](#cicmindex) | *int* |
-| [`ColourClusteringMode`](#colourclusteringmode) | [`EnumColourClusteringMode`]({{ site.enumerations }}parameter-mode-enums.html#colourclusteringmode) |
+| [`ColourClusteringMode`](#colourclusteringmode) | [`EnumColourClusteringMode`]({{ site.dotnet_enumerations }}parameter-mode-enums.html#colourclusteringmode) |
 | [`CCMIndex`](#ccmindex) | *int* |
 | [`ScaleDownRatio`](#scaledownratio) | *int* |
 | [`FrameId`](#frameid) | *int* |
@@ -77,42 +77,42 @@ EnumIntermediateResultType Dynamsoft.Barcode.IntermediateResult.ResultType
 ```
 
 ### BarcodeComplementMode
-The [`BarcodeComplementMode`]({{ site.enumerations }}parameter-mode-enums.html#barcodecomplementmode) used when generating the current intermediate result. 
+The [`BarcodeComplementMode`]({{ site.dotnet_enumerations }}parameter-mode-enums.html#barcodecomplementmode) used when generating the current intermediate result. 
 
 ```C#
 EnumBarcodeComplementMode Dynamsoft.Barcode.IntermediateResult.BarcodeComplementMode
 ```
 
 ### BCMIndex
-The array index of current used [`BarcodeComplementMode`]({{ site.enumerations }}parameter-mode-enums.html#barcodecomplementmode) in the [`BarcodeComplementModes`](../struct/FurtherModes.md#barcodecomplementmodes) setting.
+The array index of current used [`BarcodeComplementMode`]({{ site.dotnet_enumerations }}parameter-mode-enums.html#barcodecomplementmode) in the [`BarcodeComplementModes`](../struct/FurtherModes.md#barcodecomplementmodes) setting.
 
 ```C#
 int Dynamsoft.Barcode.IntermediateResult.BCMIndex
 ```
 
 ### DeformationResistingMode
-The [`DeformationResistingMode`]({{ site.enumerations }}parameter-mode-enums.html#deformationresistingmode) used when generating the current intermediate result.
+The [`DeformationResistingMode`]({{ site.dotnet_enumerations }}parameter-mode-enums.html#deformationresistingmode) used when generating the current intermediate result.
 
 ```C#
 EnumDeformationResistingMode Dynamsoft.Barcode.IntermediateResult.DeformationResistingMode
 ```
 
 ### DRMIndex
-The array index of current used [`DeformationResistingMode`]({{ site.enumerations }}parameter-mode-enums.html#deformationresistingmode) in the [`DeformationResistingModes`](../struct/FurtherModes.md#deformationresistingmodes) setting.
+The array index of current used [`DeformationResistingMode`]({{ site.dotnet_enumerations }}parameter-mode-enums.html#deformationresistingmode) in the [`DeformationResistingModes`](../struct/FurtherModes.md#deformationresistingmodes) setting.
 
 ```C#
 int Dynamsoft.Barcode.IntermediateResult.DRMIndex
 ```
 
 ### DPMCodeReadingMode
-The [`DPMCodeReadingMode`]({{ site.enumerations }}parameter-mode-enums.html#dpmcodereadingmode) used when generating the current intermediate result.
+The [`DPMCodeReadingMode`]({{ site.dotnet_enumerations }}parameter-mode-enums.html#dpmcodereadingmode) used when generating the current intermediate result.
 
 ```C#
 EnumDPMCodeReadingMode Dynamsoft.Barcode.IntermediateResult.DPMCodeReadingMode
 ```
 
 ### DPMCRMIndex
-The array index of current used [`DPMCodeReadingMode`]({{ site.enumerations }}parameter-mode-enums.html#dpmcodereadingmode) in the [`DPMCodeReadingModes`](../struct/FurtherModes.md#dpmcodereadingmodes) setting.
+The array index of current used [`DPMCodeReadingMode`]({{ site.dotnet_enumerations }}parameter-mode-enums.html#dpmcodereadingmode) in the [`DPMCodeReadingModes`](../struct/FurtherModes.md#dpmcodereadingmodes) setting.
 
 ```C#
 int Dynamsoft.Barcode.IntermediateResult.DPMCRMIndex
@@ -126,55 +126,55 @@ double[] Dynamsoft.Barcode.IntermediateResult.RotationMatrix
 ```
 
 ### TextFilterMode
-The [`TextFilterMode`]({{ site.enumerations }}parameter-mode-enums.html#textfiltermode) used when generating the current intermediate result.
+The [`TextFilterMode`]({{ site.dotnet_enumerations }}parameter-mode-enums.html#textfiltermode) used when generating the current intermediate result.
 
 ```C#
 EnumTextFilterMode Dynamsoft.Barcode.IntermediateResult.TextFilterMode
 ```
 
 ### TFMIndex
-The array index of current used [`TextFilterMode`]({{ site.enumerations }}parameter-mode-enums.html#textfiltermode) in the [`TextFilterModes`](../struct/FurtherModes.md#textfiltermodes) setting.
+The array index of current used [`TextFilterMode`]({{ site.dotnet_enumerations }}parameter-mode-enums.html#textfiltermode) in the [`TextFilterModes`](../struct/FurtherModes.md#textfiltermodes) setting.
 ```C#
 int Dynamsoft.Barcode.IntermediateResult.TFMIndex
 ```
 
 ### LocalizationMode
-The [`LocalizationMode`]({{ site.enumerations }}parameter-mode-enums.html#localizationmode) used when generating the current intermediate result.
+The [`LocalizationMode`]({{ site.dotnet_enumerations }}parameter-mode-enums.html#localizationmode) used when generating the current intermediate result.
 
 ```C#
 EnumLocalizationMode Dynamsoft.Barcode.IntermediateResult.LocalizationMode
 ```
 
 ### LMIndex
-The array index of current used [`LocalizationMode`]({{ site.enumerations }}parameter-mode-enums.html#localizationmode) in the [`LocalizationModes`](../struct/PublicRuntimeSettings.md#localizationmodes) setting.
+The array index of current used [`LocalizationMode`]({{ site.dotnet_enumerations }}parameter-mode-enums.html#localizationmode) in the [`LocalizationModes`](../struct/PublicRuntimeSettings.md#localizationmodes) setting.
 
 ```C#
 int Dynamsoft.Barcode.IntermediateResult.LMIndex
 ```
 
 ### BinarizationMode
-The [`BinarizationMode`]({{ site.enumerations }}parameter-mode-enums.html#binarizationmode) used when generating the current intermediate result.
+The [`BinarizationMode`]({{ site.dotnet_enumerations }}parameter-mode-enums.html#binarizationmode) used when generating the current intermediate result.
 
 ```C#
 EnumBinarizationMode Dynamsoft.Barcode.IntermediateResult.BinarizationMode
 ```
 
 ### BMIndex
-The array index of current used [`BinarizationMode`]({{ site.enumerations }}parameter-mode-enums.html#binarizationmode) in the [`BinarizationModes`](../struct/PublicRuntimeSettings.md#binarizationmodes) setting.
+The array index of current used [`BinarizationMode`]({{ site.dotnet_enumerations }}parameter-mode-enums.html#binarizationmode) in the [`BinarizationModes`](../struct/PublicRuntimeSettings.md#binarizationmodes) setting.
 
 ```C#
 int Dynamsoft.Barcode.IntermediateResult.BMIndex
 ```
 
 ### ImagePreprocessingMode
-The [`ImagePreprocessingMode`]({{ site.enumerations }}parameter-mode-enums.html#imagepreprocessingmode) used when generating the current intermediate result.
+The [`ImagePreprocessingMode`]({{ site.dotnet_enumerations }}parameter-mode-enums.html#imagepreprocessingmode) used when generating the current intermediate result.
 
 ```C#
 EnumImagePreprocessingMode Dynamsoft.Barcode.IntermediateResult.ImagePreprocessingMode
 ```
 
 ### IPMIndex
-The array index of current used [`ImagePreprocessingMode`]({{ site.enumerations }}parameter-mode-enums.html#imagepreprocessingmode) in [`ImagePreprocessingModes`](../struct/FurtherModes.md#imagepreprocessingmodes) setting.
+The array index of current used [`ImagePreprocessingMode`]({{ site.dotnet_enumerations }}parameter-mode-enums.html#imagepreprocessingmode) in [`ImagePreprocessingModes`](../struct/FurtherModes.md#imagepreprocessingmodes) setting.
 
 ```C#
 int Dynamsoft.Barcode.IntermediateResult.IPMIndex
@@ -188,56 +188,56 @@ int Dynamsoft.Barcode.IntermediateResult.ROIId
 ```
 
 ### RegionPredetectionMode
-The [`RegionPredetectionMode`]({{ site.enumerations }}parameter-mode-enums.html#regionpredetectionmode) used when generating the current intermediate result.
+The [`RegionPredetectionMode`]({{ site.dotnet_enumerations }}parameter-mode-enums.html#regionpredetectionmode) used when generating the current intermediate result.
 
 ```C#
 EnumRegionPredetectionMode Dynamsoft.Barcode.IntermediateResult.RegionPredetectionMode
 ```
 
 ### RPMIndex
-The array index of current used [`RegionPredetectionMode`]({{ site.enumerations }}parameter-mode-enums.html#regionpredetectionmode) in the [`RegionPredetectionModes`](../struct/FurtherModes.md#regionpredetectionmodes) setting.
+The array index of current used [`RegionPredetectionMode`]({{ site.dotnet_enumerations }}parameter-mode-enums.html#regionpredetectionmode) in the [`RegionPredetectionModes`](../struct/FurtherModes.md#regionpredetectionmodes) setting.
 
 ```C#
 int Dynamsoft.Barcode.IntermediateResult.RPMIndex
 ```
 
 ### GrayscaleTransformationMode
-The [`GrayscaleTransformationMode`]({{ site.enumerations }}parameter-mode-enums.html#grayscaletransformationmode) used when generating the current intermediate result.
+The [`GrayscaleTransformationMode`]({{ site.dotnet_enumerations }}parameter-mode-enums.html#grayscaletransformationmode) used when generating the current intermediate result.
 
 ```C#
 EnumGrayscaleTransformationMode Dynamsoft.Barcode.IntermediateResult.GrayscaleTransformationMode
 ```
 
 ### GTMIndex
-The array index of current used [`GrayscaleTransformationMode`]({{ site.enumerations }}parameter-mode-enums.html#grayscaletransformationmode) in the [`GrayscaleTransformationModes`](../struct/FurtherModes.md#grayscaletransformationmodes) setting.
+The array index of current used [`GrayscaleTransformationMode`]({{ site.dotnet_enumerations }}parameter-mode-enums.html#grayscaletransformationmode) in the [`GrayscaleTransformationModes`](../struct/FurtherModes.md#grayscaletransformationmodes) setting.
 
 ```C#
 int Dynamsoft.Barcode.IntermediateResult.GTMIndex
 ```
 
 ### ColourConversionMode
-The [`ColourConversionMode`]({{ site.enumerations }}parameter-mode-enums.html#colourconversionmode) used when generating the current intermediate result.
+The [`ColourConversionMode`]({{ site.dotnet_enumerations }}parameter-mode-enums.html#colourconversionmode) used when generating the current intermediate result.
 
 ```C#
 EnumColourConversionMode Dynamsoft.Barcode.IntermediateResult.ColourConversionMode
 ```
 
 ### CICMIndex
-The array index of current used [`ColourConversionMode`]({{ site.enumerations }}parameter-mode-enums.html#colourconversionmode) in the [`ColourConversionModes`](../struct/FurtherModes.md#colourconversionmodes) setting.
+The array index of current used [`ColourConversionMode`]({{ site.dotnet_enumerations }}parameter-mode-enums.html#colourconversionmode) in the [`ColourConversionModes`](../struct/FurtherModes.md#colourconversionmodes) setting.
 
 ```C#
 int Dynamsoft.Barcode.IntermediateResult.CICMIndex
 ```
 
 ### ColourClusteringMode
-The [`ColourClusteringMode`]({{ site.enumerations }}parameter-mode-enums.html#colourclusteringmode) used when generating the current intermediate result.
+The [`ColourClusteringMode`]({{ site.dotnet_enumerations }}parameter-mode-enums.html#colourclusteringmode) used when generating the current intermediate result.
 
 ```C#
 EnumColourClusteringMode Dynamsoft.Barcode.IntermediateResult.ColourClusteringMode
 ```
 
 ### CCMIndex
-The array index of current used [`ColourClusteringMode`]({{ site.enumerations }}parameter-mode-enums.html#colourclusteringmode) in the [`ColourClusteringModes`](../struct/FurtherModes.md#colourclusteringmodes) setting.
+The array index of current used [`ColourClusteringMode`]({{ site.dotnet_enumerations }}parameter-mode-enums.html#colourclusteringmode) in the [`ColourClusteringModes`](../struct/FurtherModes.md#colourclusteringmodes) setting.
 
 ```C#
 int Dynamsoft.Barcode.IntermediateResult.CCMIndex
