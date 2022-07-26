@@ -12,6 +12,7 @@ needGenerateH3Content: false
 
 ### Highlights
 
+{%- include release-notes/product-highlight-9.2.0.md -%}
 
 ### Changelog
 
@@ -28,6 +29,7 @@ needGenerateH3Content: false
 
 ### Highlights
 
+{%- include release-notes/product-highlight-9.0.0.md -%}
 
 ### Changelog
 

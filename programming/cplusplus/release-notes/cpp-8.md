@@ -18,6 +18,7 @@ noTitleIndex: true
 
 <div class="fold-panel-start"></div>
 
+{%- include release-notes/product-highlight-8.8.0.md -%}
 
 <div class="fold-panel-end"></div>
 
@@ -44,6 +45,9 @@ noTitleIndex: true
 
 ## 8.6.0 (07/15/2021)
 
+### Highlights
+
+{%- include release-notes/product-highlight-8.6.0.md -%}
 
 ### Changelog
 

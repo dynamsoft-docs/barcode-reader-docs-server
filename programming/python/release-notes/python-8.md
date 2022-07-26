@@ -14,6 +14,8 @@ noTitleIndex: true
 
 ### Highlights
 
+{%- include release-notes/product-highlight-8.8.0.md -%}
+
 ### Changelog
 
 #### New
@@ -33,6 +35,8 @@ noTitleIndex: true
 ## 8.6.0 (07/20/2021)
 
 ### Highlights
+
+{%- include release-notes/product-highlight-8.6.0.md -%}
 
 ### Changelog
 
