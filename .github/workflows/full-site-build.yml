@@ -22,15 +22,15 @@ jobs:
           cd /home/ubuntu 
           [ -d DBRDocServer ] && rm -rf DBRDocServer 
           [ -d barcode-reader-docs-server ] && rm -rf barcode-reader-docs-server
-          [ -d Docs-Template-Repo ] && rm -rf Docs-Template-Repo
+          [ -d Docs-Template-Repo-preview ] && rm -rf Docs-Template-Repo-preview
       - name: Build the full site (not incremental)
         run: |
           cd /home/ubuntu
           mkdir -p DBRDocServer
           git clone --depth 1 https://github.com/dynamsoft-docs/barcode-reader-docs-server.git barcode-reader-docs-server
-          git clone --depth 1 https://github.com/dynamsoft-docs/Docs-Template-Repo.git Docs-Template-Repo
+          git clone --depth 1 --branch preview https://github.com/dynamsoft-docs/Docs-Template-Repo.git Docs-Template-Repo-preview
           cp -rfp ./barcode-reader-docs-server/* ./DBRDocServer/
-          cp -rfp ./Docs-Template-Repo/* ./DBRDocServer/
+          cp -rfp ./Docs-Template-Repo-preview/* ./DBRDocServer/
           cd DBRDocServer && bundle exec jekyll build
           #python3 /home/ubuntu/ftp.py /home/ubuntu/DBRDocServer/_site/ ./www.dynamsoft.com/barcode-reader/docs/server/ prod
 
