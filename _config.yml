@@ -54,6 +54,8 @@ baseurl: "/barcode-reader/docs/server"
 plugins:
   - jemoji
 
+edition: desktop
+
 defaults:
   - scope:
       path: ""
