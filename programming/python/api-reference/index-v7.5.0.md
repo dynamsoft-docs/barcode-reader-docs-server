@@ -16,7 +16,7 @@ breadcrumbText: API Reference
 - [Enumerations](#enumerations)
 
      
-&nbsp; 
+ 
 
 
 ## BarcodeReader Methods
@@ -28,7 +28,7 @@ breadcrumbText: API Reference
   | [`BarcodeReader`](BarcodeReader/constructor-and-destructor.md#barcodereader) | Constructor of `BarcodeReader` object.|
 
    
-&nbsp; 
+ 
    
    
 ### Decode
@@ -40,7 +40,7 @@ breadcrumbText: API Reference
   | [`decode_file_stream`](BarcodeReader/decode.md#decode_file_stream) | Decodes barcodes from an image file in memory. |
    
    
-&nbsp; 
+ 
    
    
    
@@ -69,7 +69,7 @@ breadcrumbText: API Reference
   | [`output_settings_to_json_string`](BarcodeReader/parameter-and-runtime-settings-advanced.md#output_settings_to_json_string) | Outputs runtime settings to a string. |
    
       
-&nbsp; 
+ 
 
    
 ### License
@@ -82,7 +82,7 @@ breadcrumbText: API Reference
   | [`output_license_to_string`](BarcodeReader/license.md#output_license_to_string) | Outputs the license content as an encrypted string from the license server to be used for offline license verification.|
    
    
-&nbsp; 
+ 
    
    
 ### Video
@@ -109,7 +109,7 @@ breadcrumbText: API Reference
    | [`get_length_of_frame_queue`](BarcodeReader/video.md#get_length_of_frame_queue) | Gets length of current inner frame queue. |
  
    
-&nbsp; 
+ 
 
 
 ## `BarcodeReader` Attributes
@@ -120,13 +120,13 @@ breadcrumbText: API Reference
   | `dbr_version`  | Dynamsoft Barcode Reader version |
   
    
-&nbsp; 
+ 
 
 
-## [Error Code]({{ site.enumerations }}error-code.html)
+## [Error Code]({{ site.python_enumerations }}error-code.html)
 		
 
-&nbsp;
+
 
 
 ## Classes
@@ -153,34 +153,34 @@ breadcrumbText: API Reference
 
 
 ## Enumerations
-- [`AccompanyingTextRecognitionMode`]({{ site.enumerations }}parameter-mode-enums.html#accompanyingtextrecognitionmode)	
-- [`BarcodeColourMode`]({{ site.enumerations }}parameter-mode-enums.html#barcodecolourmode)	
-- [`BarcodeComplementMode`]({{ site.enumerations }}parameter-mode-enums.html#barcodecomplementmode)	
-- [`BarcodeFormat`]({{ site.enumerations }}format-enums.html#barcodeformat)	
-- [`BarcodeFormat_2`]({{ site.enumerations }}format-enums.html#barcodeformat_2)	
-- [`BinarizationMode`]({{ site.enumerations }}parameter-mode-enums.html#binarizationmode)
-- [`ClarityCalculationMethod`]({{ site.enumerations }}frame-decoding-enums.html#claritycalculationmethod) 
-- [`ClarityFilterMode`]({{ site.enumerations }}frame-decoding-enums.html#clarityfiltermode) 
-- [`ColourClusteringMode`]({{ site.enumerations }}parameter-mode-enums.html#colourclusteringmode)	
-- [`ColourConversionMode`]({{ site.enumerations }}parameter-mode-enums.html#colourconversionmode)	
-- [`ConflictMode`]({{ site.enumerations }}parameter-mode-enums.html#conflictmode)	
-- [`DeformationResistingMode`]({{ site.enumerations }}parameter-mode-enums.html#deformationresistingmode)	
-- [`DPMCodeReadingMode`]({{ site.enumerations }}parameter-mode-enums.html#dpmcodereadingmode)	
-- [`GrayscaleTransformationMode`]({{ site.enumerations }}parameter-mode-enums.html#grayscaletransformationmode)	
-- [`ImagePixelFormat`]({{ site.enumerations }}other-enums.html#imagepixelformat)	
-- [`ImagePreprocessingMode`]({{ site.enumerations }}parameter-mode-enums.html#imagepreprocessingmode)	
-- [`IMResultDataType`]({{ site.enumerations }}result-enums.html#imresultdatatype)	
-- [`IntermediateResultSavingMode`]({{ site.enumerations }}result-enums.html#intermediateresultsavingmode)	
-- [`IntermediateResultType`]({{ site.enumerations }}result-enums.html#intermediateresulttype)	
-- [`LocalizationMode`]({{ site.enumerations }}parameter-mode-enums.html#localizationmode)
-- [`PDFReadingMode`]({{ site.enumerations }}parameter-mode-enums.html#pdfreadingmode)   
-- [`QRCodeErrorCorrectionLevel`]({{ site.enumerations }}other-enums.html#qrcodeerrorcorrectionlevel)	
-- [`RegionPredetectionMode`]({{ site.enumerations }}parameter-mode-enums.html#regionpredetectionmode)	
-- [`ResultCoordinateType`]({{ site.enumerations }}result-enums.html#resultcoordinatetype)	
-- [`ResultType`]({{ site.enumerations }}result-enums.html#resulttype)	
-- [`ScaleUpMode`]({{ site.enumerations }}parameter-mode-enums.html#scaleupmode)	
-- [`TerminatePhase`]({{ site.enumerations }}parameter-mode-enums.html#terminatephase)	
-- [`TextAssistedCorrectionMode`]({{ site.enumerations }}parameter-mode-enums.html#textassistedcorrectionmode)	
-- [`TextFilterMode`]({{ site.enumerations }}parameter-mode-enums.html#textfiltermode)	
-- [`TextResultOrderMode`]({{ site.enumerations }}result-enums.html#textresultordermode)	
-- [`TextureDetectionMode`]({{ site.enumerations }}parameter-mode-enums.html#texturedetectionmode)
+- [`AccompanyingTextRecognitionMode`]({{ site.python_enumerations }}parameter-mode-enums.html#accompanyingtextrecognitionmode)	
+- [`BarcodeColourMode`]({{ site.python_enumerations }}parameter-mode-enums.html#barcodecolourmode)	
+- [`BarcodeComplementMode`]({{ site.python_enumerations }}parameter-mode-enums.html#barcodecomplementmode)	
+- [`BarcodeFormat`]({{ site.python_enumerations }}format-enums.html#barcodeformat)	
+- [`BarcodeFormat_2`]({{ site.python_enumerations }}format-enums.html#barcodeformat_2)	
+- [`BinarizationMode`]({{ site.python_enumerations }}parameter-mode-enums.html#binarizationmode)
+- [`ClarityCalculationMethod`]({{ site.python_enumerations }}frame-decoding-enums.html#claritycalculationmethod) 
+- [`ClarityFilterMode`]({{ site.python_enumerations }}frame-decoding-enums.html#clarityfiltermode) 
+- [`ColourClusteringMode`]({{ site.python_enumerations }}parameter-mode-enums.html#colourclusteringmode)	
+- [`ColourConversionMode`]({{ site.python_enumerations }}parameter-mode-enums.html#colourconversionmode)	
+- [`ConflictMode`]({{ site.python_enumerations }}parameter-mode-enums.html#conflictmode)	
+- [`DeformationResistingMode`]({{ site.python_enumerations }}parameter-mode-enums.html#deformationresistingmode)	
+- [`DPMCodeReadingMode`]({{ site.python_enumerations }}parameter-mode-enums.html#dpmcodereadingmode)	
+- [`GrayscaleTransformationMode`]({{ site.python_enumerations }}parameter-mode-enums.html#grayscaletransformationmode)	
+- [`ImagePixelFormat`]({{ site.python_enumerations }}other-enums.html#imagepixelformat)	
+- [`ImagePreprocessingMode`]({{ site.python_enumerations }}parameter-mode-enums.html#imagepreprocessingmode)	
+- [`IMResultDataType`]({{ site.python_enumerations }}result-enums.html#imresultdatatype)	
+- [`IntermediateResultSavingMode`]({{ site.python_enumerations }}result-enums.html#intermediateresultsavingmode)	
+- [`IntermediateResultType`]({{ site.python_enumerations }}result-enums.html#intermediateresulttype)	
+- [`LocalizationMode`]({{ site.python_enumerations }}parameter-mode-enums.html#localizationmode)
+- [`PDFReadingMode`]({{ site.python_enumerations }}parameter-mode-enums.html#pdfreadingmode)   
+- [`QRCodeErrorCorrectionLevel`]({{ site.python_enumerations }}other-enums.html#qrcodeerrorcorrectionlevel)	
+- [`RegionPredetectionMode`]({{ site.python_enumerations }}parameter-mode-enums.html#regionpredetectionmode)	
+- [`ResultCoordinateType`]({{ site.python_enumerations }}result-enums.html#resultcoordinatetype)	
+- [`ResultType`]({{ site.python_enumerations }}result-enums.html#resulttype)	
+- [`ScaleUpMode`]({{ site.python_enumerations }}parameter-mode-enums.html#scaleupmode)	
+- [`TerminatePhase`]({{ site.python_enumerations }}parameter-mode-enums.html#terminatephase)	
+- [`TextAssistedCorrectionMode`]({{ site.python_enumerations }}parameter-mode-enums.html#textassistedcorrectionmode)	
+- [`TextFilterMode`]({{ site.python_enumerations }}parameter-mode-enums.html#textfiltermode)	
+- [`TextResultOrderMode`]({{ site.python_enumerations }}result-enums.html#textresultordermode)	
+- [`TextureDetectionMode`]({{ site.python_enumerations }}parameter-mode-enums.html#texturedetectionmode)

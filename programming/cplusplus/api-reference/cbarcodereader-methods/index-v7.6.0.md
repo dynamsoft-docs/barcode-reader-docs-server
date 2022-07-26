@@ -17,7 +17,7 @@ breadcrumbText: CBarcodeReader Methods
   | [`~CBarcodeReader`](constructor-and-destructor.md#~cbarcodereader) | Destructor of `CBarcodeReader` object.|
    
    
-&nbsp; 
+ 
    
    
 ## Decode
@@ -31,7 +31,7 @@ breadcrumbText: CBarcodeReader Methods
   | [`DecodeDIB`](decode.md#decodedib) | Decode barcode from a handle of device-independent bitmap (DIB). |
    
    
-&nbsp; 
+ 
    
    
    
@@ -63,7 +63,7 @@ breadcrumbText: CBarcodeReader Methods
   | [`FreeSettingsString`](parameter-and-runtime-settings-advanced.md#freesettingsstring) | Free memory allocated for runtime settings string. |
    
       
-&nbsp; 
+ 
 
    
 ## License
@@ -78,7 +78,7 @@ breadcrumbText: CBarcodeReader Methods
   | [`FreeLicenseString`](license.md#freelicensestring) | Free memory allocated for the license string. |
    
    
-&nbsp; 
+ 
    
    
 ## Result
@@ -91,7 +91,7 @@ breadcrumbText: CBarcodeReader Methods
   | [`FreeIntermediateResults`](result.md#freeintermediateresults) | Free memory allocated for the intermediate results. |
    
       
-&nbsp; 
+ 
 
    
 ## Status Retrieval
@@ -102,7 +102,7 @@ breadcrumbText: CBarcodeReader Methods
   | [`GetVersion`](status-retrieval.md#getversion) | Get version information of SDK.|
    
       
-&nbsp; 
+ 
 
    
 ## Video
@@ -137,7 +137,7 @@ breadcrumbText: CBarcodeReader Methods
    | [`GetLengthOfFrameQueue`](video.md#getlengthofframequeue) | Get length of current inner frame queue. |
  
    
-&nbsp; 
+ 
 
 
 ## `CBarcodeReader` Protected Attribute
@@ -147,5 +147,5 @@ breadcrumbText: CBarcodeReader Methods
   | [`m_pBarcodeReader`]()  | |
   
    
-&nbsp; 
+ 
 

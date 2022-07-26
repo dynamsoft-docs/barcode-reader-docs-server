@@ -44,7 +44,7 @@ reader.initLicense("t0260NwAAAHV***************");
 reader.destroy();
 ```
 
-&nbsp;
+
 
 
 
@@ -72,7 +72,7 @@ reader.initLicenseFromServer("", "C087****");
 reader.destroy();
 ```
 
-&nbsp;
+
 
 
 
@@ -102,7 +102,7 @@ reader.initLicenseFromLicenseContent("t0260NwAAAHV***************", "C087****");
 reader.destroy();
 ```
 
-&nbsp;
+
 
 
 
@@ -135,6 +135,6 @@ reader.initLicenseFromLicenseContent("t0260NwAAAHV***************", "C087****");
 String licenseInfo = reader.outputLicenseToString();
 reader.destroy();
 ```
-&nbsp;
+
 
 

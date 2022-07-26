@@ -31,7 +31,6 @@ needGenerateH3Content: false
 
 {%- include release-notes/product-highlight-9.0.0.md -%}
 
-
 ### Changelog
 
 #### New

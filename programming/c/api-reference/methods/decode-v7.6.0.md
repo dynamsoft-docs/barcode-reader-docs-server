@@ -47,7 +47,7 @@ int errorCode = DBR_DecodeFile(barcodeReader, "C:\\Program Files (x86)\\Dynamsof
 DBR_DestroyInstance(barcodeReader);
 ```
 
-&nbsp;
+
 
 
 
@@ -81,7 +81,7 @@ int errorCode = DBR_DecodeFileInMemory(barcodeReader, pFileBytes, nFileSize, "")
 DBR_DestroyInstance(barcodeReader);
 ```
 
-&nbsp;
+
 
 
 
@@ -121,7 +121,7 @@ int errorCode = DBR_DecodeBuffer(barcodeReader, pBufferBytes, iWidth, iHeight, i
 DBR_DestroyInstance(barcodeReader);
 ```
 
-&nbsp;
+
 
 
 
@@ -155,7 +155,7 @@ int errorCode = DBR_DecodeBase64String(barcodeReader, strBase64String, "");
 DBR_DestroyInstance(barcodeReader);
 ```
 
-&nbsp;
+
 
 
 

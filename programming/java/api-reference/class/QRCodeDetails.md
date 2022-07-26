@@ -18,7 +18,7 @@ Stores the QRCode details.
 | [`moduleSize`](#modulesize) | *int* |
 | [`rows`](#rows) | *int* |
 | [`columns`](#columns) | *int* |
-| [`errorCorrectionLevel`](#errorcorrectionlevel) | [`EnumQRCodeErrorCorrectionLevel`]({{ site.enumerations }}other-enums.html#qrcodeerrorcorrectionlevel) |
+| [`errorCorrectionLevel`](#errorcorrectionlevel) | [`EnumQRCodeErrorCorrectionLevel`]({{ site.java_enumerations }}other-enums.html#qrcodeerrorcorrectionlevel) |
 | [`version`](#version) | *int* |
 | [`model`](#model) | *int* |
 | [`mode`](#mode) | *int* |

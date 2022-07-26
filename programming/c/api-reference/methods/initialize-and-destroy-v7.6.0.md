@@ -44,7 +44,7 @@ DBR_DestroyInstance(barcodeReader);
 ```
 
 
-&nbsp;
+
 
 
 

@@ -26,14 +26,14 @@ class DMDLSConnectionParameters
 | [`standby_server_url`](#standby_server_url) | *str* |
 | [`handshake_code`](#handshake_code) | *str* |
 | [`session_password`](#session_password) | *str* |
-| [`deployment_type`](#deployment_type) | [`EnumDMDeploymentType`]({{ site.enumerations }}other-enums.html#dm_deployment_type) |
-| [`charge_way`](#charge_way) | [`EnumDMChargeWay`]({{ site.enumerations }}other-enums.html#dm_chargeway) |
-| [`uuid_generation_method`](#uuid_generation_method) | [`EnumDMUUIDGenerationMethod`]({{ site.enumerations }}other-enums.html#dm_uuidgenerationmethod) |
+| [`deployment_type`](#deployment_type) | [`EnumDMDeploymentType`]({{ site.python_enumerations }}other-enums.html#dm_deployment_type) |
+| [`charge_way`](#charge_way) | [`EnumDMChargeWay`]({{ site.python_enumerations }}other-enums.html#dm_chargeway) |
+| [`uuid_generation_method`](#uuid_generation_method) | [`EnumDMUUIDGenerationMethod`]({{ site.python_enumerations }}other-enums.html#dm_uuidgenerationmethod) |
 | [`max_buffer_days`](#max_buffer_days) | *int* |
-| [`limited_license_modules`](#limited_license_modules) | [`List<EnumLicenseModule>`]({{ site.enumerations }}other-enums.html#dm_licensemodule) |
+| [`limited_license_modules`](#limited_license_modules) | [`List<EnumLicenseModule>`]({{ site.python_enumerations }}other-enums.html#dm_licensemodule) |
 | [`max_concurrent_instance_count`](#max_concurrent_instance_count) | *int* |
 | [`organization_id`](#organization_id) | *str* |
-| [`products`](#products) | [`EnumProduct`]({{ site.enumerations }}other-enums.html#product) |
+| [`products`](#products) | [`EnumProduct`]({{ site.python_enumerations }}other-enums.html#product) |
 
 
 ### main_server_url

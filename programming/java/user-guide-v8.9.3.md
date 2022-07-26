@@ -73,7 +73,7 @@ Let's start by creating a console application which demonstrates how to use the 
    reader.updateRuntimeSettings(runtimeSettings);
     ```
 
-    >The barcode formats to enable is highly application-specific. We recommend that you only enable the barcode formats your application requires. Check out [Barcode Format Enumeration]({{ site.enumerations }}format-enums.html) for full supported barcode formats. 
+    >The barcode formats to enable is highly application-specific. We recommend that you only enable the barcode formats your application requires. Check out [Barcode Format Enumeration]({{ site.java_enumerations }}format-enums.html) for full supported barcode formats. 
 
     >If you know exactly the barcode count you want to read, specify `expectedBarcodesCount` to speed up the process and improve the accuracy. 
 

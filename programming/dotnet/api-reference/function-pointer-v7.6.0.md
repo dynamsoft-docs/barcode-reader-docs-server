@@ -32,7 +32,7 @@ delegate void Dynamsoft.Barcode.CB_Error(int frameId, int errorCode, IntPtr pUse
 `[in, out] pUser` Arguments pass to your function.  
 
 
-&nbsp; 
+ 
 
 
 ## CB_IntermediateResult
@@ -48,7 +48,7 @@ delegate void Dynamsoft.Barcode.CB_IntermediateResult(int frameId, IntermediateR
 `[in, out] pUser` Arguments pass to your function.  
 
 
-&nbsp; 
+ 
 
 
 ## CB_TextResult

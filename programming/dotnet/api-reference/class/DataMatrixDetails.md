@@ -6,7 +6,6 @@ keywords: DataMatrixDetails, class, api reference, .Net
 needAutoGenerateSidebar: false
 ---
 
-
 # DataMatrixDetails
 Stores the DataMatrix details.
 

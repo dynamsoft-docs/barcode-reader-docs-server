@@ -69,7 +69,7 @@ reader.Dispose();
 ```
 
 
-&nbsp;
+
 
 
 ## GetModeArgument
@@ -123,7 +123,7 @@ reader.Dispose();
 ```
 
 
-&nbsp;
+
 
 
 ## GetRuntimeSettings
@@ -154,7 +154,7 @@ reader.Dispose();
 [`PublicRuntimeSettings`](../struct/PublicRuntimeSettings.md)
 
 
-&nbsp;
+
 
 
 ## UpdateRuntimeSettings
@@ -186,7 +186,7 @@ reader.Dispose();
 [`PublicRuntimeSettings`](../struct/PublicRuntimeSettings.md)
 
 
-&nbsp;
+
 
 
 ## ResetRuntimeSettings

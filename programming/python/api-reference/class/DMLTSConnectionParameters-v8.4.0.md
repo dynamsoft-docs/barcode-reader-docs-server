@@ -25,14 +25,14 @@ class DMLTSConnectionParameters
 | [`standby_server_url`](#standby_server_url) | *str* |
 | [`handshake_code`](#handshake_code) | *str* |
 | [`session_password`](#session_password) | *str* |
-| [`deployment_type`](#deployment_type) | [`EnumDMDeploymentType`]({{ site.enumerations }}other-enums.html#dm_deployment_type) |
-| [`charge_way`](#charge_way) | [`EnumDMChargeWay`]({{ site.enumerations }}other-enums.html#dm_chargeway) |
-| [`uuid_generation_method`](#uuid_generation_method) | [`EnumDMUUIDGenerationMethod`]({{ site.enumerations }}other-enums.html#dm_uuidgenerationmethod) |
+| [`deployment_type`](#deployment_type) | [`EnumDMDeploymentType`]({{ site.python_enumerations }}other-enums.html#dm_deployment_type) |
+| [`charge_way`](#charge_way) | [`EnumDMChargeWay`]({{ site.python_enumerations }}other-enums.html#dm_chargeway) |
+| [`uuid_generation_method`](#uuid_generation_method) | [`EnumDMUUIDGenerationMethod`]({{ site.python_enumerations }}other-enums.html#dm_uuidgenerationmethod) |
 | [`max_buffer_days`](#max_buffer_days) | *int* |
-| [`limited_license_modules`](#limited_license_modules) | [`List<EnumLicenseModule>`]({{ site.enumerations }}other-enums.html#dm_licensemodule) |
+| [`limited_license_modules`](#limited_license_modules) | [`List<EnumLicenseModule>`]({{ site.python_enumerations }}other-enums.html#dm_licensemodule) |
 | [`max_concurrent_instance_count`](#max_concurrent_instance_count) | *int* |
 | [`organization_id`](#organization_id) | *str* |
-| [`products`](#products) | [`EnumProduct`]({{ site.enumerations }}other-enums.html#product) |
+| [`products`](#products) | [`EnumProduct`]({{ site.python_enumerations }}other-enums.html#product) |
 
 
 ### main_server_url
@@ -93,13 +93,13 @@ Sets the deployment type.
 DMLTSConnectionParameters.deployment_type
 ```
 - **Value range**   
-    A value of [`EnumDMDeploymentType`]({{ site.enumerations }}other-enums.html#dm_deployment_type) Enumeration items.
+    A value of [`EnumDMDeploymentType`]({{ site.python_enumerations }}other-enums.html#dm_deployment_type) Enumeration items.
       
 - **Default value**   
     `DM_DT_DESKTOP`
     
 - **See also**  
-    [`EnumDMDeploymentType`]({{ site.enumerations }}other-enums.html#dm_deployment_type)
+    [`EnumDMDeploymentType`]({{ site.python_enumerations }}other-enums.html#dm_deployment_type)
       
 
 ### charge_way
@@ -108,13 +108,13 @@ Sets the charge way.
 DMLTSConnectionParameters.charge_way
 ```
 - **Value range**   
-    A value of [`EnumDMChargeWay`]({{ site.enumerations }}other-enums.html#dm_chargeway) Enumeration items.
+    A value of [`EnumDMChargeWay`]({{ site.python_enumerations }}other-enums.html#dm_chargeway) Enumeration items.
       
 - **Default value**   
     `DM_CW_AUTO`
     
 - **See also**  
-    [`EnumDMChargeWay`]({{ site.enumerations }}other-enums.html#dm_chargeway)
+    [`EnumDMChargeWay`]({{ site.python_enumerations }}other-enums.html#dm_chargeway)
       
 
 ### uuid_generation_method
@@ -123,13 +123,13 @@ Sets the method to generate UUID.
 DMLTSConnectionParameters.uuid_generation_method
 ```
 - **Value range**   
-    A value of [`EnumDMUUIDGenerationMethod`]({{ site.enumerations }}other-enums.html#dm_uuidgenerationmethod) Enumeration items.
+    A value of [`EnumDMUUIDGenerationMethod`]({{ site.python_enumerations }}other-enums.html#dm_uuidgenerationmethod) Enumeration items.
       
 - **Default value**   
     `DM_UUIDGM_RANDOM`
     
 - **See also**  
-    [`EnumDMUUIDGenerationMethod`]({{ site.enumerations }}other-enums.html#dm_uuidgenerationmethod)
+    [`EnumDMUUIDGenerationMethod`]({{ site.python_enumerations }}other-enums.html#dm_uuidgenerationmethod)
       
 
 ### max_buffer_days
@@ -149,13 +149,13 @@ Sets the license modules to use.
 DMLTSConnectionParameters.limited_license_modules
 ```
 - **Value range**   
-    Each list item can be any one of the [`EnumLicenseModule`]({{ site.enumerations }}other-enums.html#dm_licensemodule) Enumeration items.
+    Each list item can be any one of the [`EnumLicenseModule`]({{ site.python_enumerations }}other-enums.html#dm_licensemodule) Enumeration items.
       
 - **Default value**   
     None
     
 - **See also**  
-    [`EnumLicenseModule`]({{ site.enumerations }}other-enums.html#dm_licensemodule)
+    [`EnumLicenseModule`]({{ site.python_enumerations }}other-enums.html#dm_licensemodule)
       
 
 ### max_concurrent_instance_count
@@ -192,7 +192,7 @@ Sets the products to get the license for. Product values can be combined.
 DMLTSConnectionParameters.products
 ```
 - **Value range**   
-    A combined value of [`EnumProduct`]({{ site.enumerations }}other-enums.html#product) Enumeration items
+    A combined value of [`EnumProduct`]({{ site.python_enumerations }}other-enums.html#product) Enumeration items
       
 - **Default value**   
     `PROD_ALL`

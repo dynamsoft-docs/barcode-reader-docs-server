@@ -47,7 +47,7 @@ Sets the phase to stop the barcode reading algorithm.
 int com.dynamsoft.dbr.PublicRuntimeSettings.terminatePhase
 ```
 **Value Range**     
-    Any one of the [`EnumTerminatePhase`]({{ site.enumerations }}parameter-mode-enums.html#terminatephase) Enumeration items
+    Any one of the [`EnumTerminatePhase`]({{ site.java_enumerations }}parameter-mode-enums.html#terminatephase) Enumeration items
       
 **Default Value**     
     `TP_BARCODE_RECOGNIZED`
@@ -56,7 +56,7 @@ int com.dynamsoft.dbr.PublicRuntimeSettings.terminatePhase
     When the recognition result is not desired, you can set this parameter can be set to skip certain processing stages.
     
 **See Also**      
-    [`EnumTerminatePhase`]({{ site.enumerations }}parameter-mode-enums.html#terminatephase)
+    [`EnumTerminatePhase`]({{ site.java_enumerations }}parameter-mode-enums.html#terminatephase)
       
 
 ### timeout
@@ -108,16 +108,16 @@ Sets the formats of the barcode in BarcodeFormat group 1 to be read. Barcode for
 int com.dynamsoft.dbr.PublicRuntimeSettings.barcodeFormatIds
 ```
 **Value Range**     
-    A combined value of [`EnumBarcodeFormat`]({{ site.enumerations }}format-enums.html#barcodeformat) Enumeration items
+    A combined value of [`EnumBarcodeFormat`]({{ site.java_enumerations }}format-enums.html#barcodeformat) Enumeration items
       
 **Default Value**     
     `BF_ALL`
     
 **Remarks**       
-    If the barcode type(s) are certain, specifying the barcode type(s) to be read will speed up the recognition process. The barcode format our library will search for is composed of [BarcodeFormat group 1]({{ site.enumerations }}format-enums.html#barcodeformat) and [BarcodeFormat group 2]({{ site.enumerations }}format-enums.html#barcodeformat_2), so you need to specify the barcode format in group 1 and group 2 individually.
+    If the barcode type(s) are certain, specifying the barcode type(s) to be read will speed up the recognition process. The barcode format our library will search for is composed of [BarcodeFormat group 1]({{ site.java_enumerations }}format-enums.html#barcodeformat) and [BarcodeFormat group 2]({{ site.java_enumerations }}format-enums.html#barcodeformat_2), so you need to specify the barcode format in group 1 and group 2 individually.
     
 **See Also**      
-    [`EnumBarcodeFormat`]({{ site.enumerations }}format-enums.html#barcodeformat), [`EnumBarcodeFormat_2`]({{ site.enumerations }}format-enums.html#barcodeformat_2)
+    [`EnumBarcodeFormat`]({{ site.java_enumerations }}format-enums.html#barcodeformat), [`EnumBarcodeFormat_2`]({{ site.java_enumerations }}format-enums.html#barcodeformat_2)
       
 ### barcodeFormatIds_2
 Sets the formats of the barcode in BarcodeFormat group 2 to be read. Barcode formats in BarcodeFormat group 2 can be combined.
@@ -125,16 +125,16 @@ Sets the formats of the barcode in BarcodeFormat group 2 to be read. Barcode for
 int com.dynamsoft.dbr.PublicRuntimeSettings.barcodeFormatIds_2
 ```
 **Value Range**     
-    A combined value of [`EnumBarcodeFormat_2`]({{ site.enumerations }}format-enums.html#barcodeformat_2) Enumeration items
+    A combined value of [`EnumBarcodeFormat_2`]({{ site.java_enumerations }}format-enums.html#barcodeformat_2) Enumeration items
       
 **Default Value**     
     `BF2_NULL`
     
 **Remarks**       
-    If the barcode type(s) are certain, specifying the barcode type(s) to be read will speed up the recognition process. The barcode format our library will search for is composed of [BarcodeFormat group 1]({{ site.enumerations }}format-enums.html#barcodeformat) and [BarcodeFormat group 2]({{ site.enumerations }}format-enums.html#barcodeformat_2), so you need to specify the barcode format in group 1 and group 2 individually.
+    If the barcode type(s) are certain, specifying the barcode type(s) to be read will speed up the recognition process. The barcode format our library will search for is composed of [BarcodeFormat group 1]({{ site.java_enumerations }}format-enums.html#barcodeformat) and [BarcodeFormat group 2]({{ site.java_enumerations }}format-enums.html#barcodeformat_2), so you need to specify the barcode format in group 1 and group 2 individually.
     
 **See Also**      
-    [`EnumBarcodeFormat`]({{ site.enumerations }}format-enums.html#barcodeformat), [`EnumBarcodeFormat_2`]({{ site.enumerations }}format-enums.html#barcodeformat_2)
+    [`EnumBarcodeFormat`]({{ site.java_enumerations }}format-enums.html#barcodeformat), [`EnumBarcodeFormat_2`]({{ site.java_enumerations }}format-enums.html#barcodeformat_2)
 
 ### pdfRasterDPI
 Sets the output image resolution.
@@ -170,7 +170,7 @@ Sets the mode and priority for binarization.
 int[] com.dynamsoft.dbr.PublicRuntimeSettings.binarizationModes
 ```
 **Value Range**     
-    Each array item can be any one of the [`EnumBinarizationMode`]({{ site.enumerations }}parameter-mode-enums.html#binarizationmode) Enumeration items.
+    Each array item can be any one of the [`EnumBinarizationMode`]({{ site.java_enumerations }}parameter-mode-enums.html#binarizationmode) Enumeration items.
       
 **Default Value**     
     `[BM_LOCAL_BLOCK,BM_SKIP,BM_SKIP,BM_SKIP,BM_SKIP,BM_SKIP,BM_SKIP,BM_SKIP]`
@@ -179,7 +179,7 @@ int[] com.dynamsoft.dbr.PublicRuntimeSettings.binarizationModes
     The array index represents the priority of the item. The smaller index is, the higher priority is.
     
 **See Also**       
-    [`EnumBinarizationMode`]({{ site.enumerations }}parameter-mode-enums.html#binarizationmode)
+    [`EnumBinarizationMode`]({{ site.java_enumerations }}parameter-mode-enums.html#binarizationmode)
 
 
 ### localizationModes
@@ -188,7 +188,7 @@ Sets the mode and priority for localization algorithms.
 int[] com.dynamsoft.dbr.PublicRuntimeSettings.localizationModes
 ```
 **Value Range**     
-    Each array item can be any one of the [`EnumLocalizationMode`]({{ site.enumerations }}parameter-mode-enums.html#localizationmode) Enumeration items.
+    Each array item can be any one of the [`EnumLocalizationMode`]({{ site.java_enumerations }}parameter-mode-enums.html#localizationmode) Enumeration items.
       
 **Default Value**     
     `[LM_CONNECTED_BLOCKS, LM_SCAN_DIRECTLY, LM_STATISTICS, LM_LINES, LM_SKIP, LM_SKIP, LM_SKIP, LM_SKIP]`
@@ -197,7 +197,7 @@ int[] com.dynamsoft.dbr.PublicRuntimeSettings.localizationModes
     The array index represents the priority of the item. The smaller index is, the higher priority is.
     
 **See Also**       
-    [`EnumLocalizationMode`]({{ site.enumerations }}parameter-mode-enums.html#localizationmode)  
+    [`EnumLocalizationMode`]({{ site.java_enumerations }}parameter-mode-enums.html#localizationmode)  
 
 
 ### furtherModes
@@ -226,13 +226,13 @@ Sets which types of intermediate result to be kept for further reference. Interm
 int com.dynamsoft.dbr.PublicRuntimeSettings.intermediateResultTypes
 ```
 **Value Range**     
-    A combined value of [`EnumIntermediateResultType`]({{ site.enumerations }}result-enums.html#intermediateresulttype) Enumeration items
+    A combined value of [`EnumIntermediateResultType`]({{ site.java_enumerations }}result-enums.html#intermediateresulttype) Enumeration items
       
 **Default Value**     
     0
     
 **See Also**       
-    [`EnumIntermediateResultType`]({{ site.enumerations }}result-enums.html#intermediateresulttype)
+    [`EnumIntermediateResultType`]({{ site.java_enumerations }}result-enums.html#intermediateresulttype)
 
 ### intermediateResultSavingMode
 Sets the mode for saving intermediate result.
@@ -240,13 +240,13 @@ Sets the mode for saving intermediate result.
 int com.dynamsoft.dbr.PublicRuntimeSettings.intermediateResultSavingMode
 ```
 **Value Range**     
-    A value of [`EnumIntermediateResultSavingMode`]({{ site.enumerations }}result-enums.html#intermediateresultsavingmode) Enumeration items
+    A value of [`EnumIntermediateResultSavingMode`]({{ site.java_enumerations }}result-enums.html#intermediateresultsavingmode) Enumeration items
       
 **Default Value**     
     IRSM_MEMORY
     
 **See Also**       
-    [`EnumIntermediateResultSavingMode`]({{ site.enumerations }}result-enums.html#intermediateresultsavingmode)
+    [`EnumIntermediateResultSavingMode`]({{ site.java_enumerations }}result-enums.html#intermediateresultsavingmode)
 
 ### resultCoordinateType
 Specifies the format for the coordinates returned.
@@ -254,13 +254,13 @@ Specifies the format for the coordinates returned.
 int com.dynamsoft.dbr.PublicRuntimeSettings.resultCoordinateType
 ```
 **Value Range**     
-    Any one of the [`EnumResultCoordinateType`]({{ site.enumerations }}result-enums.html#resultcoordinatetype) Enumeration items
+    Any one of the [`EnumResultCoordinateType`]({{ site.java_enumerations }}result-enums.html#resultcoordinatetype) Enumeration items
       
 **Default Value**     
     RCT_PIXEL
     
 **See Also**       
-    [`EnumResultCoordinateType`]({{ site.enumerations }}result-enums.html#resultcoordinatetype)
+    [`EnumResultCoordinateType`]({{ site.java_enumerations }}result-enums.html#resultcoordinatetype)
 
 
 ### textResultOrderModes
@@ -269,7 +269,7 @@ Sets the mode and priority for the order of the text results returned.
 int[] com.dynamsoft.dbr.PublicRuntimeSettings.textResultOrderModes
 ```
 **Value Range**     
-    Each array item can be any one of the [`EnumTextResultOrderMode`]({{ site.enumerations }}result-enums.html#textresultordermode) Enumeration items.
+    Each array item can be any one of the [`EnumTextResultOrderMode`]({{ site.java_enumerations }}result-enums.html#textresultordermode) Enumeration items.
       
 **Default Value**     
     `[TROM_CONFIDENCE, TROM_POSITION, TROM_FORMAT, TROM_SKIP, TROM_SKIP, TROM_SKIP, TROM_SKIP, TROM_SKIP]`
@@ -278,7 +278,7 @@ int[] com.dynamsoft.dbr.PublicRuntimeSettings.textResultOrderModes
     The array index represents the priority of the item. The smaller the index, the higher the priority.   
  
 **See Also**        
-    [`EnumTextResultOrderMode`]({{ site.enumerations }}result-enums.html#textresultordermode)
+    [`EnumTextResultOrderMode`]({{ site.java_enumerations }}result-enums.html#textresultordermode)
 
 ### returnBarcodeZoneClarity
 Sets whether or not to return the clarity of the barcode zone.
@@ -334,7 +334,7 @@ Sets the mode and priority to control the sampling methods of scale-up for linea
 int[] com.dynamsoft.dbr.PublicRuntimeSettings.scaleUpModes[]
 ```
 **Value Range**     
-    Each array item can be any one of the [`EnumScaleUpMode`]({{ site.enumerations }}parameter-mode-enums.html#scaleupmode) Enumeration items.
+    Each array item can be any one of the [`EnumScaleUpMode`]({{ site.java_enumerations }}parameter-mode-enums.html#scaleupmode) Enumeration items.
       
 **Default Value**     
     `[SUM_AUTO, SUM_SKIP, SUM_SKIP, SUM_SKIP, SUM_SKIP, SUM_SKIP, SUM_SKIP, SUM_SKIP]`
@@ -343,7 +343,7 @@ int[] com.dynamsoft.dbr.PublicRuntimeSettings.scaleUpModes[]
     The array index represents the priority of the item. The smaller the index, the higher the priority.   
  
 **See Also**        
-    [`EnumScaleUpMode`]({{ site.enumerations }}parameter-mode-enums.html#scaleupmode)
+    [`EnumScaleUpMode`]({{ site.java_enumerations }}parameter-mode-enums.html#scaleupmode)
 
 
 ### pdfReadingMode
@@ -352,13 +352,13 @@ Sets the way to detect barcodes from a PDF file when using the DecodeFile method
 int com.dynamsoft.dbr.PublicRuntimeSettings.pdfReadingMode
 ```
 **Value Range**     
-    Any one of the [`EnumPDFReadingMode`]({{ site.enumerations }}parameter-mode-enums.html#pdfreadingmode) Enumeration items. 
+    Any one of the [`EnumPDFReadingMode`]({{ site.java_enumerations }}parameter-mode-enums.html#pdfreadingmode) Enumeration items. 
       
 **Default Value**     
     `PDFRM_AUTO`  
  
 **See Also**        
-    [`EnumPDFReadingMode`]({{ site.enumerations }}parameter-mode-enums.html#pdfreadingmode) 
+    [`EnumPDFReadingMode`]({{ site.java_enumerations }}parameter-mode-enums.html#pdfreadingmode) 
 
 
 ### deblurModes
@@ -367,7 +367,7 @@ Sets the mode and priority for deblurring.
 int[] com.dynamsoft.dbr.PublicRuntimeSettings.deblurModes
 ```
 **Value Range**     
-    Each array item can be any one of the [`EnumDeblurMode`]({{ site.enumerations }}parameter-mode-enums.html#deblurmode) Enumeration items.
+    Each array item can be any one of the [`EnumDeblurMode`]({{ site.java_enumerations }}parameter-mode-enums.html#deblurmode) Enumeration items.
       
 **Default Value**     
     `[DM_SKIP, DM_SKIP, DM_SKIP, DM_SKIP, DM_SKIP, DM_SKIP, DM_SKIP, DM_SKIP, DM_SKIP, DM_SKIP]`
@@ -376,7 +376,7 @@ int[] com.dynamsoft.dbr.PublicRuntimeSettings.deblurModes
     The array index represents the priority of the item. The smaller index is, the higher priority is.
     
 **See Also**       
-    [`EnumDeblurMode`]({{ site.enumerations }}parameter-mode-enums.html#deblurmode)
+    [`EnumDeblurMode`]({{ site.java_enumerations }}parameter-mode-enums.html#deblurmode)
 
 
 ### barcodeZoneMinDistanceToImageBorders

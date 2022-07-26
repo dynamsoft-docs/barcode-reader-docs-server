@@ -84,7 +84,7 @@ DBR provides multiple APIs for you to customize the barcode scanning behavior. H
    reader.update_runtime_settings(settings)
    ```
 
-> For better performance, we recommend that you only enable the barcode formats your application requires. Check out [Barcode Format Enumeration]({{ site.enumerations }}format-enums.html) for fully supported barcode formats. 
+> For better performance, we recommend that you only enable the barcode formats your application requires. Check out [Barcode Format Enumeration]({{ site.python_enumerations }}format-enums.html) for fully supported barcode formats. 
 
 > If you know exactly the count of barcodes you want to read, specify `excepted_barcodes_count` to speed up the process and improve the accuracy. 
 

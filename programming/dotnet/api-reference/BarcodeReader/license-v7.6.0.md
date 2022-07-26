@@ -33,7 +33,7 @@ int Dynamsoft.Barcode.BarcodeReader.InitLicenseFromServer(string licenseServer, 
 Returns error code.
 
 
-&nbsp;
+
 
 
 ## InitLicenseFromLicenseContent
@@ -52,7 +52,7 @@ int Dynamsoft.Barcode.BarcodeReader.InitLicenseFromLicenseContent(string license
 Returns error code.
 
 
-&nbsp;
+
 
 
 ## OutputLicenseToString

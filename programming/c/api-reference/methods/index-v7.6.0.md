@@ -17,7 +17,7 @@ breadcrumbText: Methods
   | [`DBR_DestroyInstance`](initialize-and-destroy.md#dbr_destroyinstance) | Destroy the instance of Dynamsoft Barcode Reader. |
 
 
-&nbsp; 
+ 
 
 
 ## Decode
@@ -31,7 +31,7 @@ breadcrumbText: Methods
   | [`DBR_DecodeDIB`](decode.md#dbr_decodedib) | Decode barcode from a handle of device-independent bitmap (DIB). | 
 
 
-&nbsp; 
+ 
 
 
 ## Parameter and Runtime Settings
@@ -62,7 +62,7 @@ breadcrumbText: Methods
   | [`DBR_FreeSettingsString`](parameter-and-runtime-settings-advanced.md#dbr_freesettingsstring) | Free memory allocated for runtime settings string. |
 
 
-&nbsp; 
+ 
 
 
 ## License
@@ -76,7 +76,7 @@ breadcrumbText: Methods
   | [`DBR_OutputLicenseToStringPtr`](license.md#dbr_outputlicensetostringptr) | Output the license content to a string from the license server. |
   | [`DBR_FreeLicenseString`](license.md#dbr_freelicensestring) | Free memory allocated for the license string. |
 
-&nbsp; 
+ 
 
 
 ## Result
@@ -89,7 +89,7 @@ breadcrumbText: Methods
   | [`DBR_FreeIntermediateResults`](result.md#dbr_freeintermediateresults) | Free memory allocated for the intermediate results. |
 
 
-&nbsp; 
+ 
 
 
 ## Status Retrieval
@@ -100,7 +100,7 @@ breadcrumbText: Methods
   | [`DBR_GetVersion`](status-retrieval.md#dbr_getversion) | Get version information of SDK. |
 
 
-&nbsp; 
+ 
 
 
 ## Video
@@ -134,4 +134,4 @@ breadcrumbText: Methods
   | [`DBR_GetLengthOfFrameQueue`](video.md#dbr_getlengthofframequeue) | Get length of current inner frame queue. |
   
 
-&nbsp; 
+ 

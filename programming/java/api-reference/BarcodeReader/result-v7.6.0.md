@@ -45,5 +45,5 @@ IntermediateResult[] irtResult = reader.getIntermediateResults();
 reader.destroy();
 ```
 
-&nbsp;
+
 

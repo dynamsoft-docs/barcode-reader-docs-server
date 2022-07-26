@@ -50,7 +50,7 @@ if(iLicMsg != 0)
 _br.Dispose();
 ```
 
-&nbsp;
+
 
 
 ## InitLicenseFromLicenseContent
@@ -86,7 +86,7 @@ _br.Dispose();
 ```
 
 
-&nbsp;
+
 
 
 ## OutputLicenseToString
@@ -135,7 +135,7 @@ else{
 //....
 ```
 
-&nbsp;
+
 
 
 ## InitLTSConnectionParameters
@@ -155,7 +155,7 @@ string errorMsg;
 readr.InitLicenseFromLts(ltsInfo, out errorMsg);
 ```
 
-&nbsp;
+
 
 
 ## InitLicenseFromLTS
@@ -182,5 +182,5 @@ string errorMsg;
 readr.InitLicenseFromLts(ltsInfo, out errorMsg);
 ```
 
-&nbsp;
+
 

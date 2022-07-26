@@ -43,7 +43,7 @@ const char* errorString = CBarcodeReader::GetErrorString(errorCode);
 delete reader;
 ```
 
-&nbsp;
+
 
 
 

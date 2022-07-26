@@ -17,7 +17,7 @@ needGenerateH3Content: true
    - Linux x64: Ubuntu 14.04.4+ LTS, Debian 8+, etc;   
    
 
-&nbsp; 
+ 
 
 
 ## Installation
@@ -26,7 +26,7 @@ To install Dynamsoft Barcode Reader Windows Edition on your development machine,
 After installation, you can find samples for supported platforms in the **Samples** folder under the installation folder.  
 
 
-&nbsp; 
+ 
 
 
 ## Getting Started: HelloWorld
@@ -103,7 +103,7 @@ After installation, you can find samples for supported platforms in the **Sample
 To deploy your application, make sure the DLLs are in the same folder as the EXE file. See the [Distribution](#distribution) section for more details.   
 
 
-&nbsp; 
+ 
 
 
 ## Decoding Methods
@@ -119,7 +119,7 @@ current page.
 You can find more samples in more programming languages at [Code Gallery](https://www.dynamsoft.com/Downloads/Dynamic-Barcode-Reader-Sample-Download.aspx).
 
 
-&nbsp; 
+ 
 
 
 ## Barcode Reading Settings
@@ -324,6 +324,6 @@ Below is a template for your reference. To learn more about the APIs, you can ch
 ```
 
 
-&nbsp; 
+ 
 
 
