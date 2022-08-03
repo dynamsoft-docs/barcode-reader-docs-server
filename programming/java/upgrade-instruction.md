@@ -7,7 +7,7 @@ needAutoGenerateSidebar: false
 ---
 
 
-# How-to Guides - Upgrade to Latest Version     
+# How to Upgrade to Latest Version     
 
 ## From version 8.x
 
