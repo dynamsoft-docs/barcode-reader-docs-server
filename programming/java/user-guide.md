@@ -9,7 +9,7 @@ noTitleIndex: true
 ---
 
 
-# User Guide for Java SDK
+# Getting Started with Java
 In this guide, you will learn step by step on how to build a barcode reading application with Dynamsoft Barcode Reader SDK using Java.
 
 ## Requirements
@@ -131,9 +131,12 @@ Please change all `[INSTALLATION FOLDER]` in above code snippet to your unpackin
 
 >You can download the entire source code and compiled program from [Here](https://download2.dynamsoft.com/samples/dbr/user-guide/dbr-java-sample.zip).
 
-## Related Articles
-- [How to select the appropriate DBR parameter configuration]({{ site.scenario_settings }})
-- [How to upgrade to latest version](upgrade-instruction.md)
+## Next Steps
+
+- Learn [How to Upgrade to Latest Version](upgrade-instruction.md)
+- [Explore SDK Features](user-guide/explore-features/index.md)
+- See how the SDK works in [Popular Use Cases](user-guide/use-cases/index.md)
+- Check out the [Official Samples and Demo](samples/index.md)
 
 
    

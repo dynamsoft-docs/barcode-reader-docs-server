@@ -8,7 +8,7 @@ needGenerateH3Content: true
 noTitleIndex: true
 ---
 
-# User Guide for Python
+# Getting Started with Python
 
 In this guide, you will learn step by step on how to build a barcode reading application with Dynamsoft Barcode Reader (DBR) SDK using Python.
 
@@ -136,7 +136,9 @@ python DBRPythonSample.py
 
 > <a href="https://github.com/Dynamsoft/barcode-reader-python-samples" target="_blank">Find more Dynamsoft Barcode Reader Python samples in the Github repository</a>.
 
-## Related Articles
+## Next Steps
 
-- [How to select the appropriate DBR parameter configuration]({{ site.scenario_settings }})
-- [How to upgrade to latest version](upgrade-instruction.md)
+- Learn [How to Upgrade to Latest Version](upgrade-instruction.md)
+- [Explore SDK Features](user-guide/explore-features/index.md)
+- See how the SDK works in [Popular Use Cases](user-guide/use-cases/index.md)
+- Check out the [Official Samples and Demo](samples/index.md)
