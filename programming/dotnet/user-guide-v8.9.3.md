@@ -135,6 +135,6 @@ Please change all `[INSTALLATION FOLDER]` in above code snippet to your unpackin
 >You can download the entire source code and compiled program from [Here](https://download2.dynamsoft.com/samples/dbr/user-guide/dbr-csharp-sample.zip).
 
 ## Related Articles
-- [How to select the appropriate DBR parameter configuration]({{ site.scenario_settings }})
+
 - [How to upgrade to latest version](upgrade-instruction.md)
 
