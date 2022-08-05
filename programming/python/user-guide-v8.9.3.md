@@ -135,5 +135,4 @@ python DBRPythonSample.py
 
 ## Related Articles
 
-- [How to select the appropriate DBR parameter configuration]({{ site.scenario_settings }})
 - [How to upgrade to latest version](upgrade-instruction.md)
