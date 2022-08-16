@@ -49,6 +49,9 @@ dwt_icon: /barcode-reader/docs/server/assets/img-icon/icon-dwt.svg
 dnt_icon: /barcode-reader/docs/server/assets/img-icon/icon-dnt.svg
 
 camera: /camera-enhancer/docs/introduction/
+features: /barcode-reader/docs/core/programming/features/
+usecases: /barcode-reader/docs/core/programming/usecases/
+parameters_reference: /barcode-reader/docs/core/parameters/reference/
 
 baseurl: "/barcode-reader/docs/server"
 plugins:
