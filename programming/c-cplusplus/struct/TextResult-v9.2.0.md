@@ -47,9 +47,7 @@ BarcodeFormat tagTextResult::barcodeFormat
 ```
 
 ### barcodeFormatString
-
-Barcode type as string.
-
+Barcode type in BarcodeFormat group 1 as string.
 ```cpp
 const char* tagTextResult::barcodeFormatString
 ```
@@ -61,9 +59,7 @@ BarcodeFormat_2 tagTextResult::barcodeFormat_2
 ```
 
 ### barcodeFormatString_2
-
-`Deprecated`. Use [barcodeFormatString](#barcodeformatstring) instead.
-
+Barcode type in BarcodeFormat group 2 as string.
 ```cpp
 const char* tagTextResult::barcodeFormatString_2
 ```

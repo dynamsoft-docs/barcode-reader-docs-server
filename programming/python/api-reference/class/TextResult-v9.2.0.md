@@ -41,7 +41,7 @@ TextResult.barcode_format
 ```
 
 ### barcode_format_string
-Barcode type as string.
+Barcode type in BarcodeFormat group 1 as string.
 
 ```python
 TextResult.barcode_format_string
@@ -55,7 +55,7 @@ TextResult.barcode_format_2
 ```
 
 ### barcode_format_string_2
-`Deprecated`. Use [barcode_format_string](#barcode_format_string) instead.
+Barcode type in BarcodeFormat group 2 as string.
 
 ```python
 TextResult.barcode_format_string_2

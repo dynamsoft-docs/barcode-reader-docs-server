@@ -42,8 +42,7 @@ EnumBarcodeFormat Dynamsoft.DBR.TextResult.BarcodeFormat
 ```
 
 ### BarcodeFormatString
-
-Barcode type as string.
+Barcode type in BarcodeFormat group 1 as string.
 
 ```csharp
 string Dynamsoft.DBR.TextResult.BarcodeFormatString
@@ -57,8 +56,7 @@ EnumBarcodeFormat_2 Dynamsoft.DBR.TextResult.BarcodeFormat_2
 ```
 
 ### BarcodeFormatString_2
-
-`Deprecated`. Use [BarcodeFormatString](#barcodeformatstring) instead.
+Barcode type in BarcodeFormat group 2 as string.
 
 ```csharp
 string Dynamsoft.DBR.TextResult.BarcodeFormatString_2

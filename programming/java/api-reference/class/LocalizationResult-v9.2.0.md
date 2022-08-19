@@ -44,7 +44,7 @@ int com.dynamsoft.dbr.LocalizationResult.barcodeFormat
 ```
 
 ### barcodeFormatString
-Barcode type as string.
+Barcode type in BarcodeFormat group 1 as string.
 ```java
 String com.dynamsoft.dbr.LocalizationResult.barcodeFormatString
 ```
@@ -56,7 +56,7 @@ int com.dynamsoft.dbr.LocalizationResult.barcodeFormat_2
 ```
 
 ### barcodeFormatString_2
-`Deprecated`. Use [barcodeFormatString](#barcodeformatstring) instead.
+Barcode type in BarcodeFormat group 2 as string.
 ```java
 String com.dynamsoft.dbr.LocalizationResult.barcodeFormatString_2
 ```
