@@ -8,6 +8,29 @@ needGenerateH3Content: false
 
 # Release Notes for C++ SDK - 9.x
 
+## 9.4.0 (08/25/2022)
+
+### Highlights
+
+{%- include release-notes/product-highlight-9.4.0.md -%}
+
+### Changelog
+
+#### New
+
+- Added an argument [`IsOneDStacked`]({{site.parameters_reference}}localization-modes.html#isonedstacked) to `LM_SCAN_DIRECTLY` to process stacked OneD barcodes.
+- Added a parameter [`PatchCodeSearchingMargins`]({{site.parameters_reference}}patchcode-searching-margins.html) to specify the searching area of PatchCode.
+- Added the supported data format of `FormatSpecification.PartitionModes`.
+
+#### Improved
+
+- Improved the localization mode `LM_LINES` to better support skewed and perspective OneD barcodes.
+- Enhanced tamper resistance of the license keys.
+
+#### Deprecated
+
+- Deprecated `barcodeFormatString_2` in [`TextResult`]({{site.structs}}TextResult.html?src=cpp#barcodeformatstring_2), [`ExtendedResult`]({{site.structs}}ExtendedResult.html?src=cpp#barcodeformatstring_2) and [`LocalizationResult`]({{site.structs}}LocalizationResult.html?src=cpp#barcodeformatstring_2). Users can get all the barcode format strings from `barcodeFormatString`.
+
 ## 9.2.0 (06/07/2022)
 
 ### Highlights
