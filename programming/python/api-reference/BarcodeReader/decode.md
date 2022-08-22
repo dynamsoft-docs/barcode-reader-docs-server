@@ -124,7 +124,7 @@ BarcodeReader.decode_file_stream(file_stream, template_name="")
 
 **Parameters**  
 
-- `[in]	file_stream` <*bytearray*>  : The image file bytes in memory.  
+- `[in]	file_stream` <*bytes or bytearray*>  : The image file bytes in memory.  
 - `[in] templateName` <*optional*><*str*>: The template name.
 
 **Return Value**  
