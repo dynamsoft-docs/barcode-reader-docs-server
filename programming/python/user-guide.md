@@ -31,6 +31,7 @@ In this guide, you will learn step by step on how to build a barcode reading app
 
 <sup>1</sup> On AWS Lambda, DBR Python can only be used with a license 1.0 key. License 2.0 keys and above are currently not supported by DBR Python on AWS Lambda.
 
+<iframe width="400" height="225" src="https://www.youtube.com/embed/6uPP3siJJlU" title="How to Use Dynamsoft Barcode Reader Python SDK | Dynamsoft Tutorial" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Installation
 
