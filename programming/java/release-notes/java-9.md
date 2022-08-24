@@ -20,7 +20,7 @@ needGenerateH3Content: false
 
 - Added an argument [`IsOneDStacked`]({{site.parameters_reference}}localization-modes.html#isonedstacked) to `LM_SCAN_DIRECTLY` to process stacked OneD barcodes.
 - Added a parameter [`PatchCodeSearchingMargins`]({{site.parameters_reference}}patchcode-searching-margins.html) to specify the searching area of PatchCode.
-- Added the supported data format of `FormatSpecification.PartitionModes`.
+- Added the supported data format of [`FormatSpecification.PartitionModes`]({{site.parameters_reference}}partition-modes.html) to enhance the readability of the parameters. Users can use a list of enumeration names to specify the `PartitionModes`.
 
 #### Improved
 
@@ -29,7 +29,7 @@ needGenerateH3Content: false
 
 #### Deprecated
 
-- Deprecated `barcodeFormatString_2` in [`TextResult`]({{site.java_class}}TextResult.html#barcodeformatstring_2), [`ExtendedResult`]({{site.java_class}}ExtendedResult.html#barcodeformatstring_2) and [`LocalizationResult`]({{site.java_class}}LocalizationResult.html#barcodeformatstring_2). Users can get all the barcode format strings from `barcodeFormatString`.
+- Deprecated the attribute `barcodeFormatString_2` of [`TextResult`]({{site.java_class}}TextResult.html#barcodeformatstring_2), [`ExtendedResult`]({{site.java_class}}ExtendedResult.html#barcodeformatstring_2) and [`LocalizationResult`]({{site.java_class}}LocalizationResult.html#barcodeformatstring_2). All the barcode format strings will be returned by the attribute `barcodeFormatString`.
 
 ## 9.2.0 (06/07/2022)
 

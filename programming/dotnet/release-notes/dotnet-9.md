@@ -29,7 +29,8 @@ needGenerateH3Content: false
 
 #### Deprecated
 
-- Deprecated `BarcodeFormatString_2` in [`TextResult`]({{site.dotnet_class}}TextResult.html#barcodeformatstring_2), [`ExtendedResult`]({{site.dotnet_class}}ExtendedResult.html#barcodeformatstring_2) and [`LocalizationResult`]({{site.dotnet_class}}LocalizationResult.html#barcodeformatstring_2). Users can get all the barcode format strings from `BarcodeFormatString`.
+- Deprecated the attribute `BarcodeFormatString_2` of [`TextResult`]({{site.dotnet_class}}TextResult.html#barcodeformatstring_2), [`ExtendedResult`]({{site.dotnet_class}}ExtendedResult.html#barcodeformatstring_2) and [`LocalizationResult`]({{site.dotnet_class}}LocalizationResult.html#barcodeformatstring_2). All the barcode format strings will be returned by the attribute `BarcodeFormatString`.
+
 
 ## 9.2.0 (06/07/2022)
 
