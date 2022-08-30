@@ -14,7 +14,6 @@ Stores the text result.
 public class TextResult
 ```  
   
----
   
 
 ## Attributes
@@ -43,7 +42,8 @@ EnumBarcodeFormat Dynamsoft.DBR.TextResult.BarcodeFormat
 ```
 
 ### BarcodeFormatString
-Barcode type in BarcodeFormat group 1 as string.
+
+Barcode type as string.
 
 ```csharp
 string Dynamsoft.DBR.TextResult.BarcodeFormatString
@@ -57,7 +57,8 @@ EnumBarcodeFormat_2 Dynamsoft.DBR.TextResult.BarcodeFormat_2
 ```
 
 ### BarcodeFormatString_2
-Barcode type in BarcodeFormat group 2 as string.
+
+`Deprecated`. Use [BarcodeFormatString](#barcodeformatstring) instead.
 
 ```csharp
 string Dynamsoft.DBR.TextResult.BarcodeFormatString_2

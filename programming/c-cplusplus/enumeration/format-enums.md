@@ -86,7 +86,7 @@ Describes the barcode types in BarcodeFormat group 2.
 | BF2_POSTNET | 0x00200000 | Postnet |
 | BF2_PLANET | 0x00400000 | Planet |
 | BF2_AUSTRALIANPOST | 0x00800000 | Australian Post |
-| BF2_RM4SCC | Royal Mail 4-State Customer Barcode |
+| BF2_RM4SCC | 0x01000000 | Royal Mail 4-State Customer Barcode |
 | BF2_DOTCODE | 0x02 | DotCode |
 | BF2_PHARMACODE_ONE_TRACK | 0x04 | Pharmacode One-Track |
 | BF2_PHARMACODE_TWO_TRACK | 0x08 | Pharmacode Two-Track |

@@ -67,10 +67,10 @@ enum Dynamsoft.DBR.EnumDMDeploymentType
    
 | Member | Value | Description |
 | --------------------------  | ----- | ----------- |
-| DM_DT_SERVER | N/A | 1 | Server deployment type |
-| DM_DT_DESKTOP | N/A | 2 | Desktop |
-| DM_DT_EMBEDDED_DEVICE | N/A | 6 | Embedded device deployment type |
-| DM_DT_OEM | N/A | 7 | OEM deployment type |
+| DM_DT_SERVER | 1 | Server deployment type |
+| DM_DT_DESKTOP | 2 | Desktop |
+| DM_DT_EMBEDDED_DEVICE | 6 | Embedded device deployment type |
+| DM_DT_OEM | 7 | OEM deployment type |
 
 
 
@@ -161,16 +161,16 @@ enum Dynamsoft.DBR.EnumImagePixelFormat
 | IPF_BINARY  | 0 | 0: Black, 1: White |
 | IPF_BINARYINVERTED  | 1 | 0: Black, 1: White |
 | IPF_GRAYSCALED  | 2 | 8 bit gray |
-| IPF_NV21 21 | 3 | NV21 |
-| IPF_RGB_565 _565 | 4 | 16bit with RGB channel order stored in memory from high to low address |
-| IPF_RGB_555 _555 | 5 | 16bit with RGB channel order stored in memory from high to low address |
-| IPF_RGB_888 _888 | 6 | 24bit with RGB channel order stored in memory from high to low address |
-| IPF_ARGB_8888 _8888 | 7 | 32bit with ARGB channel order stored in memory from high to low address |
-| IPF_RGB_161616 _161616 | 8 | 48bit with RGB channel order stored in memory from high to low address |
-| IPF_ARGB_16161616 _16161616 | 9 | 64bit with ARGB channel order stored in memory from high to low address |
-| IPF_ABGR_8888 _8888 | 10 | 32bit with ABGR channel order stored in memory from high to low address |
-| IPF_ABGR_16161616 _8888 | 11 | 64bit with ABGR channel order stored in memory from high to low address |
-| IPF_BGR_888 _888 | 12 | 24bit with BGR channel order stored in memory from high to low address |
+| IPF_NV21 | 3 | NV21 |
+| IPF_RGB_565 | 4 | 16bit with RGB channel order stored in memory from high to low address |
+| IPF_RGB_555 | 5 | 16bit with RGB channel order stored in memory from high to low address |
+| IPF_RGB_888 | 6 | 24bit with RGB channel order stored in memory from high to low address |
+| IPF_ARGB_8888 | 7 | 32bit with ARGB channel order stored in memory from high to low address |
+| IPF_RGB_161616 | 8 | 48bit with RGB channel order stored in memory from high to low address |
+| IPF_ARGB_16161616 | 9 | 64bit with ARGB channel order stored in memory from high to low address |
+| IPF_ABGR_8888 | 10 | 32bit with ABGR channel order stored in memory from high to low address |
+| IPF_ABGR_16161616 | 11 | 64bit with ABGR channel order stored in memory from high to low address |
+| IPF_BGR_888 | 12 | 24bit with BGR channel order stored in memory from high to low address |
 
 
 

@@ -8,6 +8,30 @@ needGenerateH3Content: false
 
 # Release Notes for .NET SDK - 9.x
 
+## 9.4.0 (08/30/2022)
+
+### Highlights
+
+{%- include release-notes/product-highlight-9.4.0.md -%}
+
+### Changelog
+
+#### New
+
+- Added an argument [`IsOneDStacked`]({{site.parameters_reference}}localization-modes.html#isonedstacked) to `LM_SCAN_DIRECTLY` to process stacked OneD barcodes.
+- Added a parameter [`PatchCodeSearchingMargins`]({{site.parameters_reference}}patchcode-searching-margins.html) to specify the searching area of PatchCode.
+- Added the supported data format of `FormatSpecification.PartitionModes`.
+
+#### Improved
+
+- Improved the localization mode `LM_LINES` to better support skewed and perspective OneD barcodes.
+- Enhanced tamper resistance of the license keys.
+
+#### Deprecated
+
+- Deprecated the attribute `BarcodeFormatString_2` of [`TextResult`]({{site.dotnet_class}}TextResult.html#barcodeformatstring_2), [`ExtendedResult`]({{site.dotnet_class}}ExtendedResult.html#barcodeformatstring_2) and [`LocalizationResult`]({{site.dotnet_class}}LocalizationResult.html#barcodeformatstring_2). All the barcode format strings will be returned by the attribute `BarcodeFormatString`.
+
+
 ## 9.2.0 (06/07/2022)
 
 ### Highlights

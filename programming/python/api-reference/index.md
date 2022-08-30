@@ -54,6 +54,7 @@ needGenerateH3Content: true
   | [`decode_buffer`](BarcodeReader/decode.md#decode_buffer) | Decodes barcodes from the memory buffer containing image pixels in defined format.  |
   | [`decode_file_stream`](BarcodeReader/decode.md#decode_file_stream) | Decodes barcodes from an image file in memory. |
   | [`decode_buffer_manually`](BarcodeReader/decode.md#decode_buffer_manually) | Decodes barcodes from the memory buffer containing image pixels in defined format. |
+  | [`decode_base64_string`](BarcodeReader/decode.md#decode_base64_string) | Decodes barcodes from the base64 encoded string. |
   | [`init_intermediate_result`](BarcodeReader/decode.md#init_intermediateresult) | Inits an intermediateResult struct with default values. |
   | [`decode_intermediate_results`](BarcodeReader/decode.md#decode_intermediateresults) | Decodes barcode from intermediate results. |
    

@@ -56,10 +56,10 @@ Describes the deployment type.
 
 | Member | Value | Description |
 | --------------------------  | ----- | ----------- |
-| DM_DT_SERVER | N/A | 1 | Server deployment type |
-| DM_DT_DESKTOP | N/A | 2 | Desktop |
-| DM_DT_EMBEDDED_DEVICE | N/A | 6 | Embedded device deployment type |
-| DM_DT_OEM | N/A | 7 | OEM deployment type |
+| DM_DT_SERVER | 1 | Server deployment type |
+| DM_DT_DESKTOP | 2 | Desktop |
+| DM_DT_EMBEDDED_DEVICE | 6 | Embedded device deployment type |
+| DM_DT_OEM | 7 | OEM deployment type |
 
 ## DM_LicenseModule
 

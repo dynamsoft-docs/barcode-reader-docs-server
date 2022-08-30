@@ -14,7 +14,6 @@ Stores the localization result.
 public class LocalizationResult
 ```  
   
----
   
 
 ## Attributes
@@ -52,7 +51,8 @@ EnumBarcodeFormat Dynamsoft.LocalizationResult.BarcodeFormat
 ```
 
 ### BarcodeFormatString
-Barcode type in BarcodeFormat group 1 as string.
+
+Barcode type as string.
 
 ```csharp
 string Dynamsoft.LocalizationResult.BarcodeFormatString
@@ -66,7 +66,8 @@ EnumBarcodeFormat_2 Dynamsoft.LocalizationResult.BarcodeFormat_2
 ```
 
 ### BarcodeFormatString_2
-Barcode type in BarcodeFormat group 2 as string.
+
+`Deprecated`. Use [BarcodeFormatString](#barcodeformatstring) instead.
 
 ```csharp
 string Dynamsoft.LocalizationResult.BarcodeFormatString_2
