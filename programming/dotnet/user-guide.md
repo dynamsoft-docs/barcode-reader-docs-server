@@ -20,20 +20,18 @@ In this guide, you will learn step by step on how to build a barcode reading app
 - Developing Environment:
    - Visual Studio 2008 or above
    - .NET Framework 2.0, .NET Framework 4.0 or above
-   - .NET Core 3.1 or 5.0 <sup>1</sup>
-
-<sup>1</sup> Dynamsoft.NetCoreApp.Barcode v9.0 is available upon request.
+   - .NET Core 3.1
+   - .NET 5.0 or 6.0
 
 <iframe width="400" height="225" src="https://www.youtube.com/embed/QjrP9EC6IlA" title="How to Use Dynamsoft Barcode Reader .NET SDK | Dynamsoft Tutorial" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
 ## Installation
-If you haven't downloaded the SDK yet, download the `.NET Package` now from <a href="https://www.dynamsoft.com/barcode-reader/downloads/?utm_source=docs" target="_blank">Dynamsoft website</a> and unzip the package into the directory of your choice.
+If you haven't downloaded the SDK yet, download the `.NET Package` now from <a href="https://www.dynamsoft.com/barcode-reader/downloads/?utm_source=docs" target="_blank">Dynamsoft website</a> and unzip the package into the directory of your choice. After you unzip the file, you can find samples for supported platforms in the **Samples** folder under the installation folder.
+
 >For this tutorial, the folder we unzip the SDK to will be referred to as `[INSTALLATION FOLDER]`, so please be aware of that as you go through the rest of this guide.
 
-   
-After you unzip the file, you can find samples for supported platforms in the **Samples** folder under the installation folder. 
-> The .NET SDK is developed based on .NET Framework 2.0/4.0. If you are using .NET Core 3.1 or 5.0, please download the v8.x .NET Core SDK (Dynamsoft.NetCoreApp.Barcode) via [this link](https://www.nuget.org/packages/Dynamsoft.NetCoreApp.Barcode/). *Please note that v9.x of this package is available upon request and is not currently available via NuGet.*
+> You can also download the [Dynamsoft.DotNet.Barcode nuget Package](https://www.nuget.org/packages/Dynamsoft.DotNet.Barcode/) which supports .NET Framework 2.0/4.0, .NET Core 3.1, .NET 5.0/6.0.
 
 ## Build Your First Application
 Let's start by creating a console application which demonstrates how to use the minimum code to read barcodes from an image file.  
