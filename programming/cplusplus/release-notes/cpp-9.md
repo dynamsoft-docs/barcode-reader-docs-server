@@ -8,7 +8,7 @@ needGenerateH3Content: false
 
 # Release Notes for C++ SDK - 9.x
 
-## 9.4.0 (08/25/2022)
+## 9.4.0 (08/30/2022)
 
 ### Highlights
 
