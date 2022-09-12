@@ -9,15 +9,13 @@ pageStartVer: 8.6
 
 
 # DM_DLSConnectionParameters
-Defines a struct to configure the parameters to connect to license  server.  
+`Deprecated`. Defines a struct to configure the parameters to connect to license server.  
 
 ## Typedefs
 
 ```cpp
 typedef struct tagDM_DLSConnectionParameters  DM_DLSConnectionParameters
 ```
-
----
 
 ## Attributes
     

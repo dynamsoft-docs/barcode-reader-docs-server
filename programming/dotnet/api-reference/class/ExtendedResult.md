@@ -14,7 +14,6 @@ Stores the extended result.
 public class ExtendedResult
 ```  
 
----
 
 ## Attributes
   
@@ -48,7 +47,8 @@ EnumBarcodeFormat Dynamsoft.ExtendedResult.BarcodeFormat
 ```
 
 ### BarcodeFormatString
-Barcode type in BarcodeFormat group 1 as string.
+
+Barcode type as string.
 
 ```csharp
 string Dynamsoft.ExtendedResult.BarcodeFormatString
@@ -62,7 +62,8 @@ EnumBarcodeFormat_2 Dynamsoft.ExtendedResult.BarcodeFormat_2
 ```
  
 ### BarcodeFormatString_2
-Barcode type in BarcodeFormat group 2 as string.
+
+`Deprecated`. Use [BarcodeFormatString](#barcodeformatstring) instead.
 
 ```csharp
 string Dynamsoft.ExtendedResult.BarcodeFormatString_2

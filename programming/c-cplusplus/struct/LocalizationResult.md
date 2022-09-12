@@ -17,8 +17,6 @@ typedef struct tagLocalizationResult  LocalizationResult
 typedef struct tagLocalizationResult*  PLocalizationResult
 ```  
   
----
-  
 
 ## Attributes
   
@@ -60,7 +58,9 @@ BarcodeFormat tagLocalizationResult::barcodeFormat
 ```
 
 ### barcodeFormatString
-Barcode type in BarcodeFormat group 1 as string.
+
+Barcode type as string.
+
 ```cpp
 const char* tagLocalizationResult::barcodeFormatString
 ```
@@ -72,7 +72,9 @@ BarcodeFormat_2 tagLocalizationResult::barcodeFormat_2
 ```
 
 ### barcodeFormatString_2
-Barcode type in BarcodeFormat group 2 as string.
+
+`Deprecated`. Use [barcodeFormatString](#barcodeformatstring) instead.
+
 ```cpp
 const char* tagLocalizationResult::barcodeFormatString_2
 ```

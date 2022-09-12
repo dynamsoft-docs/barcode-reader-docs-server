@@ -8,6 +8,31 @@ needGenerateH3Content: false
 
 # Release Notes for Python SDK - 9.x
 
+## 9.4.0 (08/30/2022)
+
+### Highlights
+
+{%- include release-notes/product-highlight-9.4.0.md -%}
+
+### Changelog
+
+#### New
+
+- Added an argument [`IsOneDStacked`]({{site.parameters_reference}}localization-modes.html#isonedstacked) to `LM_SCAN_DIRECTLY` to process stacked OneD barcodes.
+- Added a parameter [`PatchCodeSearchingMargins`]({{site.parameters_reference}}patchcode-searching-margins.html) to specify the searching area of PatchCode.
+- Added the supported data format of [`FormatSpecification.PartitionModes`]({{site.parameters_reference}}partition-modes.html) to enhance the readability of the parameters. Users can use a list of enumeration names to specify the `PartitionModes`.
+- Added method [`decode_base64_string`]({{site.python_methods}}decode.html#decode_base64_string) to support decoding images encoded with base64 string.
+- Added the supported parameter types of method [`decode_file_stream`]({{site.python_methods}}decode.html#decode_file_stream). The parameter `file_stream` now supports both bytes and bytearray.
+
+#### Improved
+
+- Improved the localization mode `LM_LINES` to better support skewed and perspective OneD barcodes.
+- Enhanced tamper resistance of the license keys.
+
+#### Deprecated
+
+- Deprecated the attribute `barcode_format_string_2` of [`TextResult`]({{site.python_class}}TextResult.html#barcode_format_string_2), [`ExtendedResult`]({{site.python_class}}ExtendedResult.html#barcode_format_string_2) and [`LocalizationResult`]({{site.python_class}}LocalizationResult.html#barcode_format_string_2). All the barcode format strings will be returned by the attribute `barcode_format_string`.
+
 ## 9.2.0 (06/21/2022)
 
 <div class="fold-panel-prefix"></div>

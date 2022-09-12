@@ -14,7 +14,6 @@ Stores the extended result.
 class ExtendedResult
 ```  
 
----
 
 ## Attributes
   
@@ -48,7 +47,7 @@ ExtendedResult.barcode_format
 ```
 
 ### barcode_format_string
-Barcode type in BarcodeFormat group 1 as string.
+Barcode type as string.
 
 ```python
 ExtendedResult.barcode_format_string
@@ -62,7 +61,7 @@ ExtendedResult.barcode_format_2
 ```
  
 ### barcode_format_string_2
-Barcode type in BarcodeFormat group 2 as string.
+`Deprecated`. Use [barcode_format_string](#barcode_format_string) instead.
 
 ```python
 ExtendedResult.barcode_format_string_2

@@ -17,7 +17,6 @@ typedef struct tagTextResult  TextResult
 typedef struct tagTextResult*  PTextResult
 ```  
   
----
   
 
 ## Attributes
@@ -48,7 +47,9 @@ BarcodeFormat tagTextResult::barcodeFormat
 ```
 
 ### barcodeFormatString
-Barcode type in BarcodeFormat group 1 as string.
+
+Barcode type as string.
+
 ```cpp
 const char* tagTextResult::barcodeFormatString
 ```
@@ -60,7 +61,9 @@ BarcodeFormat_2 tagTextResult::barcodeFormat_2
 ```
 
 ### barcodeFormatString_2
-Barcode type in BarcodeFormat group 2 as string.
+
+`Deprecated`. Use [barcodeFormatString](#barcodeformatstring) instead.
+
 ```cpp
 const char* tagTextResult::barcodeFormatString_2
 ```
