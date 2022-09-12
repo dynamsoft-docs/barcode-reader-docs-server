@@ -16,6 +16,7 @@ Once you have got an application running with Dynamsoft Barcode Reader CPP editi
 
 * [Specify barcode formats and count]({{site.features}}barcode-formats-and-count.html?lang=cpp)
 * [Read barcode from image]({{site.features}}read-different-source.html?lang=cpp)
+* [Read a specific area/region]({{site.features}}barcode-scan-region.html?lang=cpp)
 
 ## Handle Difficult Scenarios
 

@@ -7,5 +7,5 @@ keywords: user guide, use cases, .net
 
 # Use Cases
 
-* [Read DPM codes]({{site.usecases}}read-dpm-codes.html?lang=dotnet)
-* [Read Postal codes]({{site.usecases}}read-postal-codes.html?lang=dotnet)
+* [Read DPM codes]({{site.usecases}}read-dpm-codes.html?lang=csharp)
+* [Read Postal codes]({{site.usecases}}read-postal-codes.html?lang=csharp)
