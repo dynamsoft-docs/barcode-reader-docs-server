@@ -23,6 +23,8 @@ In this guide, you will learn step by step on how to build a barcode reading app
    - .NET Core 3.1
    - .NET 5.0 or 6.0
 
+<iframe width="400" height="225" src="https://www.youtube.com/embed/QjrP9EC6IlA" title="How to Use Dynamsoft Barcode Reader .NET SDK | Dynamsoft Tutorial" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 
 ## Installation
 If you haven't downloaded the SDK yet, download the `.NET Package` now from <a href="https://www.dynamsoft.com/barcode-reader/downloads/?utm_source=docs" target="_blank">Dynamsoft website</a> and unzip the package into the directory of your choice. After you unzip the file, you can find samples for supported platforms in the **Samples** folder under the installation folder.
