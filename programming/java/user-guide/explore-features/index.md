@@ -16,6 +16,7 @@ Once you have got an application running with Dynamsoft Barcode Reader Java edit
 
 * [Specify barcode formats and count]({{site.features}}barcode-formats-and-count.html?lang=java)
 * [Read barcode from image]({{site.features}}read-different-source.html?lang=java)
+* [Read a specific area/region]({{site.features}}barcode-scan-region.html?lang=java)
 
 ## Handle Difficult Scenarios
 
