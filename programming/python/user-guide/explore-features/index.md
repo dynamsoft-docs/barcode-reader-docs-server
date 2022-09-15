@@ -16,6 +16,7 @@ Once you have got an application running with Dynamsoft Barcode Reader Python ed
 
 * [Specify barcode formats and count]({{site.features}}barcode-formats-and-count.html?lang=python)
 * [Read barcode from image]({{site.features}}read-different-source.html?lang=python)
+* [Read a specific area/region]({{site.features}}barcode-scan-region.html?lang=python)
 
 ## Handle Difficult Scenarios
 
