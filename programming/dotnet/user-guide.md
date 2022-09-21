@@ -53,6 +53,7 @@ Let's start by creating a console application which demonstrates how to use the 
     using Dynamsoft;
     using Dynamsoft.DBR;
    ```
+
 ### Initialize a Barcode Reader Instance
 1. Create an instance of Dynamsoft Barcode Reader.
 
