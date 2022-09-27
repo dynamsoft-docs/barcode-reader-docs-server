@@ -123,9 +123,9 @@ breadcrumbText: Methods
    
   | Method               | Description |
   |----------------------|-------------|
-  | [`DBR_SetErrorCallback`](video.md#dbr_seterrorcallback) | Set callback function to process errors generated during frame decoding. |
-  | [`DBR_SetTextResultCallback`](video.md#dbr_settextresultcallback) | Set callback function to process text results generated during frame decoding. |
-  | [`DBR_SetIntermediateResultCallback`](video.md#dbr_setintermediateresultcallback) | Set callback function to process intermediate results generated during frame decoding. |
+  | [`DBR_SetErrorCallback`](video.md#dbr_seterrorcallback) | Set callback function to process errors which is triggered when the library finishes decoding a frame. |
+  | [`DBR_SetTextResultCallback`](video.md#dbr_settextresultcallback) | Set callback function to process text results which is triggered when the library finishes decoding a frame. |
+  | [`DBR_SetIntermediateResultCallback`](video.md#dbr_setintermediateresultcallback) | Set callback function to process intermediate results which is triggered when the library finishes decoding a frame. |
 
 ### Status retrieval
    

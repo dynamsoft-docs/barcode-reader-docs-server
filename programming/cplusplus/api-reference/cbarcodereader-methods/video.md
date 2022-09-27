@@ -15,9 +15,9 @@ needAutoGenerateSidebar: true
    | [`AppendFrame`](#appendframe) | Append a frame image buffer to the inner frame queue. |
    | [`StopFrameDecoding`](#stopframedecoding) | Stop thread used for frame decoding. |
    | [`InitFrameDecodingParameters`](#initframedecodingparameters) | Initialize frame decoding parameter. |
-   | [`SetErrorCallback`](#seterrorcallback) | Set callback function to process errors generated during frame decoding. |
-   | [`SetTextResultCallback`](#settextresultcallback) | Set callback function to process text results generated during frame decoding. |
-   | [`SetIntermediateResultCallback`](#setintermediateresultcallback) | Set callback function to process intermediate results generated during frame decoding. |
+   | [`SetErrorCallback`](#seterrorcallback) | Set callback function to process errors which is triggered when the library finishes decoding a frame. |
+   | [`SetTextResultCallback`](#settextresultcallback) | Set callback function to process text results which is triggered when the library finishes decoding a frame. |
+   | [`SetIntermediateResultCallback`](#setintermediateresultcallback) | Set callback function to process intermediate results which is triggered when the library finishes decoding a frame. |
    | [`GetLengthOfFrameQueue`](#getlengthofframequeue) | Get length of current inner frame queue. |
 
 
@@ -228,7 +228,7 @@ delete reader;
 
 
 ## SetErrorCallback
-Set callback function to process errors generated during frame decoding.
+Set callback function to process errors which is triggered when the library finishes decoding a frame.
 
 ```cpp
 int dynamsoft::dbr::CBarcodeReader::SetErrorCallback (CB_Error cbFunction, void* pUser)	
@@ -263,7 +263,7 @@ reader->StartFrameDecoding(2, 10, 1024, 720, 720, IPF_BINARY, "");
 
 
 ## SetTextResultCallback
-Set callback function to process text results generated during frame decoding.
+Set callback function to process text results which is triggered when the library finishes decoding a frame.
 
 ```cpp
 int dynamsoft::dbr::CBarcodeReader::SetTextResultCallback (CB_TextResult cbFunction, void* pUser)	
@@ -298,7 +298,7 @@ reader->StartFrameDecoding(2, 10, 1024, 720, 720, IPF_BINARY, "");
 
 
 ## SetIntermediateResultCallback
-Set callback function to process intermediate results generated during frame decoding.
+Set callback function to process intermediate results which is triggered when the library finishes decoding a frame.
 
 ```cpp
 int dynamsoft::dbr::CBarcodeReader::SetIntermediateResultCallback (CB_IntermediateResult cbFunction, void* pUser)		

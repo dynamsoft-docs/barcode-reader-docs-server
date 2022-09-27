@@ -16,9 +16,9 @@ needAutoGenerateSidebar: true
    | [`AppendFrame`](#appendframe) | Appends a frame image buffer to the inner frame queue. |
    | [`StopFrameDecoding`](#stopframedecoding) | Stops the frame decoding thread created by StartFrameDecoding. |
    | [`InitFrameDecodingParameters`](#initframedecodingparameters) | Initializes frame decoding parameters. |
-   | [`SetErrorCallback`](#seterrorcallback) | Set callback function to process errors generated during frame decoding. |
-   | [`SetTextResultCallback`](#settextresultcallback) | Set callback function to process text results generated during frame decoding. |
-   | [`SetIntermediateResultCallback`](#setintermediateresultcallback) | Set callback function to process intermediate results generated during frame decoding. |
+   | [`SetErrorCallback`](#seterrorcallback) | Set callback function to process errors which is triggered when the library finishes decoding a frame. |
+   | [`SetTextResultCallback`](#settextresultcallback) | Set callback function to process text results which is triggered when the library finishes decoding a frame. |
+   | [`SetIntermediateResultCallback`](#setintermediateresultcallback) | Set callback function to process intermediate results which is triggered when the library finishes decoding a frame. |
    | [`GetLengthOfFrameQueue`](#getlengthofframequeue) | Gets length of current inner frame queue. |
 
 
@@ -169,7 +169,7 @@ Returns the frame decoding parameters.
 
 ## SetErrorCallback
 
-Sets call back function to process errors generated during frame decoding. 
+Sets call back function to process errors which is triggered when the library finishes decoding a frame. 
 
 ```csharp
 EnumErrorCode Dynamsoft.DBR.BarcodeReader.SetErrorCallback(CB_Error callbackFunction, IntPtr pUser)
@@ -198,7 +198,7 @@ reader.Dispose();
 
 ## SetIntermediateResultCallback
 
-Sets call back function to process intermediate results generated during frame decoding.  
+Sets call back function to process intermediate results which is triggered when the library finishes decoding a frame.  
 
 ```csharp
 EnumErrorCode Dynamsoft.DBR.BarcodeReader.SetIntermediateResultCallback(CB_IntermediateResult callbackFunction, IntPtr pUser)
@@ -231,7 +231,7 @@ reader.Dispose();
 
 ## SetTextResultCallback
 
-Sets call back function to process errors generated during frame decoding. 
+Sets call back function to process errors which is triggered when the library finishes decoding a frame. 
 
 ```csharp
 EnumErrorCode Dynamsoft.DBR.BarcodeReader.SetTextResultCallback(CB_TextResult callbackFunction, IntPtr pUser)

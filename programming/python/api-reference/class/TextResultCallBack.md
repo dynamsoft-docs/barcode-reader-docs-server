@@ -19,7 +19,7 @@ class TextResultCallBack(ABC)
 ## Abstract Method
   
 ### text_results_callback_func
-Sets callback function to process text results during frame decoding. You need to implement it in the subclass.
+Sets callback function to process text results which is triggered when the library finishes decoding a frame. You need to implement it in the subclass.
 
 **Parameters**  
 `[in] frame_id <int>` : The ID of the frame.  

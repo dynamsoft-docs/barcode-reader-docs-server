@@ -111,9 +111,9 @@ noTitleIndex: true
 - Added support for MSI Code (Modified Plessey).
 - Added a new member `barcode_zone_min_distance_to_image_borders` in the `PublicRuntimeSettings` class to set the minimum distance (in pixels) between barcode zone and image borders. Previously, it is only available in the JSON template. It can be now configured by setting the class `PublicRuntimeSettings` -> `barcode_zone_min_distance_to_image_borders`.
 - Added exception error message to `TextResult` when license initialization fails or decoding authorization fails.
-- Added a new abstract class `TextResultResultCallBack` which includes a abstract method `text_results_callback_func`. This method can be implemented in a subclass as a callback function to process text results generated during frame decoding.
-- Added a new abstract class `IntermediateResultCallBack` which includes a abstract method `intermediate_results_callback_func`. This method can be implemented in a subclass as a callback function to process intermediate results generated during frame decoding.
-- Added a new abstract class `ErrorCallBack` which includes a abstract method `error_callback_func`. This method can be implemented in a subclass as a callback function to process errors generated during frame decoding.
+- Added a new abstract class `TextResultResultCallBack` which includes a abstract method `text_results_callback_func`. This method can be implemented in a subclass as a callback function to process text results which is triggered when the library finishes decoding a frame.
+- Added a new abstract class `IntermediateResultCallBack` which includes a abstract method `intermediate_results_callback_func`. This method can be implemented in a subclass as a callback function to process intermediate results which is triggered when the library finishes decoding a frame.
+- Added a new abstract class `ErrorCallBack` which includes a abstract method `error_callback_func`. This method can be implemented in a subclass as a callback function to process errors which is triggered when the library finishes decoding a frame.
 - Redesigned the `start_video_mode` interface so that you can use callback functions for `TextResult`, `IntermediateResult` and handling errors. Previously, it only worked with `TextResult` callback function.
 
 

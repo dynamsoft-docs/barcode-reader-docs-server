@@ -115,9 +115,9 @@ needAutoGenerateSidebar: true
    
    | Method               | Description |
    |----------------------|-------------|
-   | [`setErrorCallback`](video.md#seterrorcallback) | Set callback interface to process errors generated during frame decoding. |
-   | [`setTextResultCallback`](video.md#settextresultcallback) | Set callback interface to process text results generated during frame decoding. |
-   | [`setIntermediateResultCallback`](video.md#setintermediateresultcallback) | Set callback interface to process intermediate results generated during frame decoding. |
+   | [`setErrorCallback`](video.md#seterrorcallback) | Set callback interface to process errors which is triggered when the library finishes decoding a frame. |
+   | [`setTextResultCallback`](video.md#settextresultcallback) | Set callback interface to process text results which is triggered when the library finishes decoding a frame. |
+   | [`setIntermediateResultCallback`](video.md#setintermediateresultcallback) | Set callback interface to process intermediate results which is triggered when the library finishes decoding a frame. |
 
 ### Status retrieval
    
