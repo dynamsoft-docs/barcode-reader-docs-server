@@ -38,9 +38,9 @@ class EnumImagePixelFormat(IntEnum)
 
 | Member | Value | Description |
 | -------------- | ----- | ----------- |
-| IPF_BINARY  | binary | 0 | 0: Black, 1: White |
-| IPF_BINARYINVERTED  | binaryInverted | 1 | 0: Black, 1: White |
-| IPF_GRAYSCALED  | grayScaled | 2 | 8 bit gray |
+| IPF_BINARY | 0 | 0: Black, 1: White |
+| IPF_BINARYINVERTED | 1 | 0: Black, 1: White |
+| IPF_GRAYSCALED | 2 | 8 bit gray |
 | IPF_NV21 | 3 | NV21 |
 | IPF_RGB_565 | 4 | 16bit with RGB channel order stored in memory from high to low address |
 | IPF_RGB_555 | 5 | 16bit with RGB channel order stored in memory from high to low address |
