@@ -58,6 +58,6 @@ delegate void Dynamsoft.DBR.CB_TextResult(int frameId, TextResult[]  textResults
    
 **Parameters**  
 `[in, out] frameId` The id of the frame.  
-`[in, out] intermediateResults` The intermediate results of the frame. 
+`[in, out] textResults` Recognized barcode results of the frame. 
 `[in, out] pUser` Arguments pass to your function. 
 

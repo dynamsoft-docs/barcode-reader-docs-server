@@ -34,7 +34,7 @@ typedef struct tagFrameDecodingParameters  FrameDecodingParameters
 | [`autoFilter`](#autofilter) | *int* |
 | [`clarityCalculationMethod`](#claritycalculationmethod) | [`ClarityCalculationMethod`]({{ site.enumerations }}frame-decoding-enums.html#claritycalculationmethod) |
 | [`clarityFilterMode`](#clarityfiltermode) | [`ClarityFilterMode`]({{ site.enumerations }}frame-decoding-enums.html#clarityfiltermode) |
-| [`reserved`](#reserved) | *char\[28\]* |
+| [`reserved`](#reserved) | *char\[20\]* |
 
 
 ### maxQueueLength
