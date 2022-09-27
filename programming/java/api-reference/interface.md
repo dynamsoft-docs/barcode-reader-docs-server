@@ -59,7 +59,7 @@ void com.dynamsoft.dbr.IntermediateResultCallback.intermediateResultCallback(int
 
 
 ## TextResultCallback
-Represents the method that will handle the error code returned by the SDK.
+Represents the method that will handle the text result array returned by the SDK.
 
 ```java
 void textResultCallback(int frameId, TextResult[] results, Object userData)

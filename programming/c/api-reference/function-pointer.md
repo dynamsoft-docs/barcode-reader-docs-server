@@ -63,7 +63,7 @@ typedef void(* CB_IntermediateResult) (int frameId, IntermediateResultArray* pRe
 
 
 ## CB_TextResult
-Represents the function that will handle the error code returned by the SDK.
+Represents the function that will handle the text result array returned by the SDK.
 
 ```c
 typedef void(* CB_TextResult) (int frameId, TextResultArray *pResults, void *pUser)
@@ -71,7 +71,7 @@ typedef void(* CB_TextResult) (int frameId, TextResultArray *pResults, void *pUs
    
 **Parameters**  
 `frameId` 	The ID of the frame.  
-`errorCode` Recognized barcode results of the frame.   
+`pResults` Recognized barcode results of the frame.   
 `pUser` Arguments passed to your function.
 
 **See Also**  
