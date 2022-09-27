@@ -126,9 +126,9 @@ breadcrumbText: CBarcodeReader Methods
    
    | Method               | Description |
    |----------------------|-------------|
-   | [`SetErrorCallback`](video.md#seterrorcallback) | Set callback function to process errors generated during frame decoding. |
-   | [`SetTextResultCallback`](video.md#settextresultcallback) | Set callback function to process text results generated during frame decoding. |
-   | [`SetIntermediateResultCallback`](video.md#setintermediateresultcallback) | Set callback function to process intermediate results generated during frame decoding. |
+   | [`SetErrorCallback`](video.md#seterrorcallback) | Set callback function to process errors which is triggered when the library finishes decoding a frame. |
+   | [`SetTextResultCallback`](video.md#settextresultcallback) | Set callback function to process text results which is triggered when the library finishes decoding a frame. |
+   | [`SetIntermediateResultCallback`](video.md#setintermediateresultcallback) | Set callback function to process intermediate results which is triggered when the library finishes decoding a frame. |
 
 ### Status retrieval
    

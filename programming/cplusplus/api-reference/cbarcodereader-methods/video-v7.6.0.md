@@ -27,9 +27,9 @@ needAutoGenerateSidebar: true
    
    | Method               | Description |
    |----------------------|-------------|
-   | [`SetErrorCallback`](#seterrorcallback) | Set callback function to process errors generated during frame decoding. |
-   | [`SetTextResultCallback`](#settextresultcallback) | Set callback function to process text results generated during frame decoding. |
-   | [`SetIntermediateResultCallback`](#setintermediateresultcallback) | Set callback function to process intermediate results generated during frame decoding. |
+   | [`SetErrorCallback`](#seterrorcallback) | Set callback function to process errors which is triggered when the library finishes decoding a frame. |
+   | [`SetTextResultCallback`](#settextresultcallback) | Set callback function to process text results which is triggered when the library finishes decoding a frame. |
+   | [`SetIntermediateResultCallback`](#setintermediateresultcallback) | Set callback function to process intermediate results which is triggered when the library finishes decoding a frame. |
 
 - Status retrieval
    
@@ -237,7 +237,7 @@ delete reader;
 
 
 ## SetErrorCallback
-Set callback function to process errors generated during frame decoding.
+Set callback function to process errors which is triggered when the library finishes decoding a frame.
 
 ```cpp
 int CBarcodeReader::SetErrorCallback (CB_Error cbFunction, void* pUser)	
@@ -271,7 +271,7 @@ reader->StartFrameDecoding(2, 10, 1024, 720, 720, IPF_BINARY, "");
 
 
 ## SetTextResultCallback
-Set callback function to process text results generated during frame decoding.
+Set callback function to process text results which is triggered when the library finishes decoding a frame.
 
 ```cpp
 int CBarcodeReader::SetTextResultCallback (CB_TextResult cbFunction, void* pUser)	
@@ -305,7 +305,7 @@ reader->StartFrameDecoding(2, 10, 1024, 720, 720, IPF_BINARY, "");
 
 
 ## SetIntermediateResultCallback
-Set callback function to process intermediate results generated during frame decoding.
+Set callback function to process intermediate results which is triggered when the library finishes decoding a frame.
 
 ```cpp
 int CBarcodeReader::SetIntermediateResultCallback (CB_IntermediateResult cbFunction, void* pUser)		

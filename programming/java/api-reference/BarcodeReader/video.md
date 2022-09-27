@@ -15,9 +15,9 @@ needAutoGenerateSidebar: true
    | [`appendFrame`](#appendframe) | Append a frame image buffer to the inner frame queue. |
    | [`stopFrameDecoding`](#stopframedecoding) | Stop thread used for frame decoding. |
    | [`initFrameDecodingParameters`](#initframedecodingparameters) | Initialize frame decoding parameter. |
-   | [`setErrorCallback`](#seterrorcallback) | Set callback interface to process errors generated during frame decoding. |
-   | [`setTextResultCallback`](#settextresultcallback) | Set callback interface to process text results generated during frame decoding. |
-   | [`setIntermediateResultCallback`](#setintermediateresultcallback) | Set callback interface to process intermediate results generated during frame decoding. |
+   | [`setErrorCallback`](#seterrorcallback) | Set callback interface to process errors which is triggered when the library finishes decoding a frame. |
+   | [`setTextResultCallback`](#settextresultcallback) | Set callback interface to process text results which is triggered when the library finishes decoding a frame. |
+   | [`setIntermediateResultCallback`](#setintermediateresultcallback) | Set callback interface to process intermediate results which is triggered when the library finishes decoding a frame. |
    | [`getLengthOfFrameQueue`](#getlengthofframequeue) | Get length of current inner frame queue. |
 
 
@@ -202,7 +202,7 @@ reader.destroy();
 
 
 ## setErrorCallback
-Set callback interface to process errors generated during frame decoding.
+Set callback interface to process errors which is triggered when the library finishes decoding a frame.
 
 ```java
 void com.dynamsoft.dbr.BarcodeReader.setErrorCallback(ErrorCallback errorCallback, Object userData) throws BarcodeReaderException
@@ -237,7 +237,7 @@ reader.startFrameDecoding(2, 10, 1024, 720, 1024, EnumImagePixelFormat.IPF_GRAYS
 
 
 ## setTextResultCallback
-Set callback interface to process text results generated during frame decoding.
+Set callback interface to process text results which is triggered when the library finishes decoding a frame.
 
 ```java
 void com.dynamsoft.dbr.BarcodeReader.setTextResultCallback(TextResultCallback textResultCallback, Object userData) throws BarcodeReaderException	
@@ -272,7 +272,7 @@ reader.startFrameDecoding(2, 10, 1024, 720, 1024, EnumImagePixelFormat.IPF_GRAYS
 
 
 ## setIntermediateResultCallback
-Set callback interface to process intermediate results generated during frame decoding.
+Set callback interface to process intermediate results which is triggered when the library finishes decoding a frame.
 
 ```java
 void com.dynamsoft.dbr.BarcodeReader.setIntermediateResultCallback(IntermediateResultCallback intermediateResultCallback, Object userData} throws BarcodeReaderException

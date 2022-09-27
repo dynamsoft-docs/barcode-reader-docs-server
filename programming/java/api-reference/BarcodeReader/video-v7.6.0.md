@@ -27,9 +27,9 @@ needAutoGenerateSidebar: true
    
    | Method               | Description |
    |----------------------|-------------|
-   | [`setErrorCallback`](#seterrorcallback) | Set callback interface to process errors generated during frame decoding. |
-   | [`setTextResultCallback`](#settextresultcallback) | Set callback interface to process text results generated during frame decoding. |
-   | [`setIntermediateResultCallback`](#setintermediateresultcallback) | Set callback interface to process intermediate results generated during frame decoding. |
+   | [`setErrorCallback`](#seterrorcallback) | Set callback interface to process errors which is triggered when the library finishes decoding a frame. |
+   | [`setTextResultCallback`](#settextresultcallback) | Set callback interface to process text results which is triggered when the library finishes decoding a frame. |
+   | [`setIntermediateResultCallback`](#setintermediateresultcallback) | Set callback interface to process intermediate results which is triggered when the library finishes decoding a frame. |
 
 - Status retrieval
    
@@ -215,7 +215,7 @@ reader.destroy();
 
 
 ## setErrorCallback
-Set callback interface to process errors generated during frame decoding.
+Set callback interface to process errors which is triggered when the library finishes decoding a frame.
 
 ```java
 void com.dynamsoft.barcode.BarcodeReader.setErrorCallback(ErrorCallback errorCallback, Object userData) throws BarcodeReaderException
@@ -249,7 +249,7 @@ reader.startFrameDecoding(2, 10, 1024, 720, 1024, EnumImagePixelFormat.IPF_GRAYS
 
 
 ## setTextResultCallback
-Set callback interface to process text results generated during frame decoding.
+Set callback interface to process text results which is triggered when the library finishes decoding a frame.
 
 ```java
 void com.dynamsoft.barcode.BarcodeReader.setTextResultCallback(TextResultCallback textResultCallback, Object userData) throws BarcodeReaderException	
@@ -283,7 +283,7 @@ reader.startFrameDecoding(2, 10, 1024, 720, 1024, EnumImagePixelFormat.IPF_GRAYS
 
 
 ## setIntermediateResultCallback
-Set callback interface to process intermediate results generated during frame decoding.
+Set callback interface to process intermediate results which is triggered when the library finishes decoding a frame.
 
 ```java
 void com.dynamsoft.barcode.BarcodeReader.setIntermediateResultCallback(IntermediateResultCallback intermediateResultCallback, Object userData} throws BarcodeReaderException
