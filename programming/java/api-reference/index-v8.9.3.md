@@ -115,9 +115,9 @@ needGenerateH3Content: true
    
    | Method               | Description |
    |----------------------|-------------|
-   | [`setErrorCallback`](BarcodeReader/video.md#seterrorcallback) | Set callback interface to process errors generated during frame decoding. |
-   | [`setTextResultCallback`](BarcodeReader/video.md#settextresultcallback) | Set callback interface to process text results generated during frame decoding. |
-   | [`setIntermediateResultCallback`](BarcodeReader/video.md#setintermediateresultcallback) | Set callback interface to process intermediate results generated during frame decoding. |
+   | [`setErrorCallback`](BarcodeReader/video.md#seterrorcallback) | Set callback interface to process errors which is triggered when the library finishes decoding a frame. |
+   | [`setTextResultCallback`](BarcodeReader/video.md#settextresultcallback) | Set callback interface to process text results which is triggered when the library finishes decoding a frame. |
+   | [`setIntermediateResultCallback`](BarcodeReader/video.md#setintermediateresultcallback) | Set callback interface to process intermediate results which is triggered when the library finishes decoding a frame. |
 
 #### Status retrieval
    
