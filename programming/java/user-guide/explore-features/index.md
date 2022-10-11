@@ -37,6 +37,7 @@ While the SDK has been carefully tuned to provide the best possible performance 
 ## Barcode Results
 
 * [Get barcode confidence and rotation]({{site.features}}get-confidence-rotation.html?lang=java)
+* [Get barcode location]({{site.features}}get-barcode-location.html?lang=java)
 * [Get detailed barcode information]({{site.features}}get-detailed-info.html?lang=java)
 * [Filter and sort decoding results]({{site.features}}filter-and-sort.html?lang=java)
 * [Use intermediate results]({{site.features}}use-intermidiate-results.html?lang=java)
