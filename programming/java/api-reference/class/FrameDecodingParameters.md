@@ -41,7 +41,7 @@ int com.dynamsoft.dbr.FrameDecodingParameters.maxQueueLength
     3
 
 ### maxResultQueueLength
-The maximum number of frames waiting results (text result/localization result) will be kept for further reference.  
+The maximum number of frames whose results (text result/localization result) will be kept for further reference.  
 ```java
 int com.dynamsoft.dbr.FrameDecodingParameters.maxResultQueueLength
 ```
