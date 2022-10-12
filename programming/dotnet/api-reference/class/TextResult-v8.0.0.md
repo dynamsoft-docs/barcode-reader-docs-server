@@ -13,9 +13,6 @@ Stores the text result.
 ```csharp
 public class TextResult
 ```  
-  
----
-  
 
 ## Attributes
   

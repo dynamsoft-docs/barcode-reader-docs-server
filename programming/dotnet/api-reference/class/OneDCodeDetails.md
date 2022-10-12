@@ -12,9 +12,6 @@ Stores the OneD code details.
 ```csharp
 public class OneDCodeDetails
 ```  
-  
----
-  
 
 ## Attributes
   

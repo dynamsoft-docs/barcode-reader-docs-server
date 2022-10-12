@@ -12,9 +12,6 @@ Stores line segment data.
 ```csharp
 public class LineSegment
 ```  
-  
----
-  
 
 ## Attributes
   

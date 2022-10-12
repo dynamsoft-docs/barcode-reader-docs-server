@@ -15,9 +15,6 @@ Stores line segment data.
 ```cpp
 typedef struct tagLineSegment  LineSegment
 ```  
-  
----
-  
 
 ## Attributes
   

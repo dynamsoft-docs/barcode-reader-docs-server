@@ -13,9 +13,6 @@ Stores the PDF417 details.
 ```python
 class PDFDetailedResult
 ```  
-  
----
-  
 
 ## Attributes
   

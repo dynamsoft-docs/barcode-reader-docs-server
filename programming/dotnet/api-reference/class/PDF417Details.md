@@ -13,9 +13,6 @@ Stores the PDF417 details.
 ```csharp
 public class PDF417Details
 ```  
-  
----
-  
 
 ## Attributes
   

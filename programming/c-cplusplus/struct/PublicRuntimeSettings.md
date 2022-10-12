@@ -15,9 +15,6 @@ Defines a struct to configure the barcode reading runtime settings. These settin
 ```cpp
 typedef struct tagPublicRuntimeSettings  PublicRuntimeSettings
 ```  
-  
----
-  
 
 ## Attributes
   

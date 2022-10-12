@@ -13,9 +13,6 @@ Stores the region information.
 ```csharp
 public struct RegionDefinition
 ```  
-  
----
-  
 
 ## Attributes
   

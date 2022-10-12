@@ -15,9 +15,6 @@ Stores the PDF417 details.
 ```cpp
 typedef struct tagPDF417Details  PDF417Details
 ```  
-  
----
-  
 
 ## Attributes
   

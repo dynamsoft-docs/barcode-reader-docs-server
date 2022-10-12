@@ -16,9 +16,6 @@ Stores the intermediate result.
 typedef struct tagIntermediateResult  IntermediateResult 
 typedef struct tagIntermediateResult*  PIntermediateResult
 ```  
-  
----
-  
 
 ## Attributes
   

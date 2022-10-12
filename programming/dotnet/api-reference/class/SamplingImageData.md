@@ -13,9 +13,6 @@ Stores the sampling image data.
 ```csharp
 public class SamplingImageData
 ```  
-  
----
-  
 
 ## Attributes
   

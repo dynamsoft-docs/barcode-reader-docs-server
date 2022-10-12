@@ -13,9 +13,6 @@ Stores the FurtherModes.
 ```csharp
 public struct FurtherModes
 ```  
-  
----
-  
 
 ## Attributes
   

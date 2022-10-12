@@ -15,9 +15,6 @@ Stores the region information.
 ```cpp
 typedef struct tagRegionDefinition  RegionDefinition
 ```  
-  
----
-  
 
 ## Attributes
   

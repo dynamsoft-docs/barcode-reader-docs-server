@@ -15,9 +15,6 @@ Stores the QRCode details.
 ```cpp
 typedef struct tagQRCodeDetails  QRCodeDetails
 ```  
-  
----
-  
 
 ## Attributes
   

@@ -13,9 +13,6 @@ Defines a struct to configure the barcode reading runtime settings. These settin
 ```C#
 public struct PublicRuntimeSettings
 ```  
-  
----
-  
 
 ## Attributes
   

@@ -13,9 +13,6 @@ Stores the quadrilateral.
 ```python
 class Quadrilateral 
 ```  
-  
----
-  
 
 ## Attributes
   

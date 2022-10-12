@@ -14,9 +14,6 @@ Stores the OneD code details.
 ```cpp
 typedef struct tagOneDCodeDetails  OneDCodeDetails
 ```  
-  
----
-  
 
 ## Attributes
   

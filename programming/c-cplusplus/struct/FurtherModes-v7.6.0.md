@@ -15,9 +15,6 @@ Stores the FurtherModes.
 ```cpp
 typedef struct tagFurtherModes  FurtherModes
 ```  
-  
----
-  
 
 ## Attributes
   

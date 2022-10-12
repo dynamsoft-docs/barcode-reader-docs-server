@@ -13,9 +13,6 @@ Defines a class to configure the barcode reading runtime settings. These setting
 ```python
 class PublicRuntimeSetting
 ```  
-  
----
-  
 
 ## Attributes
   

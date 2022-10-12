@@ -13,9 +13,6 @@ Stores the quadrilateral.
 ```csharp
 public class Quadrilateral 
 ```  
-  
----
-  
 
 ## Attributes
   
