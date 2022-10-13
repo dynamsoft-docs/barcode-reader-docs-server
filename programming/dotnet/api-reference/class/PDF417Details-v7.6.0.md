@@ -39,7 +39,7 @@ int Dynamsoft.Barcode.PDF417Details.Rows
 ```
 
 ### Columns
-The column count of the barcode.
+The column count of codewords between the left and right row indicators, where the actual data and the ECC is encoded.
 
 ```C#
 int Dynamsoft.Barcode.PDF417Details.Columns
