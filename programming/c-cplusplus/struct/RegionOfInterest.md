@@ -15,9 +15,6 @@ Stores the region of interest.
 ```cpp
 typedef struct tagRegionOfInterest  RegionOfInterest
 ```  
-  
----
-  
 
 ## Attributes
   

@@ -13,9 +13,6 @@ Stores the sampling image data.
 ```python
 public class SamplingImageData
 ```  
-  
----
-  
 
 ## Attributes
   

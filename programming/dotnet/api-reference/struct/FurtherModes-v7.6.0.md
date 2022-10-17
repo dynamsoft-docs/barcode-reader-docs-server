@@ -13,9 +13,6 @@ Stores the FurtherModes.
 ```C#
 public struct FurtherModes
 ```  
-  
----
-  
 
 ## Attributes
   

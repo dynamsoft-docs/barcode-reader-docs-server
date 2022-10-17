@@ -13,9 +13,6 @@ Stores the region of interest.
 ```csharp
 public class RegionOfInterest
 ```  
-  
----
-  
 
 ## Attributes
   

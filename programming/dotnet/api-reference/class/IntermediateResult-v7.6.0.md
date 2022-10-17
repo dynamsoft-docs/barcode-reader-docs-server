@@ -15,9 +15,6 @@ Stores the intermediate result.
 ```C#
 public class IntermediateResult
 ```  
-  
----
-  
 
 ## Attributes
   

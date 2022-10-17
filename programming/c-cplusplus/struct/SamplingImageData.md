@@ -15,9 +15,6 @@ Stores the sampling image data.
 ```cpp
 typedef struct tagSamplingImageData  SamplingImageData
 ```  
-  
----
-  
 
 ## Attributes
   

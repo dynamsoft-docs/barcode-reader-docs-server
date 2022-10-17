@@ -16,9 +16,6 @@ Stores the text result.
 typedef struct tagTextResult  TextResult
 typedef struct tagTextResult*  PTextResult
 ```  
-  
----
-  
 
 ## Attributes
   

@@ -12,9 +12,6 @@ Stores line segment data.
 ```python
 class LineSegment
 ```  
-  
----
-  
 
 ## Attributes
   

@@ -12,9 +12,6 @@ Stores line segment data.
 ```C#
 public class LineSegment
 ```  
-  
----
-  
 
 ## Attributes
   

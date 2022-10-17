@@ -13,9 +13,6 @@ Stores the quadrilateral.
 ```C#
 public class Quadrilateral 
 ```  
-  
----
-  
 
 ## Attributes
   

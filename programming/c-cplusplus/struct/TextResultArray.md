@@ -15,9 +15,6 @@ Stores the text result array.
 typedef struct tagTextResultArray  TextResultArray
 typedef struct tagTextResultArray*  PTextResultArray
 ```  
-  
----
-  
 
 ## Attributes
   

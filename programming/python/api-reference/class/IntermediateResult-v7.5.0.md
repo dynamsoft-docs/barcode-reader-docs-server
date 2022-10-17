@@ -13,9 +13,6 @@ Stores the intermediate result.
 ```python
 class IntermediateResult
 ```  
-  
----
-  
 
 ## Attributes
   

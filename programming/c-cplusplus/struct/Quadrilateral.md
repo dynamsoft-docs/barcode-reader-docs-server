@@ -15,9 +15,6 @@ Stores the quadrilateral.
 ```cpp
 typedef struct tagQuadrilateral  Quadrilateral 
 ```  
-  
----
-  
 
 ## Attributes
   
