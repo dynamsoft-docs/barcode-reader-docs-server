@@ -48,7 +48,7 @@ int Dynamsoft.DBR.FrameDecodingParameters.MaxQueueLength
     3
 
 ### MaxResultQueueLength
-The maximum number of frames waiting results (text result/localization result) will be kept for further reference.  
+The maximum number of frames whose results (text result/localization result) will be kept for further reference.  
 
 ```csharp
 int Dynamsoft.DBR.FrameDecodingParameters.MaxResultQueueLength

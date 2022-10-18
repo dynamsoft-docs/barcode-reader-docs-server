@@ -15,9 +15,6 @@ Stores the PDF417 details.
 ```cpp
 typedef struct tagPDF417Details  PDF417Details
 ```  
-  
----
-  
 
 ## Attributes
   
@@ -43,7 +40,8 @@ int tagPDF417Details::rows
 ```
 
 ### columns
-The column count of the barcode.
+The column count of codewords between the left and right row indicators, where the actual data and the ECC is encoded.
+
 ```cpp
 int tagPDF417Details::columns
 ```

@@ -12,9 +12,6 @@ Stores the OneD code details.
 ```C#
 public class OneDCodeDetails
 ```  
-  
----
-  
 
 ## Attributes
   

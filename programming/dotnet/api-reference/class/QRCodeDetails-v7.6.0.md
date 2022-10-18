@@ -14,9 +14,6 @@ Stores the QRCode details.
 ```C#
 public class QRCodeDetails
 ```  
-  
----
-  
 
 ## Attributes
   

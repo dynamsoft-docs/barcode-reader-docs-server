@@ -13,10 +13,6 @@ needAutoGenerateSidebar: true
   | [`BarcodeReader`](#barcodereader) | Default constructor of `BarcodeReader` object.|
   | [`Dispose`](#dispose) | Destroys an instance of Dynamsoft Barcode Reader. |
 
----
-
-
-
 ## BarcodeReader
 
 ### BarcodeReader()

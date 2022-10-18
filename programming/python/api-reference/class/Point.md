@@ -13,9 +13,6 @@ Stores an x- and y-coordinate pair in two-dimensional space.
 ```python
 class Point
 ```  
-  
----
-  
 
 ## Attributes
   

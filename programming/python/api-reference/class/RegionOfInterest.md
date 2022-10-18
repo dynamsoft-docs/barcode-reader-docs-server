@@ -13,9 +13,6 @@ Stores the region of interest.
 ```python
 class RegionOfInterest
 ```  
-  
----
-  
 
 ## Attributes
   

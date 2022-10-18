@@ -13,9 +13,6 @@ Stores the localization result.
 ```python
 public class LocalizationResult
 ```  
-  
----
-  
 
 ## Attributes
   

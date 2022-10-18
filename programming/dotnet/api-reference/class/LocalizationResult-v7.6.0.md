@@ -13,9 +13,6 @@ Stores the localization result.
 ```C#
 public class LocalizationResult
 ```  
-  
----
-  
 
 ## Attributes
   

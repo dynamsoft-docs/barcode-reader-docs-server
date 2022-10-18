@@ -15,9 +15,6 @@ Stores the intermediate result array.
 ```cpp
 typedef struct tagIntermediateResultArray  IntermediateResultArray
 ```  
-  
----
-  
 
 ## Attributes
   

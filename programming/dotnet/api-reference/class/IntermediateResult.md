@@ -15,9 +15,6 @@ Stores the intermediate result.
 ```csharp
 public class IntermediateResult
 ```  
-  
----
-  
 
 ## Attributes
   

@@ -14,9 +14,6 @@ Stores the QRCode details.
 ```python
 class QRCodeDetailedResult
 ```  
-  
----
-  
 
 ## Attributes
   

@@ -13,9 +13,6 @@ Stores the PDF417 details.
 ```csharp
 public class PDF417Details
 ```  
-  
----
-  
 
 ## Attributes
   
@@ -42,7 +39,8 @@ int Dynamsoft.PDF417Details.Rows
 ```
 
 ### Columns
-The column count of the barcode.
+The column count of codewords between the left and right row indicators, where the actual data and the ECC is encoded.
+
 
 ```csharp
 int Dynamsoft.PDF417Details.Columns

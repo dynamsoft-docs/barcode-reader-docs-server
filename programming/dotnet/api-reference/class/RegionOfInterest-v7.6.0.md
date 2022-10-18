@@ -13,9 +13,6 @@ Stores the region of interest.
 ```C#
 public class RegionOfInterest
 ```  
-  
----
-  
 
 ## Attributes
   

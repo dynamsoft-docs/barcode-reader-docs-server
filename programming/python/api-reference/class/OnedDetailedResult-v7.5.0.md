@@ -12,9 +12,6 @@ Stores the OneD code details.
 ```python
 class OnedDetailedResult
 ```  
-  
----
-  
 
 ## Attributes
   

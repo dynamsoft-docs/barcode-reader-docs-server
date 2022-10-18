@@ -13,9 +13,6 @@ Stores the sampling image data.
 ```C#
 public class SamplingImageData
 ```  
-  
----
-  
 
 ## Attributes
   

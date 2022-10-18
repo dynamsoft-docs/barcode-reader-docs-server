@@ -13,9 +13,6 @@ Stores the text result.
 ```C#
 public class TextResult
 ```  
-  
----
-  
 
 ## Attributes
   
