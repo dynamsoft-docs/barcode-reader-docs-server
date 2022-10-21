@@ -127,7 +127,7 @@ Please change all `[INSTALLATION FOLDER]` in above code snippet to your unpackin
 
 
 ### Build and Run the Project
-1. Right click the project， click Run As > Java Application.
+1. Right click the project, click Run As > Java Application.
 
 >You can download the entire source code and compiled program from [Here](https://download2.dynamsoft.com/samples/dbr/user-guide/dbr-java-sample.zip).
 
