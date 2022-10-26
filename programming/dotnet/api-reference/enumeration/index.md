@@ -3,7 +3,6 @@ layout: default-layout
 title: Dynamsoft Barcode Reader Enumerations - Main Page
 description: This article shows the main page of Dynamsoft Barcode Reader Enumerations.
 keywords: enumerations
-needAutoGenerateSidebar: false
 breadcrumbText: Enumerations
 permalink: /programming/dotnet/api-reference/enumeration/
 ---
@@ -51,6 +50,13 @@ permalink: /programming/dotnet/api-reference/enumeration/
   | [`ResultType`](result-enums.md#resulttype) | Describes the extended result type. |
   | [`TextResultOrderMode`](result-enums.md#textresultordermode) | Describes the text result order mode. |
 
+## [Frame Decoding Enumeration](frame-decoding-enums.md)
+
+  | Enumeration | Description |
+  |-------------|-------------|
+  | [`ClarityCalculationMethod`](frame-decoding-enums.md#claritycalculationmethod) | Describes the clarity calculation method. |
+  | [`ClarityFilterMode`](frame-decoding-enums.md#clarityfiltermode) | Describes the clarity filter mode. |
+  
 ## [Other Enumeration](other-enums.md)
 
   | Enumeration | Description |

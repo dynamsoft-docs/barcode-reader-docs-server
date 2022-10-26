@@ -3,7 +3,6 @@ layout: default-layout
 title: Dynamsoft Barcode Reader Enumerations - Main Page
 description: This article shows the main page of Dynamsoft Barcode Reader Enumerations.
 keywords: enumerations
-needAutoGenerateSidebar: false
 permalink: /programming/c-cplusplus/enumeration/
 ---
 
@@ -49,6 +48,13 @@ permalink: /programming/c-cplusplus/enumeration/
   | [`ResultCoordinateType`](result-enums.md#resultcoordinatetype) | Describes the result coordinate type. |
   | [`ResultType`](result-enums.md#resulttype) | Describes the extended result type. |
   | [`TextResultOrderMode`](result-enums.md#textresultordermode) | Describes the text result order mode. |
+
+## [Frame Decoding Enumeration](frame-decoding-enums.md)
+
+  | Enumeration | Description |
+  |-------------|-------------|
+  | [`ClarityCalculationMethod`](frame-decoding-enums.md#claritycalculationmethod) | Describes the clarity calculation method. |
+  | [`ClarityFilterMode`](frame-decoding-enums.md#clarityfiltermode) | Describes the clarity filter mode. |
 
 ## [Other Enumeration](other-enums.md)
 

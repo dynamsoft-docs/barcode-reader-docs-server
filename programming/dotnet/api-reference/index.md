@@ -236,6 +236,7 @@ needGenerateH3Content: true
   | [`QRCodeErrorCorrectionLevel`]({{ site.dotnet_enumerations }}other-enums.html#qrcodeerrorcorrectionlevel) | Describes the QR Code error correction level. |
   | [`Product`]({{ site.dotnet_enumerations }}other-enums.html#product) | `Deprecated` |
 
+### [Error Code]({{ site.dotnet_enumerations }}error-code.html)
 
 
 ## Delegates
