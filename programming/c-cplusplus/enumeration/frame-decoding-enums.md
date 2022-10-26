@@ -10,14 +10,10 @@ permalink: /programming/c-cplusplus/enumeration/frame-decoding-enums.html
 
 # Frame Decoding Enumeration
 
-> Note:
->
-> - Frame Decoding Enumerations are removed in 9.0 version.
-
-  | Enumeration | Description |
-  |-------------|-------------|
-  | [`ClarityCalculationMethod`](#claritycalculationmethod) | Describes the clarity calculation method. |
-  | [`ClarityFilterMode`](#clarityfiltermode) | Describes the clarity filter mode. |
+| Enumeration | Description |
+|-------------|-------------|
+| [`ClarityCalculationMethod`](#claritycalculationmethod) | Describes the clarity calculation method. |
+| [`ClarityFilterMode`](#clarityfiltermode) | Describes the clarity filter mode. |
 
 ## ClarityCalculationMethod
 

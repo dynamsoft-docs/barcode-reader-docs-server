@@ -215,6 +215,7 @@ needGenerateH3Content: true
   | [`QRCodeErrorCorrectionLevel`]({{ site.enumerations }}other-enums.html?src=c#qrcodeerrorcorrectionlevel) | Describes the QR Code error correction level. |
   | [`Product`]({{ site.enumerations }}other-enums.html?src=c#product) | Describes Dynamsoft products. |
 
+### [Error Code]({{ site.enumerations }}error-code.html?src=c)
 
 ## Callbacks
 
