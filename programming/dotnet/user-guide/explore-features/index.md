@@ -10,7 +10,7 @@ noTitleIndex: false
 
 Once you have got an application running with Dynamsoft Barcode Reader .NET edition, you can explore the many features of the SDK to see how to make the best out of the SDK.
 
-> If you are just getting started with Dynamsoft Barcode Reader .NET Edition, we recommend that you read [Getting Started](../index.md) first.
+> If you are just getting started with Dynamsoft Barcode Reader .NET Edition, we recommend that you read [Getting Started]({{site.dotnet}}user-guide.html) first.
 
 ## Basic Features
 
