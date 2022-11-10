@@ -42,6 +42,7 @@ typedef struct tagLocalizationResult*  PLocalizationResult
 | [`documentName`](#documentname)| *const char \** |
 | [`resultCoordinateType`](#resultcoordinatetype) | [`ResultCoordinateType`]({{ site.enumerations }}result-enums.html#resultcoordinatetype) |
 | [`confidence`](#confidence) | *int* |
+| [`transformationMatrix`](#transformationmatrix) | *double[9]* |
 | [`reserved`](#reserved) | *char\[52\]* |
 
 
@@ -167,6 +168,14 @@ ResultCoordinateType tagLocalizationResult::resultCoordinateType
 The confidence of the localization result.
 ```cpp
 int tagLocalizationResult::confidence
+```
+
+### transformationMatrix
+
+The transformation matrix. With this matrix, you can transform the localization coordinates to image's natural orientation.
+
+```cpp
+double tagLocalizationResult::transformationMatrix[9]
 ```
 
 ### reserved

@@ -14,8 +14,6 @@ Defines a struct to configure the frame decoding Parameters.
 class FrameDecodingParameters
 ```
 
----
-
 ## Attributes
     
 | Attribute | Type |
@@ -36,6 +34,8 @@ class FrameDecodingParameters
 | [`auto_filter`](#autofilter) | *int* |
 | [`clarity_calculation_method`](#clarity_calculation_method) | [`ClarityCalculationMethod`]({{ site.python_enumerations }}frame-decoding-enums.html#claritycalculationmethod) |
 | [`clarity_filter_mode`](#clarity_filter_mode) | [`ClarityFilterMode`]({{ site.python_enumerations }}frame-decoding-enums.html#clarityfiltermode) |
+| [`duplicate_forget_time`](#duplicate_forget_time) | *int* |
+| [`orientation`](#orientation) | *int* |
 
 
 ### max_queue_length
@@ -285,3 +285,34 @@ FrameDecodingParameters.clarity_filter_mode
 **See Also**      
     [`ClarityFilterMode`]({{ site.python_enumerations }}frame-decoding-enums.html#clarityfiltermode)    
 
+### duplicate_forget_time
+
+Set the time period used to ignore duplicate results found in frames. Measured in ms.
+
+```python
+FrameDecodingParameters.duplicate_forget_time
+```
+
+**Value Range**
+
+[0, 600000]
+
+**Default Value**
+
+3000
+
+### orientation
+
+Set the orientation of the frame image data. The value is the angle that the image needs to be rotated clockwise so it shows correctly on the display in its natural orientation. It can be 0, 90, 180, or 270.
+
+```python
+FrameDecodingParameters.orientation
+```
+
+**Value Range**
+
+0, 90, 180, or 270
+
+**Default Value**
+
+0

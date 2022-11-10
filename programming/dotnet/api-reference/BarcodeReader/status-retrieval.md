@@ -11,8 +11,7 @@ needAutoGenerateSidebar: true
   | Method               | Description |
   |----------------------|-------------|
   | [`GetVersion`](#getversion) | Get version information of SDK.|
-
-
+  | [`TransformCoordinates`](#transformcoordinates) | Transform the coordinates of a point based on the given transformation matrix. |
 
 ## GetVersion
 
@@ -29,4 +28,28 @@ The version info string.
 ```csharp
 BarcodeReader reader = new BarcodeReader();
 string version = reader.GetVersion();
+```
+
+## TransformCoordinates
+
+Transform the coordinates of a point based on the given transformation matrix.
+
+```csharp
+static Point Dynamsoft.DBR.BarcodeReader.TransformCoordinates(Point originalPoint, double[] transformationMatrix)
+```
+
+**Parameters**  
+
+`[in] originalPoint` : The original point that needs to be transformed.
+`[in] transformationMatrix` : The 3x3 matrix used for coordinate transformation.
+
+**Return Value**  
+
+The point after transformation.
+
+**Code Snippet**  
+
+```csharp
+//get originalPoint and transformationMatrix from LocalizationResult
+Point targetPoint = BarcodeReader.TransformCoordinates(originalPoint, transformationMatrix);
 ```

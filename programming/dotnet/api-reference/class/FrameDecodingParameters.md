@@ -14,8 +14,6 @@ Defines a struct to configure the frame decoding Parameters.
 public class FrameDecodingParameters
 ```
 
----
-
 ## Attributes
     
 | Attribute | Type |
@@ -32,6 +30,8 @@ public class FrameDecodingParameters
 | [`AutoFilter`](#autofilter) | *int* |
 | [`ClarityCalculationMethod`](#claritycalculationmethod) | [`EnumClarityCalculationMethod`]({{ site.dotnet_enumerations }}frame-decoding-enums.html#claritycalculationmethod) |
 | [`ClarityFilterMode`](#clarityfiltermode) | [`EnumClarityFilterMode`]({{ site.dotnet_enumerations }}frame-decoding-enums.html#clarityfiltermode) |
+| [`DuplicateForgetTime`](#duplicateforgettime) | *int* |
+| [`Orientation`](#orientation) | *int* |
 
 
 ### MaxQueueLength
@@ -200,3 +200,35 @@ EnumClarityFilterMode Dynamsoft.DBR.FrameDecodingParameters.ClarityFilterMode
       
 **Default Value**     
     EnumClarityFilterMode.CFM_GENERAL   
+
+### DuplicateForgetTime
+
+Set the time period used to ignore duplicate results found in frames. Measured in ms.
+
+```csharp
+int Dynamsoft.DBR.FrameDecodingParameters.DuplicateForgetTime
+```
+
+**Value Range**
+
+[0, 600000]
+
+**Default Value**
+
+3000
+
+### Orientation
+
+Set the orientation of the frame image data. The value is the angle that the image needs to be rotated clockwise so it shows correctly on the display in its natural orientation. It can be 0, 90, 180, or 270.
+
+```csharp
+int Dynamsoft.DBR.FrameDecodingParameters.Orientation
+```
+
+**Value Range**
+
+0, 90, 180, or 270
+
+**Default Value**
+
+0

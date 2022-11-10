@@ -12,12 +12,7 @@ needAutoGenerateSidebar: true
   |----------------------|-------------|
   | [`DBR_GetErrorString`](#dbr_geterrorstring) | Get error message by error code. |
   | [`DBR_GetVersion`](#dbr_getversion) | Get version information of SDK. |
-  
----
-
-
-
-
+  | [`DBR_TransformCoordinates`](#dbr_transformcoordinates) | Transform the coordinate based on the given transformation matrix. |
 
 ## DBR_GetErrorString
 
@@ -66,3 +61,26 @@ The version information string.
 const char* versionInfo = DBR_GetVersion();
 ```
 
+## DBR_TransformCoordinates
+
+Transform the coordinates of a point based on the given transformation matrix.
+
+```c
+DBR_API DBRPoint DBR_TransformCoordinates(DBRPoint originalPoint, double transformationMatrix[9])
+```
+
+**Parameters**  
+
+`[in] originalPoint` : The original point that needs to be transformed.
+`[in] transformationMatrix` : The 3x3 matrix used for coordinate transformation.
+
+**Return Value**  
+
+The point after transformation.
+
+**Code Snippet**  
+
+```c
+//get originalPoint and transformationMatrix from LocalizationResult
+DBRPoint targetPoint = DBR_TransformCoordinates(originalPoint, transformationMatrix);
+```

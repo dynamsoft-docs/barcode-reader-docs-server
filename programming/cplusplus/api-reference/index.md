@@ -98,6 +98,7 @@ needGenerateH3Content: true
   |----------------------|-------------|
   | [`GetErrorString`](cbarcodereader-methods/status-retrieval.md#geterrorstring) | Get error message by error code.|
   | [`GetVersion`](cbarcodereader-methods/status-retrieval.md#getversion) | Get version information of SDK.|
+  | [`TransformCoordinates`](cbarcodereader-methods/status-retrieval.md#transformcoordinates) | Transform the coordinates of a point based on the given transformation matrix. |
    
    
 ### Video Methods

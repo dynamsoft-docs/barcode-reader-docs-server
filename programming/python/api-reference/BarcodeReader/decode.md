@@ -19,7 +19,6 @@ needAutoGenerateSidebar: true
   | [`init_intermediate_result`](#initintermediateresult) | Inits an intermediateResult struct with default values. |
   | [`decode_intermediate_results`](#decodeintermediateresults) | Decodes barcode from intermediate results. |
 
-
 ## decode_file
 
 Decode barcodes from a specified image file.
@@ -71,20 +70,20 @@ Decodes barcodes from the memory buffer containing image pixels in defined forma
 
 ```python
 BarcodeReader.decode_buffer(image, image_pixel_format=EnumImagePixelFormat.IPF_RGB_888, template_name="")
-```   
-   
+
+BarcodeReader.decode_buffer(image, image_pixel_format=EnumImagePixelFormat.IPF_RGB_888, orientation, template_name="")
+```
+
 **Parameters**  
 `[in] image` <*class numpy.ndarray*> : The image which is processed by opencv.  
 `[in] image_pixel_format` <*class EnumImagePixelFormat*> : The image pixel format used in the image byte array.  
+`[in] orientation` <*int*> : The orientation of the image data. The value is the angle that the image needs to be rotated clockwise so it shows correctly on the display in its natural orientation. It can be 0, 90, 180, or 270.  
 `[in] template_name` <*optional*><*str*> : The template name.
 
-
 **Return Value**  
-
 `text_results <*list[class TextResult]*>` : All [`TextResult`](../class/TextResult.md) structs for successfully decoded barcodes.
 
 **Exception**  
-
 [`BarcodeReaderError`](../class/BarcodeReaderError.md) : If error happens, this function will throw a BarcodeReaderError exception that can report the detailed error message.  
 
 **Code Snippet**  
@@ -169,16 +168,18 @@ Decodes barcodes from the memory buffer containing image pixels in defined forma
 
 ```python
 BarcodeReader.decode_buffer_manually(self, buffer, width, height, stride, image_pixel_format, template_name="")
-```   
-   
+
+BarcodeReader.decode_buffer_manually(self, buffer, width, height, stride, image_pixel_format, orientation, template_name="")
+```
+
 **Parameters**  
 `[in] buffer` <*bytes or bytearray*> : The array of bytes which contain the image data.  
 `[in] width` <*int*> : The width of the image in pixels.  
 `[in] height` <*int*> : The height of the image in pixels.  
 `[in] stride` <*int*> : The stride (or scan width) of the image.  
 `[in] image_pixel_format` <*class EnumImagePixelFormat*> : The image pixel format used in the image byte array. Default value = EnumImagePixelFormat.IPF_RGB_888.  
+`[in] orientation` <*int*> : The orientation of the image data. The value is the angle that the image needs to be rotated clockwise so it shows correctly on the display in its natural orientation. It can be 0, 90, 180, or 270.  
 `[in] template_name` <*optional*><*str*> : The template name.
-
 
 **Return Value**  
 text_results <*list[class TextResult]*> : All [`TextResult`](../class/TextResult.md) structs for successfully decoded barcodes.

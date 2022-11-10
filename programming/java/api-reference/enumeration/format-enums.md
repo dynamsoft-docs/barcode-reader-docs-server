@@ -80,6 +80,7 @@ class EnumBarcodeFormat_2
 
 | Member | Value | Description |
 | -------------- | ----- | ----------- |
+| BF2_ALL | 0xFFFFFFFF | All supported formats in [BarcodeFormat group 2](#barcodeformat_2). |
 | BF2_POSTALCODE | 0x01F00000 | Combined value of BF2_USPSINTELLIGENTMAIL, BF2_POSTNET, BF2_PLANET, BF2_AUSTRALIANPOST, BF2_RM4SCC. |
 | BF2_PHARMACODE | 0x0C | Combined value of BF2_PHARMACODE_ONE_TRACK, BF2_PHARMACODE_TWO_TRACK. |
 | BF2_NULL | 0x00 | No barcode format in [BarcodeFormat group 2](#barcodeformat_2). |

@@ -34,6 +34,7 @@ public class LocalizationResult
 | [`ResultCoordinateType`](#resultcoordinatetype) | [`EnumResultCoordinateType`]({{ site.parameters_reference }}result-coordinate-type.html) |
 | [`AccompanyingTextBytes`](#accompanyingtextbytes) | *byte[ ]* |
 | [`Confidence`](#confidence) | *int* |
+| [`TransformationMatrix`](#transformationmatrix) | *double[]* |
 
 
 ### TerminatePhase
@@ -134,4 +135,12 @@ The confidence of the localization result.
 
 ```csharp
 int Dynamsoft.LocalizationResult.Confidence
+```
+
+### TransformationMatrix
+
+The transformation matrix. With this matrix, you can transform the localization coordinates to image's natural orientation.
+
+```csharp
+double[] Dynamsoft.LocalizationResult.TransformationMatrix
 ```

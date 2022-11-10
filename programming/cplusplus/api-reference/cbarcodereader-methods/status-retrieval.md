@@ -12,13 +12,8 @@ needAutoGenerateSidebar: true
   |----------------------|-------------|
   | [`GetErrorString`](#geterrorstring) | Get error message by error code.|
   | [`GetVersion`](#getversion) | Get version information of SDK.|
+  | [`TransformCoordinates`](#transformcoordinates) | Transform the coordinates of a point based on the given transformation matrix. |
 
-
-
-
-
-
-  
 ## GetErrorString
 
 Get error message by error code.
@@ -43,12 +38,6 @@ const char* errorString = dynamsoft::dbr::CBarcodeReader::GetErrorString(errorCo
 delete reader;
 ```
 
-
-
-
-
-
-
 ## GetVersion
 
 Get version information of SDK.
@@ -63,4 +52,28 @@ The version information string.
 **Code Snippet**  
 ```cpp
 const char* versionInfo = dynamsoft::dbr::CBarcodeReader::GetVersion();
+```
+
+## TransformCoordinates
+
+Transform the coordinates of a point based on the given transformation matrix.
+
+```cpp
+static DBRPoint dynamsoft::dbr::CBarcodeReader::TransformCoordinates(DBRPoint originalPoint, double transformationMatrix[9])
+```
+
+**Parameters**  
+
+`[in] originalPoint` : The original point that needs to be transformed.
+`[in] transformationMatrix` : The 3x3 matrix used for coordinate transformation.
+
+**Return Value**  
+
+The point after transformation.
+
+**Code Snippet**  
+
+```cpp
+//get originalPoint and transformationMatrix from LocalizationResult
+DBRPoint targetPoint = CBarcodeReader::TransformCoordinates(originalPoint, transformationMatrix);
 ```

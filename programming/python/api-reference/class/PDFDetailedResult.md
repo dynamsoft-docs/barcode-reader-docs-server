@@ -22,9 +22,11 @@ class PDFDetailedResult
 | [`rows`](#rows) | *int* |
 | [`columns`](#columns) | *int* |
 | [`error_correction_level`](#error_correction_level) | *int* |
-
+| [`left_row_indicator_exists`](#left_row_indicator_exists) | *int* |
+| [`right_row_indicator_exists`](#right_row_indicator_exists) | *int* |
 
 ### module_size
+
 The barcode module size (the minimum bar width in pixel).
 
 ```python
@@ -32,6 +34,7 @@ PDFDetailedResult.module_size
 ```
 
 ### rows
+
 The row count of the barcode.
 
 ```python
@@ -39,16 +42,39 @@ PDFDetailedResult.rows
 ```
 
 ### columns
-The column count of codewords between the left and right row indicators, where the actual data and the ECC is encoded.
 
+The column count of codewords between the left and right row indicators, where the actual data and the ECC is encoded.
 
 ```python
 PDFDetailedResult.columns
 ```
 
 ### error_correction_level
+
 The error correction level of the barcode.
 
 ```python
 PDFDetailedResult.error_correction_level
+```
+
+### left_row_indicator_exists
+
+Whether the left row indicator of the PDF417 code exists.
+
+- 0: left row indicator does not exist
+- 1: left row indicator exists
+
+```python
+PDFDetailedResult.left_row_indicator_exists
+```
+
+### right_row_indicator_exists
+
+Whether the right row indicator of the PDF417 code exists.
+
+- 0: right row indicator does not exist
+- 1: right row indicator exists
+
+```python
+PDFDetailedResult.right_row_indicator_exists
 ```

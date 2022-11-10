@@ -95,6 +95,7 @@ needGenerateH3Content: true
   | Method               | Description |
   |----------------------|-------------|
   | [`GetVersion`](BarcodeReader/status-retrieval.md#getversion) | Gets version information of SDK. |
+  | [`TransformCoordinates`](BarcodeReader/status-retrieval.md#transformcoordinates) | Transform the coordinates of a point based on the given transformation matrix. |
    
       
  

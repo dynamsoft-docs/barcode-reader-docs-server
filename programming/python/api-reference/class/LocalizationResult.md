@@ -23,7 +23,7 @@ public class LocalizationResult
 | [`terminate_phase`](#terminate_phase) | [`TerminatePhase`]({{ site.python_enumerations }}parameter-mode-enums.html#terminatephase) |
 | [`barcode_format`](#barcode_format) | [`BarcodeFormat`]({{ site.python_enumerations }}format-enums.html#barcodeformat) |
 | [`barcode_format_string`](#barcode_format_string) | *str* |
-| [`barcode_format_2 `](#barcode_format_2 ) | [`BarcodeFormat_2`]({{ site.python_enumerations }}format-enums.html#barcodeformat_2) |
+| [`barcode_format_2`](#barcode_format_2 ) | [`BarcodeFormat_2`]({{ site.python_enumerations }}format-enums.html#barcodeformat_2) |
 | [`barcode_format_string_2`](#barcode_format_string_2) | *str* |
 | [`localization_points`](#localization_points) | *tuple* |
 | [`angle`](#angle) | *int* |
@@ -34,6 +34,7 @@ public class LocalizationResult
 | [`result_coordinate_type`](#result_coordinate_type) | [`ResultCoordinateType`]({{ site.python_enumerations }}result-enums.html#resultcoordinatetype) |
 | [`accompanying_text_bytes`](#accompanying_text_bytes) | *bytearray* |
 | [`confidence`](#confidence) | *int* |
+| [`transformation_matrix`](#transformation_matrix) | *list[double]* |
 
 
 ### terminate_phase
@@ -132,4 +133,12 @@ The confidence of the localization result.
 
 ```python
 LocalizationResult.confidence
+```
+
+### transformation_matrix
+
+The transformation matrix. With this matrix, you can transform the localization coordinates to image's natural orientation.
+
+```python
+LocalizationResult.transformation_matrix
 ```

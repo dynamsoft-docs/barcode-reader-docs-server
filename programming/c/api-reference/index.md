@@ -44,6 +44,7 @@ needGenerateH3Content: true
   | [`DBR_DecodeFile`](methods/decode.md#dbr_decodefile) | Decode barcodes from a specified image file. |
   | [`DBR_DecodeFileInMemory`](methods/decode.md#dbr_decodefileinmemory) | Decode barcodes from an image file in memory. |
   | [`DBR_DecodeBuffer`](methods/decode.md#dbr_decodebuffer) | Decode barcodes from raw buffer. |
+  | [`DBR_DecodeImageData`](methods/decode.md#dbr_decodeimagedata) | Decode barcodes from source image defined as ImageData. |
   | [`DBR_DecodeBase64String`](methods/decode.md#dbr_decodebase64string) | Decode barcodes from a base64 encoded string. |
   | [`DBR_DecodeDIB`](methods/decode.md#dbr_decodedib) | Decode barcode from a handle of device-independent bitmap (DIB). | 
   | [`DBR_InitIntermediateResult`](methods/decode.md#dbr_initintermediateresult) | Inits an intermediateResult struct with default values. |
@@ -91,6 +92,7 @@ needGenerateH3Content: true
   |----------------------|-------------|
   | [`DBR_GetErrorString`](methods/status-retrieval.md#dbr_geterrorstring) | Get error message by error code. |
   | [`DBR_GetVersion`](methods/status-retrieval.md#dbr_getversion) | Get version information of SDK. |
+  | [`DBR_TransformCoordinates`](methods/status-retrieval.md#dbr_transformcoordinates) | Transform the coordinates of a point based on the given transformation matrix. |
 
 
 ### Video Functions

@@ -75,6 +75,7 @@ needAutoGenerateSidebar: true
   | Method               | Description |
   |----------------------|-------------|
   | [`GetVersion`](status-retrieval.md#getversion) | Gets version information of SDK. |
+  | [`TransformCoordinates`](status-retrieval.md#transformcoordinates) | Transform the coordinates of a point based on the given transformation matrix. |
    
       
  

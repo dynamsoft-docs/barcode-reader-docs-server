@@ -42,8 +42,9 @@ needAutoGenerateSidebar: true
   | [`DBR_DecodeFile`](decode.md#dbr_decodefile) | Decode barcodes from a specified image file. |
   | [`DBR_DecodeFileInMemory`](decode.md#dbr_decodefileinmemory) | Decode barcodes from an image file in memory. |
   | [`DBR_DecodeBuffer`](decode.md#dbr_decodebuffer) | Decode barcodes from raw buffer. |
+  | [`DBR_DecodeImageData`](decode.md#dbr_decodeimagedata) | Decode barcodes from source image defined as ImageData. |
   | [`DBR_DecodeBase64String`](decode.md#dbr_decodebase64string) | Decode barcodes from a base64 encoded string. |
-  | [`DBR_DecodeDIB`](decode.md#dbr_decodedib) | Decode barcode from a handle of device-independent bitmap (DIB). | 
+  | [`DBR_DecodeDIB`](decode.md#dbr_decodedib) | Decode barcode from a handle of device-independent bitmap (DIB). |
   | [`DBR_InitIntermediateResult`](decode.md#dbr_initintermediateresult) | Inits an intermediateResult struct with default values. |
   | [`DBR_DecodeIntermediateResults`](decode.md#dbr_decodeintermediateresults) | Decodes barcode from intermediate results. |
 
@@ -97,6 +98,7 @@ needAutoGenerateSidebar: true
   |----------------------|-------------|
   | [`DBR_GetErrorString`](status-retrieval.md#dbr_geterrorstring) | Get error message by error code. |
   | [`DBR_GetVersion`](status-retrieval.md#dbr_getversion) | Get version information of SDK. |
+  | [`DBR_TransformCoordinates`](status-retrieval.md#dbr_transformcoordinates) | Transform the coordinates of a point based on the given transformation matrix. |
 
 
 
