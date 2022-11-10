@@ -82,11 +82,11 @@ needGenerateH3Content: true
 
 
    
-### Status Retrieval Methods
+### General Methods
    
   | Method               | Description |
   |----------------------|-------------|
-  | [`getVersion`](BarcodeReader/status-retrieval.md#getversion) | Get version information of SDK.|
+  | [`getVersion`](BarcodeReader/general.md#getversion) | Get version information of SDK.|
    
       
 

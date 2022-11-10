@@ -1,12 +1,12 @@
 ---
 layout: default-layout
-title: Dynamsoft Barcode Reader Java API Reference - BarcodeReader Status Retrieval Methods
-description: This page shows BarcodeReader status retrieval methods of Dynamsoft Barcode Reader for Java SDK API Reference.
-keywords: getVersion, status retrieval methods, BarcodeReader, api reference, java
+title: Dynamsoft Barcode Reader Java API Reference - BarcodeReader General Methods
+description: This page shows BarcodeReader general methods of Dynamsoft Barcode Reader for Java SDK API Reference.
+keywords: getVersion, general methods, BarcodeReader, api reference, java
 needAutoGenerateSidebar: true
 ---
 
-# Java API Reference - BarcodeReader Status Retrieval Methods
+# Java API Reference - BarcodeReader General Methods
 
   | Method               | Description |
   |----------------------|-------------|

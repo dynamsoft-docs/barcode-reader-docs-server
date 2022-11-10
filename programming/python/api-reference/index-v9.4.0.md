@@ -85,12 +85,6 @@ needGenerateH3Content: true
    
       
  
-## General Methods
-
-  | Method               | Description |
-  |----------------------|-------------|
-  | [`transform_coordinates`](BarcodeReader/general.md#transform_coordinates) | Transform the coordinates of a point based on the given transformation matrix. |
-   
 
    
 ### Video Methods

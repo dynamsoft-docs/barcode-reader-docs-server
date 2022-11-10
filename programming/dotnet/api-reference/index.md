@@ -90,12 +90,12 @@ needGenerateH3Content: true
  
 
    
-### Status Retrieval Methods
+### General Methods
    
   | Method               | Description |
   |----------------------|-------------|
-  | [`GetVersion`](BarcodeReader/status-retrieval.md#getversion) | Gets version information of SDK. |
-  | [`TransformCoordinates`](BarcodeReader/status-retrieval.md#transformcoordinates) | Transform the coordinates of a point based on the given transformation matrix. |
+  | [`GetVersion`](BarcodeReader/general.md#getversion) | Gets version information of SDK. |
+  | [`TransformCoordinates`](BarcodeReader/general.md#transformcoordinates) | Transform the coordinates of a point based on the given transformation matrix. |
    
       
  

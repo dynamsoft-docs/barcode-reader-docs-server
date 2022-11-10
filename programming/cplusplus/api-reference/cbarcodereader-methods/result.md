@@ -35,7 +35,7 @@ int dynamsoft::dbr::CBarcodeReader::GetAllTextResults (TextResultArray** pResult
 
 **Return Value**  
 Returns error code (returns 0 if the function operates successfully).    
-*You can call [`GetErrorString`](status-retrieval.md#geterrorstring) to get detailed error message.*
+*You can call [`GetErrorString`](general.md#geterrorstring) to get detailed error message.*
 
 **Code Snippet**  
 ```cpp
@@ -95,7 +95,7 @@ int dynamsoft::dbr::CBarcodeReader::GetIntermediateResults (IntermediateResultAr
 
 **Return Value**  
 Returns error code (returns 0 if the function operates successfully).    
-*You can call [`GetErrorString`](status-retrieval.md#geterrorstring) to get detailed error message.*
+*You can call [`GetErrorString`](general.md#geterrorstring) to get detailed error message.*
 
 **Code Snippet**  
 ```cpp

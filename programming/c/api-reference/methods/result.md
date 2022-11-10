@@ -33,7 +33,7 @@ DBR_API int DBR_GetAllTextResults (void* barcodeReader, TextResultArray** pResul
 
 **Return Value**  
 Returns error code (returns 0 if the function operates successfully).    
-*You can call [`DBR_GetErrorString`](status-retrieval.md#dbr_geterrorstring) to get detailed error message.*
+*You can call [`DBR_GetErrorString`](general.md#dbr_geterrorstring) to get detailed error message.*
 
 **Code Snippet**  
 ```c
@@ -95,7 +95,7 @@ DBR_API int DBR_GetIntermediateResults (void* barcodeReader, IntermediateResultA
 
 **Return Value**  
 Returns error code. Possible return(s): DBR_OK.     
-*You can call [`DBR_GetErrorString`](status-retrieval.md#dbr_geterrorstring) to get detailed error message.*
+*You can call [`DBR_GetErrorString`](general.md#dbr_geterrorstring) to get detailed error message.*
 
 
 **Code Snippet**  

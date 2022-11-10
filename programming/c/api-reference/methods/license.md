@@ -43,7 +43,7 @@ DBR_API int DBR_InitLicense (const char* pLicense, char errorMsgBuffer[], const 
 
 Returns error code (returns 0 if the function operates successfully).
 
-*You can call [`DBR_GetErrorString`](status-retrieval.md#dbr_geterrorstring) to get detailed error message.*
+*You can call [`DBR_GetErrorString`](general.md#dbr_geterrorstring) to get detailed error message.*
 
 **Code Snippet**
 
@@ -106,7 +106,7 @@ DBR_API int DBR_SetDeviceFriendlyName(const char* name)
 
 Returns error code (returns 0 if the function operates successfully).
 
-*You can call [`DBR_GetErrorString`](status-retrieval.md#dbr_geterrorstring) to get detailed error message.*
+*You can call [`DBR_GetErrorString`](general.md#dbr_geterrorstring) to get detailed error message.*
 
 **Code Snippet**
 

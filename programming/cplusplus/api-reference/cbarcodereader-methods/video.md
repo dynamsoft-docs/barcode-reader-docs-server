@@ -46,7 +46,7 @@ int dynamsoft::dbr::CBarcodeReader::StartFrameDecoding (const int maxQueueLength
 
 **Return Value**  
 Returns error code. Possible return(s): DBR_OK; DBRERR_FRAME_DECODING_THREAD_EXISTS; DBRERR_PARAMETER_VALUE_INVALID.   
-*You can call [`GetErrorString`](status-retrieval.md#geterrorstring) to get detailed error message.*
+*You can call [`GetErrorString`](general.md#geterrorstring) to get detailed error message.*
 
 
 **Code Snippet**  
@@ -80,7 +80,7 @@ int dynamsoft::dbr::CBarcodeReader::StartFrameDecodingEx (FrameDecodingParameter
 
 **Return Value**  
 Returns error code. Possible return(s): DBR_OK; DBRERR_FRAME_DECODING_THREAD_EXISTS; DBRERR_PARAMETER_VALUE_INVALID.   
-*You can call [`GetErrorString`](status-retrieval.md#geterrorstring) to get detailed error message.*  
+*You can call [`GetErrorString`](general.md#geterrorstring) to get detailed error message.*  
    
 
 **Code Snippet**  
@@ -158,7 +158,7 @@ int dynamsoft::dbr::CBarcodeReader::StopFrameDecoding()
 
 **Return Value**  
 Returns error code. Possible return(s): DBR_OK; DBRERR_STOP_DECODING_THREAD_FAILED.   
-*You can call [`GetErrorString`](status-retrieval.md#geterrorstring) to get detailed error message.*
+*You can call [`GetErrorString`](general.md#geterrorstring) to get detailed error message.*
 
 **Code Snippet**  
 ```cpp
@@ -190,7 +190,7 @@ int dynamsoft::dbr::CBarcodeReader::InitFrameDecodingParameters (FrameDecodingPa
 
 **Return Value**  
 Returns error code. Possible return(s): DBR_OK.   
-*You can call [`GetErrorString`](status-retrieval.md#geterrorstring) to get detailed error message.*
+*You can call [`GetErrorString`](general.md#geterrorstring) to get detailed error message.*
 
 
 **Code Snippet**  
@@ -241,7 +241,7 @@ int dynamsoft::dbr::CBarcodeReader::SetErrorCallback (CB_Error cbFunction, void*
 
 **Return Value**  
 Returns error code. Possible return(s): DBR_OK; DBRERR_FRAME_DECODING_THREAD_EXISTS.     
-*You can call [`GetErrorString`](status-retrieval.md#geterrorstring) to get detailed error message.*
+*You can call [`GetErrorString`](general.md#geterrorstring) to get detailed error message.*
 
 **Code Snippet**  
 ```cpp
@@ -276,7 +276,7 @@ int dynamsoft::dbr::CBarcodeReader::SetTextResultCallback (CB_TextResult cbFunct
 
 **Return Value**  
 Returns error code. Possible return(s): DBR_OK; DBRERR_FRAME_DECODING_THREAD_EXISTS.     
-*You can call [`GetErrorString`](status-retrieval.md#geterrorstring) to get detailed error message.*
+*You can call [`GetErrorString`](general.md#geterrorstring) to get detailed error message.*
 
 **Code Snippet**  
 ```cpp
@@ -311,7 +311,7 @@ int dynamsoft::dbr::CBarcodeReader::SetIntermediateResultCallback (CB_Intermedia
 
 **Return Value**  
 Returns error code. Possible return(s): DBR_OK; DBRERR_FRAME_DECODING_THREAD_EXISTS.     
-*You can call [`GetErrorString`](status-retrieval.md#geterrorstring) to get detailed error message.*
+*You can call [`GetErrorString`](general.md#geterrorstring) to get detailed error message.*
 
 
 **Code Snippet**  

@@ -1,12 +1,12 @@
 ---
 layout: default-layout
-title: Dynamsoft Barcode Reader .NET API Reference - BarcodeReader Status Retrieval Methods
-description: This page shows BarcodeReader status retrieval methods of Dynamsoft Barcode Reader for .NET SDK.
-keywords: GetVersion, status retrieval methods, BarcodeReader, api reference, .Net
+title: Dynamsoft Barcode Reader .NET API Reference - BarcodeReader General Methods
+description: This page shows BarcodeReader general methods of Dynamsoft Barcode Reader for .NET SDK.
+keywords: GetVersion, general methods, BarcodeReader, api reference, .Net
 needAutoGenerateSidebar: true
 ---
 
-# .Net API Reference - BarcodeReader Status Retrieval Methods
+# .Net API Reference - BarcodeReader General Methods
 
   | Method               | Description |
   |----------------------|-------------|

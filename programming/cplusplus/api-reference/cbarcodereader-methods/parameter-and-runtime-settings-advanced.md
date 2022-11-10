@@ -43,7 +43,7 @@ int dynamsoft::dbr::CBarcodeReader::InitRuntimeSettingsWithFile (const char* pFi
 
 **Return Value**  
 Returns error code (returns 0 if the function operates successfully).    
-*You can call [`GetErrorString`](status-retrieval.md#geterrorstring) to get detailed error message.*
+*You can call [`GetErrorString`](general.md#geterrorstring) to get detailed error message.*
 
 **Code Snippet**  
 ```cpp
@@ -78,7 +78,7 @@ int dynamsoft::dbr::CBarcodeReader::InitRuntimeSettingsWithString (const char* c
 
 **Return Value**  
 Returns error code (returns 0 if the function operates successfully).    
-*You can call [`GetErrorString`](status-retrieval.md#geterrorstring) to get detailed error message.*
+*You can call [`GetErrorString`](general.md#geterrorstring) to get detailed error message.*
 
 **Code Snippet**  
 ```cpp
@@ -112,7 +112,7 @@ int dynamsoft::dbr::CBarcodeReader::AppendTplFileToRuntimeSettings (const char* 
 
 **Return Value**  
 Returns error code (returns 0 if the function operates successfully).    
-*You can call [`GetErrorString`](status-retrieval.md#geterrorstring) to get detailed error message.*
+*You can call [`GetErrorString`](general.md#geterrorstring) to get detailed error message.*
 
 **Code Snippet**  
 ```cpp
@@ -147,7 +147,7 @@ int dynamsoft::dbr::CBarcodeReader::AppendTplStringToRuntimeSettings (const char
 
 **Return Value**  
 Returns error code (returns 0 if the function operates successfully).    
-*You can call [`GetErrorString`](status-retrieval.md#geterrorstring) to get detailed error message.*
+*You can call [`GetErrorString`](general.md#geterrorstring) to get detailed error message.*
 
 **Code Snippet**  
 ```cpp
@@ -210,7 +210,7 @@ int dynamsoft::dbr::CBarcodeReader::GetParameterTemplateName (const int index, c
 
 **Return Value**  
 Returns error code (returns 0 if the function operates successfully).    
-*You can call [`GetErrorString`](status-retrieval.md#geterrorstring) to get detailed error message.*
+*You can call [`GetErrorString`](general.md#geterrorstring) to get detailed error message.*
 
 **Code Snippet**  
 ```cpp
@@ -249,7 +249,7 @@ int dynamsoft::dbr::CBarcodeReader::OutputSettingsToFile (const char* pFilePath,
 
 **Return Value**  
 Returns error code (returns 0 if the function operates successfully).    
-*You can call [`GetErrorString`](status-retrieval.md#geterrorstring) to get detailed error message.*
+*You can call [`GetErrorString`](general.md#geterrorstring) to get detailed error message.*
 
 **Code Snippet**  
 ```cpp
@@ -284,7 +284,7 @@ int dynamsoft::dbr::CBarcodeReader::OutputSettingsToString (char content[], cons
 
 **Return Value**  
 Returns error code (returns 0 if the function operates successfully).    
-*You can call [`GetErrorString`](status-retrieval.md#geterrorstring) to get detailed error message.*
+*You can call [`GetErrorString`](general.md#geterrorstring) to get detailed error message.*
 
 **Code Snippet**  
 ```cpp
@@ -319,7 +319,7 @@ int dynamsoft::dbr::CBarcodeReader::OutputSettingsToStringPtr (char** content, c
 
 **Return Value**  
 Returns error code (returns 0 if the function operates successfully).    
-*You can call [`GetErrorString`](status-retrieval.md#geterrorstring) to get detailed error message.*
+*You can call [`GetErrorString`](general.md#geterrorstring) to get detailed error message.*
 
 **Code Snippet**  
 ```cpp

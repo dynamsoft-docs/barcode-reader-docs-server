@@ -92,13 +92,13 @@ needAutoGenerateSidebar: true
 
 
    
-## Status Retrieval
+## General
    
   | Method               | Description |
   |----------------------|-------------|
-  | [`GetErrorString`](status-retrieval.md#geterrorstring) | Get error message by error code.|
-  | [`GetVersion`](status-retrieval.md#getversion) | Get version information of SDK.|
-  | [`TransformCoordinates`](status-retrieval.md#transformcoordinates) | Transform the coordinates of a point based on the given transformation matrix. |
+  | [`GetErrorString`](general.md#geterrorstring) | Get error message by error code.|
+  | [`GetVersion`](general.md#getversion) | Get version information of SDK.|
+  | [`TransformCoordinates`](general.md#transformcoordinates) | Transform the coordinates of a point based on the given transformation matrix. |
    
       
 

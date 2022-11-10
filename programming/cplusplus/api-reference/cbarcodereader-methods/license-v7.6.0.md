@@ -37,7 +37,7 @@ int CBarcodeReader::InitLicense (const char* pLicense)
 
 #### Return value
 Returns error code (returns 0 if the function operates successfully).    
-*You can call [`GetErrorString`](status-retrieval.md#geterrorstring) to get detailed error message.*
+*You can call [`GetErrorString`](general.md#geterrorstring) to get detailed error message.*
 
 
 #### Code Snippet
@@ -66,7 +66,7 @@ int CBarcodeReader::InitLicenseFromServer (const char* pLicenseServer, const cha
 
 #### Return value
 Returns error code (returns 0 if the function operates successfully).    
-*You can call [`GetErrorString`](status-retrieval.md#geterrorstring) to get detailed error message.*
+*You can call [`GetErrorString`](general.md#geterrorstring) to get detailed error message.*
 
 
 
@@ -89,7 +89,7 @@ int CBarcodeReader::InitLicenseFromLicenseContent (const char* pLicenseKey, cons
 
 #### Return value
 Returns error code (returns 0 if the function operates successfully).    
-*You can call [`GetErrorString`](status-retrieval.md#geterrorstring) to get detailed error message.*
+*You can call [`GetErrorString`](general.md#geterrorstring) to get detailed error message.*
 
 
 
@@ -111,7 +111,7 @@ int CBarcodeReader::OutputLicenseToString (char content[], const int contentLen)
 
 #### Return value
 Returns error code (returns 0 if the function operates successfully).    
-*You can call [`GetErrorString`](status-retrieval.md#geterrorstring) to get detailed error message.*
+*You can call [`GetErrorString`](general.md#geterrorstring) to get detailed error message.*
 
 #### Remark
 [`InitLicenseFromServer`](#initlicensefromserver) has to be successfully called before calling this method.
@@ -135,7 +135,7 @@ int CBarcodeReader::OutputLicenseToStringPtr (char** content)
 
 #### Return value
 Returns error code (returns 0 if the function operates successfully).    
-*You can call [`GetErrorString`](status-retrieval.md#geterrorstring) to get detailed error message.*
+*You can call [`GetErrorString`](general.md#geterrorstring) to get detailed error message.*
 
 #### Remarks
 [`InitLicenseFromServer`](#initlicensefromserver) has to be successfully called before calling this method.

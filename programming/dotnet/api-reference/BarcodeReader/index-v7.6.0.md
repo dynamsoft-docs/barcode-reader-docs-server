@@ -74,11 +74,11 @@ breadcrumbText: BarcodeReader Methods
  
    
    
-## Status Retrieval
+## General
    
   | Method               | Description |
   |----------------------|-------------|
-  | [`GetVersion`](status-retrieval.md#getversion) | Gets version information of SDK. |
+  | [`GetVersion`](general.md#getversion) | Gets version information of SDK. |
    
       
  

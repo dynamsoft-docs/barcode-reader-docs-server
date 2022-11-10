@@ -37,7 +37,7 @@ int dynamsoft::dbr::CBarcodeReader::DecodeFile (const char* pFileName, const cha
 
 **Return Value**  
 Returns error code (returns 0 if the function operates successfully).    
-*You can call [`GetErrorString`](status-retrieval.md#geterrorstring) to get detailed error message.*
+*You can call [`GetErrorString`](general.md#geterrorstring) to get detailed error message.*
 
 **Code Snippet**  
 ```cpp
@@ -72,7 +72,7 @@ int dynamsoft::dbr::CBarcodeReader::DecodeFileInMemory (const unsigned char* pFi
 
 **Return Value**  
 Returns error code (returns 0 if the function operates successfully).    
-*You can call [GetErrorString()](status-retrieval.md#geterrorstring) to get detailed error message.*   
+*You can call [GetErrorString()](general.md#geterrorstring) to get detailed error message.*   
 
 **Code Snippet**  
 ```cpp
@@ -113,7 +113,7 @@ int dynamsoft::dbr::CBarcodeReader::DecodeBuffer (const unsigned char* pBufferBy
 
 **Return Value**  
 Returns error code (returns 0 if the function operates successfully).    
-*You can call [`GetErrorString`](status-retrieval.md#geterrorstring) to get detailed error message.*   
+*You can call [`GetErrorString`](general.md#geterrorstring) to get detailed error message.*   
 
 **Code Snippet**  
 ```cpp
@@ -153,7 +153,7 @@ int dynamsoft::dbr::CBarcodeReader::DecodeBase64String (const char* pBase64Strin
 
 **Return Value**  
 Returns error code (returns 0 if the function operates successfully).    
-*You can call [`GetErrorString`](status-retrieval.md#geterrorstring) to get detailed error message.*
+*You can call [`GetErrorString`](general.md#geterrorstring) to get detailed error message.*
 
 
 **Code Snippet**  
@@ -192,7 +192,7 @@ int dynamsoft::dbr::CBarcodeReader::DecodeDIB (const HANDLE hDIB, const char* ps
 
 **Return Value**  
 Returns error code (returns 0 if the function operates successfully).    
-*You can call [`GetErrorString`](status-retrieval.md#geterrorstring) to get detailed error message.*   
+*You can call [`GetErrorString`](general.md#geterrorstring) to get detailed error message.*   
 
 
 **Code Snippet**  
@@ -226,7 +226,7 @@ int dynamsoft::dbr::CBarcodeReader::InitIntermediateResult(IntermediateResultTyp
 
 **Return Value**  
 Returns error code (returns 0 if the function operates successfully).    
-*You can call [`DBR_GetErrorString`](status-retrieval.md#dbr_geterrorstring) to get detailed error message.*
+*You can call [`DBR_GetErrorString`](general.md#dbr_geterrorstring) to get detailed error message.*
 
 **Code Snippet**  
 ```cpp
@@ -252,7 +252,7 @@ int dynamsoft::dbr::CBarcodeReader::DecodeIntermediateResults(const Intermediate
 
 **Return Value**  
 Returns error code (returns 0 if the function operates successfully).    
-*You can call [`DBR_GetErrorString`](status-retrieval.md#dbr_geterrorstring) to get detailed error message.*
+*You can call [`DBR_GetErrorString`](general.md#dbr_geterrorstring) to get detailed error message.*
 
 **Code Snippet**  
 ```cpp

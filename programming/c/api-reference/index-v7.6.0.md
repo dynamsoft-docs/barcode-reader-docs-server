@@ -103,12 +103,12 @@ breadcrumbText: API Reference
  
 
 
-### Status Retrieval
+### General
   
   | Method               | Description |
   |----------------------|-------------|
-  | [`DBR_GetErrorString`](methods/status-retrieval.md#dbr_geterrorstring) | Get error message by error code. |
-  | [`DBR_GetVersion`](methods/status-retrieval.md#dbr_getversion) | Get version information of SDK. |
+  | [`DBR_GetErrorString`](methods/general.md#dbr_geterrorstring) | Get error message by error code. |
+  | [`DBR_GetVersion`](methods/general.md#dbr_getversion) | Get version information of SDK. |
 
 
  

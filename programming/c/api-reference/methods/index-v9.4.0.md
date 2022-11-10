@@ -91,12 +91,12 @@ needAutoGenerateSidebar: true
 
 
 
-## Status Retrieval
+## General
   
   | Function               | Description |
   |----------------------|-------------|
-  | [`DBR_GetErrorString`](status-retrieval.md#dbr_geterrorstring) | Get error message by error code. |
-  | [`DBR_GetVersion`](status-retrieval.md#dbr_getversion) | Get version information of SDK. |
+  | [`DBR_GetErrorString`](general.md#dbr_geterrorstring) | Get error message by error code. |
+  | [`DBR_GetVersion`](general.md#dbr_getversion) | Get version information of SDK. |
 
 
 

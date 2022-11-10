@@ -64,7 +64,7 @@ int CBarcodeReader::StartFrameDecoding (const int maxQueueLength, const int maxR
 
 #### Return value
 Returns error code. Possible return(s): DBR_OK; DBRERR_FRAME_DECODING_THREAD_EXISTS; DBRERR_PARAMETER_VALUE_INVALID.   
-*You can call [`GetErrorString`](status-retrieval.md#geterrorstring) to get detailed error message.*
+*You can call [`GetErrorString`](general.md#geterrorstring) to get detailed error message.*
 
 #### Remark
 If no template name is specified, current runtime settings will be used.
@@ -97,7 +97,7 @@ int CBarcodeReader::StartFrameDecodingEx (FrameDecodingParameters parameters, co
 
 #### Return value
 Returns error code. Possible return(s): DBR_OK; DBRERR_FRAME_DECODING_THREAD_EXISTS; DBRERR_PARAMETER_VALUE_INVALID.   
-*You can call [`GetErrorString`](status-retrieval.md#geterrorstring) to get detailed error message.*  
+*You can call [`GetErrorString`](general.md#geterrorstring) to get detailed error message.*  
    
 #### Remark
 If no template name is specified, current runtime settings will be used.
@@ -172,7 +172,7 @@ int CBarcodeReader::StopFrameDecoding()
 
 #### Return value
 Returns error code. Possible return(s): DBR_OK; DBRERR_STOP_DECODING_THREAD_FAILED.   
-*You can call [`GetErrorString`](status-retrieval.md#geterrorstring) to get detailed error message.*
+*You can call [`GetErrorString`](general.md#geterrorstring) to get detailed error message.*
 
 #### Code Snippet
 ```cpp
@@ -200,7 +200,7 @@ int CBarcodeReader::InitFrameDecodingParameters (FrameDecodingParameters* pParam
 
 #### Return value
 Returns error code. Possible return(s): DBR_OK.   
-*You can call [`GetErrorString`](status-retrieval.md#geterrorstring) to get detailed error message.*
+*You can call [`GetErrorString`](general.md#geterrorstring) to get detailed error message.*
 
 
 #### Code Snippet
@@ -250,7 +250,7 @@ int CBarcodeReader::SetErrorCallback (CB_Error cbFunction, void* pUser)
 
 #### Return value
 Returns error code. Possible return(s): DBR_OK; DBRERR_FRAME_DECODING_THREAD_EXISTS.     
-*You can call [`GetErrorString`](status-retrieval.md#geterrorstring) to get detailed error message.*
+*You can call [`GetErrorString`](general.md#geterrorstring) to get detailed error message.*
 
 #### Code Snippet
 ```cpp
@@ -284,7 +284,7 @@ int CBarcodeReader::SetTextResultCallback (CB_TextResult cbFunction, void* pUser
 
 #### Return value
 Returns error code. Possible return(s): DBR_OK; DBRERR_FRAME_DECODING_THREAD_EXISTS.     
-*You can call [`GetErrorString`](status-retrieval.md#geterrorstring) to get detailed error message.*
+*You can call [`GetErrorString`](general.md#geterrorstring) to get detailed error message.*
 
 #### Code Snippet
 ```cpp
@@ -318,7 +318,7 @@ int CBarcodeReader::SetIntermediateResultCallback (CB_IntermediateResult cbFunct
 
 #### Return value
 Returns error code. Possible return(s): DBR_OK; DBRERR_FRAME_DECODING_THREAD_EXISTS.     
-*You can call [`GetErrorString`](status-retrieval.md#geterrorstring) to get detailed error message.*
+*You can call [`GetErrorString`](general.md#geterrorstring) to get detailed error message.*
 
 
 #### Code Snippet

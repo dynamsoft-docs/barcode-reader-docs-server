@@ -1,12 +1,12 @@
 ---
 layout: default-layout
-title: Dynamsoft Barcode Reader Java API Reference - BarcodeReader Status Retrieval Methods
-description: This page shows BarcodeReader status retrieval methods of Dynamsoft Barcode Reader for Java SDK API Reference.
-keywords: getVersion, status retrieval methods, BarcodeReader, api reference, java
+title: Dynamsoft Barcode Reader Java API Reference - BarcodeReader General Methods
+description: This page shows BarcodeReader general methods of Dynamsoft Barcode Reader for Java SDK API Reference.
+keywords: getVersion, general methods, BarcodeReader, api reference, java
 needAutoGenerateSidebar: true
 ---
 
-# Status Retrieval Methods
+# General Methods
 
   | Method               | Description |
   |----------------------|-------------|
@@ -49,9 +49,12 @@ static Point com.dynamsoft.dbr.BarcodeReader.transformCoordinates(Point original
 
 The point after transformation.
 
+**Exception**  
+[`BarcodeReaderException`](../class/BarcodeReaderException.md)
+
 **Code Snippet**  
 
 ```java
 //get originalPoint and transformationMatrix from LocalizationResult
-DBRPoint targetPoint = CBarcodeReader::TransformCoordinates(originalPoint, transformationMatrix);
+Point targetPoint = BarcodeReader.transformCoordinates(originalPoint, transformationMatrix);
 ```

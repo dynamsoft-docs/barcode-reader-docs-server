@@ -70,12 +70,12 @@ needAutoGenerateSidebar: true
   | [`OutputSettingsToString`](parameter-and-runtime-settings-advanced.md#outputsettingstostring) | Outputs runtime settings to a string. |
    
    
-## Status Retrieval
+## General
    
   | Method               | Description |
   |----------------------|-------------|
-  | [`GetVersion`](status-retrieval.md#getversion) | Gets version information of SDK. |
-  | [`TransformCoordinates`](status-retrieval.md#transformcoordinates) | Transform the coordinates of a point based on the given transformation matrix. |
+  | [`GetVersion`](general.md#getversion) | Gets version information of SDK. |
+  | [`TransformCoordinates`](general.md#transformcoordinates) | Transform the coordinates of a point based on the given transformation matrix. |
    
       
  

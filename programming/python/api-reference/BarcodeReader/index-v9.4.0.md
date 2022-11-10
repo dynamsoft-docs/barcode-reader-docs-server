@@ -67,13 +67,6 @@ needAutoGenerateSidebar: true
   | [`output_settings_to_json_file`](parameter-and-runtime-settings-advanced.md#output_settings_to_json_file) | Outputs runtime settings to a settings file (JSON file). |
   | [`output_settings_to_json_string`](parameter-and-runtime-settings-advanced.md#output_settings_to_json_string) | Outputs runtime settings to a string. |
 
-## General Functions
-
-  | Method               | Description |
-  |----------------------|-------------|
-  | [`transform_coordinates`](general.md#transform_coordinates) | Transform the coordinates of a point based on the given transformation matrix. |
-   
-
 ## Video
 
 ### Decode

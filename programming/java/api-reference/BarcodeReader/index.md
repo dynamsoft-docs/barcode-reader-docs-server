@@ -85,12 +85,12 @@ needAutoGenerateSidebar: true
 
 
    
-## Status Retrieval
+## General
    
   | Method               | Description |
   |----------------------|-------------|
-  | [`getVersion`](status-retrieval.md#getversion) | Get version information of SDK.|
-  | [`transformCoordinates`](status-retrieval.md#transformcoordinates) | Transform the coordinates of a point based on the given transformation matrix. |
+  | [`getVersion`](general.md#getversion) | Get version information of SDK.|
+  | [`transformCoordinates`](general.md#transformcoordinates) | Transform the coordinates of a point based on the given transformation matrix. |
    
       
 

@@ -92,12 +92,12 @@ needAutoGenerateSidebar: true
 
 
    
-## Status Retrieval
+## General
    
   | Method               | Description |
   |----------------------|-------------|
-  | [`GetErrorString`](status-retrieval.md#geterrorstring) | Get error message by error code.|
-  | [`GetVersion`](status-retrieval.md#getversion) | Get version information of SDK.|
+  | [`GetErrorString`](general.md#geterrorstring) | Get error message by error code.|
+  | [`GetVersion`](general.md#getversion) | Get version information of SDK.|
    
       
 

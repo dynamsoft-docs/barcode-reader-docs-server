@@ -99,11 +99,11 @@ breadcrumbText: API Reference
  
 
    
-### Status Retrieval
+### General
    
   | Method               | Description |
   |----------------------|-------------|
-  | [`getVersion`](BarcodeReader/status-retrieval.md#getversion) | Get version information of SDK.|
+  | [`getVersion`](BarcodeReader/general.md#getversion) | Get version information of SDK.|
    
       
  

@@ -85,12 +85,12 @@ needGenerateH3Content: true
   | [`DBR_FreeIntermediateResults`](methods/result.md#dbr_freeintermediateresults) | Free memory allocated for the intermediate results. |
 
 
-### Status Retrieval Functions
+### General Functions
   
   | Function               | Description |
   |----------------------|-------------|
-  | [`DBR_GetErrorString`](methods/status-retrieval.md#dbr_geterrorstring) | Get error message by error code. |
-  | [`DBR_GetVersion`](methods/status-retrieval.md#dbr_getversion) | Get version information of SDK. |
+  | [`DBR_GetErrorString`](methods/general.md#dbr_geterrorstring) | Get error message by error code. |
+  | [`DBR_GetVersion`](methods/general.md#dbr_getversion) | Get version information of SDK. |
 
 
 ### Video Functions

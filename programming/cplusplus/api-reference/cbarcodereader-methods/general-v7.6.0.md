@@ -1,12 +1,12 @@
 ---
 layout: default-layout
-title: Dynamsoft Barcode Reader C++ API Reference - CBarcodeReader Status Retrieval Methods
-description: This page shows CBarcodeReader status retrieval methods of Dynamsoft Barcode Reader for C++ Language.
-keywords: GetErrorString, GetVersion, status retrieval methods, CBarcodeReader, api reference, c++
+title: Dynamsoft Barcode Reader C++ API Reference - CBarcodeReader General Methods
+description: This page shows CBarcodeReader general methods of Dynamsoft Barcode Reader for C++ Language.
+keywords: GetErrorString, GetVersion, general methods, CBarcodeReader, api reference, c++
 needAutoGenerateSidebar: true
 ---
 
-# C++ API Reference - CBarcodeReader Status Retrieval Methods
+# C++ API Reference - CBarcodeReader General Methods
 
   | Method               | Description |
   |----------------------|-------------|
