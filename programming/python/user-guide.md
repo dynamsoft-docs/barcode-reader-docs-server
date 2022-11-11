@@ -8,7 +8,7 @@ needGenerateH3Content: true
 noTitleIndex: true
 ---
 
-# Getting Started with Python
+# Getting Started with Dynamsoft Barcode Reader Python Edition
 
 In this guide, you will learn step by step on how to build a barcode reading application with Dynamsoft Barcode Reader (DBR) SDK using Python.
 
@@ -16,7 +16,7 @@ In this guide, you will learn step by step on how to build a barcode reading app
 
 - Operating Systems:
     - Windows x64
-    - Linux (x64, ARM32, ARM64)<sup>1</sup>
+    - Linux (x64, ARM32, ARM64)
     - macOS (10.15+)
 
 - Python Versions: 
@@ -29,7 +29,9 @@ In this guide, you will learn step by step on how to build a barcode reading app
     - Python 2.7 (for versions below DBR 7.2.2.3)
 
 
-<sup>1</sup> On AWS Lambda, DBR Python can only be used with a license 1.0 key. License 2.0 keys and above are currently not supported by DBR Python on AWS Lambda.
+>Note:
+>Dynamsoft Barcode Reader provides both online and offline license options. The online license option might not work in an environment that doesn't have network connection or some environments like AWS Lambda. In such case, you can get an offline trial license key via <a href="https://www.dynamsoft.com/customer/license/trialLicense?utm_source=guide&product=dbr&package=desktop" target="_blank">Customer Portal</a> or by <a href="https://www.dynamsoft.com/company/contact/" target="_blank">contacting us</a>.
+
 
 <iframe width="400" height="225" src="https://www.youtube.com/embed/6uPP3siJJlU" title="How to Use Dynamsoft Barcode Reader Python SDK | Dynamsoft Tutorial" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -44,7 +46,7 @@ pip install dbr
 ## Build Your First Application
 
 Let's start by creating a console application which demonstrates how to use the minimum code to read barcodes from an image file.  
-> You can download the entire source code [here](https://download2.dynamsoft.com/samples/dbr/user-guide/dbr-python-sample.zip).
+> You can <a href="https://github.com/Dynamsoft/barcode-reader-python-samples/blob/master/samples/general-settings.py" target="_blank">download the entire source code here</a>.
 
 ### Create a New Project 
 
@@ -81,7 +83,7 @@ DBR provides multiple APIs for you to customize the barcode scanning behavior. H
    settings = reader.get_runtime_settings()
    settings.barcode_format_ids = EnumBarcodeFormat.BF_ALL
    settings.barcode_format_ids_2 = EnumBarcodeFormat_2.BF2_POSTALCODE | EnumBarcodeFormat_2.BF2_DOTCODE
-   settings.excepted_barcodes_count = 32
+   settings.excepted_barcodes_count = 10
    reader.update_runtime_settings(settings)
    ```
 
@@ -96,16 +98,15 @@ DBR provides multiple APIs for you to customize the barcode scanning behavior. H
 
    ```python
    try:
-      image = r"[INSTALLATION FOLDER]/Images/AllSupportedBarcodeTypes.png"
-      text_results = reader.decode_file(image)
-      if text_results != None:
-         for text_result in text_results:
+      image_path = r"[INSTALLATION FOLDER]/Images/AllSupportedBarcodeTypes.png"
+      results = reader.decode_file(image_path)
+      if results != None:
+         i = 0
+         for text_result in results:
+            print("Barcode " + str(i))
             print("Barcode Format : " + text_result.barcode_format_string)
-            if len(text_result.barcode_format_string) == 0:
-               print("Barcode Format : " + text_result.barcode_format_string_2)
-            else:
-               print("Barcode Format : " + text_result.barcode_format_string)
             print("Barcode Text : " + text_result.barcode_text)
+            i = i+1
    except BarcodeReaderError as bre:
       print(bre)
    ```
@@ -133,9 +134,7 @@ del reader
 python DBRPythonSample.py
 ```
 
-> You can download the entire source code of this simple sample [here](https://download2.dynamsoft.com/samples/dbr/user-guide/dbr-python-sample.zip). 
-
-> <a href="https://github.com/Dynamsoft/barcode-reader-python-samples" target="_blank">Find more Dynamsoft Barcode Reader Python samples in the Github repository</a>.
+> You can <a href="https://github.com/Dynamsoft/barcode-reader-python-samples/blob/master/samples/general-settings.py" target="_blank">download the entire source code here</a>.
 
 ## Next Steps
 
