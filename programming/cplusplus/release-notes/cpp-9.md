@@ -25,7 +25,7 @@ needGenerateH3Content: false
 #### Improved
 
 - Improved the localization mode `LM_LINES` to better support skewed and perspective OneD barcodes.
-- Enhanced tamper resistance of the license keys.
+- Enhanced tamper resistance of the license keys so that any change to the license string makes it invalid.
 
 #### Deprecated
 
