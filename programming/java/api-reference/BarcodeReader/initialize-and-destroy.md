@@ -79,7 +79,7 @@ reader.destroy();
 Gets an idle Dynamsoft Barcode Reader instance running on concurrent instance mode.
 
 ```java
-static BarcodeReader com.dynamsoft.dbr.BarcodeReader.GetInstance()
+static BarcodeReader com.dynamsoft.dbr.BarcodeReader.getInstance()
 ```
 
 **Return Value**  
@@ -96,7 +96,7 @@ Returns an idle Dynamsoft Barcode Reader instance running on concurrent instance
 Recycles a Dynamsoft Barcode Reader instance running on concurrent instance mode.
 
 ```java
-void com.dynamsoft.dbr.BarcodeReader.Recycle()
+void com.dynamsoft.dbr.BarcodeReader.recycle()
 ```
 
 **Code Snippet**  
