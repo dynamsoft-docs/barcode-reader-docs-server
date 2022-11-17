@@ -12,10 +12,8 @@ needAutoGenerateSidebar: true
   | Method               | Description |
   |----------------------|-------------|
   | [`init_license`](#init_license) | Reads product key and activates the SDK.  |
-  | [`is_instance_valid`](#is_instance_valid) | Gets whether the instance is valid for running on concurrent instance mode. |
   | [`get_idle_instances_count`](#get_idle_instances_count) | Gets available instances count when charging by concurrent instances count. |
   | [`set_device_friendly_name`](#set_device_friendly_name) | Sets a human-readable name that identifies the device. |
-  | [`set_max_concurrent_instance_count`](#set_max_concurrent_instance_count) | Sets the max concurrent instance count used for current device and process. |
   | [`init_license_from_server`](#init_license_from_server) | `Deprecated` |
   | [`init_license_from_license_content`](#init_license_from_license_content) | `Deprecated` |
   | [`output_license_to_string`](#output_license_to_string) | `Deprecated` |
@@ -41,26 +39,6 @@ BarcodeReader.init_license(dbr_license)
 
 `error` <*tuple*> : error_code = error[0], error_message = error[1], if error_code != EnumErrorCode.DBR_OK, you can get the detailed error message by error_message.
 
-## is_instance_valid
-
-Gets whether the instance is valid for running on concurrent instance mode.
-
-```python
-int BarcodeReader.is_instance_valid()
-```
-
-**Return Value**
-
-Returns an int value indicating whether the instance is valid for running on concurrent instance mode.
-
-- 0: The instance is not valid for running on concurrent instance mode.
-- 1: The instance is valid for running on concurrent instance mode.
-
-**Code Snippet**
-
-```python
-#TODO
-```
 
 ## get_idle_instances_count
 Gets available instances count when charging by concurrent instances count.
@@ -90,26 +68,6 @@ BarcodeReader.set_device_friendly_name(name)
 **Return Value**  
 
 `error` <*int*> :  EnumErrorCode.
-
-## set_max_concurrent_instance_count
-
-Sets the max concurrent instance count used for current device and process.
-
-```python
-staticmethod  BarcodeReader.set_max_concurrent_instance_count(int count_for_this_device, int count_for_this_process = 0)
-```
-
-**Parameters**
-
-`[in] count_for_this_device` The maximum number of concurrent instances that the current device can run.
-
-`[in] count_for_this_process` <sub>Optional</sub> The maximum number of concurrent instances that the current process can run.
-
-**Code Snippet**
-
-```python
-//TODO
-```
 
 ## init_license_from_server
 

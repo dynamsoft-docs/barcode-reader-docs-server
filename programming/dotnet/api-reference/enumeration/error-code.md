@@ -20,7 +20,7 @@ enum Dynamsoft.DBR.EnumErrorCode
 
   | Error Code | Value | Description |
   |-------------------|-------------------|-------------|
-  | `DBR_OK` | 0 | Successful. |
+  | `DBR_SUCCESS` | 0 | Successful. |
 
 ### Error code 1
 

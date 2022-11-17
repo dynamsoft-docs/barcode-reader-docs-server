@@ -17,7 +17,6 @@ needAutoGenerateSidebar: true
    | [`InitFrameDecodingParameters`](#initframedecodingparameters) | Initialize frame decoding parameter. |
    | [`SetErrorCallback`](#seterrorcallback) | Set callback function to process errors which is triggered when the library finishes decoding a frame. |
    | [`SetTextResultCallback`](#settextresultcallback) | Set callback function to process text results which is triggered when the library finishes decoding a frame. |
-  | [`SetUniqueBarcodeCallback`](#setuniquebarcodecallback) | Set callback function to process text results which is triggered when the library finishes decoding a frame and finds unique barcodes. |
    | [`SetIntermediateResultCallback`](#setintermediateresultcallback) | Set callback function to process intermediate results which is triggered when the library finishes decoding a frame. |
    | [`GetLengthOfFrameQueue`](#getlengthofframequeue) | Get length of current inner frame queue. |
 
@@ -271,8 +270,8 @@ int dynamsoft::dbr::CBarcodeReader::SetTextResultCallback (CB_TextResult cbFunct
 ```   
    
 **Parameters**  
-`[in] cbFunction` Callback function.  
-`[in] pUser` Customized arguments passed to your function.
+`[in]	cbFunction`	Callback function.   
+`[in]	pUser` Customized arguments passed to your function.
 
 
 **Return Value**  
@@ -292,26 +291,7 @@ reader->SetTextResultCallback(TextResultFunction, NULL);
 reader->StartFrameDecoding(2, 10, 1024, 720, 720, IPF_BINARY, "");
 ```
 
-## SetUniqueBarcodeCallback
-
-Set callback function to process text results which is triggered when the library finishes decoding a frame and finds unique barcodes.
-
-```cpp
-int dynamsoft::dbr::CBarcodeReader::SetUniqueBarcodeCallback(CB_TextResult cbFunction, void* pUser)
-```
-
-**Parameters**  
-`[in] cbFunction` Callback function.  
-`[in] pUser`Customized arguments passed to your function.
-
-**Return Value**  
-Returns error code. Possible return(s): DBR_OK; DBRERR_FRAME_DECODING_THREAD_EXISTS.  
-*You can call [`GetErrorString`](general.md#geterrorstring) to get detailed error message.*
-
-**Code Snippet**  
-```cpp
-//TODO
-```
+ 
 
 
 

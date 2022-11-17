@@ -22,7 +22,7 @@ needAutoGenerateSidebar: true
 Starts a new thread to decode barcodes from the inner frame queue. 
 
 ```python
-BarcodeReader.start_video_mode(frame_decoding_parameters, text_result_callback_func, template_name="", intermediate_result_callback_func=None, error_callback_func=None, unique_barcode_callback_func=None, user_data=None)
+BarcodeReader.start_video_mode(frame_decoding_parameters, text_result_callback_func, template_name="", intermediate_result_callback_func=None, error_callback_func=None, user_data=None)
 ```
 
 **Parameters**  
@@ -40,14 +40,8 @@ BarcodeReader.start_video_mode(frame_decoding_parameters, text_result_callback_f
 - If you would like to learn how to use it, please refer to the [sample](https://github.com/Dynamsoft/barcode-reader-python-samples/blob/master/samples/video-decoding.py).
 
 `[in] error_callback_func` (optional)<*function pointer*> : Sets callback function to process errors which is triggered when the library finishes decoding a frame.  
-- This callback function pointer must follow the following format: callback_func_name(frameId, error, user_data);
+- This callback function pointer must follow the following format: callback_func_name(frameId, error, user_data);  
 - Or you can inherit the abstract class ErrorCallBack to implement the abstract method error_callback_func.
-- If you would like to learn how to use it, please refer to the [sample](https://github.com/Dynamsoft/barcode-reader-python-samples/blob/master/samples/video-decoding.py).
-
-`[in] unique_barcode_callback_func` <*function pointer*> : Sets callback function to process unique barcode results which is triggered when the library finishes decoding a frame and finds unique barcodes.
-
-- This callback function pointer must follow the following format: callback_func_name(frameId, results, user_data);
-- Or you can inherit the abstract class TextResultCallBack to implement the abstract method text_results_callback_func.  
 - If you would like to learn how to use it, please refer to the [sample](https://github.com/Dynamsoft/barcode-reader-python-samples/blob/master/samples/video-decoding.py).
 
 `[in] user_data` (optional)<*object*> : Customizes arguments passed to your function.

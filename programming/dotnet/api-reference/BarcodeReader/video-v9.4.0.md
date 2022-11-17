@@ -18,7 +18,6 @@ needAutoGenerateSidebar: true
    | [`InitFrameDecodingParameters`](#initframedecodingparameters) | Initializes frame decoding parameters. |
    | [`SetErrorCallback`](#seterrorcallback) | Set callback function to process errors which is triggered when the library finishes decoding a frame. |
    | [`SetTextResultCallback`](#settextresultcallback) | Set callback function to process text results which is triggered when the library finishes decoding a frame. |
-  | [`SetUniqueBarcodeCallback`](#setuniquebarcodecallback) | Set callback function to process text results which is triggered when the library finishes decoding a frame and finds unique barcodes. |
    | [`SetIntermediateResultCallback`](#setintermediateresultcallback) | Set callback function to process intermediate results which is triggered when the library finishes decoding a frame. |
    | [`GetLengthOfFrameQueue`](#getlengthofframequeue) | Gets length of current inner frame queue. |
 
@@ -258,28 +257,6 @@ EnumErrorCode error = reader.StartFrameDecoding(2, 10, 1024, 720, 720, IPF_BINAR
 reader.Dispose();
 ```
 
-## SetUniqueBarcodeCallback
-
-Set callback function to process text results which is triggered when the library finishes decoding a frame and finds unique barcodes.
-
-```csharp
-EnumErrorCode Dynamsoft.DBR.BarcodeReader.SetUniqueBarcodeCallback(CB_TextResult callbackFunction, IntPtr pUser)
-```
-
-**Parameters**  
-`[in] callbackFunction` <*[CB_TextResult](../function-pointer.md#cb_textresult)*> : Call back function.  
-`[in] pUser`Customized arguments passed to your function.
-
-**Return Value**  
-Returns [EnumErrorCode.DBR_SUCCESS]({{ site.dotnet_enumerations }}error-code.html#error-code-0) if the function operates successfully.
-
-**Exception**  
-[`BarcodeReaderException`](../class/BarcodeReaderException.md) The exception thrown by Dynamsoft Barcode Reader.
-
-**Code Snippet**  
-```csharp
-//TODO
-```
 
 ## GetLengthOfFrameQueue
 

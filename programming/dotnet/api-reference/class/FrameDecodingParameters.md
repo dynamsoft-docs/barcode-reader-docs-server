@@ -217,6 +217,10 @@ int Dynamsoft.DBR.FrameDecodingParameters.DuplicateForgetTime
 
 3000
 
+**Remarks**
+
+The library keeps each barcode result (type and value) in the buffer for a period of time (set with DuplicateForgetTime) during which if a new result is an exact match, it's seen as a duplicate and will again be kept for that period of time while the old result is removed and so on.
+
 ### Orientation
 
 Set the orientation of the frame image data. The value is the angle that the image needs to be rotated clockwise so it shows correctly on the display in its natural orientation. It can be 0, 90, 180, or 270.
