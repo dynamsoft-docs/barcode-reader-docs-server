@@ -12,8 +12,12 @@ needAutoGenerateSidebar: true
   |----------------------|-------------|
   | [`CBarcodeReader`](#cbarcodereader) | Default constructor of `CBarcodeReader` object.|
   | [`~CBarcodeReader`](#~cbarcodereader) | Destructor of `CBarcodeReader` object.|
-  | [`GetInstance`](#getinstance) | Gets an idle Dynamsoft Barcode Reader instance running on concurrent instance mode. |
-  | [`Recycle`](#recycle) | Recycles a Dynamsoft Barcode Reader instance running on concurrent instance mode. |
+
+---
+
+
+
+
 
 ## CBarcodeReader
 
@@ -33,33 +37,3 @@ Destructor of a `CBarcodeReader` object.
 dynamsoft::dbr::CBarcodeReader::~CBarcodeReader()
 ```
 
-## GetInstance
-
-Gets an idle Dynamsoft Barcode Reader instance running on concurrent instance mode.
-
-```cpp
-static CBarcodeReader* dynamsoft::dbr::CBarcodeReader::GetInstance()
-```
-
-**Return Value**  
-Returns an idle Dynamsoft Barcode Reader instance running on concurrent instance mode. If failed, returns `NULL`.
-
-**Code Snippet**  
-
-```cpp
-//TODO
-```
-
-## Recycle
-
-Recycles a Dynamsoft Barcode Reader instance running on concurrent instance mode.
-
-```cpp
-void dynamsoft::dbr::CBarcodeReader::Recycle()
-```
-
-**Code Snippet**  
-
-```cpp
-//TODO
-```

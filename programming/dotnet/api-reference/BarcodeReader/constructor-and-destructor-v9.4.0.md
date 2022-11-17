@@ -12,8 +12,6 @@ needAutoGenerateSidebar: true
   |----------------------|-------------|
   | [`BarcodeReader`](#barcodereader) | Default constructor of `BarcodeReader` object.|
   | [`Dispose`](#dispose) | Destroys an instance of Dynamsoft Barcode Reader. |
-  | [`GetInstance`](#getinstance) | Gets an idle Dynamsoft Barcode Reader instance running on concurrent instance mode. |
-  | [`Recycle`](#recycle) | Recycles a Dynamsoft Barcode Reader instance running on concurrent instance mode. |
 
 ## BarcodeReader
 
@@ -50,35 +48,4 @@ Destroys an instance of Dynamsoft Barcode Reader.
 
 ```csharp
 void Dynamsoft.DBR.BarcodeReader.Dispose() 
-```
-
-## GetInstance
-
-Gets an idle Dynamsoft Barcode Reader instance running on concurrent instance mode.
-
-```csharp
-static BarcodeReader Dynamsoft.DBR.BarcodeReader.GetInstance()
-```
-
-**Return Value**  
-Returns an idle Dynamsoft Barcode Reader instance running on concurrent instance mode. If failed, returns `NULL`.
-
-**Code Snippet**  
-
-```csharp
-//TODO
-```
-
-## Recycle
-
-Recycles a Dynamsoft Barcode Reader instance running on concurrent instance mode.
-
-```csharp
-void Dynamsoft.DBR.BarcodeReader.Recycle()
-```
-
-**Code Snippet**  
-
-```csharp
-//TODO
 ```

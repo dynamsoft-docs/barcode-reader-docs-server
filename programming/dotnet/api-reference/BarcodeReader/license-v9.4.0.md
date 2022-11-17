@@ -12,10 +12,8 @@ needAutoGenerateSidebar: true
   | Method               | Description |
   |----------------------|-------------|
   | [`InitLicense`](#initlicense) | Initializes license key and activate the SDK. |
-  | [`IsInstanceValid`](#isinstancevalid) | Gets whether the instance is valid for running on concurrent instance mode. |
   | [`GetIdleInstancesCount`](#getidleinstancescount) | Gets available instances count when charging by concurrent instances count. |
   | [`SetDeviceFriendlyName`](#setdevicefriendlyname) | Sets a human-readable name that identifies the device. |
-  | [`SetMaxConcurrentInstanceCount`](#setmaxconcurrentinstancecount) | Sets the max concurrent instance count used for current device and process. |
   | [`InitLicenseFromServer`](#initlicensefromserver) | `Deprecated` |
   | [`InitLicenseFromLicenseContent`](#initlicensefromlicensecontent) | `Deprecated` |
   | [`OutputLicenseToString`](#outputlicensetostring) | `Deprecated` |
@@ -49,26 +47,6 @@ BarcodeReader reader = new BarcodeReader();
 // add further process
 ```
 
-## IsInstanceValid
-
-Gets whether the instance is valid for running on concurrent instance mode.
-
-```csharp
-int Dynamsoft.DBR.BarcodeReader.IsInstanceValid()
-```
-
-**Return Value**
-
-Returns an int value indicating whether the instance is valid for running on concurrent instance mode.
-
-- 0: The instance is not valid for running on concurrent instance mode.
-- 1: The instance is valid for running on concurrent instance mode.
-
-**Code Snippet**
-
-```csharp
-//TODO
-```
 
 ## GetIdleInstancesCount
 Gets available instances count when charging by concurrent instances count.
@@ -126,26 +104,6 @@ BarcodeReader.SetDeviceFriendlyName("My-PC");
 BarcodeReader.InitLicense("YOUR-LICENSE-KEY", out errorMsg);
 BarcodeReader reader = new BarcodeReader();
 // add further process
-```
-
-## SetMaxConcurrentInstanceCount
-
-Sets the max concurrent instance count used for current device and process.
-
-```csharp
-static void Dynamsoft.DBR.BarcodeReader.SetMaxConcurrentInstanceCount(int countForThisDevice, int countForThisProcess = 0)
-```
-
-**Parameters**
-
-`[in] countForThisDevice` The maximum number of concurrent instances that the current device can run.
-
-`[in] countForThisProcess` <sub>Optional</sub> The maximum number of concurrent instances that the current process can run.
-
-**Code Snippet**
-
-```csharp
-//TODO
 ```
 
 ## InitLicenseFromServer

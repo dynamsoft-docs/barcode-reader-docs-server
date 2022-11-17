@@ -13,22 +13,18 @@ needAutoGenerateSidebar: true
   |----------------------|-------------|
   | [`DBR_CreateInstance`](#dbr_createinstance) | Creates an instance of Dynamsoft Barcode Reader. |
   | [`DBR_DestroyInstance`](#dbr_destroyinstance) | Destroys the instance of Dynamsoft Barcode Reader. |
-  | [`DBR_GetInstance`](#dbr_getinstance) | Gets an idle Dynamsoft Barcode Reader instance running on concurrent instance mode. |
-  | [`DBR_RecycleInstance`](#dbr_recycleinstance) | Recycles a Dynamsoft Barcode Reader instance running on concurrent instance mode. |
-  
   
 ## DBR_CreateInstance
 
 Creates an instance of Dynamsoft Barcode Reader.
 
 ```c
-DBR_API void* DBR_CreateInstance ()	
-```   
+DBR_API void* DBR_CreateInstance ()
+```
 
 **Return Value**  
 
 Returns an instance of Dynamsoft Barcode Reader. If failed, returns `NULL`.
-
 
 **Code Snippet**  
 
@@ -44,9 +40,9 @@ DBR_DestroyInstance(barcodeReader);
 Destroys an instance of Dynamsoft Barcode Reader.
 
 ```c
-DBR_API void DBR_DestroyInstance (void* barcodeReader)	
-```   
-   
+DBR_API void DBR_DestroyInstance (void* barcodeReader)
+```
+
 **Parameters**  
 
 `[in]	barcodeReader` Handle of the barcode reader instance.
@@ -58,39 +54,4 @@ char errorBuf[512];
 DBR_InitLicense("YOUR-LICENSE-KEY", errorBuf, 512);
 void* barcodeReader = DBR_CreateInstance();
 DBR_DestroyInstance(barcodeReader);
-```
-
-## DBR_GetInstance
-
-Gets an idle Dynamsoft Barcode Reader instance running on concurrent instance mode.
-
-```c
-DBR_API void* DBR_GetInstance()
-```
-
-**Return Value**  
-Returns an idle Dynamsoft Barcode Reader instance running on concurrent instance mode. If failed, returns `NULL`.
-
-**Code Snippet**  
-
-```c
-//TODO
-```
-
-## DBR_RecycleInstance
-
-Recycles a Dynamsoft Barcode Reader instance running on concurrent instance mode.
-
-```c
-DBR_API void DBR_RecycleInstance (void* barcodeReader)
-```
-
-**Parameters**  
-
-`[in] barcodeReader` Handle of a Dynamsoft Barcode Reader instance running on concurrent instance mode.
-
-**Code Snippet**  
-
-```c
-//TODO
 ```

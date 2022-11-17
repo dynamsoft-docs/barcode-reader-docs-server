@@ -12,8 +12,6 @@ needAutoGenerateSidebar: true
   |----------------------|-------------|
   | [`BarcodeReader`](#barcodereader) | Initialization of `BarcodeReader` object.|
   | [`destroy`](#destroy) | Destroys an instance of `BarcodeReader` object.|
-  | [`getInstance`](#getinstance) | Gets an idle Dynamsoft Barcode Reader instance running on concurrent instance mode. |
-  | [`recycle`](#recycle) | Recycles a Dynamsoft Barcode Reader instance running on concurrent instance mode. |
 
 
 
@@ -74,33 +72,3 @@ BarcodeReader reader = new BarcodeReader("t0260NwAAAHV***************");
 reader.destroy();
 ```
 
-## GetInstance
-
-Gets an idle Dynamsoft Barcode Reader instance running on concurrent instance mode.
-
-```java
-static BarcodeReader com.dynamsoft.dbr.BarcodeReader.GetInstance()
-```
-
-**Return Value**  
-Returns an idle Dynamsoft Barcode Reader instance running on concurrent instance mode. If failed, returns `NULL`.
-
-**Code Snippet**  
-
-```java
-//TODO
-```
-
-## Recycle
-
-Recycles a Dynamsoft Barcode Reader instance running on concurrent instance mode.
-
-```java
-void com.dynamsoft.dbr.BarcodeReader.Recycle()
-```
-
-**Code Snippet**  
-
-```java
-//TODO
-```

@@ -12,10 +12,8 @@ needAutoGenerateSidebar: true
   | Method               | Description |
   |----------------------|-------------|
   | [`initLicense`](#initlicense) | Initializes license key and activate the SDK. |
-  | [`isInstanceValid`](#isinstancevalid) | Gets whether the instance is valid for running on concurrent instance mode. |
   | [`getIdleInstancesCount`](#getidleinstancescount) | Gets available instances count when charging by concurrent instances count. |
   | [`setDeviceFriendlyName`](#setdevicefriendlyname) | Sets a human-readable name that identifies the device. |
-  | [`setMaxConcurrentInstanceCount`](#setmaxconcurrentinstancecount) | Sets the max concurrent instance count used for current device and process. |
   | [`initLicenseFromServer`](#initlicensefromserver) | `Deprecated` |
   | [`initLicenseFromLicenseContent`](#initlicensefromlicensecontent) | `Deprecated` |
   | [`outputLicenseToString`](#outputlicensetostring) | `Deprecated` |
@@ -49,26 +47,6 @@ BarcodeReader reader = new BarcodeReader();
 // add further process
 ```
 
-## isInstanceValid
-
-Gets whether the instance is valid for running on concurrent instance mode.
-
-```java
-int com.dynamsoft.dbr.BarcodeReader.isInstanceValid()
-```
-
-**Return Value**
-
-Returns an int value indicating whether the instance is valid for running on concurrent instance mode.
-
-- 0: The instance is not valid for running on concurrent instance mode.
-- 1: The instance is valid for running on concurrent instance mode.
-
-**Code Snippet**
-
-```java
-//TODO
-```
 
 ## getIdleInstancesCount
 
@@ -128,26 +106,6 @@ BarcodeReader.setDeviceFriendlyName("My-PC");
 BarcodeReader.initLicense("YOUR-LICENSE-KEY");
 BarcodeReader reader = new BarcodeReader();
 // add further process
-```
-
-## setMaxConcurrentInstanceCount
-
-Sets the max concurrent instance count used for current device and process.
-
-```java
-static void com.dynamsoft.dbr.BarcodeReader.setMaxConcurrentInstanceCount(int countForThisDevice, int countForThisProcess = 0)
-```
-
-**Parameters**
-
-`[in] countForThisDevice` The maximum number of concurrent instances that the current device can run.
-
-`[in] countForThisProcess` <sub>Optional</sub> The maximum number of concurrent instances that the current process can run.
-
-**Code Snippet**
-
-```java
-//TODO
 ```
 
 ## initLicenseFromServer

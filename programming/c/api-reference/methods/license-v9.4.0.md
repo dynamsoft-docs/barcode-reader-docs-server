@@ -11,10 +11,8 @@ needAutoGenerateSidebar: true
   | Function               | Description |
   |----------------------|-------------|
   | [`DBR_InitLicense`](#dbr_initlicense) | Initializes license key and activate the SDK. |
-  | [`DBR_IsInstanceValid`](#dbr_isinstancevalid) | Gets whether the instance is valid for running on concurrent instance mode. |
   | [`DBR_GetIdleInstancesCount`](#dbr_getidleinstancescount) | Gets available instances count when charging by concurrent instances count. |
   | [`DBR_SetDeviceFriendlyName`](#dbr_setdevicefriendlyname) | Sets a human-readable name that identifies the device. |
-  | [`DBR_SetMaxConcurrentInstanceCount`](#dbr_setmaxconcurrentinstancecount) | Sets the max concurrent instance count used for current device and process. |
   | [`DBR_InitLicenseFromServer`](#dbr_initlicensefromserver) | `Deprecated` |
   | [`DBR_InitLicenseFromLicenseContent`](#dbr_initlicensefromlicensecontent) | `Deprecated` |
   | [`DBR_OutputLicenseToString`](#dbr_outputlicensetostring) | `Deprecated` |
@@ -56,30 +54,6 @@ void* barcodeReader = DBR_CreateInstance();
 // add further process
 ```
 
-## DBR_IsInstanceValid
-
-Gets whether the instance is valid for running on concurrent instance mode.
-
-```c
-DBR_API int DBR_IsInstanceValid (void* barcodeReader)
-```
-
-**Parameters**
-
-`[in] barcodeReader` Handle of a Dynamsoft Barcode Reader instance.
-
-**Return Value**
-
-Returns an int value indicating whether the instance is valid for running on concurrent instance mode.
-
-- 0: The instance is not valid for running on concurrent instance mode.
-- 1: The instance is valid for running on concurrent instance mode.
-
-**Code Snippet**
-
-```c
-//TODO
-```
 
 ## DBR_GetIdleInstancesCount
 
@@ -143,26 +117,6 @@ DBR_SetDeviceFriendlyName("My-PC");
 DBR_InitLicense("YOUR-LICENSE-KEY", errorBuf, 512);
 void* barcodeReader = DBR_CreateInstance();
 // add further process
-```
-
-## DBR_SetMaxConcurrentInstanceCount
-
-Sets the max concurrent instance count used for current device and process.
-
-```c
-DBR_API void DBR_SetMaxConcurrentInstanceCount(int countForThisDevice, int countForThisProcess)
-```
-
-**Parameters**
-
-`[in] countForThisDevice` The maximum number of concurrent instances that the current device can run.
-
-`[in] countForThisProcess` The maximum number of concurrent instances that the current process can run.
-
-**Code Snippet**
-
-```c
-//TODO
 ```
 
 ## DBR_InitLicenseFromServer
