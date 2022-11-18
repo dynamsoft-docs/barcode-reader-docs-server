@@ -12,7 +12,7 @@ needAutoGenerateSidebar: true
   | Method               | Description |
   |----------------------|-------------|
   | [`InitLicense`](#initlicense) | Initializes license key and activate the SDK. |
-  | [`IsInstanceValid`](#isinstancevalid) | Gets whether the instance is valid for running on concurrent instance mode. |
+  | [`IsInstanceValid`](#isinstancevalid) | Gets whether the instance is valid when charging by concurrent instances count. |
   | [`GetIdleInstancesCount`](#getidleinstancescount) | Gets available instances count when charging by concurrent instances count. |
   | [`SetDeviceFriendlyName`](#setdevicefriendlyname) | Sets a human-readable name that identifies the device. |
   | [`SetMaxConcurrentInstanceCount`](#setmaxconcurrentinstancecount) | Sets the max concurrent instance count used for current device and process. |
@@ -55,7 +55,7 @@ CBarcodeReader* reader = new CBarcodeReader();
 
 ## IsInstanceValid
 
-Gets whether the instance is valid for running on concurrent instance mode.
+Gets whether the instance is valid when charging by concurrent instances count.
 
 ```cpp
 int dynamsoft::dbr::CBarcodeReader::IsInstanceValid()
@@ -67,6 +67,10 @@ Returns an int value indicating whether the instance is valid for running on con
 
 - 0: The instance is not valid for running on concurrent instance mode.
 - 1: The instance is valid for running on concurrent instance mode.
+
+**Remarks**
+
+This method is meaningful only when using a license charged by concurrent instances count.
 
 **Code Snippet**
 

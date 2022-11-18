@@ -12,7 +12,7 @@ needAutoGenerateSidebar: true
   | Method               | Description |
   |----------------------|-------------|
   | [`init_license`](#init_license) | Reads product key and activates the SDK.  |
-  | [`is_instance_valid`](#is_instance_valid) | Gets whether the instance is valid for running on concurrent instance mode. |
+  | [`is_instance_valid`](#is_instance_valid) | Gets whether the instance is valid when charging by concurrent instances count. |
   | [`get_idle_instances_count`](#get_idle_instances_count) | Gets available instances count when charging by concurrent instances count. |
   | [`set_device_friendly_name`](#set_device_friendly_name) | Sets a human-readable name that identifies the device. |
   | [`set_max_concurrent_instance_count`](#set_max_concurrent_instance_count) | Sets the max concurrent instance count used for current device and process. |
@@ -43,10 +43,10 @@ BarcodeReader.init_license(dbr_license)
 
 ## is_instance_valid
 
-Gets whether the instance is valid for running on concurrent instance mode.
+Gets whether the instance is valid when charging by concurrent instances count.
 
 ```python
-int BarcodeReader.is_instance_valid()
+BarcodeReader.is_instance_valid()
 ```
 
 **Return Value**
@@ -55,6 +55,10 @@ Returns an int value indicating whether the instance is valid for running on con
 
 - 0: The instance is not valid for running on concurrent instance mode.
 - 1: The instance is valid for running on concurrent instance mode.
+
+**Remarks**
+
+This method is meaningful only when using a license charged by concurrent instances count.
 
 **Code Snippet**
 
@@ -96,7 +100,7 @@ BarcodeReader.set_device_friendly_name(name)
 Sets the max concurrent instance count used for current device and process.
 
 ```python
-staticmethod  BarcodeReader.set_max_concurrent_instance_count(int count_for_this_device, int count_for_this_process = 0)
+BarcodeReader.set_max_concurrent_instance_count(count_for_this_device, count_for_this_process = 0)
 ```
 
 **Parameters**

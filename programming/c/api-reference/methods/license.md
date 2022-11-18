@@ -11,7 +11,7 @@ needAutoGenerateSidebar: true
   | Function               | Description |
   |----------------------|-------------|
   | [`DBR_InitLicense`](#dbr_initlicense) | Initializes license key and activate the SDK. |
-  | [`DBR_IsInstanceValid`](#dbr_isinstancevalid) | Gets whether the instance is valid for running on concurrent instance mode. |
+  | [`DBR_IsInstanceValid`](#dbr_isinstancevalid) | Gets whether the instance is valid when charging by concurrent instances count. |
   | [`DBR_GetIdleInstancesCount`](#dbr_getidleinstancescount) | Gets available instances count when charging by concurrent instances count. |
   | [`DBR_SetDeviceFriendlyName`](#dbr_setdevicefriendlyname) | Sets a human-readable name that identifies the device. |
   | [`DBR_SetMaxConcurrentInstanceCount`](#dbr_setmaxconcurrentinstancecount) | Sets the max concurrent instance count used for current device and process. |
@@ -58,7 +58,7 @@ void* barcodeReader = DBR_CreateInstance();
 
 ## DBR_IsInstanceValid
 
-Gets whether the instance is valid for running on concurrent instance mode.
+Gets whether the instance is valid when charging by concurrent instances count.
 
 ```c
 DBR_API int DBR_IsInstanceValid (void* barcodeReader)
@@ -74,6 +74,10 @@ Returns an int value indicating whether the instance is valid for running on con
 
 - 0: The instance is not valid for running on concurrent instance mode.
 - 1: The instance is valid for running on concurrent instance mode.
+
+**Remarks**
+
+This method is meaningful only when using a license charged by concurrent instances count.
 
 **Code Snippet**
 
