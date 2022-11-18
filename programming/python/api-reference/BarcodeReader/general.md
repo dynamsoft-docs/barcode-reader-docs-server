@@ -23,8 +23,8 @@ BarcodeReader.transform_coordinates(original_point, transformation_matrix)
 
 **Parameters**  
 
-`[in] original_point` : The original point that needs to be transformed.
-`[in] transformation_matrix` : The 3x3 matrix used for coordinate transformation.
+`[in] original_point` <*class Point*>: The original point that needs to be transformed.
+`[in] transformation_matrix` <*list\<double\>*>: The 3x3 matrix used for coordinate transformation.
 
 **Return Value**  
 
