@@ -22,8 +22,8 @@ class PDFDetailedResult
 | [`rows`](#rows) | *int* |
 | [`columns`](#columns) | *int* |
 | [`error_correction_level`](#error_correction_level) | *int* |
-| [`left_row_indicator_exists`](#left_row_indicator_exists) | *int* |
-| [`right_row_indicator_exists`](#right_row_indicator_exists) | *int* |
+| [`has_left_row_indicator`](#has_left_row_indicator) | *int* |
+| [`has_right_row_indicator`](#has_right_row_indicator) | *int* |
 
 ### module_size
 
@@ -57,7 +57,7 @@ The error correction level of the barcode.
 PDFDetailedResult.error_correction_level
 ```
 
-### left_row_indicator_exists
+### has_left_row_indicator
 
 Whether the left row indicator of the PDF417 code exists.
 
@@ -65,10 +65,10 @@ Whether the left row indicator of the PDF417 code exists.
 - 1: left row indicator exists
 
 ```python
-PDFDetailedResult.left_row_indicator_exists
+PDFDetailedResult.has_left_row_indicator
 ```
 
-### right_row_indicator_exists
+### has_right_row_indicator
 
 Whether the right row indicator of the PDF417 code exists.
 
@@ -76,5 +76,5 @@ Whether the right row indicator of the PDF417 code exists.
 - 1: right row indicator exists
 
 ```python
-PDFDetailedResult.right_row_indicator_exists
+PDFDetailedResult.has_right_row_indicator
 ```

@@ -24,8 +24,8 @@ typedef struct tagPDF417Details  PDF417Details
 | [`rows`](#rows) | *int* |
 | [`columns`](#columns) | *int* |
 | [`errorCorrectionLevel`](#errorcorrectionlevel) | *int* |
-| [`leftRowIndicatorExists`](#leftrowindicatorexists) | *int* |
-| [`rightRowIndicatorExists`](#rightrowindicatorexists) | *int* |
+| [`hasLeftRowIndicator`](#hasleftrowindicator) | *int* |
+| [`hasRightRowIndicator`](#hasrightrowindicator) | *int* |
 | [`reserved`](#reserved) | *char\[24\]* |
 
 ### moduleSize
@@ -60,7 +60,7 @@ The error correction level of the barcode.
 int tagPDF417Details::errorCorrectionLevel
 ```
 
-### leftRowIndicatorExists
+### hasLeftRowIndicator
 
 Whether the left row indicator of the PDF417 code exists.
 
@@ -68,10 +68,10 @@ Whether the left row indicator of the PDF417 code exists.
 - 1: left row indicator exists
 
 ```cpp
-int tagPDF417Details::leftRowIndicatorExists
+int tagPDF417Details::hasLeftRowIndicator
 ```
 
-### rightRowIndicatorExists
+### hasRightRowIndicator
 
 Whether the right row indicator of the PDF417 code exists.
 
@@ -79,7 +79,7 @@ Whether the right row indicator of the PDF417 code exists.
 - 1: right row indicator exists
 
 ```cpp
-int tagPDF417Details::rightRowIndicatorExists
+int tagPDF417Details::hasRightRowIndicator
 ```
 
 ### reserved

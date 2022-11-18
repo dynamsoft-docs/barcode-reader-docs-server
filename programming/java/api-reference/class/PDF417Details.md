@@ -18,8 +18,8 @@ Stores the PDF417 details.
 | [`rows`](#rows) | *int* |
 | [`columns`](#columns) | *int* |
 | [`errorCorrectionLevel`](#errorcorrectionlevel) | *int* |
-| [`leftRowIndicatorExists`](#leftrowindicatorexists) | *int* |
-| [`rightRowIndicatorExists`](#rightrowindicatorexists) | *int* |
+| [`hasLeftRowIndicator`](#hasleftrowindicator) | *int* |
+| [`hasRightRowIndicator`](#hasrightrowindicator) | *int* |
 
 ### moduleSize
 
@@ -53,7 +53,7 @@ The error correction level of the barcode.
 int com.dynamsoft.dbr.PDF417Details.errorCorrectionLevel
 ```
 
-### leftRowIndicatorExists
+### hasLeftRowIndicator
 
 Whether the left row indicator of the PDF417 code exists.
 
@@ -61,10 +61,10 @@ Whether the left row indicator of the PDF417 code exists.
 - 1: left row indicator exists
 
 ```java
-int com.dynamsoft.dbr.PDF417Details.leftRowIndicatorExists
+int com.dynamsoft.dbr.PDF417Details.hasLeftRowIndicator
 ```
 
-### rightRowIndicatorExists
+### hasRightRowIndicator
 
 Whether the right row indicator of the PDF417 code exists.
 
@@ -72,5 +72,5 @@ Whether the right row indicator of the PDF417 code exists.
 - 1: right row indicator exists
 
 ```java
-int com.dynamsoft.dbr.PDF417Details.rightRowIndicatorExists
+int com.dynamsoft.dbr.PDF417Details.hasRightRowIndicator
 ```

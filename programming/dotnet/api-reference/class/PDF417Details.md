@@ -22,8 +22,8 @@ public class PDF417Details
 | [`Rows`](#rows) | *int* |
 | [`Columns`](#columns) | *int* |
 | [`ErrorCorrectionLevel`](#errorcorrectionlevel) | *int* |
-| [`LeftRowIndicatorExists`](#leftrowindicatorexists) | *int* |
-| [`RightRowIndicatorExists`](#rightrowindicatorexists) | *int* |
+| [`HasLeftRowIndicator`](#hasleftrowindicator) | *int* |
+| [`HasRightRowIndicator`](#hasrightrowindicator) | *int* |
 
 ### ModuleSize
 
@@ -57,7 +57,7 @@ The error correction level of the barcode.
 int Dynamsoft.PDF417Details.ErrorCorrectionLevel
 ```
 
-### LeftRowIndicatorExists
+### HasLeftRowIndicator
 
 Whether the left row indicator of the PDF417 code exists.
 
@@ -65,10 +65,10 @@ Whether the left row indicator of the PDF417 code exists.
 - 1: left row indicator exists
 
 ```csharp
-int Dynamsoft.PDF417Details.LeftRowIndicatorExists
+int Dynamsoft.PDF417Details.HasLeftRowIndicator
 ```
 
-### RightRowIndicatorExists
+### HasRightRowIndicator
 
 Whether the right row indicator of the PDF417 code exists.
 
@@ -76,5 +76,5 @@ Whether the right row indicator of the PDF417 code exists.
 - 1: right row indicator exists
 
 ```csharp
-int Dynamsoft.PDF417Details.RightRowIndicatorExists
+int Dynamsoft.PDF417Details.HasRightRowIndicator
 ```
