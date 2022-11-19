@@ -60,12 +60,6 @@ Returns an int value indicating whether the instance is valid for running on con
 
 This method is meaningful only when using a license charged by concurrent instances count.
 
-**Code Snippet**
-
-```python
-#TODO
-```
-
 ## get_idle_instances_count
 Gets available instances count when charging by concurrent instances count.
 
@@ -112,7 +106,14 @@ BarcodeReader.set_max_concurrent_instance_count(count_for_this_device, count_for
 **Code Snippet**
 
 ```python
-//TODO
+license_key = 'YOUR-LICENSE-KEY'
+BarcodeReader.set_max_concurrent_instance_count(10,10)
+BarcodeReader.init_license(license_key)
+barcode_reader = BarcodeReader.get_instance()
+# Add your code here to call decoding method, process barcode results and so on
+# ...
+# Recycle the barcode_reader instance to make it idle for other concurrent tasks
+barcode_reader.recycle()
 ```
 
 ## init_license_from_server

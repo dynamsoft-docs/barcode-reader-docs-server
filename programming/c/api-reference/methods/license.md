@@ -79,12 +79,6 @@ Returns an int value indicating whether the instance is valid for running on con
 
 This method is meaningful only when using a license charged by concurrent instances count.
 
-**Code Snippet**
-
-```c
-//TODO
-```
-
 ## DBR_GetIdleInstancesCount
 
 Gets available instances count when charging by concurrent instances count.
@@ -166,7 +160,16 @@ DBR_API void DBR_SetMaxConcurrentInstanceCount(int countForThisDevice, int count
 **Code Snippet**
 
 ```c
-//TODO
+char errorBuf[512];
+int countForThisDevice = 10;
+int countForThisProcess = 10;
+DBR_SetMaxConcurrentInstanceCount(countForThisDevice, countForThisProcess);
+DBR_InitLicense("YOUR-LICENSE-KEY", errorBuf, 512);
+void* barcodeReader = DBR_GetInstance();
+// Add your code here to call decoding method, process barcode results and so on
+// ...
+// Recycle the barcodeReader instance to make it idle for other concurrent tasks
+DBR_RecycleInstance(barcodeReader);
 ```
 
 ## DBR_InitLicenseFromServer

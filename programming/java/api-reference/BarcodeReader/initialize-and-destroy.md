@@ -88,7 +88,12 @@ Returns an idle Dynamsoft Barcode Reader instance running on concurrent instance
 **Code Snippet**  
 
 ```java
-//TODO
+BarcodeReader.initLicense("YOUR-LICENSE-KEY");
+BarcodeReader barcodeReader = BarcodeReader.getInstance();
+// Add your code here to call decoding method, process barcode results and so on
+// ...
+// Recycle the barcodeReader instance to make it idle for other concurrent tasks
+barcodeReader.recycle();
 ```
 
 ## Recycle
@@ -102,5 +107,10 @@ void com.dynamsoft.dbr.BarcodeReader.recycle()
 **Code Snippet**  
 
 ```java
-//TODO
+BarcodeReader.initLicense("YOUR-LICENSE-KEY");
+BarcodeReader barcodeReader = BarcodeReader.getInstance();
+// Add your code here to call decoding method, process barcode results and so on
+// ...
+// Recycle the barcodeReader instance to make it idle for other concurrent tasks
+barcodeReader.recycle();
 ```

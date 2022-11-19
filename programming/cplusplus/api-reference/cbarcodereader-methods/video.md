@@ -310,7 +310,15 @@ Returns error code. Possible return(s): DBR_OK; DBRERR_FRAME_DECODING_THREAD_EXI
 
 **Code Snippet**  
 ```cpp
-//TODO
+void TextResultFunction(int frameId, TextResultArray *pResults, void * pUser)
+{
+    //TODO add your code for using text results
+}
+char errorBuf[512];
+dynamsoft::dbr::CBarcodeReader::InitLicense("YOUR-LICENSE-KEY", errorBuf, 512);
+CBarcodeReader* reader = new CBarcodeReader();
+reader->SetUniqueBarcodeCallback(TextResultFunction, NULL);
+reader->StartFrameDecoding(2, 10, 1024, 720, 720, IPF_BINARY, "");
 ```
 
 

@@ -303,7 +303,15 @@ Returns error code. Possible return(s): DBR_OK; DBRERR_FRAME_DECODING_THREAD_EXI
 
 **Code Snippet**  
 ```c
-//TODO
+void TextResultFunction(int frameId, TextResultArray *pResults, void * pUser)
+{
+    //TODO add your code for processing barcode results
+}
+char errorBuf[512];
+DBR_InitLicense("YOUR-LICENSE-KEY", errorBuf, 512);
+void* barcodeReader = DBR_CreateInstance();
+DBR_SetUniqueBarcodeCallback(barcodeReader, TextResultFunction, NULL);
+DBR_StartFrameDecoding(barcodeReader, 2, 10, 1024, 720, 720, IPF_BINARY, "");
 ```
 
 

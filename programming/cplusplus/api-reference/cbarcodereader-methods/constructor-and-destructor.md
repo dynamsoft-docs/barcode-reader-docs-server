@@ -47,7 +47,13 @@ Returns an idle Dynamsoft Barcode Reader instance running on concurrent instance
 **Code Snippet**  
 
 ```cpp
-//TODO
+char errorBuf[512];
+dynamsoft::dbr::CBarcodeReader::InitLicense("YOUR-LICENSE-KEY", errorBuf, 512);
+CBarcodeReader* barcodeReader = dynamsoft::dbr::CBarcodeReader::GetInstance();
+// Add your code here to call decoding method, process barcode results and so on
+// ...
+// Recycle the barcodeReader instance to make it idle for other concurrent tasks
+barcodeReader.Recycle();
 ```
 
 ## Recycle
@@ -61,5 +67,11 @@ void dynamsoft::dbr::CBarcodeReader::Recycle()
 **Code Snippet**  
 
 ```cpp
-//TODO
+char errorBuf[512];
+dynamsoft::dbr::CBarcodeReader::InitLicense("YOUR-LICENSE-KEY", errorBuf, 512);
+CBarcodeReader* barcodeReader = dynamsoft::dbr::CBarcodeReader::GetInstance();
+// Add your code here to call decoding method, process barcode results and so on
+// ...
+// Recycle the barcodeReader instance to make it idle for other concurrent tasks
+barcodeReader.Recycle();
 ```

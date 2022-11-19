@@ -66,7 +66,13 @@ Returns an idle Dynamsoft Barcode Reader instance running on concurrent instance
 **Code Snippet**  
 
 ```csharp
-//TODO
+string errorMsg;
+BarcodeReader.InitLicense("YOUR-LICENSE-KEY", out errorMsg);
+BarcodeReader barcodeReader = BarcodeReader.GetInstance();
+// Add your code here to call decoding method, process barcode results and so on
+// ...
+// Recycle the barcodeReader instance to make it idle for other concurrent tasks
+barcodeReader.Recycle();
 ```
 
 ## Recycle
@@ -80,5 +86,11 @@ void Dynamsoft.DBR.BarcodeReader.Recycle()
 **Code Snippet**  
 
 ```csharp
-//TODO
+string errorMsg;
+BarcodeReader.InitLicense("YOUR-LICENSE-KEY", out errorMsg);
+BarcodeReader barcodeReader = BarcodeReader.GetInstance();
+// Add your code here to call decoding method, process barcode results and so on
+// ...
+// Recycle the barcodeReader instance to make it idle for other concurrent tasks
+barcodeReader.Recycle();
 ```

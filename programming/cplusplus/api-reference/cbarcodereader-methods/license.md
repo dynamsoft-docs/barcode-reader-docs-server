@@ -72,13 +72,6 @@ Returns an int value indicating whether the instance is valid for running on con
 
 This method is meaningful only when using a license charged by concurrent instances count.
 
-**Code Snippet**
-
-```cpp
-//TODO
-```
-
-
 ## GetIdleInstancesCount
 Gets available instances count when charging by concurrent instances count.
 
@@ -156,7 +149,16 @@ static void dynamsoft::dbr::CBarcodeReader::SetMaxConcurrentInstanceCount(int co
 **Code Snippet**
 
 ```cpp
-//TODO
+char errorBuf[512];
+int countForThisDevice = 10;
+int countForThisProcess = 10;
+dynamsoft::dbr::CBarcodeReader::SetMaxConcurrentInstanceCount(countForThisDevice, countForThisProcess);
+dynamsoft::dbr::CBarcodeReader::InitLicense("YOUR-LICENSE-KEY", errorBuf, 512);
+CBarcodeReader* barcodeReader = dynamsoft::dbr::CBarcodeReader::GetInstance();
+// Add your code here to call decoding method, process barcode results and so on
+// ...
+// Recycle the barcodeReader instance to make it idle for other concurrent tasks
+barcodeReader.Recycle();
 ```
 
 ## InitLicenseFromServer

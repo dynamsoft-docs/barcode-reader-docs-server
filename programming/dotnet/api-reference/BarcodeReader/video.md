@@ -278,7 +278,12 @@ Returns [EnumErrorCode.DBR_SUCCESS]({{ site.dotnet_enumerations }}error-code.htm
 
 **Code Snippet**  
 ```csharp
-//TODO
+string errorMsg;
+BarcodeReader.InitLicense("YOUR-LICENSE-KEY", out errorMsg);
+BarcodeReader reader = new BarcodeReader();
+reader.SetUniqueBarcodeCallback(TextResultFunction, NULL);
+EnumErrorCode error = reader.StartFrameDecoding(2, 10, 1024, 720, 720, IPF_BINARY, "");
+reader.Dispose();
 ```
 
 ## GetLengthOfFrameQueue

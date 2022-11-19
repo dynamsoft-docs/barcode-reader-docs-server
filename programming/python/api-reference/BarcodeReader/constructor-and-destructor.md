@@ -48,7 +48,13 @@ Returns an idle Dynamsoft Barcode Reader instance running on concurrent instance
 **Code Snippet**  
 
 ```python
-#TODO
+license_key = 'YOUR-LICENSE-KEY'
+BarcodeReader.init_license(license_key)
+barcode_reader = BarcodeReader.get_instance()
+# Add your code here to call decoding method, process barcode results and so on
+# ...
+# Recycle the barcode_reader instance to make it idle for other concurrent tasks
+barcode_reader.recycle()
 ```
 
 ## recycle
@@ -62,5 +68,11 @@ BarcodeReader.recycle()
 **Code Snippet**  
 
 ```python
-#TODO
+license_key = 'YOUR-LICENSE-KEY'
+BarcodeReader.init_license(license_key)
+barcode_reader = BarcodeReader.get_instance()
+# Add your code here to call decoding method, process barcode results and so on
+# ...
+# Recycle the barcode_reader instance to make it idle for other concurrent tasks
+barcode_reader.recycle()
 ```

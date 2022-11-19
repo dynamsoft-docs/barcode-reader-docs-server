@@ -81,6 +81,13 @@ def text_results_callback_func(frame_id, t_results, user_data):
             print(text_result.exception)
             print("-------------")
 
+def unique_barcode_callback_func(frame_id, results, user_data):
+    # Add your code to process unique barcode results
+def intermediate_results_callback_func(frame_id, results, user_data):
+    # Add your code to process intermediate results
+def error_callback_func(frame_id, error, user_data):
+    # Add your code to process error
+
 def get_time():
     localtime = time.localtime()
     capturetime = time.strftime("%Y%m%d%H%M%S", localtime)
@@ -122,6 +129,7 @@ def read_barcode():
     parameters.fps = 0
     parameters.auto_filter = 1
 
+    # reader.start_video_mode(parameters, text_results_callback_func, "", intermediate_results_callback_func, error_callback_func, unique_barcode_callback_func)
     reader.start_video_mode(parameters, text_results_callback_func)
 
     while True:

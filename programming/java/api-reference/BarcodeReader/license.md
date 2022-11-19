@@ -68,12 +68,6 @@ Returns an int value indicating whether the instance is valid for running on con
 
 This method is meaningful only when using a license charged by concurrent instances count.
 
-**Code Snippet**
-
-```java
-//TODO
-```
-
 ## getIdleInstancesCount
 
 Gets the count of available instances when charging by concurrent instances count.
@@ -152,7 +146,15 @@ static void com.dynamsoft.dbr.BarcodeReader.setMaxConcurrentInstanceCount(int co
 **Code Snippet**
 
 ```java
-//TODO
+int countForThisDevice = 10;
+int countForThisProcess = 10;
+BarcodeReader.setMaxConcurrentInstanceCount(countForThisDevice, countForThisProcess);
+BarcodeReader.initLicense("YOUR-LICENSE-KEY");
+BarcodeReader barcodeReader = BarcodeReader.getInstance();
+// Add your code here to call decoding method, process barcode results and so on
+// ...
+// Recycle the barcodeReader instance to make it idle for other concurrent tasks
+barcodeReader.recycle();
 ```
 
 ## initLicenseFromServer
