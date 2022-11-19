@@ -17,14 +17,18 @@ needGenerateH3Content: true
   |----------------------|-------------|
   | [`DBR_CreateInstance`](methods/initialize-and-destroy.md#dbr_createinstance) | Create an instance of Dynamsoft Barcode Reader. |
   | [`DBR_DestroyInstance`](methods/initialize-and-destroy.md#dbr_destroyinstance) | Destroy the instance of Dynamsoft Barcode Reader. |
+  | [`DBR_GetInstance`](methods/initialize-and-destroy.md#dbr_getinstance) | Gets an idle Dynamsoft Barcode Reader instance running on concurrent instance mode. |
+  | [`DBR_RecycleInstance`](methods/initialize-and-destroy.md#dbr_recycleinstance) | Recycles a Dynamsoft Barcode Reader instance running on concurrent instance mode. |
 
 ### License Functions
 
   | Function               | Description |
   |----------------------|-------------|
   | [`DBR_InitLicense`](methods/license.md#dbr_initlicense) | Initializes license key and activate the SDK. |
+  | [`DBR_IsInstanceValid`](methods/license.md#dbr_isinstancevalid) | Gets whether the instance is valid when charging by concurrent instances count. |
   | [`DBR_GetIdleInstancesCount`](methods/license.md#dbr_getidleinstancescount) | Gets available instances count when charging by concurrent instances count. |
   | [`DBR_SetDeviceFriendlyName`](methods/license.md#dbr_setdevicefriendlyname) | Sets a human-readable name that identifies the device. |
+  | [`DBR_SetMaxConcurrentInstanceCount`](methods/license.md#dbr_setmaxconcurrentinstancecount) | Sets the max concurrent instance count used for current device and process. |
   | [`DBR_InitLicenseFromServer`](methods/license.md#dbr_initlicensefromserver) | `Deprecated` |
   | [`DBR_InitLicenseFromLicenseContent`](methods/license.md#dbr_initlicensefromlicensecontent) | `Deprecated` |
   | [`DBR_OutputLicenseToString`](methods/license.md#dbr_outputlicensetostring) | `Deprecated` |
@@ -34,8 +38,6 @@ needGenerateH3Content: true
   | [`DBR_InitLicenseFromDLS`](methods/license.md#dbr_initlicensefromdls) | `Deprecated` |
   | [`DBR_InitLTSConnectionParameters`](methods/license.md#dbr_initltsconnectionparameters) | `Deprecated` |
   | [`DBR_InitLicenseFromLTS`](methods/license.md#dbr_initlicensefromlts) | `Deprecated` |
-
-
 
 ### Decode Functions
 
@@ -117,6 +119,7 @@ needGenerateH3Content: true
   |----------------------|-------------|
   | [`DBR_SetErrorCallback`](methods/video.md#dbr_seterrorcallback) | Set callback function to process errors which is triggered when the library finishes decoding a frame. |
   | [`DBR_SetTextResultCallback`](methods/video.md#dbr_settextresultcallback) | Set callback function to process text results which is triggered when the library finishes decoding a frame. |
+  | [`DBR_SetUniqueBarcodeCallback`](methods/video.md#dbr_setuniquebarcodecallback) | Set callback function to process text results which is triggered when the library finishes decoding a frame and finds unique barcodes. |
   | [`DBR_SetIntermediateResultCallback`](methods/video.md#dbr_setintermediateresultcallback) | Set callback function to process intermediate results which is triggered when the library finishes decoding a frame. |
 
 #### Status retrieval

@@ -16,8 +16,8 @@ needAutoGenerateSidebar: true
   | [`decode_file_stream`](#decode_file_stream) | Decodes barcodes from an image file in memory. |
   | [`decode_buffer_manually`](#decode_buffer_manually) | Decodes barcodes from the memory buffer containing image pixels in defined format. |
   | [`decode_base64_string`](#decode_base64_string) | Decodes barcodes from the base64 encoded string. |
-  | [`init_intermediate_result`](#initintermediateresult) | Inits an intermediateResult struct with default values. |
-  | [`decode_intermediate_results`](#decodeintermediateresults) | Decodes barcode from intermediate results. |
+  | [`init_intermediate_result`](#init_intermediate_result) | Inits an intermediateResult struct with default values. |
+  | [`decode_intermediate_results`](#decode_intermediate_results) | Decodes barcode from intermediate results. |
 
 ## decode_file
 

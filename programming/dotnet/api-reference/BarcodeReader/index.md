@@ -14,15 +14,18 @@ needAutoGenerateSidebar: true
   |----------------------|-------------|
   | [`BarcodeReader`](constructor-and-destructor.md#barcodereader) | Constructor of `BarcodeReader` object.|
   | [`Dispose`](constructor-and-destructor.md#dispose) | Destroys an instance of Dynamsoft Barcode Reader. |
-   
+  | [`GetInstance`](constructor-and-destructor.md#getinstance) | Gets an idle Dynamsoft Barcode Reader instance running on concurrent instance mode. |
+  | [`Recycle`](constructor-and-destructor.md#recycle) | Recycles a Dynamsoft Barcode Reader instance running on concurrent instance mode. |
  
 ## License
   
   | Method               | Description |
   |----------------------|-------------|
   | [`InitLicense`](license.md#initlicense) | Initializes license key and activate the SDK. |
+  | [`IsInstanceValid`](license.md#isinstancevalid) | Gets whether the instance is valid when charging by concurrent instances count. |
   | [`GetIdleInstancesCount`](license.md#getidleinstancescount) | Gets available instances count when charging by concurrent instances count. |
   | [`SetDeviceFriendlyName`](license.md#setdevicefriendlyname) | Sets a human-readable name that identifies the device. |
+  | [`SetMaxConcurrentInstanceCount`](license.md#setmaxconcurrentinstancecount) | Sets the max concurrent instance count used for current device and process. |
   | [`InitLicenseFromServer`](license.md#initlicensefromserver) | `Deprecated` |
   | [`InitLicenseFromLicenseContent`](license.md#initlicensefromlicensecontent) | `Deprecated` |
   | [`OutputLicenseToString`](license.md#outputlicensetostring) | `Deprecated` |
@@ -105,6 +108,7 @@ needAutoGenerateSidebar: true
    |----------------------|-------------|
    | [`SetErrorCallback`](video.md#seterrorcallback) | Set callback function to process errors which is triggered when the library finishes decoding a frame. |
    | [`SetTextResultCallback`](video.md#settextresultcallback) | Set callback function to process text results which is triggered when the library finishes decoding a frame. |
+  | [`SetUniqueBarcodeCallback`](video.md#setuniquebarcodecallback) | Set callback function to process text results which is triggered when the library finishes decoding a frame and finds unique barcodes. |
    | [`SetIntermediateResultCallback`](video.md#setintermediateresultcallback) | Set callback function to process intermediate results which is triggered when the library finishes decoding a frame. |
 
 ### Status retrieval

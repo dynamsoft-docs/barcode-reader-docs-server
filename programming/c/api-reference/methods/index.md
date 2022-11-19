@@ -14,16 +14,20 @@ needAutoGenerateSidebar: true
   |----------------------|-------------|
   | [`DBR_CreateInstance`](initialize-and-destroy.md#dbr_createinstance) | Create an instance of Dynamsoft Barcode Reader. |
   | [`DBR_DestroyInstance`](initialize-and-destroy.md#dbr_destroyinstance) | Destroy the instance of Dynamsoft Barcode Reader. |
+  | [`DBR_GetInstance`](initialize-and-destroy.md#dbr_getinstance) | Gets an idle Dynamsoft Barcode Reader instance running on concurrent instance mode. |
+  | [`DBR_RecycleInstance`](initialize-and-destroy.md#dbr_recycleinstance) | Recycles a Dynamsoft Barcode Reader instance running on concurrent instance mode. |
 
 
 
 ## License
-   
+
   | Function               | Description |
   |----------------------|-------------|
   | [`DBR_InitLicense`](license.md#dbr_initlicense) | Initializes license key and activate the SDK. |
+  | [`DBR_IsInstanceValid`](license.md#dbr_isinstancevalid) | Gets whether the instance is valid when charging by concurrent instances count. |
   | [`DBR_GetIdleInstancesCount`](license.md#dbr_getidleinstancescount) | Gets available instances count when charging by concurrent instances count. |
   | [`DBR_SetDeviceFriendlyName`](license.md#dbr_setdevicefriendlyname) | Sets a human-readable name that identifies the device. |
+  | [`DBR_SetMaxConcurrentInstanceCount`](license.md#dbr_setmaxconcurrentinstancecount) | Sets the max concurrent instance count used for current device and process. |
   | [`DBR_InitLicenseFromServer`](license.md#dbr_initlicensefromserver) | `Deprecated` |
   | [`DBR_InitLicenseFromLicenseContent`](license.md#dbr_initlicensefromlicensecontent) | `Deprecated` |
   | [`DBR_OutputLicenseToString`](license.md#dbr_outputlicensetostring) | `Deprecated` |
@@ -126,6 +130,7 @@ needAutoGenerateSidebar: true
   |----------------------|-------------|
   | [`DBR_SetErrorCallback`](video.md#dbr_seterrorcallback) | Set callback function to process errors which is triggered when the library finishes decoding a frame. |
   | [`DBR_SetTextResultCallback`](video.md#dbr_settextresultcallback) | Set callback function to process text results which is triggered when the library finishes decoding a frame. |
+  | [`DBR_SetUniqueBarcodeCallback`](video.md#dbr_setuniquebarcodecallback) | Set callback function to process text results which is triggered when the library finishes decoding a frame and finds unique barcodes. |
   | [`DBR_SetIntermediateResultCallback`](video.md#dbr_setintermediateresultcallback) | Set callback function to process intermediate results which is triggered when the library finishes decoding a frame. |
 
 ### Status retrieval

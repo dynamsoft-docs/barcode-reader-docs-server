@@ -12,7 +12,7 @@ needAutoGenerateSidebar: true
   |----------------------|-------------|
   | [`BarcodeReader`](#barcodereader) | The default constructor of `BarcodeReader` object.|
   | [`__del__`](#__del__) | The default destructor of `BarcodeReader` object.|
-  | [`get_instance`](#getinstance) | Gets an idle Dynamsoft Barcode Reader instance running on concurrent instance mode. |
+  | [`get_instance`](#get_instance) | Gets an idle Dynamsoft Barcode Reader instance running on concurrent instance mode. |
   | [`recycle`](#recycle) | Recycles a Dynamsoft Barcode Reader instance running on concurrent instance mode. |
 
 
