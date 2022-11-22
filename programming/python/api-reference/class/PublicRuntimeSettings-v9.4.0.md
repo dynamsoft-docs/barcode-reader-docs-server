@@ -404,7 +404,7 @@ PublicRuntimeSetting.pdf_raster_dpi
 ```
 
 **Value Range**     
-    [100, 3000]
+    [100, 600]
       
 **Default Value**     
     300

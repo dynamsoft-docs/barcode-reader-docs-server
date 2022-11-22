@@ -154,7 +154,7 @@ EnumPDFReadingMode Dynamsoft.DBR.PublicRuntimeSettings.PDFReadingMode
 ```
 
 **Value Range**     
-    [100, 3000]
+    [100, 600]
       
 **Default Value**     
     300
