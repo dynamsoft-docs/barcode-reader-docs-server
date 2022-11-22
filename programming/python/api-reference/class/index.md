@@ -14,7 +14,6 @@ breadcrumbText: Class
 - [`Contour`](Contour.md)	 
 - [`DataMatrixDetailedResult`](DataMatrixDetailedResult.md)	 
 - [`DMDLSConnectionParameters`](DMDLSConnectionParameters.md)	
-- [`DMLTSConnectionParameters`](DMLTSConnectionParameters.md)	
 - [`ExtendedResult`](ExtendedResult.md)	
 - [`FrameDecodingParameters`](FrameDecodingParameters.md)	
 - [`ImageData`](ImageData.md)	 
