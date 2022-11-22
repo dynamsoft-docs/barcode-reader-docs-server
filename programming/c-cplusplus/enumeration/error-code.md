@@ -1,6 +1,6 @@
 ---
 layout: default-layout
-title: Dynamsoft Barcode Reader Enumerations - Error Code
+title: Error Code - Dynamsoft Barcode Reader C/C++ Edition
 description: This article enumerates the error codes of Dynamsoft Barcode Reader
 keywords: error code, enumeration
 permalink: /programming/c-cplusplus/enumeration/error-code.html
