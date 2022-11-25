@@ -1,10 +1,10 @@
 ---
 layout: default-layout
-title: Parameter Mode Enumerations - Dynamsoft Barcode Reader Python Edition
+title: Parameter Mode Enumerations - Dynamsoft Barcode Reader C/C++ Edition
 description: This article shows Parameter Mode Enumerations of Dynamsoft Barcode Reader.
 keywords: BarcodeColourMode, BarcodeComplementMode, BinarizationMode, ColourClusteringMode, ColourConversionMode, ConflictMode, DeblurMode, DeformationResistingMode, DPMCodeReadingMode, GrayscaleTransformationMode, ImagePreprocessingMode, LocalizationMode, PDFReadingMode, RegionPredetectionMode, ScaleUpMode, TerminatePhase, TextFilterMode, TextureDetectionMode, parameter mode enumeration, enumeration
 needGenerateH3Content: false
-permalink: /programming/python/api-reference/enumeration/parameter-mode-enums.html
+permalink: /programming/c-cplusplus/enumeration/parameter-mode-enums.html
 ---
 
 # Parameter Mode Enumeration
@@ -36,12 +36,12 @@ Describes the barcode colour mode.
 
 ### Declarations
 
+| Language | Declaration |
+| -------- | ----------- |
+| C / C++ | `enum BarcodeColourMode` |
 
 
 
-```python
-class EnumBarcodeColourMode(IntEnum)
-```
 
 
 
@@ -63,12 +63,12 @@ Describes the barcode complement mode.
 
 ### Declarations
 
+| Language | Declaration |
+| -------- | ----------- |
+| C / C++ | `enum BarcodeComplementMode` |
 
 
 
-```python
-class EnumBarcodeComplementMode(IntEnum)
-```
 
 
 
@@ -86,12 +86,12 @@ Describes the binarization mode.
 
 ### Declarations
 
+| Language | Declaration |
+| -------- | ----------- |
+| C / C++ | `enum BinarizationMode` |
 
 
 
-```python
-class EnumBinarizationMode(IntEnum)
-```
 
 
 
@@ -110,12 +110,12 @@ Describes the colour clustering mode.
 
 ### Declarations
 
+| Language | Declaration |
+| -------- | ----------- |
+| C / C++ | `enum ColourClusteringMode` |
 
 
 
-```python
-class EnumColourClusteringMode(IntEnum)
-```
 
 
 
@@ -133,12 +133,12 @@ Describes the colour conversion mode.
 
 ### Declarations
 
+| Language | Declaration |
+| -------- | ----------- |
+| C / C++ | `enum ColourConversionMode` |
 
 
 
-```python
-class EnumColourConversionMode(IntEnum)
-```
 
 
 
@@ -155,12 +155,12 @@ Describes the conflict mode.
 
 ### Declarations
 
+| Language | Declaration |
+| -------- | ----------- |
+| C / C++ | `enum ConflictMode` |
 
 
 
-```python
-class EnumConflictMode(IntEnum)
-```
 
 
 
@@ -177,12 +177,12 @@ Describes the deblur mode.
 
 ### Declarations
 
+| Language | Declaration |
+| -------- | ----------- |
+| C / C++ | `enum DeblurMode` |
 
 
 
-```python
-class EnumDeblurMode(IntEnum)
-```
 
 
 
@@ -207,12 +207,12 @@ Describes the deformation resisting mode.
 
 ### Declarations
 
+| Language | Declaration |
+| -------- | ----------- |
+| C / C++ | `enum DeformationResistingMode` |
 
 
 
-```python
-class EnumDeformationResistingMode(IntEnum)
-```
 
 
 
@@ -221,11 +221,11 @@ class EnumDeformationResistingMode(IntEnum)
 | Member | Value | Description | Valid Argument(s) |
 | --------------- | ----- | ----------- | ----------------- |
 | DRM_SKIP | 0x00 | Skip the deformation resisting. | `N/A` |
-| DRM_AUTO | 0x01 | Lets the library choose a mode automatically. | `N/A` |
+| DRM_AUTO | 0x01 | **Not supported yet.** | `N/A` |
 | DRM_GENERAL | 0x02 | Resists deformation using the general algorithm. | [`Level`]({{ site.parameters_reference }}deformation-resisting-modes.html#level) |
-| DRM_BROAD_WARP | 0x04 | Resists deformation when the barcode is warped gently. | [`BinarizationMode`]({{ site.parameters_reference }}deformation-resisting-modes.html#binarizationmode)<br>[`GrayscaleEnhancementMode`]({{ site.parameters_reference }}deformation-resisting-modes.html#grayscaleenhancementmode) |
-| DRM_LOCAL_REFERENCE | 0x08 | Resists deformation for barcodes with minor deformation in local modules. | [`BinarizationMode`]({{ site.parameters_reference }}deformation-resisting-modes.html#binarizationmode)<br>[`GrayscaleEnhancementMode`]({{ site.parameters_reference }}deformation-resisting-modes.html#grayscaleenhancementmode) |
-| DRM_DEWRINKLE | 0x10 | Resists deformation for barcodes on a wrinkled surface. | [`BinarizationMode`]({{ site.parameters_reference }}deformation-resisting-modes.html#binarizationmode)<br>[`GrayscaleEnhancementMode`]({{ site.parameters_reference }}deformation-resisting-modes.html#grayscaleenhancementmode) |
+| DRM_BROAD_WARP | 0x04 | Resists deformation when the barcode is warped gently. | `N/A` |
+| DRM_LOCAL_REFERENCE | 0x08 | Resists deformation for barcodes with minor deformation in local modules. | `N/A` |
+| DRM_DEWRINKLE | 0x10 | Resists deformation for barcodes on a wrinkled surface. | `N/A` |
 
 ## DPMCodeReadingMode
 
@@ -233,12 +233,12 @@ Describes the DPM code reading mode.
 
 ### Declarations
 
+| Language | Declaration |
+| -------- | ----------- |
+| C / C++ | `enum DPMCodeReadingMode` |
 
 
 
-```python
-class EnumDPMCodeReadingMode(IntEnum)
-```
 
 
 
@@ -256,12 +256,12 @@ Describes the grayscale transformation mode.
 
 ### Declarations
 
+| Language | Declaration |
+| -------- | ----------- |
+| C / C++ | `enum GrayscaleTransformationMode` |
 
 
 
-```python
-class EnumGrayscaleTransformationMode(IntEnum)
-```
 
 
 
@@ -279,12 +279,12 @@ Describes the image preprocessing mode.
 
 ### Declarations
 
+| Language | Declaration |
+| -------- | ----------- |
+| C / C++ | `enum ImagePreprocessingMode` |
 
 
 
-```python
-class EnumImagePreprocessingMode(IntEnum)
-```
 
 
 
@@ -306,12 +306,12 @@ Describes the localization mode.
 
 ### Declarations
 
+| Language | Declaration |
+| -------- | ----------- |
+| C / C++ | `enum LocalizationMode` |
 
 
 
-```python
-class EnumLocalizationMode(IntEnum)
-```
 
 
 
@@ -324,7 +324,7 @@ class EnumLocalizationMode(IntEnum)
 | LM_CONNECTED_BLOCKS | 0x02 | Localizes barcodes by searching for connected blocks. This algorithm usually gives best result and it is recommended to set ConnectedBlocks to the highest priority. | `N/A` |
 | LM_STATISTICS | 0x04 | Localizes barcodes by groups of contiguous black-white regions. This is optimized for QRCode and DataMatrix. | `N/A` |
 | LM_LINES | 0x08 | Localizes barcodes by searching for groups of lines. This is optimized for 1D and PDF417 barcodes. | `N/A` |
-| LM_SCAN_DIRECTLY | 0x10 |  Localizes barcodes quickly. This mode is recommended in interactive scenario. | [`ScanStride`]({{ site.parameters_reference }}localization-modes.html#scanstride)<br>[`ScanDirection`]({{ site.parameters_reference }}localization-modes.html#scandirection) |
+| LM_SCAN_DIRECTLY | 0x10 |  Localizes barcodes quickly. This mode is recommended in interactive scenario. | [`ScanStride`]({{ site.parameters_reference }}localization-modes.html#scanstride)<br>[`ScanDirection`]({{ site.parameters_reference }}localization-modes.html#scandirection)<br>[`IsOneDStacked`]({{ site.parameters_reference }}localization-modes.html#isonedstacked) |
 | LM_STATISTICS_MARKS | 0x20 | Localizes barcodes by groups of marks.This is optimized for DPM codes. | `N/A` |
 | LM_STATISTICS_POSTAL_CODE | 0x40 | Localizes barcodes by groups of connected blocks and lines.This is optimized for postal codes. | `N/A` |
 | LM_CENTRE | 0x80 | Localizes barcodes from the centre of the image. | `N/A` |
@@ -336,12 +336,12 @@ Describes the PDF reading mode.
 
 ### Declarations
 
+| Language | Declaration |
+| -------- | ----------- |
+| C / C++ | `enum PDFReadingMode` |
 
 
 
-```python
-class EnumPDFReadingMode(IntEnum)
-```
 
 
 
@@ -358,12 +358,12 @@ Describes the region predetection mode.
 
 ### Declarations
 
+| Language | Declaration |
+| -------- | ----------- |
+| C / C++ | `enum RegionPredetectionMode` |
 
 
 
-```python
-class EnumRegionPredetectionMode(IntEnum)
-```
 
 
 
@@ -384,12 +384,12 @@ Describes the scale up mode.
 
 ### Declarations
 
+| Language | Declaration |
+| -------- | ----------- |
+| C / C++ | `enum ScaleUpMode` |
 
 
 
-```python
-class EnumScaleUpMode(IntEnum)
-```
 
 
 
@@ -408,12 +408,12 @@ Describes the terminate phase.
 
 ### Declarations
 
+| Language | Declaration |
+| -------- | ----------- |
+| C / C++ | `enum TerminatePhase` |
 
 
 
-```python
-class EnumTerminatePhase(IntEnum)
-```
 
 
 
@@ -440,12 +440,12 @@ Describes the text filter mode.
 
 ### Declarations
 
+| Language | Declaration |
+| -------- | ----------- |
+| C / C++ | `enum TextFilterMode` |
 
 
 
-```python
-class EnumTextFilterMode(IntEnum)
-```
 
 
 
@@ -463,12 +463,12 @@ Describes the texture detection mode.
 
 ### Declarations
 
+| Language | Declaration |
+| -------- | ----------- |
+| C / C++ | `enum TextureDetectionMode` |
 
 
 
-```python
-class EnumTextureDetectionMode(IntEnum)
-```
 
 
 

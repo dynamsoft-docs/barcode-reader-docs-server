@@ -1,10 +1,10 @@
 ---
 layout: default-layout
-title: Parameter Mode Enumerations - Dynamsoft Barcode Reader Python Edition
+title: Parameter Mode Enumerations - Dynamsoft Barcode Reader .NET Edition
 description: This article shows Parameter Mode Enumerations of Dynamsoft Barcode Reader.
 keywords: BarcodeColourMode, BarcodeComplementMode, BinarizationMode, ColourClusteringMode, ColourConversionMode, ConflictMode, DeblurMode, DeformationResistingMode, DPMCodeReadingMode, GrayscaleTransformationMode, ImagePreprocessingMode, LocalizationMode, PDFReadingMode, RegionPredetectionMode, ScaleUpMode, TerminatePhase, TextFilterMode, TextureDetectionMode, parameter mode enumeration, enumeration
 needGenerateH3Content: false
-permalink: /programming/python/api-reference/enumeration/parameter-mode-enums.html
+permalink: /programming/dotnet/api-reference/enumeration/parameter-mode-enums.html
 ---
 
 # Parameter Mode Enumeration
@@ -36,12 +36,10 @@ Describes the barcode colour mode.
 
 ### Declarations
 
-
-
-
-```python
-class EnumBarcodeColourMode(IntEnum)
+```csharp
+enum Dynamsoft.DBR.EnumBarcodeColourMode
 ```
+
 
 
 
@@ -63,12 +61,10 @@ Describes the barcode complement mode.
 
 ### Declarations
 
-
-
-
-```python
-class EnumBarcodeComplementMode(IntEnum)
+```csharp
+enum Dynamsoft.DBR.EnumBarcodeComplementMode
 ```
+
 
 
 
@@ -86,12 +82,10 @@ Describes the binarization mode.
 
 ### Declarations
 
-
-
-
-```python
-class EnumBinarizationMode(IntEnum)
+```csharp
+enum Dynamsoft.DBR.EnumBinarizationMode
 ```
+
 
 
 
@@ -110,12 +104,10 @@ Describes the colour clustering mode.
 
 ### Declarations
 
-
-
-
-```python
-class EnumColourClusteringMode(IntEnum)
+```csharp
+enum Dynamsoft.DBR.EnumColourClusteringMode
 ```
+
 
 
 
@@ -133,12 +125,10 @@ Describes the colour conversion mode.
 
 ### Declarations
 
-
-
-
-```python
-class EnumColourConversionMode(IntEnum)
+```csharp
+enum Dynamsoft.DBR.EnumColourConversionMode
 ```
+
 
 
 
@@ -155,12 +145,10 @@ Describes the conflict mode.
 
 ### Declarations
 
-
-
-
-```python
-class EnumConflictMode(IntEnum)
+```csharp
+enum Dynamsoft.DBR.EnumConflictMode
 ```
+
 
 
 
@@ -177,12 +165,10 @@ Describes the deblur mode.
 
 ### Declarations
 
-
-
-
-```python
-class EnumDeblurMode(IntEnum)
+```csharp
+enum Dynamsoft.DBR.EnumDeblurMode
 ```
+
 
 
 
@@ -207,12 +193,10 @@ Describes the deformation resisting mode.
 
 ### Declarations
 
-
-
-
-```python
-class EnumDeformationResistingMode(IntEnum)
+```csharp
+enum Dynamsoft.DBR.EnumDeformationResistingMode
 ```
+
 
 
 
@@ -233,12 +217,10 @@ Describes the DPM code reading mode.
 
 ### Declarations
 
-
-
-
-```python
-class EnumDPMCodeReadingMode(IntEnum)
+```csharp
+enum Dynamsoft.DBR.EnumDPMCodeReadingMode
 ```
+
 
 
 
@@ -256,12 +238,10 @@ Describes the grayscale transformation mode.
 
 ### Declarations
 
-
-
-
-```python
-class EnumGrayscaleTransformationMode(IntEnum)
+```csharp
+enum Dynamsoft.DBR.EnumGrayscaleTransformationMode
 ```
+
 
 
 
@@ -279,12 +259,10 @@ Describes the image preprocessing mode.
 
 ### Declarations
 
-
-
-
-```python
-class EnumImagePreprocessingMode(IntEnum)
+```csharp
+enum Dynamsoft.DBR.EnumImagePreprocessingMode
 ```
+
 
 
 
@@ -306,12 +284,10 @@ Describes the localization mode.
 
 ### Declarations
 
-
-
-
-```python
-class EnumLocalizationMode(IntEnum)
+```csharp
+enum Dynamsoft.DBR.EnumLocalizationMode
 ```
+
 
 
 
@@ -336,12 +312,10 @@ Describes the PDF reading mode.
 
 ### Declarations
 
-
-
-
-```python
-class EnumPDFReadingMode(IntEnum)
+```csharp
+enum Dynamsoft.DBR.EnumPDFReadingMode
 ```
+
 
 
 
@@ -358,12 +332,10 @@ Describes the region predetection mode.
 
 ### Declarations
 
-
-
-
-```python
-class EnumRegionPredetectionMode(IntEnum)
+```csharp
+enum Dynamsoft.DBR.EnumRegionPredetectionMode
 ```
+
 
 
 
@@ -384,12 +356,10 @@ Describes the scale up mode.
 
 ### Declarations
 
-
-
-
-```python
-class EnumScaleUpMode(IntEnum)
+```csharp
+enum Dynamsoft.DBR.EnumScaleUpMode
 ```
+
 
 
 
@@ -408,12 +378,10 @@ Describes the terminate phase.
 
 ### Declarations
 
-
-
-
-```python
-class EnumTerminatePhase(IntEnum)
+```csharp
+enum Dynamsoft.DBR.EnumTerminatePhase
 ```
+
 
 
 
@@ -440,12 +408,10 @@ Describes the text filter mode.
 
 ### Declarations
 
-
-
-
-```python
-class EnumTextFilterMode(IntEnum)
+```csharp
+enum Dynamsoft.DBR.EnumTextFilterMode
 ```
+
 
 
 
@@ -463,12 +429,10 @@ Describes the texture detection mode.
 
 ### Declarations
 
-
-
-
-```python
-class EnumTextureDetectionMode(IntEnum)
+```csharp
+enum Dynamsoft.DBR.EnumTextureDetectionMode
 ```
+
 
 
 

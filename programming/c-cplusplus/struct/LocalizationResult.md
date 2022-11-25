@@ -25,7 +25,7 @@ typedef struct tagLocalizationResult*  PLocalizationResult
 | [`terminatePhase`](#terminatephase) | [`TerminatePhase`]({{ site.enumerations }}parameter-mode-enums.html#terminatephase) |
 | [`barcodeFormat`](#barcodeformat) | [`BarcodeFormat`]({{ site.enumerations }}format-enums.html#barcodeformat) |
 | [`barcodeFormatString`](#barcodeformatstring) | *const char \** |
-| [`barcodeFormat_2 `](#barcodeformat_2 ) | [`BarcodeFormat_2 `]({{ site.enumerations }}format-enums.html#barcodeformat_2) |
+| [`barcodeFormat_2`](#barcodeformat_2 ) | [`BarcodeFormat_2`]({{ site.enumerations }}format-enums.html#barcodeformat_2) |
 | [`barcodeFormatString_2`](#barcodeformatstring_2) | *const char \** |
 | [`x1`](#x1) | *int* |
 | [`y1`](#y1) | *int* |

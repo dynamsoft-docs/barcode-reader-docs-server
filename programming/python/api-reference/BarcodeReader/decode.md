@@ -75,7 +75,7 @@ BarcodeReader.decode_buffer(image, image_pixel_format=EnumImagePixelFormat.IPF_R
 **Parameters**  
 `[in] image` <*class numpy.ndarray*> : The image which is processed by opencv.  
 `[in] image_pixel_format` <*class EnumImagePixelFormat*> : The image pixel format used in the image byte array.  
-`[in] template_name` <*optional*><*str*> : The template name.
+`[in] template_name` <*optional*><*str*> : The template name.  
 `[in] orientation` <*optional*><*int*> : The orientation of the image data. The value is the angle that the image needs to be rotated clockwise so it shows correctly on the display in its natural orientation. It can be 0, 90, 180, or 270.  
 
 **Return Value**  

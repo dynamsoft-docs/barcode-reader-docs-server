@@ -1,10 +1,10 @@
 ---
 layout: default-layout
-title: Parameter Mode Enumerations - Dynamsoft Barcode Reader Python Edition
+title: Parameter Mode Enumerations - Dynamsoft Barcode Reader Java Edition
 description: This article shows Parameter Mode Enumerations of Dynamsoft Barcode Reader.
 keywords: BarcodeColourMode, BarcodeComplementMode, BinarizationMode, ColourClusteringMode, ColourConversionMode, ConflictMode, DeblurMode, DeformationResistingMode, DPMCodeReadingMode, GrayscaleTransformationMode, ImagePreprocessingMode, LocalizationMode, PDFReadingMode, RegionPredetectionMode, ScaleUpMode, TerminatePhase, TextFilterMode, TextureDetectionMode, parameter mode enumeration, enumeration
 needGenerateH3Content: false
-permalink: /programming/python/api-reference/enumeration/parameter-mode-enums.html
+permalink: /programming/java/api-reference/enumeration/parameter-mode-enums.html
 ---
 
 # Parameter Mode Enumeration
@@ -39,8 +39,8 @@ Describes the barcode colour mode.
 
 
 
-```python
-class EnumBarcodeColourMode(IntEnum)
+```java
+class EnumBarcodeColourMode
 ```
 
 
@@ -66,8 +66,8 @@ Describes the barcode complement mode.
 
 
 
-```python
-class EnumBarcodeComplementMode(IntEnum)
+```java
+class EnumBarcodeComplementMode
 ```
 
 
@@ -89,8 +89,8 @@ Describes the binarization mode.
 
 
 
-```python
-class EnumBinarizationMode(IntEnum)
+```java
+class EnumBinarizationMode
 ```
 
 
@@ -113,8 +113,8 @@ Describes the colour clustering mode.
 
 
 
-```python
-class EnumColourClusteringMode(IntEnum)
+```java
+class EnumColourClusteringMode
 ```
 
 
@@ -136,8 +136,8 @@ Describes the colour conversion mode.
 
 
 
-```python
-class EnumColourConversionMode(IntEnum)
+```java
+class EnumColourConversionMode
 ```
 
 
@@ -158,8 +158,8 @@ Describes the conflict mode.
 
 
 
-```python
-class EnumConflictMode(IntEnum)
+```java
+class EnumConflictMode
 ```
 
 
@@ -180,8 +180,8 @@ Describes the deblur mode.
 
 
 
-```python
-class EnumDeblurMode(IntEnum)
+```java
+class EnumDeblurMode
 ```
 
 
@@ -210,8 +210,8 @@ Describes the deformation resisting mode.
 
 
 
-```python
-class EnumDeformationResistingMode(IntEnum)
+```java
+class EnumDeformationResistingMode
 ```
 
 
@@ -221,11 +221,11 @@ class EnumDeformationResistingMode(IntEnum)
 | Member | Value | Description | Valid Argument(s) |
 | --------------- | ----- | ----------- | ----------------- |
 | DRM_SKIP | 0x00 | Skip the deformation resisting. | `N/A` |
-| DRM_AUTO | 0x01 | Lets the library choose a mode automatically. | `N/A` |
+| DRM_AUTO | 0x01 | **Not supported yet.** | `N/A` |
 | DRM_GENERAL | 0x02 | Resists deformation using the general algorithm. | [`Level`]({{ site.parameters_reference }}deformation-resisting-modes.html#level) |
-| DRM_BROAD_WARP | 0x04 | Resists deformation when the barcode is warped gently. | [`BinarizationMode`]({{ site.parameters_reference }}deformation-resisting-modes.html#binarizationmode)<br>[`GrayscaleEnhancementMode`]({{ site.parameters_reference }}deformation-resisting-modes.html#grayscaleenhancementmode) |
-| DRM_LOCAL_REFERENCE | 0x08 | Resists deformation for barcodes with minor deformation in local modules. | [`BinarizationMode`]({{ site.parameters_reference }}deformation-resisting-modes.html#binarizationmode)<br>[`GrayscaleEnhancementMode`]({{ site.parameters_reference }}deformation-resisting-modes.html#grayscaleenhancementmode) |
-| DRM_DEWRINKLE | 0x10 | Resists deformation for barcodes on a wrinkled surface. | [`BinarizationMode`]({{ site.parameters_reference }}deformation-resisting-modes.html#binarizationmode)<br>[`GrayscaleEnhancementMode`]({{ site.parameters_reference }}deformation-resisting-modes.html#grayscaleenhancementmode) |
+| DRM_BROAD_WARP | 0x04 | Resists deformation when the barcode is warped gently. | `N/A` |
+| DRM_LOCAL_REFERENCE | 0x08 | Resists deformation for barcodes with minor deformation in local modules. | `N/A` |
+| DRM_DEWRINKLE | 0x10 | Resists deformation for barcodes on a wrinkled surface. | `N/A` |
 
 ## DPMCodeReadingMode
 
@@ -236,8 +236,8 @@ Describes the DPM code reading mode.
 
 
 
-```python
-class EnumDPMCodeReadingMode(IntEnum)
+```java
+class EnumDPMCodeReadingMode
 ```
 
 
@@ -259,8 +259,8 @@ Describes the grayscale transformation mode.
 
 
 
-```python
-class EnumGrayscaleTransformationMode(IntEnum)
+```java
+class EnumGrayscaleTransformationMode
 ```
 
 
@@ -282,8 +282,8 @@ Describes the image preprocessing mode.
 
 
 
-```python
-class EnumImagePreprocessingMode(IntEnum)
+```java
+class EnumImagePreprocessingMode
 ```
 
 
@@ -309,8 +309,8 @@ Describes the localization mode.
 
 
 
-```python
-class EnumLocalizationMode(IntEnum)
+```java
+class EnumLocalizationMode
 ```
 
 
@@ -339,8 +339,8 @@ Describes the PDF reading mode.
 
 
 
-```python
-class EnumPDFReadingMode(IntEnum)
+```java
+class EnumPDFReadingMode
 ```
 
 
@@ -361,8 +361,8 @@ Describes the region predetection mode.
 
 
 
-```python
-class EnumRegionPredetectionMode(IntEnum)
+```java
+class EnumRegionPredetectionMode
 ```
 
 
@@ -387,8 +387,8 @@ Describes the scale up mode.
 
 
 
-```python
-class EnumScaleUpMode(IntEnum)
+```java
+class EnumScaleUpMode
 ```
 
 
@@ -411,8 +411,8 @@ Describes the terminate phase.
 
 
 
-```python
-class EnumTerminatePhase(IntEnum)
+```java
+class EnumTerminatePhase
 ```
 
 
@@ -443,8 +443,8 @@ Describes the text filter mode.
 
 
 
-```python
-class EnumTextFilterMode(IntEnum)
+```java
+class EnumTextFilterMode
 ```
 
 
@@ -466,8 +466,8 @@ Describes the texture detection mode.
 
 
 
-```python
-class EnumTextureDetectionMode(IntEnum)
+```java
+class EnumTextureDetectionMode
 ```
 
 
