@@ -80,3 +80,7 @@ ImagePixelFormat tagImageData::format
 ### orientation
 
 The orientation of the image data. The value is the angle that the image needs to be rotated clockwise so it shows correctly on the display in its natural orientation. It can be 0, 90, 180, or 270.
+
+```cpp
+int tagImageData::orientation
+```
