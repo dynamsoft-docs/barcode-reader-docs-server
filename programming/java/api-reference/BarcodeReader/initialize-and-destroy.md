@@ -63,6 +63,8 @@ BarcodeReader reader = new BarcodeReader("t0260NwAAAHV***************");
 
 ## Destroy
 
+Destroys an instance of `BarcodeReader` object.
+
 ```java
 void com.dynamsoft.dbr.BarcodeReader.destroy()	
 ```
