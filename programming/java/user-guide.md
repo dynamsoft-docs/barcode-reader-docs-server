@@ -25,6 +25,9 @@ In this guide, you will learn step by step on how to build a barcode reading app
 - Developing Environment:
    - JDK 1.7 and above
 
+>Note:
+>Dynamsoft Barcode Reader provides both online and offline license options. The online license option might not work in an environment that doesn't have network connection or some environments like AWS Lambda. In such case, you can get an offline trial license key via <a href="https://www.dynamsoft.com/customer/license/trialLicense?utm_source=guide&product=dbr&package=desktop" target="_blank">Customer Portal</a> or by <a href="https://www.dynamsoft.com/company/contact/" target="_blank">contacting us</a>.
+
 <iframe width="400" height="225" src="https://www.youtube.com/embed/05UtoF7_HJQ" title="How to Use Dynamsoft Barcode Reader Java SDK | Dynamsoft Tutorial" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Installation
