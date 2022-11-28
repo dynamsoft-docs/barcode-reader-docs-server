@@ -204,7 +204,7 @@ enum Dynamsoft.DBR.EnumConflictMode
 
 
 
-## DeblurMode {#deblurmode}
+## DeblurMode
 Describes the deblur mode.
 
 
@@ -443,7 +443,7 @@ enum Dynamsoft.DBR.EnumRegionPredetectionMode
 
 
 
-## ScaleUpMode {#scaleupmodes}
+## ScaleUpMode
 Describes the scale up mode. 
 
 

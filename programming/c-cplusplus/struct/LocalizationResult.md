@@ -179,6 +179,7 @@ double tagLocalizationResult::transformationMatrix[9]
 ```
 
 ### reserved
+
 Reserved memory for the struct. The length of this array indicates the size of the memory reserved for this struct.
 ```cpp
 char tagLocalizationResult::reserved[52]

@@ -1,12 +1,24 @@
 ---
 layout: default-layout
-title: Dynamsoft Barcode Reader for Java Language - Release Notes v9.x
-description: This is the release notes page of Dynamsoft Barcode Reader for Java Language v9.x.
+title: Dynamsoft Barcode Reader SDK Java Edition - Release Notes v9.x
+description: This is the release notes page of Dynamsoft Barcode Reader SDK Java Edition v9.x.
 keywords: release notes, java
 needGenerateH3Content: false
 ---
 
-# Release Notes for Java SDK - 9.x
+# Release Notes for Java Edition - 9.x
+
+## 9.6.0 (11/29/2022)
+
+### Highlights
+
+{%- include release-notes/product-highlight-9.6.0.md -%}
+
+### Changelog
+
+#### New
+
+#### Improved
 
 ## 9.4.0 (08/30/2022)
 
