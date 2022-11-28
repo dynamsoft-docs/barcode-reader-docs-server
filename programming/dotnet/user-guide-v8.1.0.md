@@ -351,9 +351,9 @@ These files are under `DBR-DotNet-{version number}\DynamsoftBarcodeReader\Lib\4.
 
  - If you were using `InitLicenseFromServer` to connect to Dynamsoft server for license verification, then no need to change the license key. But please make sure the device has Internet connection.
 
- - If you were using `InitLicenseFromServer` + `DBR_InitLicenseFromLicenseContent` to connect to Dynamsoft server once and use the SDK offline, please follow [these steps](../../license-activation/set-full-license-7.md#connect-once) to re-register the device.
+ - If you were using `InitLicenseFromServer` + `DBR_InitLicenseFromLicenseContent` to connect to Dynamsoft server once and use the SDK offline, please follow [these steps]({{site.license_activation}}set-full-license-7.html#connect-once) to re-register the device.
  
- - If you were using `DBR_InitLicenseFromLicenseContent` to use the SDK offline, please follow [these steps](../../license-activation/set-full-license-7.md#offline) to re-register the device.
+ - If you were using `DBR_InitLicenseFromLicenseContent` to use the SDK offline, please follow [these steps]({{site.license_activation}}set-full-license-7.html#offline) to re-register the device.
 
 ### From version 6.x
 

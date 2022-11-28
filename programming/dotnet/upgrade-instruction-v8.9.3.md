@@ -41,9 +41,9 @@ You need to replace the old assembly files with the ones in the latest version. 
 
  - If you were using `InitLicenseFromServer` to connect to Dynamsoft server for license verification, then no need to change the license key. But please make sure the device has Internet connection.
 
- - If you were using `InitLicenseFromServer` + `InitLicenseFromLicenseContent` to connect to Dynamsoft server once and use the SDK offline, please follow [these steps](../../license-activation/set-full-license-7.md#connect-once) to re-register the device.
+ - If you were using `InitLicenseFromServer` + `InitLicenseFromLicenseContent` to connect to Dynamsoft server once and use the SDK offline, please follow [these steps]({{site.license_activation}}set-full-license-7.html#connect-once) to re-register the device.
  
- - If you were using `InitLicenseFromLicenseContent` to use the SDK offline, please follow [these steps](../../license-activation/set-full-license-7.md#offline) to re-register the device.
+ - If you were using `InitLicenseFromLicenseContent` to use the SDK offline, please follow [these steps]({{site.license_activation}}set-full-license-7.html#offline) to re-register the device.
 
 ## From version 6.x
 
