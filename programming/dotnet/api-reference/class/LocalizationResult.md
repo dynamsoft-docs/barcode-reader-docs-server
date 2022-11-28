@@ -23,7 +23,7 @@ public class LocalizationResult
 | [`TerminatePhase`](#terminatephase) | [`EnumTerminatePhase`]({{ site.dotnet_enumerations }}parameter-mode-enums.html#terminatephase) |
 | [`BarcodeFormat`](#barcodeformat) | [`EnumBarcodeFormat`]({{ site.dotnet_enumerations }}format-enums.html#barcodeformat) |
 | [`BarcodeFormatString`](#barcodeformatstring) | *string* |
-| [`BarcodeFormat_2 `](#barcodeformat_2 ) | [`EnumBarcodeFormat_2`]({{ site.dotnet_enumerations }}format-enums.html#barcodeformat_2) |
+| [`BarcodeFormat_2`](#barcodeformat_2) | [`EnumBarcodeFormat_2`]({{ site.dotnet_enumerations }}format-enums.html#barcodeformat_2) |
 | [`BarcodeFormatString_2`](#barcodeformatstring_2) | *string* |
 | [`ResultPoints`](#resultpoints) | *Point[ ]* |
 | [`Angle`](#angle) | *int* |
