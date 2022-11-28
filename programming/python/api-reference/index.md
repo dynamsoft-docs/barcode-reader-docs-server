@@ -190,3 +190,5 @@ needGenerateH3Content: true
 - [`TextFilterMode`]({{ site.python_enumerations }}parameter-mode-enums.html#textfiltermode)	
 - [`TextResultOrderMode`]({{ site.python_enumerations }}result-enums.html#textresultordermode)	
 - [`TextureDetectionMode`]({{ site.python_enumerations }}parameter-mode-enums.html#texturedetectionmode)
+
+## [Error Code]({{ site.enumerations }}error-code.html)
