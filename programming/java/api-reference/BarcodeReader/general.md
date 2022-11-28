@@ -42,7 +42,7 @@ static Point com.dynamsoft.dbr.BarcodeReader.transformCoordinates(Point original
 
 **Parameters**  
 
-`[in] originalPoint` : The original point that needs to be transformed.
+`[in] originalPoint` : The original point that needs to be transformed.  
 `[in] transformationMatrix` : The 3x3 matrix used for coordinate transformation.
 
 **Return Value**  

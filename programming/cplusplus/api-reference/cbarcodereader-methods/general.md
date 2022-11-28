@@ -64,7 +64,7 @@ static DBRPoint dynamsoft::dbr::CBarcodeReader::TransformCoordinates(DBRPoint or
 
 **Parameters**  
 
-`[in] originalPoint` : The original point that needs to be transformed.
+`[in] originalPoint` : The original point that needs to be transformed.  
 `[in] transformationMatrix` : The 3x3 matrix used for coordinate transformation.
 
 **Return Value**  
