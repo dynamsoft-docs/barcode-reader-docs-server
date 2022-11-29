@@ -14,6 +14,8 @@ needAutoGenerateSidebar: true
   | Method               | Description |
   |----------------------|-------------|
   | [`BarcodeReader`](constructor-and-destructor.md#barcodereader) | Constructor of `BarcodeReader` object.|
+  | [`get_instance`](constructor-and-destructor.md#get_instance) | Gets an idle Dynamsoft Barcode Reader instance running on concurrent instance mode. |
+  | [`recycle`](constructor-and-destructor.md#recycle) | Recycles a Dynamsoft Barcode Reader instance running on concurrent instance mode. |
 
 
 ## License
@@ -21,8 +23,10 @@ needAutoGenerateSidebar: true
   | Method               | Description |
   |----------------------|-------------|
   | [`init_license`](license.md#init_license) | Reads product key and activates the SDK.  |
+  | [`is_instance_valid`](license.md#is_instance_valid) | Gets whether the instance is valid when charging by concurrent instances count. |
   | [`get_idle_instances_count`](license.md#get_idle_instances_count) | Gets available instances count when charging by concurrent instances count. |
   | [`set_device_friendly_name`](license.md#set_device_friendly_name) | Sets a human-readable name that identifies the device. |
+  | [`set_max_concurrent_instance_count`](license.md#set_max_concurrent_instance_count) | Sets the max concurrent instance count used for current device and process. |
   | [`init_license_from_server`](license.md#init_license_from_server) | `Deprecated` |
   | [`init_license_from_license_content`](license.md#init_license_from_license_content) | `Deprecated` |
   | [`output_license_to_string`](license.md#output_license_to_string) | `Deprecated` |
@@ -66,6 +70,13 @@ needAutoGenerateSidebar: true
   | [`get_all_template_names`](parameter-and-runtime-settings-advanced.md#get_all_template_names) | Gets the parameter templates name array. |
   | [`output_settings_to_json_file`](parameter-and-runtime-settings-advanced.md#output_settings_to_json_file) | Outputs runtime settings to a settings file (JSON file). |
   | [`output_settings_to_json_string`](parameter-and-runtime-settings-advanced.md#output_settings_to_json_string) | Outputs runtime settings to a string. |
+
+## General Functions
+
+  | Method               | Description |
+  |----------------------|-------------|
+  | [`transform_coordinates`](general.md#transform_coordinates) | Transform the coordinates of a point based on the given transformation matrix. |
+   
 
 ## Video
 

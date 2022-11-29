@@ -13,20 +13,23 @@ needGenerateH3Content: true
 ## BarcodeReader Class
 
 ### Initialize and Destroy
-   
+
   | Method               | Description |
   |----------------------|-------------|
   | [`BarcodeReader`](BarcodeReader/initialize-and-destroy.md#barcodereader) | Initialization of `BarcodeReader` object.|
   | [`destroy`](BarcodeReader/initialize-and-destroy.md#destroy) | Destroys an instance of `BarcodeReader` object.|
-   
+  | [`getInstance`](BarcodeReader/initialize-and-destroy.md#getinstance) | Gets an idle Dynamsoft Barcode Reader instance running on concurrent instance mode. |
+  | [`recycle`](BarcodeReader/initialize-and-destroy.md#recycle) | Recycles a Dynamsoft Barcode Reader instance running on concurrent instance mode. |
 
 ### License Methods
   
   | Method               | Description |
   |----------------------|-------------|
   | [`initLicense`](BarcodeReader/license.md#initlicense) | Initializes license key and activate the SDK. |
+  | [`isInstanceValid`](BarcodeReader/license.md#isinstancevalid) | Gets whether the instance is valid when charging by concurrent instances count. |
   | [`getIdleInstancesCount`](BarcodeReader/license.md#getidleinstancescount) | Gets available instances count when charging by concurrent instances count. |
   | [`setDeviceFriendlyName`](BarcodeReader/license.md#setdevicefriendlyname) | Sets a human-readable name that identifies the device. |
+  | [`setMaxConcurrentInstanceCount`](BarcodeReader/license.md#setmaxconcurrentinstancecount) | Sets the max concurrent instance count used for current device and process. |
   | [`initLicenseFromServer`](BarcodeReader/license.md#initlicensefromserver) | `Deprecated` |
   | [`initLicenseFromLicenseContent`](BarcodeReader/license.md#initlicensefromlicensecontent) | `Deprecated` |
   | [`outputLicenseToString`](BarcodeReader/license.md#outputlicensetostring) | `Deprecated` |
@@ -85,11 +88,12 @@ needGenerateH3Content: true
 
 
    
-### Status Retrieval Methods
+### General Methods
    
   | Method               | Description |
   |----------------------|-------------|
-  | [`getVersion`](BarcodeReader/status-retrieval.md#getversion) | Get version information of SDK.|
+  | [`getVersion`](BarcodeReader/general.md#getversion) | Get version information of SDK.|
+  | [`transformCoordinates`](BarcodeReader/general.md#transformcoordinates) | Transform the coordinates of a point based on the given transformation matrix. |
    
       
 

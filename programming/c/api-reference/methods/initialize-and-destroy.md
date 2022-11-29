@@ -13,6 +13,8 @@ needAutoGenerateSidebar: true
   |----------------------|-------------|
   | [`DBR_CreateInstance`](#dbr_createinstance) | Creates an instance of Dynamsoft Barcode Reader. |
   | [`DBR_DestroyInstance`](#dbr_destroyinstance) | Destroys the instance of Dynamsoft Barcode Reader. |
+  | [`DBR_GetInstance`](#dbr_getinstance) | Gets an idle Dynamsoft Barcode Reader instance running on concurrent instance mode. |
+  | [`DBR_RecycleInstance`](#dbr_recycleinstance) | Recycles a Dynamsoft Barcode Reader instance running on concurrent instance mode. |
   
   
 ## DBR_CreateInstance
@@ -37,11 +39,6 @@ void* barcodeReader = DBR_CreateInstance();
 DBR_DestroyInstance(barcodeReader);
 ```
 
-**Remarks**  
-
-Partial of the decoding result will be masked with "\*" without a valid license key.
-
-
 ## DBR_DestroyInstance
 
 Destroys an instance of Dynamsoft Barcode Reader.
@@ -63,3 +60,49 @@ void* barcodeReader = DBR_CreateInstance();
 DBR_DestroyInstance(barcodeReader);
 ```
 
+## DBR_GetInstance
+
+Gets an idle Dynamsoft Barcode Reader instance running on concurrent instance mode.
+
+```c
+DBR_API void* DBR_GetInstance()
+```
+
+**Return Value**  
+Returns an idle Dynamsoft Barcode Reader instance running on concurrent instance mode. If failed, returns `NULL`.
+
+**Code Snippet**  
+
+```c
+char errorBuf[512];
+DBR_InitLicense("YOUR-LICENSE-KEY", errorBuf, 512);
+void* barcodeReader = DBR_GetInstance();
+// Add your code here to call decoding method, process barcode results and so on
+// ...
+// Recycle the barcodeReader instance to make it idle for other concurrent tasks
+DBR_RecycleInstance(barcodeReader);
+```
+
+## DBR_RecycleInstance
+
+Recycles a Dynamsoft Barcode Reader instance running on concurrent instance mode.
+
+```c
+DBR_API void DBR_RecycleInstance (void* barcodeReader)
+```
+
+**Parameters**  
+
+`[in] barcodeReader` Handle of a Dynamsoft Barcode Reader instance running on concurrent instance mode.
+
+**Code Snippet**  
+
+```c
+char errorBuf[512];
+DBR_InitLicense("YOUR-LICENSE-KEY", errorBuf, 512);
+void* barcodeReader = DBR_GetInstance();
+// Add your code here to call decoding method, process barcode results and so on
+// ...
+// Recycle the barcodeReader instance to make it idle for other concurrent tasks
+DBR_RecycleInstance(barcodeReader);
+```

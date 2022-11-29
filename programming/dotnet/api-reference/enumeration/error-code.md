@@ -1,6 +1,6 @@
 ---
 layout: default-layout
-title: Dynamsoft Barcode Reader Enumerations - Error Code
+title: Error Code - Dynamsoft Barcode Reader .NET Edition
 description: This article enumerates the error codes of Dynamsoft Barcode Reader
 keywords: error code, enumeration
 permalink: /programming/dotnet/api-reference/enumeration/error-code.html
@@ -20,7 +20,7 @@ enum Dynamsoft.DBR.EnumErrorCode
 
   | Error Code | Value | Description |
   |-------------------|-------------------|-------------|
-  | `DBR_OK` | 0 | Successful. |
+  | `DBR_SUCCESS` | 0 | Successful. |
 
 ### Error code 1
 

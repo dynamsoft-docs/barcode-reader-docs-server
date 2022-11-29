@@ -14,12 +14,6 @@ needAutoGenerateSidebar: true
   | [`CB_Error`](#cb_error) | Represents the method that will handle the error code returned by the SDK. |
   | [`CB_IntermediateResult`](#cb_intermediateresult) | Represents the method that will handle the intermediate result array returned by the SDK. |
   | [`CB_TextResult`](#cb_textresult) | Represents the method that will handle the text result array returned by the SDK. | 
-  
----
- 
-
-
-
 
 ## CB_Error
 Represents the method that will handle the error code returned by the SDK.

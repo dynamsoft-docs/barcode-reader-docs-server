@@ -42,7 +42,7 @@ DBR_API int DBR_SetModeArgument (void* barcodeReader, const char* pModesName, co
 
 #### Return value
 Returns error code. Possible return(s): DBR_OK; DBRERR_SET_MODE_ARGUMENT_ERROR.   
-*You can call [`DBR_GetErrorString`](status-retrieval.md#dbr_geterrorstring) to get detailed error message.*
+*You can call [`DBR_GetErrorString`](general.md#dbr_geterrorstring) to get detailed error message.*
   
 #### Remark
 Check follow link for available modes and arguments:
@@ -99,7 +99,7 @@ DBR_API int DBR_GetModeArgument (void* barcodeReader, const char* pModesName, co
 
 #### Return value
 Returns error code. Possible return(s): DBR_OK; DBRERR_GET_MODE_ARGUMENT_ERROR.  
-*You can call [`DBR_GetErrorString`](status-retrieval.md#dbr_geterrorstring) to get detailed error message.*
+*You can call [`DBR_GetErrorString`](general.md#dbr_geterrorstring) to get detailed error message.*
 
 #### Remark
 Check follow link for available modes and arguments:
@@ -152,7 +152,7 @@ DBR_API int DBR_GetRuntimeSettings (void* barcodeReader, PublicRuntimeSettings* 
 
 #### Return value
 Returns error code (returns 0 if the function operates successfully).    
-*You can call [`DBR_GetErrorString`](status-retrieval.md#dbr_geterrorstring) to get detailed error message.*
+*You can call [`DBR_GetErrorString`](general.md#dbr_geterrorstring) to get detailed error message.*
 
 #### Code Snippet
 ```c
@@ -184,7 +184,7 @@ DBR_API int DBR_UpdateRuntimeSettings (void* barcodeReader, PublicRuntimeSetting
 
 #### Return value
 Returns error code (returns 0 if the function operates successfully).    
-*You can call [`DBR_GetErrorString`](status-retrieval.md#dbr_geterrorstring) to get detailed error message.*
+*You can call [`DBR_GetErrorString`](general.md#dbr_geterrorstring) to get detailed error message.*
 
 #### Code Snippet
 ```c
@@ -217,7 +217,7 @@ DBR_API int DBR_ResetRuntimeSettings (void* barcodeReader)
 
 #### Return value
 Returns error code (returns 0 if the function operates successfully).    
-*You can call [`DBR_GetErrorString`](status-retrieval.md#dbr_geterrorstring) to get detailed error message.*
+*You can call [`DBR_GetErrorString`](general.md#dbr_geterrorstring) to get detailed error message.*
 
 #### Code Snippet
 ```c

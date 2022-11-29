@@ -17,6 +17,7 @@ needAutoGenerateSidebar: true
    | [`InitFrameDecodingParameters`](#initframedecodingparameters) | Initialize frame decoding parameter. |
    | [`SetErrorCallback`](#seterrorcallback) | Set callback function to process errors which is triggered when the library finishes decoding a frame. |
    | [`SetTextResultCallback`](#settextresultcallback) | Set callback function to process text results which is triggered when the library finishes decoding a frame. |
+  | [`SetUniqueBarcodeCallback`](#setuniquebarcodecallback) | Set callback function to process text results which is triggered when the library finishes decoding a frame and finds unique barcodes. |
    | [`SetIntermediateResultCallback`](#setintermediateresultcallback) | Set callback function to process intermediate results which is triggered when the library finishes decoding a frame. |
    | [`GetLengthOfFrameQueue`](#getlengthofframequeue) | Get length of current inner frame queue. |
 
@@ -46,7 +47,7 @@ int dynamsoft::dbr::CBarcodeReader::StartFrameDecoding (const int maxQueueLength
 
 **Return Value**  
 Returns error code. Possible return(s): DBR_OK; DBRERR_FRAME_DECODING_THREAD_EXISTS; DBRERR_PARAMETER_VALUE_INVALID.   
-*You can call [`GetErrorString`](status-retrieval.md#geterrorstring) to get detailed error message.*
+*You can call [`GetErrorString`](general.md#geterrorstring) to get detailed error message.*
 
 
 **Code Snippet**  
@@ -80,7 +81,7 @@ int dynamsoft::dbr::CBarcodeReader::StartFrameDecodingEx (FrameDecodingParameter
 
 **Return Value**  
 Returns error code. Possible return(s): DBR_OK; DBRERR_FRAME_DECODING_THREAD_EXISTS; DBRERR_PARAMETER_VALUE_INVALID.   
-*You can call [`GetErrorString`](status-retrieval.md#geterrorstring) to get detailed error message.*  
+*You can call [`GetErrorString`](general.md#geterrorstring) to get detailed error message.*  
    
 
 **Code Snippet**  
@@ -158,7 +159,7 @@ int dynamsoft::dbr::CBarcodeReader::StopFrameDecoding()
 
 **Return Value**  
 Returns error code. Possible return(s): DBR_OK; DBRERR_STOP_DECODING_THREAD_FAILED.   
-*You can call [`GetErrorString`](status-retrieval.md#geterrorstring) to get detailed error message.*
+*You can call [`GetErrorString`](general.md#geterrorstring) to get detailed error message.*
 
 **Code Snippet**  
 ```cpp
@@ -190,7 +191,7 @@ int dynamsoft::dbr::CBarcodeReader::InitFrameDecodingParameters (FrameDecodingPa
 
 **Return Value**  
 Returns error code. Possible return(s): DBR_OK.   
-*You can call [`GetErrorString`](status-retrieval.md#geterrorstring) to get detailed error message.*
+*You can call [`GetErrorString`](general.md#geterrorstring) to get detailed error message.*
 
 
 **Code Snippet**  
@@ -241,7 +242,7 @@ int dynamsoft::dbr::CBarcodeReader::SetErrorCallback (CB_Error cbFunction, void*
 
 **Return Value**  
 Returns error code. Possible return(s): DBR_OK; DBRERR_FRAME_DECODING_THREAD_EXISTS.     
-*You can call [`GetErrorString`](status-retrieval.md#geterrorstring) to get detailed error message.*
+*You can call [`GetErrorString`](general.md#geterrorstring) to get detailed error message.*
 
 **Code Snippet**  
 ```cpp
@@ -270,13 +271,13 @@ int dynamsoft::dbr::CBarcodeReader::SetTextResultCallback (CB_TextResult cbFunct
 ```   
    
 **Parameters**  
-`[in]	cbFunction`	Callback function.   
-`[in]	pUser` Customized arguments passed to your function.
+`[in] cbFunction` Callback function.  
+`[in] pUser` Customized arguments passed to your function.
 
 
 **Return Value**  
 Returns error code. Possible return(s): DBR_OK; DBRERR_FRAME_DECODING_THREAD_EXISTS.     
-*You can call [`GetErrorString`](status-retrieval.md#geterrorstring) to get detailed error message.*
+*You can call [`GetErrorString`](general.md#geterrorstring) to get detailed error message.*
 
 **Code Snippet**  
 ```cpp
@@ -291,7 +292,34 @@ reader->SetTextResultCallback(TextResultFunction, NULL);
 reader->StartFrameDecoding(2, 10, 1024, 720, 720, IPF_BINARY, "");
 ```
 
- 
+## SetUniqueBarcodeCallback
+
+Set callback function to process text results which is triggered when the library finishes decoding a frame and finds unique barcodes.
+
+```cpp
+int dynamsoft::dbr::CBarcodeReader::SetUniqueBarcodeCallback(CB_TextResult cbFunction, void* pUser)
+```
+
+**Parameters**  
+`[in] cbFunction` Callback function.  
+`[in] pUser`Customized arguments passed to your function.
+
+**Return Value**  
+Returns error code. Possible return(s): DBR_OK; DBRERR_FRAME_DECODING_THREAD_EXISTS.  
+*You can call [`GetErrorString`](general.md#geterrorstring) to get detailed error message.*
+
+**Code Snippet**  
+```cpp
+void TextResultFunction(int frameId, TextResultArray *pResults, void * pUser)
+{
+    //TODO add your code for using text results
+}
+char errorBuf[512];
+dynamsoft::dbr::CBarcodeReader::InitLicense("YOUR-LICENSE-KEY", errorBuf, 512);
+CBarcodeReader* reader = new CBarcodeReader();
+reader->SetUniqueBarcodeCallback(TextResultFunction, NULL);
+reader->StartFrameDecoding(2, 10, 1024, 720, 720, IPF_BINARY, "");
+```
 
 
 
@@ -311,7 +339,7 @@ int dynamsoft::dbr::CBarcodeReader::SetIntermediateResultCallback (CB_Intermedia
 
 **Return Value**  
 Returns error code. Possible return(s): DBR_OK; DBRERR_FRAME_DECODING_THREAD_EXISTS.     
-*You can call [`GetErrorString`](status-retrieval.md#geterrorstring) to get detailed error message.*
+*You can call [`GetErrorString`](general.md#geterrorstring) to get detailed error message.*
 
 
 **Code Snippet**  

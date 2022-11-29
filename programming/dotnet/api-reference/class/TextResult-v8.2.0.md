@@ -27,7 +27,7 @@ public class TextResult
 | [`LocalizationResult`](#localizationresult) | *[`LocalizationResult`](LocalizationResult.md)* |
 | [`DetailedResult`](#detailedresult) | *object* |
 | [`Results`](#results) | *[`ExtendedResult`](ExtendedResult.md)[ ]* |
-| [`Exception`](#Exception) | *string* |
+| [`Exception`](#exception) | *string* |
 
 
 ### BarcodeFormat

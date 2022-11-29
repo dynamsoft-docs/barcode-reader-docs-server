@@ -142,7 +142,7 @@ Sets the output image resolution.
 int com.dynamsoft.dbr.PublicRuntimeSettings.pdfRasterDPI
 ```
 **Value Range**     
-    [100, 600]
+    [100, 3000]
       
 **Default Value**     
     300

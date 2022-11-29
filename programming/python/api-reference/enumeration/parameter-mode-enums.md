@@ -1,6 +1,6 @@
 ---
 layout: default-layout
-title: Dynamsoft Barcode Reader Enumerations - Parameter Mode Enumerations
+title: Parameter Mode Enumerations - Dynamsoft Barcode Reader Python Edition
 description: This article shows Parameter Mode Enumerations of Dynamsoft Barcode Reader.
 keywords: BarcodeColourMode, BarcodeComplementMode, BinarizationMode, ColourClusteringMode, ColourConversionMode, ConflictMode, DeblurMode, DeformationResistingMode, DPMCodeReadingMode, GrayscaleTransformationMode, ImagePreprocessingMode, LocalizationMode, PDFReadingMode, RegionPredetectionMode, ScaleUpMode, TerminatePhase, TextFilterMode, TextureDetectionMode, parameter mode enumeration, enumeration
 needGenerateH3Content: false
@@ -221,11 +221,11 @@ class EnumDeformationResistingMode(IntEnum)
 | Member | Value | Description | Valid Argument(s) |
 | --------------- | ----- | ----------- | ----------------- |
 | DRM_SKIP | 0x00 | Skip the deformation resisting. | `N/A` |
-| DRM_AUTO | 0x01 | **Not supported yet.** | `N/A` |
+| DRM_AUTO | 0x01 | Lets the library choose a mode automatically. | `N/A` |
 | DRM_GENERAL | 0x02 | Resists deformation using the general algorithm. | [`Level`]({{ site.parameters_reference }}deformation-resisting-modes.html#level) |
-| DRM_BROAD_WARP | 0x04 | Resists deformation when the barcode is warped gently. | `N/A` |
-| DRM_LOCAL_REFERENCE | 0x08 | Resists deformation for barcodes with minor deformation in local modules. | `N/A` |
-| DRM_DEWRINKLE | 0x10 | Resists deformation for barcodes on a wrinkled surface. | `N/A` |
+| DRM_BROAD_WARP | 0x04 | Resists deformation when the barcode is warped gently. | [`BinarizationMode`]({{ site.parameters_reference }}deformation-resisting-modes.html#binarizationmode)<br>[`GrayscaleEnhancementMode`]({{ site.parameters_reference }}deformation-resisting-modes.html#grayscaleenhancementmode) |
+| DRM_LOCAL_REFERENCE | 0x08 | Resists deformation for barcodes with minor deformation in local modules. | [`BinarizationMode`]({{ site.parameters_reference }}deformation-resisting-modes.html#binarizationmode)<br>[`GrayscaleEnhancementMode`]({{ site.parameters_reference }}deformation-resisting-modes.html#grayscaleenhancementmode) |
+| DRM_DEWRINKLE | 0x10 | Resists deformation for barcodes on a wrinkled surface. | [`BinarizationMode`]({{ site.parameters_reference }}deformation-resisting-modes.html#binarizationmode)<br>[`GrayscaleEnhancementMode`]({{ site.parameters_reference }}deformation-resisting-modes.html#grayscaleenhancementmode) |
 
 ## DPMCodeReadingMode
 

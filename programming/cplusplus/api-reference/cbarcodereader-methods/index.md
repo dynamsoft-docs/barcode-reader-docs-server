@@ -14,6 +14,8 @@ needAutoGenerateSidebar: true
   |----------------------|-------------|
   | [`CBarcodeReader`](constructor-and-destructor.md#cbarcodereader) | Default constructor of `CBarcodeReader` object.|
   | [`~CBarcodeReader`](constructor-and-destructor.md#~cbarcodereader) | Destructor of `CBarcodeReader` object.|
+  | [`GetInstance`](constructor-and-destructor.md#getinstance) | Gets an idle Dynamsoft Barcode Reader instance running on concurrent instance mode. |
+  | [`Recycle`](constructor-and-destructor.md#recycle) | Recycles a Dynamsoft Barcode Reader instance running on concurrent instance mode. |
    
    
 ## License
@@ -21,8 +23,10 @@ needAutoGenerateSidebar: true
   | Method               | Description |
   |----------------------|-------------|
   | [`InitLicense`](license.md#initlicense) | Initializes license key and activate the SDK. |
+  | [`IsInstanceValid`](license.md#isinstancevalid) | Gets whether the instance is valid when charging by concurrent instances count. |
   | [`GetIdleInstancesCount`](license.md#getidleinstancescount) | Gets available instances count when charging by concurrent instances count. |
   | [`SetDeviceFriendlyName`](license.md#setdevicefriendlyname) | Sets a human-readable name that identifies the device. |
+  | [`SetMaxConcurrentInstanceCount`](license.md#setmaxconcurrentinstancecount) | Sets the max concurrent instance count used for current device and process. |
   | [`InitLicenseFromServer`](license.md#initlicensefromserver) | `Deprecated` |
   | [`InitLicenseFromLicenseContent`](license.md#initlicensefromlicensecontent) | `Deprecated` |
   | [`OutputLicenseToString`](license.md#outputlicensetostring) | `Deprecated` |
@@ -92,12 +96,13 @@ needAutoGenerateSidebar: true
 
 
    
-## Status Retrieval
+## General
    
   | Method               | Description |
   |----------------------|-------------|
-  | [`GetErrorString`](status-retrieval.md#geterrorstring) | Get error message by error code.|
-  | [`GetVersion`](status-retrieval.md#getversion) | Get version information of SDK.|
+  | [`GetErrorString`](general.md#geterrorstring) | Get error message by error code.|
+  | [`GetVersion`](general.md#getversion) | Get version information of SDK.|
+  | [`TransformCoordinates`](general.md#transformcoordinates) | Transform the coordinates of a point based on the given transformation matrix. |
    
       
 
@@ -126,6 +131,7 @@ needAutoGenerateSidebar: true
    |----------------------|-------------|
    | [`SetErrorCallback`](video.md#seterrorcallback) | Set callback function to process errors which is triggered when the library finishes decoding a frame. |
    | [`SetTextResultCallback`](video.md#settextresultcallback) | Set callback function to process text results which is triggered when the library finishes decoding a frame. |
+  | [`SetUniqueBarcodeCallback`](video.md#setuniquebarcodecallback) | Set callback function to process text results which is triggered when the library finishes decoding a frame and finds unique barcodes. |
    | [`SetIntermediateResultCallback`](video.md#setintermediateresultcallback) | Set callback function to process intermediate results which is triggered when the library finishes decoding a frame. |
 
 ### Status retrieval

@@ -39,7 +39,7 @@ int dynamsoft::dbr::CBarcodeReader::SetModeArgument (const char* pModesName, con
 
 **Return Value**  
 Returns error code. Possible return(s): DBR_OK; DBRERR_SET_MODE_ARGUMENT_ERROR.  
-*You can call [`GetErrorString`](status-retrieval.md#geterrorstring) to get detailed error message.*
+*You can call [`GetErrorString`](general.md#geterrorstring) to get detailed error message.*
 
 **Code Snippet**  
 ```cpp
@@ -96,7 +96,7 @@ int dynamsoft::dbr::CBarcodeReader::GetModeArgument (const char* pModesName, con
 
 **Return Value**  
 Returns error code. Possible return(s): DBR_OK; DBRERR_GET_MODE_ARGUMENT_ERROR.  
-*You can call [`GetErrorString`](status-retrieval.md#geterrorstring) to get detailed error message.*
+*You can call [`GetErrorString`](general.md#geterrorstring) to get detailed error message.*
 
 **Code Snippet**  
 ```cpp
@@ -149,7 +149,7 @@ int dynamsoft::dbr::CBarcodeReader::GetRuntimeSettings (PublicRuntimeSettings* p
  
 **Return Value**  
 Returns error code (returns 0 if the function operates successfully).  
-*You can call [`GetErrorString`](status-retrieval.md#geterrorstring) to get detailed error message.*
+*You can call [`GetErrorString`](general.md#geterrorstring) to get detailed error message.*
 
 **Code Snippet**  
 ```cpp
@@ -183,7 +183,7 @@ int dynamsoft::dbr::CBarcodeReader::UpdateRuntimeSettings (PublicRuntimeSettings
  
 **Return Value**  
 Returns error code (returns 0 if the function operates successfully).  
-*You can call [`GetErrorString`](status-retrieval.md#geterrorstring) to get detailed error message.*
+*You can call [`GetErrorString`](general.md#geterrorstring) to get detailed error message.*
 
 **Code Snippet**  
 ```cpp
@@ -215,7 +215,7 @@ int dynamsoft::dbr::CBarcodeReader::ResetRuntimeSettings ()
 
 **Return Value**  
 Returns error code (returns 0 if the function operates successfully).  
-*You can call [`GetErrorString`](status-retrieval.md#geterrorstring) to get detailed error message.*
+*You can call [`GetErrorString`](general.md#geterrorstring) to get detailed error message.*
 
 **Code Snippet**  
 ```cpp

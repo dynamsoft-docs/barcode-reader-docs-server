@@ -111,12 +111,12 @@ breadcrumbText: API Reference
  
 
    
-### Status Retrieval
+### General
    
   | Method               | Description |
   |----------------------|-------------|
-  | [`GetErrorString`](cbarcodereader-methods/status-retrieval.md#geterrorstring) | Get error message by error code.|
-  | [`GetVersion`](cbarcodereader-methods/status-retrieval.md#getversion) | Get version information of SDK.|
+  | [`GetErrorString`](cbarcodereader-methods/general.md#geterrorstring) | Get error message by error code.|
+  | [`GetVersion`](cbarcodereader-methods/general.md#getversion) | Get version information of SDK.|
    
       
  

@@ -12,8 +12,10 @@ needAutoGenerateSidebar: true
   | Method               | Description |
   |----------------------|-------------|
   | [`initLicense`](#initlicense) | Initializes license key and activate the SDK. |
+  | [`isInstanceValid`](#isinstancevalid) | Gets whether the instance is valid when charging by concurrent instances count. |
   | [`getIdleInstancesCount`](#getidleinstancescount) | Gets available instances count when charging by concurrent instances count. |
   | [`setDeviceFriendlyName`](#setdevicefriendlyname) | Sets a human-readable name that identifies the device. |
+  | [`setMaxConcurrentInstanceCount`](#setmaxconcurrentinstancecount) | Sets the max concurrent instance count used for current device and process. |
   | [`initLicenseFromServer`](#initlicensefromserver) | `Deprecated` |
   | [`initLicenseFromLicenseContent`](#initlicensefromlicensecontent) | `Deprecated` |
   | [`outputLicenseToString`](#outputlicensetostring) | `Deprecated` |
@@ -47,6 +49,24 @@ BarcodeReader reader = new BarcodeReader();
 // add further process
 ```
 
+## isInstanceValid
+
+Gets whether the instance is valid when charging by concurrent instances count.
+
+```java
+int com.dynamsoft.dbr.BarcodeReader.isInstanceValid()
+```
+
+**Return Value**
+
+Returns an int value indicating whether the instance is valid for running on concurrent instance mode.
+
+- 0: The instance is not valid for running on concurrent instance mode.
+- 1: The instance is valid for running on concurrent instance mode.
+
+**Remarks**
+
+This method is meaningful only when using a license charged by concurrent instances count.
 
 ## getIdleInstancesCount
 
@@ -58,8 +78,9 @@ static int com.dynamsoft.dbr.BarcodeReader.getIdleInstancesCount()
 
 **Return Value**  
 
-Returns available instances count.    
-- 0: There is no space for new instance  
+Returns available instances count.
+
+- 0: There is no space for new instance
 - -1: The available count needs to be updated from server by calling initLicense.
 - N ( N > 0 ): N more instances can be created.
 
@@ -106,6 +127,34 @@ BarcodeReader.setDeviceFriendlyName("My-PC");
 BarcodeReader.initLicense("YOUR-LICENSE-KEY");
 BarcodeReader reader = new BarcodeReader();
 // add further process
+```
+
+## setMaxConcurrentInstanceCount
+
+Sets the max concurrent instance count used for current device and process.
+
+```java
+static void com.dynamsoft.dbr.BarcodeReader.setMaxConcurrentInstanceCount(int countForThisDevice, int countForThisProcess)
+```
+
+**Parameters**
+
+`[in] countForThisDevice` The maximum number of concurrent instances that the current device can run.
+
+`[in] countForThisProcess` The maximum number of concurrent instances that the current process can run.
+
+**Code Snippet**
+
+```java
+int countForThisDevice = 10;
+int countForThisProcess = 10;
+BarcodeReader.setMaxConcurrentInstanceCount(countForThisDevice, countForThisProcess);
+BarcodeReader.initLicense("YOUR-LICENSE-KEY");
+BarcodeReader barcodeReader = BarcodeReader.getInstance();
+// Add your code here to call decoding method, process barcode results and so on
+// ...
+// Recycle the barcodeReader instance to make it idle for other concurrent tasks
+barcodeReader.recycle();
 ```
 
 ## initLicenseFromServer

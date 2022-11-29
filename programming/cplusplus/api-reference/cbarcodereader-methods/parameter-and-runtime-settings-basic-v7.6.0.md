@@ -40,7 +40,7 @@ int CBarcodeReader::SetModeArgument (const char* pModesName, const int index, co
 
 #### Return value
 Returns error code. Possible return(s): DBR_OK; DBRERR_SET_MODE_ARGUMENT_ERROR.  
-*You can call [`GetErrorString`](status-retrieval.md#geterrorstring) to get detailed error message.*
+*You can call [`GetErrorString`](general.md#geterrorstring) to get detailed error message.*
 
 #### Remark
 Check follow link for available modes and arguments:
@@ -98,7 +98,7 @@ int CBarcodeReader::GetModeArgument (const char* pModesName, const int index, co
 
 #### Return value
 Returns error code. Possible return(s): DBR_OK; DBRERR_GET_MODE_ARGUMENT_ERROR.  
-*You can call [`GetErrorString`](status-retrieval.md#geterrorstring) to get detailed error message.*
+*You can call [`GetErrorString`](general.md#geterrorstring) to get detailed error message.*
 
 #### Remark
 Check follow link for available modes and arguments:
@@ -152,7 +152,7 @@ int CBarcodeReader::GetRuntimeSettings (PublicRuntimeSettings* psettings)
  
 #### Return value
 Returns error code (returns 0 if the function operates successfully).  
-*You can call [`GetErrorString`](status-retrieval.md#geterrorstring) to get detailed error message.*
+*You can call [`GetErrorString`](general.md#geterrorstring) to get detailed error message.*
 
 #### Code Snippet
 ```cpp
@@ -185,7 +185,7 @@ int CBarcodeReader::UpdateRuntimeSettings (PublicRuntimeSettings* pSettings, cha
  
 #### Return value
 Returns error code (returns 0 if the function operates successfully).  
-*You can call [`GetErrorString`](status-retrieval.md#geterrorstring) to get detailed error message.*
+*You can call [`GetErrorString`](general.md#geterrorstring) to get detailed error message.*
 
 #### Code Snippet
 ```cpp
@@ -216,7 +216,7 @@ int CBarcodeReader::ResetRuntimeSettings ()
 
 #### Return value
 Returns error code (returns 0 if the function operates successfully).  
-*You can call [`GetErrorString`](status-retrieval.md#geterrorstring) to get detailed error message.*
+*You can call [`GetErrorString`](general.md#geterrorstring) to get detailed error message.*
 
 #### Code Snippet
 ```cpp

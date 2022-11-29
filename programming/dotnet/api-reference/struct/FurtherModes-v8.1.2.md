@@ -227,12 +227,3 @@ EnumBarcodeColourMode[] Dynamsoft.DBR.FurtherModes.BarcodeColourModes
 ```csharp
 EnumAccompanyingTextRecognitionMode[] Dynamsoft.DBR.FurtherModes.AccompanyingTextRecognitionModes
 ```
-
-- **Value range**  
-   Each array item can be any one of the [`AccompanyingTextRecognitionMode`]({{ site.dotnet_enumerations }}parameter-mode-enums.html#accompanyingtextrecognitionmode) Enumeration items.  
-     
-- **Default value**  
-   `[EnumAccompanyingTextRecognitionMode.ATRM_SKIP, EnumAccompanyingTextRecognitionMode.ATRM_SKIP, EnumAccompanyingTextRecognitionMode.ATRM_SKIP, EnumAccompanyingTextRecognitionMode.ATRM_SKIP, EnumAccompanyingTextRecognitionMode.ATRM_SKIP, EnumAccompanyingTextRecognitionMode.ATRM_SKIP, EnumAccompanyingTextRecognitionMode.ATRM_SKIP, EnumAccompanyingTextRecognitionMode.ATRM_SKIP]`  
-     
-- **Remarks**  
-   The array index represents the priority of the item. The smaller index is, the higher priority is.  

@@ -14,15 +14,11 @@ needAutoGenerateSidebar: true
   | [`DBR_DecodeFile`](#dbr_decodefile) | Decode barcodes from a specified image file. |
   | [`DBR_DecodeFileInMemory`](#dbr_decodefileinmemory) | Decode barcodes from an image file in memory. |
   | [`DBR_DecodeBuffer`](#dbr_decodebuffer) | Decode barcodes from raw buffer. |
+  | [`DBR_DecodeImageData`](#dbr_decodeimagedata) | Decode barcodes from source image defined as ImageData. |
   | [`DBR_DecodeBase64String`](#dbr_decodebase64string) | Decode barcodes from a base64 encoded string. |
-  | [`DBR_DecodeDIB`](#dbr_decodedib) | Decode barcode from a handle of device-independent bitmap (DIB). | 
+  | [`DBR_DecodeDIB`](#dbr_decodedib) | Decode barcode from a handle of device-independent bitmap (DIB). |
   | [`DBR_InitIntermediateResult`](#dbr_initintermediateresult) | Inits an intermediateResult struct with default values. |
   | [`DBR_DecodeIntermediateResults`](#dbr_decodeintermediateresults) | Decodes barcode from intermediate results. |
-  
- 
-
-
-
 
 ## DBR_DecodeFile
 Decode barcodes from a specified image file.
@@ -38,7 +34,7 @@ DBR_API int DBR_DecodeFile (void* barcodeReader, const char* pFileName, const ch
 
 **Return Value**  
 Returns error code (returns 0 if the function operates successfully).    
-*You can call [`DBR_GetErrorString`](status-retrieval.md#dbr_geterrorstring) to get detailed error message.*
+*You can call [`DBR_GetErrorString`](general.md#dbr_geterrorstring) to get detailed error message.*
 
 **Code Snippet**  
 ```c
@@ -72,7 +68,7 @@ DBR_API int DBR_DecodeFileInMemory (void* barcodeReader, const unsigned char* pF
 
 **Return Value**  
 Returns error code (returns 0 if the function operates successfully).    
-*You can call [`DBR_GetErrorString`](status-retrieval.md#dbr_geterrorstring) to get detailed error message.*
+*You can call [`DBR_GetErrorString`](general.md#dbr_geterrorstring) to get detailed error message.*
 
 **Code Snippet**  
 ```c
@@ -113,7 +109,7 @@ DBR_API int DBR_DecodeBuffer (void* barcodeReader, const unsigned char* pBufferB
 
 **Return Value**  
 Returns error code (returns 0 if the function operates successfully).    
-*You can call [`DBR_GetErrorString`](status-retrieval.md#dbr_geterrorstring) to get detailed error message.*
+*You can call [`DBR_GetErrorString`](general.md#dbr_geterrorstring) to get detailed error message.*
 
 **Code Snippet**  
 ```c
@@ -127,6 +123,40 @@ int iStride = 0;
 ImagePixelFormat format;
 GetBufferFromFile("C:\\Program Files (x86)\\Dynamsoft\\{Version number}\\Images\\AllSupportedBarcodeTypes.tif", &pBufferBytes, &iWidth, &iHeight, &iStride, &format);
 int errorCode = DBR_DecodeBuffer(barcodeReader, pBufferBytes, iWidth, iHeight, iStride, format, "");
+DBR_DestroyInstance(barcodeReader);
+```
+
+**Remarks**  
+If no template name is specified, current runtime settings will be used. To get the actual text results, please refer to [`DBR_GetAllTextResults`](result.md#dbr_getalltextresults).
+
+
+
+
+## DBR_DecodeImageData
+
+Decode barcodes from source image defined as ImageData.
+
+```c
+DBR_API int DBR_DecodeImageData(void* barcodeReader, const ImageData* imageData, const char* templateName)
+```
+
+**Parameters**  
+`[in] barcodeReader` Handle of the barcode reader instance.  
+`[in] imageData` The source image defined as [ImageData]({{ site.structs }}ImageData.html?src=c).  
+`[in] templateName` The template name.
+
+**Return Value**  
+Returns error code (returns 0 if the function operates successfully).  
+*You can call [`DBR_GetErrorString`](general.md#dbr_geterrorstring) to get detailed error message.*
+
+**Code Snippet**
+```c
+char errorBuf[512];
+DBR_InitLicense("YOUR-LICENSE-KEY", errorBuf, 512);
+void* barcodeReader = DBR_CreateInstance();
+//...generate imageData somewhere else
+int errorCode = DBR_DecodeImageData(barcodeReader, imageData, "");
+//...get result or do something else
 DBR_DestroyInstance(barcodeReader);
 ```
 
@@ -152,7 +182,7 @@ DBR_API int DBR_DecodeBase64String (void* barcodeReader, const char* pBase64Stri
 
 **Return Value**  
 Returns error code (returns 0 if the function operates successfully).    
-*You can call [`DBR_GetErrorString`](status-retrieval.md#dbr_geterrorstring) to get detailed error message.*
+*You can call [`DBR_GetErrorString`](general.md#dbr_geterrorstring) to get detailed error message.*
 
 **Code Snippet**  
 ```c
@@ -191,7 +221,7 @@ DBR_API int DBR_DecodeDIB (void* barcodeReader, const HANDLE hDIB, const char* p
 
 **Return Value**  
 Returns error code (returns 0 if the function operates successfully).    
-*You can call [`DBR_GetErrorString`](status-retrieval.md#dbr_geterrorstring) to get detailed error message.*
+*You can call [`DBR_GetErrorString`](general.md#dbr_geterrorstring) to get detailed error message.*
 
 **Code Snippet**  
 ```c
@@ -225,7 +255,7 @@ DBR_API int DBR_InitIntermediateResult (IntermediateResultType intermediateResul
 
 **Return Value**  
 Returns error code (returns 0 if the function operates successfully).    
-*You can call [`DBR_GetErrorString`](status-retrieval.md#dbr_geterrorstring) to get detailed error message.*
+*You can call [`DBR_GetErrorString`](general.md#dbr_geterrorstring) to get detailed error message.*
 
 **Code Snippet**  
 ```c
@@ -252,7 +282,7 @@ DBR_API int DBR_DecodeIntermediateResults (void* barcodeReader, const Intermedia
 
 **Return Value**  
 Returns error code (returns 0 if the function operates successfully).    
-*You can call [`DBR_GetErrorString`](status-retrieval.md#dbr_geterrorstring) to get detailed error message.*
+*You can call [`DBR_GetErrorString`](general.md#dbr_geterrorstring) to get detailed error message.*
 
 **Code Snippet**  
 ```c

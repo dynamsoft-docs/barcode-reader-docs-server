@@ -52,6 +52,7 @@ camera: /camera-enhancer/docs/introduction/
 features: /barcode-reader/docs/core/programming/features/
 usecases: /barcode-reader/docs/core/programming/usecases/
 parameters_reference: /barcode-reader/docs/core/parameters/reference/
+license_activation: /barcode-reader/docs/core/license-activation/
 
 baseurl: "/barcode-reader/docs/server"
 plugins:

@@ -27,6 +27,8 @@ Defines a struct to configure the frame decoding Parameters.
 | [`autoFilter`](#autofilter) | *int* |
 | [`clarityCalculationMethod`](#claritycalculationmethod) | *int* |
 | [`clarityFilterMode`](#clarityfiltermode) | *int* |
+| [`duplicateForgetTime`](#duplicateforgettime) | *int* |
+| [`orientation`](#orientation) | *int* |
 
 
 ### maxQueueLength
@@ -181,3 +183,38 @@ int com.dynamsoft.dbr.FrameDecodingParameters.clarityFilterMode
 **See Also**      
     [`EnumClarityFilterMode`]({{ site.java_enumerations }}frame-decoding-enums.html#clarityfiltermode)    
 
+### duplicateForgetTime
+
+Set the time period used to ignore duplicate results found in frames. Measured in ms.
+
+```java
+int com.dynamsoft.dbr.FrameDecodingParameters.duplicateForgetTime
+```
+
+**Value Range**
+
+[0, 600000]
+
+**Default Value**
+
+3000
+
+**Remarks**
+
+The library keeps each barcode result (type and value) in the buffer for a period of time (set with duplicateForgetTime) during which if a new result is an exact match, it's seen as a duplicate and will again be kept for that period of time while the old result is removed and so on.
+
+### orientation
+
+Set the orientation of the frame image data. The value is the angle that the image needs to be rotated clockwise so it shows correctly on the display in its natural orientation. It can be 0, 90, 180, or 270.
+
+```java
+int com.dynamsoft.dbr.FrameDecodingParameters.orientation
+```
+
+**Value Range**
+
+0, 90, 180, or 270
+
+**Default Value**
+
+0

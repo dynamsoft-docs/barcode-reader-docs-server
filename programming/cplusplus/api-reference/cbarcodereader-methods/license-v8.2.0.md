@@ -39,7 +39,7 @@ int dynamsoft::dbr::CBarcodeReader::InitLicense (const char* pLicense)
 
 #### Return value
 Returns error code (returns 0 if the function operates successfully).    
-*You can call [`GetErrorString`](status-retrieval.md#geterrorstring) to get detailed error message.*
+*You can call [`GetErrorString`](general.md#geterrorstring) to get detailed error message.*
 
 
 #### Code Snippet
@@ -68,7 +68,7 @@ int dynamsoft::dbr::CBarcodeReader::InitLicenseFromServer (const char* pLicenseS
 
 #### Return value
 Returns error code (returns 0 if the function operates successfully).    
-*You can call [`GetErrorString`](status-retrieval.md#geterrorstring) to get detailed error message.*
+*You can call [`GetErrorString`](general.md#geterrorstring) to get detailed error message.*
 
 
 
@@ -91,7 +91,7 @@ int dynamsoft::dbr::CBarcodeReader::InitLicenseFromLicenseContent (const char* p
 
 #### Return value
 Returns error code (returns 0 if the function operates successfully).    
-*You can call [`GetErrorString`](status-retrieval.md#geterrorstring) to get detailed error message.*
+*You can call [`GetErrorString`](general.md#geterrorstring) to get detailed error message.*
 
 
 
@@ -113,7 +113,7 @@ int dynamsoft::dbr::CBarcodeReader::OutputLicenseToString (char content[], const
 
 #### Return value
 Returns error code (returns 0 if the function operates successfully).    
-*You can call [`GetErrorString`](status-retrieval.md#geterrorstring) to get detailed error message.*
+*You can call [`GetErrorString`](general.md#geterrorstring) to get detailed error message.*
 
 #### Remark
 [`InitLicenseFromServer`](#initlicensefromserver) has to be successfully called before calling this method.
@@ -137,7 +137,7 @@ int dynamsoft::dbr::CBarcodeReader::OutputLicenseToStringPtr (char** content)
 
 #### Return value
 Returns error code (returns 0 if the function operates successfully).    
-*You can call [`GetErrorString`](status-retrieval.md#geterrorstring) to get detailed error message.*
+*You can call [`GetErrorString`](general.md#geterrorstring) to get detailed error message.*
 
 #### Remarks
 [`InitLicenseFromServer`](#initlicensefromserver) has to be successfully called before calling this method.
@@ -181,7 +181,7 @@ static int dynamsoft::dbr::CBarcodeReader::InitLTSConnectionParameters(DM_LTSCon
 
 #### Return value
 Returns error code (returns 0 if the function operates successfully).    
-*You can call [`GetErrorString`](status-retrieval.md#geterrorstring) to get detailed error message.*
+*You can call [`GetErrorString`](general.md#geterrorstring) to get detailed error message.*
 
 #### Code Snippet
 ```cpp
@@ -207,7 +207,7 @@ static int dynamsoft::dbr::CBarcodeReader::InitLicenseFromLTS(DM_LTSConnectionPa
 
 #### Return value
 Returns error code (returns 0 if the function operates successfully).    
-*You can call [`GetErrorString`](status-retrieval.md#geterrorstring) to get detailed error message.*
+*You can call [`GetErrorString`](general.md#geterrorstring) to get detailed error message.*
 
 
 #### Code Snippet

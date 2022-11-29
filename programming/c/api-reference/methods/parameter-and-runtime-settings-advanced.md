@@ -43,7 +43,7 @@ DBR_API int DBR_InitRuntimeSettingsWithFile (void* barcodeReader, const char* pF
 
 **Return Value**  
 Returns error code (returns 0 if the function operates successfully).    
-*You can call [`DBR_GetErrorString`](status-retrieval.md#dbr_geterrorstring) to get detailed error message.*
+*You can call [`DBR_GetErrorString`](general.md#dbr_geterrorstring) to get detailed error message.*
 
 **Code Snippet**  
 ```c
@@ -78,7 +78,7 @@ DBR_API int DBR_InitRuntimeSettingsWithString (void* barcodeReader, const char* 
 
 **Return Value**  
 Returns error code (returns 0 if the function operates successfully).    
-*You can call [`DBR_GetErrorString`](status-retrieval.md#dbr_geterrorstring) to get detailed error message.*
+*You can call [`DBR_GetErrorString`](general.md#dbr_geterrorstring) to get detailed error message.*
 
 **Code Snippet**  
 ```c
@@ -113,7 +113,7 @@ DBR_API int DBR_AppendTplFileToRuntimeSettings (void* barcodeReader, const char*
 
 **Return Value**  
 Returns error code (returns 0 if the function operates successfully).    
-*You can call [`DBR_GetErrorString`](status-retrieval.md#dbr_geterrorstring) to get detailed error message.*
+*You can call [`DBR_GetErrorString`](general.md#dbr_geterrorstring) to get detailed error message.*
 
 **Code Snippet**  
 ```c
@@ -148,7 +148,7 @@ DBR_API int DBR_AppendTplStringToRuntimeSettings (void* barcodeReader, const cha
 
 **Return Value**  
 Returns error code (returns 0 if the function operates successfully).    
-*You can call [`DBR_GetErrorString`](status-retrieval.md#dbr_geterrorstring) to get detailed error message.*
+*You can call [`DBR_GetErrorString`](general.md#dbr_geterrorstring) to get detailed error message.*
 
 **Code Snippet**  
 ```c
@@ -215,7 +215,7 @@ DBR_API int DBR_GetParameterTemplateName (void* barcodeReader, const int index, 
 
 **Return Value**  
 Returns error code (returns 0 if the function operates successfully).    
-*You can call [`DBR_GetErrorString`](status-retrieval.md#dbr_geterrorstring) to get detailed error message.*
+*You can call [`DBR_GetErrorString`](general.md#dbr_geterrorstring) to get detailed error message.*
 
 **Code Snippet**  
 ```c
@@ -255,7 +255,7 @@ DBR_API int DBR_OutputSettingsToFile (void* barcodeReader, const char* pFilePath
 
 **Return Value**  
 Returns error code (returns 0 if the function operates successfully).    
-*You can call [`DBR_GetErrorString`](status-retrieval.md#dbr_geterrorstring) to get detailed error message.*
+*You can call [`DBR_GetErrorString`](general.md#dbr_geterrorstring) to get detailed error message.*
 
 **Code Snippet**  
 ```c
@@ -292,7 +292,7 @@ DBR_API int DBR_OutputSettingsToString (void* barcodeReader, char content[], con
 
 **Return Value**  
 Returns error code (returns 0 if the function operates successfully).    
-*You can call [`DBR_GetErrorString`](status-retrieval.md#dbr_geterrorstring) to get detailed error message.*
+*You can call [`DBR_GetErrorString`](general.md#dbr_geterrorstring) to get detailed error message.*
 
 **Code Snippet**  
 ```c
@@ -329,7 +329,7 @@ DBR_API int DBR_OutputSettingsToStringPtr (void* barcodeReader, char** content, 
 
 **Return Value**  
 Returns error code (returns 0 if the function operates successfully).    
-*You can call [`DBR_GetErrorString`](status-retrieval.md#dbr_geterrorstring) to get detailed error message.*
+*You can call [`DBR_GetErrorString`](general.md#dbr_geterrorstring) to get detailed error message.*
 
 **Code Snippet**  
 ```c

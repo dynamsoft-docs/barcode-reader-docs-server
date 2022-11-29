@@ -20,15 +20,12 @@ needAutoGenerateSidebar: true
   | [`DecodeIntermediateResults`](#decodeintermediateresults) | Decodes barcode from intermediate results. |
 
 
-
-
-
 ## DecodeFile
 
 Decode barcodes from a specified image file.
 
 ```csharp
-TextResult[] Dynamsoft.DBR.BarcodeReader.DecodeFile(string fileName, string templateName) 	
+TextResult[] Dynamsoft.DBR.BarcodeReader.DecodeFile(string fileName, string templateName)
 ```
 
 **Parameters**  
@@ -41,8 +38,8 @@ TextResult[] Dynamsoft.DBR.BarcodeReader.DecodeFile(string fileName, string temp
 **Exception**  
 [`BarcodeReaderException`](../class/BarcodeReaderException.md) The exception thrown by Dynamsoft Barcode Reader.  
 
-
 **Code Snippet**  
+
 ```csharp
 string errorMsg;
 BarcodeReader.InitLicense("YOUR-LICENSE-KEY", out errorMsg);
@@ -93,15 +90,18 @@ reader.Dispose();
 Decode barcodes from the memory buffer containing image pixels in a defined format.
 
 ```csharp
-TextResult[] Dynamsoft.DBR.BarcodeReader.DecodeBuffer(byte[] buffer, int width, int height, int stride, EnumImagePixelFormat imagePixelFormat, string templateName)	
+TextResult[] Dynamsoft.DBR.BarcodeReader.DecodeBuffer(byte[] buffer, int width, int height, int stride, EnumImagePixelFormat imagePixelFormat, string templateName)
+
+TextResult[] Dynamsoft.DBR.BarcodeReader.DecodeBuffer(byte[] buffer, int width, int height, int stride, EnumImagePixelFormat imagePixelFormat, int orientation, string templateName)
 ```
-   
+
 **Parameters**  
-`[in]	buffer` <*byte[]*> : The array of bytes which contain the image data.  
-`[in]	width` <*int*> : The width of the image in pixels.
-`[in]	height` <*int*> : The height of the image in pixels.
-`[in]	stride` <*int*> : The stride of the image (also called scan width).  
-`[in]	imagePixelFormat` <*[EnumImagePixelFormat]({{ site.dotnet_enumerations }}other-enums.html#imagepixelformat)*> : The image pixel format used in the image byte array.
+`[in] buffer` <*byte[]*> : The array of bytes which contain the image data.  
+`[in] width` <*int*> : The width of the image in pixels.  
+`[in] height` <*int*> : The height of the image in pixels.  
+`[in] stride` <*int*> : The stride of the image (also called scan width).  
+`[in] imagePixelFormat` <*[EnumImagePixelFormat]({{ site.dotnet_enumerations }}other-enums.html#imagepixelformat)*> : The image pixel format used in the image byte array.  
+`[in] orientation` <*int*> : The orientation of the image data. The value is the angle that the image needs to be rotated clockwise so it shows correctly on the display in its natural orientation. It can be 0, 90, 180, or 270.  
 `[in] templateName` <*string*> : The template name.
 
 **Return Value**  
@@ -110,7 +110,8 @@ TextResult[] Dynamsoft.DBR.BarcodeReader.DecodeBuffer(byte[] buffer, int width, 
 **Exception**  
 [`BarcodeReaderException`](../class/BarcodeReaderException.md) The exception thrown by Dynamsoft Barcode Reader.  
 
-**Code Snippet**  
+**Code Snippet**
+
 ```csharp
 string errorMsg;
 BarcodeReader.InitLicense("YOUR-LICENSE-KEY", out errorMsg);
@@ -125,6 +126,7 @@ Marshal.Copy(bmdat.Scan0, buffer, 0, buffer.Length);
 bBMP.UnlockBits(bmdat);
 EnumImagePixelFormat imagePixelFormat = EnumImagePixelFormat.IPF_ARGB_8888;
 TextResult[] result = reader.DecodeBuffer(buffer, width, height, stride, imagePixelFormat, "");
+//TextResult[] result = reader.DecodeBuffer(buffer, width, height, stride, imagePixelFormat, 0, "");
 reader.Dispose();
 ```
 

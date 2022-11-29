@@ -25,7 +25,7 @@ typedef struct tagLocalizationResult*  PLocalizationResult
 | [`terminatePhase`](#terminatephase) | [`TerminatePhase`]({{ site.enumerations }}parameter-mode-enums.html#terminatephase) |
 | [`barcodeFormat`](#barcodeformat) | [`BarcodeFormat`]({{ site.enumerations }}format-enums.html#barcodeformat) |
 | [`barcodeFormatString`](#barcodeformatstring) | *const char \** |
-| [`barcodeFormat_2 `](#barcodeformat_2 ) | [`BarcodeFormat_2 `]({{ site.enumerations }}format-enums.html#barcodeformat_2) |
+| [`barcodeFormat_2`](#barcodeformat_2 ) | [`BarcodeFormat_2`]({{ site.enumerations }}format-enums.html#barcodeformat_2) |
 | [`barcodeFormatString_2`](#barcodeformatstring_2) | *const char \** |
 | [`x1`](#x1) | *int* |
 | [`y1`](#y1) | *int* |
@@ -42,6 +42,7 @@ typedef struct tagLocalizationResult*  PLocalizationResult
 | [`documentName`](#documentname)| *const char \** |
 | [`resultCoordinateType`](#resultcoordinatetype) | [`ResultCoordinateType`]({{ site.enumerations }}result-enums.html#resultcoordinatetype) |
 | [`confidence`](#confidence) | *int* |
+| [`transformationMatrix`](#transformationmatrix) | *double[9]* |
 | [`reserved`](#reserved) | *char\[52\]* |
 
 
@@ -169,7 +170,16 @@ The confidence of the localization result.
 int tagLocalizationResult::confidence
 ```
 
+### transformationMatrix
+
+The transformation matrix. With this matrix, you can transform the localization coordinates to image's natural orientation.
+
+```cpp
+double tagLocalizationResult::transformationMatrix[9]
+```
+
 ### reserved
+
 Reserved memory for the struct. The length of this array indicates the size of the memory reserved for this struct.
 ```cpp
 char tagLocalizationResult::reserved[52]

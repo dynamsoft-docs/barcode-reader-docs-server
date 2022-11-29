@@ -18,7 +18,7 @@ Stores the localization result.
 | [`terminatePhase`](#terminatephase) | *int* |
 | [`barcodeFormat`](#barcodeformat) | *int* |
 | [`barcodeFormatString`](#barcodeformatstring) | *String* |
-| [`barcodeFormat_2 `](#barcodeformat_2 ) | *int* |
+| [`barcodeFormat_2`](#barcodeformat_2 ) | *int* |
 | [`barcodeFormatString_2`](#barcodeformatstring_2) | *String* |
 | [`resultPoints`](#resultpoints) | [`Point`](Point.md)\[\] |
 | [`angle`](#angle) | *int* |
@@ -29,6 +29,7 @@ Stores the localization result.
 | [`resultCoordinateType`](#resultcoordinatetype) | *int* |
 | [`accompanyingTextBytes`](#accompanyingtextbytes) | *byte\[\]* |
 | [`confidence`](#confidence) | *int* |
+| [`transformationMatrix`](#transformationmatrix) | *double[]* |
 
 
 ### terminatePhase
@@ -115,3 +116,10 @@ The confidence of the localization result.
 int com.dynamsoft.dbr.LocalizationResult.confidence
 ```
 
+### transformationMatrix
+
+The transformation matrix. With this matrix, you can transform the localization coordinates to image's natural orientation.
+
+```java
+double[] com.dynamsoft.dbr.LocalizationResult.transformationMatrix
+```

@@ -19,10 +19,6 @@ needAutoGenerateSidebar: true
   | [`InitIntermediateResult`](#initintermediateresult) | Inits an intermediateResult struct with default values. |
   | [`DecodeIntermediateResults`](#decodeintermediateresults) | Decodes barcode from intermediate results. |
 
-
-
-
-
 ## DecodeFile
 
 Decode barcodes from a specified image file.
@@ -37,7 +33,7 @@ int dynamsoft::dbr::CBarcodeReader::DecodeFile (const char* pFileName, const cha
 
 **Return Value**  
 Returns error code (returns 0 if the function operates successfully).    
-*You can call [`GetErrorString`](status-retrieval.md#geterrorstring) to get detailed error message.*
+*You can call [`GetErrorString`](general.md#geterrorstring) to get detailed error message.*
 
 **Code Snippet**  
 ```cpp
@@ -72,7 +68,7 @@ int dynamsoft::dbr::CBarcodeReader::DecodeFileInMemory (const unsigned char* pFi
 
 **Return Value**  
 Returns error code (returns 0 if the function operates successfully).    
-*You can call [GetErrorString()](status-retrieval.md#geterrorstring) to get detailed error message.*   
+*You can call [GetErrorString()](general.md#geterrorstring) to get detailed error message.*   
 
 **Code Snippet**  
 ```cpp
@@ -100,20 +96,24 @@ If no template name is specified, current runtime settings will be used. To get 
 Decode barcodes from the memory buffer containing image pixels in defined format.
 
 ```cpp
-int dynamsoft::dbr::CBarcodeReader::DecodeBuffer (const unsigned char* pBufferBytes, const int iWidth, const int iHeight, const int iStride, const ImagePixelFormat format, const char* pszTemplateName = "")		
-```   
-   
+int dynamsoft::dbr::CBarcodeReader::DecodeBuffer (const unsigned char* pBufferBytes, const int iWidth, const int iHeight, const int iStride, const ImagePixelFormat format, const char* pszTemplateName = "")
+
+int dynamsoft::dbr::CBarcodeReader::DecodeBuffer (const unsigned char* pBufferBytes, const int iWidth, const int iHeight, const int iStride, const ImagePixelFormat format, const int orientation, const char* pszTemplateName = "")
+
+```
+
 **Parameters**  
-`[in]	pBufferBytes` The array of bytes which contain the image data.   
-`[in]	iWidth` The width of the image in pixels.   
-`[in]	iHeight` The height of the image in pixels.   
-`[in]	iStride` The stride (or scan width) of the image.   
-`[in]	format` The image pixel format used in the image byte array.   
+`[in] pBufferBytes` The array of bytes which contain the image data.  
+`[in] iWidth` The width of the image in pixels.  
+`[in] iHeight` The height of the image in pixels.  
+`[in] iStride` The stride (or scan width) of the image.  
+`[in] format` The image pixel format used in the image byte array.  
+`[in] orientation` The orientation of the image data. The value is the angle that the image needs to be rotated clockwise so it shows correctly on the display in its natural orientation. It can be 0, 90, 180, or 270.  
 `[in] pTemplateName`<sub>Optional</sub> The template name.
 
 **Return Value**  
-Returns error code (returns 0 if the function operates successfully).    
-*You can call [`GetErrorString`](status-retrieval.md#geterrorstring) to get detailed error message.*   
+Returns error code (returns 0 if the function operates successfully).  
+*You can call [`GetErrorString`](general.md#geterrorstring) to get detailed error message.*
 
 **Code Snippet**  
 ```cpp
@@ -125,8 +125,10 @@ int iWidth = 0;
 int iHeight = 0;
 int iStride = 0;
 ImagePixelFormat format;
-GetBufferFromFile("C:\\Program Files (x86)\\Dynamsoft\\{Version number}\\Images\\AllSupportedBarcodeTypes.tif", &pBufferBytes, &iWidth, &iHeight, &iStride, &format);
+int iOrientation = 0;
+//get image data (pBufferBytes, iWidth, iHeight, iStride, format, iOrientation) somewhere else
 int errorCode = reader->DecodeBuffer(pBufferBytes, iWidth, iHeight, iStride, format, "");
+//int errorCode = reader->DecodeBuffer(pBufferBytes, iWidth, iHeight, iStride, format, iOrientation, "");
 delete reader;
 ```
 
@@ -153,7 +155,7 @@ int dynamsoft::dbr::CBarcodeReader::DecodeBase64String (const char* pBase64Strin
 
 **Return Value**  
 Returns error code (returns 0 if the function operates successfully).    
-*You can call [`GetErrorString`](status-retrieval.md#geterrorstring) to get detailed error message.*
+*You can call [`GetErrorString`](general.md#geterrorstring) to get detailed error message.*
 
 
 **Code Snippet**  
@@ -192,7 +194,7 @@ int dynamsoft::dbr::CBarcodeReader::DecodeDIB (const HANDLE hDIB, const char* ps
 
 **Return Value**  
 Returns error code (returns 0 if the function operates successfully).    
-*You can call [`GetErrorString`](status-retrieval.md#geterrorstring) to get detailed error message.*   
+*You can call [`GetErrorString`](general.md#geterrorstring) to get detailed error message.*   
 
 
 **Code Snippet**  
@@ -226,7 +228,7 @@ int dynamsoft::dbr::CBarcodeReader::InitIntermediateResult(IntermediateResultTyp
 
 **Return Value**  
 Returns error code (returns 0 if the function operates successfully).    
-*You can call [`DBR_GetErrorString`](status-retrieval.md#dbr_geterrorstring) to get detailed error message.*
+*You can call [`DBR_GetErrorString`](general.md#dbr_geterrorstring) to get detailed error message.*
 
 **Code Snippet**  
 ```cpp
@@ -252,7 +254,7 @@ int dynamsoft::dbr::CBarcodeReader::DecodeIntermediateResults(const Intermediate
 
 **Return Value**  
 Returns error code (returns 0 if the function operates successfully).    
-*You can call [`DBR_GetErrorString`](status-retrieval.md#dbr_geterrorstring) to get detailed error message.*
+*You can call [`DBR_GetErrorString`](general.md#dbr_geterrorstring) to get detailed error message.*
 
 **Code Snippet**  
 ```cpp

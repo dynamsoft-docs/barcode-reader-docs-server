@@ -23,7 +23,7 @@ public class LocalizationResult
 | [`TerminatePhase`](#terminatephase) | [`EnumTerminatePhase`]({{ site.dotnet_enumerations }}parameter-mode-enums.html#terminatephase) |
 | [`BarcodeFormat`](#barcodeformat) | [`EnumBarcodeFormat`]({{ site.dotnet_enumerations }}format-enums.html#barcodeformat) |
 | [`BarcodeFormatString`](#barcodeformatstring) | *string* |
-| [`BarcodeFormat_2 `](#barcodeformat_2 ) | [`EnumBarcodeFormat_2`]({{ site.dotnet_enumerations }}format-enums.html#barcodeformat_2) |
+| [`BarcodeFormat_2`](#barcodeformat_2) | [`EnumBarcodeFormat_2`]({{ site.dotnet_enumerations }}format-enums.html#barcodeformat_2) |
 | [`BarcodeFormatString_2`](#barcodeformatstring_2) | *string* |
 | [`ResultPoints`](#resultpoints) | *Point[ ]* |
 | [`Angle`](#angle) | *int* |
@@ -34,6 +34,7 @@ public class LocalizationResult
 | [`ResultCoordinateType`](#resultcoordinatetype) | [`EnumResultCoordinateType`]({{ site.parameters_reference }}result-coordinate-type.html) |
 | [`AccompanyingTextBytes`](#accompanyingtextbytes) | *byte[ ]* |
 | [`Confidence`](#confidence) | *int* |
+| [`TransformationMatrix`](#transformationmatrix) | *double[]* |
 
 
 ### TerminatePhase
@@ -134,4 +135,12 @@ The confidence of the localization result.
 
 ```csharp
 int Dynamsoft.LocalizationResult.Confidence
+```
+
+### TransformationMatrix
+
+The transformation matrix. With this matrix, you can transform the localization coordinates to image's natural orientation.
+
+```csharp
+double[] Dynamsoft.LocalizationResult.TransformationMatrix
 ```

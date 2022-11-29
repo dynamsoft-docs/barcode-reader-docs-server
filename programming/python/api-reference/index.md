@@ -21,10 +21,12 @@ needGenerateH3Content: true
    
 
 ### Constructor and Destructor
-   
+
   | Method               | Description |
   |----------------------|-------------|
   | [`BarcodeReader`](BarcodeReader/constructor-and-destructor.md#barcodereader) | Constructor of `BarcodeReader` object.|
+  | [`get_instance`](BarcodeReader/constructor-and-destructor.md#get_instance) | Gets an idle Dynamsoft Barcode Reader instance running on concurrent instance mode. |
+  | [`recycle`](BarcodeReader/constructor-and-destructor.md#recycle) | Recycles a Dynamsoft Barcode Reader instance running on concurrent instance mode. |
 
    
  
@@ -35,8 +37,10 @@ needGenerateH3Content: true
   | Method               | Description |
   |----------------------|-------------|
   | [`init_license`](BarcodeReader/license.md#init_license) | Reads product key and activates the SDK.  |
+  | [`is_instance_valid`](BarcodeReader/license.md#is_instance_valid) | Gets whether the instance is valid when charging by concurrent instances count. |
   | [`get_idle_instances_count`](BarcodeReader/license.md#get_idle_instances_count) | Gets available instances count when charging by concurrent instances count. |
   | [`set_device_friendly_name`](BarcodeReader/license.md#set_device_friendly_name) | Sets a human-readable name that identifies the device. |
+  | [`set_max_concurrent_instance_count`](BarcodeReader/license.md#set_max_concurrent_instance_count) | Sets the max concurrent instance count used for current device and process. |
   | [`init_license_from_server`](BarcodeReader/license.md#init_license_from_server) | `Deprecated` |
   | [`init_license_from_license_content`](BarcodeReader/license.md#init_license_from_license_content) | `Deprecated` |
   | [`output_license_to_string`](BarcodeReader/license.md#output_license_to_string) | `Deprecated` |
@@ -85,6 +89,12 @@ needGenerateH3Content: true
    
       
  
+## General Methods
+
+  | Method               | Description |
+  |----------------------|-------------|
+  | [`transform_coordinates`](BarcodeReader/general.md#transform_coordinates) | Transform the coordinates of a point based on the given transformation matrix. |
+   
 
    
 ### Video Methods

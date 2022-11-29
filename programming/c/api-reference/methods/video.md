@@ -17,8 +17,9 @@ needAutoGenerateSidebar: true
   | [`DBR_InitFrameDecodingParameters`](#dbr_initframedecodingparameters) | Initialize frame decoding parameter. |
   | [`DBR_SetErrorCallback`](#dbr_seterrorcallback) | Set callback function to process errors which is triggered when the library finishes decoding a frame. |
   | [`DBR_SetTextResultCallback`](#dbr_settextresultcallback) | Set callback function to process text results which is triggered when the library finishes decoding a frame. |
+  | [`DBR_SetUniqueBarcodeCallback`](#dbr_setuniquebarcodecallback) | Set callback function to process text results which is triggered when the library finishes decoding a frame and finds unique barcodes. |
   | [`DBR_SetIntermediateResultCallback`](#dbr_setintermediateresultcallback) | Set callback function to process intermediate results which is triggered when the library finishes decoding a frame. |
-  | [`DBR_GetLengthOfFrameQueue`](#dbr_getLengthOfframequeue) | Get length of current inner frame queue. |
+  | [`DBR_GetLengthOfFrameQueue`](#dbr_getlengthofframequeue) | Get length of current inner frame queue. |
   
 
 
@@ -44,7 +45,7 @@ DBR_API int DBR_StartFrameDecoding (void* barcodeReader, const int maxQueueLengt
 
 **Return Value**  
 Returns error code. Possible return(s): DBR_OK; DBRERR_FRAME_DECODING_THREAD_EXISTS; DBRERR_PARAMETER_VALUE_INVALID; DBRERR_NULL_POINTER.  
-*You can call [`DBR_GetErrorString`](status-retrieval.md#dbr_geterrorstring) to get detailed error message.*
+*You can call [`DBR_GetErrorString`](general.md#dbr_geterrorstring) to get detailed error message.*
 
 **Code Snippet**  
 ```c
@@ -75,7 +76,7 @@ DBR_API int DBR_StartFrameDecodingEx (void* barcodeReader, FrameDecodingParamete
 
 **Return Value**  
 Returns error code. Possible return(s): DBR_OK; DBRERR_FRAME_DECODING_THREAD_EXISTS; DBRERR_PARAMETER_VALUE_INVALID; DBRERR_NULL_POINTER.  
-*You can call [`DBR_GetErrorString`](status-retrieval.md#dbr_geterrorstring) to get detailed error message.*
+*You can call [`DBR_GetErrorString`](general.md#dbr_geterrorstring) to get detailed error message.*
 
 **Code Snippet**  
 ```c
@@ -153,7 +154,7 @@ DBR_API int DBR_StopFrameDecoding (void* barcodeReader)
 
 **Return Value**  
 Returns error code. Possible return(s): DBR_OK; DBRERR_STOP_DECODING_THREAD_FAILED.     
-*You can call [`DBR_GetErrorString`](status-retrieval.md#dbr_geterrorstring) to get detailed error message.*
+*You can call [`DBR_GetErrorString`](general.md#dbr_geterrorstring) to get detailed error message.*
 
 
 **Code Snippet**  
@@ -185,7 +186,7 @@ DBR_API int DBR_InitFrameDecodingParameters (void* barcodeReader, FrameDecodingP
 
 **Return Value**  
 Returns error code. Possible return(s): DBR_OK; DBRERR_NULL_POINTER.  
-*You can call [`DBR_GetErrorString`](status-retrieval.md#dbr_geterrorstring) to get detailed error message.*
+*You can call [`DBR_GetErrorString`](general.md#dbr_geterrorstring) to get detailed error message.*
 
 **Code Snippet**  
 ```c
@@ -234,7 +235,7 @@ DBR_API int DBR_SetErrorCallback (void* barcodeReader, CB_Error cbFunction, void
 
 **Return Value**  
 Returns error code. Possible return(s): DBR_OK; DBRERR_FRAME_DECODING_THREAD_EXISTS.  
-*You can call [`DBR_GetErrorString`](status-retrieval.md#dbr_geterrorstring) to get detailed error message.*
+*You can call [`DBR_GetErrorString`](general.md#dbr_geterrorstring) to get detailed error message.*
 
 **Code Snippet**  
 ```c
@@ -263,13 +264,12 @@ DBR_API int DBR_SetTextResultCallback (void* barcodeReader, CB_TextResult cbFunc
    
 **Parameters**  
 `[in] barcodeReader` Handle of the barcode reader instance.  
-`[in]	cbFunction` Callback function.  
-`[in]	pUser`Customized arguments passed to your function.
-
+`[in] cbFunction` Callback function.  
+`[in] pUser`Customized arguments passed to your function.
 
 **Return Value**  
 Returns error code. Possible return(s): DBR_OK; DBRERR_FRAME_DECODING_THREAD_EXISTS.  
-*You can call [`DBR_GetErrorString`](status-retrieval.md#dbr_geterrorstring) to get detailed error message.*
+*You can call [`DBR_GetErrorString`](general.md#dbr_geterrorstring) to get detailed error message.*
 
 **Code Snippet**  
 ```c
@@ -284,6 +284,35 @@ DBR_SetTextResultCallback(barcodeReader, TextResultFunction, NULL);
 DBR_StartFrameDecoding(barcodeReader, 2, 10, 1024, 720, 720, IPF_BINARY, "");
 ```
 
+## DBR_SetUniqueBarcodeCallback
+
+Set callback function to process text results which is triggered when the library finishes decoding a frame and finds unique barcodes.
+
+```c
+DBR_API int DBR_SetUniqueBarcodeCallback(void* barcodeReader, CB_TextResult cbFunction, void* pUser)
+```
+
+**Parameters**  
+`[in] barcodeReader` Handle of the barcode reader instance.  
+`[in] cbFunction` Callback function.  
+`[in] pUser`Customized arguments passed to your function.
+
+**Return Value**  
+Returns error code. Possible return(s): DBR_OK; DBRERR_FRAME_DECODING_THREAD_EXISTS.  
+*You can call [`DBR_GetErrorString`](general.md#dbr_geterrorstring) to get detailed error message.*
+
+**Code Snippet**  
+```c
+void TextResultFunction(int frameId, TextResultArray *pResults, void * pUser)
+{
+    //TODO add your code for processing barcode results
+}
+char errorBuf[512];
+DBR_InitLicense("YOUR-LICENSE-KEY", errorBuf, 512);
+void* barcodeReader = DBR_CreateInstance();
+DBR_SetUniqueBarcodeCallback(barcodeReader, TextResultFunction, NULL);
+DBR_StartFrameDecoding(barcodeReader, 2, 10, 1024, 720, 720, IPF_BINARY, "");
+```
 
 
 
@@ -304,7 +333,7 @@ DBR_API int DBR_SetIntermediateResultCallback (void* barcodeReader, CB_Intermedi
 
 **Return Value**  
 Returns error code. Possible return(s): DBR_OK; DBRERR_FRAME_DECODING_THREAD_EXISTS.
-*You can call [`DBR_GetErrorString`](status-retrieval.md#dbr_geterrorstring) to get detailed error message.*
+*You can call [`DBR_GetErrorString`](general.md#dbr_geterrorstring) to get detailed error message.*
 
 **Code Snippet**  
 ```c

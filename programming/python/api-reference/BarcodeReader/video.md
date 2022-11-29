@@ -7,7 +7,7 @@ needAutoGenerateSidebar: true
 ---
 
 # Python API Reference - BarcodeReader Video Methods
-   
+
    | Method               | Description |
    |----------------------|-------------|
    | [`start_video_mode`](#start_video_mode) | Starts a new thread to decode barcodes from the inner frame queue. |
@@ -16,38 +16,39 @@ needAutoGenerateSidebar: true
    | [`init_frame_decoding_parameters`](#init_frame_decoding_parameters) | Initializes frame decoding parameters. |
    | [`get_length_of_frame_queue`](#get_length_of_frame_queue) | Gets length of current inner frame queue. |
 
-
 ## start_video_mode
 
-Starts a new thread to decode barcodes from the inner frame queue. 
+Starts a new thread to decode barcodes from the inner frame queue.
 
 ```python
-BarcodeReader.start_video_mode(frame_decoding_parameters, text_result_callback_func, template_name="", intermediate_result_callback_func=None, error_callback_func=None, user_data=None)
+BarcodeReader.start_video_mode(frame_decoding_parameters, text_result_callback_func, template_name="", intermediate_result_callback_func=None, error_callback_func=None, unique_barcode_callback_func=None, user_data=None)
 ```
 
 **Parameters**  
 
-`[in] frame_decoding_parameters` <*class FrameDecodingParameters*> : The frame decoding parameters. You can get it by using init_frame_decoding_parameters() then modifying its parameters' value.  
-`[in] text_result_callback_func` <*function pointer*> : Sets callback function to process text results which is triggered when the library finishes decoding a frame.  
-- This callback function pointer must follow the following format: callback_func_name(frameId, results, user_data);  
-- Or you can inherit the abstract class TextResultCallBack to implement the abstract method text_results_callback_func.  
-- If you would like to learn how to use it, please refer to the [sample](https://github.com/Dynamsoft/barcode-reader-python-samples/blob/master/samples/video-decoding.py).
+`[in] frame_decoding_parameters` <*class FrameDecodingParameters*> : The frame decoding parameters. You can get it by using init_frame_decoding_parameters() then modifying its parameters' value.
 
-`[in] template_name` (optional)<*str*> : The template name.  
-`[in] intermediate_result_callback_func` (optional)<*function pointer*> : Sets callback function to process intermediate results which is triggered when the library finishes decoding a frame. 
-- This callback function pointer must follow the following format: callback_func_name(frameId, results, user_data); 
-- Or you can inherit the abstract class IntermediateResultCallBack to implement the abstract method intermediate_results_callback_func.  
-- If you would like to learn how to use it, please refer to the [sample](https://github.com/Dynamsoft/barcode-reader-python-samples/blob/master/samples/video-decoding.py).
+`[in] text_result_callback_func` <*function pointer*> : Sets callback function to process text results which is triggered when the library finishes decoding a frame.
 
-`[in] error_callback_func` (optional)<*function pointer*> : Sets callback function to process errors which is triggered when the library finishes decoding a frame.  
-- This callback function pointer must follow the following format: callback_func_name(frameId, error, user_data);  
-- Or you can inherit the abstract class ErrorCallBack to implement the abstract method error_callback_func.
-- If you would like to learn how to use it, please refer to the [sample](https://github.com/Dynamsoft/barcode-reader-python-samples/blob/master/samples/video-decoding.py).
+> This callback function pointer must follow the following format: callback_func_name(frameId, results, user_data);
+
+`[in] template_name` (optional)<*str*> : The template name.
+
+`[in] intermediate_result_callback_func` (optional)<*function pointer*> : Sets callback function to process intermediate results which is triggered when the library finishes decoding a frame.
+
+> This callback function pointer must follow the following format: callback_func_name(frameId, results, user_data);
+
+`[in] error_callback_func` (optional)<*function pointer*> : Sets callback function to process errors which is triggered when the library finishes decoding a frame.
+
+> This callback function pointer must follow the following format: callback_func_name(frameId, error, user_data);
+
+`[in] unique_barcode_callback_func` <*function pointer*> : Sets callback function to process unique barcode results which is triggered when the library finishes decoding a frame and finds unique barcodes.
+
+> This callback function pointer must follow the following format: callback_func_name(frameId, results, user_data);
 
 `[in] user_data` (optional)<*object*> : Customizes arguments passed to your function.
 
 **Exception**  
-
 [`BarcodeReaderError`](../class/BarcodeReaderError.md) : If error happens, this function will throw a BarcodeReaderError exception that can report the detailed error message.
 
 **Code Snippet**  
@@ -59,21 +60,38 @@ license_key = 'YOUR-LICENSE-KEY'
 BarcodeReader.init_license(license_key)
 reader = BarcodeReader()
 
-
 # The callback function for receiving barcode results
 def text_results_callback_func(frame_id, t_results, user_data):
-        print(frame_id)
-        for result in t_results:
-            text_result = TextResult(result)
-            print("Barcode Format : ")
-            print(text_result.barcode_format_string)
-            print("Barcode Text : ")
-            print(text_result.barcode_text)
-            print("Localization Points : ")
-            print(text_result.localization_result.localization_points)
-            print("Exception : ")
-            print(text_result.exception)
-            print("-------------")
+    print(frame_id)
+    for result in t_results:
+        text_result = TextResult(result)
+        print("Barcode Format : ")
+        print(text_result.barcode_format_string)
+        print("Barcode Text : ")
+        print(text_result.barcode_text)
+        print("Localization Points : ")
+        print(text_result.localization_result.localization_points)
+        print("Exception : ")
+        print(text_result.exception)
+        print("-------------")
+
+# The callback function for receiving unique barcode results
+def unique_barcode_callback_func(frame_id, results, user_data):
+    print(frame_id)
+    for result in results:
+        unique_text_result = TextResult(result)
+        # Add your code to process unique barcode result
+
+# The callback function for receiving intermediate results
+def intermediate_results_callback_func(frame_id, results, user_data):
+    print(frame_id)
+    for result in results:
+        intermediate_result = IntermediateResult(result)
+        # Add your code to process intermediate result
+
+# The callback function for receiving error
+def error_callback_func(frame_id, error, user_data):
+    # Add your code to process error
 
 def get_time():
     localtime = time.localtime()
@@ -116,6 +134,7 @@ def read_barcode():
     parameters.fps = 0
     parameters.auto_filter = 1
 
+    # reader.start_video_mode(parameters, text_results_callback_func, "", intermediate_results_callback_func, error_callback_func, unique_barcode_callback_func)
     reader.start_video_mode(parameters, text_results_callback_func)
 
     while True:
@@ -137,7 +156,6 @@ def read_barcode():
     reader.stop_video_mode()
     cv2.destroyWindow(windowName)
 
-
 print("-------------------start------------------------")
 
 reader.init_license("t0260NwAAAHV***************")
@@ -155,13 +173,10 @@ BarcodeReader.append_video_frame(video_frame)
 ```
 
 **Parameters**  
-
 `[in] video_frame` : Gets video frame by opencv.
 
 **Return Value**  
-
 The current frame ID.
-
 
 ## stop_video_mode
 
@@ -169,12 +184,10 @@ Stop the frame decoding thread created by [`start_video_mode`](#start_video_mode
 
 ```python
 BarcodeReader.stop_video_mode()
-``` 
+```
 
 **Exception**  
-
 [`BarcodeReaderError`](../class/BarcodeReaderError.md) : If error happens, this function will throw a BarcodeReaderError exception that can report the detailed error message.
-
 
 ## init_frame_decoding_parameters
 
@@ -185,7 +198,6 @@ BarcodeReader.init_frame_decoding_parameters()
 ```
 
 **Return Value**  
-
 `frame_decoding_parameters` <*class FrameDecodingParameters*> : The frame decoding parameters.
 
 ## get_length_of_frame_queue
@@ -193,9 +205,8 @@ BarcodeReader.init_frame_decoding_parameters()
 Gets the current length of the inner frame queue.
 
 ```python
-BarcodeReader.get_length_of_frame_queue()	
+BarcodeReader.get_length_of_frame_queue()
 ```
 
 **Return Value**  
-
 Returns the length of the inner frame queue.

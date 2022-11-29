@@ -39,7 +39,7 @@ static int dynamsoft::dbr::CBarcodeReader::InitLicense (const char* pLicense, ch
 
 **Return Value**  
 Returns error code (returns 0 if the function operates successfully).    
-*You can call [`GetErrorString`](status-retrieval.md#geterrorstring) to get detailed error message.*
+*You can call [`GetErrorString`](general.md#geterrorstring) to get detailed error message.*
 
 
 **Code Snippet**  

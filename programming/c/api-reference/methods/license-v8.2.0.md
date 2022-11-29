@@ -39,7 +39,7 @@ DBR_API int DBR_InitLicense (void* barcodeReader, const char* pLicense)
 
 #### Return value
 Returns error code (returns 0 if the function operates successfully).    
-*You can call [`DBR_GetErrorString`](status-retrieval.md#dbr_geterrorstring) to get detailed error message.*
+*You can call [`DBR_GetErrorString`](general.md#dbr_geterrorstring) to get detailed error message.*
 
 #### Code Snippet
 ```c
@@ -68,7 +68,7 @@ DBR_API int DBR_InitLicenseFromServer (void* barcodeReader, const char* pLicense
 
 #### Return value
 Returns error code (returns 0 if the function operates successfully).    
-*You can call [`DBR_GetErrorString`](status-retrieval.md#dbr_geterrorstring) to get detailed error message.*
+*You can call [`DBR_GetErrorString`](general.md#dbr_geterrorstring) to get detailed error message.*
 
 
 
@@ -90,7 +90,7 @@ DBR_API int DBR_InitLicenseFromLicenseContent (void* barcodeReader, const char* 
 
 #### Return value
 Returns error code (returns 0 if the function operates successfully).    
-*You can call [`DBR_GetErrorString`](status-retrieval.md#dbr_geterrorstring) to get detailed error message.*
+*You can call [`DBR_GetErrorString`](general.md#dbr_geterrorstring) to get detailed error message.*
 
 
 
@@ -112,7 +112,7 @@ DBR_API int DBR_OutputLicenseToString (void* barcodeReader, char content[], int 
 
 #### Return value
 Returns error code (returns 0 if the function operates successfully).    
-*You can call [`DBR_GetErrorString`](status-retrieval.md#dbr_geterrorstring) to get detailed error message.*
+*You can call [`DBR_GetErrorString`](general.md#dbr_geterrorstring) to get detailed error message.*
 
 #### Remark
 [`DBR_InitLicenseFromServer`](#dbr_initlicensefromserver) has to be successfully called before calling this method.
@@ -137,7 +137,7 @@ DBR_API int DBR_OutputLicenseToStringPtr (void* barcodeReader, char** content)
 
 #### Return value
 Returns error code (returns 0 if the function operates successfully).    
-*You can call [`DBR_GetErrorString`](status-retrieval.md#dbr_geterrorstring) to get detailed error message.*
+*You can call [`DBR_GetErrorString`](general.md#dbr_geterrorstring) to get detailed error message.*
 
 #### Remark
 [`DBR_InitLicenseFromServer`](#dbr_initlicensefromserver) has to be successfully called before calling this method.
@@ -177,7 +177,7 @@ DBR_API int DBR_InitLTSConnectionParameters (DM_LTSConnectionParameters *pLTSCon
 
 #### Return value
 Returns error code (returns 0 if the function operates successfully).    
-*You can call [`DBR_GetErrorString`](status-retrieval.md#dbr_geterrorstring) to get detailed error message.*
+*You can call [`DBR_GetErrorString`](general.md#dbr_geterrorstring) to get detailed error message.*
 
 #### Code Snippet
 ```c
@@ -204,7 +204,7 @@ DBR_API int DBR_InitLicenseFromLTS(DM_LTSConnectionParameters *pLTSConnectionPar
 
 #### Return value
 Returns error code (returns 0 if the function operates successfully).    
-*You can call [`DBR_GetErrorString`](status-retrieval.md#dbr_geterrorstring) to get detailed error message.*
+*You can call [`DBR_GetErrorString`](general.md#dbr_geterrorstring) to get detailed error message.*
 
 #### Code Snippet
 ```c

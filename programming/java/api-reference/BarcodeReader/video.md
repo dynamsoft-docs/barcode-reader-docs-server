@@ -259,7 +259,10 @@ BarcodeReader reader = new BarcodeReader();
 reader.setTextResultCallback(new TextResultCallback() {
     @Override
     public void textResultCallback(int frameId, TextResult[] results, Object userData) {
-        //TODO add your code for using text results
+        //TODO: add your code for processing all barcode results
+    }
+    public void uniqueBarcodeCallback(int frameId, TextResult[] results, Object userData) {
+        //TODO: add your code for processing unique barcode results
     }
 }, null);
 reader.startFrameDecoding(2, 10, 1024, 720, 1024, EnumImagePixelFormat.IPF_GRAYSCALED, "");

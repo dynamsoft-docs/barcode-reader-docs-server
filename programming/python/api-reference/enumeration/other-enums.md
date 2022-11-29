@@ -1,6 +1,6 @@
 ---
 layout: default-layout
-title: Dynamsoft Barcode Reader Enumerations - Other Enumerations
+title: Other Enumerations - Dynamsoft Barcode Reader Python Edition
 description: This article shows other Enumerations of Dynamsoft Barcode Reader.
 keywords: DM_ChargeWay, DM_DeploymentType, DM_LicenseModule, DM_UUIDGenerationMethod, ImagePixelFormat, QRCodeErrorCorrectionLevel, other enumeration, enumeration
 needGenerateH3Content: false

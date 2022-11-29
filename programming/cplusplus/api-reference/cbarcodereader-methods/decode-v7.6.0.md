@@ -36,7 +36,7 @@ int CBarcodeReader::DecodeFile (const char* pFileName, const char* pTemplateName
 
 #### Return value
 Returns error code (returns 0 if the function operates successfully).    
-*You can call [`GetErrorString`](status-retrieval.md#geterrorstring) to get detailed error message.*
+*You can call [`GetErrorString`](general.md#geterrorstring) to get detailed error message.*
 
 #### Remark
 If no template name is specified, current runtime settings will be used.
@@ -70,7 +70,7 @@ int CBarcodeReader::DecodeFileInMemory (const unsigned char* pFileBytes, int fil
 
 #### Return value
 Returns error code (returns 0 if the function operates successfully).    
-*You can call [GetErrorString()](status-retrieval.md#geterrorstring) to get detailed error message.*   
+*You can call [GetErrorString()](general.md#geterrorstring) to get detailed error message.*   
 
 #### Remark
 If no template name is specified, current runtime settings will be used.
@@ -110,7 +110,7 @@ int CBarcodeReader::DecodeBuffer (const unsigned char* pBufferBytes, const int i
 
 #### Return value
 Returns error code (returns 0 if the function operates successfully).    
-*You can call [`GetErrorString`](status-retrieval.md#geterrorstring) to get detailed error message.*   
+*You can call [`GetErrorString`](general.md#geterrorstring) to get detailed error message.*   
 
 #### Remark
 If no template name is specified, current runtime settings will be used.
@@ -149,7 +149,7 @@ int CBarcodeReader::DecodeBase64String (const char* pBase64String, const char* p
 
 #### Return value
 Returns error code (returns 0 if the function operates successfully).    
-*You can call [`GetErrorString`](status-retrieval.md#geterrorstring) to get detailed error message.*
+*You can call [`GetErrorString`](general.md#geterrorstring) to get detailed error message.*
 
 #### Remark
 If no template name is specified, current runtime settings will be used.
@@ -187,7 +187,7 @@ int CBarcodeReader::DecodeDIB (const HANDLE hDIB, const char* pszTemplateName = 
 
 #### Return value
 Returns error code (returns 0 if the function operates successfully).    
-*You can call [`GetErrorString`](status-retrieval.md#geterrorstring) to get detailed error message.*   
+*You can call [`GetErrorString`](general.md#geterrorstring) to get detailed error message.*   
 
 #### Remark
 If no template name is specified, current runtime settings will be used.

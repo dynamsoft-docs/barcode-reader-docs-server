@@ -11,13 +11,11 @@ needGenerateH3Content: true
 
 ## BarcodeReader Class
 
-
 ### `BarcodeReader` Attributes
   
   | Attribute            | Description |
   |----------------------|-------------|
   | `ProductKeys`  | Product keys used for Dynamsoft Barcode Reader. |
-  
 
 ### Constructor and Destructor
    
@@ -25,6 +23,8 @@ needGenerateH3Content: true
   |----------------------|-------------|
   | [`BarcodeReader`](BarcodeReader/constructor-and-destructor.md#barcodereader) | Constructor of `BarcodeReader` object.|
   | [`Dispose`](BarcodeReader/constructor-and-destructor.md#dispose) | Destroys an instance of Dynamsoft Barcode Reader. |
+  | [`GetInstance`](BarcodeReader/constructor-and-destructor.md#getinstance) | Gets an idle Dynamsoft Barcode Reader instance running on concurrent instance mode. |
+  | [`Recycle`](BarcodeReader/constructor-and-destructor.md#recycle) | Recycles a Dynamsoft Barcode Reader instance running on concurrent instance mode. |
    
  
    
@@ -34,8 +34,10 @@ needGenerateH3Content: true
   | Method               | Description |
   |----------------------|-------------|
   | [`InitLicense`](BarcodeReader/license.md#initlicense) | Initializes license key and activate the SDK. |
+  | [`IsInstanceValid`](BarcodeReader/license.md#isinstancevalid) | Gets whether the instance is valid when charging by concurrent instances count. |
   | [`GetIdleInstancesCount`](BarcodeReader/license.md#getidleinstancescount) | Gets available instances count when charging by concurrent instances count. |
   | [`SetDeviceFriendlyName`](BarcodeReader/license.md#setdevicefriendlyname) | Sets a human-readable name that identifies the device. |
+  | [`SetMaxConcurrentInstanceCount`](BarcodeReader/license.md#setmaxconcurrentinstancecount) | Sets the max concurrent instance count used for current device and process. |
   | [`InitLicenseFromServer`](BarcodeReader/license.md#initlicensefromserver) | `Deprecated` |
   | [`InitLicenseFromLicenseContent`](BarcodeReader/license.md#initlicensefromlicensecontent) | `Deprecated` |
   | [`OutputLicenseToString`](BarcodeReader/license.md#outputlicensetostring) | `Deprecated`|
@@ -90,11 +92,12 @@ needGenerateH3Content: true
  
 
    
-### Status Retrieval Methods
+### General Methods
    
   | Method               | Description |
   |----------------------|-------------|
-  | [`GetVersion`](BarcodeReader/status-retrieval.md#getversion) | Gets version information of SDK. |
+  | [`GetVersion`](BarcodeReader/general.md#getversion) | Gets version information of SDK. |
+  | [`TransformCoordinates`](BarcodeReader/general.md#transformcoordinates) | Transform the coordinates of a point based on the given transformation matrix. |
    
       
  
@@ -124,6 +127,7 @@ needGenerateH3Content: true
    |----------------------|-------------|
    | [`SetErrorCallback`](BarcodeReader/video.md#seterrorcallback) | Set callback function to process errors which is triggered when the library finishes decoding a frame. |
    | [`SetTextResultCallback`](BarcodeReader/video.md#settextresultcallback) | Set callback function to process text results which is triggered when the library finishes decoding a frame. |
+   | [`SetUniqueBarcodeCallback`](BarcodeReader/video.md#setuniquebarcodecallback) | Set callback function to process text results which is triggered when the library finishes decoding a frame and finds unique barcodes. |
    | [`SetIntermediateResultCallback`](BarcodeReader/video.md#setintermediateresultcallback) | Set callback function to process intermediate results which is triggered when the library finishes decoding a frame. |
 
 #### Status retrieval

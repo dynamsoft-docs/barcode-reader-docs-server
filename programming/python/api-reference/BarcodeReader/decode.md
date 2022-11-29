@@ -16,9 +16,8 @@ needAutoGenerateSidebar: true
   | [`decode_file_stream`](#decode_file_stream) | Decodes barcodes from an image file in memory. |
   | [`decode_buffer_manually`](#decode_buffer_manually) | Decodes barcodes from the memory buffer containing image pixels in defined format. |
   | [`decode_base64_string`](#decode_base64_string) | Decodes barcodes from the base64 encoded string. |
-  | [`init_intermediate_result`](#initintermediateresult) | Inits an intermediateResult struct with default values. |
-  | [`decode_intermediate_results`](#decodeintermediateresults) | Decodes barcode from intermediate results. |
-
+  | [`init_intermediate_result`](#init_intermediate_result) | Inits an intermediateResult struct with default values. |
+  | [`decode_intermediate_results`](#decode_intermediate_results) | Decodes barcode from intermediate results. |
 
 ## decode_file
 
@@ -30,7 +29,7 @@ BarcodeReader.decode_file(image_file_name, template_name="")
 
 **Parameters**  
 
-- `[in] image_file_name` <*str*> :	A string defining the file name. It supports BMP, JPEG, PNG, TIFF and PDF files.  
+- `[in] image_file_name` <*str*> : A string defining the file name. It supports BMP, JPEG, PNG, TIFF and PDF files.  
 - `[in] template_name` <*optional*><*str*> : The template name.
 
 **Return Value**  
@@ -70,21 +69,19 @@ except BarcodeReaderError as bre:
 Decodes barcodes from the memory buffer containing image pixels in defined format.   
 
 ```python
-BarcodeReader.decode_buffer(image, image_pixel_format=EnumImagePixelFormat.IPF_RGB_888, template_name="")
-```   
-   
+BarcodeReader.decode_buffer(image, image_pixel_format=EnumImagePixelFormat.IPF_RGB_888, template_name="", orientation=0)
+```
+
 **Parameters**  
 `[in] image` <*class numpy.ndarray*> : The image which is processed by opencv.  
 `[in] image_pixel_format` <*class EnumImagePixelFormat*> : The image pixel format used in the image byte array.  
-`[in] template_name` <*optional*><*str*> : The template name.
-
+`[in] template_name` <*optional*><*str*> : The template name.  
+`[in] orientation` <*optional*><*int*> : The orientation of the image data. The value is the angle that the image needs to be rotated clockwise so it shows correctly on the display in its natural orientation. It can be 0, 90, 180, or 270.  
 
 **Return Value**  
-
 `text_results <*list[class TextResult]*>` : All [`TextResult`](../class/TextResult.md) structs for successfully decoded barcodes.
 
 **Exception**  
-
 [`BarcodeReaderError`](../class/BarcodeReaderError.md) : If error happens, this function will throw a BarcodeReaderError exception that can report the detailed error message.  
 
 **Code Snippet**  
@@ -168,17 +165,17 @@ except BarcodeReaderError as bre:
 Decodes barcodes from the memory buffer containing image pixels in defined format.   
 
 ```python
-BarcodeReader.decode_buffer_manually(self, buffer, width, height, stride, image_pixel_format, template_name="")
-```   
-   
+BarcodeReader.decode_buffer_manually(self, buffer, width, height, stride, image_pixel_format, template_name="", orientation=0)
+```
+
 **Parameters**  
 `[in] buffer` <*bytes or bytearray*> : The array of bytes which contain the image data.  
 `[in] width` <*int*> : The width of the image in pixels.  
 `[in] height` <*int*> : The height of the image in pixels.  
 `[in] stride` <*int*> : The stride (or scan width) of the image.  
 `[in] image_pixel_format` <*class EnumImagePixelFormat*> : The image pixel format used in the image byte array. Default value = EnumImagePixelFormat.IPF_RGB_888.  
-`[in] template_name` <*optional*><*str*> : The template name.
-
+`[in] template_name` <*optional*><*str*> : The template name.  
+`[in] orientation` <*optional*><*int*> : The orientation of the image data. The value is the angle that the image needs to be rotated clockwise so it shows correctly on the display in its natural orientation. It can be 0, 90, 180, or 270.  
 
 **Return Value**  
 text_results <*list[class TextResult]*> : All [`TextResult`](../class/TextResult.md) structs for successfully decoded barcodes.

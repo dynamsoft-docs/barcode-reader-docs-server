@@ -15,6 +15,8 @@ needAutoGenerateSidebar: true
   |----------------------|-------------|
   | [`BarcodeReader`](initialize-and-destroy.md#barcodereader) | Initialization of `BarcodeReader` object.|
   | [`destroy`](initialize-and-destroy.md#destroy) | Destroys an instance of `BarcodeReader` object.|
+  | [`getInstance`](initialize-and-destroy.md#getinstance) | Gets an idle Dynamsoft Barcode Reader instance running on concurrent instance mode. |
+  | [`recycle`](initialize-and-destroy.md#recycle) | Recycles a Dynamsoft Barcode Reader instance running on concurrent instance mode. |
    
    
 
@@ -25,8 +27,10 @@ needAutoGenerateSidebar: true
   | Method               | Description |
   |----------------------|-------------|
   | [`initLicense`](license.md#initlicense) | Initializes license key and activate the SDK. |
+  | [`isInstanceValid`](license.md#isinstancevalid) | Gets whether the instance is valid when charging by concurrent instances count. |
   | [`getIdleInstancesCount`](license.md#getidleinstancescount) | Gets available instances count when charging by concurrent instances count. |
   | [`setDeviceFriendlyName`](license.md#setdevicefriendlyname) | Sets a human-readable name that identifies the device. |
+  | [`setMaxConcurrentInstanceCount`](license.md#setmaxconcurrentinstancecount) | Sets the max concurrent instance count used for current device and process. |
   | [`initLicenseFromServer`](license.md#initlicensefromserver) | `Deprecated` |
   | [`initLicenseFromLicenseContent`](license.md#initlicensefromlicensecontent) | `Deprecated` |
   | [`outputLicenseToString`](license.md#outputlicensetostring) | `Deprecated` |
@@ -85,11 +89,12 @@ needAutoGenerateSidebar: true
 
 
    
-## Status Retrieval
+## General
    
   | Method               | Description |
   |----------------------|-------------|
-  | [`getVersion`](status-retrieval.md#getversion) | Get version information of SDK.|
+  | [`getVersion`](general.md#getversion) | Get version information of SDK.|
+  | [`transformCoordinates`](general.md#transformcoordinates) | Transform the coordinates of a point based on the given transformation matrix. |
    
       
 

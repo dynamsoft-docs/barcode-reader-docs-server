@@ -44,7 +44,7 @@ int CBarcodeReader::InitRuntimeSettingsWithFile (const char* pFilePath, const Co
 
 #### Return value
 Returns error code (returns 0 if the function operates successfully).    
-*You can call [`GetErrorString`](status-retrieval.md#geterrorstring) to get detailed error message.*
+*You can call [`GetErrorString`](general.md#geterrorstring) to get detailed error message.*
 
 #### Code Snippet
 ```cpp
@@ -78,7 +78,7 @@ int CBarcodeReader::InitRuntimeSettingsWithString (const char* content, const Co
 
 #### Return value
 Returns error code (returns 0 if the function operates successfully).    
-*You can call [`GetErrorString`](status-retrieval.md#geterrorstring) to get detailed error message.*
+*You can call [`GetErrorString`](general.md#geterrorstring) to get detailed error message.*
 
 #### Code Snippet
 ```cpp
@@ -111,7 +111,7 @@ int CBarcodeReader::AppendTplFileToRuntimeSettings (const char* pFilePath, const
 
 #### Return value
 Returns error code (returns 0 if the function operates successfully).    
-*You can call [`GetErrorString`](status-retrieval.md#geterrorstring) to get detailed error message.*
+*You can call [`GetErrorString`](general.md#geterrorstring) to get detailed error message.*
 
 #### Code Snippet
 ```cpp
@@ -145,7 +145,7 @@ int CBarcodeReader::AppendTplStringToRuntimeSettings (const char* content, const
 
 #### Return value
 Returns error code (returns 0 if the function operates successfully).    
-*You can call [`GetErrorString`](status-retrieval.md#geterrorstring) to get detailed error message.*
+*You can call [`GetErrorString`](general.md#geterrorstring) to get detailed error message.*
 
 #### Code Snippet
 ```cpp
@@ -206,7 +206,7 @@ int CBarcodeReader::GetParameterTemplateName (const int index, char nameBuffer[]
 
 #### Return value
 Returns error code (returns 0 if the function operates successfully).    
-*You can call [`GetErrorString`](status-retrieval.md#geterrorstring) to get detailed error message.*
+*You can call [`GetErrorString`](general.md#geterrorstring) to get detailed error message.*
 
 #### Code Snippet
 ```cpp
@@ -244,7 +244,7 @@ int CBarcodeReader::OutputSettingsToFile (const char* pFilePath, const char* pSe
 
 #### Return value
 Returns error code (returns 0 if the function operates successfully).    
-*You can call [`GetErrorString`](status-retrieval.md#geterrorstring) to get detailed error message.*
+*You can call [`GetErrorString`](general.md#geterrorstring) to get detailed error message.*
 
 #### Code Snippet
 ```cpp
@@ -278,7 +278,7 @@ int CBarcodeReader::OutputSettingsToString (char content[], const int contentLen
 
 #### Return value
 Returns error code (returns 0 if the function operates successfully).    
-*You can call [`GetErrorString`](status-retrieval.md#geterrorstring) to get detailed error message.*
+*You can call [`GetErrorString`](general.md#geterrorstring) to get detailed error message.*
 
 #### Code Snippet
 ```cpp
@@ -312,7 +312,7 @@ int CBarcodeReader::OutputSettingsToStringPtr (char** content, const char* pSett
 
 #### Return value
 Returns error code (returns 0 if the function operates successfully).    
-*You can call [`GetErrorString`](status-retrieval.md#geterrorstring) to get detailed error message.*
+*You can call [`GetErrorString`](general.md#geterrorstring) to get detailed error message.*
 
 #### Code Snippet
 ```cpp

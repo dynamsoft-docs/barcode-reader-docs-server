@@ -12,8 +12,10 @@ needAutoGenerateSidebar: true
   | Method               | Description |
   |----------------------|-------------|
   | [`InitLicense`](#initlicense) | Initializes license key and activate the SDK. |
+  | [`IsInstanceValid`](#isinstancevalid) | Gets whether the instance is valid when charging by concurrent instances count. |
   | [`GetIdleInstancesCount`](#getidleinstancescount) | Gets available instances count when charging by concurrent instances count. |
   | [`SetDeviceFriendlyName`](#setdevicefriendlyname) | Sets a human-readable name that identifies the device. |
+  | [`SetMaxConcurrentInstanceCount`](#setmaxconcurrentinstancecount) | Sets the max concurrent instance count used for current device and process. |
   | [`InitLicenseFromServer`](#initlicensefromserver) | `Deprecated` |
   | [`InitLicenseFromLicenseContent`](#initlicensefromlicensecontent) | `Deprecated` |
   | [`OutputLicenseToString`](#outputlicensetostring) | `Deprecated` |
@@ -40,7 +42,7 @@ static int dynamsoft::dbr::CBarcodeReader::InitLicense (const char* pLicense, ch
 
 **Return Value**  
 Returns error code (returns 0 if the function operates successfully).    
-*You can call [`GetErrorString`](status-retrieval.md#geterrorstring) to get detailed error message.*
+*You can call [`GetErrorString`](general.md#geterrorstring) to get detailed error message.*
 
 
 **Code Snippet**  
@@ -51,6 +53,24 @@ CBarcodeReader* reader = new CBarcodeReader();
 // add further process
 ```
 
+## IsInstanceValid
+
+Gets whether the instance is valid when charging by concurrent instances count.
+
+```cpp
+int dynamsoft::dbr::CBarcodeReader::IsInstanceValid()
+```
+
+**Return Value**
+
+Returns an int value indicating whether the instance is valid for running on concurrent instance mode.
+
+- 0: The instance is not valid for running on concurrent instance mode.
+- 1: The instance is valid for running on concurrent instance mode.
+
+**Remarks**
+
+This method is meaningful only when using a license charged by concurrent instances count.
 
 ## GetIdleInstancesCount
 Gets available instances count when charging by concurrent instances count.
@@ -100,11 +120,11 @@ static int dynamsoft::dbr::CBarcodeReader::SetDeviceFriendlyName(const char* nam
 
 Returns error code (returns 0 if the function operates successfully).
 
-*You can call [`GetErrorString`](status-retrieval.md#geterrorstring) to get detailed error message.*
+*You can call [`GetErrorString`](general.md#geterrorstring) to get detailed error message.*
 
 **Code Snippet**
 
-```c
+```cpp
 char errorBuf[512];
 dynamsoft::dbr::CBarcodeReader::SetDeviceFriendlyName("My-PC");
 dynamsoft::dbr::CBarcodeReader::InitLicense("YOUR-LICENSE-KEY", errorBuf, 512);
@@ -112,6 +132,34 @@ CBarcodeReader* reader = new CBarcodeReader();
 // add further process
 ```
 
+## SetMaxConcurrentInstanceCount
+
+Sets the max concurrent instance count used for current device and process.
+
+```cpp
+static void dynamsoft::dbr::CBarcodeReader::SetMaxConcurrentInstanceCount(int countForThisDevice, int countForThisProcess = 0)
+```
+
+**Parameters**
+
+`[in] countForThisDevice` The maximum number of concurrent instances that the current device can run.
+
+`[in] countForThisProcess` <sub>Optional</sub> The maximum number of concurrent instances that the current process can run.
+
+**Code Snippet**
+
+```cpp
+char errorBuf[512];
+int countForThisDevice = 10;
+int countForThisProcess = 10;
+dynamsoft::dbr::CBarcodeReader::SetMaxConcurrentInstanceCount(countForThisDevice, countForThisProcess);
+dynamsoft::dbr::CBarcodeReader::InitLicense("YOUR-LICENSE-KEY", errorBuf, 512);
+CBarcodeReader* barcodeReader = dynamsoft::dbr::CBarcodeReader::GetInstance();
+// Add your code here to call decoding method, process barcode results and so on
+// ...
+// Recycle the barcodeReader instance to make it idle for other concurrent tasks
+barcodeReader.Recycle();
+```
 
 ## InitLicenseFromServer
 `Deprecated`. It still works in this version but could be removed in the near future.

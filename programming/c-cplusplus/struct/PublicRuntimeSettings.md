@@ -150,7 +150,7 @@ Sets the output image resolution.
 int tagPublicRuntimeSettings::pdfRasterDPI
 ```
 **Value Range**     
-    [100, 600]
+    [100, 3000]
       
 **Default Value**     
     300

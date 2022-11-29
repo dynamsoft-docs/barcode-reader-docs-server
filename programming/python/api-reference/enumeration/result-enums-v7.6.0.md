@@ -1,6 +1,6 @@
 ---
 layout: default-layout
-title: Dynamsoft Barcode Reader Enumerations - Result Enumerations
+title: Result Enumerations - Dynamsoft Barcode Reader Python Edition
 description: This article shows Result Enumerations of Dynamsoft Barcode Reader.
 keywords: IMResultDataType, IntermediateResultSavingMode, IntermediateResultType, ResultCoordinateType, ResultType, TextResultOrderMode, result enumeration, enumeration
 needGenerateH3Content: false
