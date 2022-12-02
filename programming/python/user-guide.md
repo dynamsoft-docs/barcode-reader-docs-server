@@ -15,23 +15,21 @@ In this guide, you will learn step by step on how to build a barcode reading app
 ## System Requirements
 
 - Operating Systems:
-    - Windows x64
-    - Linux (x64, ARM32, ARM64)
-    - macOS (10.15+)
+  - Windows x64
+  - Linux (x64, ARM32, ARM64)
+  - macOS (10.15+)
 
-- Python Versions: 
-    - Python 3.10
-    - Python 3.9
-    - Python 3.8
-    - Python 3.7
-    - Python 3.6
-    - Python 3.5 (for versions below DBR 7.5)
-    - Python 2.7 (for versions below DBR 7.2.2.3)
-
+- Python Versions:
+  - Python 3.10
+  - Python 3.9
+  - Python 3.8
+  - Python 3.7
+  - Python 3.6
+  - Python 3.5 (for versions below DBR 7.5)
+  - Python 2.7 (for versions below DBR 7.2.2.3)
 
 >Note:
 >Dynamsoft Barcode Reader provides both online and offline license options. The online license option might not work in an environment that doesn't have network connection or some environments like AWS Lambda. In such case, you can get an offline trial license key via <a href="https://www.dynamsoft.com/customer/license/trialLicense?utm_source=guide&product=dbr&package=desktop" target="_blank">Customer Portal</a> or by <a href="https://www.dynamsoft.com/company/contact/" target="_blank">contacting us</a>.
-
 
 <iframe width="400" height="225" src="https://www.youtube.com/embed/6uPP3siJJlU" title="How to Use Dynamsoft Barcode Reader Python SDK | Dynamsoft Tutorial" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -48,7 +46,7 @@ pip install dbr
 Let's start by creating a console application which demonstrates how to use the minimum code to read barcodes from an image file.  
 > You can <a href="https://github.com/Dynamsoft/barcode-reader-python-samples/blob/master/samples/general-settings.py" target="_blank">download the entire source code here</a>.
 
-### Create a New Project 
+### Create a New Project
 
 Create a new source file named `DBRPythonSample.py`.
 
@@ -67,7 +65,8 @@ Import dbr package in the source file.
    ```python
    BarcodeReader.init_license("<insert DBR license key here>")
    ```
-    > Please replace `<insert DBR license key here>` with a valid DBR license key. You can request a free trial from <a href="https://www.dynamsoft.com/customer/license/trialLicense?utm_source=guide&product=dbr&package=desktop" target="_blank">Customer Portal</a>. 
+
+    > Please replace `<insert DBR license key here>` with a valid DBR license key. You can request a free trial from <a href="https://www.dynamsoft.com/customer/license/trialLicense?utm_source=guide&product=dbr&package=desktop" target="_blank">Customer Portal</a>.
 
 2. Create an instance of Dynamsoft Barcode Reader.
 
@@ -87,11 +86,11 @@ DBR provides multiple APIs for you to customize the barcode scanning behavior. H
    reader.update_runtime_settings(settings)
    ```
 
-> For better performance, we recommend that you only enable the barcode formats your application requires. Check out [Barcode Format Enumeration]({{ site.python_enumerations }}format-enums.html) for fully supported barcode formats. 
+> For better performance, we recommend that you only enable the barcode formats your application requires. Check out [Barcode Format Enumeration]({{ site.python_enumerations }}format-enums.html) for fully supported barcode formats.
 
 > If you know exactly the count of barcodes you want to read, specify `excepted_barcodes_count` to speed up the process and improve the accuracy. 
 
-### Decode and Output Results 
+### Decode and Output Results
 
 1. Decode barcodes from an image file.
 2. Get and output barcode results.
@@ -115,7 +114,6 @@ DBR provides multiple APIs for you to customize the barcode scanning behavior. H
 
    > The SDK returns multiple barcode information items, including barcode count, barcode format, barcode text, location, barcode raw data, etc. Check out [TextResult]({{ site.python_class }}TextResult.html) for fully supported result data.
 
-
 ### Release Resource
 
 Destroy the instance to release all resources.
@@ -123,7 +121,6 @@ Destroy the instance to release all resources.
 ```python
 del reader
 ```
-
 
 ### Build and Run the Project
 
