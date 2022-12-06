@@ -1,7 +1,7 @@
 ---
 layout: default-layout
-title: Dynamsoft Barcode Reader Python API Reference - BarcodeReader Decode Methods
-description: This page shows BarcodeReader Decode Methods of Dynamsoft Barcode Reader for Python SDK.
+title: BarcodeReader Decode Methods - Dynamsoft Barcode Reader SDK Python Edition API Reference
+description: This page shows BarcodeReader Decode Methods of Dynamsoft Barcode Reader SDK Python Edition.
 keywords: decode_file, decode_buffer, decode_file_stream, decode methods, BarcodeReader, api reference, python
 needAutoGenerateSidebar: true
 ---

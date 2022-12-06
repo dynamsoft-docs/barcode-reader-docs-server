@@ -1,7 +1,7 @@
 ---
 layout: default-layout
-title: Dynamsoft Barcode Reader C Language API Reference - Methods
-description: This page shows all methods of Dynamsoft Barcode Reader for C Language.
+title: Methods - Dynamsoft Barcode Reader SDK C Edition API Reference
+description: This page shows all methods of Dynamsoft Barcode Reader SDK C Edition.
 keywords: methods, api reference, c
 needAutoGenerateSidebar: false
 breadcrumbText: Methods

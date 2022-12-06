@@ -1,7 +1,7 @@
 ---
 layout: default-layout
-title: Dynamsoft Barcode Reader Java API Reference - Auxiliary Class
-description: This page shows all Auxiliary Classes of Dynamsoft Barcode Reader for Java SDK API Reference.
+title: Auxiliary Class - Dynamsoft Barcode Reader SDK Java Edition API Reference
+description: This page shows all Auxiliary Classes of Dynamsoft Barcode Reader SDK Java Edition API Reference.
 keywords: class, api reference, java
 needAutoGenerateSidebar: false
 breadcrumbText: Class

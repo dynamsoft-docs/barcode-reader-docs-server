@@ -1,7 +1,7 @@
 ---
 layout: default-layout
-title: Dynamsoft Barcode Reader .NET API Reference - Struct
-description: This page shows all Structs of Dynamsoft Barcode Reader for .NET SDK.
+title: Struct - Dynamsoft Barcode Reader SDK .NET Edition API Reference
+description: This page shows all Structs of Dynamsoft Barcode Reader SDK .NET Edition.
 keywords: struct, api reference, .Net
 needAutoGenerateSidebar: false
 breadcrumbText: Struct

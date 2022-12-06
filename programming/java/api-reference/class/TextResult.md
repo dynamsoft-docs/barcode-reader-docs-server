@@ -1,7 +1,7 @@
 ---
 layout: default-layout
-title: Dynamsoft Barcode Reader Java API Reference - TextResult Class
-description: This page shows the TextResult Class of Dynamsoft Barcode Reader for Java SDK API Reference.
+title: TextResult Class - Dynamsoft Barcode Reader SDK Java Edition API Reference
+description: This page shows the TextResult Class of Dynamsoft Barcode Reader SDK Java Edition API Reference.
 keywords: TextResult, class, api reference, java
 needAutoGenerateSidebar: false
 ---

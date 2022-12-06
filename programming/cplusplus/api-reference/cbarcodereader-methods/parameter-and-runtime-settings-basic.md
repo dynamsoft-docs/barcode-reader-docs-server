@@ -1,7 +1,7 @@
 ---
 layout: default-layout
-title: Dynamsoft Barcode Reader C++ API Reference - Basic Settings Methods
-description: This page shows basic Runtime Settings methods of Dynamsoft Barcode Reader for C++ Language.
+title: Basic Settings Methods - Dynamsoft Barcode Reader SDK C++ Edition API Reference
+description: This page shows basic Runtime Settings methods of Dynamsoft Barcode Reader SDK C++ Edition.
 keywords: SetModeArgument, GetModeArgument, GetRuntimeSettings, UpdateRuntimeSettings, ResetRuntimeSettings, Basic Settings Methods, CBarcodeReader, api reference, c++
 needAutoGenerateSidebar: true
 ---

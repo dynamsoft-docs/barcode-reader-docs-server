@@ -1,7 +1,7 @@
 ---
 layout: default-layout
-title: Dynamsoft Barcode Reader for Java - User Guide
-description: This is the user guide of Dynamsoft Barcode Reader for Java SDK.
+title: User Guide - Dynamsoft Barcode Reader SDK Java Edition
+description: This is the user guide of Dynamsoft Barcode Reader SDK Java Edition.
 keywords: user guide, java
 needAutoGenerateSidebar: true
 needGenerateH3Content: true

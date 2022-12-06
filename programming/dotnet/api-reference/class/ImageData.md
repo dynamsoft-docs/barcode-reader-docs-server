@@ -1,7 +1,7 @@
 ---
 layout: default-layout
-title: Dynamsoft Barcode Reader .NET API Reference - ImageData Class
-description: This page shows the ImageData Class of Dynamsoft Barcode Reader for .NET SDK.
+title: ImageData Class - Dynamsoft Barcode Reader SDK .NET Edition API Reference
+description: This page shows the ImageData Class of Dynamsoft Barcode Reader SDK .NET Edition.
 keywords: ImageData, class, api reference, .Net
 needAutoGenerateSidebar: false
 ---

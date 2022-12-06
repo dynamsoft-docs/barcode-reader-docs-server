@@ -1,7 +1,7 @@
 ---
 layout: default-layout
-title: Dynamsoft Barcode Reader for Python - User Guide
-description: This is the user guide of Dynamsoft Barcode Reader for Python SDK.
+title: User Guide - Dynamsoft Barcode Reader SDK Python Edition
+description: This is the user guide of Dynamsoft Barcode Reader SDK Python Edition.
 keywords: user guide, python
 needAutoGenerateSidebar: true
 needGenerateH3Content: true

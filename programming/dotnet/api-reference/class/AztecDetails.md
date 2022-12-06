@@ -1,7 +1,7 @@
 ---
 layout: default-layout
-title: Dynamsoft Barcode Reader .NET API Reference - AztecDetails Class
-description: This page shows the AztecDetails Class of Dynamsoft Barcode Reader for .NET SDK.
+title: AztecDetails Class - Dynamsoft Barcode Reader SDK .NET Edition API Reference
+description: This page shows the AztecDetails Class of Dynamsoft Barcode Reader SDK .NET Edition.
 keywords: AztecDetails, class, api reference, .Net
 needAutoGenerateSidebar: false
 ---

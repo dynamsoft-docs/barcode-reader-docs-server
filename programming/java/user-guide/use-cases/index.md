@@ -1,6 +1,6 @@
 ---
 layout: default-layout
-title: Dynamsoft Barcode Reader Java Edition User Guide - Use Cases
+title: Use Cases - Dynamsoft Barcode Reader SDK Java Edition User Guide
 description: This page explores the use cases of Dynamsoft Barcode Reader Java SDK.
 keywords: user guide, use cases, java
 ---

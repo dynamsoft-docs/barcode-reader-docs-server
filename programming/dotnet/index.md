@@ -1,7 +1,7 @@
 ---
 layout: default-layout
-title: Dynamsoft Barcode Reader for .NET - Main Page
-description: This is the main page of Dynamsoft Barcode Reader for .NET SDK.
+title: Main Page - Dynamsoft Barcode Reader SDK .NET Edition
+description: This is the main page of Dynamsoft Barcode Reader SDK .NET Edition.
 keywords: .Net
 needAutoGenerateSidebar: false
 breadcrumbText: .NET

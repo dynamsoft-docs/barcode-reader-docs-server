@@ -1,7 +1,7 @@
 ---
 layout: default-layout
-title: Dynamsoft Barcode Reader for .NET - User Guide
-description: This is the user guide of Dynamsoft Barcode Reader for .NET SDK.
+title: User Guide - Dynamsoft Barcode Reader SDK .NET Edition
+description: This is the user guide of Dynamsoft Barcode Reader SDK .NET Edition.
 keywords: user guide, .Net
 needAutoGenerateSidebar: true
 needGenerateH3Content: false

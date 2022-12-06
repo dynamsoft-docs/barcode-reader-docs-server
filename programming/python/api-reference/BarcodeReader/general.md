@@ -1,6 +1,6 @@
 ---
 layout: default-layout
-title: Dynamsoft Barcode Reader Python API Reference - BarcodeReader LiceGeneralnse Methods
+title: BarcodeReader LiceGeneralnse Methods - Dynamsoft Barcode Reader SDK Python Edition API Reference
 description: This page shows BarcodeReader General Methods of Dynamsoft Barcode Reader Python Edition.
 keywords: transform_coordinates, BarcodeReader, api reference, python
 needAutoGenerateSidebar: true

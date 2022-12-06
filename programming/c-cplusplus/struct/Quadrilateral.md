@@ -1,7 +1,7 @@
 ---
 layout: default-layout
-title: Dynamsoft Barcode Reader C & C++ Struct - Quadrilateral
-description: This page shows the Quadrilateral struct of Dynamsoft Barcode Reader for C & C++ Language.
+title: Quadrilateral Struct - Dynamsoft Barcode Reader SDK C & C++ Edition
+description: This page shows the Quadrilateral struct of Dynamsoft Barcode Reader SDK C & C++ Edition.
 keywords: Quadrilateral, struct, c, c++
 needAutoGenerateSidebar: false
 ---

@@ -1,7 +1,7 @@
 ---
 layout: default-layout
-title: Dynamsoft Barcode Reader Java API Reference - LineSegment Class
-description: This page shows the LineSegment Class of Dynamsoft Barcode Reader for Java SDK API Reference.
+title: LineSegment Class - Dynamsoft Barcode Reader SDK Java Edition API Reference
+description: This page shows the LineSegment Class of Dynamsoft Barcode Reader SDK Java Edition API Reference.
 keywords: LineSegment, class, api reference, java
 needAutoGenerateSidebar: false
 ---

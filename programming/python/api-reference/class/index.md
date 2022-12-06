@@ -1,7 +1,7 @@
 ---
 layout: default-layout
-title: Dynamsoft Barcode Reader Python API Reference - Class
-description: This page shows all Classes of Dynamsoft Barcode Reader for Python SDK.
+title: Class - Dynamsoft Barcode Reader SDK Python Edition API Reference
+description: This page shows all Classes of Dynamsoft Barcode Reader SDK Python Edition.
 keywords: class, api reference, python
 needAutoGenerateSidebar: false
 breadcrumbText: Class

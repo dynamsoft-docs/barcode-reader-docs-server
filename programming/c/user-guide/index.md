@@ -1,14 +1,14 @@
 ---
 layout: default-layout
 title: C Edition User Guide Index
-description: This is the user guide index page of Dynamsoft Barcode Reader C Edition.
+description: This is the user guide index page of Dynamsoft Barcode Reader SDK C Edition.
 keywords: user guide index, C
 permalink: /programming/c/user-guide/index.html
 ---
 
 # C Edition User Guide Index
 
-These articles will help you get the most out of Dynamsoft Barcode Reader C Edition.
+These articles will help you get the most out of Dynamsoft Barcode Reader SDK C Edition.
 
 * If you have just started evaluating the SDK, read the [Getting Started](../user-guide.md).
 

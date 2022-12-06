@@ -1,7 +1,7 @@
 ---
 layout: default-layout
-title: Dynamsoft Barcode Reader .NET API Reference - BarcodeReader Parameter and Runtime Settings Basic Methods
-description: This page shows BarcodeReader basic Runtime Settings methods of Dynamsoft Barcode Reader for .NET SDK.
+title: BarcodeReader Parameter and Runtime Settings Basic Methods - Dynamsoft Barcode Reader SDK .NET Edition API Reference
+description: This page shows BarcodeReader basic Runtime Settings methods of Dynamsoft Barcode Reader SDK .NET Edition.
 keywords: SetModeArgument, GetModeArgument, GetRuntimeSettings, UpdateRuntimeSettings, ResetRuntimeSettings, parameter and runtime settings basic methods, BarcodeReader, api reference, .Net
 needAutoGenerateSidebar: true
 ---

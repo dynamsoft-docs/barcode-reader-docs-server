@@ -1,7 +1,7 @@
 ---
 layout: default-layout
-title: Dynamsoft Barcode Reader Python API Reference - Main Page
-description: This is the main page of Dynamsoft Barcode Reader for Python SDK API Reference.
+title: Main Page - Dynamsoft Barcode Reader SDK Python Edition API Reference
+description: This is the main page of Dynamsoft Barcode Reader SDK Python Edition API Reference.
 keywords: api reference, python
 needAutoGenerateSidebar: true
 needGenerateH3Content: true

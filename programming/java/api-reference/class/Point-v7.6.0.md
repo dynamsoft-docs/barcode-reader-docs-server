@@ -1,7 +1,7 @@
 ---
 layout: default-layout
-title: Dynamsoft Barcode Reader Java API Reference - Point Class
-description: This page shows the Point Class of Dynamsoft Barcode Reader for Java SDK API Reference.
+title: Point Class - Dynamsoft Barcode Reader SDK Java Edition API Reference
+description: This page shows the Point Class of Dynamsoft Barcode Reader SDK Java Edition API Reference.
 keywords: Point, class, api reference, java
 needAutoGenerateSidebar: false
 ---

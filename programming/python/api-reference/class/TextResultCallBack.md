@@ -1,7 +1,7 @@
 ---
 layout: default-layout
-title: Dynamsoft Barcode Reader Python API Reference - TextResultCallBack Class
-description: This page shows the TextResultCallBack Class of Dynamsoft Barcode Reader for Python SDK.
+title: TextResultCallBack Class - Dynamsoft Barcode Reader SDK Python Edition API Reference
+description: This page shows the TextResultCallBack Class of Dynamsoft Barcode Reader SDK Python Edition.
 keywords: TextResultCallBack, class, api reference, python
 needAutoGenerateSidebar: false
 ---

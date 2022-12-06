@@ -1,7 +1,7 @@
 ---
 layout: default-layout
-title: Dynamsoft Barcode Reader C Language API Reference - Main Page
-description: This is the main page of Dynamsoft Barcode Reader for C Language API Reference.
+title: Main Page - Dynamsoft Barcode Reader SDK C Edition API Reference
+description: This is the main page of Dynamsoft Barcode Reader SDK C Edition API Reference.
 keywords: api reference, c
 needAutoGenerateSidebar: true
 needGenerateH3Content: true

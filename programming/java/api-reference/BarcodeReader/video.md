@@ -1,7 +1,7 @@
 ---
 layout: default-layout
-title: Dynamsoft Barcode Reader Java API Reference - BarcodeReader Video Methods
-description: This page shows BarcodeReader video methods of Dynamsoft Barcode Reader for Java SDK API Reference.
+title: BarcodeReader Video Methods - Dynamsoft Barcode Reader SDK Java Edition API Reference
+description: This page shows BarcodeReader video methods of Dynamsoft Barcode Reader SDK Java Edition API Reference.
 keywords: startFrameDecoding, startFrameDecodingEx, appendFrame, stopFrameDecoding, initFrameDecodingParameters, setErrorCallback, setTextResultCallback, setIntermediateResultCallback, getLengthOfFrameQueue, video methods, BarcodeReader, api reference, java
 needAutoGenerateSidebar: true
 ---

@@ -1,7 +1,7 @@
 ---
 layout: default-layout
-title: Dynamsoft Barcode Reader C++ API Reference - CBarcodeReader Decode Methods
-description: This page shows CBarcodeReader Decode methods of Dynamsoft Barcode Reader for C++ Language.
+title: CBarcodeReader Decode Methods - Dynamsoft Barcode Reader SDK C++ Edition API Reference
+description: This page shows CBarcodeReader Decode methods of Dynamsoft Barcode Reader SDK C++ Edition.
 keywords: DecodeFile, DecodeFileInMemory, DecodeBuffer, DecodeBase64String, DecodeDIB, decode methods, CBarcodeReader, api reference, c++
 needAutoGenerateSidebar: true
 ---

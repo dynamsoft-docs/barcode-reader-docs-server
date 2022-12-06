@@ -1,7 +1,7 @@
 ---
 layout: default-layout
-title: Dynamsoft Barcode Reader for Java - Main Page
-description: This is the main page of Dynamsoft Barcode Reader for Java SDK.
+title: Main Page - Dynamsoft Barcode Reader SDK Java Edition
+description: This is the main page of Dynamsoft Barcode Reader SDK Java Edition.
 keywords: java
 needAutoGenerateSidebar: false
 breadcrumbText: Java

@@ -1,7 +1,7 @@
 ---
 layout: default-layout
-title: Dynamsoft Barcode Reader Java API Reference - BarcodeReader Decode Methods
-description: This page shows BarcodeReader Decode methods of Dynamsoft Barcode Reader for Java SDK API Reference.
+title: BarcodeReader Decode Methods - Dynamsoft Barcode Reader SDK Java Edition API Reference
+description: This page shows BarcodeReader Decode methods of Dynamsoft Barcode Reader SDK Java Edition API Reference.
 keywords: decodeFile, decodeFileInMemory, decodeBuffer, decodeBase64String, decodeBufferedImage, decode methods, BarcodeReader, api reference, java
 needAutoGenerateSidebar: true
 ---

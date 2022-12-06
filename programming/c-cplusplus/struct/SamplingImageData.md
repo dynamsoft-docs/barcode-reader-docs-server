@@ -1,7 +1,7 @@
 ---
 layout: default-layout
-title: Dynamsoft Barcode Reader C & C++ Struct - SamplingImageData
-description: This page shows the SamplingImageData struct of Dynamsoft Barcode Reader for C & C++ Language.
+title: SamplingImageData Struct - Dynamsoft Barcode Reader SDK C & C++ Edition
+description: This page shows the SamplingImageData struct of Dynamsoft Barcode Reader SDK C & C++ Edition.
 keywords: SamplingImageData, struct, c, c++
 needAutoGenerateSidebar: false
 ---

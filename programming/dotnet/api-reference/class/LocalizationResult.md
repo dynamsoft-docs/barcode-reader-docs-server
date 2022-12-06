@@ -1,7 +1,7 @@
 ---
 layout: default-layout
-title: Dynamsoft Barcode Reader .NET API Reference - LocalizationResult Class
-description: This page shows the LocalizationResult Class of Dynamsoft Barcode Reader for .NET SDK.
+title: LocalizationResult Class - Dynamsoft Barcode Reader SDK .NET Edition API Reference
+description: This page shows the LocalizationResult Class of Dynamsoft Barcode Reader SDK .NET Edition.
 keywords: LocalizationResult, class, api reference, .Net
 needAutoGenerateSidebar: false
 ---

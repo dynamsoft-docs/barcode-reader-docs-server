@@ -1,7 +1,7 @@
 ---
 layout: default-layout
-title: Dynamsoft Barcode Reader SDK C Language - Samples
-description: Sample list page of Dynamsoft Barcode Reader C Language.
+title: Samples - Dynamsoft Barcode Reader SDK C Edition
+description: Sample list page of Dynamsoft Barcode Reader SDK C Edition.
 keywords: c
 needAutoGenerateSidebar: false
 ---

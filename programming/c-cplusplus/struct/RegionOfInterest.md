@@ -1,7 +1,7 @@
 ---
 layout: default-layout
-title: Dynamsoft Barcode Reader C & C++ Struct - RegionOfInterest
-description: This page shows the RegionOfInterest struct of Dynamsoft Barcode Reader for C & C++ Language.
+title: RegionOfInterest Struct - Dynamsoft Barcode Reader SDK C & C++ Edition
+description: This page shows the RegionOfInterest struct of Dynamsoft Barcode Reader SDK C & C++ Edition.
 keywords: RegionOfInterest, struct, c, c++
 needAutoGenerateSidebar: false
 ---

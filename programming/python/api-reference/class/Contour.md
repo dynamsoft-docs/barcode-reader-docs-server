@@ -1,7 +1,7 @@
 ---
 layout: default-layout
-title: Dynamsoft Barcode Reader Python API Reference - Contour Class
-description: This page shows the Contour Class of Dynamsoft Barcode Reader for Python SDK.
+title: Contour Class - Dynamsoft Barcode Reader SDK Python Edition API Reference
+description: This page shows the Contour Class of Dynamsoft Barcode Reader SDK Python Edition.
 keywords: Contour, class, api reference, python
 needAutoGenerateSidebar: false
 ---
