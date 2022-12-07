@@ -1,6 +1,6 @@
 ---
 layout: default-layout
-title: Result Enumerations - Dynamsoft Barcode Reader C/C++ Edition
+title: Result Enumerations - Dynamsoft Barcode Reader SDK C/C++ Edition
 description: This article shows Result Enumerations of Dynamsoft Barcode Reader.
 keywords: IMResultDataType, IntermediateResultSavingMode, IntermediateResultType, ResultCoordinateType, ResultType, TextResultOrderMode, result enumeration, enumeration
 needGenerateH3Content: false

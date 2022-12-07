@@ -1,7 +1,7 @@
 ---
 layout: default-layout
-title: Dynamsoft Barcode Reader .NET API Reference - Main Page
-description: This is the main page of Dynamsoft Barcode Reader for .NET SDK API Reference.
+title: Main Page - Dynamsoft Barcode Reader SDK .NET Edition API Reference
+description: This is the main page of Dynamsoft Barcode Reader SDK .NET Edition API Reference.
 keywords: api reference, .Net
 needAutoGenerateSidebar: false
 breadcrumbText: API Reference

@@ -1,7 +1,7 @@
 ---
 layout: default-layout
-title: Dynamsoft Barcode Reader C & C++ Struct - DM_DLSConnectionParameters
-description: This page shows the DM_DLSConnectionParameters struct of Dynamsoft Barcode Reader for C & C++ Language.
+title: DM_DLSConnectionParameters Struct - Dynamsoft Barcode Reader SDK C & C++ Edition
+description: This page shows the DM_DLSConnectionParameters struct of Dynamsoft Barcode Reader SDK C & C++ Edition.
 keywords: DM_DLSConnectionParameters, struct, c, c++
 needAutoGenerateSidebar: false
 pageStartVer: 8.6

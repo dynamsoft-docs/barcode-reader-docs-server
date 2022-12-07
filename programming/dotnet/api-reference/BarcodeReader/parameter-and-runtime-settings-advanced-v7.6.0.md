@@ -1,7 +1,7 @@
 ---
 layout: default-layout
-title: Dynamsoft Barcode Reader .NET API Reference - BarcodeReader Parameter and Runtime Settings Advanced Methods
-description: This page shows BarcodeReader advanced Runtime Settings methods of Dynamsoft Barcode Reader for .NET SDK.
+title: BarcodeReader Parameter and Runtime Settings Advanced Methods - Dynamsoft Barcode Reader SDK .NET Edition API Reference
+description: This page shows BarcodeReader advanced Runtime Settings methods of Dynamsoft Barcode Reader SDK .NET Edition.
 keywords: InitRuntimeSettingsWithFile, InitRuntimeSettingsWithString, AppendTplFileToRuntimeSettings, AppendTplStringToRuntimeSettings, GetAllParameterTemplateNames, OutputSettingsToFile, OutputSettingsToString, parameter and runtime settings advanced methods, BarcodeReader, api reference, .Net
 needAutoGenerateSidebar: true
 ---

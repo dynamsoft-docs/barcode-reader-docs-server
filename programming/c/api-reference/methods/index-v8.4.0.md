@@ -1,7 +1,7 @@
 ---
 layout: default-layout
-title: Dynamsoft Barcode Reader C Language API Reference - Functions
-description: This page shows all functions of Dynamsoft Barcode Reader for C Language.
+title: Functions - Dynamsoft Barcode Reader SDK C Edition API Reference
+description: This page shows all functions of Dynamsoft Barcode Reader SDK C Edition.
 keywords: functions, api reference, c
 needAutoGenerateSidebar: false
 breadcrumbText: Functions

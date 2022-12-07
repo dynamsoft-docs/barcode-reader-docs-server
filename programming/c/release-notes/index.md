@@ -1,6 +1,6 @@
 ---
 layout: default-layout
-title: Dynamsoft Barcode Reader SDK C Edition - Release Notes
+title: Release Notes - Dynamsoft Barcode Reader SDK C Edition
 description: This is the release notes page of Dynamsoft Barcode Reader SDK C Edition.
 keywords: release notes, c
 needAutoGenerateSidebar: false

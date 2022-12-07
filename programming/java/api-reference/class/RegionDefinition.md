@@ -1,7 +1,7 @@
 ---
 layout: default-layout
-title: Dynamsoft Barcode Reader Java API Reference - RegionDefinition Class
-description: This page shows the RegionDefinition Class of Dynamsoft Barcode Reader for Java SDK API Reference.
+title: RegionDefinition Class - Dynamsoft Barcode Reader SDK Java Edition API Reference
+description: This page shows the RegionDefinition Class of Dynamsoft Barcode Reader SDK Java Edition API Reference.
 keywords: RegionDefinition, class, api reference, java
 needAutoGenerateSidebar: false
 ---

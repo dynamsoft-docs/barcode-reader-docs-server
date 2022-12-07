@@ -1,7 +1,7 @@
 ---
 layout: default-layout
-title: Dynamsoft Barcode Reader C Edition User Guide - Use Cases
-description: This page explores the use cases of Dynamsoft Barcode Reader C Edition.
+title: Use Cases - Dynamsoft Barcode Reader SDK C Edition User Guide
+description: This page explores the use cases of Dynamsoft Barcode Reader SDK C Edition.
 keywords: user guide, use cases, c
 breadcrumbText: Use Cases
 ---

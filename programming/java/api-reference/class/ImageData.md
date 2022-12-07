@@ -1,7 +1,7 @@
 ---
 layout: default-layout
-title: Dynamsoft Barcode Reader Java API Reference - ImageData Class
-description: This page shows the ImageData Class of Dynamsoft Barcode Reader for Java SDK API Reference.
+title: ImageData Class - Dynamsoft Barcode Reader SDK Java Edition API Reference
+description: This page shows the ImageData Class of Dynamsoft Barcode Reader SDK Java Edition API Reference.
 keywords: ImageData, class, api reference, java
 needAutoGenerateSidebar: false
 ---

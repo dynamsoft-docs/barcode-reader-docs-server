@@ -1,7 +1,7 @@
 ---
 layout: default-layout
-title: Dynamsoft Barcode Reader .NET API Reference - Class
-description: This page shows all Classes of Dynamsoft Barcode Reader for .NET SDK.
+title: Class - Dynamsoft Barcode Reader SDK .NET Edition API Reference
+description: This page shows all Classes of Dynamsoft Barcode Reader SDK .NET Edition.
 keywords: class, api reference, .Net
 needAutoGenerateSidebar: false
 breadcrumbText: Class

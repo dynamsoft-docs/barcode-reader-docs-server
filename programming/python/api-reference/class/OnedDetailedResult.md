@@ -1,7 +1,7 @@
 ---
 layout: default-layout
-title: Dynamsoft Barcode Reader Python API Reference - OnedDetailedResult Class
-description: This page shows the OnedDetailedResult Class of Dynamsoft Barcode Reader for Python SDK.
+title: OnedDetailedResult Class - Dynamsoft Barcode Reader SDK Python Edition API Reference
+description: This page shows the OnedDetailedResult Class of Dynamsoft Barcode Reader SDK Python Edition.
 keywords: OnedDetailedResult, class, api reference, python
 needAutoGenerateSidebar: false
 ---

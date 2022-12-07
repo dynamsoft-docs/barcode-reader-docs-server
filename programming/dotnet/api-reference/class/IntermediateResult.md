@@ -1,7 +1,7 @@
 ---
 layout: default-layout
-title: Dynamsoft Barcode Reader .NET API Reference - IntermediateResult Class
-description: This page shows the IntermediateResult Class of Dynamsoft Barcode Reader for .NET SDK.
+title: IntermediateResult Class - Dynamsoft Barcode Reader SDK .NET Edition API Reference
+description: This page shows the IntermediateResult Class of Dynamsoft Barcode Reader SDK .NET Edition.
 keywords: IntermediateResult, class, api reference, .Net
 needAutoGenerateSidebar: false
 ---

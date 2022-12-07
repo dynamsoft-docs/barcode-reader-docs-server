@@ -1,7 +1,7 @@
 ---
 layout: default-layout
-title: Dynamsoft Barcode Reader Java API Reference - FrameDecodingParameters Class
-description: This page shows the FrameDecodingParameters Class of Dynamsoft Barcode Reader for Java SDK API Reference.
+title: FrameDecodingParameters Class - Dynamsoft Barcode Reader SDK Java Edition API Reference
+description: This page shows the FrameDecodingParameters Class of Dynamsoft Barcode Reader SDK Java Edition API Reference.
 keywords: FrameDecodingParameters, class, api reference, java
 needAutoGenerateSidebar: false
 ---

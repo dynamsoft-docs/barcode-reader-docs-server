@@ -1,6 +1,6 @@
 ---
 layout: default-layout
-title: Dynamsoft Barcode Reader SDK Python Edition - Release Notes v9.x
+title: Release Notes v9.x - Dynamsoft Barcode Reader SDK Python Edition
 description: This is the release notes page of Dynamsoft Barcode Reader SDK Python Edition v9.x.
 keywords: release notes, python
 needGenerateH3Content: false

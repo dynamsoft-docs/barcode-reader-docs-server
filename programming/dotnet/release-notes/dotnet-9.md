@@ -1,6 +1,6 @@
 ---
 layout: default-layout
-title: Dynamsoft Barcode Reader SDK .NET Edition - Release Notes v9.x
+title: Release Notes v9.x - Dynamsoft Barcode Reader SDK .NET Edition
 description: This is the release notes page of Dynamsoft Barcode Reader SDK .NET Edition v9.x.
 keywords: release notes, .net
 needGenerateH3Content: false

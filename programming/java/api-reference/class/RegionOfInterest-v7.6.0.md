@@ -1,7 +1,7 @@
 ---
 layout: default-layout
-title: Dynamsoft Barcode Reader Java API Reference - RegionOfInterest Class
-description: This page shows the RegionOfInterest Class of Dynamsoft Barcode Reader for Java SDK API Reference.
+title: RegionOfInterest Class - Dynamsoft Barcode Reader SDK Java Edition API Reference
+description: This page shows the RegionOfInterest Class of Dynamsoft Barcode Reader SDK Java Edition API Reference.
 keywords: RegionOfInterest, class, api reference, java
 needAutoGenerateSidebar: false
 ---

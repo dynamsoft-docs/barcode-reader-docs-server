@@ -1,7 +1,7 @@
 ---
 layout: default-layout
-title: Dynamsoft Barcode Reader for C++ - User Guide
-description: This is the user guide of Dynamsoft Barcode Reader for C++ Language.
+title: User Guide - Dynamsoft Barcode Reader SDK C++ Edition
+description: This is the user guide of Dynamsoft Barcode Reader SDK C++ Edition.
 keywords: user guide, c++
 needAutoGenerateSidebar: true
 needGenerateH3Content: true

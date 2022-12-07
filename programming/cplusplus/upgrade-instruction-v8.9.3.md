@@ -1,6 +1,6 @@
 ---
 layout: default-layout
-title: Dynamsoft Barcode Reader - Upgrade Instruction - C++
+title: Upgrade Instruction - Dynamsoft Barcode Reader SDK C++ Edition
 description: This page shows how to upgrade to latest version.
 keywords: Upgrade, how-to guides
 needAutoGenerateSidebar: false

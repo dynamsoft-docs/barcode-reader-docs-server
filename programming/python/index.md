@@ -1,7 +1,7 @@
 ---
 layout: default-layout
-title: Dynamsoft Barcode Reader for Python - Main Page
-description: This is the main page of Dynamsoft Barcode Reader for Python SDK.
+title: Main Page - Dynamsoft Barcode Reader SDK Python Edition
+description: This is the main page of Dynamsoft Barcode Reader SDK Python Edition.
 keywords: python
 needAutoGenerateSidebar: false
 ---

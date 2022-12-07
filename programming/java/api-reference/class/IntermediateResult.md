@@ -1,7 +1,7 @@
 ---
 layout: default-layout
-title: Dynamsoft Barcode Reader Java API Reference - IntermediateResult Class
-description: This page shows the IntermediateResult Class of Dynamsoft Barcode Reader for Java SDK API Reference.
+title: IntermediateResult Class - Dynamsoft Barcode Reader SDK Java Edition API Reference
+description: This page shows the IntermediateResult Class of Dynamsoft Barcode Reader SDK Java Edition API Reference.
 keywords: IntermediateResult, class, api reference, java
 needAutoGenerateSidebar: false
 ---

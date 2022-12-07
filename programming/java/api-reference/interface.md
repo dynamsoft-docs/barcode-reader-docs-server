@@ -1,7 +1,7 @@
 ---
 layout: default-layout
-title: Dynamsoft Barcode Reader Java API Reference - Interface
-description: This page shows the interfaces of Dynamsoft Barcode Reader for Java SDK API Reference.
+title: Interface - Dynamsoft Barcode Reader SDK Java Edition API Reference
+description: This page shows the interfaces of Dynamsoft Barcode Reader SDK Java Edition API Reference.
 keywords: ErrorCallback, IntermediateResultCallback, TextResultCallback, interface, api reference, java
 needAutoGenerateSidebar: false
 ---

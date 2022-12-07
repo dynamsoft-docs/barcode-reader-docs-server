@@ -1,7 +1,7 @@
 ---
 layout: default-layout
-title: Dynamsoft Barcode Reader Java API Reference - BarcodeReader Initialization and Destroy
-description: This page shows BarcodeReader Initialization and Destroy of Dynamsoft Barcode Reader for Java SDK API Reference.
+title: BarcodeReader Initialization and Destroy - Dynamsoft Barcode Reader SDK Java Edition API Reference
+description: This page shows BarcodeReader Initialization and Destroy of Dynamsoft Barcode Reader SDK Java Edition API Reference.
 keywords: BarcodeReader, destroy, initialization and destroy, api reference, java
 needAutoGenerateSidebar: true
 ---

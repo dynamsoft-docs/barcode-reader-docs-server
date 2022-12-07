@@ -1,7 +1,7 @@
 ---
 layout: default-layout
-title: Dynamsoft Barcode Reader C Language API Reference - Initialize and Destroy Functions
-description: This page shows Initialize and Destroy functions of Dynamsoft Barcode Reader for C Language.
+title: Initialize and Destroy Functions - Dynamsoft Barcode Reader SDK C Edition API Reference
+description: This page shows Initialize and Destroy functions of Dynamsoft Barcode Reader SDK C Edition.
 keywords: DBR_CreateInstance, DBR_DestroyInstance, initialize and destroy functions, api reference, c
 needAutoGenerateSidebar: true
 ---

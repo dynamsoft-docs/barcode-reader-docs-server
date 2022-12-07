@@ -1,7 +1,7 @@
 ---
 layout: default-layout
-title: Dynamsoft Barcode Reader for C++ - Main Page
-description: This is the main page of Dynamsoft Barcode Reader for C++ Language.
+title: Main Page - Dynamsoft Barcode Reader SDK C++ Edition
+description: This is the main page of Dynamsoft Barcode Reader SDK C++ Edition.
 keywords: c++
 needAutoGenerateSidebar: false
 breadcrumbText: C++

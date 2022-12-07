@@ -1,7 +1,7 @@
 ---
 layout: default-layout
-title: Dynamsoft Barcode Reader .NET API Reference - PublicRuntimeSettings Struct
-description: This page shows the PublicRuntimeSettings Struct of Dynamsoft Barcode Reader for .NET SDK.
+title: PublicRuntimeSettings Struct - Dynamsoft Barcode Reader SDK .NET Edition API Reference
+description: This page shows the PublicRuntimeSettings Struct of Dynamsoft Barcode Reader SDK .NET Edition.
 keywords: PublicRuntimeSettings, struct, api reference, .Net
 needAutoGenerateSidebar: false
 ---
