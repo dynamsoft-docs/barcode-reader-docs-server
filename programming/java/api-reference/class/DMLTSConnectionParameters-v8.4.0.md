@@ -1,7 +1,7 @@
 ---
 layout: default-layout
-title: Dynamsoft Barcode Reader Java API Reference - DMLTSConnectionParameters Class
-description: This page shows the DMLTSConnectionParameters Class of Dynamsoft Barcode Reader for Java SDK API Reference.
+title: DMLTSConnectionParameters Class - Dynamsoft Barcode Reader SDK Java Edition API Reference
+description: This page shows the DMLTSConnectionParameters Class of Dynamsoft Barcode Reader SDK Java Edition API Reference.
 keywords: DMLTSConnectionParameters, class, api reference, java
 needAutoGenerateSidebar: false
 ---

@@ -1,7 +1,7 @@
 ---
 layout: default-layout
-title: Dynamsoft Barcode Reader .NET API Reference - BarcodeReader Methods
-description: This page shows BarcodeReader methods of Dynamsoft Barcode Reader for .NET SDK.
+title: BarcodeReader Methods - Dynamsoft Barcode Reader SDK .NET Edition API Reference
+description: This page shows BarcodeReader methods of Dynamsoft Barcode Reader SDK .NET Edition.
 keywords: methods, BarcodeReader, api reference, .Net
 needAutoGenerateSidebar: false
 breadcrumbText: BarcodeReader Methods

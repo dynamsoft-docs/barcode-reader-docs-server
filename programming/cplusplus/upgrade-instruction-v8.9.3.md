@@ -1,6 +1,6 @@
 ---
 layout: default-layout
-title: Dynamsoft Barcode Reader - Upgrade Instruction - C++
+title: Upgrade Instruction - Dynamsoft Barcode Reader SDK C++ Edition
 description: This page shows how to upgrade to latest version.
 keywords: Upgrade, how-to guides
 needAutoGenerateSidebar: false
@@ -21,7 +21,7 @@ Your previous SDK license for version 7.x is not compatible with the version 8.x
 
 In v8.0.0, we introduced a new license tracking mechanism, <a href="https://www.dynamsoft.com/license-server/docs/about/index.html" target="_blank">License 2.0</a>. 
 
-If you wish to use License 2.0, please refer to [this article](../../license-activation/set-full-license.md) to set the license.
+If you wish to use License 2.0, please refer to [this article]({{site.license_activation}}set-full-license.html) to set the license.
 
 After you upgraded your license to version 8.x:
 
@@ -29,9 +29,9 @@ After you upgraded your license to version 8.x:
 
 - If you were using `InitLicenseFromServer` to connect to Dynamsoft server for license verification, then no need to change the license key. But please make sure the device has Internet connection.
 
-- If you were using `InitLicenseFromServer` + `InitLicenseFromLicenseContent` to connect to Dynamsoft server once and use the SDK offline, please follow [these steps](../../license-activation/set-full-license-7.md#connect-once) to re-register the device.
+- If you were using `InitLicenseFromServer` + `InitLicenseFromLicenseContent` to connect to Dynamsoft server once and use the SDK offline, please follow [these steps]({{site.license_activation}}set-full-license-7.html#connect-once) to re-register the device.
 
-- If you were using `InitLicenseFromLicenseContent` to use the SDK offline, please follow [these steps](../../license-activation/set-full-license-7.md#offline) to re-register the device.
+- If you were using `InitLicenseFromLicenseContent` to use the SDK offline, please follow [these steps]({{site.license_activation}}set-full-license-7.html#offline) to re-register the device.
 
 ## From version 6.x
 

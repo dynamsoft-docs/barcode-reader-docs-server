@@ -1,7 +1,7 @@
 ---
 layout: default-layout
-title: Dynamsoft Barcode Reader .NET API Reference - ImageData Class
-description: This page shows the ImageData Class of Dynamsoft Barcode Reader for .NET SDK.
+title: ImageData Class - Dynamsoft Barcode Reader SDK .NET Edition API Reference
+description: This page shows the ImageData Class of Dynamsoft Barcode Reader SDK .NET Edition.
 keywords: ImageData, class, api reference, .Net
 needAutoGenerateSidebar: false
 ---
@@ -68,3 +68,7 @@ EnumImagePixelFormat Dynamsoft.DBR.ImageData.Format
 ### Orientation
 
 The orientation of the image data. The value is the angle that the image needs to be rotated clockwise so it shows correctly on the display in its natural orientation. It can be 0, 90, 180, or 270.
+
+```csharp
+int Dynamsoft.DBR.ImageData.Orientation
+```

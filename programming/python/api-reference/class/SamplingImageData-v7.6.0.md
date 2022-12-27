@@ -1,7 +1,7 @@
 ---
 layout: default-layout
-title: Dynamsoft Barcode Reader Python API Reference - SamplingImageData Class
-description: This page shows the SamplingImageData Class of Dynamsoft Barcode Reader for Python SDK.
+title: SamplingImageData Class - Dynamsoft Barcode Reader SDK Python Edition API Reference
+description: This page shows the SamplingImageData Class of Dynamsoft Barcode Reader SDK Python Edition.
 keywords: SamplingImageData, class, api reference, python
 needAutoGenerateSidebar: false
 ---

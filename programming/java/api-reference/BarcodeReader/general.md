@@ -1,7 +1,7 @@
 ---
 layout: default-layout
-title: Dynamsoft Barcode Reader Java API Reference - BarcodeReader General Methods
-description: This page shows BarcodeReader general methods of Dynamsoft Barcode Reader for Java SDK API Reference.
+title: BarcodeReader General Methods - Dynamsoft Barcode Reader SDK Java Edition API Reference
+description: This page shows BarcodeReader general methods of Dynamsoft Barcode Reader SDK Java Edition API Reference.
 keywords: getVersion, general methods, BarcodeReader, api reference, java
 needAutoGenerateSidebar: true
 ---
@@ -42,7 +42,7 @@ static Point com.dynamsoft.dbr.BarcodeReader.transformCoordinates(Point original
 
 **Parameters**  
 
-`[in] originalPoint` : The original point that needs to be transformed.
+`[in] originalPoint` : The original point that needs to be transformed.  
 `[in] transformationMatrix` : The 3x3 matrix used for coordinate transformation.
 
 **Return Value**  

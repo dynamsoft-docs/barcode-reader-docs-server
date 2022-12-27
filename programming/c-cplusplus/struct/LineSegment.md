@@ -1,7 +1,7 @@
 ---
 layout: default-layout
-title: Dynamsoft Barcode Reader C & C++ Struct - LineSegment
-description: This page shows the LineSegment struct of Dynamsoft Barcode Reader for C & C++ Language.
+title: LineSegment Struct - Dynamsoft Barcode Reader SDK C & C++ Edition
+description: This page shows the LineSegment struct of Dynamsoft Barcode Reader SDK C & C++ Edition.
 keywords: LineSegment, struct, c, c++
 needAutoGenerateSidebar: false
 ---

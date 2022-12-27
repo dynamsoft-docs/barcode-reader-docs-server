@@ -1,7 +1,7 @@
 ---
 layout: default-layout
-title: Dynamsoft Barcode Reader Python API Reference - PDFDetailedResult Class
-description: This page shows the PDFDetailedResult Class of Dynamsoft Barcode Reader for Python SDK.
+title: PDFDetailedResult Class - Dynamsoft Barcode Reader SDK Python Edition API Reference
+description: This page shows the PDFDetailedResult Class of Dynamsoft Barcode Reader SDK Python Edition.
 keywords: PDFDetailedResult, class, api reference, python
 needAutoGenerateSidebar: false
 ---

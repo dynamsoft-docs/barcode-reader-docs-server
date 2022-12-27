@@ -1,7 +1,7 @@
 ---
 layout: default-layout
-title: Dynamsoft Barcode Reader C++ API Reference - CBarcodeReader General Methods
-description: This page shows CBarcodeReader general methods of Dynamsoft Barcode Reader for C++ Language.
+title: CBarcodeReader General Methods - Dynamsoft Barcode Reader SDK C++ Edition API Reference
+description: This page shows CBarcodeReader general methods of Dynamsoft Barcode Reader SDK C++ Edition.
 keywords: GetErrorString, GetVersion, general methods, CBarcodeReader, api reference, c++
 needAutoGenerateSidebar: true
 ---
@@ -64,7 +64,7 @@ static DBRPoint dynamsoft::dbr::CBarcodeReader::TransformCoordinates(DBRPoint or
 
 **Parameters**  
 
-`[in] originalPoint` : The original point that needs to be transformed.
+`[in] originalPoint` : The original point that needs to be transformed.  
 `[in] transformationMatrix` : The 3x3 matrix used for coordinate transformation.
 
 **Return Value**  

@@ -1,7 +1,7 @@
 ---
 layout: default-layout
-title: Dynamsoft Barcode Reader .NET API Reference - FurtherModes Struct
-description: This page shows the FurtherModes Struct of Dynamsoft Barcode Reader for .NET SDK.
+title: FurtherModes Struct - Dynamsoft Barcode Reader SDK .NET Edition API Reference
+description: This page shows the FurtherModes Struct of Dynamsoft Barcode Reader SDK .NET Edition.
 keywords: FurtherModes, struct, api reference, .Net
 needAutoGenerateSidebar: false
 ---
@@ -227,12 +227,3 @@ EnumBarcodeColourMode[] Dynamsoft.DBR.FurtherModes.BarcodeColourModes
 ```csharp
 EnumAccompanyingTextRecognitionMode[] Dynamsoft.DBR.FurtherModes.AccompanyingTextRecognitionModes
 ```
-
-- **Value range**  
-   Each array item can be any one of the [`AccompanyingTextRecognitionMode`]({{ site.dotnet_enumerations }}parameter-mode-enums.html#accompanyingtextrecognitionmode) Enumeration items.  
-     
-- **Default value**  
-   `[EnumAccompanyingTextRecognitionMode.ATRM_SKIP, EnumAccompanyingTextRecognitionMode.ATRM_SKIP, EnumAccompanyingTextRecognitionMode.ATRM_SKIP, EnumAccompanyingTextRecognitionMode.ATRM_SKIP, EnumAccompanyingTextRecognitionMode.ATRM_SKIP, EnumAccompanyingTextRecognitionMode.ATRM_SKIP, EnumAccompanyingTextRecognitionMode.ATRM_SKIP, EnumAccompanyingTextRecognitionMode.ATRM_SKIP]`  
-     
-- **Remarks**  
-   The array index represents the priority of the item. The smaller index is, the higher priority is.  

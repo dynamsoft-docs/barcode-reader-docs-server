@@ -1,7 +1,7 @@
 ---
 layout: default-layout
-title: Dynamsoft Barcode Reader Java API Reference - Class
-description: This page shows all Classes of Dynamsoft Barcode Reader for Java SDK API Reference.
+title: Class - Dynamsoft Barcode Reader SDK Java Edition API Reference
+description: This page shows all Classes of Dynamsoft Barcode Reader SDK Java Edition API Reference.
 keywords: class, api reference, java
 needAutoGenerateSidebar: false
 breadcrumbText: Class

@@ -1,7 +1,7 @@
 ---
 layout: default-layout
-title: Dynamsoft Barcode Reader Python API Reference - BarcodeReader Result Methods
-description: This page shows Result methods of Dynamsoft Barcode Reader for Python SDK.
+title: BarcodeReader Result Methods - Dynamsoft Barcode Reader SDK Python Edition API Reference
+description: This page shows Result methods of Dynamsoft Barcode Reader SDK Python Edition.
 keywords: GetIntermediateResults, result methods, BarcodeReader, api reference, python
 needAutoGenerateSidebar: true
 ---

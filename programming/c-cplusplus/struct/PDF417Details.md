@@ -1,7 +1,7 @@
 ---
 layout: default-layout
-title: Dynamsoft Barcode Reader C & C++ Struct - PDF417Details
-description: This page shows the PDF417Details struct of Dynamsoft Barcode Reader for C & C++ Language.
+title: PDF417Details Struct - Dynamsoft Barcode Reader SDK C & C++ Edition
+description: This page shows the PDF417Details struct of Dynamsoft Barcode Reader SDK C & C++ Edition.
 keywords: PDF417Details, struct, c, c++
 needAutoGenerateSidebar: false
 ---

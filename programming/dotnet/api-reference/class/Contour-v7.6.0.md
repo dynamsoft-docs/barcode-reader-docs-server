@@ -1,7 +1,7 @@
 ---
 layout: default-layout
-title: Dynamsoft Barcode Reader .NET API Reference - Contour Class
-description: This page shows the Contour Class of Dynamsoft Barcode Reader for .NET SDK.
+title: Contour Class - Dynamsoft Barcode Reader SDK .NET Edition API Reference
+description: This page shows the Contour Class of Dynamsoft Barcode Reader SDK .NET Edition.
 keywords: Contour, class, api reference, .Net
 needAutoGenerateSidebar: false
 ---

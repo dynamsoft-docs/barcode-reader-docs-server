@@ -1,7 +1,7 @@
 ---
 layout: default-layout
-title: Dynamsoft Barcode Reader C Language API Reference - General Functions
-description: This page shows the general functions of Dynamsoft Barcode Reader for C Language.
+title: General Functions - Dynamsoft Barcode Reader SDK C Edition API Reference
+description: This page shows the general functions of Dynamsoft Barcode Reader SDK C Edition.
 keywords: DBR_GetErrorString, DBR_GetVersion, general functions, api reference, c
 needAutoGenerateSidebar: true
 ---
@@ -71,7 +71,7 @@ DBR_API DBRPoint DBR_TransformCoordinates(DBRPoint originalPoint, double transfo
 
 **Parameters**  
 
-`[in] originalPoint` : The original point that needs to be transformed.
+`[in] originalPoint` : The original point that needs to be transformed.  
 `[in] transformationMatrix` : The 3x3 matrix used for coordinate transformation.
 
 **Return Value**  

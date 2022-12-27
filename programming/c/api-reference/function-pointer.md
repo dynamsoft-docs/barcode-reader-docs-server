@@ -1,7 +1,7 @@
 ---
 layout: default-layout
-title: Dynamsoft Barcode Reader C Language API Reference - Callbacks
-description: This is the callbacks of Dynamsoft Barcode Reader for C Language.
+title: Callbacks - Dynamsoft Barcode Reader SDK C Edition API Reference
+description: This is the callbacks of Dynamsoft Barcode Reader SDK C Edition.
 keywords: CB_Error, CB_IntermediateResult, CB_TextResult, Callbacks, api reference, c
 needAutoGenerateSidebar: true
 ---

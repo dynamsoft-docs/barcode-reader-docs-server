@@ -1,7 +1,7 @@
 ---
 layout: default-layout
-title: Dynamsoft Barcode Reader .NET API Reference - FrameDecodingParameters Class
-description: This page shows the FrameDecodingParameters Class of Dynamsoft Barcode Reader for .NET SDK.
+title: FrameDecodingParameters Class - Dynamsoft Barcode Reader SDK .NET Edition API Reference
+description: This page shows the FrameDecodingParameters Class of Dynamsoft Barcode Reader SDK .NET Edition.
 keywords: FrameDecodingParameters, class, api reference, .Net
 needAutoGenerateSidebar: false
 ---

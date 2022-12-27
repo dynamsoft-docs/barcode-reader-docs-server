@@ -1,7 +1,7 @@
 ---
 layout: default-layout
-title: Dynamsoft Barcode Reader Java API Reference - BarcodeReader Decode Methods
-description: This page shows BarcodeReader Decode methods of Dynamsoft Barcode Reader for Java SDK API Reference.
+title: BarcodeReader Decode Methods - Dynamsoft Barcode Reader SDK Java Edition API Reference
+description: This page shows BarcodeReader Decode methods of Dynamsoft Barcode Reader SDK Java Edition API Reference.
 keywords: decodeFile, decodeFileInMemory, decodeBuffer, decodeBase64String, decodeBufferedImage, decode methods, BarcodeReader, api reference, java
 needAutoGenerateSidebar: true
 ---
@@ -110,15 +110,18 @@ reader.destroy();
 Decode barcodes from the memory buffer containing image pixels in a defined format.
 
 ```java
-TextResult[] com.dynamsoft.dbr.BarcodeReader.decodeBuffer(byte[] buffer, int width, int height, int stride, int enumImagePixelFormat, String templateName)	throws BarcodeReaderException	
-```   
-   
+TextResult[] com.dynamsoft.dbr.BarcodeReader.decodeBuffer(byte[] buffer, int width, int height, int stride, int enumImagePixelFormat, String templateName)	throws BarcodeReaderException
+
+TextResult[] com.dynamsoft.dbr.BarcodeReader.decodeBuffer(byte[] buffer, int width, int height, int stride, int enumImagePixelFormat, int orientation, String templateName) throws BarcodeReaderException
+```
+
 **Parameters**  
-`buffer` The array of bytes which contain the image data.   
-`Width` The width of the image in pixels.   
-`Height` The height of the image in pixels.   
-`Stride` The stride (or scan width) of the image.   
-`format` The image pixel format used in the image byte array.   
+`buffer` The array of bytes which contain the image data.  
+`width` The width of the image in pixels.  
+`height` The height of the image in pixels.  
+`stride` The stride (or scan width) of the image.  
+`enumImagePixelFormat` The image pixel format used in the image byte array.  
+`orientation` The orientation of the image data. The value is the angle that the image needs to be rotated clockwise so it shows correctly on the display in its natural orientation. It can be 0, 90, 180, or 270.  
 `templateName` The template name.
 
 **Return Value**  

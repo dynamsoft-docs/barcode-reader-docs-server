@@ -1,7 +1,7 @@
 ---
 layout: default-layout
-title: Dynamsoft Barcode Reader Python API Reference - LineSegment Class
-description: This page shows the LineSegment Class of Dynamsoft Barcode Reader for Python SDK.
+title: LineSegment Class - Dynamsoft Barcode Reader SDK Python Edition API Reference
+description: This page shows the LineSegment Class of Dynamsoft Barcode Reader SDK Python Edition.
 keywords: LineSegment, class, api reference, python
 needAutoGenerateSidebar: false
 ---

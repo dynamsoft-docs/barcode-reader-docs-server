@@ -1,7 +1,7 @@
 ---
 layout: default-layout
-title: Dynamsoft Barcode Reader Python API Reference - BarcodeReader Decode Methods
-description: This page shows BarcodeReader Decode Methods of Dynamsoft Barcode Reader for Python SDK.
+title: BarcodeReader Decode Methods - Dynamsoft Barcode Reader SDK Python Edition API Reference
+description: This page shows BarcodeReader Decode Methods of Dynamsoft Barcode Reader SDK Python Edition.
 keywords: decode_file, decode_buffer, decode_file_stream, decode methods, BarcodeReader, api reference, python
 needAutoGenerateSidebar: true
 ---
@@ -29,7 +29,7 @@ BarcodeReader.decode_file(image_file_name, template_name="")
 
 **Parameters**  
 
-- `[in] image_file_name` <*str*> :	A string defining the file name. It supports BMP, JPEG, PNG, TIFF and PDF files.  
+- `[in] image_file_name` <*str*> : A string defining the file name. It supports BMP, JPEG, PNG, TIFF and PDF files.  
 - `[in] template_name` <*optional*><*str*> : The template name.
 
 **Return Value**  
@@ -75,7 +75,7 @@ BarcodeReader.decode_buffer(image, image_pixel_format=EnumImagePixelFormat.IPF_R
 **Parameters**  
 `[in] image` <*class numpy.ndarray*> : The image which is processed by opencv.  
 `[in] image_pixel_format` <*class EnumImagePixelFormat*> : The image pixel format used in the image byte array.  
-`[in] template_name` <*optional*><*str*> : The template name.
+`[in] template_name` <*optional*><*str*> : The template name.  
 `[in] orientation` <*optional*><*int*> : The orientation of the image data. The value is the angle that the image needs to be rotated clockwise so it shows correctly on the display in its natural orientation. It can be 0, 90, 180, or 270.  
 
 **Return Value**  
@@ -174,7 +174,7 @@ BarcodeReader.decode_buffer_manually(self, buffer, width, height, stride, image_
 `[in] height` <*int*> : The height of the image in pixels.  
 `[in] stride` <*int*> : The stride (or scan width) of the image.  
 `[in] image_pixel_format` <*class EnumImagePixelFormat*> : The image pixel format used in the image byte array. Default value = EnumImagePixelFormat.IPF_RGB_888.  
-`[in] template_name` <*optional*><*str*> : The template name.
+`[in] template_name` <*optional*><*str*> : The template name.  
 `[in] orientation` <*optional*><*int*> : The orientation of the image data. The value is the angle that the image needs to be rotated clockwise so it shows correctly on the display in its natural orientation. It can be 0, 90, 180, or 270.  
 
 **Return Value**  

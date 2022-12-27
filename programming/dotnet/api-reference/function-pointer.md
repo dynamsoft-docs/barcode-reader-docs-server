@@ -1,7 +1,7 @@
 ---
 layout: default-layout
-title: Dynamsoft Barcode Reader .NET API Reference - Delegates
-description: This page shows Delegates of Dynamsoft Barcode Reader for .NET SDK.
+title: Delegates - Dynamsoft Barcode Reader SDK .NET Edition API Reference
+description: This page shows Delegates of Dynamsoft Barcode Reader SDK .NET Edition.
 keywords: CB_Error, CB_IntermediateResult, CB_TextResult, delegates, api reference, .Net
 needAutoGenerateSidebar: false
 ---

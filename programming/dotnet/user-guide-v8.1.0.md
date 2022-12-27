@@ -1,7 +1,7 @@
 ---
 layout: default-layout
-title: Dynamsoft Barcode Reader for .NET - User Guide
-description: This is the user guide of Dynamsoft Barcode Reader for .NET SDK.
+title: User Guide - Dynamsoft Barcode Reader SDK .NET Edition
+description: This is the user guide of Dynamsoft Barcode Reader SDK .NET Edition.
 keywords: user guide, .Net
 needAutoGenerateSidebar: true
 needGenerateH3Content: false
@@ -122,8 +122,6 @@ Here are some common scanning settings you might find helpful:
 - [Specify Barcode Type to Read](#specify-barcode-type-to-read)   
 - [Specify Maximum Barcode Count](#specify-maximum-barcode-count)   
 - [Specify a Scan Region](#specify-a-scan-region)  
-
-For more scanning settings guide, check out the [How To](#how-to-guide) section.
 
 #### Specify Barcode Type to Read
 By default, the SDK will read all the supported barcode formats except Postal Codes and Dotcode from the image. (See [Product Overview]() for the full supported barcode list.)   
@@ -353,9 +351,9 @@ These files are under `DBR-DotNet-{version number}\DynamsoftBarcodeReader\Lib\4.
 
  - If you were using `InitLicenseFromServer` to connect to Dynamsoft server for license verification, then no need to change the license key. But please make sure the device has Internet connection.
 
- - If you were using `InitLicenseFromServer` + `DBR_InitLicenseFromLicenseContent` to connect to Dynamsoft server once and use the SDK offline, please follow [these steps](../../license-activation/set-full-license-7.md#connect-once) to re-register the device.
+ - If you were using `InitLicenseFromServer` + `DBR_InitLicenseFromLicenseContent` to connect to Dynamsoft server once and use the SDK offline, please follow [these steps]({{site.license_activation}}set-full-license-7.html#connect-once) to re-register the device.
  
- - If you were using `DBR_InitLicenseFromLicenseContent` to use the SDK offline, please follow [these steps](../../license-activation/set-full-license-7.md#offline) to re-register the device.
+ - If you were using `DBR_InitLicenseFromLicenseContent` to use the SDK offline, please follow [these steps]({{site.license_activation}}set-full-license-7.html#offline) to re-register the device.
 
 ### From version 6.x
 

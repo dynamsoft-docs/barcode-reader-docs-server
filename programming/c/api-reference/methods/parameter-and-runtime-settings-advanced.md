@@ -1,7 +1,7 @@
 ---
 layout: default-layout
-title: Dynamsoft Barcode Reader C Language API Reference - Parameter and Runtime Settings Advanced Functions
-description: This page shows advanced Runtime Settings functions of Dynamsoft Barcode Reader for C Language.
+title: Parameter and Runtime Settings Advanced Functions - Dynamsoft Barcode Reader SDK C Edition API Reference
+description: This page shows advanced Runtime Settings functions of Dynamsoft Barcode Reader SDK C Edition.
 keywords: DBR_InitRuntimeSettingsWithFile, DBR_InitRuntimeSettingsWithString, DBR_AppendTplFileToRuntimeSettings, DBR_AppendTplStringToRuntimeSettings, DBR_GetParameterTemplateCount, DBR_GetParameterTemplateName, DBR_OutputSettingsToFile, DBR_OutputSettingsToString, DBR_OutputSettingsToStringPtr, DBR_FreeSettingsString, parameter and runtime settings advanced functions, api reference, c
 needAutoGenerateSidebar: true
 ---

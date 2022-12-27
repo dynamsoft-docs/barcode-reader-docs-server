@@ -1,7 +1,7 @@
 ---
 layout: default-layout
-title: Dynamsoft Barcode Reader Java API Reference - ImageData Class
-description: This page shows the ImageData Class of Dynamsoft Barcode Reader for Java SDK API Reference.
+title: ImageData Class - Dynamsoft Barcode Reader SDK Java Edition API Reference
+description: This page shows the ImageData Class of Dynamsoft Barcode Reader SDK Java Edition API Reference.
 keywords: ImageData, class, api reference, java
 needAutoGenerateSidebar: false
 ---
@@ -65,3 +65,7 @@ int com.dynamsoft.dbr.ImageData.format
 ### orientation
 
 The orientation of the image data. The value is the angle that the image needs to be rotated clockwise so it shows correctly on the display in its natural orientation. It can be 0, 90, 180, or 270.
+
+```java
+int com.dynamsoft.dbr.ImageData.orientation
+```

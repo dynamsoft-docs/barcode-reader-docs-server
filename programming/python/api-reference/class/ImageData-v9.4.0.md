@@ -1,7 +1,7 @@
 ---
 layout: default-layout
-title: Dynamsoft Barcode Reader Python API Reference - ImageData Class
-description: This page shows the ImageData Class of Dynamsoft Barcode Reader for Python SDK.
+title: ImageData Class - Dynamsoft Barcode Reader SDK Python Edition API Reference
+description: This page shows the ImageData Class of Dynamsoft Barcode Reader SDK Python Edition.
 keywords: ImageData, class, api reference, python
 needAutoGenerateSidebar: false
 ---

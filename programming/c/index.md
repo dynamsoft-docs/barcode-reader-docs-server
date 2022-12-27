@@ -1,12 +1,12 @@
 ---
 layout: default-layout
-title: Dynamsoft Barcode Reader for C Language - Main Page
-description: This is the main page of Dynamsoft Barcode Reader for C Language.
+title: Main Page - Dynamsoft Barcode Reader SDK C Edition
+description: This is the main page of Dynamsoft Barcode Reader SDK C Edition.
 keywords: c
 breadcrumbText: C
 ---
 
-# Dynamsoft Barcode Reader C Edition Introduction
+# Dynamsoft Barcode Reader SDK C Edition Introduction
 
 ## User Guide
 
@@ -35,5 +35,4 @@ breadcrumbText: C
 
 ## Online Store
 
-- <a href="https://www.dynamsoft.com/store/dynamsoft-barcode-reader/#desktop" target="_blank">For Desktop Deployment</a>
-- <a href="https://www.dynamsoft.com/store/dynamsoft-barcode-reader/#server" target="_blank">For Server Deployment</a>
+- <a href="https://www.dynamsoft.com/store/dynamsoft-barcode-reader/#desktop" target="_blank">Get Pricing For Dynamsoft Barcode Reader</a>

@@ -1,6 +1,6 @@
 ---
 layout: default-layout
-title: Dynamsoft Barcode Reader .NET Edition User Guide - Explore Features
+title: Explore Features - Dynamsoft Barcode Reader SDK .NET Edition User Guide
 description: This page lists the topics to explore the features of Dynamsoft Barcode Reader .NET Edition.
 keywords: user guide, explore features, .NET
 noTitleIndex: false
@@ -33,6 +33,7 @@ While the SDK has been carefully tuned to provide the best possible performance 
 * [Read images with texture]({{site.features}}read-images-with-texture.html?lang=csharp)
 * [Read images with lots of text]({{site.features}}read-images-with-lots-of-text.html?lang=csharp)
 * [Preprocess images to read difficult barcodes]({{site.features}}preprocess-images.html?lang=csharp)
+* [Automatically detect barcode Region of Interest]({{site.features}}use-region-predetection.html?lang=csharp)
 
 ## Barcode Results
 

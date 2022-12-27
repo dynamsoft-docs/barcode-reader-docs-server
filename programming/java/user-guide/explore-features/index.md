@@ -1,6 +1,6 @@
 ---
 layout: default-layout
-title: Dynamsoft Barcode Reader Java Edition User Guide - Explore Features
+title: Explore Features - Dynamsoft Barcode Reader SDK Java Edition User Guide
 description: This page lists the topics to explore the features of Dynamsoft Barcode Reader Java Edition.
 keywords: user guide, explore features, Java
 noTitleIndex: false
@@ -33,6 +33,7 @@ While the SDK has been carefully tuned to provide the best possible performance 
 * [Read images with texture]({{site.features}}read-images-with-texture.html?lang=java)
 * [Read images with lots of text]({{site.features}}read-images-with-lots-of-text.html?lang=java)
 * [Preprocess images to read difficult barcodes]({{site.features}}preprocess-images.html?lang=java)
+* [Automatically detect barcode Region of Interest]({{site.features}}use-region-predetection.html?lang=java)
 
 ## Barcode Results
 

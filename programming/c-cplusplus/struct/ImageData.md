@@ -1,7 +1,7 @@
 ---
 layout: default-layout
-title: Dynamsoft Barcode Reader C & C++ Struct - ImageData
-description: This page shows the ImageData struct of Dynamsoft Barcode Reader for C & C++ Language.
+title: ImageData Struct - Dynamsoft Barcode Reader SDK C & C++ Edition
+description: This page shows the ImageData struct of Dynamsoft Barcode Reader SDK C & C++ Edition.
 keywords: ImageData, struct, c, c++
 needAutoGenerateSidebar: false
 ---
@@ -80,3 +80,7 @@ ImagePixelFormat tagImageData::format
 ### orientation
 
 The orientation of the image data. The value is the angle that the image needs to be rotated clockwise so it shows correctly on the display in its natural orientation. It can be 0, 90, 180, or 270.
+
+```cpp
+int tagImageData::orientation
+```

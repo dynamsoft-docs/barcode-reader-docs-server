@@ -1,12 +1,60 @@
 ---
 layout: default-layout
-title: Dynamsoft Barcode Reader for Python Language - Release Notes v9.x
-description: This is the release notes page of Dynamsoft Barcode Reader for Python Language v9.x.
+title: Release Notes v9.x - Dynamsoft Barcode Reader SDK Python Edition
+description: This is the release notes page of Dynamsoft Barcode Reader SDK Python Edition v9.x.
 keywords: release notes, python
 needGenerateH3Content: false
 ---
 
-# Release Notes for Python SDK - 9.x
+# Release Notes for Python Edition - 9.x
+
+## 9.6.0 (11/29/2022)
+
+<div class="fold-panel-prefix"></div>
+
+### Version Highlights <i class="fa fa-caret-down"></i>
+
+<div class="fold-panel-start"></div>
+
+{%- include release-notes/product-highlight-9.6.0.md -%}
+
+<div class="fold-panel-end"></div>
+
+### Edition Highlights
+
+- Added duplicate barcode filter feature in video mode. You can implement duplicate filter to ignore duplicate barcodes for a period.
+
+### Changelog
+
+#### New
+
+- Added a property [`orientation`]({{ site.python_class }}FrameDecodingParameters.html#orientation) to class `FrameDecodingParameters` to set the orientation information of the video frame.
+- Added [`orientation`]({{ site.python_class }}ImageData.html#orientation) to class ImageData to set the orientation information.
+- Enabled decoding methods `decode_file()`, `decode_file_stream()` and `decode_base64_string()` to read EXIF data of the given image so that the library can obtain the orientation information of the image file.
+- Added an optional parameter `orientation` to method [`decode_buffer()`]({{site.python_methods}}decode.html#decodebuffer) and [`decode_buffer_manually()`]({{site.python_methods}}decode.html#decode_buffer_manually) to set the orientation information of the image data.
+- Added a property [`transformation_matrix`]({{ site.python_class }}LocalizationResult.html##transformation_matrix) to class `LocalizationResult` so that the library can output a transformation matrix for transforming the localization coordinates to image's natural orientation.
+- Added a method [`transform_coordinates()`]({{site.python_methods}}general.html#transform_coordinates) to support transforming the coordinates of a point based on a given transformation matrix.
+- Added a property [`duplicate_forget_time`]({{ site.python_class }}FrameDecodingParameters.html#duplicate_forget_time) to class `FrameDecodingParameters` to set the time period used to filter out duplicate results found in frames.
+- Added a optional parameter `unique_barcode_callback_func` to method [`start_video_mode`]({{site.java_api}}video.html#start_video_mode) to set callback function to process unique barcode results which is triggered when the library finishes decoding a frame and finds unique barcodes.
+- Added properties [`has_left_row_indicator`]({{ site.python_class }}PDFDetailedResult.html#has_left_row_indicator) and [`has_right_row_indicator`]({{ site.python_class }}PDFDetailedResult.html#has_right_row_indicator) to class `PDFDetailedResult` to return whether the left and right row indicator of the PDF417 barcode is detected.
+- Added a member `BF2_ALL` to enumeration [`BarcodeFormatIds_2`]({{ site.python_enumerations }}format-enums.html#barcodeformat_2) to support setting all barcode formats in BarcodeFormat group 2 with one enumeration.
+- Extended the features of parameter `DeformationResistingModes`:
+  - Extended the valid mode arguments of `DRM_BROAD_WARP`, `DRM_LOCAL_REFERENCE` and `DRM_DEWRINKLE` with two new arguments: [`GrayscaleEnhancementMode`]({{site.parameters_reference}}deformation-resisting-modes.html#grayscaleenhancementmode) and [`BinarizationMode`]({{site.parameters_reference}}deformation-resisting-modes.html#binarizationmode).
+  - Supported mode [`DRM_AUTO`]({{site.parameters_reference}}deformation-resisting-modes.html#drm_auto).
+
+#### Improved
+
+- Improved the accuracy when processing multiple QR codes.
+- Improved the processing speed by excluding incorrectly located barcode zones before decoding.
+- Improved the creation, destruction and acquisition logic of concurrent instances.
+- Improved the accuracy of EAN8 localization result(s).
+- Improved the localization of mirrored DataMatrix barcode by implementing `MirrorMode`.
+
+#### Fixed
+
+- Fixed a bug that DotCodes might not be decoded when they are densely arranged.
+- Fixed a crash bug when trying to output a template which included `BarcodeTextRegExPattern`.
+- Other small fixes and tweaks.
 
 ## 9.4.0 (08/30/2022)
 

@@ -1,7 +1,7 @@
 ---
 layout: default-layout
-title: Dynamsoft Barcode Reader .NET API Reference - BarcodeReader General Methods
-description: This page shows BarcodeReader general methods of Dynamsoft Barcode Reader for .NET SDK.
+title: BarcodeReader General Methods - Dynamsoft Barcode Reader SDK .NET Edition API Reference
+description: This page shows BarcodeReader general methods of Dynamsoft Barcode Reader SDK .NET Edition.
 keywords: GetVersion, general methods, BarcodeReader, api reference, .Net
 needAutoGenerateSidebar: true
 ---
@@ -40,7 +40,7 @@ static Point Dynamsoft.DBR.BarcodeReader.TransformCoordinates(Point originalPoin
 
 **Parameters**  
 
-`[in] originalPoint` : The original point that needs to be transformed.
+`[in] originalPoint` : The original point that needs to be transformed.  
 `[in] transformationMatrix` : The 3x3 matrix used for coordinate transformation.
 
 **Return Value**  

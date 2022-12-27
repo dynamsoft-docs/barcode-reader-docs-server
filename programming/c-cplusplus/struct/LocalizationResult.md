@@ -1,7 +1,7 @@
 ---
 layout: default-layout
-title: Dynamsoft Barcode Reader C & C++ Struct - LocalizationResult
-description: This page shows the LocalizationResult struct of Dynamsoft Barcode Reader for C & C++ Language.
+title: LocalizationResult Struct - Dynamsoft Barcode Reader SDK C & C++ Edition
+description: This page shows the LocalizationResult struct of Dynamsoft Barcode Reader SDK C & C++ Edition.
 keywords: LocalizationResult, struct, c, c++
 needAutoGenerateSidebar: false
 ---
@@ -25,7 +25,7 @@ typedef struct tagLocalizationResult*  PLocalizationResult
 | [`terminatePhase`](#terminatephase) | [`TerminatePhase`]({{ site.enumerations }}parameter-mode-enums.html#terminatephase) |
 | [`barcodeFormat`](#barcodeformat) | [`BarcodeFormat`]({{ site.enumerations }}format-enums.html#barcodeformat) |
 | [`barcodeFormatString`](#barcodeformatstring) | *const char \** |
-| [`barcodeFormat_2 `](#barcodeformat_2 ) | [`BarcodeFormat_2 `]({{ site.enumerations }}format-enums.html#barcodeformat_2) |
+| [`barcodeFormat_2`](#barcodeformat_2 ) | [`BarcodeFormat_2`]({{ site.enumerations }}format-enums.html#barcodeformat_2) |
 | [`barcodeFormatString_2`](#barcodeformatstring_2) | *const char \** |
 | [`x1`](#x1) | *int* |
 | [`y1`](#y1) | *int* |
@@ -179,6 +179,7 @@ double tagLocalizationResult::transformationMatrix[9]
 ```
 
 ### reserved
+
 Reserved memory for the struct. The length of this array indicates the size of the memory reserved for this struct.
 ```cpp
 char tagLocalizationResult::reserved[52]

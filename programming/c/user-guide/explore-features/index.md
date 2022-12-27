@@ -1,16 +1,16 @@
 ---
 layout: default-layout
-title: Dynamsoft Barcode Reader C Edition User Guide - Explore Features
-description: This page lists the topics to explore the features of Dynamsoft Barcode Reader C Edition.
+title: Explore Features - Dynamsoft Barcode Reader SDK C Edition User Guide
+description: This page lists the topics to explore the features of Dynamsoft Barcode Reader SDK C Edition.
 keywords: user guide, explore features, c
 noTitleIndex: false
 ---
 
 # Explore Features
 
-Once you have got an application running with Dynamsoft Barcode Reader C edition, you can explore the many features of the SDK to see how to make the best out of the SDK.
+Once you have got an application running with Dynamsoft Barcode Reader SDK C Edition, you can explore the many features of the SDK to see how to make the best out of the SDK.
 
-> If you are just getting started with Dynamsoft Barcode Reader C Edition, we recommend that you read [Getting Started]({{site.c}}user-guide.html) first.
+> If you are just getting started with Dynamsoft Barcode Reader SDK C Edition, we recommend that you read [Getting Started]({{site.c}}user-guide.html) first.
 
 ## Basic Features
 
@@ -33,6 +33,7 @@ While the SDK has been carefully tuned to provide the best possible performance 
 * [Read images with texture]({{site.features}}read-images-with-texture.html?lang=c)
 * [Read images with lots of text]({{site.features}}read-images-with-lots-of-text.html?lang=c)
 * [Preprocess images to read difficult barcodes]({{site.features}}preprocess-images.html?lang=c)
+* [Automatically detect barcode Region of Interest]({{site.features}}use-region-predetection.html?lang=c)
 
 ## Barcode Results
 

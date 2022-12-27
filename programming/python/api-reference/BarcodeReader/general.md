@@ -1,6 +1,6 @@
 ---
 layout: default-layout
-title: Dynamsoft Barcode Reader Python API Reference - BarcodeReader LiceGeneralnse Methods
+title: BarcodeReader LiceGeneralnse Methods - Dynamsoft Barcode Reader SDK Python Edition API Reference
 description: This page shows BarcodeReader General Methods of Dynamsoft Barcode Reader Python Edition.
 keywords: transform_coordinates, BarcodeReader, api reference, python
 needAutoGenerateSidebar: true
@@ -23,7 +23,8 @@ BarcodeReader.transform_coordinates(original_point, transformation_matrix)
 
 **Parameters**  
 
-`[in] original_point` <*class Point*>: The original point that needs to be transformed.
+`[in] original_point` <*class Point*>: The original point that needs to be transformed.  
+
 `[in] transformation_matrix` <*list\<double\>*>: The 3x3 matrix used for coordinate transformation.
 
 **Return Value**  

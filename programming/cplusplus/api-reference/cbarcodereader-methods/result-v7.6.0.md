@@ -1,7 +1,7 @@
 ---
 layout: default-layout
-title: Dynamsoft Barcode Reader C++ API Reference - CBarcodeReader Result Methods
-description: This page shows CBarcodeReader Result methods of Dynamsoft Barcode Reader for C++ Language.
+title: CBarcodeReader Result Methods - Dynamsoft Barcode Reader SDK C++ Edition API Reference
+description: This page shows CBarcodeReader Result methods of Dynamsoft Barcode Reader SDK C++ Edition.
 keywords: GetAllTextResults, FreeTextResults, GetIntermediateResults, FreeIntermediateResults, result methods, CBarcodeReader, api reference, c++
 needAutoGenerateSidebar: true
 ---

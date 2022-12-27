@@ -1,6 +1,6 @@
 ---
 layout: default-layout
-title: Dynamsoft Barcode Reader SDK Python Edition - Samples
+title: Samples - Dynamsoft Barcode Reader SDK Python Edition
 description: Sample list page of Dynamsoft Barcode Reader Python Edition.
 keywords: python
 needAutoGenerateSidebar: false

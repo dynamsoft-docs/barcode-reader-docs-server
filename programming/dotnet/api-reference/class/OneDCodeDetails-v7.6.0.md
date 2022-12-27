@@ -1,7 +1,7 @@
 ---
 layout: default-layout
-title: Dynamsoft Barcode Reader .NET API Reference - OneDCodeDetails Class
-description: This page shows the OneDCodeDetails Class of Dynamsoft Barcode Reader for .NET SDK.
+title: OneDCodeDetails Class - Dynamsoft Barcode Reader SDK .NET Edition API Reference
+description: This page shows the OneDCodeDetails Class of Dynamsoft Barcode Reader SDK .NET Edition.
 keywords: OneDCodeDetails, class, api reference, .Net
 needAutoGenerateSidebar: false
 ---

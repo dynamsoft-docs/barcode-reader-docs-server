@@ -1,7 +1,7 @@
 ---
 layout: default-layout
-title: Dynamsoft Barcode Reader Java API Reference - BarcodeReader Result Methods
-description: This page shows BarcodeReader Result methods of Dynamsoft Barcode Reader for Java SDK API Reference.
+title: BarcodeReader Result Methods - Dynamsoft Barcode Reader SDK Java Edition API Reference
+description: This page shows BarcodeReader Result methods of Dynamsoft Barcode Reader SDK Java Edition API Reference.
 keywords: getIntermediateResults, result methods, BarcodeReader, api reference, java
 needAutoGenerateSidebar: true
 ---

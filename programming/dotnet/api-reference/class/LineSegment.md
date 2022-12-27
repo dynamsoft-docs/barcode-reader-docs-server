@@ -1,7 +1,7 @@
 ---
 layout: default-layout
-title: Dynamsoft Barcode Reader .NET API Reference - LineSegment Class
-description: This page shows the LineSegment Class of Dynamsoft Barcode Reader for .NET SDK.
+title: LineSegment Class - Dynamsoft Barcode Reader SDK .NET Edition API Reference
+description: This page shows the LineSegment Class of Dynamsoft Barcode Reader SDK .NET Edition.
 keywords: LineSegment, class, api reference, .Net
 needAutoGenerateSidebar: false
 ---

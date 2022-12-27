@@ -1,7 +1,7 @@
 ---
 layout: default-layout
-title: Dynamsoft Barcode Reader Java API Reference - BarcodeReader General Methods
-description: This page shows BarcodeReader general methods of Dynamsoft Barcode Reader for Java SDK API Reference.
+title: BarcodeReader General Methods - Dynamsoft Barcode Reader SDK Java Edition API Reference
+description: This page shows BarcodeReader general methods of Dynamsoft Barcode Reader SDK Java Edition API Reference.
 keywords: getVersion, general methods, BarcodeReader, api reference, java
 needAutoGenerateSidebar: true
 ---

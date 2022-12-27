@@ -1,7 +1,7 @@
 ---
 layout: default-layout
-title: Dynamsoft Barcode Reader Python API Reference - PublicRuntimeSetting Class
-description: This page shows the PublicRuntimeSetting Class of Dynamsoft Barcode Reader for Python SDK.
+title: PublicRuntimeSetting Class - Dynamsoft Barcode Reader SDK Python Edition API Reference
+description: This page shows the PublicRuntimeSetting Class of Dynamsoft Barcode Reader SDK Python Edition.
 keywords: PublicRuntimeSetting, class, api reference, python
 needAutoGenerateSidebar: false
 ---

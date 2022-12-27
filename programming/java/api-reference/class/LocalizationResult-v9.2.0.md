@@ -1,7 +1,7 @@
 ---
 layout: default-layout
-title: Dynamsoft Barcode Reader Java API Reference - LocalizationResult Class
-description: This page shows the LocalizationResult Class of Dynamsoft Barcode Reader for Java SDK API Reference.
+title: LocalizationResult Class - Dynamsoft Barcode Reader SDK Java Edition API Reference
+description: This page shows the LocalizationResult Class of Dynamsoft Barcode Reader SDK Java Edition API Reference.
 keywords: LocalizationResult, class, api reference, java
 needAutoGenerateSidebar: false
 ---

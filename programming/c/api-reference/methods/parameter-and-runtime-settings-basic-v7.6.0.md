@@ -1,7 +1,7 @@
 ---
 layout: default-layout
-title: Dynamsoft Barcode Reader C Language API Reference - Parameter and Runtime Settings Basic Methods
-description: This page shows basic Runtime Settings methods of Dynamsoft Barcode Reader for C Language.
+title: Parameter and Runtime Settings Basic Methods - Dynamsoft Barcode Reader SDK C Edition API Reference
+description: This page shows basic Runtime Settings methods of Dynamsoft Barcode Reader SDK C Edition.
 keywords: DBR_SetModeArgument, DBR_GetModeArgument, DBR_GetRuntimeSettings, DBR_UpdateRuntimeSettings, DBR_ResetRuntimeSettings, parameter and runtime settings basic methods, api reference, c
 needAutoGenerateSidebar: true
 ---

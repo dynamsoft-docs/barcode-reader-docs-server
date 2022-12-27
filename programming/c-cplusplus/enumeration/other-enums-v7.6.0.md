@@ -1,6 +1,6 @@
 ---
 layout: default-layout
-title: Other Enumerations - Dynamsoft Barcode Reader C/C++ Edition
+title: Other Enumerations - Dynamsoft Barcode Reader SDK C/C++ Edition
 description: This article shows other Enumerations of Dynamsoft Barcode Reader.
 keywords: ImagePixelFormat, QRCodeErrorCorrectionLevel, other enumeration, enumeration
 needGenerateH3Content: false
