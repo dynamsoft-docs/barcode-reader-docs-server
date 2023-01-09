@@ -12,11 +12,9 @@ needAutoGenerateSidebar: true
   | Method               | Description |
   |----------------------|-------------|
   | [`InitLicense`](#initlicense) | Initializes license key and activate the SDK. |
-  | [`GetDeviceUUID`](#getdeviceuuid) | Gets the device uuid used for license activating. |
-  | [`GetIdleInstancesCount`](#getidleinstancescount) | Gets available instances count when charging by concurrent instances count. |
   | [`IsInstanceValid`](#isinstancevalid) | Gets whether the instance is valid when charging by concurrent instances count. |
+  | [`GetIdleInstancesCount`](#getidleinstancescount) | Gets available instances count when charging by concurrent instances count. |
   | [`SetDeviceFriendlyName`](#setdevicefriendlyname) | Sets a human-readable name that identifies the device. |
-  | [`SetLicenseCachePath`](#setlicensecachepath) | Sets a directory path for saving the license cache. |
   | [`SetMaxConcurrentInstanceCount`](#setmaxconcurrentinstancecount) | Sets the max concurrent instance count used for current device and process. |
   | [`InitLicenseFromServer`](#initlicensefromserver) | `Deprecated` |
   | [`InitLicenseFromLicenseContent`](#initlicensefromlicensecontent) | `Deprecated` |
@@ -50,22 +48,6 @@ BarcodeReader.InitLicense("YOUR-LICENSE-KEY", out errorMsg);
 BarcodeReader reader = new BarcodeReader();
 // add further process
 ```
-
-## GetDeviceUUID
-
-Gets the device uuid used for license activating.
-
-```csharp
-static string Dynamsoft.DBR.BarcodeReader.GetDeviceUUID(EnumDMUUIDGenerationMethod uuidGenerationMethod)
-```
-
-**Parameters**
-
-`[in] uuidGenerationMethod` The method used to generate the UUID.
-
-**Return Value**
-
-Returns the result UUID.
 
 ## IsInstanceValid
 
@@ -139,32 +121,6 @@ Returns error code (returns DBR_SUCCESS if the function operates successfully).
 ```csharp
 string errorMsg;
 BarcodeReader.SetDeviceFriendlyName("My-PC");
-BarcodeReader.InitLicense("YOUR-LICENSE-KEY", out errorMsg);
-BarcodeReader reader = new BarcodeReader();
-// add further process
-```
-
-## SetLicenseCachePath
-
-Sets a directory path for saving the license cache.
-
-```csharp
-static EnumErrorCode Dynamsoft.DBR.BarcodeReader.SetLicenseCachePath(string directoryPath)
-```
-
-**Parameters**
-
-`[in] directoryPath` The directory path where to save the license cache.
-
-**Return Value**
-
-Returns error code.
-
-**Code Snippet**
-
-```csharp
-string errorMsg;
-BarcodeReader.SetLicenseCachePath("DIRECTORY-PATH-FOR-LICENSE-CACHE");
 BarcodeReader.InitLicense("YOUR-LICENSE-KEY", out errorMsg);
 BarcodeReader reader = new BarcodeReader();
 // add further process

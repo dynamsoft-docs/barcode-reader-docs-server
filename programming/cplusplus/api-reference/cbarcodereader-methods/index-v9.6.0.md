@@ -23,11 +23,9 @@ needAutoGenerateSidebar: true
   | Method               | Description |
   |----------------------|-------------|
   | [`InitLicense`](license.md#initlicense) | Initializes license key and activate the SDK. |
-  | [`GetDeviceUUID`](license.md#getdeviceuuid) | Gets the device uuid used for license activating. |
-  | [`GetIdleInstancesCount`](license.md#getidleinstancescount) | Gets available instances count when charging by concurrent instances count. |
   | [`IsInstanceValid`](license.md#isinstancevalid) | Gets whether the instance is valid when charging by concurrent instances count. |
+  | [`GetIdleInstancesCount`](license.md#getidleinstancescount) | Gets available instances count when charging by concurrent instances count. |
   | [`SetDeviceFriendlyName`](license.md#setdevicefriendlyname) | Sets a human-readable name that identifies the device. |
-  | [`SetLicenseCachePath`](license.md#setlicensecachepath) | Sets a directory path for saving the license cache. |
   | [`SetMaxConcurrentInstanceCount`](license.md#setmaxconcurrentinstancecount) | Sets the max concurrent instance count used for current device and process. |
   | [`InitLicenseFromServer`](license.md#initlicensefromserver) | `Deprecated` |
   | [`InitLicenseFromLicenseContent`](license.md#initlicensefromlicensecontent) | `Deprecated` |
@@ -105,7 +103,6 @@ needAutoGenerateSidebar: true
   | [`GetErrorString`](general.md#geterrorstring) | Get error message by error code.|
   | [`GetVersion`](general.md#getversion) | Get version information of SDK.|
   | [`TransformCoordinates`](general.md#transformcoordinates) | Transform the coordinates of a point based on the given transformation matrix. |
-  | [`FreeString`](general.md#freestring) | Free memory allocated for string. |
    
       
 

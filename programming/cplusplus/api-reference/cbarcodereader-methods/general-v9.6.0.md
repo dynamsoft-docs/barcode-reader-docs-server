@@ -13,7 +13,6 @@ needAutoGenerateSidebar: true
   | [`GetErrorString`](#geterrorstring) | Get error message by error code.|
   | [`GetVersion`](#getversion) | Get version information of SDK.|
   | [`TransformCoordinates`](#transformcoordinates) | Transform the coordinates of a point based on the given transformation matrix. |
-  | [`FreeString`](#freestring) | Free memory allocated for string. |
 
 ## GetErrorString
 
@@ -78,15 +77,3 @@ The point after transformation.
 //get originalPoint and transformationMatrix from LocalizationResult
 DBRPoint targetPoint = CBarcodeReader::TransformCoordinates(originalPoint, transformationMatrix);
 ```
-
-## FreeString
-
-Free memory allocated for string.
-
-```cpp
-static void dynamsoft::dbr::CBarcodeReader::FreeString(char** content)
-```
-
-**Parameters**  
-
-`[in] content` The string needs to be freed.

@@ -29,8 +29,6 @@ needGenerateH3Content: true
   | [`GetIdleInstancesCount`](cbarcodereader-methods/license.md#getidleinstancescount) | Gets available instances count when charging by concurrent instances count. |
   | [`SetDeviceFriendlyName`](cbarcodereader-methods/license.md#setdevicefriendlyname) | Sets a human-readable name that identifies the device. |
   | [`SetMaxConcurrentInstanceCount`](cbarcodereader-methods/license.md#setmaxconcurrentinstancecount) | Sets the max concurrent instance count used for current device and process. |
-  | [`GetDeviceUUID`](cbarcodereader-methods/license.md#getdeviceuuid) | Gets the device uuid used for license activating. |
-  | [`SetLicenseCachePath`](cbarcodereader-methods/license.md#setlicensecachepath) | Sets a directory path for saving the license cache. |
   | [`InitLicenseFromServer`](cbarcodereader-methods/license.md#initlicensefromserver) | `Deprecated` |
   | [`InitLicenseFromLicenseContent`](cbarcodereader-methods/license.md#initlicensefromlicensecontent) | `Deprecated` |
   | [`OutputLicenseToString`](cbarcodereader-methods/license.md#outputlicensetostring) | `Deprecated` |
@@ -105,8 +103,7 @@ needGenerateH3Content: true
   | [`GetErrorString`](cbarcodereader-methods/general.md#geterrorstring) | Get error message by error code.|
   | [`GetVersion`](cbarcodereader-methods/general.md#getversion) | Get version information of SDK.|
   | [`TransformCoordinates`](cbarcodereader-methods/general.md#transformcoordinates) | Transform the coordinates of a point based on the given transformation matrix. |
-  | [`FreeString`](cbarcodereader-methods/general.md#freestring) | Free memory allocated for string. |
-
+   
    
 ### Video Methods
 

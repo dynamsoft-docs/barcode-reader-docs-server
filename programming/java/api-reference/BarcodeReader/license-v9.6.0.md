@@ -12,11 +12,9 @@ needAutoGenerateSidebar: true
   | Method               | Description |
   |----------------------|-------------|
   | [`initLicense`](#initlicense) | Initializes license key and activate the SDK. |
-  | [`getDeviceUUID`](#getdeviceuuid) | Gets the device uuid used for license activating. |
-  | [`getIdleInstancesCount`](#getidleinstancescount) | Gets available instances count when charging by concurrent instances count. |
   | [`isInstanceValid`](#isinstancevalid) | Gets whether the instance is valid when charging by concurrent instances count. |
+  | [`getIdleInstancesCount`](#getidleinstancescount) | Gets available instances count when charging by concurrent instances count. |
   | [`setDeviceFriendlyName`](#setdevicefriendlyname) | Sets a human-readable name that identifies the device. |
-  | [`setLicenseCachePath`](#setlicensecachepath) | Sets a directory path for saving the license cache. |
   | [`setMaxConcurrentInstanceCount`](#setmaxconcurrentinstancecount) | Sets the max concurrent instance count used for current device and process. |
   | [`initLicenseFromServer`](#initlicensefromserver) | `Deprecated` |
   | [`initLicenseFromLicenseContent`](#initlicensefromlicensecontent) | `Deprecated` |
@@ -50,53 +48,6 @@ BarcodeReader.initLicense("YOUR-LICENSE-KEY");
 BarcodeReader reader = new BarcodeReader();
 // add further process
 ```
-
-## getDeviceUUID
-
-Gets the device uuid used for license activating.
-
-```java
-static String com.dynamsoft.dbr.BarcodeReader.getDeviceUUID(int uuidGenerationMethod) throws BarcodeReaderException
-```
-
-**Parameters**  
-
-`uuidGenerationMethod` The method used to generate the UUID.
-
-- 1: Generates UUID with random values.
-- 2: Generates UUID based on hardware info.
-
-**Exception**  
-
-[`BarcodeReaderException`](../class/BarcodeReaderException.md)
-
-
-## setLicenseCachePath
-
-Sets a directory path for saving the license cache.
-
-```java
-static void com.dynamsoft.dbr.BarcodeReader.setLicenseCachePath(String directoryPath) throws BarcodeReaderException
-```
-
-**Parameters**
-
-`directoryPath` The directory path where to save the license cache.
-
-**Exception**
-
-[`BarcodeReaderException`](../class/BarcodeReaderException.md)
-
-**Code Snippet**
-
-```java
-BarcodeReader.setLicenseCachePath("DIRECTORY-PATH-FOR-LICENSE-CACHE");
-BarcodeReader.initLicense("YOUR-LICENSE-KEY");
-BarcodeReader reader = new BarcodeReader();
-// add further process
-```
-
-
 
 ## isInstanceValid
 
