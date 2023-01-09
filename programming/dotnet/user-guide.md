@@ -51,8 +51,7 @@ Let's start by creating a console application which demonstrates how to use the 
 1. Follow one of the below steps to add Dynamsoft Barcode Reader SDK to your project.
    - Right click on Project -> Add -> Reference, Browse to `[INSTALLATION FOLDER]\Lib\4.0` and Select `Dynamsoft.BarcodeReader.dll` and `DynamsoftCommon.dll`.
    >Browse to `[INSTALLATION FOLDER]\Lib\2.0` if you want to use .NET Framework 2.0.
-   - Right click on Project -> Manage NuGet Packages, Search and Install package `Dynamsoft.DotNet.Barcode`.
-   - If you are developing using .NET Core, click on Project -> Manage NuGet Packages, Search and Install package `Dynamsoft.NetCoreApp.Barcode`.
+   - Right click on Project -> Manage NuGet Packages, search and install package `Dynamsoft.DotNet.Barcode`.
 
 2. Add the namespace in `Program.cs`.
 
