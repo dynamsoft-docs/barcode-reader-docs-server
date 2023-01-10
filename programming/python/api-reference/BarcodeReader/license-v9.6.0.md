@@ -12,11 +12,9 @@ needAutoGenerateSidebar: true
   | Method               | Description |
   |----------------------|-------------|
   | [`init_license`](#init_license) | Reads product key and activates the SDK.  |
-  | [`get_device_uuid`](#get_device_uuid) | Gets the device uuid used for license activating. |
-  | [`get_idle_instances_count`](#get_idle_instances_count) | Gets available instances count when charging by concurrent instances count. |
   | [`is_instance_valid`](#is_instance_valid) | Gets whether the instance is valid when charging by concurrent instances count. |
+  | [`get_idle_instances_count`](#get_idle_instances_count) | Gets available instances count when charging by concurrent instances count. |
   | [`set_device_friendly_name`](#set_device_friendly_name) | Sets a human-readable name that identifies the device. |
-  | [`set_license_cache_path`](#set_license_cache_path) | Sets a directory path for saving the license cache. |
   | [`set_max_concurrent_instance_count`](#set_max_concurrent_instance_count) | Sets the max concurrent instance count used for current device and process. |
   | [`init_license_from_server`](#init_license_from_server) | `Deprecated` |
   | [`init_license_from_license_content`](#init_license_from_license_content) | `Deprecated` |
@@ -43,39 +41,6 @@ BarcodeReader.init_license(dbr_license)
 
 `error` <*tuple*> : error_code = error[0], error_message = error[1], if error_code != EnumErrorCode.DBR_OK, you can get the detailed error message by error_message.
 
-## get_device_uuid
-
-Gets the device uuid used for license activating.
-
-```python
-BarcodeReader.get_device_uuid(uuidGenerationMethod)
-```
-
-**Parameters**
-
-`[in] uuidGenerationMethod` <*int*> The method used to generate the UUID.
-
-- 1: Generates UUID with random values.
-- 2: Generates UUID based on hardware info.
-
-**Return Value**
-
-`uuid` <*str*> : The result UUID.
-
-## get_idle_instances_count
-
-Gets available instances count when charging by concurrent instances count.
-
-```python
-BarcodeReader.get_idle_instances_count()
-```   
-
-**Return Value**  
-`count` <*int*> : Returns available instances count.    
-- 0: There is no space for new instance  
-- -1: The available count needs to be updated from server by calling initLicense.
-- N ( N > 0 ): N more instances can be created.
-
 ## is_instance_valid
 
 Gets whether the instance is valid when charging by concurrent instances count.
@@ -95,6 +60,19 @@ Returns an int value indicating whether the instance is valid for running on con
 
 This method is meaningful only when using a license charged by concurrent instances count.
 
+## get_idle_instances_count
+Gets available instances count when charging by concurrent instances count.
+
+```python
+BarcodeReader.get_idle_instances_count()
+```   
+
+**Return Value**  
+`count` <*int*> : Returns available instances count.    
+- 0: There is no space for new instance  
+- -1: The available count needs to be updated from server by calling initLicense.
+- N ( N > 0 ): N more instances can be created.
+
 ## set_device_friendly_name
 
 Sets a human-readable name that identifies the device.
@@ -110,23 +88,6 @@ BarcodeReader.set_device_friendly_name(name)
 **Return Value**  
 
 `error` <*int*> :  EnumErrorCode.
-
-## set_license_cache_path
-
-Sets a directory path for saving the license cache.
-
-```python
-BarcodeReader.set_license_cache_path(directory_path)
-```
-
-**Parameters**
-
-`[in] directoryPath` <*str*> : The directory path where to save the license cache.
-
-**Return Value**
-
-`error_code` <*int*> : The error code.
-
 
 ## set_max_concurrent_instance_count
 

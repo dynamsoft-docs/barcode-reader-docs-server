@@ -12,11 +12,9 @@ needAutoGenerateSidebar: true
   | Method               | Description |
   |----------------------|-------------|
   | [`initLicense`](#initlicense) | Initializes license key and activate the SDK. |
-  | [`getDeviceUUID`](#getdeviceuuid) | Gets the device uuid used for license activating. |
-  | [`getIdleInstancesCount`](#getidleinstancescount) | Gets available instances count when charging by concurrent instances count. |
   | [`isInstanceValid`](#isinstancevalid) | Gets whether the instance is valid when charging by concurrent instances count. |
+  | [`getIdleInstancesCount`](#getidleinstancescount) | Gets available instances count when charging by concurrent instances count. |
   | [`setDeviceFriendlyName`](#setdevicefriendlyname) | Sets a human-readable name that identifies the device. |
-  | [`setLicenseCachePath`](#setlicensecachepath) | Sets a directory path for saving the license cache. |
   | [`setMaxConcurrentInstanceCount`](#setmaxconcurrentinstancecount) | Sets the max concurrent instance count used for current device and process. |
   | [`initLicenseFromServer`](#initlicensefromserver) | `Deprecated` |
   | [`initLicenseFromLicenseContent`](#initlicensefromlicensecontent) | `Deprecated` |
@@ -51,24 +49,24 @@ BarcodeReader reader = new BarcodeReader();
 // add further process
 ```
 
-## getDeviceUUID
+## isInstanceValid
 
-Gets the device uuid used for license activating.
+Gets whether the instance is valid when charging by concurrent instances count.
 
 ```java
-static String com.dynamsoft.dbr.BarcodeReader.getDeviceUUID(int uuidGenerationMethod) throws BarcodeReaderException
+int com.dynamsoft.dbr.BarcodeReader.isInstanceValid()
 ```
 
-**Parameters**  
+**Return Value**
 
-`uuidGenerationMethod` The method used to generate the UUID.
+Returns an int value indicating whether the instance is valid for running on concurrent instance mode.
 
-- 1: Generates UUID with random values.
-- 2: Generates UUID based on hardware info.
+- 0: The instance is not valid for running on concurrent instance mode.
+- 1: The instance is valid for running on concurrent instance mode.
 
-**Exception**  
+**Remarks**
 
-[`BarcodeReaderException`](../class/BarcodeReaderException.md)
+This method is meaningful only when using a license charged by concurrent instances count.
 
 ## getIdleInstancesCount
 
@@ -106,26 +104,6 @@ if(count = 0)
 }
 ```
 
-
-## isInstanceValid
-
-Gets whether the instance is valid when charging by concurrent instances count.
-
-```java
-int com.dynamsoft.dbr.BarcodeReader.isInstanceValid()
-```
-
-**Return Value**
-
-Returns an int value indicating whether the instance is valid for running on concurrent instance mode.
-
-- 0: The instance is not valid for running on concurrent instance mode.
-- 1: The instance is valid for running on concurrent instance mode.
-
-**Remarks**
-
-This method is meaningful only when using a license charged by concurrent instances count.
-
 ## setDeviceFriendlyName
 
 Sets a human-readable name that identifies the device.
@@ -146,31 +124,6 @@ static void com.dynamsoft.dbr.BarcodeReader.setDeviceFriendlyName(String name) t
 
 ```java
 BarcodeReader.setDeviceFriendlyName("My-PC");
-BarcodeReader.initLicense("YOUR-LICENSE-KEY");
-BarcodeReader reader = new BarcodeReader();
-// add further process
-```
-
-## setLicenseCachePath
-
-Sets a directory path for saving the license cache.
-
-```java
-static void com.dynamsoft.dbr.BarcodeReader.setLicenseCachePath(String directoryPath) throws BarcodeReaderException
-```
-
-**Parameters**
-
-`directoryPath` The directory path where to save the license cache.
-
-**Exception**
-
-[`BarcodeReaderException`](../class/BarcodeReaderException.md)
-
-**Code Snippet**
-
-```java
-BarcodeReader.setLicenseCachePath("DIRECTORY-PATH-FOR-LICENSE-CACHE");
 BarcodeReader.initLicense("YOUR-LICENSE-KEY");
 BarcodeReader reader = new BarcodeReader();
 // add further process

@@ -11,11 +11,9 @@ needAutoGenerateSidebar: true
   | Function               | Description |
   |----------------------|-------------|
   | [`DBR_InitLicense`](#dbr_initlicense) | Initializes license key and activate the SDK. |
-  | [`DBR_GetDeviceUUID`](#dbr_getdeviceuuid) | Gets the device uuid used for license activating. |
-  | [`DBR_GetIdleInstancesCount`](#dbr_getidleinstancescount) | Gets available instances count when charging by concurrent instances count. |
   | [`DBR_IsInstanceValid`](#dbr_isinstancevalid) | Gets whether the instance is valid when charging by concurrent instances count. |
+  | [`DBR_GetIdleInstancesCount`](#dbr_getidleinstancescount) | Gets available instances count when charging by concurrent instances count. |
   | [`DBR_SetDeviceFriendlyName`](#dbr_setdevicefriendlyname) | Sets a human-readable name that identifies the device. |
-  | [`DBR_SetLicenseCachePath`](#dbr_setlicensecachepath) | Sets a directory path for saving the license cache. |
   | [`DBR_SetMaxConcurrentInstanceCount`](#dbr_setmaxconcurrentinstancecount) | Sets the max concurrent instance count used for current device and process. |
   | [`DBR_InitLicenseFromServer`](#dbr_initlicensefromserver) | `Deprecated` |
   | [`DBR_InitLicenseFromLicenseContent`](#dbr_initlicensefromlicensecontent) | `Deprecated` |
@@ -57,33 +55,6 @@ DBR_InitLicense("YOUR-LICENSE-KEY", errorBuf, 512);
 void* barcodeReader = DBR_CreateInstance();
 // add further process
 ```
-
-## DBR_GetDeviceUUID
-
-Gets the device uuid used for license activating.
-
-```c
-DBR_API int DBR_GetDeviceUUID(int uuidGenerationMethod, char ** uuid)
-```
-
-**Parameters**
-
-`[in] uuidGenerationMethod` The method used to generate the UUID.
-
-- 1: Generates UUID with random values.
-- 2: Generates UUID based on hardware info.
-
-`[out] uuid` The result UUID.
-
-**Return Value**
-
-Returns error code (returns 0 if the function operates successfully).
-
-*You can call [`DBR_GetErrorString`](general.md#dbr_geterrorstring) to get detailed error message.*
-
-**Remarks**
-
-The method [DBR_FreeString](general.md#dbr_freestring) needs to be called to release memory allocated for the result UUID.
 
 ## DBR_IsInstanceValid
 
@@ -167,34 +138,6 @@ Returns error code (returns 0 if the function operates successfully).
 ```c
 char errorBuf[512];
 DBR_SetDeviceFriendlyName("My-PC");
-DBR_InitLicense("YOUR-LICENSE-KEY", errorBuf, 512);
-void* barcodeReader = DBR_CreateInstance();
-// add further process
-```
-
-## DBR_SetLicenseCachePath
-
-Sets a directory path for saving the license cache.
-
-```c
-DBR_API int DBR_SetLicenseCachePath(const char* directoryPath)
-```
-
-**Parameters**
-
-`[in] directoryPath` The directory path where to save the license cache.
-
-**Return Value**
-
-Returns error code (returns 0 if the function operates successfully).
-
-*You can call [`DBR_GetErrorString`](general.md#dbr_geterrorstring) to get detailed error message.*
-
-**Code Snippet**
-
-```c
-char errorBuf[512];
-DBR_SetLicenseCachePath("DIRECTORY-PATH-FOR-LICENSE-CACHE");
 DBR_InitLicense("YOUR-LICENSE-KEY", errorBuf, 512);
 void* barcodeReader = DBR_CreateInstance();
 // add further process

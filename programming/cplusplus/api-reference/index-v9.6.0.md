@@ -25,11 +25,9 @@ needGenerateH3Content: true
   | Method               | Description |
   |----------------------|-------------|
   | [`InitLicense`](cbarcodereader-methods/license.md#initlicense) | Initializes license key and activate the SDK. |
-  | [`GetDeviceUUID`](cbarcodereader-methods/license.md#getdeviceuuid) | Gets the device uuid used for license activating. |
-  | [`GetIdleInstancesCount`](cbarcodereader-methods/license.md#getidleinstancescount) | Gets available instances count when charging by concurrent instances count. |
   | [`IsInstanceValid`](cbarcodereader-methods/license.md#isinstancevalid) | Gets whether the instance is valid when charging by concurrent instances count. |
+  | [`GetIdleInstancesCount`](cbarcodereader-methods/license.md#getidleinstancescount) | Gets available instances count when charging by concurrent instances count. |
   | [`SetDeviceFriendlyName`](cbarcodereader-methods/license.md#setdevicefriendlyname) | Sets a human-readable name that identifies the device. |
-  | [`SetLicenseCachePath`](cbarcodereader-methods/license.md#setlicensecachepath) | Sets a directory path for saving the license cache. |
   | [`SetMaxConcurrentInstanceCount`](cbarcodereader-methods/license.md#setmaxconcurrentinstancecount) | Sets the max concurrent instance count used for current device and process. |
   | [`InitLicenseFromServer`](cbarcodereader-methods/license.md#initlicensefromserver) | `Deprecated` |
   | [`InitLicenseFromLicenseContent`](cbarcodereader-methods/license.md#initlicensefromlicensecontent) | `Deprecated` |
@@ -105,8 +103,7 @@ needGenerateH3Content: true
   | [`GetErrorString`](cbarcodereader-methods/general.md#geterrorstring) | Get error message by error code.|
   | [`GetVersion`](cbarcodereader-methods/general.md#getversion) | Get version information of SDK.|
   | [`TransformCoordinates`](cbarcodereader-methods/general.md#transformcoordinates) | Transform the coordinates of a point based on the given transformation matrix. |
-  | [`FreeString`](cbarcodereader-methods/general.md#freestring) | Free memory allocated for string. |
-
+   
    
 ### Video Methods
 

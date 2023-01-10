@@ -37,11 +37,9 @@ needGenerateH3Content: true
   | Method               | Description |
   |----------------------|-------------|
   | [`init_license`](BarcodeReader/license.md#init_license) | Reads product key and activates the SDK.  |
-  | [`get_device_uuid`](BarcodeReader/license.md#get_device_uuid) | Gets the device uuid used for license activating. |
-  | [`get_idle_instances_count`](BarcodeReader/license.md#get_idle_instances_count) | Gets available instances count when charging by concurrent instances count. |
   | [`is_instance_valid`](BarcodeReader/license.md#is_instance_valid) | Gets whether the instance is valid when charging by concurrent instances count. |
+  | [`get_idle_instances_count`](BarcodeReader/license.md#get_idle_instances_count) | Gets available instances count when charging by concurrent instances count. |
   | [`set_device_friendly_name`](BarcodeReader/license.md#set_device_friendly_name) | Sets a human-readable name that identifies the device. |
-  | [`set_license_cache_path`](BarcodeReader/license.md#set_license_cache_path) | Sets a directory path for saving the license cache. |
   | [`set_max_concurrent_instance_count`](BarcodeReader/license.md#set_max_concurrent_instance_count) | Sets the max concurrent instance count used for current device and process. |
   | [`init_license_from_server`](BarcodeReader/license.md#init_license_from_server) | `Deprecated` |
   | [`init_license_from_license_content`](BarcodeReader/license.md#init_license_from_license_content) | `Deprecated` |
@@ -192,5 +190,3 @@ needGenerateH3Content: true
 - [`TextFilterMode`]({{ site.python_enumerations }}parameter-mode-enums.html#textfiltermode)	
 - [`TextResultOrderMode`]({{ site.python_enumerations }}result-enums.html#textresultordermode)	
 - [`TextureDetectionMode`]({{ site.python_enumerations }}parameter-mode-enums.html#texturedetectionmode)
-
-## [Error Code]({{ site.enumerations }}error-code.html)

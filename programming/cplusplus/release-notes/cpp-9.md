@@ -8,6 +8,26 @@ needGenerateH3Content: false
 
 # Release Notes for C++ Edition - 9.x
 
+## 9.6.10 (01/10/2023)
+
+### New
+
+- Added a new method [`SetLicenseCachePath`]({{site.cpp_methods}}license.html#setlicensecachepath) in the `CBarcodeReader` class to support customizing the license cache saving path.
+- Add a new method [`GetDeviceUUID`]({{site.cpp_methods}}license.html#getdeviceuuid) in the `CBarcodeReader` class to support getting device UUID for license activating.
+- Added error code `DMERR_LICENSE_BUFFER_FAILED` to the potential error list of the license activation methods and decode methods. The error code is returned when the directory of the license cache is inaccessible.
+
+### Improved
+
+- Improved the performance of Direct Part Marking (DPM) barcode decoding.
+- Improved the performance of GS1 Databar barcode decoding.
+
+### Fixed
+
+- Fixed a crash bug when using a online license key on ARM64 environment.
+- Fixed a crash bug when using a online license key on the AWS lambda environment.
+- Fixed a bug that some OneD barcodes without start & stop characters are not decoded when parameter [`RequireStartStopChars`]({{site.parameters_reference}}require-start-stop-chars.html) is set to 0.
+- Other small fixes and tweaks.
+
 ## 9.6.0 (11/29/2022)
 
 <div class="fold-panel-prefix"></div>

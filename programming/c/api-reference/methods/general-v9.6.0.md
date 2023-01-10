@@ -13,7 +13,6 @@ needAutoGenerateSidebar: true
   | [`DBR_GetErrorString`](#dbr_geterrorstring) | Get error message by error code. |
   | [`DBR_GetVersion`](#dbr_getversion) | Get version information of SDK. |
   | [`DBR_TransformCoordinates`](#dbr_transformcoordinates) | Transform the coordinate based on the given transformation matrix. |
-  | [`DBR_FreeString`](#dbr_freestring) | Free memory allocated for string. |
 
 ## DBR_GetErrorString
 
@@ -85,15 +84,3 @@ The point after transformation.
 //get originalPoint and transformationMatrix from LocalizationResult
 DBRPoint targetPoint = DBR_TransformCoordinates(originalPoint, transformationMatrix);
 ```
-
-## DBR_FreeString
-
-Free memory allocated for string.
-
-```c
-DBR_API void DBR_FreeString(char** content)
-```
-
-**Parameters** 
- 
-`[in] content` The string needs to be freed.
