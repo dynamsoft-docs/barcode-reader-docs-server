@@ -12,7 +12,6 @@ needGenerateH3Content: false
 
 ### New
 
-- Added support for Python 3.11.
 - Added a new method [`setLicenseCachePath`]({{site.java_methods}}license.html#setlicensecachepath) in the `BarcodeReader` class to support customizing the license cache saving path.
 - Add a new method [`getDeviceUUID`]({{site.java_methods}}license.html#getdeviceuuid) in the `BarcodeReader` class to support getting device UUID for license activating.
 - Added error code `DMERR_LICENSE_BUFFER_FAILED` to the potential error list of the license activation methods and decode methods. The error code is returned when the directory of the license cache is inaccessible.
