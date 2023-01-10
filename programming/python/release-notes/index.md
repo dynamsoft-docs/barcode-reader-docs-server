@@ -9,6 +9,7 @@ breadcrumbText: Release Notes
 
 # Release Notes for Python Edition
 
+- [9.6.10 (01/10/2023)](python-9.md#9610-01102023)
 - [9.6.0 (11/29/2022)](python-9.md#960-11292022)
 - [9.4.0 (08/30/2022)](python-9.md#940-08302022)
 - [9.2.0 (06/21/2022)](python-9.md#920-06212022)
