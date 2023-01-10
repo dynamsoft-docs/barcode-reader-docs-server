@@ -70,53 +70,6 @@ static String com.dynamsoft.dbr.BarcodeReader.getDeviceUUID(int uuidGenerationMe
 
 [`BarcodeReaderException`](../class/BarcodeReaderException.md)
 
-
-## setLicenseCachePath
-
-Sets a directory path for saving the license cache.
-
-```java
-static void com.dynamsoft.dbr.BarcodeReader.setLicenseCachePath(String directoryPath) throws BarcodeReaderException
-```
-
-**Parameters**
-
-`directoryPath` The directory path where to save the license cache.
-
-**Exception**
-
-[`BarcodeReaderException`](../class/BarcodeReaderException.md)
-
-**Code Snippet**
-
-```java
-BarcodeReader.setLicenseCachePath("DIRECTORY-PATH-FOR-LICENSE-CACHE");
-BarcodeReader.initLicense("YOUR-LICENSE-KEY");
-BarcodeReader reader = new BarcodeReader();
-// add further process
-```
-
-
-
-## isInstanceValid
-
-Gets whether the instance is valid when charging by concurrent instances count.
-
-```java
-int com.dynamsoft.dbr.BarcodeReader.isInstanceValid()
-```
-
-**Return Value**
-
-Returns an int value indicating whether the instance is valid for running on concurrent instance mode.
-
-- 0: The instance is not valid for running on concurrent instance mode.
-- 1: The instance is valid for running on concurrent instance mode.
-
-**Remarks**
-
-This method is meaningful only when using a license charged by concurrent instances count.
-
 ## getIdleInstancesCount
 
 Gets the count of available instances when charging by concurrent instances count.
@@ -153,6 +106,26 @@ if(count = 0)
 }
 ```
 
+
+## isInstanceValid
+
+Gets whether the instance is valid when charging by concurrent instances count.
+
+```java
+int com.dynamsoft.dbr.BarcodeReader.isInstanceValid()
+```
+
+**Return Value**
+
+Returns an int value indicating whether the instance is valid for running on concurrent instance mode.
+
+- 0: The instance is not valid for running on concurrent instance mode.
+- 1: The instance is valid for running on concurrent instance mode.
+
+**Remarks**
+
+This method is meaningful only when using a license charged by concurrent instances count.
+
 ## setDeviceFriendlyName
 
 Sets a human-readable name that identifies the device.
@@ -173,6 +146,31 @@ static void com.dynamsoft.dbr.BarcodeReader.setDeviceFriendlyName(String name) t
 
 ```java
 BarcodeReader.setDeviceFriendlyName("My-PC");
+BarcodeReader.initLicense("YOUR-LICENSE-KEY");
+BarcodeReader reader = new BarcodeReader();
+// add further process
+```
+
+## setLicenseCachePath
+
+Sets a directory path for saving the license cache.
+
+```java
+static void com.dynamsoft.dbr.BarcodeReader.setLicenseCachePath(String directoryPath) throws BarcodeReaderException
+```
+
+**Parameters**
+
+`directoryPath` The directory path where to save the license cache.
+
+**Exception**
+
+[`BarcodeReaderException`](../class/BarcodeReaderException.md)
+
+**Code Snippet**
+
+```java
+BarcodeReader.setLicenseCachePath("DIRECTORY-PATH-FOR-LICENSE-CACHE");
 BarcodeReader.initLicense("YOUR-LICENSE-KEY");
 BarcodeReader reader = new BarcodeReader();
 // add further process

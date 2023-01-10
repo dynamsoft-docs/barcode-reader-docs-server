@@ -62,21 +62,19 @@ BarcodeReader.get_device_uuid(uuidGenerationMethod)
 
 `uuid` <*str*> : The result UUID.
 
-## set_license_cache_path
+## get_idle_instances_count
 
-Sets a directory path for saving the license cache.
+Gets available instances count when charging by concurrent instances count.
 
 ```python
-BarcodeReader.set_license_cache_path(directory_path)
-```
+BarcodeReader.get_idle_instances_count()
+```   
 
-**Parameters**
-
-`[in] directoryPath` <*str*> : The directory path where to save the license cache.
-
-**Return Value**
-
-`error_code` <*int*> : The error code.
+**Return Value**  
+`count` <*int*> : Returns available instances count.    
+- 0: There is no space for new instance  
+- -1: The available count needs to be updated from server by calling initLicense.
+- N ( N > 0 ): N more instances can be created.
 
 ## is_instance_valid
 
@@ -97,19 +95,6 @@ Returns an int value indicating whether the instance is valid for running on con
 
 This method is meaningful only when using a license charged by concurrent instances count.
 
-## get_idle_instances_count
-Gets available instances count when charging by concurrent instances count.
-
-```python
-BarcodeReader.get_idle_instances_count()
-```   
-
-**Return Value**  
-`count` <*int*> : Returns available instances count.    
-- 0: There is no space for new instance  
-- -1: The available count needs to be updated from server by calling initLicense.
-- N ( N > 0 ): N more instances can be created.
-
 ## set_device_friendly_name
 
 Sets a human-readable name that identifies the device.
@@ -125,6 +110,23 @@ BarcodeReader.set_device_friendly_name(name)
 **Return Value**  
 
 `error` <*int*> :  EnumErrorCode.
+
+## set_license_cache_path
+
+Sets a directory path for saving the license cache.
+
+```python
+BarcodeReader.set_license_cache_path(directory_path)
+```
+
+**Parameters**
+
+`[in] directoryPath` <*str*> : The directory path where to save the license cache.
+
+**Return Value**
+
+`error_code` <*int*> : The error code.
+
 
 ## set_max_concurrent_instance_count
 
