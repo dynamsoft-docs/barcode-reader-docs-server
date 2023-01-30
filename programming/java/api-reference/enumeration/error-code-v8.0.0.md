@@ -376,35 +376,35 @@ class EnumErrorCode
 
   | Error Code | Value | Description |
   |-------------------|-------------------|-------------|
-  | `DMERR_HANDSHAKE_CODE_INVALID` | -20001 | The handshake code is invalid. |
+  | `DM_HANDSHAKE_CODE_INVALID` | -20001 | The handshake code is invalid. |
  
 ### Error code -20002
 
   | Error Code | Value | Description |
   |-------------------|-------------------|-------------|
-   | `DMERR_LICENSE_BUFFER_FAILED` | -20002 | Failed to read or write license buffer. |
+   | `DM_LICENSE_BUFFER_FAILED` | -20002 | Failed to read or write license buffer. |
   
 ### Error code -20003
 
   | Error Code | Value | Description |
   |-------------------|-------------------|-------------|
-  | `DMERR_LICENSE_SYNC_FAILED` | -20003 | Failed to synchronize license info with license tracking server. |
+  | `DM_LICENSE_SYNC_FAILED` | -20003 | Failed to synchronize license info with license tracking server. |
   
 ### Error code -20004
 
   | Error Code | Value | Description |
   |-------------------|-------------------|-------------|
-  | `DMERR_DEVICE_NOT_MATCH` | -20004 | Device does not match with license buffer. |
+  | `DM_DEVICE_NOT_MATCH` | -20004 | Device does not match with license buffer. |
   
 ### Error code -20005
 
   | Error Code | Value | Description |
   |-------------------|-------------------|-------------|
-  | `DMERR_BIND_DEVICE_FAILED` | -20005 | Failed to bind device. |
+  | `DM_BIND_DEVICE_FAILED` | -20005 | Failed to bind device. |
   
 ### Error code -20006
 
   | Error Code | Value | Description |
   |-------------------|-------------------|-------------|
-  | `DMERR_LICENSE_INTERFACE_CONFLICT` | -20006 | Interface InitLicenseFromLTS can not be used together with other license initiation interfaces. |
+  | `DM_LICENSE_INTERFACE_CONFLICT` | -20006 | Interface InitLicenseFromLTS can not be used together with other license initiation interfaces. |
 

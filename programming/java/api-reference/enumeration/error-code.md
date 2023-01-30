@@ -381,73 +381,73 @@ class EnumErrorCode
 
   | Error Code | Value | Description |
   |-------------------|-------------------|-------------|
-  | `DMERR_NO_LICENSE` | -20000 | No license specified. |
+  | `DM_NO_LICENSE` | -20000 | No license specified. |
 
 ### Error code -20001
 
   | Error Code | Value | Description |
   |-------------------|-------------------|-------------|
-  | `DMERR_HANDSHAKE_CODE_INVALID` | -20001 | The handshake code is invalid. |
+  | `DM_HANDSHAKE_CODE_INVALID` | -20001 | The handshake code is invalid. |
  
 ### Error code -20002
 
   | Error Code | Value | Description |
   |-------------------|-------------------|-------------|
-   | `DMERR_LICENSE_BUFFER_FAILED` | -20002 | Failed to read or write license buffer. |
+   | `DM_LICENSE_BUFFER_FAILED` | -20002 | Failed to read or write license buffer. |
   
 ### Error code -20003
 
   | Error Code | Value | Description |
   |-------------------|-------------------|-------------|
-  | `DMERR_LICENSE_SYNC_FAILED` | -20003 | Failed to synchronize license info with License Server. |
+  | `DM_LICENSE_SYNC_FAILED` | -20003 | Failed to synchronize license info with License Server. |
   
 ### Error code -20004
 
   | Error Code | Value | Description |
   |-------------------|-------------------|-------------|
-  | `DMERR_DEVICE_NOT_MATCH` | -20004 | Device does not match with license buffer. |
+  | `DM_DEVICE_NOT_MATCH` | -20004 | Device does not match with license buffer. |
   
 ### Error code -20005
 
   | Error Code | Value | Description |
   |-------------------|-------------------|-------------|
-  | `DMERR_BIND_DEVICE_FAILED` | -20005 | Failed to bind device. |
+  | `DM_BIND_DEVICE_FAILED` | -20005 | Failed to bind device. |
   
 ### Error code -20006
 
   | Error Code | Value | Description |
   |-------------------|-------------------|-------------|
-  | `DMERR_LICENSE_INTERFACE_CONFLICT` | -20006 | Interface InitLicenseFromDLS can not be used together with other license initiation interfaces. |
+  | `DM_LICENSE_INTERFACE_CONFLICT` | -20006 | Interface InitLicenseFromDLS can not be used together with other license initiation interfaces. |
   
 ### Error code -20007
 
   | Error Code | Value | Description |
   |-------------------|-------------------|-------------|
-  | `DMERR_LICENSE_CLIENT_DLL_MISSING` | -20007 | The license client dll is missing. |
+  | `DM_LICENSE_CLIENT_DLL_MISSING` | -20007 | The license client dll is missing. |
   
 ### Error code -20008
 
   | Error Code | Value | Description |
   |-------------------|-------------------|-------------|
-  | `DMERR_INSTANCE_COUNT_OVER_LIMIT` | -20008 | The number of instances used has exceeded the limit. |
+  | `DM_INSTANCE_COUNT_OVER_LIMIT` | -20008 | The number of instances used has exceeded the limit. |
   
 ### Error code -20009
 
   | Error Code | Value | Description |
   |-------------------|-------------------|-------------|
-  | `DMERR_LICENSE_INIT_SEQUENCE_FAILED` | -20009 | Interface InitLicenseFromDLS has to be called before creating any SDK objects. |
+  | `DM_LICENSE_INIT_SEQUENCE_FAILED` | -20009 | Interface InitLicenseFromDLS has to be called before creating any SDK objects. |
 
 ### Error code -20010
 
   | Error Code | Value | Description |
   |-------------------|-------------------|-------------|
-  | `DMERR_TRIAL_LICENSE` | -20010 | Using a trial license. |
+  | `DM_TRIAL_LICENSE` | -20010 | Using a trial license. |
 
 ### Error code -20200
 
   | Error Code | Value | Description |
   |-------------------|-------------------|-------------|
-  | `DMERR_FAILED_TO_REACH_DLS` | -20200 | Failed to reach License Server. |
+  | `DM_FAILED_TO_REACH_DLS` | -20200 | Failed to reach License Server. |
 
 ### More error codes
 
