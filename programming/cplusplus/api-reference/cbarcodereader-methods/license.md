@@ -207,8 +207,8 @@ static void dynamsoft::dbr::CBarcodeReader::SetMaxConcurrentInstanceCount(int co
 
 ```cpp
 char errorBuf[512];
-int countForThisDevice = 10;
-int countForThisProcess = 10;
+int countForThisDevice = 1; // The count value should be set based on your purchased license count
+int countForThisProcess = 1; // The count value should be set based on your purchased license count
 dynamsoft::dbr::CBarcodeReader::SetMaxConcurrentInstanceCount(countForThisDevice, countForThisProcess);
 dynamsoft::dbr::CBarcodeReader::InitLicense("YOUR-LICENSE-KEY", errorBuf, 512);
 CBarcodeReader* barcodeReader = dynamsoft::dbr::CBarcodeReader::GetInstance();

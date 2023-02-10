@@ -218,8 +218,8 @@ DBR_API void DBR_SetMaxConcurrentInstanceCount(int countForThisDevice, int count
 
 ```c
 char errorBuf[512];
-int countForThisDevice = 10;
-int countForThisProcess = 10;
+int countForThisDevice = 1; // The count value should be set based on your purchased license count
+int countForThisProcess = 1; // The count value should be set based on your purchased license count
 DBR_SetMaxConcurrentInstanceCount(countForThisDevice, countForThisProcess);
 DBR_InitLicense("YOUR-LICENSE-KEY", errorBuf, 512);
 void* barcodeReader = DBR_GetInstance();

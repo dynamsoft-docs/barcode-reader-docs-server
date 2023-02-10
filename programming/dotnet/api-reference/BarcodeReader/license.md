@@ -188,8 +188,8 @@ static void Dynamsoft.DBR.BarcodeReader.SetMaxConcurrentInstanceCount(int countF
 
 ```csharp
 string errorMsg;
-int countForThisDevice = 10;
-int countForThisProcess = 10;
+int countForThisDevice = 1; // The count value should be set based on your purchased license count
+int countForThisProcess = 1; // The count value should be set based on your purchased license count
 BarcodeReader.SetMaxConcurrentInstanceCount(countForThisDevice, countForThisProcess);
 BarcodeReader.InitLicense("YOUR-LICENSE-KEY", out errorMsg);
 BarcodeReader barcodeReader = BarcodeReader.GetInstance();
