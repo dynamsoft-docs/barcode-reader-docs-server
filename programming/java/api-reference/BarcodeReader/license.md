@@ -193,8 +193,8 @@ static void com.dynamsoft.dbr.BarcodeReader.setMaxConcurrentInstanceCount(int co
 **Code Snippet**
 
 ```java
-int countForThisDevice = 10;
-int countForThisProcess = 10;
+int countForThisDevice = 1; // The count value should be set based on your purchased license count
+int countForThisProcess = 1; // The count value should be set based on your purchased license count
 BarcodeReader.setMaxConcurrentInstanceCount(countForThisDevice, countForThisProcess);
 BarcodeReader.initLicense("YOUR-LICENSE-KEY");
 BarcodeReader barcodeReader = BarcodeReader.getInstance();
