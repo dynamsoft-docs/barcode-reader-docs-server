@@ -382,6 +382,11 @@ enum Dynamsoft.DBR.EnumErrorCode
   |-------------------|-------------------|-------------|
   | `DBRERR_PHARMACODE_LICENSE_INVALID` | -10062 | The Pharmacode license is invalid. |
 
+### Error code -10063
+
+  | Error Code | Value | Description |
+  |-------------------|-------------------|-------------|
+  | `DBRERR_IMAGE_ORIENTATION_INVALID` | -10063 | The image orientation is invalid. |
 
 ### Error code -20000
 
