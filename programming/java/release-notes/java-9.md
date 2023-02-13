@@ -51,7 +51,7 @@ needGenerateH3Content: false
 - Added a property [`orientation`]({{ site.java_class }}FrameDecodingParameters.html#orientation) to class `FrameDecodingParameters` to set the orientation information of the video frame.
 - Added [`orientation`]({{ site.java_class }}ImageData.html#orientation) to class ImageData to set the orientation information.
 - Enabled decoding methods `decodeFile()`, `decodeFileinMemory()` and `decodeBase64String()` to read EXIF data of the given image so that the library can obtain the orientation information of the image file.
-- Added a override method [`decodeBuffer()`]({{site.java_methods}}decode.html#decodebuffer) with a new parameter `orientation` to set the orientation information of the image data.
+- Overloaded method [`decodeBuffer()`]({{site.java_methods}}decode.html#decodebuffer) with a new parameter `orientation` to set the orientation information of the image data.
 - Added a property [`transformationMatrix`]({{ site.java_class }}LocalizationResult.html##transformationmatrix) to class `LocalizationResult` so that the library can output a transformation matrix for transforming the localization coordinates to image's natural orientation.
 - Added a method [`transformCoordinates()`]({{site.java_methods}}general.html#transformcoordinates) to support transforming the coordinates of a point based on a given transformation matrix.
 - Added a property [`duplicateForgetTime`]({{ site.java_class }}FrameDecodingParameters.html#duplicateforgettime) to class `FrameDecodingParameters` to set the time period used to filter out duplicate results found in frames.

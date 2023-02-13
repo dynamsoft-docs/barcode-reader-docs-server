@@ -51,7 +51,7 @@ needGenerateH3Content: false
 - Added a property [`orientation`]({{ site.structs }}FrameDecodingParameters.html?src=cpp#orientation) to struct `FrameDecodingParameters` to set the orientation information of the video frame.
 - Added [`orientation`]({{ site.structs }}ImageData.html?src=cpp#orientation) to struct ImageData to set the orientation information.
 - Enabled decoding methods `DecodeFile()`, `DecodeFileinMemory()` and `DecodeBase64String()` to read EXIF data of the given image so that the library can obtain the orientation information of the image file.
-- Added a override method [`DecodeBuffer()`]({{site.cpp_methods}}decode.html#decodebuffer) with a new parameter `orientation` to set the orientation information of the image data.
+- Overloaded method [`DecodeBuffer()`]({{site.cpp_methods}}decode.html#decodebuffer) with a new parameter `orientation` to set the orientation information of the image data.
 - Added a property [`transformationMatrix`]({{ site.structs }}LocalizationResult.html?src=cpp##transformationmatrix) to struct `LocalizationResult` so that the library can output a transformation matrix for transforming the localization coordinates to image's natural orientation.
 - Added a method [`TransformCoordinates()`]({{site.cpp_methods}}general.html#transformcoordinates) to support transforming the coordinates of a point based on a given transformation matrix.
 - Added a property [`duplicateForgetTime`]({{ site.structs }}FrameDecodingParameters.html?src=cpp#duplicateforgettime) to struct `FrameDecodingParameters` to set the time period used to filter out duplicate results found in frames.
