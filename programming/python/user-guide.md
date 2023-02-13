@@ -74,9 +74,22 @@ Import dbr package in the source file.
    reader = BarcodeReader()
    ```
 
+   *However, please note that if you are using a **concurrent instance license**, we suggest using the new APIs [`get_instance`](api-reference/BarcodeReader/constructor-and-destructor.md#get_instance) to initialize the barcode reader instance and then [`recycle`](api-reference/BarcodeReader/constructor-and-destructor.md#recycle) to allow for better concurrent instance management by the library.*
+
+   ```python
+      license_key = 'YOUR-LICENSE-KEY'
+      BarcodeReader.init_license(license_key)
+      barcode_reader = BarcodeReader.get_instance()
+      # If no instance is available right away, the application will wait until one becomes available
+      # Add your code here to call decoding method, process barcode results and so on
+      # ...
+      # Recycle the barcode_reader instance to make it idle for other concurrent tasks
+      barcode_reader.recycle()
+   ```
+
 ### Configure the Barcode Scanning Behavior
 
-DBR provides multiple APIs for you to customize the barcode scanning behavior. Here we set the barcode format and barcode count to read.
+The Barcode Reader SDK comes with a large array of runtime settings to optimize the performance of the library. To learn about all the runtime settings, please visit the [RuntimeSettings](api-reference/class/PublicRuntimeSettings.md) API page. In the following example, we set the barcode format and expected number of barcodes to be found. To learn  more about the cases and situations in which the settings can help, please visit the [Explore Features](user-guide/explore-features/index.md) page.
 
    ```python
    settings = reader.get_runtime_settings()
