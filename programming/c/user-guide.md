@@ -85,9 +85,24 @@ Let's start by creating a console application which demonstrates how to use the 
     void* dbr = DBR_CreateInstance();
     ```
 
+    *However, please note that if you are using a **concurrent instance license**, we suggest using the new APIs [`DBR_GetInstance`](api-reference/methods/initialize-and-destroy.md#dbr_getinstance) to initialize the barcode reader instance and then [`DBR_RecycleInstance`](api-reference/methods/initialize-and-destroy.md#dbr_recycleinstance) to allow for better concurrent instance management by the library.*
+
+    ```c
+    char errorBuf[512];
+    DBR_InitLicense("YOUR-LICENSE-KEY", errorBuf, 512);
+    void* barcodeReader = DBR_GetInstance();
+    // If no instance is available right away, the application will wait until one becomes available
+    // Add your code here to call decoding method, process barcode results and so on
+    // ...
+    // Recycle the barcodeReader instance to make it idle for other concurrent tasks
+    DBR_RecycleInstance(barcodeReader);
+    ```
+
+
+
 ### Configure the Barcode Scanning Behavior
 
-1. Set barcode format and count to read.
+The Barcode Reader SDK comes with a large array of runtime settings to optimize the performance of the library. To learn about all the runtime settings, please visit the [RuntimeSettings](../c-cplusplus/struct/PublicRuntimeSettings.md) API page. In the following example, we set the barcode format and expected number of barcodes to be found. To learn  more about the cases and situations in which the settings can help, please visit the [Explore Features](user-guide/explore-features/index.md) page.
 
     ```c
     char szErrorMsg[512];
