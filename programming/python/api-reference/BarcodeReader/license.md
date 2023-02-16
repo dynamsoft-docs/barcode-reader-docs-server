@@ -148,11 +148,13 @@ BarcodeReader.set_max_concurrent_instance_count(count_for_this_device, count_for
 license_key = 'YOUR-LICENSE-KEY'
 BarcodeReader.set_max_concurrent_instance_count(1,1) # The count value should be set based on your purchased license count
 BarcodeReader.init_license(license_key)
-barcode_reader = BarcodeReader.get_instance()
-# Add your code here to call decoding method, process barcode results and so on
-# ...
-# Recycle the barcode_reader instance to make it idle for other concurrent tasks
-barcode_reader.recycle()
+reader = BarcodeReader.get_instance()
+# If no instance is available right away, the application will wait until one becomes available
+if reader != None:
+   # Add your code here to call decoding method, process barcode results and so on
+   # ...
+   # Recycle the instance to make it idle for other concurrent tasks
+   reader.recycle()
 ```
 
 ## init_license_from_server

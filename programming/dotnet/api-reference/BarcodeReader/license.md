@@ -192,11 +192,15 @@ int countForThisDevice = 1; // The count value should be set based on your purch
 int countForThisProcess = 1; // The count value should be set based on your purchased license count
 BarcodeReader.SetMaxConcurrentInstanceCount(countForThisDevice, countForThisProcess);
 BarcodeReader.InitLicense("YOUR-LICENSE-KEY", out errorMsg);
-BarcodeReader barcodeReader = BarcodeReader.GetInstance();
-// Add your code here to call decoding method, process barcode results and so on
-// ...
-// Recycle the barcodeReader instance to make it idle for other concurrent tasks
-barcodeReader.Recycle();
+BarcodeReader reader = BarcodeReader.GetInstance();
+// If no instance is available right away, the application will wait until one becomes available
+if (reader != null)
+{
+    // Add your code here to call decoding method, process barcode results and so on
+    // ...
+    // Recycle the instance to make it idle for other concurrent tasks
+    reader.Recycle();
+}
 ```
 
 ## InitLicenseFromServer

@@ -47,13 +47,16 @@ Returns an idle Dynamsoft Barcode Reader instance running on concurrent instance
 **Code Snippet**  
 
 ```cpp
-char errorBuf[512];
-dynamsoft::dbr::CBarcodeReader::InitLicense("YOUR-LICENSE-KEY", errorBuf, 512);
-CBarcodeReader* barcodeReader = dynamsoft::dbr::CBarcodeReader::GetInstance();
-// Add your code here to call decoding method, process barcode results and so on
-// ...
-// Recycle the barcodeReader instance to make it idle for other concurrent tasks
-barcodeReader.Recycle();
+//Make sure InitLicense have been called somewhere before GetInstance
+CBarcodeReader* dbr = CBarcodeReader::GetInstance();
+// If no instance is available right away, the application will wait until one becomes available
+if(dbr != NULL)
+{
+    // Add your code here to call decoding method, process barcode results and so on
+    // ...
+    // Recycle the instance to make it idle for other concurrent tasks
+    dbr->Recycle();
+}
 ```
 
 ## Recycle
@@ -67,11 +70,14 @@ void dynamsoft::dbr::CBarcodeReader::Recycle()
 **Code Snippet**  
 
 ```cpp
-char errorBuf[512];
-dynamsoft::dbr::CBarcodeReader::InitLicense("YOUR-LICENSE-KEY", errorBuf, 512);
-CBarcodeReader* barcodeReader = dynamsoft::dbr::CBarcodeReader::GetInstance();
-// Add your code here to call decoding method, process barcode results and so on
-// ...
-// Recycle the barcodeReader instance to make it idle for other concurrent tasks
-barcodeReader.Recycle();
+//Make sure InitLicense have been called somewhere before GetInstance
+CBarcodeReader* dbr = CBarcodeReader::GetInstance();
+// If no instance is available right away, the application will wait until one becomes available
+if(dbr != NULL)
+{
+    // Add your code here to call decoding method, process barcode results and so on
+    // ...
+    // Recycle the instance to make it idle for other concurrent tasks
+    dbr->Recycle();
+}
 ```

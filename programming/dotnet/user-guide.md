@@ -79,17 +79,18 @@ Let's start by creating a console application which demonstrates how to use the 
     BarcodeReader reader = new BarcodeReader();
     ```
 
-    *However, please note that if you are using a **concurrent instance license**, we suggest using the new APIs [`GetInstance`](api-reference/BarcodeReader/constructor-and-destructor.md#getinstance) to initialize the barcode reader instance and then [`Recycle`](api-reference/BarcodeReader/constructor-and-destructor.md#recycle) to allow for better concurrent instance management by the library.*
+    *However, please note that if you are using a **concurrent instance license**, please use the new APIs [`GetInstance`](api-reference/BarcodeReader/constructor-and-destructor.md#getinstance) to initialize the barcode reader instance and then [`Recycle`](api-reference/BarcodeReader/constructor-and-destructor.md#recycle) to allow for better concurrent instance management by the library.*
 
     ```csharp
-    string errorMsg;
-    BarcodeReader.InitLicense("YOUR-LICENSE-KEY", out errorMsg);
-    BarcodeReader barcodeReader = BarcodeReader.GetInstance();
+    BarcodeReader reader = BarcodeReader.GetInstance();
     // If no instance is available right away, the application will wait until one becomes available
-    // Add your code here to call decoding method, process barcode results and so on
-    // ...
-    // Recycle the barcodeReader instance to make it idle for other concurrent tasks
-    barcodeReader.Recycle();
+    if (reader != null)
+    {
+        // Add your code here to call decoding method, process barcode results and so on
+        // ...
+        // Recycle the instance to make it idle for other concurrent tasks
+        reader.Recycle();
+    }
     ```
 
 ### Configure the Barcode Scanning Behavior
@@ -144,6 +145,15 @@ The Barcode Reader SDK comes with a large array of runtime settings to optimize 
 
     ```csharp
     reader.Dispose();
+    ```
+
+    *However, please note that if you are using a **concurrent instance license**, please use the new APIs [`Recycle`](api-reference/BarcodeReader/constructor-and-destructor.md#recycle) to allow for better concurrent instance management by the library.*
+
+    ```csharp
+    if (reader != null)
+    {
+        reader.Recycle();
+    }
     ```
 
 >Note:  

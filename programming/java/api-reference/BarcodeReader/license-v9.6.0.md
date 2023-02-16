@@ -150,11 +150,15 @@ int countForThisDevice = 1; // The count value should be set based on your purch
 int countForThisProcess = 1; // The count value should be set based on your purchased license count
 BarcodeReader.setMaxConcurrentInstanceCount(countForThisDevice, countForThisProcess);
 BarcodeReader.initLicense("YOUR-LICENSE-KEY");
-BarcodeReader barcodeReader = BarcodeReader.getInstance();
-// Add your code here to call decoding method, process barcode results and so on
-// ...
-// Recycle the barcodeReader instance to make it idle for other concurrent tasks
-barcodeReader.recycle();
+BarcodeReader reader = BarcodeReader.getInstance();
+// If no instance is available right away, the application will wait until one becomes available
+if(reader != null)
+{
+    // Add your code here to call decoding method, process barcode results and so on
+    // ...
+    // Recycle the instance to make it idle for other concurrent tasks
+    reader.recycle();
+}
 ```
 
 ## initLicenseFromServer

@@ -75,17 +75,18 @@ Let's start by creating a console application which demonstrates how to use the 
     BarcodeReader reader = new BarcodeReader()
     ```
 
-    *However, please note that if you are using a **concurrent instance license**, we suggest using the new APIs [`getInstance`](api-reference/BarcodeReader/initialize-and-destroy.md#getinstance) to initialize the barcode reader instance and then [`recycle`](api-reference/BarcodeReader/initialize-and-destroy.md#recycle) to allow for better concurrent instance management by the library.*
+    *However, please note that if you are using a **concurrent instance license**, please use the new APIs [`getInstance`](api-reference/BarcodeReader/initialize-and-destroy.md#getinstance) to initialize the barcode reader instance and then [`recycle`](api-reference/BarcodeReader/initialize-and-destroy.md#recycle) to allow for better concurrent instance management by the library.*
 
     ```java
-    string errorMsg;
-    BarcodeReader.initLicense("YOUR-LICENSE-KEY", out errorMsg);
-    BarcodeReader barcodeReader = BarcodeReader.getInstance();
+    BarcodeReader reader = BarcodeReader.getInstance();
     // If no instance is available right away, the application will wait until one becomes available
-    // Add your code here to call decoding method, process barcode results and so on
-    // ...
-    // Recycle the barcodeReader instance to make it idle for other concurrent tasks
-    barcodeReader.recycle();
+    if(reader != null)
+    {
+        // Add your code here to call decoding method, process barcode results and so on
+        // ...
+        // Recycle the instance to make it idle for other concurrent tasks
+        reader.recycle();
+    }
     ```
 
 ### Configure the Barcode Scanning Behavior (OPTIONAL)
@@ -139,6 +140,15 @@ The Barcode Reader SDK comes with a large array of runtime settings to optimize 
 
     ```java
     reader.destroy();
+    ```
+
+    *However, please note that if you are using a **concurrent instance license**, please use the new APIs [`recycle`](api-reference/BarcodeReader/initialize-and-destroy.md#recycle) to allow for better concurrent instance management by the library.*
+
+    ```java
+    if(reader != null)
+    {
+        reader.recycle();
+    }
     ```
 
 >Note:  

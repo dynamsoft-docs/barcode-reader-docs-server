@@ -74,17 +74,16 @@ Import dbr package in the source file.
    reader = BarcodeReader()
    ```
 
-   *However, please note that if you are using a **concurrent instance license**, we suggest using the new APIs [`get_instance`](api-reference/BarcodeReader/constructor-and-destructor.md#get_instance) to initialize the barcode reader instance and then [`recycle`](api-reference/BarcodeReader/constructor-and-destructor.md#recycle) to allow for better concurrent instance management by the library.*
+   *However, please note that if you are using a **concurrent instance license**, please use the new APIs [`get_instance`](api-reference/BarcodeReader/constructor-and-destructor.md#get_instance) to initialize the barcode reader instance and then [`recycle`](api-reference/BarcodeReader/constructor-and-destructor.md#recycle) to allow for better concurrent instance management by the library.*
 
    ```python
-      license_key = 'YOUR-LICENSE-KEY'
-      BarcodeReader.init_license(license_key)
-      barcode_reader = BarcodeReader.get_instance()
+      reader = BarcodeReader.get_instance()
       # If no instance is available right away, the application will wait until one becomes available
-      # Add your code here to call decoding method, process barcode results and so on
-      # ...
-      # Recycle the barcode_reader instance to make it idle for other concurrent tasks
-      barcode_reader.recycle()
+      if reader != None:
+         # Add your code here to call decoding method, process barcode results and so on
+         # ...
+         # Recycle the instance to make it idle for other concurrent tasks
+         reader.recycle()
    ```
 
 ### Configure the Barcode Scanning Behavior
@@ -134,6 +133,13 @@ Destroy the instance to release all resources.
 ```python
 del reader
 ```
+
+   *However, please note that if you are using a **concurrent instance license**, please use the new APIs [`recycle`](api-reference/BarcodeReader/constructor-and-destructor.md#recycle) to allow for better concurrent instance management by the library.*
+
+   ```python
+      if reader != None:
+         reader.recycle()
+   ```
 
 ### Build and Run the Project
 
