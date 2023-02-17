@@ -77,18 +77,18 @@ Import dbr package in the source file.
    *However, please note that if you are using a **concurrent instance license**, please use the new APIs [`get_instance`](api-reference/BarcodeReader/constructor-and-destructor.md#get_instance) to initialize the barcode reader instance and then [`recycle`](api-reference/BarcodeReader/constructor-and-destructor.md#recycle) to allow for better concurrent instance management by the library.*
 
    ```python
-      reader = BarcodeReader.get_instance()
-      # If no instance is available right away, the application will wait until one becomes available
-      if reader != None:
-         # Add your code here to call decoding method, process barcode results and so on
-         # ...
-         # Recycle the instance to make it idle for other concurrent tasks
-         reader.recycle()
+   reader = BarcodeReader.get_instance()
+   # If no instance is available right away, the application will wait until one becomes available
+   if reader != None:
+      # Add your code here to call decoding method, process barcode results and so on
+      # ...
+      # Recycle the instance to make it idle for other concurrent tasks
+      reader.recycle()
    ```
 
 ### Configure the Barcode Scanning Behavior
 
-The Barcode Reader SDK comes with a large array of runtime settings to optimize the performance of the library. To learn about all the runtime settings, please visit the [RuntimeSettings](api-reference/class/PublicRuntimeSettings.md) API page. In the following example, we set the barcode format and expected number of barcodes to be found. To learn  more about the cases and situations in which the settings can help, please visit the [Explore Features](user-guide/explore-features/index.md) page.
+1. Set barcode format and count to read.
 
    ```python
    settings = reader.get_runtime_settings()
@@ -98,9 +98,11 @@ The Barcode Reader SDK comes with a large array of runtime settings to optimize 
    reader.update_runtime_settings(settings)
    ```
 
-> For better performance, we recommend that you only enable the barcode formats your application requires. Check out [Barcode Format Enumeration]({{ site.python_enumerations }}format-enums.html) for fully supported barcode formats.
+   > For better performance, we recommend that you only enable the barcode formats your application requires. Check out [Barcode Format Enumeration]({{ site.python_enumerations }}format-enums.html) for fully supported barcode formats.
 
-> If you know exactly the count of barcodes you want to read, specify `excepted_barcodes_count` to speed up the process and improve the accuracy. 
+   > If you know exactly the count of barcodes you want to read, specify `excepted_barcodes_count` to speed up the process and improve the accuracy. 
+
+   >The Barcode Reader SDK comes with a large array of runtime settings to optimize the performance of the library. To learn about all the runtime settings, please visit the [RuntimeSettings](api-reference/class/PublicRuntimeSettings.md) API page. To learn more about the cases and situations in which the settings can help, please visit the [Explore Features](user-guide/explore-features/index.md) page.
 
 ### Decode and Output Results
 
@@ -134,12 +136,12 @@ Destroy the instance to release all resources.
 del reader
 ```
 
-   *However, please note that if you are using a **concurrent instance license**, please use the new APIs [`recycle`](api-reference/BarcodeReader/constructor-and-destructor.md#recycle) to allow for better concurrent instance management by the library.*
+*However, please note that if you are using a **concurrent instance license**, please use the new APIs [`recycle`](api-reference/BarcodeReader/constructor-and-destructor.md#recycle) to allow for better concurrent instance management by the library.*
 
-   ```python
-      if reader != None:
-         reader.recycle()
-   ```
+```python
+if reader != None:
+   reader.recycle()
+```
 
 ### Build and Run the Project
 

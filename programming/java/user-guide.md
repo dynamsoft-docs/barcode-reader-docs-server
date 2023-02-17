@@ -91,19 +91,21 @@ Let's start by creating a console application which demonstrates how to use the 
 
 ### Configure the Barcode Scanning Behavior (OPTIONAL)
 
-The Barcode Reader SDK comes with a large array of runtime settings to optimize the performance of the library. To learn about all the runtime settings, please visit the [RuntimeSettings](api-reference/class/PublicRuntimeSettings.md) API page. In the following example, we set the barcode format and expected number of barcodes to be found. To learn  more about the cases and situations in which the settings can help, please visit the [Explore Features](user-guide/explore-features/index.md) page.
+1. Set barcode format and count to read.
 
     ```java
-   PublicRuntimeSettings runtimeSettings = reader.getRuntimeSettings();
-   runtimeSettings.barcodeFormatIds = EnumBarcodeFormat.BF_ONED | EnumBarcodeFormat.BF_QR_CODE;
-   runtimeSettings.barcodeFormatIds_2 = EnumBarcodeFormat_2.BF2_POSTALCODE | EnumBarcodeFormat_2.BF2_DOTCODE;
-   runtimeSettings.expectedBarcodesCount = 10;
-   reader.updateRuntimeSettings(runtimeSettings);
+    PublicRuntimeSettings runtimeSettings = reader.getRuntimeSettings();
+    runtimeSettings.barcodeFormatIds = EnumBarcodeFormat.BF_ONED | EnumBarcodeFormat.BF_QR_CODE;
+    runtimeSettings.barcodeFormatIds_2 = EnumBarcodeFormat_2.BF2_POSTALCODE | EnumBarcodeFormat_2.BF2_DOTCODE;
+    runtimeSettings.expectedBarcodesCount = 10;
+    reader.updateRuntimeSettings(runtimeSettings);
     ```
 
-    >The barcode formats to enable is highly application-specific. We recommend that you only enable the barcode formats your application requires. Check out [Barcode Format Enumeration]({{ site.java_enumerations }}format-enums.html) for full supported barcode formats. 
+    >The barcode formats to enable is highly application-specific. We recommend that you only enable the barcode formats your application requires. Check out [Barcode Format Enumeration]({{ site.java_enumerations }}format-enums.html) for full supported barcode formats.
 
-    >If you know exactly the barcode count you want to read, specify `expectedBarcodesCount` to speed up the process and improve the accuracy. 
+    >If you know exactly the barcode count you want to read, specify `expectedBarcodesCount` to speed up the process and improve the accuracy.
+
+    >The Barcode Reader SDK comes with a large array of runtime settings to optimize the performance of the library. To learn about all the runtime settings, please visit the [RuntimeSettings](api-reference/class/PublicRuntimeSettings.md) API page. To learn more about the cases and situations in which the settings can help, please visit the [Explore Features](user-guide/explore-features/index.md) page.
 
 ### Decode and Output Results
 
