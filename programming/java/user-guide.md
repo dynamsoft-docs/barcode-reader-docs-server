@@ -75,21 +75,37 @@ Let's start by creating a console application which demonstrates how to use the 
     BarcodeReader reader = new BarcodeReader()
     ```
 
-### Configure the Barcode Scanning Behavior
+    *However, please note that if you are using a **concurrent instance license**, please use the new APIs [`getInstance`](api-reference/BarcodeReader/initialize-and-destroy.md#getinstance) to initialize the barcode reader instance and then [`recycle`](api-reference/BarcodeReader/initialize-and-destroy.md#recycle) to allow for better concurrent instance management by the library.*
+
+    ```java
+    BarcodeReader reader = BarcodeReader.getInstance();
+    // If no instance is available right away, the application will wait until one becomes available
+    if(reader != null)
+    {
+        // Add your code here to call decoding method, process barcode results and so on
+        // ...
+        // Recycle the instance to make it idle for other concurrent tasks
+        reader.recycle();
+    }
+    ```
+
+### Configure the Barcode Scanning Behavior (OPTIONAL)
 
 1. Set barcode format and count to read.
 
     ```java
-   PublicRuntimeSettings runtimeSettings = reader.getRuntimeSettings();
-   runtimeSettings.barcodeFormatIds = EnumBarcodeFormat.BF_ONED | EnumBarcodeFormat.BF_QR_CODE;
-   runtimeSettings.barcodeFormatIds_2 = EnumBarcodeFormat_2.BF2_POSTALCODE | EnumBarcodeFormat_2.BF2_DOTCODE;
-   runtimeSettings.expectedBarcodesCount = 10;
-   reader.updateRuntimeSettings(runtimeSettings);
+    PublicRuntimeSettings runtimeSettings = reader.getRuntimeSettings();
+    runtimeSettings.barcodeFormatIds = EnumBarcodeFormat.BF_ONED | EnumBarcodeFormat.BF_QR_CODE;
+    runtimeSettings.barcodeFormatIds_2 = EnumBarcodeFormat_2.BF2_POSTALCODE | EnumBarcodeFormat_2.BF2_DOTCODE;
+    runtimeSettings.expectedBarcodesCount = 10;
+    reader.updateRuntimeSettings(runtimeSettings);
     ```
 
-    >The barcode formats to enable is highly application-specific. We recommend that you only enable the barcode formats your application requires. Check out [Barcode Format Enumeration]({{ site.java_enumerations }}format-enums.html) for full supported barcode formats. 
+    >The barcode formats to enable is highly application-specific. We recommend that you only enable the barcode formats your application requires. Check out [Barcode Format Enumeration]({{ site.java_enumerations }}format-enums.html) for full supported barcode formats.
 
-    >If you know exactly the barcode count you want to read, specify `expectedBarcodesCount` to speed up the process and improve the accuracy. 
+    >If you know exactly the barcode count you want to read, specify `expectedBarcodesCount` to speed up the process and improve the accuracy.
+
+    >The Barcode Reader SDK comes with a large array of runtime settings to optimize the performance of the library. To learn about all the runtime settings, please visit the [RuntimeSettings](api-reference/class/PublicRuntimeSettings.md) API page. To learn more about the cases and situations in which the settings can help, please visit the [Explore Features](user-guide/explore-features/index.md) page.
 
 ### Decode and Output Results
 
@@ -126,6 +142,15 @@ Let's start by creating a console application which demonstrates how to use the 
 
     ```java
     reader.destroy();
+    ```
+
+    *However, please note that if you are using a **concurrent instance license**, please use the new APIs [`recycle`](api-reference/BarcodeReader/initialize-and-destroy.md#recycle) to allow for better concurrent instance management by the library.*
+
+    ```java
+    if(reader != null)
+    {
+        reader.recycle();
+    }
     ```
 
 >Note:  

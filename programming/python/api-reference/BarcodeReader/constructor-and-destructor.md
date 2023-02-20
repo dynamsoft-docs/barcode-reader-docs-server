@@ -43,18 +43,19 @@ BarcodeReader.get_instance()
 ```
 
 **Return Value**  
-Returns an idle Dynamsoft Barcode Reader instance running on concurrent instance mode. If failed, returns `NULL`.
+Returns an idle Dynamsoft Barcode Reader instance running on concurrent instance mode. If failed, returns `None`.
 
 **Code Snippet**  
 
 ```python
-license_key = 'YOUR-LICENSE-KEY'
-BarcodeReader.init_license(license_key)
-barcode_reader = BarcodeReader.get_instance()
-# Add your code here to call decoding method, process barcode results and so on
-# ...
-# Recycle the barcode_reader instance to make it idle for other concurrent tasks
-barcode_reader.recycle()
+# Make sure initLicense have been called somewhere before getInstance
+reader = BarcodeReader.get_instance()
+# If no instance is available right away, the application will wait until one becomes available
+if reader != None:
+   # Add your code here to call decoding method, process barcode results and so on
+   # ...
+   # Recycle the instance to make it idle for other concurrent tasks
+   reader.recycle()
 ```
 
 ## recycle
@@ -68,11 +69,12 @@ BarcodeReader.recycle()
 **Code Snippet**  
 
 ```python
-license_key = 'YOUR-LICENSE-KEY'
-BarcodeReader.init_license(license_key)
-barcode_reader = BarcodeReader.get_instance()
-# Add your code here to call decoding method, process barcode results and so on
-# ...
-# Recycle the barcode_reader instance to make it idle for other concurrent tasks
-barcode_reader.recycle()
+# Make sure initLicense have been called somewhere before getInstance
+reader = BarcodeReader.get_instance()
+# If no instance is available right away, the application will wait until one becomes available
+if reader != None:
+   # Add your code here to call decoding method, process barcode results and so on
+   # ...
+   # Recycle the instance to make it idle for other concurrent tasks
+   reader.recycle()
 ```

@@ -85,17 +85,21 @@ static BarcodeReader com.dynamsoft.dbr.BarcodeReader.getInstance()
 ```
 
 **Return Value**  
-Returns an idle Dynamsoft Barcode Reader instance running on concurrent instance mode. If failed, returns `NULL`.
+Returns an idle Dynamsoft Barcode Reader instance running on concurrent instance mode. If failed, returns `null`.
 
 **Code Snippet**  
 
 ```java
-BarcodeReader.initLicense("YOUR-LICENSE-KEY");
-BarcodeReader barcodeReader = BarcodeReader.getInstance();
-// Add your code here to call decoding method, process barcode results and so on
-// ...
-// Recycle the barcodeReader instance to make it idle for other concurrent tasks
-barcodeReader.recycle();
+//Make sure initLicense have been called somewhere before getInstance
+BarcodeReader reader = BarcodeReader.getInstance();
+// If no instance is available right away, the application will wait until one becomes available
+if(reader != null)
+{
+    // Add your code here to call decoding method, process barcode results and so on
+    // ...
+    // Recycle the instance to make it idle for other concurrent tasks
+    reader.recycle();
+}
 ```
 
 ## Recycle
@@ -109,10 +113,14 @@ void com.dynamsoft.dbr.BarcodeReader.recycle()
 **Code Snippet**  
 
 ```java
-BarcodeReader.initLicense("YOUR-LICENSE-KEY");
-BarcodeReader barcodeReader = BarcodeReader.getInstance();
-// Add your code here to call decoding method, process barcode results and so on
-// ...
-// Recycle the barcodeReader instance to make it idle for other concurrent tasks
-barcodeReader.recycle();
+//Make sure initLicense have been called somewhere before getInstance
+BarcodeReader reader = BarcodeReader.getInstance();
+// If no instance is available right away, the application will wait until one becomes available
+if(reader != null)
+{
+    // Add your code here to call decoding method, process barcode results and so on
+    // ...
+    // Recycle the instance to make it idle for other concurrent tasks
+    reader.recycle();
+}
 ```

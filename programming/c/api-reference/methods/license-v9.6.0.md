@@ -12,9 +12,9 @@ needAutoGenerateSidebar: true
   |----------------------|-------------|
   | [`DBR_InitLicense`](#dbr_initlicense) | Initializes license key and activate the SDK. |
   | [`DBR_IsInstanceValid`](#dbr_isinstancevalid) | Gets whether the instance is valid when charging by concurrent instances count. |
-  | [`DBR_GetIdleInstancesCount`](#dbr_getidleinstancescount) | Gets available instances count when charging by concurrent instances count. |
   | [`DBR_SetDeviceFriendlyName`](#dbr_setdevicefriendlyname) | Sets a human-readable name that identifies the device. |
   | [`DBR_SetMaxConcurrentInstanceCount`](#dbr_setmaxconcurrentinstancecount) | Sets the max concurrent instance count used for current device and process. |
+  | [`DBR_GetIdleInstancesCount`](#dbr_getidleinstancescount) | `Deprecated` |
   | [`DBR_InitLicenseFromServer`](#dbr_initlicensefromserver) | `Deprecated` |
   | [`DBR_InitLicenseFromLicenseContent`](#dbr_initlicensefromlicensecontent) | `Deprecated` |
   | [`DBR_OutputLicenseToString`](#dbr_outputlicensetostring) | `Deprecated` |
@@ -79,42 +79,6 @@ Returns an int value indicating whether the instance is valid for running on con
 
 This method is meaningful only when using a license charged by concurrent instances count.
 
-## DBR_GetIdleInstancesCount
-
-Gets available instances count when charging by concurrent instances count.
-
-```c
-DBR_API int DBR_GetIdleInstancesCount()
-```
-
-**Return Value**
-
-Returns available instances count.
-
-- 0: There is no space for new instance  
-- -1: The available count needs to be updated from server by calling DBR_InitLicense.
-- N ( N > 0 ): N more instances can be created.
-
-**Code Snippet**
-
-```c
-//...
-int count = DBR_GetIdleInstancesCount();
-if(count > 0)
-{
-  //create instance and process further
-}
-if(count < 0)
-{
-  //call DBR_InitLicense
-  //create instance and process further
-}
-if(count = 0)
-{
-  //waiting for available instances 
-}
-```
-
 ## DBR_SetDeviceFriendlyName
 
 Sets a human-readable name that identifies the device.
@@ -165,11 +129,15 @@ int countForThisDevice = 1; // The count value should be set based on your purch
 int countForThisProcess = 1; // The count value should be set based on your purchased license count
 DBR_SetMaxConcurrentInstanceCount(countForThisDevice, countForThisProcess);
 DBR_InitLicense("YOUR-LICENSE-KEY", errorBuf, 512);
-void* barcodeReader = DBR_GetInstance();
-// Add your code here to call decoding method, process barcode results and so on
-// ...
-// Recycle the barcodeReader instance to make it idle for other concurrent tasks
-DBR_RecycleInstance(barcodeReader);
+void* dbr = DBR_GetInstance();
+// If no instance is available right away, the application will wait until one becomes available
+if(dbr != NULL)
+{
+    // Add your code here to call decoding method, process barcode results and so on
+    // ...
+    // Recycle the instance to make it idle for other concurrent tasks
+    DBR_RecycleInstance(dbr);
+}
 ```
 
 ## DBR_InitLicenseFromServer
@@ -180,6 +148,13 @@ DBR_RecycleInstance(barcodeReader);
 DBR_API int DBR_InitLicenseFromServer (void* barcodeReader, const char* pLicenseServer, const char* pLicenseKey)
 ```   
 
+## DBR_GetIdleInstancesCount
+
+`Deprecated`. It still works in this version but could be removed in the near future.
+
+```c
+DBR_API int DBR_GetIdleInstancesCount()
+```
 
 ## DBR_InitLicenseFromLicenseContent
 `Deprecated`. It still works in this version but could be removed in the near future.

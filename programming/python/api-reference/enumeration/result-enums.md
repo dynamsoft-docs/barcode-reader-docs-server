@@ -145,10 +145,10 @@ class EnumResultType(IntEnum)
 
 | Member | Value | Description |
 | --------------- | ----- | ----------- |
-| RT_STANDARD_TEXT  | standardText | 0 | Specifies the standard text. This means the barcode value. |
-| RT_RAW_TEXT  | rawText | 1 | Specifies the raw text. This means the text that includes start/stop characters, check digits, etc. |
-| RT_CANDIDATE_TEXT  | candidateText | 2 | Specifies all the candidate text. This means all the standard text results decoded from the barcode. |
-| RT_PARTIAL_TEXT  | partialText | 3 | Specifies the partial text. This means part of the text result decoded from the barcode. |
+| RT_STANDARD_TEXT  | 0 | Specifies the standard text. This means the barcode value. |
+| RT_RAW_TEXT  | 1 | Specifies the raw text. This means the text that includes start/stop characters, check digits, etc. |
+| RT_CANDIDATE_TEXT  | 2 | Specifies all the candidate text. This means all the standard text results decoded from the barcode. |
+| RT_PARTIAL_TEXT  | 3 | Specifies the partial text. This means part of the text result decoded from the barcode. |
 
 ## TextResultOrderMode
 

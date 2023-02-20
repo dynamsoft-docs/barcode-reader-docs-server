@@ -74,13 +74,16 @@ Returns an idle Dynamsoft Barcode Reader instance running on concurrent instance
 **Code Snippet**  
 
 ```c
-char errorBuf[512];
-DBR_InitLicense("YOUR-LICENSE-KEY", errorBuf, 512);
-void* barcodeReader = DBR_GetInstance();
-// Add your code here to call decoding method, process barcode results and so on
-// ...
-// Recycle the barcodeReader instance to make it idle for other concurrent tasks
-DBR_RecycleInstance(barcodeReader);
+//Make sure DBR_InitLicense have been called somewhere before DBR_GetInstance
+void* dbr = DBR_GetInstance();
+// If no instance is available right away, the application will wait until one becomes available
+if(dbr != NULL)
+{
+    // Add your code here to call decoding method, process barcode results and so on
+    // ...
+    // Recycle the instance to make it idle for other concurrent tasks
+    DBR_RecycleInstance(dbr);
+}
 ```
 
 ## DBR_RecycleInstance
@@ -98,11 +101,14 @@ DBR_API void DBR_RecycleInstance (void* barcodeReader)
 **Code Snippet**  
 
 ```c
-char errorBuf[512];
-DBR_InitLicense("YOUR-LICENSE-KEY", errorBuf, 512);
-void* barcodeReader = DBR_GetInstance();
-// Add your code here to call decoding method, process barcode results and so on
-// ...
-// Recycle the barcodeReader instance to make it idle for other concurrent tasks
-DBR_RecycleInstance(barcodeReader);
+//Make sure DBR_InitLicense have been called somewhere before DBR_GetInstance
+void* dbr = DBR_GetInstance();
+// If no instance is available right away, the application will wait until one becomes available
+if(dbr != NULL)
+{
+    // Add your code here to call decoding method, process barcode results and so on
+    // ...
+    // Recycle the instance to make it idle for other concurrent tasks
+    DBR_RecycleInstance(dbr);
+}
 ```

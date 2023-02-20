@@ -1,20 +1,38 @@
 ---
 layout: default-layout
-title: Error Code - Dynamsoft Barcode Reader SDK C/C++ Edition
+title: Error Code - Dynamsoft Barcode Reader SDK .NET Edition
 description: This article enumerates the error codes of Dynamsoft Barcode Reader
 keywords: error code, enumeration
-permalink: /programming/c-cplusplus/enumeration/error-code.html
+permalink: /programming/dotnet/api-reference/enumeration/error-code.html
 ---
 
 # Error Code
-  
-## Error code common to all programming languages
+
+## Declarations
+
+```csharp
+enum Dynamsoft.DBR.EnumErrorCode
+```
+
+## Members
 
 ### Error code 0
 
   | Error Code | Value | Description |
   |-------------------|-------------------|-------------|
-  | `DBR_OK` | 0 | Successful. |
+  | `DBR_SUCCESS` | 0 | Successful. |
+
+### Error code 1
+
+  | Error Code | Value | Description |
+  |-------------------|-------------------|-------------|
+  | `DBR_SYSTEM_EXCEPTION` | 1 | System exception. |
+
+### Error code 2
+
+  | Error Code | Value | Description |
+  |-------------------|-------------------|-------------|
+  | `DBRERR_LOAD_MODULE_DLL_FAILED` | 2 | Failed to load module dll. |
 
 ### Error code -10000
 
@@ -364,11 +382,6 @@ permalink: /programming/c-cplusplus/enumeration/error-code.html
   |-------------------|-------------------|-------------|
   | `DBRERR_PHARMACODE_LICENSE_INVALID` | -10062 | The Pharmacode license is invalid. |
 
-### Error code -10063
-
-  | Error Code | Value | Description |
-  |-------------------|-------------------|-------------|
-  | `DBRERR_IMAGE_ORIENTATION_INVALID` | -10063 | The image orientation is invalid. |
 
 ### Error code -20000
 
@@ -445,3 +458,4 @@ permalink: /programming/c-cplusplus/enumeration/error-code.html
 ### More error codes
 
 Error codes between -20199 and -20100 are thrown by the License Server. See <a href="https://www.dynamsoft.com/license-server/docs/common/errorlist.html?ver=latest" target="_blank">DLS Error List</a> for details.
+

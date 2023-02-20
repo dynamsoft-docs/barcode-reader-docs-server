@@ -25,9 +25,9 @@ needAutoGenerateSidebar: true
   |----------------------|-------------|
   | [`DBR_InitLicense`](license.md#dbr_initlicense) | Initializes license key and activate the SDK. |
   | [`DBR_IsInstanceValid`](license.md#dbr_isinstancevalid) | Gets whether the instance is valid when charging by concurrent instances count. |
-  | [`DBR_GetIdleInstancesCount`](license.md#dbr_getidleinstancescount) | Gets available instances count when charging by concurrent instances count. |
   | [`DBR_SetDeviceFriendlyName`](license.md#dbr_setdevicefriendlyname) | Sets a human-readable name that identifies the device. |
   | [`DBR_SetMaxConcurrentInstanceCount`](license.md#dbr_setmaxconcurrentinstancecount) | Sets the max concurrent instance count used for current device and process. |
+  | [`DBR_GetIdleInstancesCount`](license.md#dbr_getidleinstancescount) | `Deprecated` |
   | [`DBR_InitLicenseFromServer`](license.md#dbr_initlicensefromserver) | `Deprecated` |
   | [`DBR_InitLicenseFromLicenseContent`](license.md#dbr_initlicensefromlicensecontent) | `Deprecated` |
   | [`DBR_OutputLicenseToString`](license.md#dbr_outputlicensetostring) | `Deprecated` |

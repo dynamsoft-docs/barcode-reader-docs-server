@@ -13,11 +13,11 @@ needAutoGenerateSidebar: true
   |----------------------|-------------|
   | [`InitLicense`](#initlicense) | Initializes license key and activate the SDK. |
   | [`GetDeviceUUID`](#getdeviceuuid) | Gets the device uuid used for license activating. |
-  | [`GetIdleInstancesCount`](#getidleinstancescount) | Gets available instances count when charging by concurrent instances count. |
   | [`IsInstanceValid`](#isinstancevalid) | Gets whether the instance is valid when charging by concurrent instances count. |
   | [`SetDeviceFriendlyName`](#setdevicefriendlyname) | Sets a human-readable name that identifies the device. |
   | [`SetLicenseCachePath`](#setlicensecachepath) | Sets a directory path for saving the license cache. |
   | [`SetMaxConcurrentInstanceCount`](#setmaxconcurrentinstancecount) | Sets the max concurrent instance count used for current device and process. |
+  | [`GetIdleInstancesCount`](#getidleinstancescount) | `Deprecated` |
   | [`InitLicenseFromServer`](#initlicensefromserver) | `Deprecated` |
   | [`InitLicenseFromLicenseContent`](#initlicensefromlicensecontent) | `Deprecated` |
   | [`OutputLicenseToString`](#outputlicensetostring) | `Deprecated` |
@@ -85,38 +85,6 @@ Returns an int value indicating whether the instance is valid for running on con
 **Remarks**
 
 This method is meaningful only when using a license charged by concurrent instances count.
-
-## GetIdleInstancesCount
-Gets available instances count when charging by concurrent instances count.
-
-```csharp
-static int Dynamsoft.DBR.BarcodeReader.GetIdleInstancesCount()
-```   
-
-**Return Value**  
-Returns available instances count.    
-- 0: There is no space for new instance  
-- -1: The available count needs to be updated from server by calling InitLicense.
-- N ( N > 0 ): N more instances can be created.
-
-**Code Snippet**  
-```csharp
-//...
-int count = BarcodeReader.GetIdleInstancesCount();
-if(count > 0)
-{
-  //create instance and process further
-}
-if(count < 0)
-{
-  //call InitLicense
-  //create instance and process further
-}
-if(count = 0)
-{
-  //waiting for available instances 
-}
-```
 
 ## SetDeviceFriendlyName
 
@@ -192,12 +160,25 @@ int countForThisDevice = 1; // The count value should be set based on your purch
 int countForThisProcess = 1; // The count value should be set based on your purchased license count
 BarcodeReader.SetMaxConcurrentInstanceCount(countForThisDevice, countForThisProcess);
 BarcodeReader.InitLicense("YOUR-LICENSE-KEY", out errorMsg);
-BarcodeReader barcodeReader = BarcodeReader.GetInstance();
-// Add your code here to call decoding method, process barcode results and so on
-// ...
-// Recycle the barcodeReader instance to make it idle for other concurrent tasks
-barcodeReader.Recycle();
+BarcodeReader reader = BarcodeReader.GetInstance();
+// If no instance is available right away, the application will wait until one becomes available
+if (reader != null)
+{
+    // Add your code here to call decoding method, process barcode results and so on
+    // ...
+    // Recycle the instance to make it idle for other concurrent tasks
+    reader.Recycle();
+}
 ```
+
+## GetIdleInstancesCount
+
+`Deprecated`. It still works in this version but could be removed in the near future.
+
+```csharp
+static int Dynamsoft.DBR.BarcodeReader.GetIdleInstancesCount()
+```
+
 
 ## InitLicenseFromServer
 `Deprecated`. It still works in this version but could be removed in the near future.

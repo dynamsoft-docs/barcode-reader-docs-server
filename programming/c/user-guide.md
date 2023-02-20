@@ -85,6 +85,20 @@ Let's start by creating a console application which demonstrates how to use the 
     void* dbr = DBR_CreateInstance();
     ```
 
+    *However, please note that if you are using a **concurrent instance license**, please use the new APIs [`DBR_GetInstance`](api-reference/methods/initialize-and-destroy.md#dbr_getinstance) to initialize the barcode reader instance and then [`DBR_RecycleInstance`](api-reference/methods/initialize-and-destroy.md#dbr_recycleinstance) to allow for better concurrent instance management by the library.*
+
+    ```c
+    void* dbr = DBR_GetInstance();
+    // If no instance is available right away, the application will wait until one becomes available
+    if(dbr != NULL)
+    {
+        // Add your code here to call decoding method, process barcode results and so on
+        // ...
+        // Recycle the instance to make it idle for other concurrent tasks
+        DBR_RecycleInstance(dbr);
+    }
+    ```
+
 ### Configure the Barcode Scanning Behavior
 
 1. Set barcode format and count to read.
@@ -102,6 +116,8 @@ Let's start by creating a console application which demonstrates how to use the 
     >The barcode formats to enable is highly application-specific. We recommend that you only enable the barcode formats your application requires. Check out [Barcode Format Enumeration]({{ site.enumerations }}format-enums.html) for full supported barcode formats.
 
     >If you know exactly the barcode count you want to read, specify `expectedBarcodesCount` to speed up the process and improve the accuracy.
+
+    >The Barcode Reader SDK comes with a large array of runtime settings to optimize the performance of the library. To learn about all the runtime settings, please visit the [RuntimeSettings]({{ site.structs }}PublicRuntimeSettings.html?src=c) API page. To learn more about the cases and situations in which the settings can help, please visit the [Explore Features](user-guide/explore-features/index.md) page.
 
 ### Decode and Output Results
 
@@ -142,7 +158,20 @@ Let's start by creating a console application which demonstrates how to use the 
     ```c
     if(barcodeResults != NULL)           
         DBR_FreeTextResults(&barcodeResults);
-    DBR_DestroyInstance(dbr);
+    ```
+
+1. Release the allocated memory for the instance.
+
+    ```c
+    if(dbr != NULL)           
+        DBR_DestroyInstance(dbr);
+    ```
+
+    *However, please note that if you are using a **concurrent instance license**, please use the new APIs [`DBR_RecycleInstance`](api-reference/methods/initialize-and-destroy.md#dbr_recycleinstance) to allow for better concurrent instance management by the library.*
+
+    ```c
+    if(dbr != NULL)           
+        DBR_RecycleInstance(dbr);
     ```
 
 >Note:  
