@@ -13,11 +13,11 @@ needAutoGenerateSidebar: true
   |----------------------|-------------|
   | [`InitLicense`](#initlicense) | Initializes license key and activate the SDK. |
   | [`GetDeviceUUID`](#getdeviceuuid) | Gets the device uuid used for license activating. |
-  | [`GetIdleInstancesCount`](#getidleinstancescount) | Gets available instances count when charging by concurrent instances count. |
   | [`IsInstanceValid`](#isinstancevalid) | Gets whether the instance is valid when charging by concurrent instances count. |
   | [`SetDeviceFriendlyName`](#setdevicefriendlyname) | Sets a human-readable name that identifies the device. |
   | [`SetLicenseCachePath`](#setlicensecachepath) | Sets a directory path for saving the license cache. |
   | [`SetMaxConcurrentInstanceCount`](#setmaxconcurrentinstancecount) | Sets the max concurrent instance count used for current device and process. |
+  | [`GetIdleInstancesCount`](#getidleinstancescount) | `Deprecated` |
   | [`InitLicenseFromServer`](#initlicensefromserver) | `Deprecated` |
   | [`InitLicenseFromLicenseContent`](#initlicensefromlicensecontent) | `Deprecated` |
   | [`OutputLicenseToString`](#outputlicensetostring) | `Deprecated` |
@@ -100,38 +100,6 @@ Returns an int value indicating whether the instance is valid for running on con
 **Remarks**
 
 This method is meaningful only when using a license charged by concurrent instances count.
-
-## GetIdleInstancesCount
-Gets available instances count when charging by concurrent instances count.
-
-```cpp
-static int dynamsoft::dbr::CBarcodeReader::GetIdleInstancesCount()
-```   
-
-**Return Value**  
-Returns available instances count.    
-- 0: There is no space for new instance  
-- -1: The available count needs to be updated from server by calling InitLicense.
-- N ( N > 0 ): N more instances can be created.
-
-**Code Snippet**  
-```cpp
-//...
-int count = dynamsoft::dbr::CBarcodeReader::GetIdleInstancesCount();
-if(count > 0)
-{
-  //create instance and process further
-}
-if(count < 0)
-{
-  //call InitLicense
-  //create instance and process further
-}
-if(count = 0)
-{
-  //waiting for available instances 
-}
-```
 
 ## SetDeviceFriendlyName
 
@@ -220,6 +188,14 @@ if(dbr != NULL)
     // Recycle the instance to make it idle for other concurrent tasks
     dbr->Recycle();
 }
+```
+
+## GetIdleInstancesCount
+
+`Deprecated`. It still works in this version but could be removed in the near future.
+
+```cpp
+static int dynamsoft::dbr::CBarcodeReader::GetIdleInstancesCount()
 ```
 
 ## InitLicenseFromServer

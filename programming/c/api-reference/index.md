@@ -26,11 +26,11 @@ needGenerateH3Content: true
   |----------------------|-------------|
   | [`DBR_InitLicense`](methods/license.md#dbr_initlicense) | Initializes license key and activate the SDK. |
   | [`DBR_GetDeviceUUID`](methods/license.md#dbr_getdeviceuuid) | Gets the device uuid used for license activating. |
-  | [`DBR_GetIdleInstancesCount`](methods/license.md#dbr_getidleinstancescount) | Gets available instances count when charging by concurrent instances count. |
   | [`DBR_IsInstanceValid`](methods/license.md#dbr_isinstancevalid) | Gets whether the instance is valid when charging by concurrent instances count. |
   | [`DBR_SetDeviceFriendlyName`](methods/license.md#dbr_setdevicefriendlyname) | Sets a human-readable name that identifies the device. |
   | [`DBR_SetLicenseCachePath`](methods/license.md#dbr_setlicensecachepath) | Sets a directory path for saving the license cache. |
   | [`DBR_SetMaxConcurrentInstanceCount`](methods/license.md#dbr_setmaxconcurrentinstancecount) | Sets the max concurrent instance count used for current device and process. |
+  | [`DBR_GetIdleInstancesCount`](methods/license.md#dbr_getidleinstancescount) | `Deprecated` |
   | [`DBR_InitLicenseFromServer`](methods/license.md#dbr_initlicensefromserver) | `Deprecated` |
   | [`DBR_InitLicenseFromLicenseContent`](methods/license.md#dbr_initlicensefromlicensecontent) | `Deprecated` |
   | [`DBR_OutputLicenseToString`](methods/license.md#dbr_outputlicensetostring) | `Deprecated` |

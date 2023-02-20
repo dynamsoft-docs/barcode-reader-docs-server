@@ -28,9 +28,9 @@ needAutoGenerateSidebar: true
   |----------------------|-------------|
   | [`initLicense`](license.md#initlicense) | Initializes license key and activate the SDK. |
   | [`isInstanceValid`](license.md#isinstancevalid) | Gets whether the instance is valid when charging by concurrent instances count. |
-  | [`getIdleInstancesCount`](license.md#getidleinstancescount) | Gets available instances count when charging by concurrent instances count. |
   | [`setDeviceFriendlyName`](license.md#setdevicefriendlyname) | Sets a human-readable name that identifies the device. |
   | [`setMaxConcurrentInstanceCount`](license.md#setmaxconcurrentinstancecount) | Sets the max concurrent instance count used for current device and process. |
+  | [`getIdleInstancesCount`](license.md#getidleinstancescount) | `Deprecated` |
   | [`initLicenseFromServer`](license.md#initlicensefromserver) | `Deprecated` |
   | [`initLicenseFromLicenseContent`](license.md#initlicensefromlicensecontent) | `Deprecated` |
   | [`outputLicenseToString`](license.md#outputlicensetostring) | `Deprecated` |

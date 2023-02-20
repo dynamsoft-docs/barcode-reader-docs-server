@@ -13,9 +13,9 @@ needAutoGenerateSidebar: true
   |----------------------|-------------|
   | [`init_license`](#init_license) | Reads product key and activates the SDK.  |
   | [`is_instance_valid`](#is_instance_valid) | Gets whether the instance is valid when charging by concurrent instances count. |
-  | [`get_idle_instances_count`](#get_idle_instances_count) | Gets available instances count when charging by concurrent instances count. |
   | [`set_device_friendly_name`](#set_device_friendly_name) | Sets a human-readable name that identifies the device. |
   | [`set_max_concurrent_instance_count`](#set_max_concurrent_instance_count) | Sets the max concurrent instance count used for current device and process. |
+  | [`get_idle_instances_count`](#get_idle_instances_count) | `Deprecated` |
   | [`init_license_from_server`](#init_license_from_server) | `Deprecated` |
   | [`init_license_from_license_content`](#init_license_from_license_content) | `Deprecated` |
   | [`output_license_to_string`](#output_license_to_string) | `Deprecated` |
@@ -60,19 +60,6 @@ Returns an int value indicating whether the instance is valid for running on con
 
 This method is meaningful only when using a license charged by concurrent instances count.
 
-## get_idle_instances_count
-Gets available instances count when charging by concurrent instances count.
-
-```python
-BarcodeReader.get_idle_instances_count()
-```   
-
-**Return Value**  
-`count` <*int*> : Returns available instances count.    
-- 0: There is no space for new instance  
-- -1: The available count needs to be updated from server by calling initLicense.
-- N ( N > 0 ): N more instances can be created.
-
 ## set_device_friendly_name
 
 Sets a human-readable name that identifies the device.
@@ -116,6 +103,14 @@ if reader != None:
    # ...
    # Recycle the instance to make it idle for other concurrent tasks
    reader.recycle()
+```
+
+## get_idle_instances_count
+
+`Deprecated`. It still works in this version but could be removed in the near future.
+
+```python
+BarcodeReader.get_idle_instances_count()
 ```
 
 ## init_license_from_server

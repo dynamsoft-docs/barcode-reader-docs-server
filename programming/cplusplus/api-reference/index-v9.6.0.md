@@ -26,9 +26,9 @@ needGenerateH3Content: true
   |----------------------|-------------|
   | [`InitLicense`](cbarcodereader-methods/license.md#initlicense) | Initializes license key and activate the SDK. |
   | [`IsInstanceValid`](cbarcodereader-methods/license.md#isinstancevalid) | Gets whether the instance is valid when charging by concurrent instances count. |
-  | [`GetIdleInstancesCount`](cbarcodereader-methods/license.md#getidleinstancescount) | Gets available instances count when charging by concurrent instances count. |
   | [`SetDeviceFriendlyName`](cbarcodereader-methods/license.md#setdevicefriendlyname) | Sets a human-readable name that identifies the device. |
   | [`SetMaxConcurrentInstanceCount`](cbarcodereader-methods/license.md#setmaxconcurrentinstancecount) | Sets the max concurrent instance count used for current device and process. |
+  | [`GetIdleInstancesCount`](cbarcodereader-methods/license.md#getidleinstancescount) | `Deprecated` |
   | [`InitLicenseFromServer`](cbarcodereader-methods/license.md#initlicensefromserver) | `Deprecated` |
   | [`InitLicenseFromLicenseContent`](cbarcodereader-methods/license.md#initlicensefromlicensecontent) | `Deprecated` |
   | [`OutputLicenseToString`](cbarcodereader-methods/license.md#outputlicensetostring) | `Deprecated` |

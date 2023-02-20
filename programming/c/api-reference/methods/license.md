@@ -12,11 +12,11 @@ needAutoGenerateSidebar: true
   |----------------------|-------------|
   | [`DBR_InitLicense`](#dbr_initlicense) | Initializes license key and activate the SDK. |
   | [`DBR_GetDeviceUUID`](#dbr_getdeviceuuid) | Gets the device uuid used for license activating. |
-  | [`DBR_GetIdleInstancesCount`](#dbr_getidleinstancescount) | Gets available instances count when charging by concurrent instances count. |
   | [`DBR_IsInstanceValid`](#dbr_isinstancevalid) | Gets whether the instance is valid when charging by concurrent instances count. |
   | [`DBR_SetDeviceFriendlyName`](#dbr_setdevicefriendlyname) | Sets a human-readable name that identifies the device. |
   | [`DBR_SetLicenseCachePath`](#dbr_setlicensecachepath) | Sets a directory path for saving the license cache. |
   | [`DBR_SetMaxConcurrentInstanceCount`](#dbr_setmaxconcurrentinstancecount) | Sets the max concurrent instance count used for current device and process. |
+  | [`DBR_GetIdleInstancesCount`](#dbr_getidleinstancescount) | `Deprecated` |
   | [`DBR_InitLicenseFromServer`](#dbr_initlicensefromserver) | `Deprecated` |
   | [`DBR_InitLicenseFromLicenseContent`](#dbr_initlicensefromlicensecontent) | `Deprecated` |
   | [`DBR_OutputLicenseToString`](#dbr_outputlicensetostring) | `Deprecated` |
@@ -108,42 +108,6 @@ Returns an int value indicating whether the instance is valid for running on con
 
 This method is meaningful only when using a license charged by concurrent instances count.
 
-## DBR_GetIdleInstancesCount
-
-Gets available instances count when charging by concurrent instances count.
-
-```c
-DBR_API int DBR_GetIdleInstancesCount()
-```
-
-**Return Value**
-
-Returns available instances count.
-
-- 0: There is no space for new instance  
-- -1: The available count needs to be updated from server by calling DBR_InitLicense.
-- N ( N > 0 ): N more instances can be created.
-
-**Code Snippet**
-
-```c
-//...
-int count = DBR_GetIdleInstancesCount();
-if(count > 0)
-{
-  //create instance and process further
-}
-if(count < 0)
-{
-  //call DBR_InitLicense
-  //create instance and process further
-}
-if(count = 0)
-{
-  //waiting for available instances 
-}
-```
-
 ## DBR_SetDeviceFriendlyName
 
 Sets a human-readable name that identifies the device.
@@ -231,6 +195,14 @@ if(dbr != NULL)
     // Recycle the instance to make it idle for other concurrent tasks
     DBR_RecycleInstance(dbr);
 }
+```
+
+## DBR_GetIdleInstancesCount
+
+`Deprecated`. It still works in this version but could be removed in the near future.
+
+```c
+DBR_API int DBR_GetIdleInstancesCount()
 ```
 
 ## DBR_InitLicenseFromServer
