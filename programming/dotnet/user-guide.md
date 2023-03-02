@@ -66,7 +66,12 @@ Let's start by creating a console application which demonstrates how to use the 
 
     ```csharp
     string errorMsg;
-    BarcodeReader.InitLicense("<insert DBR license key here>", out errorMsg);
+    EnumErrorCode errorCode = BarcodeReader.InitLicense("<insert DBR license key here>", out errorMsg);
+    if (errorCode != EnumErrorCode.DBR_SUCCESS)
+    {
+        // Add your code for license error processing;
+        Console.WriteLine(errorMsg);
+    }
     ```
 
     >Please replace `<insert DBR license key here>` with a valid DBR licensekey. There are two ways to obtain one:
