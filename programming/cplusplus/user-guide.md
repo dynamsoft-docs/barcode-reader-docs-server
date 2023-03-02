@@ -77,8 +77,14 @@ Let's start by creating a console application which demonstrates how to use the 
 1. Initialize the license key.
 
     ```cpp
+    int errorCode = 0;
     char errorBuf[512];
-    CBarcodeReader::InitLicense("<insert DBR license key here>", errorBuf, 512);
+    errorCode = CBarcodeReader::InitLicense("<insert DBR license key here>", errorBuf, 512);
+    if (errorCode != DBR_OK)
+    {
+        // Add your code for license error processing;
+        cout << errorBuf << endl;
+    }
     ```
 
     >Please replace `<insert DBR license key here>` with a valid DBR licensekey. There are two ways to obtain one:

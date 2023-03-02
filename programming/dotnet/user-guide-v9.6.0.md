@@ -62,17 +62,41 @@ Let's start by creating a console application which demonstrates how to use the 
 
 ### Initialize a Barcode Reader Instance
 
-1. Create an instance of Dynamsoft Barcode Reader.
+1. Initialize the license key.
 
     ```csharp
     string errorMsg;
-    BarcodeReader.InitLicense("<insert DBR license key here>", out errorMsg);
-    BarcodeReader reader = new BarcodeReader();
+    EnumErrorCode errorCode = BarcodeReader.InitLicense("<insert DBR license key here>", out errorMsg);
+    if (errorCode != EnumErrorCode.DBR_SUCCESS)
+    {
+        // Add your code for license error processing;
+        Console.WriteLine(errorMsg);
+    }
     ```
 
     >Please replace `<insert DBR license key here>` with a valid DBR licensekey. There are two ways to obtain one:
     >- Search `DBRLicense` and find the license from `[INSTALLATION FOLDER]\Samples\BarcodeReaderDemo\BarcodeReaderDemo\App.config`.
-    >- Request a trial license from <a href="https://www.dynamsoft.com/customer/license/trialLicense?utm_source=guide&product=dbr&package=desktop" target="_blank">Customer Portal</a>. 
+    >- Request a trial license from <a href="https://www.dynamsoft.com/customer/license/trialLicense?utm_source=guide&product=dbr&package=desktop" target="_blank">Customer Portal</a>.
+
+2. Create an instance of Dynamsoft Barcode Reader
+
+    ```csharp
+    BarcodeReader reader = new BarcodeReader();
+    ```
+
+    *However, please note that if you are using a **concurrent instance license**, please use the new APIs [`GetInstance`](api-reference/BarcodeReader/constructor-and-destructor.md#getinstance) to initialize the barcode reader instance and then [`Recycle`](api-reference/BarcodeReader/constructor-and-destructor.md#recycle) to allow for better concurrent instance management by the library.*
+
+    ```csharp
+    BarcodeReader reader = BarcodeReader.GetInstance();
+    // If no instance is available right away, the application will wait until one becomes available
+    if (reader != null)
+    {
+        // Add your code here to call decoding method, process barcode results and so on
+        // ...
+        // Recycle the instance to make it idle for other concurrent tasks
+        reader.Recycle();
+    }
+    ```
 
 ### Configure the Barcode Scanning Behavior
 
@@ -86,9 +110,11 @@ Let's start by creating a console application which demonstrates how to use the 
     reader.UpdateRuntimeSettings(settings);
     ```
 
-    >The barcode formats to enable is highly application-specific. We recommend that you only enable the barcode formats your application requires. Check out [Barcode Format Enumeration]({{ site.dotnet_enumerations }}format-enums.html) for full supported barcode formats. 
+    >The barcode formats to enable is highly application-specific. We recommend that you only enable the barcode formats your application requires. Check out [Barcode Format Enumeration]({{ site.dotnet_enumerations }}format-enums.html) for full supported barcode formats.
 
-    >If you know exactly the barcode count you want to read, specify `ExpectedBarcodesCount` to speed up the process and improve the accuracy. 
+    >If you know exactly the barcode count you want to read, specify `ExpectedBarcodesCount` to speed up the process and improve the accuracy.
+
+    >The Barcode Reader SDK comes with a large array of runtime settings to optimize the performance of the library. To learn about all the runtime settings, please visit the [RuntimeSettings](api-reference/struct/PublicRuntimeSettings.md) API page. To learn more about the cases and situations in which the settings can help, please visit the [Explore Features](user-guide/explore-features/index.md) page.
 
 ### Decode and Output Results
 
@@ -126,6 +152,15 @@ Let's start by creating a console application which demonstrates how to use the 
 
     ```csharp
     reader.Dispose();
+    ```
+
+    *However, please note that if you are using a **concurrent instance license**, please use the new APIs [`Recycle`](api-reference/BarcodeReader/constructor-and-destructor.md#recycle) to allow for better concurrent instance management by the library.*
+
+    ```csharp
+    if (reader != null)
+    {
+        reader.Recycle();
+    }
     ```
 
 >Note:  

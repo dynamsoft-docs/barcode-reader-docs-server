@@ -77,8 +77,14 @@ Let's start by creating a console application which demonstrates how to use the 
 1. Initialize the license key.
 
     ```cpp
+    int errorCode = 0;
     char errorBuf[512];
-    CBarcodeReader::InitLicense("<insert DBR license key here>", errorBuf, 512);
+    errorCode = CBarcodeReader::InitLicense("<insert DBR license key here>", errorBuf, 512);
+    if (errorCode != DBR_OK)
+    {
+        // Add your code for license error processing;
+        cout << errorBuf << endl;
+    }
     ```
 
     >Please replace `<insert DBR license key here>` with a valid DBR licensekey. There are two ways to obtain one:
@@ -88,7 +94,21 @@ Let's start by creating a console application which demonstrates how to use the 
 2. Create an instance of Dynamsoft Barcode Reader.
 
     ```cpp
-    CBarcodeReader dbr;
+    CBarcodeReader* dbr = new CBarcodeReader();
+    ```
+
+    *However, please note that if you are using a **concurrent instance license**, please use the new APIs [`GetInstance`](api-reference/cbarcodereader-methods/constructor-and-destructor.md#getinstance) to initialize the barcode reader instance and then [`Recycle`](api-reference/cbarcodereader-methods/constructor-and-destructor.md#recycle) to allow for better concurrent instance management by the library.*
+
+    ```cpp
+    CBarcodeReader* dbr = CBarcodeReader::GetInstance();
+    // If no instance is available right away, the application will wait until one becomes available
+    if(dbr != NULL)
+    {
+        // Add your code here to call decoding method, process barcode results and so on
+        // ...
+        // Recycle the instance to make it idle for other concurrent tasks
+        dbr->Recycle();
+    }
     ```
 
 ### Configure the Barcode Scanning Behavior
@@ -98,16 +118,18 @@ Let's start by creating a console application which demonstrates how to use the 
     ```cpp
     char szErrorMsg[512];
     PublicRuntimeSettings settings;
-    dbr.GetRuntimeSettings(&settings);
+    dbr->GetRuntimeSettings(&settings);
     settings.barcodeFormatIds = BF_PDF417; 
     settings.barcodeFormatIds_2 = BF2_DOTCODE; 
     settings.expectedBarcodesCount = 32;
-    dbr.UpdateRuntimeSettings(&settings, szErrorMsg, 512);
+    dbr->UpdateRuntimeSettings(&settings, szErrorMsg, 512);
     ```
 
-    >The barcode formats to enable is highly application-specific. We recommend that you only enable the barcode formats your application requires. Check out [Barcode Format Enumeration]({{ site.enumerations }}format-enums.html) for full supported barcode formats. 
+    >The barcode formats to enable is highly application-specific. We recommend that you only enable the barcode formats your application requires. Check out [Barcode Format Enumeration]({{ site.enumerations }}format-enums.html) for full supported barcode formats.
 
-    >If you know exactly the barcode count you want to read, specify `expectedBarcodesCount` to speed up the process and improve the accuracy. 
+    >If you know exactly the barcode count you want to read, specify `expectedBarcodesCount` to speed up the process and improve the accuracy.
+
+    >The Barcode Reader SDK comes with a large array of runtime settings to optimize the performance of the library. To learn about all the runtime settings, please visit the [RuntimeSettings]({{ site.structs }}PublicRuntimeSettings.html?src=cpp) API page. To learn more about the cases and situations in which the settings can help, please visit the [Explore Features](user-guide/explore-features/index.md) page.
 
 ### Decode and Output Results
 
@@ -115,7 +137,7 @@ Let's start by creating a console application which demonstrates how to use the 
 
     ```cpp
     int errorCode = -1;
-    errorCode = dbr.DecodeFile("[INSTALLATION FOLDER]/Images/AllSupportedBarcodeTypes.png", "");
+    errorCode = dbr->DecodeFile("[INSTALLATION FOLDER]/Images/AllSupportedBarcodeTypes.png", "");
     if(errorCode != DBR_OK)
         cout << CBarcodeReader::GetErrorString(errorCode) << endl;
     ```
@@ -126,7 +148,7 @@ Let's start by creating a console application which demonstrates how to use the 
 
     ```cpp
     TextResultArray* pResult = NULL;
-    dbr.GetAllTextResults(&pResult);
+    dbr->GetAllTextResults(&pResult);
     if (pResult != NULL && pResult->resultsCount > 0)
     {
         cout << pResult->resultsCount <<" total barcode(s) found."<< endl;
@@ -149,7 +171,20 @@ Let's start by creating a console application which demonstrates how to use the 
     ```cpp
     if(pResult != NULL)           
         CBarcodeReader::FreeTextResults(&pResult);
+    ```
 
+2. Release the allocated memory for the instance.
+
+    ```cpp
+    if(dbr != NULL)           
+        delete dbr;
+    ```
+
+    *However, please note that if you are using a **concurrent instance license**, please use the new APIs [`Recycle`](api-reference/cbarcodereader-methods/constructor-and-destructor.md#recycle) to allow for better concurrent instance management by the library.*
+
+    ```cpp
+    if(dbr != NULL)           
+        dbr->Recycle();
     ```
 
 >Note:  
