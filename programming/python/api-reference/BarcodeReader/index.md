@@ -15,7 +15,7 @@ needAutoGenerateSidebar: true
   |----------------------|-------------|
   | [`BarcodeReader`](constructor-and-destructor.md#barcodereader) | Constructor of `BarcodeReader` object.|
   | [`get_instance`](constructor-and-destructor.md#get_instance) | Gets an idle Dynamsoft Barcode Reader instance running on concurrent instance mode. |
-  | [`recycle`](constructor-and-destructor.md#recycle) | Recycles a Dynamsoft Barcode Reader instance running on concurrent instance mode. |
+  | [`recycle_instance`](constructor-and-destructor.md#recycle_instance) | Recycles a Dynamsoft Barcode Reader instance running on concurrent instance mode. |
 
 
 ## License
