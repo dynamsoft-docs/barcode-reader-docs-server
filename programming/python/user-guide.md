@@ -78,7 +78,7 @@ Import dbr package in the source file.
    reader = BarcodeReader()
    ```
 
-   *However, please note that if you are using a **concurrent instance license**, please use the new APIs [`get_instance`](api-reference/BarcodeReader/constructor-and-destructor.md#get_instance) to initialize the barcode reader instance and then [`recycle`](api-reference/BarcodeReader/constructor-and-destructor.md#recycle) to allow for better concurrent instance management by the library.*
+   *However, please note that if you are using a **concurrent instance license**, please use the new APIs [`get_instance`](api-reference/BarcodeReader/constructor-and-destructor.md#get_instance) to initialize the barcode reader instance and then [`recycle_instance`](api-reference/BarcodeReader/constructor-and-destructor.md#recycle_instance) to allow for better concurrent instance management by the library.*
 
    ```python
    reader = BarcodeReader.get_instance()
@@ -87,7 +87,7 @@ Import dbr package in the source file.
       # Add your code here to call decoding method, process barcode results and so on
       # ...
       # Recycle the instance to make it idle for other concurrent tasks
-      reader.recycle()
+      reader.recycle_instance()
    ```
 
 ### Configure the Barcode Scanning Behavior
@@ -140,11 +140,11 @@ Destroy the instance to release all resources.
 del reader
 ```
 
-*However, please note that if you are using a **concurrent instance license**, please use the new APIs [`recycle`](api-reference/BarcodeReader/constructor-and-destructor.md#recycle) to allow for better concurrent instance management by the library.*
+*However, please note that if you are using a **concurrent instance license**, please use the new APIs [`recycle_instance`](api-reference/BarcodeReader/constructor-and-destructor.md#recycle_instance) to allow for better concurrent instance management by the library.*
 
 ```python
 if reader != None:
-   reader.recycle()
+   reader.recycle_instance()
 ```
 
 ### Build and Run the Project
