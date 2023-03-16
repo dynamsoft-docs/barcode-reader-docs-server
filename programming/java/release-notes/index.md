@@ -9,6 +9,7 @@ breadcrumbText: Release Notes
 
 # Release Notes for Java Edition
 
+- [9.6.20 (03/16/2023)](java-9.md#9620-03162023)
 - [9.6.10 (01/10/2023)](java-9.md#9610-01102023)
 - [9.6.0 (11/29/2022)](java-9.md#960-11292022)
 - [9.4.0 (08/30/2022)](java-9.md#940-08302022)
