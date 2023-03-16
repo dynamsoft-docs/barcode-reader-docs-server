@@ -140,7 +140,7 @@ if reader != None:
    # Add your code here to call decoding method, process barcode results and so on
    # ...
    # Recycle the instance to make it idle for other concurrent tasks
-   reader.recycle()
+   reader.recycle_instance()
 ```
 
 ## get_idle_instances_count

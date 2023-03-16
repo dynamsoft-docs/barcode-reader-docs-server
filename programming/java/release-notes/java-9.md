@@ -8,6 +8,14 @@ needGenerateH3Content: false
 
 # Release Notes for Java Edition - 9.x
 
+## 9.6.20 (03/16/2023)
+
+### Fixed
+
+- Fixed a bug where the methods initLicense and gGetInstance may not work as expected when using concurrent instance license.
+- Fixed a bug where license authorization may fail when the main license server is not available.
+- Other small fixes and tweaks.
+
 ## 9.6.10 (01/10/2023)
 
 ### New

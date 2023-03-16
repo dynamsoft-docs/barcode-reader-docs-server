@@ -13,7 +13,7 @@ needAutoGenerateSidebar: true
   | [`BarcodeReader`](#barcodereader) | The default constructor of `BarcodeReader` object.|
   | [`__del__`](#__del__) | The default destructor of `BarcodeReader` object.|
   | [`get_instance`](#get_instance) | Gets an idle Dynamsoft Barcode Reader instance running on concurrent instance mode. |
-  | [`recycle`](#recycle) | Recycles a Dynamsoft Barcode Reader instance running on concurrent instance mode. |
+  | [`recycle_instance`](#recycle_instance) | Recycles a Dynamsoft Barcode Reader instance running on concurrent instance mode. |
 
 
 ## BarcodeReader
@@ -55,15 +55,15 @@ if reader != None:
    # Add your code here to call decoding method, process barcode results and so on
    # ...
    # Recycle the instance to make it idle for other concurrent tasks
-   reader.recycle()
+   reader.recycle_instance()
 ```
 
-## recycle
+## recycle_instance
 
 Recycles a Dynamsoft Barcode Reader instance running on concurrent instance mode.
 
 ```python
-BarcodeReader.recycle()
+BarcodeReader.recycle_instance()
 ```
 
 **Code Snippet**  
@@ -76,5 +76,5 @@ if reader != None:
    # Add your code here to call decoding method, process barcode results and so on
    # ...
    # Recycle the instance to make it idle for other concurrent tasks
-   reader.recycle()
+   reader.recycle_instance()
 ```
