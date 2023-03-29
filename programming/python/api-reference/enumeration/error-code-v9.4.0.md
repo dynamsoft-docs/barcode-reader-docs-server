@@ -3,7 +3,7 @@ layout: default-layout
 title: Error Code - Dynamsoft Barcode Reader SDK Python Edition
 description: This article enumerates the error codes of Dynamsoft Barcode Reader
 keywords: error code, enumeration
-permalink: /programming/python/api-reference/enumeration/error-code.html
+permalink: /programming/python/api-reference/enumeration/error-code-v9.4.0.html
 ---
 
 # Error Code
