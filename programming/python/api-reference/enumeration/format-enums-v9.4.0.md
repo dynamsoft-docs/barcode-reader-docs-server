@@ -4,7 +4,7 @@ title: Format Enumerations - Dynamsoft Barcode Reader SDK Python Edition
 description: This article shows Format Enumerations of Dynamsoft Barcode Reader.
 keywords: BarcodeFormat, BarcodeFormat_2, format enumeration, enumeration
 needGenerateH3Content: false
-permalink: /programming/python/api-reference/enumeration/format-enums.html
+permalink: /programming/python/api-reference/enumeration/format-enums-v9.4.0.html
 ---
 
 # Format Enumeration
