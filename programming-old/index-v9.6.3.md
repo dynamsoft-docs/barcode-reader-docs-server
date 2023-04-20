@@ -4,6 +4,7 @@ title: Main Page - Dynamsoft Barcode Reader Programming
 keywords: programming
 needAutoGenerateSidebar: false
 description: Dynamsoft Barcode Reader supports the following programming languages - Python, .NET, C, C++, Java
+permalink: /programming/index-v9.6.3.html
 ---
 
 # Programming
