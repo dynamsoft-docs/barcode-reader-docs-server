@@ -1,40 +1,25 @@
 ---
-layout: default-layout
-title: Main Page - Dynamsoft Barcode Reader SDK C++ Edition
-description: This is the main page of Dynamsoft Barcode Reader SDK C++ Edition.
-keywords: c++
+title: Documentation Main Page for C++ Edition
+keywords: c++, cplusplus, documentation
+description: Dynamsoft Barcode Reader - C++ Documentation
 needAutoGenerateSidebar: false
-breadcrumbText: C++
 ---
 
-# Dynamsoft Barcode Reader C++ Edition Introduction
+# Documentation - C++
+
+This is the main page of Dynamsoft Barcode Reader SDK documentation for C++ Language.
 
 ## User Guide
 
-- [Getting Started](user-guide.md)
-- [Explore Features](user-guide/explore-features/index.md)
-- [Check Use Cases](user-guide/use-cases/index.md)
-
-## Samples and Demo
-
-- <a href="https://github.com/Dynamsoft/barcode-reader-c-cpp-samples" target="_blank">C++ Samples</a>
-- <a href="https://demo.dynamsoft.com/barcode-reader/" target="_blank">Online Demo</a>
+- [Getting Started](user-guide/getting-started.md)
 
 ## API Reference
 
-- [API Reference](api-reference/index.md)
+- [Primary Class - CBarcodeReader]()
+- [Auxiliary Classes]()
+- [Enumerations](api-reference/index.md#enumerations)
+- [Error Codes]()
 
 ## Release Notes
 
-- [Version 9.x](release-notes/cpp-9.md)
-- [Version 8.x](release-notes/cpp-8.md)
-- [Version 7.6.0 and below](release-notes/cpp-7.md)
-
-## Upgrade Instructions
-
-- [How to upgrade to latest version](upgrade-instruction.md)
-
-## Online Store
-
-- <a href="https://www.dynamsoft.com/store/dynamsoft-barcode-reader/#desktop" target="_blank">Get Pricing For Dynamsoft Barcode Reader</a>
-
+- [Version 1.x](release-notes/cpp-1.md)
