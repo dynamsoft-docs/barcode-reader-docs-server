@@ -3,7 +3,7 @@ layout: default-layout
 title: CLocalizedBarcodesUnit Class
 description: This page shows CLocalizedBarcodesUnit class definition of Dynamsoft Barcode Reader SDK C++ Edition.
 keywords: GetCount, GetLocalizedBarcode, CLocalizedBarcodesUnit, api reference
-permalink: /programming-10/cplusplus/api-reference/localized-barcode-unit.html
+permalink: /programming/cplusplus/api-reference/localized-barcode-unit.html
 ---
 # CLocalizedBarcodesUnit
 

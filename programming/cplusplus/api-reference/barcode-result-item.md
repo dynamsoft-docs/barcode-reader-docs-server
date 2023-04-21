@@ -3,7 +3,7 @@ layout: default-layout
 title: CBarcodeResultItem Class
 description: This page shows CBarcodeResultItem class definition of Dynamsoft Barcode Reader SDK C++ Edition.
 keywords: GetFormat, GetText, GetLocation, GetConfidence, GetModuleSize, CBarcodeResultItem, api reference
-permalink: /programming-10/cplusplus/api-reference/barcode-result-item.html
+permalink: /programming/cplusplus/api-reference/barcode-result-item.html
 ---
 
 # CBarcodeResultItem

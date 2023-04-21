@@ -3,7 +3,7 @@ layout: default-layout
 title: CDecodedBarcodesResultArray Class
 description: This page shows CDecodedBarcodesResultArray class definition of Dynamsoft Barcode Reader SDK C++ Edition.
 keywords: GetCount, GetResult, CDecodedBarcodesResultArray, api reference
-permalink: /programming-10/cplusplus/api-reference/decoded-barcode-result-array.html
+permalink: /programming/cplusplus/api-reference/decoded-barcode-result-array.html
 ---
 # CDecodedBarcodesResultArray
 

@@ -3,7 +3,7 @@ layout: default-layout
 title: CScaledUpBarcodeImageUnit Class
 description: This page shows CScaledUpBarcodeImageUnit class definition of Dynamsoft Barcode Reader SDK C++ Edition.
 keywords: GetImageData, CScaledUpBarcodeImageUnit, api reference
-permalink: /programming-10/cplusplus/api-reference/scaled-up-barcode-iamge-unit.html
+permalink: /programming/cplusplus/api-reference/scaled-up-barcode-iamge-unit.html
 ---
 # CScaledUpBarcodeImageUnit
 

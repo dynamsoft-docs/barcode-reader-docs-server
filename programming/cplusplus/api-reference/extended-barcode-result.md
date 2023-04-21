@@ -3,7 +3,7 @@ layout: default-layout
 title: CExtendedBarcodeResult Class
 description: This page shows CExtendedBarcodeResult class definition of Dynamsoft Barcode Reader SDK C++ Edition.
 keywords: GetDeformation, GetClarity, GetSamplingImage, GetExtendedBarcodeResultType, CExtendedBarcodeResult, api reference
-permalink: /programming-10/cplusplus/api-reference/extended-barcode-result.html
+permalink: /programming/cplusplus/api-reference/extended-barcode-result.html
 ---
 # CExtendedBarcodeResult
 

@@ -3,7 +3,7 @@ layout: default-layout
 title: CBarcodeDetails Class
 description: This page shows CBarcodeDetails class definition of Dynamsoft Barcode Reader SDK C++ Edition.
 keywords: CBarcodeDetails, api reference
-permalink: /programming-10/cplusplus/api-reference/barcode-details.html
+permalink: /programming/cplusplus/api-reference/barcode-details.html
 ---
 # CBarcodeDetails
 

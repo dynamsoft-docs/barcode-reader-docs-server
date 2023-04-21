@@ -3,7 +3,7 @@ layout: default-layout
 title: COneDCodeDetails Class
 description: This page shows COneDCodeDetails class definition of Dynamsoft Barcode Reader SDK C++ Edition.
 keywords: startchar, stopchars, COneDCodeDetails, api reference
-permalink: /programming-10/cplusplus/api-reference/oned-code-details.html
+permalink: /programming/cplusplus/api-reference/oned-code-details.html
 ---
 # COneDCodeDetails
 

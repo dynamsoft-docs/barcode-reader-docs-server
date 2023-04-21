@@ -3,7 +3,7 @@ layout: default-layout
 title: CDecodedBarcodesResult Class
 description: This page shows CDecodedBarcodesResult class definition of Dynamsoft Barcode Reader SDK C++ Edition.
 keywords: GetSourceImageHashId, GetCount, GetErrorCode, CDecodedBarcodesResult, api reference
-permalink: /programming-10/cplusplus/api-reference/decoded-barcodes-result.html
+permalink: /programming/cplusplus/api-reference/decoded-barcodes-result.html
 ---
 # CDecodedBarcodesResult
 

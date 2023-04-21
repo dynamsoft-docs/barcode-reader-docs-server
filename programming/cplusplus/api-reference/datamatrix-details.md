@@ -3,7 +3,7 @@ layout: default-layout
 title: CDataMatrixDetails Class
 description: This page shows CDataMatrixDetails class definition of Dynamsoft Barcode Reader SDK C++ Edition.
 keywords: rows, columns, CDataMatrixDetails, api reference
-permalink: /programming-10/cplusplus/api-reference/datamatrix-details.html
+permalink: /programming/cplusplus/api-reference/datamatrix-details.html
 ---
 # CDataMatrixDetails
 

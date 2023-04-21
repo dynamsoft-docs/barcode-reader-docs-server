@@ -3,7 +3,7 @@ layout: default-layout
 title: CLocalizedBarcodeElement Class
 description: This page shows CLocalizedBarcodeElement class definition of Dynamsoft Barcode Reader SDK C++ Edition.
 keywords: GetAngle, GetConfidence, GetFormat, GetFormatString, GetModuleSize, CLocalizedBarcodeElement, api reference
-permalink: /programming-10/cplusplus/api-reference/localized-barcode-element.html
+permalink: /programming/cplusplus/api-reference/localized-barcode-element.html
 ---
 # CLocalizedBarcodeElement
 
@@ -23,8 +23,8 @@ class CLocalizedBarcodeElement : public CRegionObjectElement
 |--------|-------------|
 | [`GetAngle()`](#getangle) | Gets the orientation angle of the barcode. |
 | [`GetConfidence()`](#getconfidence) | Gets the confidence score of the barcode recognition result. |
-| [`GetFormat()`](#getformat) | Gets the format of the barcode. |
-| [`GetFormatString()`](#getformatstring) | Gets the string representation of the barcode format. |
+| [`GetPossibleFormat()`](#getformat) | Gets the possible format of the barcode. |
+| [`GetPossibleFormatString()`](#getformatstring) | Gets the string representation of the possible barcode format. |
 | [`GetModuleSize()`](#getmodulesize) | Gets the module size of the barcode. |
 
 ### GetAngle
