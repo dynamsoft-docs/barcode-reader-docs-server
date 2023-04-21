@@ -21,18 +21,20 @@ permalink: /programming/cplusplus/api-reference/index.html
 
 ## Final Results
 
-- [`CAztecDetails`]({{ site.cpp_api }}aztec-details.html)
 - [`CBarcodeResultItem`]({{ site.cpp_api }}barcode-result-item.html)
-- [`CBarcodeDetails`]({{ site.cpp_api }}barcode-details.html)
 - [`CCapturedResultReceiver`]({{ site.dcv_cpp_api }}capture-vision-router/auxiliary-classes/captured-result-receiver.html)
 - [`CCapturedResult`]({{ site.dcv_cpp_api }}core/basic-structures/captured-result.html)
 - [`CCapturedResultArray`]({{ site.dcv_cpp_api }}core/basic-structures/captured-result-array.html)
 - [`CCapturedResultItem`]({{ site.dcv_cpp_api }}core/basic-structures/captured-result-item.html)
+- [`CRawImageResultItem`]({{ site.dcv_cpp_api }}capture-vision-router/auxiliary-classes/raw-image-result-item.html)
+
+## Detailed Barcode Results
+- [`CAztecDetails`]({{ site.cpp_api }}aztec-details.html)
+- [`CBarcodeDetails`]({{ site.cpp_api }}barcode-details.html)
 - [`CDataMatrixDetails`]({{ site.cpp_api }}datamatrix-details.html)
 - [`COneDCodeDetails`]({{ site.cpp_api }}oned-code-details.html)
 - [`CPDF417Details`]({{ site.cpp_api }}pdf417-details.html)
 - [`CQRCodeDetails`]({{ site.cpp_api }}qr-code-details.html)
-- [`CRawImageResultItem`]({{ site.dcv_cpp_api }}capture-vision-router/auxiliary-classes/raw-image-result-item.html)
 
 ## Intermediate Results
 
@@ -103,3 +105,8 @@ permalink: /programming/cplusplus/api-reference/index.html
 - [`SectionType`]({{ site.enumerations }}core/section-type.html?src=cpp&&lang=cpp)
 - [`TargetType`]({{ site.enumerations }}core/target-type.html?src=cpp&&lang=cpp)
 - [`VideoFrameQuality`]({{ site.enumerations }}core/video-frame-quality.html?src=cpp&&lang=cpp)
+- [`BarcodeFormat`]({{ site.enumerations }}barcode-reader/barcode-format.html?src=cpp&&lang=cpp)
+- [`DeblurMode`]({{ site.enumerations }}barcode-reader/deblur-mode.html?src=cpp&&lang=cpp)
+- [`ExtendedBarcodeResultType`]({{ site.enumerations }}barcode-reader/extended-barcode-result-type.html?src=cpp&&lang=cpp)
+- [`LocalizationMode`]({{ site.enumerations }}barcode-reader/localization-mode.html?src=cpp&&lang=cpp)
+- [`QRCodeErrorCorrectionLevel`]({{ site.enumerations }}barcode-reader/qr-code-error-correction-level.html?src=cpp&&lang=cpp)
