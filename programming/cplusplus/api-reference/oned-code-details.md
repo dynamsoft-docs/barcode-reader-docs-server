@@ -9,13 +9,19 @@ permalink: /programming/cplusplus/api-reference/oned-code-details.html
 
 The COneDCodeDetails class represents detailed information about a one-dimensional barcode. It inherits from the CBarcodeDetails class.
 
+## Definition
+
+*Namespace:* dynamsoft::dbr
+
+*Assembly:* DynamsoftBarcodeReader.dll
+
 ```cpp
 class COneDCodeDetails : public CBarcodeDetails
 ```
 
 ---
 
-## Attributes Summary
+## Attributes
 
 | Attribute | Type |
 |---------- | ---- |
@@ -30,7 +36,7 @@ class COneDCodeDetails : public CBarcodeDetails
 | [`endPatternRange`](#endpatternrange) | *float[2]* |
 | [`reserved`](#reserved) | *char[8]* |
 
-## Methods Summary
+## Methods
 
 | Method               | Description |
 |----------------------|-------------|

@@ -9,13 +9,17 @@ permalink: /programming/cplusplus/api-reference/barcode-details.html
 
 The CBarcodeDetails class represents the details of a barcode. It is an abstract base class.
 
+## Definition
+
+*Namespace:* dynamsoft::dbr
+
+*Assembly:* DynamsoftBarcodeReader.dll
+
 ```cpp
 class CBarcodeDetails
 ```
 
----
-
-## Methods Summary
+## Methods
 
 | Method               | Description |
 |----------------------|-------------|

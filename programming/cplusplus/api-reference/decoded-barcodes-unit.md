@@ -5,20 +5,26 @@ description: This page shows CDecodedBarcodesUnit class definition of Dynamsoft 
 keywords: GetCount, GetDecodedBarcode, CDecodedBarcodesUnit, api reference
 permalink: /programming/cplusplus/api-reference/decoded-barcodes-unit.html
 ---
-# CDecodedBarcodesUnit
+# CDecodedBarcodesUnit Class
 
 The `CDecodedBarcodesUnit` class represents a unit that contains decoded barcode elements. It inherits from the `CIntermediateResultUnit` class.
+
+## Definition
+
+*Namespace:* dynamsoft::dbr::intermediate_results
+
+*Assembly:* DynamsoftBarcodeReader.dll
 
 ```cpp
 class CDecodedBarcodesUnit: public CIntermediateResultUnit
 ```
 
-## Methods Summary
+## Methods
 
 | Method                            | Description |
 |-----------------------------------|-------------|
-| [`GetCount()`](#getcount)           | Gets the number of decoded barcodes in the unit.|
-| [`GetDecodedBarcode()`](#getdecodedbarcode)           | Gets a pointer to the CDecodedBarcodeElement object at the specified index.|
+| [`GetCount`](#getcount)           | Gets the number of decoded barcodes in the unit.|
+| [`GetDecodedBarcode`](#getdecodedbarcode)           | Gets a pointer to the CDecodedBarcodeElement object at the specified index.|
 
 
 

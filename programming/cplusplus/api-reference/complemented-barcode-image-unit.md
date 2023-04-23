@@ -5,19 +5,24 @@ description: This page shows CComplementedBarcodeImageUnit class definition of D
 keywords: GetImageData, CComplementedBarcodeImageUnit, api reference
 permalink: /programming/cplusplus/api-reference/complemented-barcode-image-unit.html
 ---
-# CComplementedBarcodeImageUnit
-
+# CComplementedBarcodeImageUnit Class
 The `CComplementedBarcodeImageUnit` class represents a unit that contains complemented barcode image data. It inherits from the `CIntermediateResultUnit` class.
+
+## Definition
+
+*Namespace:* dynamsoft::dbr::intermediate_results
+
+*Assembly:* DynamsoftBarcodeReader.dll
 
 ```cpp
 class CComplementedBarcodeImageUnit: public CIntermediateResultUnit
 ```
 
-## Methods Summary
+## Methods
 
 | Method                            | Description |
 |-----------------------------------|-------------|
-| [`GetImageData()`](#getimagedata)           | Gets the complemented barcode image data.|
+| [`GetImageData`](#getimagedata)           | Gets the complemented barcode image data.|
 
 
 ### GetImageData

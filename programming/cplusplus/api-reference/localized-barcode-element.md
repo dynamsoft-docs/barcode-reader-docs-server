@@ -5,27 +5,29 @@ description: This page shows CLocalizedBarcodeElement class definition of Dynams
 keywords: GetAngle, GetConfidence, GetFormat, GetFormatString, GetModuleSize, CLocalizedBarcodeElement, api reference
 permalink: /programming/cplusplus/api-reference/localized-barcode-element.html
 ---
-# CLocalizedBarcodeElement
+# CLocalizedBarcodeElement Class
 
 The CLocalizedBarcodeElement class represents a localized barcode element detected in an image. It is inherited from CRegionObjectElement class.
+
+## Definition
+
+*Namespace:* dynamsoft::dbr
+
+*Assembly:* DynamsoftBarcodeReader.dll
 
 ```cpp
 class CLocalizedBarcodeElement : public CRegionObjectElement
 ```
 
-*Namespace:* dynamsoft::dbr::intermediate_results
-
----
-
-## Methods Summary
+## Methods
 
 | Method | Description |
 |--------|-------------|
-| [`GetAngle()`](#getangle) | Gets the orientation angle of the barcode. |
-| [`GetConfidence()`](#getconfidence) | Gets the confidence score of the barcode recognition result. |
-| [`GetPossibleFormat()`](#getformat) | Gets the possible format of the barcode. |
-| [`GetPossibleFormatString()`](#getformatstring) | Gets the string representation of the possible barcode format. |
-| [`GetModuleSize()`](#getmodulesize) | Gets the module size of the barcode. |
+| [`GetAngle`](#getangle) | Gets the orientation angle of the barcode. |
+| [`GetConfidence`](#getconfidence) | Gets the confidence score of the barcode recognition result. |
+| [`GetPossibleFormat`](#getformat) | Gets the possible format of the barcode. |
+| [`GetPossibleFormatString`](#getformatstring) | Gets the string representation of the possible barcode format. |
+| [`GetModuleSize`](#getmodulesize) | Gets the module size of the barcode. |
 
 ### GetAngle
 

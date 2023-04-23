@@ -6,31 +6,37 @@ keywords: GetFormat, GetText, GetLocation, GetConfidence, GetModuleSize, CBarcod
 permalink: /programming/cplusplus/api-reference/barcode-result-item.html
 ---
 
-# CBarcodeResultItem
+# CBarcodeResultItem Class
 
 The `CBarcodeResultItem` class represents a barcode result item decoded by barcode reader engine. It is derived from `CCapturedResultItem`.
+
+## Definition
+
+*Namespace:* dynamsoft::dbr
+
+*Assembly:* DynamsoftBarcodeReader.dll
 
 ```cpp
 class CBarcodeResultItem : public CCapturedResultItem
 ```
 
-## Methods Summary
+## Methods
 
 | Method               | Description |
 |----------------------|-------------|
-| [`GetFormat()`](#getformat) | Gets the format of the decoded barcode result. |
-| [`GetFormatString()`](#getformatstring) | Gets the format string of the decoded barcode result. |
-| [`GetText()`](#gettext) | Gets the text result of the decoded barcode. |
-| [`GetBytes()`](#getbytes) | Gets the text bytes of the decoded barcode result. |
-| [`GetBytesLength()`](#getbytesLength) | Gets the text length of the decoded barcode result. |
-| [`GetLocation()`](#getlocation) | Gets the location of the decoded barcode in a quadrilateral. |
-| [`GetConfidence()`](#getconfidence) | Gets the confidence of the decoded barcode result. |
-| [`GetAngle()`](#getangle) | Gets the angle of the decoded barcode result. |
-| [`GetModuleSize()`](#getmodulesize) | Gets the module size of the decoded barcode result. |
-| [`GetDetails()`](#getdetails) | Gets the details of the decoded barcode result. |
-| [`IsDPM()`](#isdpm) | Gets whether the decoded barcode is a DPM code. |
-| [`IsMirrored()`](#ismirrored) | Gets whether the decoded barcode is a mirrored barcode. |
-| [`GetRotationTransformMatrix()`](#getrotationtransformmatrix) | Gets the rotation transform matrix of the decoded barcode result. |
+| [`GetFormat`](#getformat) | Gets the format of the decoded barcode result. |
+| [`GetFormatString`](#getformatstring) | Gets the format string of the decoded barcode result. |
+| [`GetText`](#gettext) | Gets the text result of the decoded barcode. |
+| [`GetBytes`](#getbytes) | Gets the text bytes of the decoded barcode result. |
+| [`GetBytesLength`](#getbytesLength) | Gets the text length of the decoded barcode result. |
+| [`GetLocation`](#getlocation) | Gets the location of the decoded barcode in a quadrilateral. |
+| [`GetConfidence`](#getconfidence) | Gets the confidence of the decoded barcode result. |
+| [`GetAngle`](#getangle) | Gets the angle of the decoded barcode result. |
+| [`GetModuleSize`](#getmodulesize) | Gets the module size of the decoded barcode result. |
+| [`GetDetails`](#getdetails) | Gets the details of the decoded barcode result. |
+| [`IsDPM`](#isdpm) | Gets whether the decoded barcode is a DPM code. |
+| [`IsMirrored`](#ismirrored) | Gets whether the decoded barcode is a mirrored barcode. |
+| [`GetRotationTransformMatrix`](#getrotationtransformmatrix) | Gets the rotation transform matrix of the decoded barcode result. |
 
 
 ### GetFormat

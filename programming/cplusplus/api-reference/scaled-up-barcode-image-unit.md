@@ -5,19 +5,25 @@ description: This page shows CScaledUpBarcodeImageUnit class definition of Dynam
 keywords: GetImageData, CScaledUpBarcodeImageUnit, api reference
 permalink: /programming/cplusplus/api-reference/scaled-up-barcode-image-unit.html
 ---
-# CScaledUpBarcodeImageUnit
+# CScaledUpBarcodeImageUnit Class
 
 The `CScaledUpBarcodeImageUnit` class represents a unit that contains scaled up barcode image. It inherits from the `CIntermediateResultUnit` class.
+
+## Definition
+
+*Namespace:* dynamsoft::dbr::intermediate_results
+
+*Assembly:* DynamsoftBarcodeReader.dll
 
 ```cpp
 class CScaledUpBarcodeImageUnit: public CIntermediateResultUnit
 ```
 
-## Methods Summary
+## Methods
 
 | Method                            | Description |
 |-----------------------------------|-------------|
-| [`GetImageData()`](#getimagedata)           | Gets the scaled up barcode image data.|
+| [`GetImageData`](#getimagedata)           | Gets the scaled up barcode image data.|
 
 
 ### GetImageData

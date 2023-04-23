@@ -5,26 +5,28 @@ description: This page shows CExtendedBarcodeResult class definition of Dynamsof
 keywords: GetDeformation, GetClarity, GetSamplingImage, GetExtendedBarcodeResultType, CExtendedBarcodeResult, api reference
 permalink: /programming/cplusplus/api-reference/extended-barcode-result.html
 ---
-# CExtendedBarcodeResult
+# CExtendedBarcodeResult Class
 
 The CExtendedBarcodeResult class represents an extended barcode result in a decoded barcode element. It contains information such as the type of extended barcode, deformation, clarity, and a sampling image of the barcode.
+
+## Definition
+
+*Namespace:* dynamsoft::dbr
+
+*Assembly:* DynamsoftBarcodeReader.dll
 
 ```cpp
 class CExtendedBarcodeResult : public CDecodedBarcodeElement
 ```
 
-*Namespace:* dynamsoft::dbr::intermediate_results
-
----
-
-## Methods Summary
+## Methods
 
 | Method | Description |
 |--------|-------------|
-| [`GetExtendedBarcodeResultType()`](#getextendedbarcoderesulttype) | Gets the type of extended barcode result. |
-| [`GetDeformation()`](#getdeformation) | Gets the deformation of the barcode. |
-| [`GetClarity()`](#getclarity) | Gets the clarity of the barcode. |
-| [`GetSamplingImage()`](#getsamplingimage) | Gets the sampling image of the barcode. |
+| [`GetExtendedBarcodeResultType`](#getextendedbarcoderesulttype) | Gets the type of extended barcode result. |
+| [`GetDeformation`](#getdeformation) | Gets the deformation of the barcode. |
+| [`GetClarity`](#getclarity) | Gets the clarity of the barcode. |
+| [`GetSamplingImage`](#getsamplingimage) | Gets the sampling image of the barcode. |
 
 ### GetExtendedBarcodeResultType
 

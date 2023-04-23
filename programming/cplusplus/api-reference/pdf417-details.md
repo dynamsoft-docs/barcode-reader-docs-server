@@ -9,13 +9,17 @@ permalink: /programming/cplusplus/api-reference/pdf417-details.html
 
 The CPDF417Details class represents a barcode in PDF417 format. It inherits from the CBarcodeDetails class and contains information about the row count, column count, and error correction level of the barcode.
 
+## Definition
+
+*Namespace:* dynamsoft::dbr
+
+*Assembly:* DynamsoftBarcodeReader.dll
+
 ```cpp
 class CPDF417Details : public CBarcodeDetails
 ```
 
----
-
-## Attributes Summary
+## Attributes
 
 | Attribute | Type |
 |---------- | ---- |
@@ -24,10 +28,6 @@ class CPDF417Details : public CBarcodeDetails
 | [`errorCorrectionLevel`](#errorcorrectionlevel) | *int* |
 | [`hasLeftRowIndicator`](#hasleftrowindicator) | *int* |
 | [`hasRightRowIndicator`](#hasrightrowindicator) | *int* |
-
-## Methods Summary
-
-This class does not have any public methods.
 
 ### rows
 

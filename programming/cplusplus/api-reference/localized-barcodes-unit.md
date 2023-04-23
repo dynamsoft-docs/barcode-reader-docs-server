@@ -5,20 +5,26 @@ description: This page shows CLocalizedBarcodesUnit class definition of Dynamsof
 keywords: GetCount, GetLocalizedBarcode, CLocalizedBarcodesUnit, api reference
 permalink: /programming/cplusplus/api-reference/localized-barcodes-unit.html
 ---
-# CLocalizedBarcodesUnit
+# CLocalizedBarcodesUnit Class
 
 The `CLocalizedBarcodesUnit` class represents a unit that contains localized barcodes unit. It inherits from the `CIntermediateResultUnit` class.
+
+## Definition
+
+*Namespace:* dynamsoft::dbr::intermediate_results
+
+*Assembly:* DynamsoftBarcodeReader.dll
 
 ```cpp
 class CLocalizedBarcodesUnit: public CIntermediateResultUnit
 ```
 
-## Methods Summary
+## Methods
 
 | Method                            | Description |
 |-----------------------------------|-------------|
-| [`GetCount()`](#getcount)           | Gets the number of localized barcodes in the unit.|
-| [`GetLocalizedBarcode()`](#getlocalizedbarcode)           | Gets a pointer to a specific localized barcode element.|
+| [`GetCount`](#getcount)           | Gets the number of localized barcodes in the unit.|
+| [`GetLocalizedBarcode`](#getlocalizedbarcode)           | Gets a pointer to a specific localized barcode element.|
 
 ### GetCount
 

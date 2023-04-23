@@ -5,20 +5,26 @@ description: This page shows CDecodedBarcodesResultArray class definition of Dyn
 keywords: GetCount, GetResult, CDecodedBarcodesResultArray, api reference
 permalink: /programming/cplusplus/api-reference/decoded-barcode-result-array.html
 ---
-# CDecodedBarcodesResultArray
+# CDecodedBarcodesResultArray Class
 
 The `CDecodedBarcodesResultArray` class represents an array of decoded barcodes. It is an abstract class that provides an interface for accessing the results.
+
+## Definition
+
+*Namespace:* dynamsoft::dbr
+
+*Assembly:* DynamsoftBarcodeReader.dll
 
 ```cpp
 class CDecodedBarcodesResultArray
 ```
 
-## Methods Summary
+## Methods
 
 | Method                            | Description |
 |-----------------------------------|-------------|
-| [`GetCount()`](#getcount)           | Gets the number of decoded barcodes in the array.|
-| [`GetResult()`](#getresult)           | Gets the decoded barcode at the specified index.|
+| [`GetCount`](#getcount)           | Gets the number of decoded barcodes in the array.|
+| [`GetResult`](#getresult)           | Gets the decoded barcode at the specified index.|
 
 ### GetCount
 

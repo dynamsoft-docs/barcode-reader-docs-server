@@ -5,19 +5,25 @@ description: This page shows CDeformationResistedBarcodeImageUnit class definiti
 keywords: GetImageData, CDeformationResistedBarcodeImageUnit, api reference
 permalink: /programming/cplusplus/api-reference/deformation-resisted-barcode-image-unit.html
 ---
-# CDeformationResistedBarcodeImageUnit
+# CDeformationResistedBarcodeImageUnit Class
 
 The `CDeformationResistedBarcodeImageUnit` class represents a unit that contains deformation resisted barcode image data. It inherits from the `CIntermediateResultUnit` class.
+
+## Definition
+
+*Namespace:* dynamsoft::dbr::intermediate_results
+
+*Assembly:* DynamsoftBarcodeReader.dll
 
 ```cpp
 class CDeformationResistedBarcodeImageUnit: public CIntermediateResultUnit
 ```
 
-## Methods Summary
+## Methods
 
 | Method                            | Description |
 |-----------------------------------|-------------|
-| [`GetImageData()`](#getimagedata)           | Gets the deformation resisted barcode image data.|
+| [`GetImageData`](#getimagedata)           | Gets the deformation resisted barcode image data.|
 
 
 ### GetImageData

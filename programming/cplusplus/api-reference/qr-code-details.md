@@ -7,15 +7,19 @@ permalink: /programming/cplusplus/api-reference/qr-code-details.html
 ---
 # CQRCodeDetails
 
-The CQRCodeDetails class represents the details of a QR Code barcode. It is derived from the CBarcodeDetails class and contains various attributes related to the QR Code barcode. 
+The CQRCodeDetails class represents the details of a QR Code barcode. It is derived from the CBarcodeDetails class and contains various attributes related to the QR Code barcode.
+
+## Definition
+
+*Namespace:* dynamsoft::dbr
+
+*Assembly:* DynamsoftBarcodeReader.dll
 
 ```cpp
 class CQRCodeDetails : public CBarcodeDetails
 ```
 
----
-
-## Attributes Summary
+## Attributes
 
 | Attribute | Type |
 |---------- | ---- |

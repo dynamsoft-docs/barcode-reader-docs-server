@@ -5,20 +5,26 @@ description: This page shows CCandidateBarcodeZonesUnit class definition of Dyna
 keywords: GetCount, GetCandidateBarcodeZone, CCandidateBarcodeZonesUnit, api reference
 permalink: /programming/cplusplus/api-reference/candidate-barcode-zones-unit.html
 ---
-# CCandidateBarcodeZonesUnit
+# CCandidateBarcodeZonesUnit Class
 
 The `CCandidateBarcodeZonesUnit` class represents a unit that contains candidate barcode zones unit. It inherits from the `CIntermediateResultUnit` class.
+
+## Definition
+
+*Namespace:* dynamsoft::dbr::intermediate_results
+
+*Assembly:* DynamsoftBarcodeReader.dll
 
 ```cpp
 class CCandidateBarcodeZonesUnit: public CIntermediateResultUnit
 ```
 
-## Methods Summary
+## Methods
 
 | Method                            | Description |
 |-----------------------------------|-------------|
-| [`GetCount()`](#getcount)           | Gets the number of candidate barcode zones in the unit.|
-| [`GetCandidateBarcodeZone()`](#getcandidatebarcodezone)           | Gets the specific candidate barcode zone in the region.|
+| [`GetCount`](#getcount)           | Gets the number of candidate barcode zones in the unit.|
+| [`GetCandidateBarcodeZone`](#getcandidatebarcodezone)           | Gets the specific candidate barcode zone in the region.|
 
 ### GetCount
 
