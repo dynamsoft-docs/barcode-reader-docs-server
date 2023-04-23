@@ -7,7 +7,7 @@ permalink: /programming/cplusplus/api-reference/localized-barcode-element.html
 ---
 # CLocalizedBarcodeElement Class
 
-The CLocalizedBarcodeElement class represents a localized barcode element detected in an image. It is inherited from CRegionObjectElement class.
+The `CLocalizedBarcodeElement` class represents a localized barcode element detected in an image. It is inherited from `CRegionObjectElement` class.
 
 ## Definition
 

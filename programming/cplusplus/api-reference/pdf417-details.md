@@ -7,7 +7,7 @@ permalink: /programming/cplusplus/api-reference/pdf417-details.html
 ---
 # CPDF417Details
 
-The CPDF417Details class represents a barcode in PDF417 format. It inherits from the CBarcodeDetails class and contains information about the row count, column count, and error correction level of the barcode.
+The `CPDF417Details` class represents a barcode in PDF417 format. It inherits from the `CBarcodeDetails` class and contains information about the row count, column count, and error correction level of the barcode.
 
 ## Definition
 

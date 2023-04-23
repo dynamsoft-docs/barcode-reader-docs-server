@@ -7,7 +7,7 @@ permalink: /programming/cplusplus/api-reference/oned-code-details.html
 ---
 # COneDCodeDetails
 
-The COneDCodeDetails class represents detailed information about a one-dimensional barcode. It inherits from the CBarcodeDetails class.
+The `COneDCodeDetails` class represents detailed information about a one-dimensional barcode. It inherits from the `CBarcodeDetails` class.
 
 ## Definition
 

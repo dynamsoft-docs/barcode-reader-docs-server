@@ -7,7 +7,7 @@ permalink: /programming/cplusplus/api-reference/decoded-barcode-element.html
 ---
 # CDecodedBarcodeElement Class
 
-The CDecodedBarcodeElement class represents a decoded barcode element. It inherits from the CLocalizedBarcodeElement class and provides additional functionality for retrieving information about the decoded barcode.
+The `CDecodedBarcodeElement` class represents a decoded barcode element. It inherits from the `CLocalizedBarcodeElement` class and provides additional functionality for retrieving information about the decoded barcode.
 
 ## Definition
 

@@ -7,7 +7,7 @@ permalink: /programming/cplusplus/api-reference/aztec-details.html
 ---
 # CAztecDetails
 
-The CAztecDetails class represents a barcode in Aztec format. It inherits from the CBarcodeDetails class and contains information about the row count, column count, and layer number of the barcode.
+The `CAztecDetails` class represents a barcode in Aztec format. It inherits from the `CBarcodeDetails` class and contains information about the row count, column count, and layer number of the barcode.
 
 ## Definition
 

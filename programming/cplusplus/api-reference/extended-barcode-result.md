@@ -7,7 +7,7 @@ permalink: /programming/cplusplus/api-reference/extended-barcode-result.html
 ---
 # CExtendedBarcodeResult Class
 
-The CExtendedBarcodeResult class represents an extended barcode result in a decoded barcode element. It contains information such as the type of extended barcode, deformation, clarity, and a sampling image of the barcode.
+The `CExtendedBarcodeResult` class represents an extended barcode result in a decoded barcode element. It contains information such as the type of extended barcode, deformation, clarity, and a sampling image of the barcode.
 
 ## Definition
 

@@ -7,7 +7,7 @@ permalink: /programming/cplusplus/api-reference/datamatrix-details.html
 ---
 # CDataMatrixDetails
 
-The CDataMatrixDetails class represents the details of a DataMatrix barcode. It is derived from the CBarcodeDetails class and contains various attributes related to the DataMatrix barcode. 
+The `CDataMatrixDetails` class represents the details of a DataMatrix barcode. It is derived from the `CBarcodeDetails` class and contains various attributes related to the DataMatrix barcode. 
 
 ## Definition
 

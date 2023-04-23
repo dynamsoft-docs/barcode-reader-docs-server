@@ -7,7 +7,7 @@ permalink: /programming/cplusplus/api-reference/barcode-details.html
 ---
 # CBarcodeDetails
 
-The CBarcodeDetails class represents the details of a barcode. It is an abstract base class.
+The `CBarcodeDetails` class represents the details of a barcode. It is an abstract base class.
 
 ## Definition
 
