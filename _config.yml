@@ -8,8 +8,10 @@ useVersionTree: true
 
 enumerations: /capture-vision/docs/core/enums/
 parameters_reference: /capture-vision/docs/core/parameters/reference/
+parameters_reference_dbr: /barcode-reader/docs/core/parameters/reference/
 
 dcv_cpp_api: /capture-vision/docs/server/programming/cplusplus/api-reference/
+dcv_introduction: /capture-vision/docs/core/introduction/
 
 c: /barcode-reader/docs/server/programming/c/
 c_api: /barcode-reader/docs/server/programming/c/api-reference/
