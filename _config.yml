@@ -90,11 +90,29 @@ defaults:
     values:
       category: "original-repo"
       edition: "desktop"
+      docRootName: "Barcode Reader C Edition" 
+      docHomePage: "/barcode-reader/docs/server/programming/c/"
+  - scope:
+      path: "programming-old/c"
+    values:
+      category: "original-repo"
+      edition: "desktop"
+      docRootName: "Barcode Reader C Edition" 
+      docHomePage: "/barcode-reader/docs/server/programming/c/"
   - scope:
       path: "programming/cplusplus"
     values:
       category: "original-repo"
       edition: "desktop"
+      docRootName: "Barcode Reader C++ Edition" 
+      docHomePage: "/barcode-reader/docs/server/programming/cplusplus/"
+  - scope:
+      path: "programming-old/cplusplus"
+    values:
+      category: "original-repo"
+      edition: "desktop"
+      docRootName: "Barcode Reader C++ Edition" 
+      docHomePage: "/barcode-reader/docs/server/programming/cplusplus/"
   - scope:
       path: "programming/c-cplusplus"
     values:
@@ -105,16 +123,43 @@ defaults:
     values:
       category: "original-repo"
       edition: "desktop"
+      docRootName: "Barcode Reader DotNet Edition" 
+      docHomePage: "/barcode-reader/docs/server/programming/dotnet/"
+  - scope:
+      path: "programming-old/dotnet"
+    values:
+      category: "original-repo"
+      edition: "desktop"
+      docRootName: "Barcode Reader DotNet Edition" 
+      docHomePage: "/barcode-reader/docs/server/programming/dotnet/"
   - scope:
       path: "programming/python"
     values:
       category: "original-repo"
       edition: "desktop"
+      docRootName: "Barcode Reader Python Edition" 
+      docHomePage: "/barcode-reader/docs/server/programming/python/"
+  - scope:
+      path: "programming-old/python"
+    values:
+      category: "original-repo"
+      edition: "desktop"
+      docRootName: "Barcode Reader Python Edition" 
+      docHomePage: "/barcode-reader/docs/server/programming/python/"
   - scope:
       path: "programming/java"
     values:
       category: "original-repo"
       edition: "desktop"
+      docRootName: "Barcode Reader Java Edition" 
+      docHomePage: "/barcode-reader/docs/server/programming/java/"
+  - scope:
+      path: "programming-old/java"
+    values:
+      category: "original-repo"
+      edition: "desktop"
+      docRootName: "Barcode Reader Java Edition" 
+      docHomePage: "/barcode-reader/docs/server/programming/java/"
   - scope:
       path: ""
     values:
