@@ -75,13 +75,13 @@ Let's start by creating a console application which demonstrates how to use the 
         #ifdef _WIN64
             #pragma comment(lib, "[INSTALLATION FOLDER]/Lib/Windows/x64/DynamsoftCorex64.lib")
             #pragma comment(lib, "[INSTALLATION FOLDER]/Lib/Windows/x64/DynamsoftLicensex64.lib")
-            #pragma comment(lib, "[INSTALLATION FOLDER]/Lib/Windows/x64/DynamsoftCaptureVisionx64.lib")
+            #pragma comment(lib, "[INSTALLATION FOLDER]/Lib/Windows/x64/DynamsoftCaptureVisionRouterx64.lib")
             #pragma comment(lib, "[INSTALLATION FOLDER]/Lib/Windows/x64/DynamsoftBarcodeReaderx64.lib")
         #else
-            #pragma comment(lib, "[INSTALLATION FOLDER]/Lib/Windows/x64/DynamsoftCorex86.lib")
+            #pragma comment(lib, "[INSTALLATION FOLDER]/Lib/Windows/x86/DynamsoftCorex86.lib")
             #pragma comment(lib, "[INSTALLATION FOLDER]/Lib/Windows/x86/DynamsoftLicensex86.lib")
-            #pragma comment(lib, "[INSTALLATION FOLDER]/Lib/Windows/x86/DynamsoftCaptureVisionx86.lib")
-            #pragma comment(lib, "[INSTALLATION FOLDER]/Lib/Windows/x64/DynamsoftBarcodeReaderx86.lib")
+            #pragma comment(lib, "[INSTALLATION FOLDER]/Lib/Windows/x86/DynamsoftCaptureVisionRouterx86.lib")
+            #pragma comment(lib, "[INSTALLATION FOLDER]/Lib/Windows/x86/DynamsoftBarcodeReaderx86.lib")
         #endif
     #endif
     ```
@@ -91,8 +91,8 @@ Let's start by creating a console application which demonstrates how to use the 
 1. Initialize the license key.
 
     ```cpp
-    char errorMsg1[256];
-    CLicenseManager::InitLicense("DLS2eyJvcmdhbml6YXRpb25JRCI6IjIwMDAwMSJ9", errorMsg1, 256);
+    char errorMsg[512];
+    CLicenseManager::InitLicense("DLS2eyJvcmdhbml6YXRpb25JRCI6IjIwMDAwMSJ9", errorMsg, 512);
     ```
 
     > The string "DLS2eyJvcmdhbml6YXRpb25JRCI6IjIwMDAwMSJ9" here is a free public trial license. Note that network connection is required for this license to work. When it expires, you can request a 30-day free trial license from the <a href="https://www.dynamsoft.com/customer/license/trialLicense?utm_source=guide&product=dbr&package=desktop" target="_blank">Customer Portal</a>.
@@ -110,7 +110,7 @@ Let's start by creating a console application which demonstrates how to use the 
     ```cpp
     CCapturedResultArray* results = cvr.Capture("[INSTALLATION FOLDER]/Images/sample-image.jpg", PresetTemplate::PT_READ_BARCODES);
     int capturedResultCount = results->GetCount();
-    for (int i = 0; i < count; i++) {
+    for (int i = 0; i < capturedResultCount; i++) {
         const CCapturedResult* capturedResult = results->GetResult(i);
         int capturedResultItemCount = capturedResult->GetCount();
         for (int j = 0; j < capturedResultItemCount; j++) {
@@ -121,7 +121,7 @@ Let's start by creating a console application which demonstrates how to use the 
             */
             CapturedResultItemType type = capturedResultItem->GetType();
             if (type | CapturedResultItemType::CRIT_BARCODE) {
-                CBarcodeResultItem* barcodeResultItem = dynamic_cast<const CBarcodeResultItem*> (capturedResultItem);
+                const CBarcodeResultItem* barcodeResultItem = dynamic_cast<const CBarcodeResultItem*> (capturedResultItem);
                 cout << "Barcode Format: " << barcodeResultItem->GetFormatString() << endl;
                 cout << "Barcode Text: " << barcodeResultItem->GetText() << endl;
             }
@@ -177,12 +177,12 @@ The class `DirectoryFetcher` is capable of converting a local directory to an im
 
     ```cpp
     // Add the following lines
-    #include "Include/DynamsoftUtility.h"
+    #include "[INSTALLATION FOLDER]/Include/DynamsoftUtility.h"
     using namespace dynamsoft::utility;
     #ifdef _WIN64
-    #pragma comment(lib, "Lib/x64/DynamsoftUtilityx64.lib")
+    #pragma comment(lib, "[INSTALLATION FOLDER]/Lib/Windows/x64/DynamsoftUtilityx64.lib")
     #else
-    #pragma comment(lib, "Lib/x86/DynamsoftUtilityx86.lib")
+    #pragma comment(lib, "[INSTALLATION FOLDER]/Lib/Windows/x86/DynamsoftUtilityx86.lib")
     #endif
     ```
 
@@ -227,13 +227,17 @@ The class `DirectoryFetcher` is capable of converting a local directory to an im
 1. Define the listener class.
 
     ```cpp
-    class MyImageSourceAdapterStateListener : public virtual CImageSourceAdapterStateListener {
+    class MyImageSourceStateListener : public CImageSourceStateListener {
+    private:
+        CCaptureVisionRouter* m_router;
     public:
-        CCaptureVisionRouter* cvr = NULL;
-        void OnImageSourceAdapterStateChanged(ImageSourceState state) {
-            if (state == ISS_EXHAUSTED) {
-                cvr->StopCapturing();
-            }
+        MyImageSourceStateListener(CCaptureVisionRouter* router) {
+            m_router = router;
+        }
+        virtual void OnImageSourceStateChanged(ImageSourceState state)
+        {
+            if (state == ISS_EXHAUSTED)
+                m_router->StopCapturing();
         }
     };
     ```
@@ -241,9 +245,8 @@ The class `DirectoryFetcher` is capable of converting a local directory to an im
 2. Create a listener object and connect it to the image source
 
     ```cpp
-    MyImageSourceAdapterStateListener listener;
-    listener.cvr = &cvr;
-    cvr.AddImageSourceAdapterStateListener(&listener);
+    MyImageSourceStateListener listener(&cvr);
+    cvr.AddImageSourceStateListener(&listener);
     ```
 
 ### Start the Process
@@ -251,8 +254,7 @@ The class `DirectoryFetcher` is capable of converting a local directory to an im
 Call the method `StartCapturing()` to start processing all the images in the specified folder.
 
 ```cpp
-char error2[512];
-int ret2 = cvr.StartCapturing(PresetTemplate::PT_READ_BARCODES, true, error2, 512);        
+int errorCode = cvr.StartCapturing(PresetTemplate::PT_READ_BARCODES, true, errorMsg, 512);        
 ```
 
 During the process, the callback function `OnDecodedBarcodesReceived()` is triggered each time an image finishes processing. After all images are processed, the listener function `OnImageSourceAdapterStateChanged()` will return the image source state as `ISS_EXHAUSTED` and the process is stopped with the method `StopCapturing()`.
