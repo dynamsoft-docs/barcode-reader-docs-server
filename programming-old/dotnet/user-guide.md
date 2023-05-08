@@ -22,7 +22,7 @@ In this guide, you will learn step by step on how to build a barcode reading app
   - Visual Studio 2008 or above
   - .NET Framework 2.0, .NET Framework 4.0 or above
   - .NET Core 3.1
-  - .NET 5.0 or 6.0
+  - .NET 5/6/7
 
 >Note:
 >Dynamsoft Barcode Reader provides both online and offline license options. The online license option might not work in an environment that doesn't have network connection. In such case, you can get an offline trial license key via <a href="https://www.dynamsoft.com/customer/license/trialLicense?utm_source=guide&product=dbr&package=desktop" target="_blank">Customer Portal</a> or by <a href="https://www.dynamsoft.com/company/contact/" target="_blank">contacting us</a>.
