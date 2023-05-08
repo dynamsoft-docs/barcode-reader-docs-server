@@ -58,9 +58,9 @@ jobs:
           cd /home/ubuntu
           [ ! -d DBRDocServer-preview ] && mkdir -p DBRDocServer-preview
           [ ! -d barcode-reader-docs-server-preview ] && git clone --depth 1 --branch preview https://github.com/dynamsoft-docs/barcode-reader-docs-server.git barcode-reader-docs-server-preview
-          [ ! -d Docs-Template-Repo-Preview ] && git clone --depth 1 --branch jenny-preview-branch https://github.com/dynamsoft-docs/Docs-Template-Repo.git Docs-Template-Repo-Preview-DCV2
+          [ ! -d Docs-Template-Repo-Preview-DCV2 ] && git clone --depth 1 --branch jenny-preview-branch https://github.com/dynamsoft-docs/Docs-Template-Repo.git Docs-Template-Repo-Preview-DCV2
           cd barcode-reader-docs-server-preview && git pull && cd .. && cp -rfp ./barcode-reader-docs-server-preview/* ./DBRDocServer-preview/
-          cd Docs-Template-Repo-Preview-DCV2 && git pull && cd .. && cp -rfp ./Docs-Template-Repo-Preview/* ./DBRDocServer-preview/
+          cd Docs-Template-Repo-Preview-DCV2 && git pull && cd .. && cp -rfp ./Docs-Template-Repo-Preview-DCV2/* ./DBRDocServer-preview/
           sed -i -e "1,3s/blob\/master$/blob\/preview/" \
           -e "1,3s/blob\/main$/blob\/preview/" /home/ubuntu/DBRDocServer-preview/_config.yml
           cd DBRDocServer-preview && bundle exec jekyll build --incremental
