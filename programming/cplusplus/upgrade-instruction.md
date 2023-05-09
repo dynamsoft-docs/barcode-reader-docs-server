@@ -39,6 +39,15 @@ using namespace dynamsoft::ddn;
 #endif
 ```
 
+Put the following **.dll** files in your lib:
+
+* DynamsoftBarcodeReaderx64.dll
+* DynamsoftCaptureVisionRouterx64.dll
+* DynamsoftCorex64.dll
+* DynamsoftImageProcessingx64.dll
+* DynamsoftLicensex64.dll
+* DynamsoftUtilityx64.dll
+
 ### Migrate from Class CBarcodeReader to Class CCaptureVisionRouter
 
 Class `CCaptureVisionRouter` is added to replace class `CBarcodeReader`. Class `CCaptureVisionRouter` APIs includes the following features:
