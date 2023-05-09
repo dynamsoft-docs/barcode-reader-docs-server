@@ -4,6 +4,7 @@ title: IntermediateResult Class - Dynamsoft Barcode Reader SDK Python Edition AP
 description: This page shows the IntermediateResult Class of Dynamsoft Barcode Reader SDK Python Edition.
 keywords: IntermediateResult, class, api reference, python
 needAutoGenerateSidebar: false
+permalink: /programming/python/api-reference/class/IntermediateResult.html
 ---
 
 

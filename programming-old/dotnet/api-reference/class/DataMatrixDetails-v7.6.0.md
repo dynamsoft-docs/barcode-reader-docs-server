@@ -4,6 +4,7 @@ title: DataMatrixDetails Class - Dynamsoft Barcode Reader SDK .NET Edition API R
 description: This page shows the DataMatrixDetails Class of Dynamsoft Barcode Reader SDK .NET Edition.
 keywords: DataMatrixDetails, class, api reference, .Net
 needAutoGenerateSidebar: false
+permalink: /programming/dotnet/api-reference/class/DataMatrixDetails-v7.6.0.html
 ---
 
 # DataMatrixDetails

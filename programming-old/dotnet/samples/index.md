@@ -4,6 +4,7 @@ title: Samples - Dynamsoft Barcode Reader SDK .NET Edition
 description: Sample list page of Dynamsoft Barcode Reader .NET Edition.
 keywords: .net
 needAutoGenerateSidebar: false
+permalink: /programming/dotnet/samples/index.html
 ---
 
 # Samples and Demos - .NET Edition

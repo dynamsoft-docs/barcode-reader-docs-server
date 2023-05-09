@@ -4,6 +4,7 @@ title: ImageData Struct - Dynamsoft Barcode Reader SDK C & C++ Edition
 description: This page shows the ImageData struct of Dynamsoft Barcode Reader SDK C & C++ Edition.
 keywords: ImageData, struct, c, c++
 needAutoGenerateSidebar: false
+permalink: /programming/c-cplusplus/struct/ImageData.html
 ---
 
 

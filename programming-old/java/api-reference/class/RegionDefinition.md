@@ -4,6 +4,7 @@ title: RegionDefinition Class - Dynamsoft Barcode Reader SDK Java Edition API Re
 description: This page shows the RegionDefinition Class of Dynamsoft Barcode Reader SDK Java Edition API Reference.
 keywords: RegionDefinition, class, api reference, java
 needAutoGenerateSidebar: false
+permalink: /programming/java/api-reference/class/RegionDefinition.html
 ---
 
 

@@ -4,6 +4,7 @@ title: BarcodeReader Methods - Dynamsoft Barcode Reader SDK .NET Edition API Ref
 description: This page shows BarcodeReader methods of Dynamsoft Barcode Reader SDK .NET Edition.
 keywords: methods, BarcodeReader, api reference, .Net
 needAutoGenerateSidebar: true
+permalink: /programming/dotnet/api-reference/BarcodeReader/index-v9.4.0.html
 ---
 
 # Class Dynamsoft.DBR.BarcodeReader

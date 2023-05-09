@@ -5,6 +5,7 @@ description: This is the release notes page of Dynamsoft Barcode Reader SDK C Ed
 keywords: release notes, c
 needAutoGenerateSidebar: false
 breadcrumbText: Release Notes
+permalink: /programming/c/release-notes/index.html
 ---
 
 # Release Notes - C Edition

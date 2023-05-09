@@ -4,6 +4,7 @@ title: BarcodeReader Parameter and Runtime Settings Basic Methods - Dynamsoft Ba
 description: This page shows BarcodeReader basic Runtime Settings methods of Dynamsoft Barcode Reader SDK Java Edition API Reference.
 keywords: setModeArgument, getModeArgument, getRuntimeSettings, updateRuntimeSettings, resetRuntimeSettings, parameter and runtime settings basic methods, BarcodeReader, api reference, java
 needAutoGenerateSidebar: true
+permalink: /programming/java/api-reference/BarcodeReader/parameter-and-runtime-settings-basic-v7.6.0.html
 ---
 
 

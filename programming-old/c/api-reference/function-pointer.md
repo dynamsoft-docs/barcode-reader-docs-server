@@ -4,6 +4,7 @@ title: Callbacks - Dynamsoft Barcode Reader SDK C Edition API Reference
 description: This is the callbacks of Dynamsoft Barcode Reader SDK C Edition.
 keywords: CB_Error, CB_IntermediateResult, CB_TextResult, Callbacks, api reference, c
 needAutoGenerateSidebar: true
+permalink: /programming/c/api-reference/function-pointer.html
 ---
 
 # Callbacks

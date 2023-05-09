@@ -4,6 +4,7 @@ title: Result Functions - Dynamsoft Barcode Reader SDK C Edition API Reference
 description: This page shows result functions of Dynamsoft Barcode Reader SDK C Edition.
 keywords: DBR_GetAllTextResults, DBR_FreeTextResults, DBR_GetIntermediateResults, DBR_FreeIntermediateResults, result functions, api reference, c
 needAutoGenerateSidebar: true
+permalink: /programming/c/api-reference/methods/result.html
 ---
 
 # Result Functions

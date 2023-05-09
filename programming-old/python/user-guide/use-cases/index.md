@@ -3,6 +3,7 @@ layout: default-layout
 title: Use Cases - Dynamsoft Barcode Reader SDK Python Edition User Guide
 description: This page explores the use cases of Dynamsoft Barcode Reader Python Edition.
 keywords: user guide, use cases, python
+permalink: /programming/python/user-guide/use-cases/index.html
 ---
 
 # Use Cases

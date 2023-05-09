@@ -4,6 +4,7 @@ title: BarcodeReader Video Methods - Dynamsoft Barcode Reader SDK .NET Edition A
 description: This page shows BarcodeReader video methods of Dynamsoft Barcode Reader SDK .NET Edition.
 keywords: StartFrameDecoding, StartFrameDecodingEx, AppendFrame, StopFrameDecoding, InitFrameDecodingParameters, SetErrorCallback, SetTextResultCallback, SetIntermediateResultCallback, GetLengthOfFrameQueue, video methods, BarcodeReader, api reference, .Net
 needAutoGenerateSidebar: true
+permalink: /programming/dotnet/api-reference/BarcodeReader/video-v9.4.0.html
 ---
 
 # Video Methods

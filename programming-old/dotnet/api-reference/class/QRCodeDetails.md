@@ -4,6 +4,7 @@ title: QRCodeDetails Class - Dynamsoft Barcode Reader SDK .NET Edition API Refer
 description: This page shows the QRCodeDetails Class of Dynamsoft Barcode Reader SDK .NET Edition.
 keywords: QRCodeDetails, class, api reference, .Net
 needAutoGenerateSidebar: false
+permalink: /programming/dotnet/api-reference/class/QRCodeDetails.html
 ---
 
 

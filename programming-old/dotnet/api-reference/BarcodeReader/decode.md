@@ -4,6 +4,7 @@ title: BarcodeReader Decode Methods - Dynamsoft Barcode Reader SDK .NET Edition 
 description: This page shows BarcodeReader Decode methods of Dynamsoft Barcode Reader SDK .NET Edition.
 keywords: DecodeFile, DecodeFileInMemory, DecodeBuffer, DecodeBase64String, DecodeBitmap, decode methods, BarcodeReader, api reference, .Net
 needAutoGenerateSidebar: true
+permalink: /programming/dotnet/api-reference/BarcodeReader/decode.html
 ---
 
 

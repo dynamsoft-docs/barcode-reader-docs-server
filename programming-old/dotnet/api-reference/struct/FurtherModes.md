@@ -4,6 +4,7 @@ title: FurtherModes Struct - Dynamsoft Barcode Reader SDK .NET Edition API Refer
 description: This page shows the FurtherModes Struct of Dynamsoft Barcode Reader SDK .NET Edition.
 keywords: FurtherModes, struct, api reference, .Net
 needAutoGenerateSidebar: false
+permalink: /programming/dotnet/api-reference/struct/FurtherModes.html
 ---
 
 

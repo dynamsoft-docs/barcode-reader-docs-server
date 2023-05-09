@@ -4,6 +4,7 @@ title: Main Page - Dynamsoft Barcode Reader SDK Python Edition
 description: This is the main page of Dynamsoft Barcode Reader SDK Python Edition.
 keywords: python
 needAutoGenerateSidebar: false
+permalink: /programming/python/index.html
 ---
 
 

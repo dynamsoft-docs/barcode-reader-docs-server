@@ -4,6 +4,7 @@ title: DBRPoint Struct - Dynamsoft Barcode Reader SDK C & C++ Edition
 description: This page shows the DBRPoint struct of Dynamsoft Barcode Reader SDK C & C++ Edition.
 keywords: DBRPoint, struct, c, c++
 needAutoGenerateSidebar: false
+permalink: /programming/c-cplusplus/struct/DBRPoint.html
 ---
 
 

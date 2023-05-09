@@ -4,6 +4,7 @@ title: TextResult Struct - Dynamsoft Barcode Reader SDK C & C++ Edition
 description: This page shows the TextResult struct of Dynamsoft Barcode Reader SDK C & C++ Edition.
 keywords: TextResult, struct, c, c++
 needAutoGenerateSidebar: false
+permalink: /programming/c-cplusplus/struct/TextResult-v8.2.0.html
 ---
 
 

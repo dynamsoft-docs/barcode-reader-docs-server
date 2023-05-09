@@ -4,6 +4,7 @@ title: Basic Settings Methods - Dynamsoft Barcode Reader SDK Python Edition API 
 description: This page shows basic Runtime Settings methods of Dynamsoft Barcode Reader SDK Python Edition.
 keywords: set_mode_argument, get_mode_argument, get_runtime_settings, update_runtime_settings, reset_runtime_settings, Basic Settings Methods, BarcodeReader, api reference, python
 needAutoGenerateSidebar: true
+permalink: /programming/python/api-reference/BarcodeReader/parameter-and-runtime-settings-basic.html
 ---
 
 

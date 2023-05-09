@@ -4,6 +4,7 @@ title: Explore Features - Dynamsoft Barcode Reader SDK Python Edition User Guide
 description: This page lists the topics to explore the features of Dynamsoft Barcode Reader Python Edition.
 keywords: user guide, explore features, Python
 noTitleIndex: false
+permalink: /programming/python/user-guide/explore-features/index.html
 ---
 
 # Explore Features

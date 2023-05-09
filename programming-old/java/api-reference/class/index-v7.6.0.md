@@ -5,6 +5,7 @@ description: This page shows all Classes of Dynamsoft Barcode Reader SDK Java Ed
 keywords: class, api reference, java
 needAutoGenerateSidebar: false
 breadcrumbText: Class
+permalink: /programming/java/api-reference/class/index-v7.6.0.html
 ---
 
 

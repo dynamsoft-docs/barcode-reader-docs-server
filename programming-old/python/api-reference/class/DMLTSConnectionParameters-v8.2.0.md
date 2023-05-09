@@ -4,6 +4,7 @@ title: DMLTSConnectionParameters Class - Dynamsoft Barcode Reader SDK Python Edi
 description: This page shows the DMLTSConnectionParameters Class of Dynamsoft Barcode Reader SDK Python Edition.
 keywords: DMLTSConnectionParameters, class, api reference, python
 needAutoGenerateSidebar: false
+permalink: /programming/python/api-reference/class/DMLTSConnectionParameters-v8.2.0.html
 ---
 
 

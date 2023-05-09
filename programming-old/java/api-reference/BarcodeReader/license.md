@@ -4,6 +4,7 @@ title: BarcodeReader License Methods - Dynamsoft Barcode Reader SDK Java Edition
 description: This page shows BarcodeReader license methods of Dynamsoft Barcode Reader SDK Java Edition API Reference.
 keywords: initLicense, initLicenseFromServer, initLicenseFromLicenseContent, outputLicenseToString, license methods, BarcodeReader, api reference, java
 needAutoGenerateSidebar: true
+permalink: /programming/java/api-reference/BarcodeReader/license.html
 ---
 
 

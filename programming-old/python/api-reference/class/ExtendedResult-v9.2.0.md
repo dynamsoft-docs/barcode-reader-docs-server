@@ -4,6 +4,7 @@ title: ExtendedResult Class - Dynamsoft Barcode Reader SDK Python Edition API Re
 description: This page shows the ExtendedResult Class of Dynamsoft Barcode Reader SDK Python Edition.
 keywords: ExtendedResult, class, api reference, python
 needAutoGenerateSidebar: false
+permalink: /programming/python/api-reference/class/ExtendedResult-v9.2.0.html
 ---
 
 

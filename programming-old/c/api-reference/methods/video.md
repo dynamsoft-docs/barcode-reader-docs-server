@@ -4,6 +4,7 @@ title: Video Functions - Dynamsoft Barcode Reader SDK C Edition API Reference
 description: This page shows video functions of Dynamsoft Barcode Reader SDK C Edition.
 keywords: DBR_StartFrameDecoding, DBR_StartFrameDecodingEx, DBR_AppendFrame, DBR_StopFrameDecoding, DBR_InitFrameDecodingParameters, DBR_SetErrorCallback, DBR_SetTextResultCallback, DBR_SetIntermediateResultCallback, DBR_GetLengthOfFrameQueue, video functions, api reference, c
 needAutoGenerateSidebar: true
+permalink: /programming/c/api-reference/methods/video.html
 ---
 
 # Video Functions

@@ -4,6 +4,7 @@ title: CBarcodeReader Parameter and Runtime Settings Advanced Methods - Dynamsof
 description: This page shows CBarcodeReader advanced Runtime Settings methods of Dynamsoft Barcode Reader SDK C++ Edition.
 keywords: InitRuntimeSettingsWithFile, InitRuntimeSettingsWithString, AppendTplFileToRuntimeSettings, AppendTplStringToRuntimeSettings, GetParameterTemplateCount, GetParameterTemplateName, OutputSettingsToFile, OutputSettingsToString, OutputSettingsToStringPtr, FreeSettingsString, parameter and runtime settings advanced methods, CBarcodeReader, api reference, c++
 needAutoGenerateSidebar: true
+permalink: /programming/cplusplus/api-reference/cbarcodereader-methods/parameter-and-runtime-settings-advanced-v7.6.0.html
 ---
 
 # C++ API Reference - CBarcodeReader Parameter and Runtime Settings Advanced Methods

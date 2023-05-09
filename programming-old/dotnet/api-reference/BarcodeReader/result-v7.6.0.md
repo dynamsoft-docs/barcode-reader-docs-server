@@ -4,6 +4,7 @@ title: BarcodeReader Result Methods - Dynamsoft Barcode Reader SDK .NET Edition 
 description: This page shows BarcodeReader Result methods of Dynamsoft Barcode Reader SDK .NET Edition.
 keywords: GetIntermediateResults, result methods, BarcodeReader, api reference, .Net
 needAutoGenerateSidebar: true
+permalink: /programming/dotnet/api-reference/BarcodeReader/result-v7.6.0.html
 ---
 
 

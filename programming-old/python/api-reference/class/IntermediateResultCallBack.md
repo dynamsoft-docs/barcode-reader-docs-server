@@ -4,6 +4,7 @@ title: IntermediateResultCallBack Class - Dynamsoft Barcode Reader SDK Python Ed
 description: This page shows the IntermediateResultCallBack Class of Dynamsoft Barcode Reader SDK Python Edition.
 keywords: IntermediateResultCallBack, class, api reference, python
 needAutoGenerateSidebar: false
+permalink: /programming/python/api-reference/class/IntermediateResultCallBack.html
 ---
 
 

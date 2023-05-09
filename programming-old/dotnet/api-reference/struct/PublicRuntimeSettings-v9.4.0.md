@@ -4,6 +4,7 @@ title: PublicRuntimeSettings Struct - Dynamsoft Barcode Reader SDK .NET Edition 
 description: This page shows the PublicRuntimeSettings Struct of Dynamsoft Barcode Reader SDK .NET Edition.
 keywords: PublicRuntimeSettings, struct, api reference, .Net
 needAutoGenerateSidebar: false
+permalink: /programming/dotnet/api-reference/struct/PublicRuntimeSettings-v9.4.0.html
 ---
 
 

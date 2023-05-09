@@ -4,6 +4,7 @@ title: License Functions - Dynamsoft Barcode Reader SDK C Edition API Reference
 description: This page shows the license functions of Dynamsoft Barcode Reader SDK C Edition.
 keywords: DBR_InitLicense, license functions, api reference, c
 needAutoGenerateSidebar: true
+permalink: /programming/c/api-reference/methods/license-v9.6.0.html
 ---
 
 # License Functions

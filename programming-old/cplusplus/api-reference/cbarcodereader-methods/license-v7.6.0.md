@@ -4,6 +4,7 @@ title: CBarcodeReader License Methods - Dynamsoft Barcode Reader SDK C++ Edition
 description: This page shows CBarcodeReader license methods of Dynamsoft Barcode Reader SDK C++ Edition.
 keywords: InitLicense, InitLicenseFromServer, InitLicenseFromLicenseContent, OutputLicenseToString, OutputLicenseToStringPtr, FreeLicenseString, license methods, CBarcodeReader, api reference, c++
 needAutoGenerateSidebar: true
+permalink: /programming/cplusplus/api-reference/cbarcodereader-methods/license-v7.6.0.html
 ---
 
 

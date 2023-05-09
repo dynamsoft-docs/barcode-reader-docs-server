@@ -4,6 +4,7 @@ title: Function Pointers - Dynamsoft Barcode Reader SDK .NET Edition API Referen
 description: This page shows Function Pointers of Dynamsoft Barcode Reader SDK .NET Edition.
 keywords: CB_Error, CB_IntermediateResult, CB_TextResult, function pointers, api reference, .Net
 needAutoGenerateSidebar: false
+permalink: /programming/dotnet/api-reference/function-pointer-v7.6.0.html
 ---
 
 

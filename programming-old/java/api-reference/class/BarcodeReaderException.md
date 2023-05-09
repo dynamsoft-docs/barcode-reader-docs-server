@@ -4,6 +4,7 @@ title: BarcodeReaderException Class - Dynamsoft Barcode Reader SDK Java Edition 
 description: This page shows the BarcodeReaderException Class of Dynamsoft Barcode Reader SDK Java Edition API Reference.
 keywords: BarcodeReaderException, class, api reference, java
 needAutoGenerateSidebar: false
+permalink: /programming/java/api-reference/class/BarcodeReaderException.html
 ---
 
 

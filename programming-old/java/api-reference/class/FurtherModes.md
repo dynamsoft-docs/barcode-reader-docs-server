@@ -4,6 +4,7 @@ title: FurtherModes Class - Dynamsoft Barcode Reader SDK Java Edition API Refere
 description: This page shows the FurtherModes Class of Dynamsoft Barcode Reader SDK Java Edition API Reference.
 keywords: FurtherModes, class, api reference, java
 needAutoGenerateSidebar: false
+permalink: /programming/java/api-reference/class/FurtherModes.html
 ---
 
 

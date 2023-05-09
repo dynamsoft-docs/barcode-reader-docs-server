@@ -4,6 +4,7 @@ title: BarcodeReaderError Class - Dynamsoft Barcode Reader SDK Python Edition AP
 description: This page shows the BarcodeReaderError Class of Dynamsoft Barcode Reader SDK Python Edition.
 keywords: BarcodeReaderError, class, api reference, python
 needAutoGenerateSidebar: false
+permalink: /programming/python/api-reference/class/BarcodeReaderError.html
 ---
 
 

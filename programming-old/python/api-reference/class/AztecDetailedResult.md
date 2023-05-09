@@ -4,6 +4,7 @@ title: AztecDetailedResult Class - Dynamsoft Barcode Reader SDK Python Edition A
 description: This page shows the AztecDetailedResult Class of Dynamsoft Barcode Reader SDK Python Edition.
 keywords: AztecDetailedResult, class, api reference, python
 needAutoGenerateSidebar: false
+permalink: /programming/python/api-reference/class/AztecDetailedResult.html
 ---
 
 

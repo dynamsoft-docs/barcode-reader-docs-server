@@ -4,6 +4,7 @@ title: CBarcodeReader Video Methods - Dynamsoft Barcode Reader SDK C++ Edition A
 description: This page shows CBarcodeReader video methods of Dynamsoft Barcode Reader SDK C++ Edition.
 keywords: StartFrameDecoding, StartFrameDecodingEx, AppendFrame, StopFrameDecoding, InitFrameDecodingParameters, SetErrorCallback, SetTextResultCallback, SetIntermediateResultCallback, GetLengthOfFrameQueue, video methods, CBarcodeReader, api reference, c++
 needAutoGenerateSidebar: true
+permalink: /programming/cplusplus/api-reference/cbarcodereader-methods/video-v7.6.0.html
 ---
 
 # C++ API Reference - CBarcodeReader Video Methods

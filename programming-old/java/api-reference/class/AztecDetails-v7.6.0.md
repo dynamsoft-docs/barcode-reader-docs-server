@@ -4,6 +4,7 @@ title: AztecDetails Class - Dynamsoft Barcode Reader SDK Java Edition API Refere
 description: This page shows the AztecDetails Class of Dynamsoft Barcode Reader SDK Java Edition API Reference.
 keywords: AztecDetails, class, api reference, java
 needAutoGenerateSidebar: false
+permalink: /programming/java/api-reference/class/AztecDetails-v7.6.0.html
 ---
 
 

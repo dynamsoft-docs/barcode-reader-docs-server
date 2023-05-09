@@ -5,6 +5,7 @@ description: This is the main page of Dynamsoft Barcode Reader SDK .NET Edition.
 keywords: .Net
 needAutoGenerateSidebar: false
 breadcrumbText: .NET
+permalink: /programming/dotnet/index.html
 ---
 
 # Dynamsoft Barcode Reader .NET Edition Introduction

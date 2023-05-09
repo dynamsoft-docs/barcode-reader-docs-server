@@ -4,6 +4,7 @@ title: PublicRuntimeSetting Class - Dynamsoft Barcode Reader SDK Python Edition 
 description: This page shows the PublicRuntimeSetting Class of Dynamsoft Barcode Reader SDK Python Edition.
 keywords: PublicRuntimeSetting, class, api reference, python
 needAutoGenerateSidebar: false
+permalink: /programming/python/api-reference/class/PublicRuntimeSettings.html
 ---
 
 

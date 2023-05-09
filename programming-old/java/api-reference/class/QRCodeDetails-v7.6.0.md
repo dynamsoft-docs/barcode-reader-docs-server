@@ -4,6 +4,7 @@ title: QRCodeDetails Class - Dynamsoft Barcode Reader SDK Java Edition API Refer
 description: This page shows the QRCodeDetails Class of Dynamsoft Barcode Reader SDK Java Edition API Reference.
 keywords: QRCodeDetails, class, api reference, java
 needAutoGenerateSidebar: false
+permalink: /programming/java/api-reference/class/QRCodeDetails-v7.6.0.html
 ---
 
 

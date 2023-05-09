@@ -4,6 +4,7 @@ title: PublicRuntimeSettings Struct - Dynamsoft Barcode Reader SDK C & C++ Editi
 description: This page shows the PublicRuntimeSettings struct of Dynamsoft Barcode Reader SDK C & C++ Edition.
 keywords: PublicRuntimeSettings, struct, c, c++
 needAutoGenerateSidebar: false
+permalink: /programming/c-cplusplus/struct/PublicRuntimeSettings-v7.6.0.html
 ---
 
 

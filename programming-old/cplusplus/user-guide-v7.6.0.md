@@ -5,6 +5,7 @@ description: This is the user guide of Dynamsoft Barcode Reader SDK C++ Edition.
 keywords: user guide, c++
 needAutoGenerateSidebar: true
 needGenerateH3Content: true
+permalink: /programming/cplusplus/user-guide-v7.6.0.html
 ---
 
 

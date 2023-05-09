@@ -4,6 +4,7 @@ title: LocalizationResult Struct - Dynamsoft Barcode Reader SDK C & C++ Edition
 description: This page shows the LocalizationResult struct of Dynamsoft Barcode Reader SDK C & C++ Edition.
 keywords: LocalizationResult, struct, c, c++
 needAutoGenerateSidebar: false
+permalink: /programming/c-cplusplus/struct/LocalizationResult-v9.2.0.html
 ---
 
 

@@ -4,6 +4,7 @@ title: Samples - Dynamsoft Barcode Reader SDK Python Edition
 description: Sample list page of Dynamsoft Barcode Reader Python Edition.
 keywords: python
 needAutoGenerateSidebar: false
+permalink: /programming/python/samples/index.html
 ---
 
 # Samples and Demos - Python Edition
