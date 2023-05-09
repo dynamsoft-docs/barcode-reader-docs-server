@@ -4,6 +4,7 @@ title: LocalizationResult Class - Dynamsoft Barcode Reader SDK Java Edition API 
 description: This page shows the LocalizationResult Class of Dynamsoft Barcode Reader SDK Java Edition API Reference.
 keywords: LocalizationResult, class, api reference, java
 needAutoGenerateSidebar: false
+permalink: /programming/java/api-reference/class/LocalizationResult-v9.2.0.html
 ---
 
 

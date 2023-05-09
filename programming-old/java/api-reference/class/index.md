@@ -5,6 +5,7 @@ description: This page shows all Auxiliary Classes of Dynamsoft Barcode Reader S
 keywords: class, api reference, java
 needAutoGenerateSidebar: false
 breadcrumbText: Class
+permalink: /programming/java/api-reference/class/index.html
 ---
 
 

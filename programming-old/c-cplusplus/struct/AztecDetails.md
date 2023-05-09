@@ -4,6 +4,7 @@ title: AztecDetails Struct - Dynamsoft Barcode Reader SDK C & C++ Edition
 description: This page shows the AztecDetails struct of Dynamsoft Barcode Reader SDK C & C++ Edition.
 keywords: AztecDetails, struct, c, c++
 needAutoGenerateSidebar: false
+permalink: /programming/c-cplusplus/struct/AztecDetails.html
 ---
 
 

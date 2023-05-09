@@ -4,6 +4,7 @@ title: DM_LTSConnectionParameters Struct - Dynamsoft Barcode Reader SDK C & C++ 
 description: This page shows the DM_LTSConnectionParameters struct of Dynamsoft Barcode Reader SDK C & C++ Edition.
 keywords: DM_LTSConnectionParameters, struct, c, c++
 needAutoGenerateSidebar: false
+permalink: /programming/c-cplusplus/struct/DMLTSConnectionParameters-v8.4.0.html
 ---
 
 

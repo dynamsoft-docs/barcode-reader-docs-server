@@ -4,6 +4,7 @@ title: TextResult Class - Dynamsoft Barcode Reader SDK Python Edition API Refere
 description: This page shows the TextResult Class of Dynamsoft Barcode Reader SDK Python Edition.
 keywords: TextResult, class, api reference, python
 needAutoGenerateSidebar: false
+permalink: /programming/python/api-reference/class/TextResult.html
 ---
 
 

@@ -4,6 +4,7 @@ title: ExtendedResult Class - Dynamsoft Barcode Reader SDK Java Edition API Refe
 description: This page shows the ExtendedResult Class of Dynamsoft Barcode Reader SDK Java Edition API Reference.
 keywords: ExtendedResult, class, api reference, java
 needAutoGenerateSidebar: false
+permalink: /programming/java/api-reference/class/ExtendedResult.html
 ---
 
 

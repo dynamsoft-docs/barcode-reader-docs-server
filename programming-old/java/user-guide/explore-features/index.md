@@ -4,6 +4,7 @@ title: Explore Features - Dynamsoft Barcode Reader SDK Java Edition User Guide
 description: This page lists the topics to explore the features of Dynamsoft Barcode Reader Java Edition.
 keywords: user guide, explore features, Java
 noTitleIndex: false
+permalink: /programming/java/user-guide/explore-features/index.html
 ---
 
 # Explore Features

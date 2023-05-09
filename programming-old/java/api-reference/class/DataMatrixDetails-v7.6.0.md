@@ -4,6 +4,7 @@ title: DataMatrixDetails Class - Dynamsoft Barcode Reader SDK Java Edition API R
 description: This page shows the DataMatrixDetails Class of Dynamsoft Barcode Reader SDK Java Edition API Reference.
 keywords: DataMatrixDetails, class, api reference, java
 needAutoGenerateSidebar: false
+permalink: /programming/java/api-reference/class/DataMatrixDetails-v7.6.0.html
 ---
 
 

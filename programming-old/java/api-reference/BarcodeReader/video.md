@@ -4,6 +4,7 @@ title: BarcodeReader Video Methods - Dynamsoft Barcode Reader SDK Java Edition A
 description: This page shows BarcodeReader video methods of Dynamsoft Barcode Reader SDK Java Edition API Reference.
 keywords: startFrameDecoding, startFrameDecodingEx, appendFrame, stopFrameDecoding, initFrameDecodingParameters, setErrorCallback, setTextResultCallback, setIntermediateResultCallback, getLengthOfFrameQueue, video methods, BarcodeReader, api reference, java
 needAutoGenerateSidebar: true
+permalink: /programming/java/api-reference/BarcodeReader/video.html
 ---
 
 # Video Methods

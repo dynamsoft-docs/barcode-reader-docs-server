@@ -4,6 +4,7 @@ title: CBarcodeReader Result Methods - Dynamsoft Barcode Reader SDK C++ Edition 
 description: This page shows CBarcodeReader Result methods of Dynamsoft Barcode Reader SDK C++ Edition.
 keywords: GetAllTextResults, FreeTextResults, GetIntermediateResults, FreeIntermediateResults, result methods, CBarcodeReader, api reference, c++
 needAutoGenerateSidebar: true
+permalink: /programming/cplusplus/api-reference/cbarcodereader-methods/result.html
 ---
 
 

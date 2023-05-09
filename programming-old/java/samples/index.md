@@ -4,6 +4,7 @@ title: Samples - Dynamsoft Barcode Reader SDK Java Edition
 description: Sample list page of Dynamsoft Barcode Reader Java Edition.
 keywords: java
 needAutoGenerateSidebar: false
+permalink: /programming/java/samples/index.html
 ---
 
 # Samples and Demos - Java Edition

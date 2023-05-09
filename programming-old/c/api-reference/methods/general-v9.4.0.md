@@ -4,6 +4,7 @@ title: General Functions - Dynamsoft Barcode Reader SDK C Edition API Reference
 description: This page shows the general functions of Dynamsoft Barcode Reader SDK C Edition.
 keywords: DBR_GetErrorString, DBR_GetVersion, general functions, api reference, c
 needAutoGenerateSidebar: true
+permalink: /programming/c/api-reference/methods/general-v9.4.0.html
 ---
 
 # General Functions

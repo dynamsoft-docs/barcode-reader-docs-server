@@ -4,6 +4,7 @@ title: ExtendedResult Struct - Dynamsoft Barcode Reader SDK C & C++ Edition
 description: This page shows the ExtendedResult struct of Dynamsoft Barcode Reader SDK C & C++ Edition.
 keywords: ExtendedResult, struct, c, c++
 needAutoGenerateSidebar: false
+permalink: /programming/c-cplusplus/struct/ExtendedResult.html
 ---
 
 

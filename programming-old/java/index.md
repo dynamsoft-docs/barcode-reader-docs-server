@@ -5,6 +5,7 @@ description: This is the main page of Dynamsoft Barcode Reader SDK Java Edition.
 keywords: java
 needAutoGenerateSidebar: false
 breadcrumbText: Java
+permalink: /programming/java/index.html
 ---
 
 

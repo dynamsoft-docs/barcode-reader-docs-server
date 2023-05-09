@@ -4,6 +4,7 @@ title: TextResultArray Struct - Dynamsoft Barcode Reader SDK C & C++ Edition
 description: This page shows the TextResultArray struct of Dynamsoft Barcode Reader SDK C & C++ Edition.
 keywords: TextResultArray, struct, c, c++
 needAutoGenerateSidebar: false
+permalink: /programming/c-cplusplus/struct/TextResultArray.html
 ---
 
 # TextResultArray

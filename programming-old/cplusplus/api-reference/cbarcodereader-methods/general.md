@@ -4,6 +4,7 @@ title: CBarcodeReader General Methods - Dynamsoft Barcode Reader SDK C++ Edition
 description: This page shows CBarcodeReader general methods of Dynamsoft Barcode Reader SDK C++ Edition.
 keywords: GetErrorString, GetVersion, general methods, CBarcodeReader, api reference, c++
 needAutoGenerateSidebar: true
+permalink: /programming/cplusplus/api-reference/cbarcodereader-methods/general.html
 ---
 
 # General Methods

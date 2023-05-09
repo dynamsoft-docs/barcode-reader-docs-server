@@ -4,6 +4,7 @@ title: BarcodeReader Decode Methods - Dynamsoft Barcode Reader SDK Java Edition 
 description: This page shows BarcodeReader Decode methods of Dynamsoft Barcode Reader SDK Java Edition API Reference.
 keywords: decodeFile, decodeFileInMemory, decodeBuffer, decodeBase64String, decodeBufferedImage, decode methods, BarcodeReader, api reference, java
 needAutoGenerateSidebar: true
+permalink: /programming/java/api-reference/BarcodeReader/decode-v9.4.0.html
 ---
 
 

@@ -4,6 +4,7 @@ title: Explore Features - Dynamsoft Barcode Reader SDK C Edition User Guide
 description: This page lists the topics to explore the features of Dynamsoft Barcode Reader SDK C Edition.
 keywords: user guide, explore features, c
 noTitleIndex: false
+permalink: /programming/c/user-guide/explore-features/index.html
 ---
 
 # Explore Features

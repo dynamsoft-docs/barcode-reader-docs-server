@@ -4,6 +4,7 @@ title: Release Notes v9.x - Dynamsoft Barcode Reader SDK .NET Edition
 description: This is the release notes page of Dynamsoft Barcode Reader SDK .NET Edition v9.x.
 keywords: release notes, .net
 needGenerateH3Content: false
+permalink: /programming/dotnet/release-notes/dotnet-9.html
 ---
 
 # Release Notes for .NET Edition - 9.x

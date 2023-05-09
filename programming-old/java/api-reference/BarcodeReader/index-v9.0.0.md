@@ -4,6 +4,7 @@ title: BarcodeReader Methods - Dynamsoft Barcode Reader SDK Java Edition API Ref
 description: This page shows all BarcodeReader methods of Dynamsoft Barcode Reader SDK Java Edition API Reference.
 keywords: methods, BarcodeReader, api reference, java
 needAutoGenerateSidebar: true
+permalink: /programming/java/api-reference/BarcodeReader/index-v9.0.0.html
 ---
 
 

@@ -4,6 +4,7 @@ title: BarcodeReader Decode Methods - Dynamsoft Barcode Reader SDK Python Editio
 description: This page shows BarcodeReader Decode Methods of Dynamsoft Barcode Reader SDK Python Edition.
 keywords: decode_file, decode_buffer, decode_file_stream, decode methods, BarcodeReader, api reference, python
 needAutoGenerateSidebar: true
+permalink: /programming/python/api-reference/BarcodeReader/decode-v9.4.0.html
 ---
 
 

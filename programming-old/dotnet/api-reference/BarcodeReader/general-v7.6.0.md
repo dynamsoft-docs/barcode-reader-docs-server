@@ -4,6 +4,7 @@ title: BarcodeReader General Methods - Dynamsoft Barcode Reader SDK .NET Edition
 description: This page shows BarcodeReader general methods of Dynamsoft Barcode Reader SDK .NET Edition.
 keywords: GetVersion, general methods, BarcodeReader, api reference, .Net
 needAutoGenerateSidebar: true
+permalink: /programming/dotnet/api-reference/BarcodeReader/general-v7.6.0.html
 ---
 
 # .Net API Reference - BarcodeReader General Methods

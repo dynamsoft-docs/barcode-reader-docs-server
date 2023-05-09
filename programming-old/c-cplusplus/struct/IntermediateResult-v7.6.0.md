@@ -4,6 +4,7 @@ title: IntermediateResult Struct - Dynamsoft Barcode Reader SDK C & C++ Edition
 description: This page shows the IntermediateResult struct of Dynamsoft Barcode Reader SDK C & C++ Edition.
 keywords: IntermediateResult, struct, c, c++
 needAutoGenerateSidebar: false
+permalink: /programming/c-cplusplus/struct/IntermediateResult-v7.6.0.html
 ---
 
 

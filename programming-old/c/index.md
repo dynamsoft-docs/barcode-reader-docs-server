@@ -4,6 +4,7 @@ title: Main Page - Dynamsoft Barcode Reader SDK C Edition
 description: This is the main page of Dynamsoft Barcode Reader SDK C Edition.
 keywords: c
 breadcrumbText: C
+permalink: /programming/c/index.html
 ---
 
 # Dynamsoft Barcode Reader SDK C Edition Introduction

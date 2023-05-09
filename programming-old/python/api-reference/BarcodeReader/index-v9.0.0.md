@@ -4,6 +4,7 @@ title: BarcodeReader Methods - Dynamsoft Barcode Reader SDK Python Edition API R
 description: This page shows BarcodeReader Methods of Dynamsoft Barcode Reader SDK Python Edition.
 keywords: methods, BarcodeReader, api reference, python
 needAutoGenerateSidebar: true
+permalink: /programming/python/api-reference/BarcodeReader/index-v9.0.0.html
 ---
 
 # class BarcodeReader

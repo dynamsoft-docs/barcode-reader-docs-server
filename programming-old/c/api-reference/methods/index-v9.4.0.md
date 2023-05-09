@@ -4,6 +4,7 @@ title: Functions - Dynamsoft Barcode Reader SDK C Edition API Reference
 description: This page shows all functions of Dynamsoft Barcode Reader SDK C Edition.
 keywords: functions, api reference, c
 needAutoGenerateSidebar: true
+permalink: /programming/c/api-reference/methods/index-v9.4.0.html
 ---
 
 # Global Functions

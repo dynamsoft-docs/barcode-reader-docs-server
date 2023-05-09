@@ -4,6 +4,7 @@ title: QRCodeDetails Struct - Dynamsoft Barcode Reader SDK C & C++ Edition
 description: This page shows the QRCodeDetails struct of Dynamsoft Barcode Reader SDK C & C++ Edition.
 keywords: QRCodeDetails, struct, c, c++
 needAutoGenerateSidebar: false
+permalink: /programming/c-cplusplus/struct/QRCodeDetails-v8.1.0.html
 ---
 
 

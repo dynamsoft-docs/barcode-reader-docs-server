@@ -4,6 +4,7 @@ title: BarcodeReader Constructor and Destructor - Dynamsoft Barcode Reader SDK P
 description: This page shows the BarcodeReader Constructor and Destructor of Dynamsoft Barcode Reader SDK Python Edition.
 keywords: BarcodeReader, constructor and destructor, api reference, python
 needAutoGenerateSidebar: true
+permalink: /programming/python/api-reference/BarcodeReader/constructor-and-destructor.html
 ---
 
 # Python API Reference - BarcodeReader Constructor and Destructor

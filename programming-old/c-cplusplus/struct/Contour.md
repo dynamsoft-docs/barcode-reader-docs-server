@@ -4,6 +4,7 @@ title: Contour Struct - Dynamsoft Barcode Reader SDK C & C++ Edition
 description: This page shows the Contour struct of Dynamsoft Barcode Reader SDK C & C++ Edition.
 keywords: Contour, struct, c, c++
 needAutoGenerateSidebar: false
+permalink: /programming/c-cplusplus/struct/Contour.html
 ---
 
 

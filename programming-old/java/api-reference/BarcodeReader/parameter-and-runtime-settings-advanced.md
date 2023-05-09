@@ -4,6 +4,7 @@ title: Advanced Settings Methods - Dynamsoft Barcode Reader SDK Java Edition API
 description: This page shows advanced Runtime Settings methods of Dynamsoft Barcode Reader SDK Java Edition API Reference.
 keywords: initRuntimeSettingsWithFile, initRuntimeSettingsWithString, appendTplFileToRuntimeSettings, appendTplStringToRuntimeSettings, getAllParameterTemplateNames, outputSettingsToFile, outputSettingsToString, Advanced Settings Methods, BarcodeReader, api reference, java
 needAutoGenerateSidebar: true
+permalink: /programming/java/api-reference/BarcodeReader/parameter-and-runtime-settings-advanced.html
 ---
 
 # Advanced Settings Methods

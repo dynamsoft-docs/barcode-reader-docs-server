@@ -4,6 +4,7 @@ title: Decode Functions - Dynamsoft Barcode Reader SDK C Edition API Reference
 description: This page shows the Decode functions of Dynamsoft Barcode Reader SDK C Edition.
 keywords: DBR_DecodeFile, DBR_DecodeFileInMemory, DBR_DecodeBuffer, DBR_DecodeBase64String, DBR_DecodeDIB, decode functions, api reference, c
 needAutoGenerateSidebar: true
+permalink: /programming/c/api-reference/methods/decode-v9.4.0.html
 ---
 
 

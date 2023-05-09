@@ -4,6 +4,7 @@ title: OnedDetailedResult Class - Dynamsoft Barcode Reader SDK Python Edition AP
 description: This page shows the OnedDetailedResult Class of Dynamsoft Barcode Reader SDK Python Edition.
 keywords: OnedDetailedResult, class, api reference, python
 needAutoGenerateSidebar: false
+permalink: /programming/python/api-reference/class/OnedDetailedResult-v7.5.0.html
 ---
 
 # OnedDetailedResult

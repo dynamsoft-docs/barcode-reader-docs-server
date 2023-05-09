@@ -4,6 +4,7 @@ title: FurtherModes Struct - Dynamsoft Barcode Reader SDK C & C++ Edition
 description: This page shows the FurtherModes struct of Dynamsoft Barcode Reader SDK C & C++ Edition.
 keywords: FurtherModes, struct, c, c++
 needAutoGenerateSidebar: false
+permalink: /programming/c-cplusplus/struct/FurtherModes.html
 ---
 
 

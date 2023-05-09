@@ -4,6 +4,7 @@ title: Quadrilateral Class - Dynamsoft Barcode Reader SDK Python Edition API Ref
 description: This page shows the Quadrilateral Class of Dynamsoft Barcode Reader SDK Python Edition.
 keywords: Quadrilateral, class, api reference, python
 needAutoGenerateSidebar: false
+permalink: /programming/python/api-reference/class/Quadrilateral.html
 ---
 
 

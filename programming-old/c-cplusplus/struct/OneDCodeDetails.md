@@ -4,6 +4,7 @@ title: OneDCodeDetails Struct - Dynamsoft Barcode Reader SDK C & C++ Edition
 description: This page shows the OneDCodeDetails struct of Dynamsoft Barcode Reader SDK C & C++ Edition.
 keywords: OneDCodeDetails, struct, c, c++
 needAutoGenerateSidebar: false
+permalink: /programming/c-cplusplus/struct/OneDCodeDetails.html
 ---
 
 # OneDCodeDetails

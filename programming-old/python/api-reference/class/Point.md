@@ -4,6 +4,7 @@ title: Point Class - Dynamsoft Barcode Reader SDK Python Edition API Reference
 description: This page shows the Point Class of Dynamsoft Barcode Reader SDK Python Edition.
 keywords: Point, class, api reference, python
 needAutoGenerateSidebar: false
+permalink: /programming/python/api-reference/class/Point.html
 ---
 
 

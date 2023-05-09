@@ -4,6 +4,7 @@ title: SamplingImageData Struct - Dynamsoft Barcode Reader SDK C & C++ Edition
 description: This page shows the SamplingImageData struct of Dynamsoft Barcode Reader SDK C & C++ Edition.
 keywords: SamplingImageData, struct, c, c++
 needAutoGenerateSidebar: false
+permalink: /programming/c-cplusplus/struct/SamplingImageData.html
 ---
 
 

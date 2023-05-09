@@ -4,6 +4,7 @@ title: Parameter and Runtime Settings Basic Functions - Dynamsoft Barcode Reader
 description: This page shows basic Runtime Settings functions of Dynamsoft Barcode Reader SDK C Edition.
 keywords: DBR_SetModeArgument, DBR_GetModeArgument, DBR_GetRuntimeSettings, DBR_UpdateRuntimeSettings, DBR_ResetRuntimeSettings, parameter and runtime settings basic functions, api reference, c
 needAutoGenerateSidebar: true
+permalink: /programming/c/api-reference/methods/parameter-and-runtime-settings-basic.html
 ---
 
 # Parameter and Runtime Settings Basic Functions

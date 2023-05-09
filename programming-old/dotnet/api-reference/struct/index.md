@@ -5,6 +5,7 @@ description: This page shows all Structs of Dynamsoft Barcode Reader SDK .NET Ed
 keywords: struct, api reference, .Net
 needAutoGenerateSidebar: false
 breadcrumbText: Struct
+permalink: /programming/dotnet/api-reference/struct/index.html
 ---
 
 # Structs

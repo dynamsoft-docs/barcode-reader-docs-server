@@ -4,6 +4,7 @@ title: PDFDetailedResult Class - Dynamsoft Barcode Reader SDK Python Edition API
 description: This page shows the PDFDetailedResult Class of Dynamsoft Barcode Reader SDK Python Edition.
 keywords: PDFDetailedResult, class, api reference, python
 needAutoGenerateSidebar: false
+permalink: /programming/python/api-reference/class/PDFDetailedResult-v9.4.0.html
 ---
 
 
