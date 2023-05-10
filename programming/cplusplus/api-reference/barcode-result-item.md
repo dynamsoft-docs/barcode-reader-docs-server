@@ -28,7 +28,7 @@ class CBarcodeResultItem : public CCapturedResultItem
 | [`GetFormatString`](#getformatstring) | Gets the format string of the decoded barcode result. |
 | [`GetText`](#gettext) | Gets the text result of the decoded barcode. |
 | [`GetBytes`](#getbytes) | Gets the text bytes of the decoded barcode result. |
-| [`GetBytesLength`](#getbytesLength) | Gets the text length of the decoded barcode result. |
+| [`GetBytesLength`](#getbyteslength) | Gets the text length of the decoded barcode result. |
 | [`GetLocation`](#getlocation) | Gets the location of the decoded barcode in a quadrilateral. |
 | [`GetConfidence`](#getconfidence) | Gets the confidence of the decoded barcode result. |
 | [`GetAngle`](#getangle) | Gets the angle of the decoded barcode result. |
