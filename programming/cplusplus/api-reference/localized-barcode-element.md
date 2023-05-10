@@ -25,8 +25,8 @@ class CLocalizedBarcodeElement : public CRegionObjectElement
 |--------|-------------|
 | [`GetAngle`](#getangle) | Gets the orientation angle of the barcode. |
 | [`GetConfidence`](#getconfidence) | Gets the confidence score of the barcode recognition result. |
-| [`GetPossibleFormat`](#getformat) | Gets the possible format of the barcode. |
-| [`GetPossibleFormatString`](#getformatstring) | Gets the string representation of the possible barcode format. |
+| [`GetPossibleFormats`](#getpossibleformats) | Gets the possible format of the barcode. |
+| [`GetPossibleFormatsString`](#getpossibleformatsstring) | Gets the string representation of the possible barcode format. |
 | [`GetModuleSize`](#getmodulesize) | Gets the module size of the barcode. |
 
 ### GetAngle
@@ -53,24 +53,24 @@ int GetConfidence() const
 
 Returns the confidence score of the barcode recognition result.
 
-### GetFormat
+### GetPossibleFormats
 
 It is used to get the format of the barcode.
 
 ```cpp
-BarcodeFormat GetFormat() const
+unsigned long long GetPossibleFormats()
 ```
 
 **Return value**
 
 Returns the format of the barcode.
 
-### GetFormatString
+### GetPossibleFormatsString
 
 It is used to get the string representation of the barcode format.
 
 ```cpp
-const char* GetFormatString() const
+const char* GetPossibleFormatsString() const
 ```
 
 **Return value**

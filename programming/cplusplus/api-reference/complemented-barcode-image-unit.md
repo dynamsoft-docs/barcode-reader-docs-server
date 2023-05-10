@@ -22,8 +22,20 @@ class CComplementedBarcodeImageUnit: public CIntermediateResultUnit
 
 | Method                            | Description |
 |-----------------------------------|-------------|
-| [`GetImageData`](#getimagedata)           | Gets the complemented barcode image data.|
+| [`GetLocation`](#getlocation) | Get the location of the complemented barcode in a quadrilateral.|
+| [`GetImageData`](#getimagedata) | Gets the complemented barcode image data.|
 
+### GetLocation
+
+Get the location of the complemented barcode in a quadrilateral.
+
+```cpp
+virtual CQuadrilateral GetLocation() const = 0;
+```
+
+**Return value**
+
+Returns the location of the complemented barcode in a quadrilateral.
 
 ### GetImageData
 
