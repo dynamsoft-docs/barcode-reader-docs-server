@@ -25,8 +25,8 @@ class CDecodedBarcodesResult
 |----------------------|-------------|
 | [`GetSourceImageHashId`](#getsourceimagehashid) | Gets the hash ID of the source image. |
 | [`GetSourceImageTag`](#getsourceimagetag) | Gets the tag of the source image. |
-| [`GetCount`](#getcount) | Gets the number of text line result items in the barcode reading result. |
-| [`GetItem`](#getitem) | Gets the text line result item at the specified index. |
+| [`GetCount`](#getcount) | Gets the number of barcode result items in the barcode reading result. |
+| [`GetItem`](#getitem) | Gets the barcode result item at the specified index. |
 | [`GetErrorCode`](#geterrorcode) | Gets the error code of the barcode reading result, if an error occurred. |
 | [`GetErrorString`](#geterrorstring) | Gets the error message of the barcode reading result, if an error occurred. |
 
@@ -71,12 +71,12 @@ Returns the number of decoded barcode items in the barcode reading result.
 Gets the decoded barcode result item at the specified index.
 
 ```cpp
-virtual const CTextLineResultItem* GetItem(int index) const = 0;
+virtual const CBarcodeResultItem* GetItem(int index) const = 0;
 ```
 
 **Parameters**
 
-`[in] index` The zero-based index of the text line result item to retrieve.
+`[in] index` The zero-based index of the barcode result item to retrieve.
 
 **Return value**
 
