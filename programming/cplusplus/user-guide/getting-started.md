@@ -234,7 +234,7 @@ The class `DirectoryFetcher` is capable of converting a local directory to an im
         MyImageSourceStateListener(CCaptureVisionRouter* router) {
             m_router = router;
         }
-        virtual void OnImageSourceStateChanged(ImageSourceState state)
+        virtual void OnImageSourceStateReceived(ImageSourceState state)
         {
             if (state == ISS_EXHAUSTED)
                 m_router->StopCapturing();
