@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: Other Enumerations - Dynamsoft Barcode Reader SDK Java Edition
-description: This article shows other Enumerations of Dynamsoft Barcode Reader.
+description: This article shows other Enumerations of Dynamsoft Barcode Reader v8.8.7 for Java Programming Laguage
 keywords: DM_ChargeWay, DM_DeploymentType, DM_LicenseModule, DM_UUIDGenerationMethod, ImagePixelFormat, QRCodeErrorCorrectionLevel, other enumeration, enumeration
 needGenerateH3Content: false
 permalink: /programming/java/api-reference/enumeration/other-enums-v8.8.7.html

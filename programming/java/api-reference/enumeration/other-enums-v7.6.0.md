@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: Other Enumerations - Dynamsoft Barcode Reader SDK Java Edition
-description: This article shows other Enumerations of Dynamsoft Barcode Reader.
+description: This article shows other Enumerations of Dynamsoft Barcode Reader v7.6.0 for Java Programming Laguage
 keywords: ImagePixelFormat, QRCodeErrorCorrectionLevel, other enumeration, enumeration
 needGenerateH3Content: false
 permalink: /programming/java/api-reference/enumeration/other-enums-v7.6.0.html

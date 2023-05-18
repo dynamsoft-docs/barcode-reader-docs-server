@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: Main Page - Dynamsoft Barcode Reader SDK C/C++ Edition Enumerations
-description: This article shows the main page of Dynamsoft Barcode Reader Enumerations.
+description: This article shows the main page of Dynamsoft Barcode Reader v8.8.7 Enumerations.
 keywords: enumerations
 needAutoGenerateSidebar: false
 permalink: /programming/c-cplusplus/enumeration/index-v8.8.7.html

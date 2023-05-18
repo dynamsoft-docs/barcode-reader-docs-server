@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: Other Enumerations - Dynamsoft Barcode Reader SDK .NET Edition
-description: This article shows other Enumerations of Dynamsoft Barcode Reader.
+description: This article shows other Enumerations of Dynamsoft Barcode Reader v7.6.0.
 keywords: ImagePixelFormat, QRCodeErrorCorrectionLevel, other enumeration, enumeration
 needGenerateH3Content: false
 permalink: /programming/dotnet/api-reference/enumeration/other-enums-v7.6.0.html

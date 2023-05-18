@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: Error Code - Dynamsoft Barcode Reader SDK C/C++ Edition
-description: This article enumerates the error codes of Dynamsoft Barcode Reader
+description: This article enumerates the error codes of Dynamsoft Barcode Reader v8.9.3
 keywords: error code, enumeration
 needAutoGenerateSidebar: true
 noTitleIndex: true

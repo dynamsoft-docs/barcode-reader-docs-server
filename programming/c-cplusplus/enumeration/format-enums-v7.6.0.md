@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: Format Enumerations - Dynamsoft Barcode Reader SDK C/C++ Edition
-description: This article shows Format Enumerations of Dynamsoft Barcode Reader.
+description: This article shows Format Enumerations of Dynamsoft Barcode Reader v7.6.0.
 keywords: BarcodeFormat, BarcodeFormat_2, format enumeration, enumeration
 needGenerateH3Content: false
 permalink: /programming/c-cplusplus/enumeration/format-enums-v7.6.0.html
