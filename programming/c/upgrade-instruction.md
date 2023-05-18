@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: Upgrade Instruction - Dynamsoft Barcode Reader SDK C Edition
-description: This page shows how to upgrade to latest version.
+description: This page shows how to upgrade to latest version of Dynamsoft Barcode Reader for C language.
 keywords: Upgrade, how-to guides
 needAutoGenerateSidebar: false
 ---

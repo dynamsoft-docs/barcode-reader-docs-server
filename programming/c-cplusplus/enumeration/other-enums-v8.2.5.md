@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: Other Enumerations - Dynamsoft Barcode Reader SDK C/C++ Edition
-description: This article shows other Enumerations of Dynamsoft Barcode Reader.
+description: This article shows other Enumerations of Dynamsoft Barcode Reader v8.2.5.
 keywords: DM_ChargeWay, DM_DeploymentType, DM_LicenseModule, DM_UUIDGenerationMethod, ImagePixelFormat, QRCodeErrorCorrectionLevel, other enumeration, enumeration
 needGenerateH3Content: false
 permalink: /programming/c-cplusplus/enumeration/other-enums-v8.2.5.html
