@@ -30,7 +30,7 @@ The best way to start with the Dynamsoft Barcode Reader C++ Edition, is followin
   - Linux x64: Ubuntu 14.04.4+ LTS, Debian 8+, etc
 
 - Developing Tool
-  - Visual Studio 2008 or above
+  - Visual Studio 2012 or above
   - G++ 5.4+  
 
 ## License Subscription

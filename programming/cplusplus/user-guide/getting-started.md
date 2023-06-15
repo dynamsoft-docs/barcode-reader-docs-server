@@ -14,19 +14,22 @@ In this guide, you will learn step by step on how to build a barcode reading app
 
 > Read more on [Dynamsoft Barcode Reader Features](https://www.dynamsoft.com/barcode-reader/docs/introduction/index.html)
 
-- [Installation](#installation)
-- [Build Your First Application](#build-your-first-application)
-  - [Create a New Project](#create-a-new-project)
-  - [Include the Library](#include-the-library)
-  - [Initialize a Capture Vision Router Instance](#initialize-a-capture-vision-router-instance)
-  - [Decode and Output Results](#decode-and-output-results)
-  - [Build and Run the Project](#build-and-run-the-project)
-- [Process Multiple Images](#process-multiple-images)
-  - [Add an Image Source as the Input](#add-an-image-source-as-the-input)
-  - [Add a Result Receiver as the Output](#add-a-result-receiver-as-the-output)
-  - [Add an Object to Listener to the Status of the Image Source](#add-an-object-to-listener-to-the-status-of-the-image-source)
-  - [Start the Process](#start-the-process)
-  - [Build and Run the Project Again](#build-and-run-the-project-again)
+- [Getting Started with Dynamsoft Barcode Reader SDK C++ Edition](#getting-started-with-dynamsoft-barcode-reader-sdk-c-edition)
+  - [Installation](#installation)
+  - [Build Your First Application](#build-your-first-application)
+    - [Create a New Project](#create-a-new-project)
+    - [Include the Library](#include-the-library)
+    - [Initialize a Capture Vision Router Instance](#initialize-a-capture-vision-router-instance)
+    - [Decode and Output Results](#decode-and-output-results)
+    - [Release the Allocated Memory](#release-the-allocated-memory)
+    - [Build and Run the Project](#build-and-run-the-project)
+  - [Process Multiple Images](#process-multiple-images)
+    - [Add an Image Source as the Input](#add-an-image-source-as-the-input)
+    - [Add a Result Receiver as the Output](#add-a-result-receiver-as-the-output)
+    - [Add an Object to Listen to the Status of the Image Source](#add-an-object-to-listen-to-the-status-of-the-image-source)
+    - [Start the Process](#start-the-process)
+    - [Release the Allocated Memory](#release-the-allocated-memory-1)
+    - [Build and Run the Project Again](#build-and-run-the-project-again)
 
 ## Installation
 
@@ -34,13 +37,13 @@ If you haven't downloaded the SDK yet, <a href="https://www.dynamsoft.com/barcod
 
 > For this tutorial, we unpack it to a pseudo directory `[INSTALLATION FOLDER]`, change it to your unpacking path for the following content.
 
-> To find out whether your environment is supported, read the [System Requirements](https://www.dynamsoft.com/barcode-reader/docs/server/programming/cplusplus/#system-requirements).
+> To find out whether your environment is supported, read the [System Requirements]({{site.cpp}}index.html#system-requirements).
 
 ## Build Your First Application
 
 Let's start by creating a console application which demonstrates how to use the minimum code to read barcodes from an picture of it.
 
-> You can <a href="https://github.com/Dynamsoft/barcode-reader-c-cpp-samples/tree/main/Samples/C%2B%2B/HelloWorld" target="_blank">download the entire source code from here</a>.
+> You can <a href="https://github.com/Dynamsoft/barcode-reader-c-cpp-samples/tree/main/Samples/C%2B%2B/HelloWorld/ReadAnImage" target="_blank">download the entire source code from here</a>.
 
 ### Create a New Project
 
@@ -61,10 +64,7 @@ Let's start by creating a console application which demonstrates how to use the 
     ```cpp
     #include <iostream>
     #include <string>
-    #include "[INSTALLATION FOLDER]/Include/DynamsoftCore.h"
-    #include "[INSTALLATION FOLDER]/Include/DynamsoftLicense.h"
     #include "[INSTALLATION FOLDER]/Include/DynamsoftCaptureVisionRouter.h"
-    #include "[INSTALLATION FOLDER]/Include/DynamsoftBarcodeReader.h"
 
     using namespace std;
     using namespace dynamsoft::license;
@@ -73,15 +73,11 @@ Let's start by creating a console application which demonstrates how to use the 
 
     #if defined(_WIN64) || defined(_WIN32)
         #ifdef _WIN64
-            #pragma comment(lib, "[INSTALLATION FOLDER]/Lib/Windows/x64/DynamsoftCorex64.lib")
             #pragma comment(lib, "[INSTALLATION FOLDER]/Lib/Windows/x64/DynamsoftLicensex64.lib")
             #pragma comment(lib, "[INSTALLATION FOLDER]/Lib/Windows/x64/DynamsoftCaptureVisionRouterx64.lib")
-            #pragma comment(lib, "[INSTALLATION FOLDER]/Lib/Windows/x64/DynamsoftBarcodeReaderx64.lib")
         #else
-            #pragma comment(lib, "[INSTALLATION FOLDER]/Lib/Windows/x86/DynamsoftCorex86.lib")
             #pragma comment(lib, "[INSTALLATION FOLDER]/Lib/Windows/x86/DynamsoftLicensex86.lib")
             #pragma comment(lib, "[INSTALLATION FOLDER]/Lib/Windows/x86/DynamsoftCaptureVisionRouterx86.lib")
-            #pragma comment(lib, "[INSTALLATION FOLDER]/Lib/Windows/x86/DynamsoftBarcodeReaderx86.lib")
         #endif
     #endif
     ```
@@ -100,7 +96,7 @@ Let's start by creating a console application which demonstrates how to use the 
 2. Create an instance of Capture Vision Router.
 
     ```cpp
-    CCaptureVisionRouter cvr;
+    CCaptureVisionRouter* cvr = new CCaptureVisionRouter;
     ```
 
 ### Decode and Output Results
@@ -108,20 +104,30 @@ Let's start by creating a console application which demonstrates how to use the 
 1. Decode barcodes from an image file.
 
     ```cpp
-    CCapturedResultArray* results = cvr.Capture("[INSTALLATION FOLDER]/Images/sample-image.jpg", PresetTemplate::PT_READ_BARCODES);
+    string imageFile = "[INSTALLATION FOLDER]/Resources/BarcodeReader/Images/AllSupportedBarcodeTypes.png";
+    CCapturedResultArray* results = cvr->Capture(imageFile.c_str(), CPresetTemplate::PT_READ_BARCODES);
     int capturedResultCount = results->GetCount();
     for (int i = 0; i < capturedResultCount; i++) {
         const CCapturedResult* capturedResult = results->GetResult(i);
+        if (capturedResult->GetErrorCode() != 0) {
+            cout << "Error: " << capturedResult->GetErrorCode() << "," << capturedResult->GetErrorString() << endl;
+            continue;
+        }
         int capturedResultItemCount = capturedResult->GetCount();
-        for (int j = 0; j < capturedResultItemCount; j++) {
+        cout << "Decoded " << capturedResultItemCount << " barcodes" << endl;
+        
+        for (int j = 0; j < capturedResultItemCount; j++) 
+        {
             const CCapturedResultItem* capturedResultItem = capturedResult->GetItem(j);
             /*
             * There can be multiple types of result items per image.
             * We check each of these items until we find the barcode result.
             */
             CapturedResultItemType type = capturedResultItem->GetType();
-            if (type | CapturedResultItemType::CRIT_BARCODE) {
+            if (type == CapturedResultItemType::CRIT_BARCODE)
+            {
                 const CBarcodeResultItem* barcodeResultItem = dynamic_cast<const CBarcodeResultItem*> (capturedResultItem);
+                cout << "Result " << j + 1 << endl;
                 cout << "Barcode Format: " << barcodeResultItem->GetFormatString() << endl;
                 cout << "Barcode Text: " << barcodeResultItem->GetText() << endl;
             }
@@ -133,6 +139,13 @@ Let's start by creating a console application which demonstrates how to use the 
 > 
 > Please change all `[INSTALLATION FOLDER]` in above code snippet to your unpacking path.
 
+### Release the Allocated Memory
+
+    ```cpp
+    delete cvr, cvr = NULL;
+    delete results, results = NULL;
+    ```
+
 ### Build and Run the Project
 
 - For Windows
@@ -141,7 +154,7 @@ Let's start by creating a console application which demonstrates how to use the 
 
 2. Build the project to generate program `DBRCPPSample.exe`.
 
-3. Copy **ALL** `*.dll` files under `[INSTALLATION FOLDER]\Lib\Windows\x64` to the same folder as the `DBRCPPSample.exe` ("[PROJECT FOLDER]\DBRCPPSample\x64\Debug").
+3. Copy **ALL** `*.dll` files under `[INSTALLATION FOLDER]\Lib\Windows\x64` to the same folder as the `DBRCPPSample.exe` ("[PROJECT FOLDER]\DBRCPPSample\x64\Release").
 
 4. Run the program `DBRCPPSample.exe`.
 
@@ -152,7 +165,7 @@ Let's start by creating a console application which demonstrates how to use the 
 1. Open a terminal and change to the target directory where `DBRCPPSample.cpp` is located. Build the sample:
 
     ```bash
-    g++ -o DBRCPPSample DBRCPPSample.cpp -lDynamsoftCore -lDynamsoftBarcodeReader -L ../Lib/Linux -Wl,-rpath=../Lib/Linux -std=c++11
+    g++ -o DBRCPPSample DBRCPPSample.cpp -lDynamsoftCaptureVisionRouter -lDynamsoftLicense -L ../Lib/Linux/x64 -Wl,-rpath=../Lib/Linux/x64 -std=c++11
     ```
 
 2. Run the program `DBRCPPSample`.
@@ -161,7 +174,7 @@ Let's start by creating a console application which demonstrates how to use the 
     ./DBRCPPSample
     ```
 
-> You can <a href="https://github.com/Dynamsoft/barcode-reader-c-cpp-samples/tree/main/Samples/C%2B%2B/HelloWorld" target="_blank">download the entire source code from here</a>.
+> You can <a href="https://github.com/Dynamsoft/barcode-reader-c-cpp-samples/tree/main/Samples/C%2B%2B/HelloWorld/ReadAnImage" target="_blank">download the entire source code from here</a>.
 
 ## Process Multiple Images
 
@@ -169,62 +182,76 @@ If, instead of processing one single image, you need to process many images at o
 
 > These steps follow the step [Initialize a Capture Vision Router Instance](#initialize-a-capture-vision-router-instance) mentioned above.
 
+> You can <a href="https://github.com/Dynamsoft/barcode-reader-c-cpp-samples/tree/main/Samples/C%2B%2B/HelloWorld/ReadMultipleImages" target="_blank">download the entire source code from here</a>.
+
 ### Add an Image Source as the Input
 
-The class `DirectoryFetcher` is capable of converting a local directory to an image source. We will use it to connect multiple images to the image-processing engine.
+The class `CDirectoryFetcher` is capable of converting a local directory to an image source. We will use it to connect multiple images to the image-processing engine.
 
-1. Include the header file.
+1. Include additional `DynamsoftUtility` and `DynamsoftCore` module.
 
     ```cpp
     // Add the following lines
-    #include "[INSTALLATION FOLDER]/Include/DynamsoftUtility.h"
     using namespace dynamsoft::utility;
     #ifdef _WIN64
+    #pragma comment(lib, "[INSTALLATION FOLDER]/Lib/Windows/x64/DynamsoftCorex64.lib")
     #pragma comment(lib, "[INSTALLATION FOLDER]/Lib/Windows/x64/DynamsoftUtilityx64.lib")
     #else
+    #pragma comment(lib, "[INSTALLATION FOLDER]/Lib/Windows/x86/DynamsoftCorex86.lib")
     #pragma comment(lib, "[INSTALLATION FOLDER]/Lib/Windows/x86/DynamsoftUtilityx86.lib")
     #endif
     ```
 
-2. Create a `DirectoryFetcher` object and use it as the image source.
+2. Set up a `CDirectoryFetcher` object to retrieve image data sources from a directory.
 
     ```cpp
-    CDirectoryFetcher fetcher;
-    fetcher.SetDirectory("[THE DIRECTORY THAT HOLDS THE IMAGES]");
-    cvr.SetInput(&fetcher);
+    CDirectoryFetcher *fetcher = new CDirectoryFetcher;
+    fetcher->SetDirectory("[THE DIRECTORY THAT HOLDS THE IMAGES]");
+    cvr->SetInput(fetcher);
     ```
 
 ### Add a Result Receiver as the Output
 
-1. Define the receiver class.
+1. Create a class `MyCapturedResultReceiver` to implement the `CCapturedResultReceiver` interface, and get the barocde results in `OnDecodedBarcodesReceived` callback function
 
     ```cpp
     class MyCapturedResultReceiver : public CCapturedResultReceiver {
         void OnDecodedBarcodesReceived(const CDecodedBarcodesResult* pResult) {
-            int count = pResult->GetCount();
-            for (int i = 0; i < count; i++) {
-                const CBarcodeResultItem* barcodeResultItem = pResult->GetItem(i);
-                if (barcodeResultItem != NULL)
-                {
-                    cout << "Result " << i + 1 << endl;
-                    cout << "Barcode Format: " << barcodeResultItem->GetFormatString() << endl;
-                    cout << "Barcode Text: " << barcodeResultItem->GetText() << endl;
-                }
+            const CFileImageTag *tag = dynamic_cast<const CFileImageTag*>(pResult->GetSourceImageTag());
+            cout << "File: " << tag->GetFilePath() << endl;
+            if (pResult->GetErrorCode() != EC_OK)
+            {
+                cout << "Error: " << pResult->GetErrorString() << endl;
             }
+            else
+            {
+                int count = pResult->GetCount();
+                for (int i = 0; i < count; i++) {
+                    const CBarcodeResultItem* barcodeResultItem = pResult->GetItem(i);
+                    cout << "Decoded " << count << " barcodes" << endl;
+                    if (barcodeResultItem != NULL)
+                    {
+                        cout << "Result " << i + 1 << endl;
+                        cout << "Barcode Format: " << barcodeResultItem->GetFormatString() << endl;
+                        cout << "Barcode Text: " << barcodeResultItem->GetText() << endl;
+                    }
+                }        
+            }
+            cout << endl;
         }
     };
     ```
 
-2. Create a receiver object and set it as the output.
+2. Create and register a `MyCapturedResultReceiver` object as the result receiver.
 
     ```cpp
-    MyCapturedResultReceiver capturedReceiver;
-    cvr.AddResultReceiver(&capturedReceiver);
+    CCapturedResultReceiver *capturedReceiver = new MyCapturedResultReceiver;
+    cvr->AddResultReceiver(capturedReceiver);
     ```
 
-### Add an Object to Listener to the Status of the Image Source
+### Add an Object to Listen to the Status of the Image Source
 
-1. Define the listener class.
+1. Create a class `MyImageSourceStateListener` to implement the `CImageSourceStateListenter` interface, and call StopCapturing in `OnImageSourceStateReceived` callback function when the state is `ISS_EXHAUSTED`.
 
     ```cpp
     class MyImageSourceStateListener : public CImageSourceStateListener {
@@ -242,11 +269,11 @@ The class `DirectoryFetcher` is capable of converting a local directory to an im
     };
     ```
 
-2. Create a listener object and connect it to the image source
+2. Create and register a `MyImageSourceStateListener` object as the listener.
 
     ```cpp
-    MyImageSourceStateListener listener(&cvr);
-    cvr.AddImageSourceStateListener(&listener);
+    CImageSourceStateListener *listener = new MyImageSourceStateListener(cvr);
+    cvr->AddImageSourceStateListener(listener);
     ```
 
 ### Start the Process
@@ -254,11 +281,23 @@ The class `DirectoryFetcher` is capable of converting a local directory to an im
 Call the method `StartCapturing()` to start processing all the images in the specified folder.
 
 ```cpp
-int errorCode = cvr.StartCapturing(PresetTemplate::PT_READ_BARCODES, true, errorMsg, 512);        
+int errorCode = cvr->StartCapturing(CPresetTemplate::PT_READ_BARCODES, true, errorMsg, 512);        
 ```
 
 During the process, the callback function `OnDecodedBarcodesReceived()` is triggered each time an image finishes processing. After all images are processed, the listener function `OnImageSourceAdapterStateChanged()` will return the image source state as `ISS_EXHAUSTED` and the process is stopped with the method `StopCapturing()`.
 
+### Release the Allocated Memory
+
+    ```cpp
+    delete cvr, cvr = NULL;
+    delete fetcher, fetcher = NULL;
+    delete listener, listener = NULL;
+    delete capturedReceiver, capturedReceiver = NULL;
+    ```
+
 ### Build and Run the Project Again
 
 Please refer to [Build and Run the Project](#build-and-run-the-project).
+
+> You can <a href="https://github.com/Dynamsoft/barcode-reader-c-cpp-samples/tree/main/Samples/C%2B%2B/HelloWorld/ReadMultipleImages" target="_blank">download the entire source code from here</a>.
+
