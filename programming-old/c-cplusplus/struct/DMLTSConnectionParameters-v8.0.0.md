@@ -27,12 +27,12 @@ typedef struct tagDM_LTSConnectionParameters  DM_LTSConnectionParameters
 | [`standbyServerURL`](#standbyserverurl) | *const char\** |
 | [`handshakeCode`](#handshakecode) | *const char\** |
 | [`sessionPassword`](#sessionpassword) | *const char\** |
-| [`deploymentType`](#deploymenttype) | [`DM_DeploymentType`]({{ site.enumerations }}other-enums.html#dm_deploymenttype) |
-| [`chargeWay`](#chargeway) | [`DM_ChargeWay`]({{ site.enumerations }}other-enums.html#dm_chargeway) |
-| [`UUIDGenerationMethod`](#uuidgenerationmethod) | [`DM_UUIDGenerationMethod`]({{ site.enumerations }}other-enums.html#dm_uuidgenerationmethod) |
+| [`deploymentType`](#deploymenttype) | [`DM_DeploymentType`]({{ site.c_cpp_enumerations }}other-enums.html#dm_deploymenttype) |
+| [`chargeWay`](#chargeway) | [`DM_ChargeWay`]({{ site.c_cpp_enumerations }}other-enums.html#dm_chargeway) |
+| [`UUIDGenerationMethod`](#uuidgenerationmethod) | [`DM_UUIDGenerationMethod`]({{ site.c_cpp_enumerations }}other-enums.html#dm_uuidgenerationmethod) |
 | [`maxBufferDays`](#maxbufferdays) | *int* |
 | [`limitedLicenseModulesCount`](#limitedlicensemodulescount) | *int* |
-| [`limitedLicenseModules`](#limitedlicensemodules) | [`DM_LicenseModule*`]({{ site.enumerations }}other-enums.html#dm_licensemodule) |
+| [`limitedLicenseModules`](#limitedlicensemodules) | [`DM_LicenseModule*`]({{ site.c_cpp_enumerations }}other-enums.html#dm_licensemodule) |
 | [`reserved`](#reserved) | *char\[64\]* |
 
 
@@ -94,13 +94,13 @@ Sets the deployment type.
 DM_DeploymentType tagDM_LTSConnectionParameters::deploymentType
 ```
 - **Value range**   
-    A value of [`DM_DeploymentType`]({{ site.enumerations }}other-enums.html#dm_deploymenttype) Enumeration items.
+    A value of [`DM_DeploymentType`]({{ site.c_cpp_enumerations }}other-enums.html#dm_deploymenttype) Enumeration items.
       
 - **Default value**   
     `DM_DT_DESKTOP`
     
 - **See also**  
-    [`DM_DeploymentType`]({{ site.enumerations }}other-enums.html#dm_deploymenttype)
+    [`DM_DeploymentType`]({{ site.c_cpp_enumerations }}other-enums.html#dm_deploymenttype)
       
 
 ### chargeWay
@@ -109,13 +109,13 @@ Sets the charge way.
 DM_ChargeWay tagDM_LTSConnectionParameters::chargeWay
 ```
 - **Value range**   
-    A value of [`DM_ChargeWay`]({{ site.enumerations }}other-enums.html#dm_chargeway) Enumeration items.
+    A value of [`DM_ChargeWay`]({{ site.c_cpp_enumerations }}other-enums.html#dm_chargeway) Enumeration items.
       
 - **Default value**   
     `DM_CW_AUTO`
     
 - **See also**  
-    [`DM_ChargeWay`]({{ site.enumerations }}other-enums.html#dm_chargeway)
+    [`DM_ChargeWay`]({{ site.c_cpp_enumerations }}other-enums.html#dm_chargeway)
       
 
 ### UUIDGenerationMethod
@@ -124,13 +124,13 @@ Sets the method to generate UUID.
 DM_UUIDGenerationMethod tagDM_LTSConnectionParameters::UUIDGenerationMethod
 ```
 - **Value range**   
-    A value of [`DM_UUIDGenerationMethod`]({{ site.enumerations }}other-enums.html#dm_uuidgenerationmethod) Enumeration items.
+    A value of [`DM_UUIDGenerationMethod`]({{ site.c_cpp_enumerations }}other-enums.html#dm_uuidgenerationmethod) Enumeration items.
       
 - **Default value**   
     `DM_UUIDGM_RANDOM`
     
 - **See also**  
-    [`DM_UUIDGenerationMethod`]({{ site.enumerations }}other-enums.html#dm_uuidgenerationmethod)
+    [`DM_UUIDGenerationMethod`]({{ site.c_cpp_enumerations }}other-enums.html#dm_uuidgenerationmethod)
       
 
 ### maxBufferDays
@@ -161,13 +161,13 @@ Sets the license modules to use.
 DM_LicenseModule* tagDM_LTSConnectionParameters::limitedLicenseModules
 ```
 - **Value range**   
-    Each array item can be any one of the [`DM_LicenseModule`]({{ site.enumerations }}other-enums.html#dm_licensemodule) Enumeration items.
+    Each array item can be any one of the [`DM_LicenseModule`]({{ site.c_cpp_enumerations }}other-enums.html#dm_licensemodule) Enumeration items.
       
 - **Default value**   
     NULL
     
 - **See also**  
-    [`DM_LicenseModule`]({{ site.enumerations }}other-enums.html#dm_licensemodule)
+    [`DM_LicenseModule`]({{ site.c_cpp_enumerations }}other-enums.html#dm_licensemodule)
       
 
 ### reserved

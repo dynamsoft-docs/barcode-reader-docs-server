@@ -22,10 +22,10 @@ typedef struct tagExtendedResult*  PExtendedResult
   
 | Attribute | Type |
 |---------- | ---- |
-| [`resultType`](#resulttype) | [`ResultType`]({{ site.enumerations }}result-enums.html#resulttype) |
-| [`barcodeFormat`](#barcodeformat) | [`BarcodeFormat`]({{ site.enumerations }}format-enums.html#barcodeformat) |
+| [`resultType`](#resulttype) | [`ResultType`]({{ site.c_cpp_enumerations }}result-enums.html#resulttype) |
+| [`barcodeFormat`](#barcodeformat) | [`BarcodeFormat`]({{ site.c_cpp_enumerations }}format-enums.html#barcodeformat) |
 | [`barcodeFormatString`](#barcodeformatstring) | *const char \** |
-| [`barcodeFormat_2`](#barcodeformat_2) | [`BarcodeFormat_2`]({{ site.enumerations }}format-enums.html#barcodeformat_2) |
+| [`barcodeFormat_2`](#barcodeformat_2) | [`BarcodeFormat_2`]({{ site.c_cpp_enumerations }}format-enums.html#barcodeformat_2) |
 | [`barcodeFormatString_2`](#barcodeformatstring_2) | *const char \** | 
 | [`confidence`](#confidence) | *int* | 
 | [`bytes`](#bytes) | *unsigned char \** | 

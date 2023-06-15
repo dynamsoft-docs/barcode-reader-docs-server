@@ -26,12 +26,12 @@ typedef struct tagDM_DLSConnectionParameters  DM_DLSConnectionParameters
 | [`standbyServerURL`](#standbyserverurl) | *char\** |
 | [`handshakeCode`](#handshakecode) | *char\** |
 | [`sessionPassword`](#sessionpassword) | *char\** |
-| [`deploymentType`](#deploymenttype) | [`DM_DeploymentType`]({{ site.enumerations }}other-enums.html#dm_deploymenttype) |
-| [`chargeWay`](#chargeway) | [`DM_ChargeWay`]({{ site.enumerations }}other-enums.html#dm_chargeway) |
-| [`UUIDGenerationMethod`](#uuidgenerationmethod) | [`DM_UUIDGenerationMethod`]({{ site.enumerations }}other-enums.html#dm_uuidgenerationmethod) |
+| [`deploymentType`](#deploymenttype) | [`DM_DeploymentType`]({{ site.c_cpp_enumerations }}other-enums.html#dm_deploymenttype) |
+| [`chargeWay`](#chargeway) | [`DM_ChargeWay`]({{ site.c_cpp_enumerations }}other-enums.html#dm_chargeway) |
+| [`UUIDGenerationMethod`](#uuidgenerationmethod) | [`DM_UUIDGenerationMethod`]({{ site.c_cpp_enumerations }}other-enums.html#dm_uuidgenerationmethod) |
 | [`maxBufferDays`](#maxbufferdays) | *int* |
 | [`limitedLicenseModulesCount`](#limitedlicensemodulescount) | *int* |
-| [`limitedLicenseModules`](#limitedlicensemodules) | [`DM_LicenseModule*`]({{ site.enumerations }}other-enums.html#dm_licensemodule) |
+| [`limitedLicenseModules`](#limitedlicensemodules) | [`DM_LicenseModule*`]({{ site.c_cpp_enumerations }}other-enums.html#dm_licensemodule) |
 | [`maxConcurrentInstanceCount`](#maxconcurrentinstancecount) | *int* |
 | [`organizationID`](#organizationid) | *char\** |
 | [`products`](#products) | *int* |
@@ -96,13 +96,13 @@ Sets the deployment type.
 DM_DeploymentType tagDM_DLSConnectionParameters::deploymentType
 ```
 **Value Range**     
-    A value of [`DM_DeploymentType`]({{ site.enumerations }}other-enums.html#dm_deploymenttype) Enumeration items.
+    A value of [`DM_DeploymentType`]({{ site.c_cpp_enumerations }}other-enums.html#dm_deploymenttype) Enumeration items.
       
 **Default Value**     
     `DM_DT_DESKTOP`
     
 **See Also**      
-    [`DM_DeploymentType`]({{ site.enumerations }}other-enums.html#dm_deploymenttype)
+    [`DM_DeploymentType`]({{ site.c_cpp_enumerations }}other-enums.html#dm_deploymenttype)
       
 
 ### chargeWay
@@ -111,13 +111,13 @@ Sets the charge way.
 DM_ChargeWay tagDM_DLSConnectionParameters::chargeWay
 ```
 **Value Range**     
-    A value of [`DM_ChargeWay`]({{ site.enumerations }}other-enums.html#dm_chargeway) Enumeration items.
+    A value of [`DM_ChargeWay`]({{ site.c_cpp_enumerations }}other-enums.html#dm_chargeway) Enumeration items.
       
 **Default Value**     
     `DM_CW_AUTO`
     
 **See Also**      
-    [`DM_ChargeWay`]({{ site.enumerations }}other-enums.html#dm_chargeway)
+    [`DM_ChargeWay`]({{ site.c_cpp_enumerations }}other-enums.html#dm_chargeway)
       
 
 ### UUIDGenerationMethod
@@ -126,13 +126,13 @@ Sets the method to generate UUID.
 DM_UUIDGenerationMethod tagDM_DLSConnectionParameters::UUIDGenerationMethod
 ```
 **Value Range**     
-    A value of [`DM_UUIDGenerationMethod`]({{ site.enumerations }}other-enums.html#dm_uuidgenerationmethod) Enumeration items.
+    A value of [`DM_UUIDGenerationMethod`]({{ site.c_cpp_enumerations }}other-enums.html#dm_uuidgenerationmethod) Enumeration items.
       
 **Default Value**     
     `DM_UUIDGM_RANDOM`
     
 **See Also**      
-    [`DM_UUIDGenerationMethod`]({{ site.enumerations }}other-enums.html#dm_uuidgenerationmethod)
+    [`DM_UUIDGenerationMethod`]({{ site.c_cpp_enumerations }}other-enums.html#dm_uuidgenerationmethod)
       
 
 ### maxBufferDays
@@ -163,13 +163,13 @@ Sets the license modules to use.
 DM_LicenseModule* tagDM_DLSConnectionParameters::limitedLicenseModules
 ```
 **Value Range**     
-    Each array item can be any one of the [`DM_LicenseModule`]({{ site.enumerations }}other-enums.html#dm_licensemodule) Enumeration items.
+    Each array item can be any one of the [`DM_LicenseModule`]({{ site.c_cpp_enumerations }}other-enums.html#dm_licensemodule) Enumeration items.
       
 **Default Value**     
     NULL
     
 **See Also**      
-    [`DM_LicenseModule`]({{ site.enumerations }}other-enums.html#dm_licensemodule)
+    [`DM_LicenseModule`]({{ site.c_cpp_enumerations }}other-enums.html#dm_licensemodule)
 
       
 ### maxConcurrentInstanceCount
@@ -205,7 +205,7 @@ Sets the products to get the license for. Product values can be combined.
 int tagDM_DLSConnectionParameters::products
 ```
 **Value Range**     
-    A combined value of [`Product`]({{ site.enumerations }}other-enums.html#product) Enumeration items
+    A combined value of [`Product`]({{ site.c_cpp_enumerations }}other-enums.html#product) Enumeration items
       
 **Default Value**     
     `PROD_ALL`

@@ -21,14 +21,20 @@
         </li>
         <li><a>Final Results</a>
             <ul>
-                <li><a href="{{ site.dcv_cpp_api }}capture-vision-router/auxiliary-classes/captured-result-receiver.html">CCapturedResultReceiver</a></li>
+                <li><a href="{{ site.dcv_cpp_api }}core/basic-structures/captured-result-receiver.html">CCapturedResultReceiver</a></li>
                 <li><a href="{{ site.dcv_cpp_api }}core/basic-structures/captured-result.html" class="otherLinkColour">CCapturedResult</a></li>
                 <li><a href="{{ site.dcv_cpp_api }}core/basic-structures/captured-result-array.html" class="otherLinkColour">CCapturedResultArray</a></li>
                 <li><a href="{{ site.dcv_cpp_api }}core/basic-structures/captured-result-item.html" class="otherLinkColour">CCapturedResultItem</a></li>
-                <li><a href="{{ site.dcv_cpp_api }}capture-vision-router/auxiliary-classes/raw-image-result-item.html" class="otherLinkColour">CRawImageResultItem</a></li>
+                <li><a href="{{ site.dcv_cpp_api }}core/basic-structures/raw-image-result-item.html" class="otherLinkColour">CRawImageResultItem</a></li>
                 <li><a href="{{ site.cpp_api }}barcode-result-item.html" class="otherLinkColour">CBarcodeResultItem</a></li>
                 <li><a href="{{ site.cpp_api }}decoded-barcodes-result-array.html" class="otherLinkColour">CDecodedBarcodesResultArray</a></li>
                 <li><a href="{{ site.cpp_api }}decoded-barcodes-result.html" class="otherLinkColour">CDecodedBarcodesResult</a></li>
+            </ul>
+        </li>
+        <li ><a>Final Results Filters</a>
+            <ul>                
+                <li><a href="{{ site.dcv_cpp_api }}core/basic-structures/captured-result-filter.html" class="otherLinkColour">CCapturedResultFilter</a></li>
+                <li><a href="{{ site.dcv_cpp_api }}utility/multi-frame-result-cross-filter.html" class="otherLinkColour">CMultiFrameResultCrossFilter</a></li>
             </ul>
         </li>
         <li><a>Detailed Barcode Results</a>
@@ -45,6 +51,8 @@
             <ul>
                 <li><a href="{{ site.dcv_cpp_api }}core/intermediate-results/intermediate-result-manager.html" class="otherLinkColour">CIntermediateResultManager</a></li>
                 <li><a href="{{ site.dcv_cpp_api }}core/intermediate-results/intermediate-result-receiver.html" class="otherLinkColour">CIntermediateResultReceiver</a></li>
+                <li><a href="{{ site.dcv_cpp_api }}core/intermediate-results/observed-parameters.html" class="otherLinkColour">CObservedParameters</a></li>
+                <li><a href="{{ site.dcv_cpp_api }}core/structs/intermediate-result-extra-info.html" class="otherLinkColour">IntermediateResultExtraInfo</a></li>
                 <li><a href="{{ site.dcv_cpp_api }}core/intermediate-results/intermediate-result.html" class="otherLinkColour">CIntermediateResult</a></li>
                 <li><a href="{{ site.dcv_cpp_api }}core/intermediate-results/intermediate-result-unit.html" class="otherLinkColour">CIntermediateResultUnit</a></li>
                 <li><a href="{{ site.cpp_api }}decoded-barcodes-unit.html" class="otherLinkColour">CDecodedBarcodesUnit</a></li>
@@ -88,6 +96,13 @@
                 -->
             </ul>
         </li>
+        <li><a>Settings</a>
+            <ul>
+                <li><a href="{{ site.dcv_cpp_api }}capture-vision-router/structs/simplified-capture-vision-settings.html" class="otherLinkColour">SimplifiedCaptureVisionSettings</a></li>
+                <li><a href="{{ site.cpp_api }}simplified-barcode-reader-settings.html" class="otherLinkColour">SimplifiedBarcodeReaderSettings</a></li>
+                <li><a href="{{ site.dcv_cpp_api }}capture-vision-router/auxiliary-classes/preset-template.html" class="otherLinkColour">CPresetTemplate</a></li>
+            </ul>
+        </li>
         <li><a>State Listener</a>
             <ul>
                 <li><a href="{{ site.dcv_cpp_api }}capture-vision-router/auxiliary-classes/capture-state-listener.html" class="otherLinkColour">CCaptureStateListener</a></li>
@@ -111,33 +126,30 @@
                 <li><a href="{{ site.dcv_cpp_api }}core/basic-structures/video-frame-tag.html" class="otherLinkColour">CVideoFrameTag</a></li>
             </ul>
         </li>
-        <li><a>Struct</a>
-            <ul>
-                <li><a href="{{ site.cpp_api }}simplified-barcode-reader-settings.html" class="otherLinkColour">SimplifiedBarcodeReaderSettings</a></li>
-            </ul>
-        </li>
         <li><a class="otherLinkColour">Enumerations</a>
             <ul>
-                <li><a href="{{ site.enumerations }}core/buffer-overflow-protection-mode.html?src=cpp&&lang=cpp" class="otherLinkColour">BufferOverflowProtectionMode</a></li>
-                <li><a href="{{ site.enumerations }}core/captured-result-item-type.html?src=cpp&&lang=cpp" class="otherLinkColour">CapturedResultItemType</a></li>
-                <li><a href="{{ site.enumerations }}core/corner-type.html?src=cpp&&lang=cpp" class="otherLinkColour">CornerType</a></li>
-                <li><a href="{{ site.enumerations }}core/error-code.html?src=cpp&&lang=cpp" class="otherLinkColour">ErrorCode</a></li>
-                <li><a href="{{ site.enumerations }}core/gray-scale-transformation-mode.html?src=cpp&&lang=cpp" class="otherLinkColour">GrayscaleTransformationMode</a></li>
-                <li><a href="{{ site.enumerations }}core/image-capture-distance-mode.html?src=cpp&&lang=cpp" class="otherLinkColour">ImageCaptureDistanceMode</a></li>
-                <li><a href="{{ site.enumerations }}core/image-pixel-format.html?src=cpp&&lang=cpp" class="otherLinkColour">ImagePixelFormat</a></li>
-                <li><a href="{{ site.enumerations }}core/image-source-state.html?src=cpp&&lang=cpp" class="otherLinkColour">ImageSourceState</a></li>
-                <li><a href="{{ site.enumerations }}core/image-tag-type.html?src=cpp&&lang=cpp" class="otherLinkColour">ImageTagType</a></li>
-                <li><a href="{{ site.enumerations }}core/intermediate-result-unit-type.html?src=cpp&&lang=cpp" class="otherLinkColour">IntermediateResultUnitType</a></li>
-                <li><a href="{{ site.enumerations }}core/pdf-reading-mode.html?src=cpp&&lang=cpp" class="otherLinkColour">PDFReadingMode</a></li>
-                <li><a href="{{ site.enumerations }}core/region-object-element-type.html?src=cpp&&lang=cpp" class="otherLinkColour">RegionObjectElementType</a></li>
-                <li><a href="{{ site.enumerations }}core/section-type.html?src=cpp&&lang=cpp" class="otherLinkColour">SectionType</a></li>
-                <li><a href="{{ site.enumerations }}core/target-type.html?src=cpp&&lang=cpp" class="otherLinkColour">TargetType</a></li>
-                <li><a href="{{ site.enumerations }}core/video-frame-quality.html?src=cpp&&lang=cpp" class="otherLinkColour">VideoFrameQuality</a></li>
-                <li><a href="{{ site.enumerations }}barcode-reader/barcode-format.html?src=cpp&&lang=cpp" class="otherLinkColour">BarcodeFormat</a></li>
-                <li><a href="{{ site.enumerations }}barcode-reader/deblur-mode.html?src=cpp&&lang=cpp" class="otherLinkColour">DeblurMode</a></li>
-                <li><a href="{{ site.enumerations }}barcode-reader/extended-barcode-result-type.html?src=cpp&&lang=cpp" class="otherLinkColour">ExtendedBarcodeResultType</a></li>
-                <li><a href="{{ site.enumerations }}barcode-reader/localization-mode.html?src=cpp&&lang=cpp" class="otherLinkColour">LocalizationMode</a></li>
-                <li><a href="{{ site.enumerations }}barcode-reader/qr-code-error-correction-level.html?src=cpp&&lang=cpp" class="otherLinkColour">QRCodeErrorCorrectionLevel</a></li>
+                <li><a href="{{ site.dcv_enumerations }}barcode-reader/barcode-format.html?src=cpp&&lang=cpp" class="otherLinkColour">BarcodeFormat</a></li>
+                <li><a href="{{ site.dcv_enumerations }}core/buffer-overflow-protection-mode.html?src=cpp&&lang=cpp" class="otherLinkColour">BufferOverflowProtectionMode</a></li>
+                <li><a href="{{ site.dcv_enumerations }}core/captured-result-item-type.html?src=cpp&&lang=cpp" class="otherLinkColour">CapturedResultItemType</a></li>
+                <li><a href="{{ site.dcv_enumerations }}capture-vision-router/capture-state.html?src=cpp&&lang=cpp" class="otherLinkColour">CaptureState</a></li>
+                <li><a href="{{ site.dcv_enumerations }}core/corner-type.html?src=cpp&&lang=cpp" class="otherLinkColour">CornerType</a></li>
+                <li><a href="{{ site.dcv_enumerations }}barcode-reader/deblur-mode.html?src=cpp&&lang=cpp" class="otherLinkColour">DeblurMode</a></li>
+                <li><a href="{{ site.dcv_enumerations }}core/error-code.html?src=cpp&&lang=cpp" class="otherLinkColour">ErrorCode</a></li>
+                <li><a href="{{ site.dcv_enumerations }}barcode-reader/extended-barcode-result-type.html?src=cpp&&lang=cpp" class="otherLinkColour">ExtendedBarcodeResultType</a></li>
+                <li><a href="{{ site.dcv_enumerations }}core/grayscale-enhancement-mode.html?src=cpp&&lang=cpp" class="otherLinkColour">GrayscaleEnhancementMode</a></li>
+                <li><a href="{{ site.dcv_enumerations }}core/grayscale-transformation-mode.html?src=cpp&&lang=cpp" class="otherLinkColour">GrayscaleTransformationMode</a></li>
+                <li><a href="{{ site.dcv_enumerations }}core/image-capture-distance-mode.html?src=cpp&&lang=cpp" class="otherLinkColour">ImageCaptureDistanceMode</a></li>
+                <li><a href="{{ site.dcv_enumerations }}core/image-pixel-format.html?src=cpp&&lang=cpp" class="otherLinkColour">ImagePixelFormat</a></li>
+                <li><a href="{{ site.dcv_enumerations }}core/image-source-state.html?src=cpp&&lang=cpp" class="otherLinkColour">ImageSourceState</a></li>
+                <li><a href="{{ site.dcv_enumerations }}core/image-tag-type.html?src=cpp&&lang=cpp" class="otherLinkColour">ImageTagType</a></li>
+                <li><a href="{{ site.dcv_enumerations }}core/intermediate-result-unit-type.html?src=cpp&&lang=cpp" class="otherLinkColour">IntermediateResultUnitType</a></li>
+                <li><a href="{{ site.dcv_enumerations }}barcode-reader/localization-mode.html?src=cpp&&lang=cpp" class="otherLinkColour">LocalizationMode</a></li>
+                <li><a href="{{ site.dcv_enumerations }}core/pdf-reading-mode.html?src=cpp&&lang=cpp" class="otherLinkColour">PDFReadingMode</a></li>
+                <li><a href="{{ site.dcv_enumerations }}barcode-reader/qr-code-error-correction-level.html?src=cpp&&lang=cpp" class="otherLinkColour">QRCodeErrorCorrectionLevel</a></li>
+                <li><a href="{{ site.dcv_enumerations }}core/region-object-element-type.html?src=cpp&&lang=cpp" class="otherLinkColour">RegionObjectElementType</a></li>
+                <li><a href="{{ site.dcv_enumerations }}core/section-type.html?src=cpp&&lang=cpp" class="otherLinkColour">SectionType</a></li>
+                <li><a href="{{ site.dcv_enumerations }}core/target-type.html?src=cpp&&lang=cpp" class="otherLinkColour">TargetType</a></li>
+                <li><a href="{{ site.dcv_enumerations }}core/video-frame-quality.html?src=cpp&&lang=cpp" class="otherLinkColour">VideoFrameQuality</a></li>
             </ul>
         </li>
     </ul>

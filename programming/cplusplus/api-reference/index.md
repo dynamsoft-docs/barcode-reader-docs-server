@@ -26,7 +26,13 @@ permalink: /programming/cplusplus/api-reference/index.html
 - [`CCapturedResult`]({{ site.dcv_cpp_api }}core/basic-structures/captured-result.html)
 - [`CCapturedResultArray`]({{ site.dcv_cpp_api }}core/basic-structures/captured-result-array.html)
 - [`CCapturedResultItem`]({{ site.dcv_cpp_api }}core/basic-structures/captured-result-item.html)
+- [`CDecodedBarcodesResult`]({{ site.cpp_api }}decoded-barcodes-result.html)
+- [`CDecodedBarcodesResultArray`]({{ site.cpp_api }}decoded-barcodes-result-array.html)
 - [`CRawImageResultItem`]({{ site.dcv_cpp_api }}capture-vision-router/auxiliary-classes/raw-image-result-item.html)
+
+## Final Results Filters
+- [`CCapturedResultFilter`]({{ site.dcv_cpp_api }}core/basic-structures/captured-result-filter.html)
+- [`CMultiFrameResultCrossFilter`]({{ site.dcv_cpp_api }}utility/multi-frame-result-cross-filter.html)
 
 ## Detailed Barcode Results
 - [`CAztecDetails`]({{ site.cpp_api }}aztec-details.html)
@@ -38,12 +44,16 @@ permalink: /programming/cplusplus/api-reference/index.html
 
 ## Intermediate Results
 
+- [`CIntermediateResultManager`]({{ site.dcv_cpp_api }}core/intermediate-results/intermediate-result-manager.html)
 - [`CIntermediateResultReceiver`]({{ site.dcv_cpp_api }}core/intermediate-results/intermediate-result-receiver.html)
+- [`CObservedParameters`]({{ site.dcv_cpp_api }}core/intermediate-results/observed-parameters.html)
+- [`IntermediateResultExtraInfo`]({{ site.dcv_cpp_api }}core/structs/intermediate-result-extra-info.html)
 - [`CBinaryImageUnit`]({{ site.dcv_cpp_api }}core/intermediate-results/binary-image-unit.html)
 - [`CColourImageUnit`]({{ site.dcv_cpp_api }}core/intermediate-results/colour-image-unit.html)
 - [`CContoursUnit`]({{ site.dcv_cpp_api }}core/intermediate-results/contours-unit.html)
 - [`CEnhancedGrayscaleImageUnit`]({{ site.dcv_cpp_api }}core/intermediate-results/enhanced-grayscale-image-unit.html)
 - [`CGrayscaleImageUnit`]({{ site.dcv_cpp_api }}core/intermediate-results/grayscale-image-unit.html)
+- [`CIntermediateResult`]({{ site.dcv_cpp_api }}core/intermediate-results/intermediate-result.html)
 - [`CIntermediateResultUnit`]({{ site.dcv_cpp_api }}core/intermediate-results/intermediate-result-unit.html)
 - [`CLineSegmentsUnit`]({{ site.dcv_cpp_api }}core/intermediate-results/line-segments-unit.html)
 - [`CPredetectedRegionElement`]({{ site.dcv_cpp_api }}core/intermediate-results/predetected-region-element.html)
@@ -65,6 +75,12 @@ permalink: /programming/cplusplus/api-reference/index.html
 - [`CDecodedBarcodesUnit`]({{ site.cpp_api }}decoded-barcodes-unit.html)
 - [`CDecodedBarcodeElement`]({{ site.cpp_api }}decoded-barcode-element.html)
 - [`CExtendedBarcodeResult`]({{ site.cpp_api }}extended-barcode-result.html)
+
+## Settings
+
+- [`SimplifiedCaptureVisionSettings`]({{ site.dcv_cpp_api }}capture-vision-router/structs/simplified-capture-vision-settings.html)
+- [`SimplifiedBarcodeReaderSettings`]({{ site.cpp_api }}simplified-barcode-reader-settings.html)
+- [`CPresetTemplate`]({{ site.dcv_cpp_api }}capture-vision-router/auxiliary-classes/preset-template.html)
 
 ## State Listener
 
@@ -90,23 +106,25 @@ permalink: /programming/cplusplus/api-reference/index.html
 
 ## Enumerations
 
-- [`BufferOverflowProtectionMode`]({{ site.enumerations }}core/buffer-overflow-protection-mode.html?src=cpp&&lang=cpp)
-- [`CapturedResultItemType`]({{ site.enumerations }}core/captured-result-item-type.html?src=cpp&&lang=cpp)
-- [`CornerType`]({{ site.enumerations }}core/corner-type.html?src=cpp&&lang=cpp)
-- [`ErrorCode`]({{ site.enumerations }}core/error-code.html?src=cpp&&lang=cpp)
-- [`GrayscaleTransformationMode`]({{ site.enumerations }}core/grayscale-transformation-mode.html?src=cpp&&lang=cpp)
-- [`ImageCaptureDistanceMode`]({{ site.enumerations }}core/image-capture-distance-mode.html?src=cpp&&lang=cpp)
-- [`ImagePixelFormat`]({{ site.enumerations }}core/image-pixel-format.html?src=cpp&&lang=cpp)
-- [`ImageSourceState`]({{ site.enumerations }}core/image-source-state.html?src=cpp&&lang=cpp)
-- [`ImageTagType`]({{ site.enumerations }}core/image-tag-type.html?src=cpp&&lang=cpp)
-- [`IntermediateResultUnitType`]({{ site.enumerations }}core/intermediate-result-unit-type.html?src=cpp&&lang=cpp)
-- [`PDFReadingMode`]({{ site.enumerations }}core/pdf-reading-mode.html?src=cpp&&lang=cpp)
-- [`RegionObjectElementType`]({{ site.enumerations }}core/region-object-element-type.html?src=cpp&&lang=cpp)
-- [`SectionType`]({{ site.enumerations }}core/section-type.html?src=cpp&&lang=cpp)
-- [`TargetType`]({{ site.enumerations }}core/target-type.html?src=cpp&&lang=cpp)
-- [`VideoFrameQuality`]({{ site.enumerations }}core/video-frame-quality.html?src=cpp&&lang=cpp)
-- [`BarcodeFormat`]({{ site.enumerations }}barcode-reader/barcode-format.html?src=cpp&&lang=cpp)
-- [`DeblurMode`]({{ site.enumerations }}barcode-reader/deblur-mode.html?src=cpp&&lang=cpp)
-- [`ExtendedBarcodeResultType`]({{ site.enumerations }}barcode-reader/extended-barcode-result-type.html?src=cpp&&lang=cpp)
-- [`LocalizationMode`]({{ site.enumerations }}barcode-reader/localization-mode.html?src=cpp&&lang=cpp)
-- [`QRCodeErrorCorrectionLevel`]({{ site.enumerations }}barcode-reader/qr-code-error-correction-level.html?src=cpp&&lang=cpp)
+- [`BarcodeFormat`]({{ site.dcv_enumerations }}barcode-reader/barcode-format.html?src=cpp&&lang=cpp)
+- [`BufferOverflowProtectionMode`]({{ site.dcv_enumerations }}core/buffer-overflow-protection-mode.html?src=cpp&&lang=cpp)
+- [`CapturedResultItemType`]({{ site.dcv_enumerations }}core/captured-result-item-type.html?src=cpp&&lang=cpp)
+- [`CaptureState`]({{ site.dcv_enumerations }}capture-vision-router/capture-state.html?src=cpp&&lang=cpp)
+- [`CornerType`]({{ site.dcv_enumerations }}core/corner-type.html?src=cpp&&lang=cpp)
+- [`DeblurMode`]({{ site.dcv_enumerations }}barcode-reader/deblur-mode.html?src=cpp&&lang=cpp)
+- [`ErrorCode`]({{ site.dcv_enumerations }}core/error-code.html?src=cpp&&lang=cpp)
+- [`ExtendedBarcodeResultType`]({{ site.dcv_enumerations }}barcode-reader/extended-barcode-result-type.html?src=cpp&&lang=cpp)
+- [`GrayscaleEnhancementMode`]({{ site.dcv_enumerations }}core/grayscale-enhancement-mode.html?src=cpp&&lang=cpp)
+- [`GrayscaleTransformationMode`]({{ site.dcv_enumerations }}core/grayscale-transformation-mode.html?src=cpp&&lang=cpp)
+- [`ImageCaptureDistanceMode`]({{ site.dcv_enumerations }}core/image-capture-distance-mode.html?src=cpp&&lang=cpp)
+- [`ImagePixelFormat`]({{ site.dcv_enumerations }}core/image-pixel-format.html?src=cpp&&lang=cpp)
+- [`ImageSourceState`]({{ site.dcv_enumerations }}core/image-source-state.html?src=cpp&&lang=cpp)
+- [`ImageTagType`]({{ site.dcv_enumerations }}core/image-tag-type.html?src=cpp&&lang=cpp)
+- [`IntermediateResultUnitType`]({{ site.dcv_enumerations }}core/intermediate-result-unit-type.html?src=cpp&&lang=cpp)
+- [`LocalizationMode`]({{ site.dcv_enumerations }}barcode-reader/localization-mode.html?src=cpp&&lang=cpp)
+- [`PDFReadingMode`]({{ site.dcv_enumerations }}core/pdf-reading-mode.html?src=cpp&&lang=cpp)
+- [`QRCodeErrorCorrectionLevel`]({{ site.dcv_enumerations }}barcode-reader/qr-code-error-correction-level.html?src=cpp&&lang=cpp)
+- [`RegionObjectElementType`]({{ site.dcv_enumerations }}core/region-object-element-type.html?src=cpp&&lang=cpp)
+- [`SectionType`]({{ site.dcv_enumerations }}core/section-type.html?src=cpp&&lang=cpp)
+- [`TargetType`]({{ site.dcv_enumerations }}core/target-type.html?src=cpp&&lang=cpp)
+- [`VideoFrameQuality`]({{ site.dcv_enumerations }}core/video-frame-quality.html?src=cpp&&lang=cpp)

@@ -21,7 +21,7 @@ typedef struct tagPublicRuntimeSettings  PublicRuntimeSettings
   
 | Attribute | Type |
 |---------- | ---- |
-| [`terminatePhase`](#terminatephase) | [`TerminatePhase`]({{ site.enumerations }}parameter-mode-enums.html#terminatephase) |
+| [`terminatePhase`](#terminatephase) | [`TerminatePhase`]({{ site.c_cpp_enumerations }}parameter-mode-enums.html#terminatephase) |
 | [`timeout`](#timeout) | *int* |
 | [`maxAlgorithmThreadCount`](#maxalgorithmthreadcount) | *int* |
 | [`expectedBarcodesCount`](#expectedbarcodescount) | *int* |
@@ -29,21 +29,21 @@ typedef struct tagPublicRuntimeSettings  PublicRuntimeSettings
 | [`barcodeFormatIds_2`](#barcodeformatids_2) | *int* |
 | [`pdfRasterDPI`](#pdfrasterdpi) | *int* |
 | [`scaleDownThreshold`](#scaledownthreshold) | *int* |
-| [`binarizationModes`](#binarizationmodes) | [`BinarizationMode`]({{ site.enumerations }}parameter-mode-enums.html#binarizationmode)\[8\] |
-| [`localizationModes`](#localizationmodes) | [`LocalizationMode`]({{ site.enumerations }}parameter-mode-enums.html#localizationmode)\[8\] |
+| [`binarizationModes`](#binarizationmodes) | [`BinarizationMode`]({{ site.c_cpp_enumerations }}parameter-mode-enums.html#binarizationmode)\[8\] |
+| [`localizationModes`](#localizationmodes) | [`LocalizationMode`]({{ site.c_cpp_enumerations }}parameter-mode-enums.html#localizationmode)\[8\] |
 | [`furtherModes`](#furthermodes) | [`FurtherModes`](FurtherModes.md) |
 | [`deblurLevel`](#deblurlevel) | *int* |
 | [`intermediateResultTypes`](#intermediateresulttypes) | *int* |
-| [`intermediateResultSavingMode`](#intermediateresultsavingmode) | [`IntermediateResultSavingMode`]({{ site.enumerations }}result-enums.html#intermediateresultsavingmode) |
-| [`resultCoordinateType`](#resultcoordinatetype) | [`ResultCoordinateType`]({{ site.enumerations }}result-enums.html#resultcoordinatetype) |
-| [`textResultOrderModes`](#textresultordermodes) | [`TextResultOrderMode`]({{ site.enumerations }}result-enums.html#textresultordermode)\[8\] |
+| [`intermediateResultSavingMode`](#intermediateresultsavingmode) | [`IntermediateResultSavingMode`]({{ site.c_cpp_enumerations }}result-enums.html#intermediateresultsavingmode) |
+| [`resultCoordinateType`](#resultcoordinatetype) | [`ResultCoordinateType`]({{ site.c_cpp_enumerations }}result-enums.html#resultcoordinatetype) |
+| [`textResultOrderModes`](#textresultordermodes) | [`TextResultOrderMode`]({{ site.c_cpp_enumerations }}result-enums.html#textresultordermode)\[8\] |
 | [`returnBarcodeZoneClarity`](#returnbarcodezoneclarity) | *int* |
 | [`region`](#region) | [`RegionDefinition`](RegionDefinition.md) |
 | [`minBarcodeTextLength`](#minbarcodetextlength) | *int* |
 | [`minResultConfidence`](#minresultconfidence) | *int* |
-| [`scaleUpModes`](#scaleupmodes) | [`ScaleUpMode`]({{ site.enumerations }}parameter-mode-enums.html#scaleupmodes)\[8\] |
-| [`pdfReadingMode`](#pdfreadingmode) | [`PDFReadingMode`]({{ site.enumerations }}parameter-mode-enums.html#pdfreadingmode) | 
-| [`deblurModes`](#deblurmodes) | [`DeblurMode`]({{ site.enumerations }}parameter-mode-enums.html#deblurmode)\[10\] | 
+| [`scaleUpModes`](#scaleupmodes) | [`ScaleUpMode`]({{ site.c_cpp_enumerations }}parameter-mode-enums.html#scaleupmodes)\[8\] |
+| [`pdfReadingMode`](#pdfreadingmode) | [`PDFReadingMode`]({{ site.c_cpp_enumerations }}parameter-mode-enums.html#pdfreadingmode) | 
+| [`deblurModes`](#deblurmodes) | [`DeblurMode`]({{ site.c_cpp_enumerations }}parameter-mode-enums.html#deblurmode)\[10\] | 
 | [`barcodeZoneMinDistanceToImageBorders`](#barcodezonemindistancetoimageborders) | *int* |
 | [`reserved`](#reserved) | *char\[36\]* |
 
@@ -54,7 +54,7 @@ Sets the phase to stop the barcode reading algorithm.
 TerminatePhase tagPublicRuntimeSettings::terminatePhase
 ```
 **Value Range**     
-    Any one of the [`TerminatePhase`]({{ site.enumerations }}parameter-mode-enums.html#terminatephase) Enumeration items
+    Any one of the [`TerminatePhase`]({{ site.c_cpp_enumerations }}parameter-mode-enums.html#terminatephase) Enumeration items
       
 **Default Value**     
     `TP_BARCODE_RECOGNIZED`
@@ -63,7 +63,7 @@ TerminatePhase tagPublicRuntimeSettings::terminatePhase
     When the recognition result is not desired, you can set this parameter can be set to skip certain processing stages.
     
 **See Also**      
-    [`TerminatePhase`]({{ site.enumerations }}parameter-mode-enums.html#terminatephase)
+    [`TerminatePhase`]({{ site.c_cpp_enumerations }}parameter-mode-enums.html#terminatephase)
       
 
 ### timeout
@@ -117,16 +117,16 @@ Sets the formats of the barcode in BarcodeFormat group 1 to be read. Barcode for
 int tagPublicRuntimeSettings::barcodeFormatIds
 ```
 **Value Range**     
-    A combined value of [`BarcodeFormat`]({{ site.enumerations }}format-enums.html#barcodeformat) Enumeration items
+    A combined value of [`BarcodeFormat`]({{ site.c_cpp_enumerations }}format-enums.html#barcodeformat) Enumeration items
       
 **Default Value**     
     `BF_ALL`
     
 **Remarks**       
-    If the barcode type(s) are certain, specifying the barcode type(s) to be read will speed up the recognition process. The barcode format our library will search for is composed of [BarcodeFormat group 1]({{ site.enumerations }}format-enums.html#barcodeformat) and [BarcodeFormat group 2]({{ site.enumerations }}format-enums.html#barcodeformat_2), so you need to specify the barcode format in group 1 and group 2 individually.
+    If the barcode type(s) are certain, specifying the barcode type(s) to be read will speed up the recognition process. The barcode format our library will search for is composed of [BarcodeFormat group 1]({{ site.c_cpp_enumerations }}format-enums.html#barcodeformat) and [BarcodeFormat group 2]({{ site.c_cpp_enumerations }}format-enums.html#barcodeformat_2), so you need to specify the barcode format in group 1 and group 2 individually.
     
 **See Also**      
-    [`BarcodeFormat`]({{ site.enumerations }}format-enums.html#barcodeformat), [`BarcodeFormat_2`]({{ site.enumerations }}format-enums.html#barcodeformat_2)
+    [`BarcodeFormat`]({{ site.c_cpp_enumerations }}format-enums.html#barcodeformat), [`BarcodeFormat_2`]({{ site.c_cpp_enumerations }}format-enums.html#barcodeformat_2)
       
 ### barcodeFormatIds_2
 Sets the formats of the barcode in BarcodeFormat group 2 to be read. Barcode formats in BarcodeFormat group 2 can be combined.
@@ -134,16 +134,16 @@ Sets the formats of the barcode in BarcodeFormat group 2 to be read. Barcode for
 int tagPublicRuntimeSettings::barcodeFormatIds_2
 ```
 **Value Range**     
-    A combined value of [`BarcodeFormat_2`]({{ site.enumerations }}format-enums.html#barcodeformat_2) Enumeration items
+    A combined value of [`BarcodeFormat_2`]({{ site.c_cpp_enumerations }}format-enums.html#barcodeformat_2) Enumeration items
       
 **Default Value**     
     `BF2_NULL`
     
 **Remarks**       
-    If the barcode type(s) are certain, specifying the barcode type(s) to be read will speed up the recognition process. The barcode format our library will search for is composed of [BarcodeFormat group 1]({{ site.enumerations }}format-enums.html#barcodeformat) and [BarcodeFormat group 2]({{ site.enumerations }}format-enums.html#barcodeformat_2), so you need to specify the barcode format in group 1 and group 2 individually.
+    If the barcode type(s) are certain, specifying the barcode type(s) to be read will speed up the recognition process. The barcode format our library will search for is composed of [BarcodeFormat group 1]({{ site.c_cpp_enumerations }}format-enums.html#barcodeformat) and [BarcodeFormat group 2]({{ site.c_cpp_enumerations }}format-enums.html#barcodeformat_2), so you need to specify the barcode format in group 1 and group 2 individually.
     
 **See Also**      
-    [`BarcodeFormat`]({{ site.enumerations }}format-enums.html#barcodeformat), [`BarcodeFormat_2`]({{ site.enumerations }}format-enums.html#barcodeformat_2)
+    [`BarcodeFormat`]({{ site.c_cpp_enumerations }}format-enums.html#barcodeformat), [`BarcodeFormat_2`]({{ site.c_cpp_enumerations }}format-enums.html#barcodeformat_2)
 
 ### pdfRasterDPI
 Sets the output image resolution.
@@ -179,7 +179,7 @@ Sets the mode and priority for binarization.
 BinarizationMode tagPublicRuntimeSettings::binarizationModes[8]
 ```
 **Value Range**     
-    Each array item can be any one of the [`BinarizationMode`]({{ site.enumerations }}parameter-mode-enums.html#binarizationmode) Enumeration items.
+    Each array item can be any one of the [`BinarizationMode`]({{ site.c_cpp_enumerations }}parameter-mode-enums.html#binarizationmode) Enumeration items.
       
 **Default Value**     
     `[BM_LOCAL_BLOCK,BM_SKIP,BM_SKIP,BM_SKIP,BM_SKIP,BM_SKIP,BM_SKIP,BM_SKIP]`
@@ -188,7 +188,7 @@ BinarizationMode tagPublicRuntimeSettings::binarizationModes[8]
     The array index represents the priority of the item. The smaller index is, the higher priority is.
     
 **See Also**       
-    [`BinarizationMode`]({{ site.enumerations }}parameter-mode-enums.html#binarizationmode)
+    [`BinarizationMode`]({{ site.c_cpp_enumerations }}parameter-mode-enums.html#binarizationmode)
 
 
 ### localizationModes
@@ -197,7 +197,7 @@ Sets the mode and priority for localization algorithms.
 LocalizationMode tagPublicRuntimeSettings::localizationModes[8]
 ```
 **Value Range**     
-    Each array item can be any one of the [`LocalizationMode`]({{ site.enumerations }}parameter-mode-enums.html#localizationmode) Enumeration items.
+    Each array item can be any one of the [`LocalizationMode`]({{ site.c_cpp_enumerations }}parameter-mode-enums.html#localizationmode) Enumeration items.
       
 **Default Value**     
     `[LM_CONNECTED_BLOCKS, LM_SCAN_DIRECTLY, LM_STATISTICS, LM_LINES, LM_SKIP, LM_SKIP, LM_SKIP, LM_SKIP]`
@@ -206,7 +206,7 @@ LocalizationMode tagPublicRuntimeSettings::localizationModes[8]
     The array index represents the priority of the item. The smaller index is, the higher priority is.
     
 **See Also**       
-    [`LocalizationMode`]({{ site.enumerations }}parameter-mode-enums.html#localizationmode)  
+    [`LocalizationMode`]({{ site.c_cpp_enumerations }}parameter-mode-enums.html#localizationmode)  
 
 
 ### furtherModes
@@ -235,13 +235,13 @@ Sets which types of intermediate result to be kept for further reference. Interm
 int tagPublicRuntimeSettings::intermediateResultTypes
 ```
 **Value Range**     
-    A combined value of [`IntermediateResultType`]({{ site.enumerations }}result-enums.html#intermediateresulttype) Enumeration items
+    A combined value of [`IntermediateResultType`]({{ site.c_cpp_enumerations }}result-enums.html#intermediateresulttype) Enumeration items
       
 **Default Value**     
     0
     
 **See Also**       
-    [`IntermediateResultType`]({{ site.enumerations }}result-enums.html#intermediateresulttype)
+    [`IntermediateResultType`]({{ site.c_cpp_enumerations }}result-enums.html#intermediateresulttype)
 
 ### intermediateResultSavingMode
 Sets the mode for saving intermediate result.
@@ -249,13 +249,13 @@ Sets the mode for saving intermediate result.
 IntermediateResultSavingMode tagPublicRuntimeSettings::intermediateResultSavingMode
 ```
 **Value Range**     
-    A value of [`IntermediateResultSavingMode`]({{ site.enumerations }}result-enums.html#intermediateresultsavingmode) Enumeration items
+    A value of [`IntermediateResultSavingMode`]({{ site.c_cpp_enumerations }}result-enums.html#intermediateresultsavingmode) Enumeration items
       
 **Default Value**     
     IRSM_MEMORY
     
 **See Also**       
-    [`IntermediateResultSavingMode`]({{ site.enumerations }}result-enums.html#intermediateresultsavingmode)
+    [`IntermediateResultSavingMode`]({{ site.c_cpp_enumerations }}result-enums.html#intermediateresultsavingmode)
 
 ### resultCoordinateType
 Specifies the format for the coordinates returned.
@@ -263,13 +263,13 @@ Specifies the format for the coordinates returned.
 ResultCoordinateType tagPublicRuntimeSettings::resultCoordinateType
 ```
 **Value Range**     
-    Any one of the [`ResultCoordinateType`]({{ site.enumerations }}result-enums.html#resultcoordinatetype) Enumeration items
+    Any one of the [`ResultCoordinateType`]({{ site.c_cpp_enumerations }}result-enums.html#resultcoordinatetype) Enumeration items
       
 **Default Value**     
     RCT_PIXEL
     
 **See Also**       
-    [`ResultCoordinateType`]({{ site.enumerations }}result-enums.html#resultcoordinatetype)
+    [`ResultCoordinateType`]({{ site.c_cpp_enumerations }}result-enums.html#resultcoordinatetype)
 
 
 ### textResultOrderModes
@@ -278,7 +278,7 @@ Sets the mode and priority for the order of the text results returned.
 TextResultOrderMode tagPublicRuntimeSettings::textResultOrderModes[8]
 ```
 **Value Range**     
-    Each array item can be any one of the [`TextResultOrderMode`]({{ site.enumerations }}result-enums.html#textresultordermode) Enumeration items.
+    Each array item can be any one of the [`TextResultOrderMode`]({{ site.c_cpp_enumerations }}result-enums.html#textresultordermode) Enumeration items.
       
 **Default Value**     
     `[TROM_CONFIDENCE, TROM_POSITION, TROM_FORMAT, TROM_SKIP, TROM_SKIP, TROM_SKIP, TROM_SKIP, TROM_SKIP]`
@@ -287,7 +287,7 @@ TextResultOrderMode tagPublicRuntimeSettings::textResultOrderModes[8]
     The array index represents the priority of the item. The smaller the index, the higher the priority.   
  
 **See Also**        
-    [`TextResultOrderMode`]({{ site.enumerations }}result-enums.html#textresultordermode)
+    [`TextResultOrderMode`]({{ site.c_cpp_enumerations }}result-enums.html#textresultordermode)
 
 ### returnBarcodeZoneClarity
 Sets whether or not to return the clarity of the barcode zone.
@@ -343,7 +343,7 @@ Sets the mode and priority to control the sampling methods of scale-up for linea
 ScaleUpMode tagPublicRuntimeSettings::scaleUpModes[8]
 ```
 **Value Range**     
-    Each array item can be any one of the [`ScaleUpMode`]({{ site.enumerations }}parameter-mode-enums.html#scaleupmode) Enumeration items.
+    Each array item can be any one of the [`ScaleUpMode`]({{ site.c_cpp_enumerations }}parameter-mode-enums.html#scaleupmode) Enumeration items.
       
 **Default Value**     
     `[SUM_AUTO, SUM_SKIP, SUM_SKIP, SUM_SKIP, SUM_SKIP, SUM_SKIP, SUM_SKIP, SUM_SKIP]`
@@ -352,7 +352,7 @@ ScaleUpMode tagPublicRuntimeSettings::scaleUpModes[8]
     The array index represents the priority of the item. The smaller the index, the higher the priority.   
  
 **See Also**        
-    [`ScaleUpMode`]({{ site.enumerations }}parameter-mode-enums.html#scaleupmode)
+    [`ScaleUpMode`]({{ site.c_cpp_enumerations }}parameter-mode-enums.html#scaleupmode)
 
 
 ### pdfReadingMode
@@ -361,13 +361,13 @@ Sets the way to detect barcodes from a PDF file when using the DecodeFile method
 PDFReadingMode tagPublicRuntimeSettings::pdfReadingMode
 ```
 **Value Range**     
-    Any one of the [`PDFReadingMode`]({{ site.enumerations }}parameter-mode-enums.html#pdfreadingmode) Enumeration items. 
+    Any one of the [`PDFReadingMode`]({{ site.c_cpp_enumerations }}parameter-mode-enums.html#pdfreadingmode) Enumeration items. 
       
 **Default Value**     
     `PDFRM_AUTO`  
  
 **See Also**        
-    [`PDFReadingMode`]({{ site.enumerations }}parameter-mode-enums.html#pdfreadingmode) 
+    [`PDFReadingMode`]({{ site.c_cpp_enumerations }}parameter-mode-enums.html#pdfreadingmode) 
 
 
 ### deblurModes
@@ -376,7 +376,7 @@ Sets the mode and priority for deblurring.
 DeblurMode tagPublicRuntimeSettings::deblurModes[10]
 ```
 **Value Range**     
-    Each array item can be any one of the [`DeblurMode`]({{ site.enumerations }}parameter-mode-enums.html#deblurmode) Enumeration items.
+    Each array item can be any one of the [`DeblurMode`]({{ site.c_cpp_enumerations }}parameter-mode-enums.html#deblurmode) Enumeration items.
       
 **Default Value**     
     `[DM_SKIP,DM_SKIP,DM_SKIP,DM_SKIP,DM_SKIP,DM_SKIP,DM_SKIP,DM_SKIP,DM_SKIP,DM_SKIP]`
@@ -385,7 +385,7 @@ DeblurMode tagPublicRuntimeSettings::deblurModes[10]
     The array index represents the priority of the item. The smaller index is, the higher priority is.
     
 **See Also**       
-    [`DeblurMode`]({{ site.enumerations }}parameter-mode-enums.html#deblurmode)
+    [`DeblurMode`]({{ site.c_cpp_enumerations }}parameter-mode-enums.html#deblurmode)
 
 
 ### barcodeZoneMinDistanceToImageBorders

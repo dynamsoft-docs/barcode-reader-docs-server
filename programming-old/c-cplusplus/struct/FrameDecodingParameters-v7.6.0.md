@@ -28,13 +28,13 @@ typedef struct tagFrameDecodingParameters  FrameDecodingParameters
 | [`width`](#width) | *int* |
 | [`height`](#height) | *int* |
 | [`stride`](#stride) | *int* |
-| [`imagePixelFormat`](#imagepixelformat) | [`ImagePixelFormat`]({{ site.enumerations }}other-enums.html#imagepixelformat) |
+| [`imagePixelFormat`](#imagepixelformat) | [`ImagePixelFormat`]({{ site.c_cpp_enumerations }}other-enums.html#imagepixelformat) |
 | [`region`](#region) | [`RegionDefinition`](RegionDefinition.md) |
 | [`threshold`](#threshold) | *float* |
 | [`fps`](#fps) | *int* |
 | [`autoFilter`](#autofilter) | *int* |
-| [`clarityCalculationMethod`](#claritycalculationmethod) | [`ClarityCalculationMethod`]({{ site.enumerations }}frame-decoding-enums.html#claritycalculationmethod) |
-| [`clarityFilterMode`](#clarityfiltermode) | [`ClarityFilterMode`]({{ site.enumerations }}frame-decoding-enums.html#clarityfiltermode) |
+| [`clarityCalculationMethod`](#claritycalculationmethod) | [`ClarityCalculationMethod`]({{ site.c_cpp_enumerations }}frame-decoding-enums.html#claritycalculationmethod) |
+| [`clarityFilterMode`](#clarityfiltermode) | [`ClarityFilterMode`]({{ site.c_cpp_enumerations }}frame-decoding-enums.html#clarityfiltermode) |
 | [`reserved`](#reserved) | *char\[20\]* |
 
 
@@ -99,13 +99,13 @@ The image pixel format used in the image byte array.
 ImagePixelFormat tagFrameDecodingParameters::imagePixelFormat
 ```
 - **Value range**   
-    A value of [`ImagePixelFormat`]({{ site.enumerations }}other-enums.html#imagepixelformat) Enumeration items.
+    A value of [`ImagePixelFormat`]({{ site.c_cpp_enumerations }}other-enums.html#imagepixelformat) Enumeration items.
       
 - **Default value**   
     `IPF_GRAYSCALED`
     
 - **See also**  
-    [`ImagePixelFormat`]({{ site.enumerations }}other-enums.html#imagepixelformat)
+    [`ImagePixelFormat`]({{ site.c_cpp_enumerations }}other-enums.html#imagepixelformat)
       
 ### region
 The region definition of the frame to calculate the internal indicator.  
@@ -167,13 +167,13 @@ Sets the method used for calculating the clarity of the frames.
 ClarityCalculationMethod tagFrameDecodingParameters::clarityCalculationMethod
 ```
 - **Value range**   
-    Any one of the [`ClarityCalculationMethod`]({{ site.enumerations }}frame-decoding-enums.html#claritycalculationmethod) Enumeration items.   
+    Any one of the [`ClarityCalculationMethod`]({{ site.c_cpp_enumerations }}frame-decoding-enums.html#claritycalculationmethod) Enumeration items.   
       
 - **Default value**   
     ECCM_CONTRAST   
     
 - **See also**  
-    [`ClarityCalculationMethod`]({{ site.enumerations }}frame-decoding-enums.html#claritycalculationmethod)    
+    [`ClarityCalculationMethod`]({{ site.c_cpp_enumerations }}frame-decoding-enums.html#claritycalculationmethod)    
     
 
 ### clarityFilterMode
@@ -182,13 +182,13 @@ Sets the mode used for filtering frames by calculated clarity.
 ClarityFilterMode tagFrameDecodingParameters::clarityFilterMode
 ```
 - **Value range**   
-    Any one of the [`ClarityFilterMode`]({{ site.enumerations }}frame-decoding-enums.html#clarityfiltermode) Enumeration items.   
+    Any one of the [`ClarityFilterMode`]({{ site.c_cpp_enumerations }}frame-decoding-enums.html#clarityfiltermode) Enumeration items.   
       
 - **Default value**   
     CFM_GENERAL   
     
 - **See also**  
-    [`ClarityFilterMode`]({{ site.enumerations }}frame-decoding-enums.html#clarityfiltermode)    
+    [`ClarityFilterMode`]({{ site.c_cpp_enumerations }}frame-decoding-enums.html#clarityfiltermode)    
     
 
 ### reserved

@@ -92,7 +92,7 @@ Let's start by creating a console application which demonstrates how to use the 
     dbr.UpdateRuntimeSettings(&runtimeSettings, sError, 512);
     ```
 
-    >The barcode formats to enable is highly application-specific. We recommend that you only enable the barcode formats your application requires. Check out [Barcode Format Enumeration]({{ site.enumerations }}format-enums.html) for full supported barcode formats. 
+    >The barcode formats to enable is highly application-specific. We recommend that you only enable the barcode formats your application requires. Check out [Barcode Format Enumeration]({{ site.c_cpp_enumerations }}format-enums.html) for full supported barcode formats. 
 
     >If you know exactly the barcode count you want to read, specify `expectedBarcodesCount` to speed up the process and improve the accuracy. 
 
@@ -106,7 +106,7 @@ Let's start by creating a console application which demonstrates how to use the 
         cout << dbr.GetErrorString(iErrorCode) << endl;
     ```
 
-    >For the error handling mechanism, the SDK returns Error Code for each function and provides a function `GetErrorString` to get the readable message. You should add codes for error handling based on your needs. Check out [Error Code]({{site.enumerations}}error-code.html) for full supported error codes.
+    >For the error handling mechanism, the SDK returns Error Code for each function and provides a function `GetErrorString` to get the readable message. You should add codes for error handling based on your needs. Check out [Error Code]({{site.c_cpp_enumerations}}error-code.html) for full supported error codes.
 
 2. Get and output barcode results.
 

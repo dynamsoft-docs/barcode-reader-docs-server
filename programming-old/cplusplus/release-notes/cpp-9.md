@@ -66,7 +66,7 @@ permalink: /programming/cplusplus/release-notes/cpp-9.html
 - Added a property [`duplicateForgetTime`]({{ site.structs }}FrameDecodingParameters.html?src=cpp#duplicateforgettime) to struct `FrameDecodingParameters` to set the time period used to filter out duplicate results found in frames.
 - Added a method [`SetUniqueBarcodeCallback()`]({{site.cpp_methods}}video.html#setuniquebarcodecallback) to set callback function to obtain unique barcode result.
 - Added properties [`hasLeftRowIndicator`]({{ site.structs }}PDF417Details.html?src=cpp#hasleftrowindicator) and [`hasRightRowIndicator`]({{ site.structs }}PDF417Details.html?src=cpp#hasrightrowindicator) to struct `PDF417Details` to return whether the left and right row indicator of the PDF417 barcode is detected.
-- Added a member `BF2_ALL` to enumeration [`BarcodeFormatIds_2`]({{ site.enumerations }}format-enums.html?src=cpp#barcodeformat_2) to support setting all barcode formats in BarcodeFormat group 2 with one enumeration.
+- Added a member `BF2_ALL` to enumeration [`BarcodeFormatIds_2`]({{ site.c_cpp_enumerations }}format-enums.html?src=cpp#barcodeformat_2) to support setting all barcode formats in BarcodeFormat group 2 with one enumeration.
 - Extended the features of parameter `DeformationResistingModes`:
   - Extended the valid mode arguments of `DRM_BROAD_WARP`, `DRM_LOCAL_REFERENCE` and `DRM_DEWRINKLE` with two new arguments: [`GrayscaleEnhancementMode`]({{site.parameters_reference}}deformation-resisting-modes.html#grayscaleenhancementmode) and [`BinarizationMode`]({{site.parameters_reference}}deformation-resisting-modes.html#binarizationmode).
   - Supported mode [`DRM_AUTO`]({{site.parameters_reference}}deformation-resisting-modes.html#drm_auto).
@@ -135,10 +135,10 @@ permalink: /programming/cplusplus/release-notes/cpp-9.html
 
 #### New
 
-- Added `BF_CODE_11` under Enumeration [`BarcodeFormat`]({{ site.enumerations }}format-enums.html#barcodeformat) to specify newly supported barcode format, Code 11. 
-- Added `BF2_PHARMACODE_ONE_TRACK`, `BF2_PHARMACODE_TWO_TRACK` and `BF2_PHARMACODE` under Enumeration [`BarcodeFormat_2`]({{ site.enumerations }}format-enums.html#barcodeformat_2) to specify newly supported barcode format, Pharmacode. 
-- Added a new error code [`DBRERR_PHARMACODE_LICENSE_INVALID`]({{ site.enumerations }}error-code.html#error-code--10062) which will be returned when the license of Pharmacode is invalid.
-- Added `DRM_BROAD_WARP`, `DRM_LOCAL_REFERENCE` and `DRM_DEWRINKLE` under Enumeration [`DeformationResistingMode`]({{ site.enumerations }}parameter-mode-enums.html#deformationresistingmode) to apply new deformation resisting modes.
+- Added `BF_CODE_11` under Enumeration [`BarcodeFormat`]({{ site.c_cpp_enumerations }}format-enums.html#barcodeformat) to specify newly supported barcode format, Code 11. 
+- Added `BF2_PHARMACODE_ONE_TRACK`, `BF2_PHARMACODE_TWO_TRACK` and `BF2_PHARMACODE` under Enumeration [`BarcodeFormat_2`]({{ site.c_cpp_enumerations }}format-enums.html#barcodeformat_2) to specify newly supported barcode format, Pharmacode. 
+- Added a new error code [`DBRERR_PHARMACODE_LICENSE_INVALID`]({{ site.c_cpp_enumerations }}error-code.html#error-code--10062) which will be returned when the license of Pharmacode is invalid.
+- Added `DRM_BROAD_WARP`, `DRM_LOCAL_REFERENCE` and `DRM_DEWRINKLE` under Enumeration [`DeformationResistingMode`]({{ site.c_cpp_enumerations }}parameter-mode-enums.html#deformationresistingmode) to apply new deformation resisting modes.
 - Added a parameter [`FormatSpecification.PartitionModes`]({{ site.parameters_reference }}partition-modes.html)
 - Added a parameter [`FormatSpecification.VerifyCheckDigit`]({{ site.parameters_reference }}verify-check-digit.html)
 - Added an Argument [`ConfidenceThreshold`]({{ site.parameters_reference }}localization-modes.html#confidencethreshold) to the `LocalizationModes` mode arguments.
@@ -146,9 +146,9 @@ permalink: /programming/cplusplus/release-notes/cpp-9.html
 #### Changed
 
 - Changed method [`InitLicense`]({{ site.cpp_methods }}license.html#initlicense) to a static method and added two more parameters to return detailed error message.
-- Changed value of BF_ONED under Enumeration [`BarcodeFormat`]({{ site.enumerations }}format-enums.html#barcodeformat) to 0x003007FF to have BF_CODE_11 combined.
-- Changed value of BF_ALL under Enumeration [`BarcodeFormat`]({{ site.enumerations }}format-enums.html#barcodeformat) to 0xFE3FFFFF to have BF_CODE_11 combined.
-- Changed the behaviour of [`DeformationResistingMode`]({{ site.enumerations }}parameter-mode-enums.html#deformationresistingmode) DRM_GENERAL which now only applies basic process to resist deformation.
+- Changed value of BF_ONED under Enumeration [`BarcodeFormat`]({{ site.c_cpp_enumerations }}format-enums.html#barcodeformat) to 0x003007FF to have BF_CODE_11 combined.
+- Changed value of BF_ALL under Enumeration [`BarcodeFormat`]({{ site.c_cpp_enumerations }}format-enums.html#barcodeformat) to 0xFE3FFFFF to have BF_CODE_11 combined.
+- Changed the behaviour of [`DeformationResistingMode`]({{ site.c_cpp_enumerations }}parameter-mode-enums.html#deformationresistingmode) DRM_GENERAL which now only applies basic process to resist deformation.
 - Changed the return value of the method [`GetIdleInstancesCount`]({{ site.cpp_methods }}license.html#getidleinstancescount) from 0 to -1 when the available count needs to be updated from server by calling InitLicense.
 
 
@@ -168,10 +168,10 @@ The following items are now deprecated. They still work in this version but coul
 - Method [`FreeLicenseString`]({{ site.cpp_methods }}license.html#freelicensestring)
 - Method [`InitDLSConnectionParameters`]({{ site.cpp_methods }}license.html#initdlsconnectionparameters)
 - Method [`InitLicenseFromDLS`]({{ site.cpp_methods }}license.html#initlicensefromdls)
-- Enumeration [`DM_ChargeWay`]({{ site.enumerations }}other-enums.html#dm_chargeway)
-- Enumeration [`DM_DeploymentType`]({{ site.enumerations }}other-enums.html#dm_deploymenttype)
-- Enumeration [`DM_LicenseModule`]({{ site.enumerations }}other-enums.html#dm_licensemodule)
-- Enumeration [`DM_UUIDGenerationMethod`]({{ site.enumerations }}other-enums.html#dm_uuidgenerationmethod)
-- Enumeration [`Product`]({{ site.enumerations }}other-enums.html#product)
+- Enumeration [`DM_ChargeWay`]({{ site.c_cpp_enumerations }}other-enums.html#dm_chargeway)
+- Enumeration [`DM_DeploymentType`]({{ site.c_cpp_enumerations }}other-enums.html#dm_deploymenttype)
+- Enumeration [`DM_LicenseModule`]({{ site.c_cpp_enumerations }}other-enums.html#dm_licensemodule)
+- Enumeration [`DM_UUIDGenerationMethod`]({{ site.c_cpp_enumerations }}other-enums.html#dm_uuidgenerationmethod)
+- Enumeration [`Product`]({{ site.c_cpp_enumerations }}other-enums.html#product)
 
 

@@ -24,31 +24,31 @@ typedef struct tagIntermediateResult*  PIntermediateResult
 |---------- | ---- |
 | [`resultsCount`](#resultscount) | *int* |
 | [`results`](#results) | *const void \*\** |
-| [`dataType`](#datatype) | [`IMResultDataType`]({{ site.enumerations }}result-enums.html#imresultdatatype) |
-| [`resultType`](#resulttype) | [`IntermediateResultType`]({{ site.enumerations }}result-enums.html#intermediateresulttype) |
-| [`barcodeComplementMode`](#barcodecomplementmode) | [`BarcodeComplementMode`]({{ site.enumerations }}parameter-mode-enums.html#barcodecomplementmode) |
+| [`dataType`](#datatype) | [`IMResultDataType`]({{ site.c_cpp_enumerations }}result-enums.html#imresultdatatype) |
+| [`resultType`](#resulttype) | [`IntermediateResultType`]({{ site.c_cpp_enumerations }}result-enums.html#intermediateresulttype) |
+| [`barcodeComplementMode`](#barcodecomplementmode) | [`BarcodeComplementMode`]({{ site.c_cpp_enumerations }}parameter-mode-enums.html#barcodecomplementmode) |
 | [`bcmIndex`](#bcmindex) | *int* |
-| [`deformationResistingMode`](#deformationresistingmode) | [`DeformationResistingMode`]({{ site.enumerations }}parameter-mode-enums.html#deformationresistingmode) |
+| [`deformationResistingMode`](#deformationresistingmode) | [`DeformationResistingMode`]({{ site.c_cpp_enumerations }}parameter-mode-enums.html#deformationresistingmode) |
 | [`drmIndex`](#drmindex) | *int* |
-| [`dpmCodeReadingMode`](#dpmcodereadingmode) | [`DPMCodeReadingMode`]({{ site.enumerations }}parameter-mode-enums.html#dpmcodereadingmode) |
+| [`dpmCodeReadingMode`](#dpmcodereadingmode) | [`DPMCodeReadingMode`]({{ site.c_cpp_enumerations }}parameter-mode-enums.html#dpmcodereadingmode) |
 | [`dpmcrmIndex`](#dpmcrmindex) | *int* |
 | [`rotationMatrix`](#rotationmatrix) | *double\[9\]* |
-| [`textFilterMode`](#textfiltermode) | [`TextFilterMode`]({{ site.enumerations }}parameter-mode-enums.html#textfiltermode) |
+| [`textFilterMode`](#textfiltermode) | [`TextFilterMode`]({{ site.c_cpp_enumerations }}parameter-mode-enums.html#textfiltermode) |
 | [`tfmIndex`](#tfmindex) | *int* |
-| [`localizationMode`](#localizationmode) | [`LocalizationMode`]({{ site.enumerations }}parameter-mode-enums.html#localizationmode) |
+| [`localizationMode`](#localizationmode) | [`LocalizationMode`]({{ site.c_cpp_enumerations }}parameter-mode-enums.html#localizationmode) |
 | [`lmIndex`](#lmindex) | *int* |
-| [`binarizationMode`](#binarizationmode) | [`BinarizationMode`]({{ site.enumerations }}parameter-mode-enums.html#binarizationmode) |
+| [`binarizationMode`](#binarizationmode) | [`BinarizationMode`]({{ site.c_cpp_enumerations }}parameter-mode-enums.html#binarizationmode) |
 | [`bmIndex`](#bmindex) | *int* |
-| [`imagePreprocessingMode`](#imagepreprocessingmode) | [`ImagePreprocessingMode`]({{ site.enumerations }}parameter-mode-enums.html#imagepreprocessingmode) |
+| [`imagePreprocessingMode`](#imagepreprocessingmode) | [`ImagePreprocessingMode`]({{ site.c_cpp_enumerations }}parameter-mode-enums.html#imagepreprocessingmode) |
 | [`ipmIndex`](#ipmindex) | *int* |
 | [`roiId`](#roiid) | *int* |
-| [`regionPredetectionMode`](#regionpredetectionmode) | [`RegionPredetectionMode`]({{ site.enumerations }}parameter-mode-enums.html#regionpredetectionmode) |
+| [`regionPredetectionMode`](#regionpredetectionmode) | [`RegionPredetectionMode`]({{ site.c_cpp_enumerations }}parameter-mode-enums.html#regionpredetectionmode) |
 | [`rpmIndex`](#rpmindex) | *int* |
-| [`grayscaleTransformationMode`](#grayscaletransformationmode) | [`GrayscaleTransformationMode`]({{ site.enumerations }}parameter-mode-enums.html#grayscaletransformationmode) |
+| [`grayscaleTransformationMode`](#grayscaletransformationmode) | [`GrayscaleTransformationMode`]({{ site.c_cpp_enumerations }}parameter-mode-enums.html#grayscaletransformationmode) |
 | [`gtmIndex`](#gtmindex) | *int* |
-| [`colourConversionMode`](#colourconversionmode) | [`ColourConversionMode`]({{ site.enumerations }}parameter-mode-enums.html#colourconversionmode) |
+| [`colourConversionMode`](#colourconversionmode) | [`ColourConversionMode`]({{ site.c_cpp_enumerations }}parameter-mode-enums.html#colourconversionmode) |
 | [`cicmIndex`](#cicmindex) | *int* |
-| [`colourClusteringMode`](#colourclusteringmode) | [`ColourClusteringMode`]({{ site.enumerations }}parameter-mode-enums.html#colourclusteringmode) |
+| [`colourClusteringMode`](#colourclusteringmode) | [`ColourClusteringMode`]({{ site.c_cpp_enumerations }}parameter-mode-enums.html#colourclusteringmode) |
 | [`ccmIndex`](#ccmindex) | *int* |
 | [`scaleDownRatio`](#scaledownratio) | *int* |
 | [`frameId`](#frameid) | *int* |
@@ -80,37 +80,37 @@ IntermediateResultType tagIntermediateResult::resultType
 ```
 
 ### barcodeComplementMode
-The [`BarcodeComplementMode`]({{ site.enumerations }}parameter-mode-enums.html#barcodecomplementmode) used when generating the current intermediate result. 
+The [`BarcodeComplementMode`]({{ site.c_cpp_enumerations }}parameter-mode-enums.html#barcodecomplementmode) used when generating the current intermediate result. 
 ```cpp
 BarcodeComplementMode tagIntermediateResult::barcodeComplementMode
 ```
 
 ### bcmIndex
-The array index of current used [`BarcodeComplementMode`]({{ site.enumerations }}parameter-mode-enums.html#barcodecomplementmode) in the [`barcodeComplementModes`](FurtherModes.md#barcodecomplementmodes) setting.
+The array index of current used [`BarcodeComplementMode`]({{ site.c_cpp_enumerations }}parameter-mode-enums.html#barcodecomplementmode) in the [`barcodeComplementModes`](FurtherModes.md#barcodecomplementmodes) setting.
 ```cpp
 int tagIntermediateResult::bcmIndex
 ```
 
 ### deformationResistingMode
-The [`DeformationResistingMode`]({{ site.enumerations }}parameter-mode-enums.html#deformationresistingmode) used when generating the current intermediate result.
+The [`DeformationResistingMode`]({{ site.c_cpp_enumerations }}parameter-mode-enums.html#deformationresistingmode) used when generating the current intermediate result.
 ```cpp
 DeformationResistingMode tagIntermediateResult::deformationResistingMode
 ```
 
 ### drmIndex
-The array index of current used [`DeformationResistingMode`]({{ site.enumerations }}parameter-mode-enums.html#deformationresistingmode) in the [`deformationResistingModes`](FurtherModes.md#deformationresistingmodes) setting.
+The array index of current used [`DeformationResistingMode`]({{ site.c_cpp_enumerations }}parameter-mode-enums.html#deformationresistingmode) in the [`deformationResistingModes`](FurtherModes.md#deformationresistingmodes) setting.
 ```cpp
 int tagIntermediateResult::drmIndex
 ```
 
 ### dpmCodeReadingMode
-The [`DPMCodeReadingMode`]({{ site.enumerations }}parameter-mode-enums.html#dpmcodereadingmode) used when generating the current intermediate result.
+The [`DPMCodeReadingMode`]({{ site.c_cpp_enumerations }}parameter-mode-enums.html#dpmcodereadingmode) used when generating the current intermediate result.
 ```cpp
 DPMCodeReadingMode tagIntermediateResult::dpmCodeReadingMode
 ```
 
 ### dpmcrmIndex
-The array index of current used [`DPMCodeReadingMode`]({{ site.enumerations }}parameter-mode-enums.html#dpmcodereadingmode) in the [`dpmCodeReadingModes`](FurtherModes.md#dpmcodereadingmodes) setting.
+The array index of current used [`DPMCodeReadingMode`]({{ site.c_cpp_enumerations }}parameter-mode-enums.html#dpmcodereadingmode) in the [`dpmCodeReadingModes`](FurtherModes.md#dpmcodereadingmodes) setting.
 ```cpp
 int tagIntermediateResult::dpmcrmIndex
 ```
@@ -122,49 +122,49 @@ double tagIntermediateResult::rotationMatrix[9]
 ```
 
 ### textFilterMode
-The [`TextFilterMode`]({{ site.enumerations }}parameter-mode-enums.html#textfiltermode) used when generating the current intermediate result.
+The [`TextFilterMode`]({{ site.c_cpp_enumerations }}parameter-mode-enums.html#textfiltermode) used when generating the current intermediate result.
 ```cpp
 TextFilterMode tagIntermediateResult::textFilterMode
 ```
 
 ### tfmIndex
-The array index of current used [`TextFilterMode`]({{ site.enumerations }}parameter-mode-enums.html#textfiltermode) in the [`textFilterModes`](FurtherModes.md#textfiltermodes) setting.
+The array index of current used [`TextFilterMode`]({{ site.c_cpp_enumerations }}parameter-mode-enums.html#textfiltermode) in the [`textFilterModes`](FurtherModes.md#textfiltermodes) setting.
 ```cpp
 int tagIntermediateResult::tfmIndex
 ```
 
 ### localizationMode
-The [`LocalizationMode`]({{ site.enumerations }}parameter-mode-enums.html#localizationmode) used when generating the current intermediate result.
+The [`LocalizationMode`]({{ site.c_cpp_enumerations }}parameter-mode-enums.html#localizationmode) used when generating the current intermediate result.
 ```cpp
 LocalizationMode tagIntermediateResult::localizationMode
 ```
 
 ### lmIndex
-The array index of current used [`LocalizationMode`]({{ site.enumerations }}parameter-mode-enums.html#localizationmode) in the [`localizationModes`](PublicRuntimeSettings.md#localizationmodes) setting.
+The array index of current used [`LocalizationMode`]({{ site.c_cpp_enumerations }}parameter-mode-enums.html#localizationmode) in the [`localizationModes`](PublicRuntimeSettings.md#localizationmodes) setting.
 ```cpp
 int tagIntermediateResult::lmIndex
 ```
 
 ### binarizationMode
-The [`BinarizationMode`]({{ site.enumerations }}parameter-mode-enums.html#binarizationmode) used when generating the current intermediate result.
+The [`BinarizationMode`]({{ site.c_cpp_enumerations }}parameter-mode-enums.html#binarizationmode) used when generating the current intermediate result.
 ```cpp
 BinarizationMode tagIntermediateResult::binarizationMode
 ```
 
 ### bmIndex
-The array index of current used [`BinarizationMode`]({{ site.enumerations }}parameter-mode-enums.html#binarizationmode) in the [`binarizationModes`](PublicRuntimeSettings.md#binarizationmodes) setting.
+The array index of current used [`BinarizationMode`]({{ site.c_cpp_enumerations }}parameter-mode-enums.html#binarizationmode) in the [`binarizationModes`](PublicRuntimeSettings.md#binarizationmodes) setting.
 ```cpp
 int tagIntermediateResult::bmIndex
 ```
 
 ### imagePreprocessingMode
-The [`ImagePreprocessingMode`]({{ site.enumerations }}parameter-mode-enums.html#imagepreprocessingmode) used when generating the current intermediate result.
+The [`ImagePreprocessingMode`]({{ site.c_cpp_enumerations }}parameter-mode-enums.html#imagepreprocessingmode) used when generating the current intermediate result.
 ```cpp
 ImagePreprocessingMode tagIntermediateResult::imagePreprocessingMode
 ```
 
 ### ipmIndex
-The array index of current used [`ImagePreprocessingMode`]({{ site.enumerations }}parameter-mode-enums.html#imagepreprocessingmode) in [`imagePreprocessingModes`](FurtherModes.md#imagepreprocessingmodes) setting.
+The array index of current used [`ImagePreprocessingMode`]({{ site.c_cpp_enumerations }}parameter-mode-enums.html#imagepreprocessingmode) in [`imagePreprocessingModes`](FurtherModes.md#imagepreprocessingmodes) setting.
 ```cpp
 int tagIntermediateResult::ipmIndex
 ```
@@ -176,49 +176,49 @@ int tagIntermediateResult::roiId
 ```
 
 ### regionPredetectionMode
-The [`RegionPredetectionMode`]({{ site.enumerations }}parameter-mode-enums.html#regionpredetectionmode) used when generating the current intermediate result.
+The [`RegionPredetectionMode`]({{ site.c_cpp_enumerations }}parameter-mode-enums.html#regionpredetectionmode) used when generating the current intermediate result.
 ```cpp
 RegionPredetectionMode tagIntermediateResult::regionPredetectionMode
 ```
 
 ### rpmIndex
-The array index of current used [`RegionPredetectionMode`]({{ site.enumerations }}parameter-mode-enums.html#regionpredetectionmode) in the [`regionPredetectionModes`](FurtherModes.md#regionpredetectionmodes) setting.
+The array index of current used [`RegionPredetectionMode`]({{ site.c_cpp_enumerations }}parameter-mode-enums.html#regionpredetectionmode) in the [`regionPredetectionModes`](FurtherModes.md#regionpredetectionmodes) setting.
 ```cpp
 int tagIntermediateResult::rpmIndex
 ```
 
 ### grayscaleTransformationMode
-The [`GrayscaleTransformationMode`]({{ site.enumerations }}parameter-mode-enums.html#grayscaletransformationmode) used when generating the current intermediate result.
+The [`GrayscaleTransformationMode`]({{ site.c_cpp_enumerations }}parameter-mode-enums.html#grayscaletransformationmode) used when generating the current intermediate result.
 ```cpp
 GrayscaleTransformationMode tagIntermediateResult::grayscaleTransformationMode
 ```
 
 ### gtmIndex
-The array index of current used [`GrayscaleTransformationMode`]({{ site.enumerations }}parameter-mode-enums.html#grayscaletransformationmode) in the [`grayscaleTransformationModes`](FurtherModes.md#grayscaletransformationmodes) setting.
+The array index of current used [`GrayscaleTransformationMode`]({{ site.c_cpp_enumerations }}parameter-mode-enums.html#grayscaletransformationmode) in the [`grayscaleTransformationModes`](FurtherModes.md#grayscaletransformationmodes) setting.
 ```cpp
 int tagIntermediateResult::gtmIndex
 ```
 
 ### colourConversionMode
-The [`ColourConversionMode`]({{ site.enumerations }}parameter-mode-enums.html#colourconversionmode) used when generating the current intermediate result.
+The [`ColourConversionMode`]({{ site.c_cpp_enumerations }}parameter-mode-enums.html#colourconversionmode) used when generating the current intermediate result.
 ```cpp
 ColourConversionMode tagIntermediateResult::colourConversionMode
 ```
 
 ### cicmIndex
-The array index of current used [`ColourConversionMode`]({{ site.enumerations }}parameter-mode-enums.html#colourconversionmode) in the [`colourConversionModes`](FurtherModes.md#colourconversionmodes) setting.
+The array index of current used [`ColourConversionMode`]({{ site.c_cpp_enumerations }}parameter-mode-enums.html#colourconversionmode) in the [`colourConversionModes`](FurtherModes.md#colourconversionmodes) setting.
 ```cpp
 int tagIntermediateResult::cicmIndex
 ```
 
 ### colourClusteringMode
-The [`ColourClusteringMode`]({{ site.enumerations }}parameter-mode-enums.html#colourclusteringmode) used when generating the current intermediate result.
+The [`ColourClusteringMode`]({{ site.c_cpp_enumerations }}parameter-mode-enums.html#colourclusteringmode) used when generating the current intermediate result.
 ```cpp
 ColourClusteringMode tagIntermediateResult::colourClusteringMode
 ```
 
 ### ccmIndex
-The array index of current used [`ColourClusteringMode`]({{ site.enumerations }}parameter-mode-enums.html#colourclusteringmode) in the [`colourClusteringModes`](FurtherModes.md#colourclusteringmodes) setting.
+The array index of current used [`ColourClusteringMode`]({{ site.c_cpp_enumerations }}parameter-mode-enums.html#colourclusteringmode) in the [`colourClusteringModes`](FurtherModes.md#colourclusteringmodes) setting.
 ```cpp
 int tagIntermediateResult::ccmIndex
 ```

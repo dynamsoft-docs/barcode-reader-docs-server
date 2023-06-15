@@ -180,63 +180,63 @@ permalink: /programming/cplusplus/api-reference/index-v9.6.3.html
 
   | Enumeration | Description |
   |-------------|-------------|
-  | [`BarcodeFormat`]({{ site.enumerations }}format-enums.html?src=cpp#barcodeformat) | Describes the barcode types in BarcodeFormat group 1. |
-  | [`BarcodeFormat_2`]({{ site.enumerations }}format-enums.html?src=cpp#barcodeformat_2) | Describes the barcode types in BarcodeFormat group 2. |
+  | [`BarcodeFormat`]({{ site.c_cpp_enumerations }}format-enums.html?src=cpp#barcodeformat) | Describes the barcode types in BarcodeFormat group 1. |
+  | [`BarcodeFormat_2`]({{ site.c_cpp_enumerations }}format-enums.html?src=cpp#barcodeformat_2) | Describes the barcode types in BarcodeFormat group 2. |
 
 ### Parameter Mode Enumeration
 
   | Enumeration | Description |
   |-------------|-------------|
-  | [`BarcodeColourMode`]({{ site.enumerations }}parameter-mode-enums.html?src=cpp#barcodecolourmode) | Describes the barcode colour mode. |
-  | [`BarcodeComplementMode`]({{ site.enumerations }}parameter-mode-enums.html?src=cpp#barcodecomplementmode) | Describes the barcode complement mode. |
-  | [`BinarizationMode`]({{ site.enumerations }}parameter-mode-enums.html?src=cpp#binarizationmode) | Describes the binarization mode. |
-  | [`ColourClusteringMode`]({{ site.enumerations }}parameter-mode-enums.html?src=cpp#colourclusteringmode) | Describes the colour clustering mode. |
-  | [`ColourConversionMode`]({{ site.enumerations }}parameter-mode-enums.html?src=cpp#colourconversionmode) | Describes the colour conversion mode. |
-  | [`ConflictMode`]({{ site.enumerations }}parameter-mode-enums.html?src=cpp#conflictmode) | Describes the conflict mode. |
-  | [`DeblurMode`]({{ site.enumerations }}parameter-mode-enums.html?src=cpp#deblurmode) | Describes the deblur mode. |
-  | [`DeformationResistingMode`]({{ site.enumerations }}parameter-mode-enums.html?src=cpp#deformationresistingmode) | Describes the deformation resisting mode. |
-  | [`DPMCodeReadingMode`]({{ site.enumerations }}parameter-mode-enums.html?src=cpp#dpmcodereadingmode) | Describes the DPM code reading mode. |
-  | [`GrayscaleTransformationMode`]({{ site.enumerations }}parameter-mode-enums.html?src=cpp#grayscaletransformationmode) | Describes the grayscale transformation mode. |
-  | [`ImagePreprocessingMode`]({{ site.enumerations }}parameter-mode-enums.html?src=cpp#imagepreprocessingmode) | Describes the image preprocessing mode. |
-  | [`LocalizationMode`]({{ site.enumerations }}parameter-mode-enums.html?src=cpp#localizationmode) | Describes the localization mode. | 
-  | [`PDFReadingMode`]({{ site.enumerations }}parameter-mode-enums.html?src=cpp#pdfreadingmode) | Describes the PDF reading mode. |
-  | [`RegionPredetectionMode`]({{ site.enumerations }}parameter-mode-enums.html?src=cpp#regionpredetectionmode) | Describes the region predetection mode. |
-  | [`ScaleUpMode`]({{ site.enumerations }}parameter-mode-enums.html?src=cpp#scaleupmode) | Describes the scale up mode. |
-  | [`TerminatePhase`]({{ site.enumerations }}parameter-mode-enums.html?src=cpp#terminatephase) | Describes the terminate phase. |
-  | [`TextFilterMode`]({{ site.enumerations }}parameter-mode-enums.html?src=cpp#textfiltermode) | Describes the text filter mode. |
-  | [`TextureDetectionMode`]({{ site.enumerations }}parameter-mode-enums.html?src=cpp#texturedetectionmode) | Describes the texture detection mode. | 
+  | [`BarcodeColourMode`]({{ site.c_cpp_enumerations }}parameter-mode-enums.html?src=cpp#barcodecolourmode) | Describes the barcode colour mode. |
+  | [`BarcodeComplementMode`]({{ site.c_cpp_enumerations }}parameter-mode-enums.html?src=cpp#barcodecomplementmode) | Describes the barcode complement mode. |
+  | [`BinarizationMode`]({{ site.c_cpp_enumerations }}parameter-mode-enums.html?src=cpp#binarizationmode) | Describes the binarization mode. |
+  | [`ColourClusteringMode`]({{ site.c_cpp_enumerations }}parameter-mode-enums.html?src=cpp#colourclusteringmode) | Describes the colour clustering mode. |
+  | [`ColourConversionMode`]({{ site.c_cpp_enumerations }}parameter-mode-enums.html?src=cpp#colourconversionmode) | Describes the colour conversion mode. |
+  | [`ConflictMode`]({{ site.c_cpp_enumerations }}parameter-mode-enums.html?src=cpp#conflictmode) | Describes the conflict mode. |
+  | [`DeblurMode`]({{ site.c_cpp_enumerations }}parameter-mode-enums.html?src=cpp#deblurmode) | Describes the deblur mode. |
+  | [`DeformationResistingMode`]({{ site.c_cpp_enumerations }}parameter-mode-enums.html?src=cpp#deformationresistingmode) | Describes the deformation resisting mode. |
+  | [`DPMCodeReadingMode`]({{ site.c_cpp_enumerations }}parameter-mode-enums.html?src=cpp#dpmcodereadingmode) | Describes the DPM code reading mode. |
+  | [`GrayscaleTransformationMode`]({{ site.c_cpp_enumerations }}parameter-mode-enums.html?src=cpp#grayscaletransformationmode) | Describes the grayscale transformation mode. |
+  | [`ImagePreprocessingMode`]({{ site.c_cpp_enumerations }}parameter-mode-enums.html?src=cpp#imagepreprocessingmode) | Describes the image preprocessing mode. |
+  | [`LocalizationMode`]({{ site.c_cpp_enumerations }}parameter-mode-enums.html?src=cpp#localizationmode) | Describes the localization mode. | 
+  | [`PDFReadingMode`]({{ site.c_cpp_enumerations }}parameter-mode-enums.html?src=cpp#pdfreadingmode) | Describes the PDF reading mode. |
+  | [`RegionPredetectionMode`]({{ site.c_cpp_enumerations }}parameter-mode-enums.html?src=cpp#regionpredetectionmode) | Describes the region predetection mode. |
+  | [`ScaleUpMode`]({{ site.c_cpp_enumerations }}parameter-mode-enums.html?src=cpp#scaleupmode) | Describes the scale up mode. |
+  | [`TerminatePhase`]({{ site.c_cpp_enumerations }}parameter-mode-enums.html?src=cpp#terminatephase) | Describes the terminate phase. |
+  | [`TextFilterMode`]({{ site.c_cpp_enumerations }}parameter-mode-enums.html?src=cpp#textfiltermode) | Describes the text filter mode. |
+  | [`TextureDetectionMode`]({{ site.c_cpp_enumerations }}parameter-mode-enums.html?src=cpp#texturedetectionmode) | Describes the texture detection mode. | 
 
 ### Result Related Enumeration
 
   | Enumeration | Description |
   |-------------|-------------|
-  | [`IMResultDataType`]({{ site.enumerations }}result-enums.html?src=cpp#imresultdatatype) | Describes the intermediate result data type. |
-  | [`IntermediateResultSavingMode`]({{ site.enumerations }}result-enums.html?src=cpp#intermediateresultsavingmode) | Describes the intermediate result saving mode. |
-  | [`IntermediateResultType`]({{ site.enumerations }}result-enums.html?src=cpp#intermediateresulttype) | Describes the intermediate result type. |
-  | [`ResultCoordinateType`]({{ site.enumerations }}result-enums.html?src=cpp#resultcoordinatetype) | Describes the result coordinate type. |
-  | [`ResultType`]({{ site.enumerations }}result-enums.html?src=cpp#resulttype) | Describes the extended result type. |
-  | [`TextResultOrderMode`]({{ site.enumerations }}result-enums.html?src=cpp#textresultordermode) | Describes the text result order mode. |
+  | [`IMResultDataType`]({{ site.c_cpp_enumerations }}result-enums.html?src=cpp#imresultdatatype) | Describes the intermediate result data type. |
+  | [`IntermediateResultSavingMode`]({{ site.c_cpp_enumerations }}result-enums.html?src=cpp#intermediateresultsavingmode) | Describes the intermediate result saving mode. |
+  | [`IntermediateResultType`]({{ site.c_cpp_enumerations }}result-enums.html?src=cpp#intermediateresulttype) | Describes the intermediate result type. |
+  | [`ResultCoordinateType`]({{ site.c_cpp_enumerations }}result-enums.html?src=cpp#resultcoordinatetype) | Describes the result coordinate type. |
+  | [`ResultType`]({{ site.c_cpp_enumerations }}result-enums.html?src=cpp#resulttype) | Describes the extended result type. |
+  | [`TextResultOrderMode`]({{ site.c_cpp_enumerations }}result-enums.html?src=cpp#textresultordermode) | Describes the text result order mode. |
 
 ### Frame Decoding Enumeration
 
   | Enumeration | Description |
   |-------------|-------------|
-  | [`ClarityCalculationMethod`]({{ site.enumerations }}frame-decoding-enums.html?src=cpp#claritycalculationmethod) | Describes the clarity calculation method. |
-  | [`ClarityFilterMode`]({{ site.enumerations }}frame-decoding-enums.html?src=cpp#clarityfiltermode) | Describes the clarity filter mode. |
+  | [`ClarityCalculationMethod`]({{ site.c_cpp_enumerations }}frame-decoding-enums.html?src=cpp#claritycalculationmethod) | Describes the clarity calculation method. |
+  | [`ClarityFilterMode`]({{ site.c_cpp_enumerations }}frame-decoding-enums.html?src=cpp#clarityfiltermode) | Describes the clarity filter mode. |
   
 ### Other Enumeration
 
   | Enumeration | Description |
   |-------------|-------------|
-  | [`DM_ChargeWay`]({{ site.enumerations }}other-enums.html?src=cpp#dm_chargeway) | `Deprecated` |
-  | [`DM_DeploymentType`]({{ site.enumerations }}other-enums.html?src=cpp#dm_deploymenttype) | `Deprecated` |
-  | [`DM_LicenseModule`]({{ site.enumerations }}other-enums.html?src=cpp#dm_licensemodule) | `Deprecated` |
-  | [`DM_UUIDGenerationMethod`]({{ site.enumerations }}other-enums.html?src=cpp#dm_uuidgenerationmethod) | `Deprecated` |
-  | [`ImagePixelFormat`]({{ site.enumerations }}other-enums.html?src=cpp#imagepixelformat) | Describes the image pixel format. |
-  | [`QRCodeErrorCorrectionLevel`]({{ site.enumerations }}other-enums.html?src=cpp#qrcodeerrorcorrectionlevel) | Describes the QR Code error correction level. |
-  | [`Product`]({{ site.enumerations }}other-enums.html?src=cpp#product) | `Deprecated` |
+  | [`DM_ChargeWay`]({{ site.c_cpp_enumerations }}other-enums.html?src=cpp#dm_chargeway) | `Deprecated` |
+  | [`DM_DeploymentType`]({{ site.c_cpp_enumerations }}other-enums.html?src=cpp#dm_deploymenttype) | `Deprecated` |
+  | [`DM_LicenseModule`]({{ site.c_cpp_enumerations }}other-enums.html?src=cpp#dm_licensemodule) | `Deprecated` |
+  | [`DM_UUIDGenerationMethod`]({{ site.c_cpp_enumerations }}other-enums.html?src=cpp#dm_uuidgenerationmethod) | `Deprecated` |
+  | [`ImagePixelFormat`]({{ site.c_cpp_enumerations }}other-enums.html?src=cpp#imagepixelformat) | Describes the image pixel format. |
+  | [`QRCodeErrorCorrectionLevel`]({{ site.c_cpp_enumerations }}other-enums.html?src=cpp#qrcodeerrorcorrectionlevel) | Describes the QR Code error correction level. |
+  | [`Product`]({{ site.c_cpp_enumerations }}other-enums.html?src=cpp#product) | `Deprecated` |
 
-### [Error Code]({{ site.enumerations }}error-code.html?src=cpp)
+### [Error Code]({{ site.c_cpp_enumerations }}error-code.html?src=cpp)
 
 ## Callbacks
 

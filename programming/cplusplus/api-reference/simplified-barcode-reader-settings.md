@@ -6,7 +6,6 @@ keywords: struct, c++, SimplifiedBarcodeReaderSettings
 needAutoGenerateSidebar: true
 needGenerateH3Content: true
 breadcrumbText: CVR C++ SimplifiedBarcodeReaderSettings Struct
-permalink: /programming/cplusplus/api-reference/capture-vision-router/structs/simplified-capture-vision-settings.html
 ---
 
 # SimplifiedBarcodeReaderSettings
@@ -48,7 +47,7 @@ typedef struct tagSimplifiedBarcodeReaderSettings
 
 ### barcodeFormatIds
 
-Input a combined value of enumeration BarcodeFormat to specify the targeting barcode formats.
+Input a combined value of enumeration [`BarcodeFormat`]({{ site.dcv_enumerations }}barcode-reader/barcode-format.html?src=cpp&&lang=cpp) to specify the targeting barcode formats.
 
 ```cpp
 unsigned long long barcodeFormatIds;
@@ -71,7 +70,7 @@ int expectedBarcodesCount;
 
 ### grayscaleTransformationModes
 
-Set the grayscale transformation modes with an array of enumeration `GrayscaleTransformationMode`. View the reference page of <a href="" target="_blank">`GrayscaleTransformationMode`</a> for more detail about grayscale transformation modes.
+Set the grayscale transformation modes with an array of enumeration [`GrayscaleTransformationMode`]({{ site.dcv_enumerations }}core/grayscale-transformation-mode.html?src=cpp&&lang=cpp). View the reference page of <a href="{{ site.dcv_parameters_reference }}image-parameter/grayscale-transformation-modes.html" target="_blank">`GrayscaleTransformationModes`</a> for more detail about grayscale transformation modes.
 
 ```cpp
 GrayscaleTransformationMode grayscaleTransformationModes[8];
@@ -79,7 +78,7 @@ GrayscaleTransformationMode grayscaleTransformationModes[8];
 
 ### grayscaleEnhancementModes
 
-Set the grayscale enhancement modes with an array of enumeration `GrayscaleEnhancementModes`. View the reference page of <a href="" target="_blank">`GrayscaleEnhancementModes`</a> for more detail about grayscale enhancement modes.
+Set the grayscale enhancement modes with an array of enumeration [`GrayscaleEnhancementMode`]({{ site.dcv_enumerations }}core/grayscale-enhancement-mode.html?src=cpp&&lang=cpp). View the reference page of <a href="{{ site.dcv_parameters_reference }}image-parameter/grayscale-enhancement-modes.html" target="_blank">`GrayscaleEnhancementModes`</a> for more detail about grayscale enhancement modes.
 
 ```cpp
 GrayscaleEnhancementMode grayscaleEnhancementModes[8];
@@ -87,7 +86,7 @@ GrayscaleEnhancementMode grayscaleEnhancementModes[8];
 
 ### localizationModes
 
-Set the location modes with an array of enumeration `LocalizationMode`. View the reference page of <a href="" target="_blank">`LocalizationMode`</a> for more detail about location modes.
+Set the location modes with an array of enumeration [`LocalizationMode`]({{ site.dcv_enumerations }}barcode-reader/localization-mode.html?src=cpp&&lang=cpp). View the reference page of <a href="{{ site.dcv_parameters_reference }}barcode-reader-task-settings/localization-modes.html" target="_blank">`LocalizationModes`</a> for more detail about location modes.
 
 ```cpp
 LocalizationMode localizationModes[8];
@@ -95,7 +94,7 @@ LocalizationMode localizationModes[8];
 
 ### deblurModes
 
-Set the deblur modes with an array of enumeration `DeblurMode`. View the reference page of <a href="" target="_blank">`DeblurMode`</a> for more detail about deblur modes.
+Set the deblur modes with an array of enumeration [`DeblurMode`]({{ site.dcv_enumerations }}barcode-reader/deblur-mode.html?src=cpp&&lang=cpp). View the reference page of <a href="{{ site.dcv_parameters_reference }}barcode-reader-task-settings/deblur-modes.html" target="_blank">`DeblurModes`</a> for more detail about deblur modes.
 
 ```cpp
 DeblurMode deblurModes[10];
