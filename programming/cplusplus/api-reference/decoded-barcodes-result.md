@@ -13,7 +13,7 @@ The `CDecodedBarcodesResult` class represents the result of a barcode reading pr
 
 *Namespace:* dynamsoft::dbr
 
-*Assembly:* DynamsoftBarcodeReader.dll
+*Assembly:* DynamsoftBarcodeReader
 
 ```cpp
 class CDecodedBarcodesResult
@@ -27,6 +27,9 @@ class CDecodedBarcodesResult
 | [`GetSourceImageTag`](#getsourceimagetag) | Gets the tag of the source image. |
 | [`GetCount`](#getcount) | Gets the number of barcode result items in the barcode reading result. |
 | [`GetItem`](#getitem) | Gets the barcode result item at the specified index. |
+| [`HasItem`](#hasitem) | Check if the barcode result item is present in the array.|
+| [`RemoveItem`](#removeitem) | Remove a specific barcode result item from the result array.|
+| [`GetRotationTransformMatrix`](#getrotationtransformmatrix) | Get the rotation transformation matrix of the original image relative to the rotated image.|
 | [`GetErrorCode`](#geterrorcode) | Gets the error code of the barcode reading result, if an error occurred. |
 | [`GetErrorString`](#geterrorstring) | Gets the error message of the barcode reading result, if an error occurred. |
 
@@ -81,6 +84,50 @@ virtual const CBarcodeResultItem* GetItem(int index) const = 0;
 **Return value**
 
 Returns a pointer to the CDecodedBarcodesResult object at the specified index.
+
+### HasItem
+
+Check if the barcode result item is present in the array.
+
+```cpp
+bool HasItem(const CBarcodeResultItem* item) const
+```
+
+**Parameters**
+
+`[in] item` The specific item to check.
+
+**Return value**
+
+Returns a bool value indicating whether the item is present in the array or not.
+
+### RemoveItem
+
+Remove a specific barcode result item from the result array.
+
+```cpp
+int RemoveItem(const CBarcodeResultItem* item)
+```
+
+**Parameters**
+
+`[in] item` The specific item to remove.
+
+**Return value**
+
+Return value indicating whether the deletion was successful or not.
+
+### GetRotationTransformMatrix
+
+Get the rotation transformation matrix of the original image relative to the rotated image.
+
+```cpp
+void GetRotationTransformMatrix(double matrix[9]) const;
+```
+
+**Parameters**
+
+`[out] matrix` A double array which represents the rotation transform matrix.
 
 ### GetErrorCode
 

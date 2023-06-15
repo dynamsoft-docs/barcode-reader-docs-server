@@ -13,7 +13,7 @@ The `CCandidateBarcodeZonesUnit` class represents a unit that contains candidate
 
 *Namespace:* dynamsoft::dbr::intermediate_results
 
-*Assembly:* DynamsoftBarcodeReader.dll
+*Assembly:* DynamsoftBarcodeReader
 
 ```cpp
 class CCandidateBarcodeZonesUnit: public CIntermediateResultUnit

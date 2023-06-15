@@ -13,7 +13,7 @@ The `CPDF417Details` class represents a barcode in PDF417 format. It inherits fr
 
 *Namespace:* dynamsoft::dbr
 
-*Assembly:* DynamsoftBarcodeReader.dll
+*Assembly:* DynamsoftBarcodeReader
 
 ```cpp
 class CPDF417Details : public CBarcodeDetails

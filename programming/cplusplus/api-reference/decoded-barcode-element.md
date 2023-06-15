@@ -13,7 +13,7 @@ The `CDecodedBarcodeElement` class represents a decoded barcode element. It inhe
 
 *Namespace:* dynamsoft::dbr
 
-*Assembly:* DynamsoftBarcodeReader.dll
+*Assembly:* DynamsoftBarcodeReader
 
 ```cpp
 class CDecodedBarcodeElement : public CRegionObjectElement

@@ -13,7 +13,7 @@ The `CAztecDetails` class represents a barcode in Aztec format. It inherits from
 
 *Namespace:* dynamsoft::dbr
 
-*Assembly:* DynamsoftBarcodeReader.dll
+*Assembly:* DynamsoftBarcodeReader
 
 ```cpp
 class CAztecDetails : public CBarcodeDetails

@@ -13,7 +13,7 @@ The `CQRCodeDetails` class represents the details of a QR Code barcode. It is de
 
 *Namespace:* dynamsoft::dbr
 
-*Assembly:* DynamsoftBarcodeReader.dll
+*Assembly:* DynamsoftBarcodeReader
 
 ```cpp
 class CQRCodeDetails : public CBarcodeDetails

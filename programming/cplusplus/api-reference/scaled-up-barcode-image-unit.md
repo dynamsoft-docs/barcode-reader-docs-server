@@ -13,7 +13,7 @@ The `CScaledUpBarcodeImageUnit` class represents a unit that contains scaled up 
 
 *Namespace:* dynamsoft::dbr::intermediate_results
 
-*Assembly:* DynamsoftBarcodeReader.dll
+*Assembly:* DynamsoftBarcodeReader
 
 ```cpp
 class CScaledUpBarcodeImageUnit: public CIntermediateResultUnit

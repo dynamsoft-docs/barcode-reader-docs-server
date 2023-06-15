@@ -13,7 +13,7 @@ The `CLocalizedBarcodesUnit` class represents a unit that contains localized bar
 
 *Namespace:* dynamsoft::dbr::intermediate_results
 
-*Assembly:* DynamsoftBarcodeReader.dll
+*Assembly:* DynamsoftBarcodeReader
 
 ```cpp
 class CLocalizedBarcodesUnit: public CIntermediateResultUnit

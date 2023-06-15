@@ -13,7 +13,7 @@ The `CExtendedBarcodeResult` class represents an extended barcode result in a de
 
 *Namespace:* dynamsoft::dbr
 
-*Assembly:* DynamsoftBarcodeReader.dll
+*Assembly:* DynamsoftBarcodeReader
 
 ```cpp
 class CExtendedBarcodeResult : public CDecodedBarcodeElement

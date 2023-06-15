@@ -13,7 +13,7 @@ The `COneDCodeDetails` class represents detailed information about a one-dimensi
 
 *Namespace:* dynamsoft::dbr
 
-*Assembly:* DynamsoftBarcodeReader.dll
+*Assembly:* DynamsoftBarcodeReader
 
 ```cpp
 class COneDCodeDetails : public CBarcodeDetails

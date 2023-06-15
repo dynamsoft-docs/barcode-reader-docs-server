@@ -13,7 +13,7 @@ The `CDeformationResistedBarcodeImageUnit` class represents a unit that contains
 
 *Namespace:* dynamsoft::dbr::intermediate_results
 
-*Assembly:* DynamsoftBarcodeReader.dll
+*Assembly:* DynamsoftBarcodeReader
 
 ```cpp
 class CDeformationResistedBarcodeImageUnit: public CIntermediateResultUnit

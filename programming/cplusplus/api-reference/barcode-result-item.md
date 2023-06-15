@@ -14,7 +14,7 @@ The `CBarcodeResultItem` class represents a barcode result item decoded by barco
 
 *Namespace:* dynamsoft::dbr
 
-*Assembly:* DynamsoftBarcodeReader.dll
+*Assembly:* DynamsoftBarcodeReader
 
 ```cpp
 class CBarcodeResultItem : public CCapturedResultItem

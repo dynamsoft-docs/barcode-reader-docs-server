@@ -12,7 +12,7 @@ The `CComplementedBarcodeImageUnit` class represents a unit that contains comple
 
 *Namespace:* dynamsoft::dbr::intermediate_results
 
-*Assembly:* DynamsoftBarcodeReader.dll
+*Assembly:* DynamsoftBarcodeReader
 
 ```cpp
 class CComplementedBarcodeImageUnit: public CIntermediateResultUnit

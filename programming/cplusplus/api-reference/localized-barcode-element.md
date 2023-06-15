@@ -13,7 +13,7 @@ The `CLocalizedBarcodeElement` class represents a localized barcode element dete
 
 *Namespace:* dynamsoft::dbr
 
-*Assembly:* DynamsoftBarcodeReader.dll
+*Assembly:* DynamsoftBarcodeReader
 
 ```cpp
 class CLocalizedBarcodeElement : public CRegionObjectElement

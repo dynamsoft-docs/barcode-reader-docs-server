@@ -13,7 +13,7 @@ The `CDataMatrixDetails` class represents the details of a DataMatrix barcode. I
 
 *Namespace:* dynamsoft::dbr
 
-*Assembly:* DynamsoftBarcodeReader.dll
+*Assembly:* DynamsoftBarcodeReader
 
 ```cpp
 class CDataMatrixDetails : public CBarcodeDetails

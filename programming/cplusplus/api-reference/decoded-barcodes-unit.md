@@ -13,7 +13,7 @@ The `CDecodedBarcodesUnit` class represents a unit that contains decoded barcode
 
 *Namespace:* dynamsoft::dbr::intermediate_results
 
-*Assembly:* DynamsoftBarcodeReader.dll
+*Assembly:* DynamsoftBarcodeReader
 
 ```cpp
 class CDecodedBarcodesUnit: public CIntermediateResultUnit

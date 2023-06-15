@@ -13,7 +13,7 @@ The `CDecodedBarcodesResultArray` class represents an array of decoded barcodes.
 
 *Namespace:* dynamsoft::dbr
 
-*Assembly:* DynamsoftBarcodeReader.dll
+*Assembly:* DynamsoftBarcodeReader
 
 ```cpp
 class CDecodedBarcodesResultArray

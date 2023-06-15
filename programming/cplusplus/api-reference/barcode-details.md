@@ -13,7 +13,7 @@ The `CBarcodeDetails` class represents the details of a barcode. It is an abstra
 
 *Namespace:* dynamsoft::dbr
 
-*Assembly:* DynamsoftBarcodeReader.dll
+*Assembly:* DynamsoftBarcodeReader
 
 ```cpp
 class CBarcodeDetails
