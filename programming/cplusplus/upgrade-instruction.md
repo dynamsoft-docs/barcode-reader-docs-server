@@ -10,31 +10,29 @@ permalink: /programming/cplusplus/upgrade-instruction.html
 
 ## From 9.x to 10.x
 
-`DynamsoftBarcodeReader` SDK has been refactored to integrate with `DynamsoftCaptureVision (DCV)` architecture. Notice the following break changes when upgrading your SDK.
+`DynamsoftBarcodeReader` SDK has been refactored to integrate with `DynamsoftCaptureVision (DCV)` architecture. To upgrade from version 9.x to 10.x, we recommend you to follow the [User Guide](user-guide/getting-started.md) and re-write your codes.
+
+Notice the following break changes when upgrading your SDK.
 
 ### Update the Included Headers, libs & DLLs
 
 Since the SDK architecture is changed, you have to change you code for including the headers, libs and DLLs. You can use the following code to replace your previous code.
 
 ```cpp
-#include "[INSTALLATION FOLDER]/Include/DynamsoftLicense.h"
 #include "[INSTALLATION FOLDER]/Include/DynamsoftCaptureVisionRouter.h"
-#include "[INSTALLATION FOLDER]/Include/DynamsoftBarcodeReader.h"
 
 using namespace std;
 using namespace dynamsoft::license;
 using namespace dynamsoft::cvr;
-using namespace dynamsoft::ddn;
+using namespace dynamsoft::dbr;
 
 #if defined(_WIN64) || defined(_WIN32)
     #ifdef _WIN64
         #pragma comment(lib, "[INSTALLATION FOLDER]/Lib/Windows/x64/DynamsoftLicensex64.lib")
         #pragma comment(lib, "[INSTALLATION FOLDER]/Lib/Windows/x64/DynamsoftCaptureVisionRouterx64.lib")
-        #pragma comment(lib, "[INSTALLATION FOLDER]/Lib/Windows/x64/DynamsoftBarcodeReaderx64.lib")
     #else
         #pragma comment(lib, "[INSTALLATION FOLDER]/Lib/Windows/x86/DynamsoftLicensex86.lib")
         #pragma comment(lib, "[INSTALLATION FOLDER]/Lib/Windows/x86/DynamsoftCaptureVisionRouterx86.lib")
-        #pragma comment(lib, "[INSTALLATION FOLDER]/Lib/Windows/x86/DynamsoftBarcodeReaderx86.lib")
     #endif
 #endif
 ```
@@ -108,16 +106,14 @@ DCV architecture allows you to set a folder as an image source to fetch image fr
 ```cpp
 int main()
 {
-   CCaptureVisionRouter cvr;
+   CCaptureVisionRouter *cvr = new CCaptureVisionRouter
  
-   CDirectoryFetcher fetcher;
+   CDirectoryFetcher *fetcher = new CDirectoryFetcher;
    // Replace the following directory path with your directory path:
-   fetcher.SetDirectory("C:\\my-directory-folder\\");
-   cvr.SetInput(&fetcher);
+   fetcher->SetDirectory("C:\\my-directory-folder\\");
+   cvr->SetInput(fetcher);
 }
 ```
-
->Note: creating multiple `CCaptureVisionRouter` instances might cause crash bugs. Multi-thread processing is internally implemented. As a result you don't need to create multi-thread code by yourself.
 
 ### Update Your Video Streaming Decoding Codes
 
@@ -130,12 +126,10 @@ class MyImageSource : public CImageSourceAdapter
 };
 int main()
 {
-  MyImageSource source;
-  cvr.SetInput(&source);
+  MyImageSource *source = new MyImageSource;
+  cvr->SetInput(source);
 }
 ```
-
->Note: creating multiple `CCaptureVisionRouter` instances might cause crash bugs. Multi-thread processing is internally implemented. As a result you don't need to create multi-thread code by yourself.
 
 ### Result Obtaining
 
