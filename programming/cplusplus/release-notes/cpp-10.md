@@ -9,7 +9,7 @@ permalink: /programming/cplusplus/release-notes/cpp-10.html
 
 # Release Notes for C++ Edition - 10.x
 
-## 10.0.0 (05/18/2023)
+## 10.0.0 (06/29/2023)
 
 ### Highlights
 

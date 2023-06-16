@@ -141,10 +141,10 @@ Let's start by creating a console application which demonstrates how to use the 
 
 ### Release the Allocated Memory
 
-    ```cpp
-    delete cvr, cvr = NULL;
-    delete results, results = NULL;
-    ```
+```cpp
+delete cvr, cvr = NULL;
+delete results, results = NULL;
+```
 
 ### Build and Run the Project
 
@@ -288,12 +288,12 @@ During the process, the callback function `OnDecodedBarcodesReceived()` is trigg
 
 ### Release the Allocated Memory
 
-    ```cpp
-    delete cvr, cvr = NULL;
-    delete fetcher, fetcher = NULL;
-    delete listener, listener = NULL;
-    delete capturedReceiver, capturedReceiver = NULL;
-    ```
+```cpp
+delete cvr, cvr = NULL;
+delete fetcher, fetcher = NULL;
+delete listener, listener = NULL;
+delete capturedReceiver, capturedReceiver = NULL;
+```
 
 ### Build and Run the Project Again
 
