@@ -22,13 +22,13 @@ permalink: /programming/cplusplus/api-reference/index.html
 ## Final Results
 
 - [`CBarcodeResultItem`]({{ site.cpp_api }}barcode-result-item.html)
-- [`CCapturedResultReceiver`]({{ site.dcv_cpp_api }}capture-vision-router/auxiliary-classes/captured-result-receiver.html)
+- [`CCapturedResultReceiver`]({{ site.dcv_cpp_api }}core/basic-structures/captured-result-receiver.html)
 - [`CCapturedResult`]({{ site.dcv_cpp_api }}core/basic-structures/captured-result.html)
 - [`CCapturedResultArray`]({{ site.dcv_cpp_api }}core/basic-structures/captured-result-array.html)
 - [`CCapturedResultItem`]({{ site.dcv_cpp_api }}core/basic-structures/captured-result-item.html)
 - [`CDecodedBarcodesResult`]({{ site.cpp_api }}decoded-barcodes-result.html)
 - [`CDecodedBarcodesResultArray`]({{ site.cpp_api }}decoded-barcodes-result-array.html)
-- [`CRawImageResultItem`]({{ site.dcv_cpp_api }}capture-vision-router/auxiliary-classes/raw-image-result-item.html)
+- [`CRawImageResultItem`]({{ site.dcv_cpp_api }}core/basic-structures/raw-image-result-item.html)
 
 ## Final Results Filters
 - [`CCapturedResultFilter`]({{ site.dcv_cpp_api }}core/basic-structures/captured-result-filter.html)

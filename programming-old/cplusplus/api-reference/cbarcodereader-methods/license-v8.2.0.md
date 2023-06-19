@@ -178,7 +178,7 @@ static int dynamsoft::dbr::CBarcodeReader::InitLTSConnectionParameters(DM_LTSCon
 ```   
    
 #### Parameters
-`[in, out] pLTSConnectionParameters` The struct of [`DM_LTSConnectionParameters`]({{ site.structs }}DMLTSConnectionParameters.html).   
+`[in, out] pLTSConnectionParameters` The struct of [`DM_LTSConnectionParameters`]({{ site.structs }}DMLTSConnectionParameters.html?src=cpp).   
 
 #### Return value
 Returns error code (returns 0 if the function operates successfully).    

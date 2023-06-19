@@ -156,7 +156,7 @@ Let's start by creating a console application which demonstrates how to use the 
     }
     ```
 
-    >The SDK returns multiple barcode information, including barcode count, barcode format, barcode text, location, barcode raw data, etc. Check out [TextResult]({{ site.structs }}TextResult.html) for full supported result data.
+    >The SDK returns multiple barcode information, including barcode count, barcode format, barcode text, location, barcode raw data, etc. Check out [TextResult]({{ site.structs }}TextResult.html?src=c) for full supported result data.
 
 ### Release Allocated Memory
 

@@ -222,8 +222,8 @@ int dynamsoft::dbr::CBarcodeReader::InitIntermediateResult(IntermediateResultTyp
 ```   
    
 **Parameters**  
-`[in]	intermediateResultType` The type of the intermediate result to init. Please see [`EnumIntermediateResultType`](../../../../programming/c-cplusplus/enumeration/result-enums.md#intermediateresulttype).  
-`[in, out]	pIntermediateResult` The resulting [`IntermediateResult`](../../../c-cplusplus/struct/IntermediateResult.md) struct.  
+`[in]	intermediateResultType` The type of the intermediate result to init. Please see [`EnumIntermediateResultType`]({{site.c_cpp_enumerations}}result-enums.html?scr=cpp#intermediateresulttype).  
+`[in, out]	pIntermediateResult` The resulting [`IntermediateResult`]({{site.structs}}IntermediateResult.html?src=cpp) struct.  
 
 **Return Value**  
 Returns error code (returns 0 if the function operates successfully).    
@@ -248,7 +248,7 @@ int dynamsoft::dbr::CBarcodeReader::DecodeIntermediateResults(const Intermediate
 ```   
    
 **Parameters**  
-`[in]	pIntermediateResultArray` The [`IntermediateResult`](../../../c-cplusplus/struct/IntermediateResult.md) array for decoding.
+`[in]	pIntermediateResultArray` The [`IntermediateResult`]({{site.structs}}IntermediateResult.html?src=cpp) array for decoding.
 `[in]	pTemplateName`<sub>Optional</sub> The template name.
 
 **Return Value**  
