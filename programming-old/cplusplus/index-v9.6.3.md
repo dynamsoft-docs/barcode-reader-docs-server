@@ -23,7 +23,7 @@ permalink: /programming/cplusplus/index-v9.6.3.html
 
 ## API Reference
 
-- [API Reference](api-reference/index.md)
+- [API Reference]({{site.cpp_api}}index.html)
 
 ## Release Notes
 

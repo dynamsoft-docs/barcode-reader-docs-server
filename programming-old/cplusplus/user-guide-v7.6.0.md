@@ -133,7 +133,7 @@ you may use a template which is more flexible and easier to update.
 - [Use `PublicRuntimeSettings` Struct to Change Settings](#use-publicruntimesettings-struct-to-change-settings)   
 - [Use A Template to Change Settings](#use-a-template-to-change-settings)   
 
-### Use [`PublicRuntimeSettings`]({{ site.structs }}PublicRuntimeSettings.html) Struct to Change Settings
+### Use [`PublicRuntimeSettings`]({{ site.structs }}PublicRuntimeSettings.html?src=cpp) Struct to Change Settings
 Here are some common scanning settings you might find helpful:   
 - [Specify Barcode Type to Read](#specify-barcode-type-to-read)   
 - [Specify Maximum Barcode Count](#specify-maximum-barcode-count)   
@@ -249,7 +249,7 @@ CBarcodeReader::FreeTextResults(&paryResult);
 delete reader;
 ```  
 
-Below is a template for your reference. To learn more about the APIs, you can check out [`PublicRuntimeSettings`]({{ site.structs }}PublicRuntimeSettings.html) Struct.  
+Below is a template for your reference. To learn more about the APIs, you can check out [`PublicRuntimeSettings`]({{ site.structs }}PublicRuntimeSettings.html?src=cpp) Struct.  
 ```json
 {
    "ImageParameter" : {

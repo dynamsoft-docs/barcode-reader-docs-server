@@ -196,7 +196,7 @@ BarcodeReader.init_intermediate_result(intermediate_result_type)
 
 **Parameters**  
 
-- `[in] intermediate_result_type` <*EnumIntermediateResultType*> :	The type of the intermediate result to initialize. Please see [`EnumIntermediateResultType`](../../../../programming/c-cplusplus/enumeration/result-enums.md#intermediateresulttype).   
+- `[in] intermediate_result_type` <*EnumIntermediateResultType*> :	The type of the intermediate result to initialize. Please see [`EnumIntermediateResultType`]({{site.python_enumerations}}result-enums.html#intermediateresulttype).   
 
 **Return Value**  
 

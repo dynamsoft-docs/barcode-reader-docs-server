@@ -12,6 +12,8 @@ breadcrumbText: CVR C++ SimplifiedBarcodeReaderSettings Struct
 
 The `SimplifiedBarcodeReaderSettings` struct contains settings for barcode decoding. It is a sub-parameter of `SimplifiedCaptureVisionSettings`
 
+## Definition
+
 ```cpp
 typedef struct tagSimplifiedBarcodeReaderSettings
 {
@@ -29,7 +31,7 @@ typedef struct tagSimplifiedBarcodeReaderSettings
 } SimplifiedBarcodeReaderSettings;
 ```
 
-## Attributes Summary
+## Attributes
 
 | Attribute | Type |
 | --------- | ---- |

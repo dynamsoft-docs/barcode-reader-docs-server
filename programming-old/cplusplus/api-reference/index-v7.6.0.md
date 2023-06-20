@@ -174,40 +174,40 @@ permalink: /programming/cplusplus/api-reference/index-v7.6.0.html
 
 
 
-## [Error Code]({{ site.c_cpp_enumerations }}error-code.html)
+## [Error Code]({{ site.c_cpp_enumerations }}error-code.html?src=cpp)
 		
 
 
 
 ## [Structs]({{ site.structs }})
-- [`AztecDetails`]({{ site.structs }}AztecDetails.html)	
-- [`Contour`]({{ site.structs }}Contour.html)	
-- [`DBRPoint`]({{ site.structs }}DBRPoint.html)	
-- [`DataMatrixDetails`]({{ site.structs }}DataMatrixDetails.html)		
-- [`ExtendedResult`]({{ site.structs }}ExtendedResult.html)		
-- [`FrameDecodingParameters`]({{ site.structs }}FrameDecodingParameters.html)	
-- [`FurtherModes`]({{ site.structs }}FurtherModes.html)		
-- [`ImageData`]({{ site.structs }}ImageData.html)		
-- [`IntermediateResult`]({{ site.structs }}IntermediateResult.html)		
-- [`IntermediateResultArray`]({{ site.structs }}IntermediateResultArray.html)		
-- [`LineSegment`]({{ site.structs }}LineSegment.html)		
-- [`LocalizationResult`]({{ site.structs }}LocalizationResult.html)		
-- [`OneDCodeDetails`]({{ site.structs }}OneDCodeDetails.html)		
-- [`PDF417Details`]({{ site.structs }}PDF417Details.html)		
-- [`PublicRuntimeSettings`]({{ site.structs }}PublicRuntimeSettings.html)		
-- [`QRCodeDetails`]({{ site.structs }}QRCodeDetails.html)
-- [`Quadrilateral`]({{ site.structs }}Quadrilateral.html)
-- [`RegionDefinition`]({{ site.structs }}RegionDefinition.html)		
-- [`RegionOfInterest`]({{ site.structs }}RegionOfInterest.html)		
-- [`SamplingImageData`]({{ site.structs }}SamplingImageData.html)		
-- [`TextResult`]({{ site.structs }}TextResult.html)		
-- [`TextResultArray`]({{ site.structs }}TextResultArray.html)	
+- [`AztecDetails`]({{ site.structs }}AztecDetails.html?src=cpp)	
+- [`Contour`]({{ site.structs }}Contour.html?src=cpp)
+- [`DBRPoint`]({{ site.structs }}DBRPoint.html?src=cpp)
+- [`DataMatrixDetails`]({{ site.structs }}DataMatrixDetails.html?src=cpp)	
+- [`ExtendedResult`]({{ site.structs }}ExtendedResult.html?src=cpp)	
+- [`FrameDecodingParameters`]({{ site.structs }}FrameDecodingParameters.html?src=cpp)
+- [`FurtherModes`]({{ site.structs }}FurtherModes.html?src=cpp)	
+- [`ImageData`]({{ site.structs }}ImageData.html?src=cpp)	
+- [`IntermediateResult`]({{ site.structs }}IntermediateResult.html?src=cpp)	
+- [`IntermediateResultArray`]({{ site.structs }}IntermediateResultArray.html?src=cpp)	
+- [`LineSegment`]({{ site.structs }}LineSegment.html?src=cpp)	
+- [`LocalizationResult`]({{ site.structs }}LocalizationResult.html?src=cpp)	
+- [`OneDCodeDetails`]({{ site.structs }}OneDCodeDetails.html?src=cpp)	
+- [`PDF417Details`]({{ site.structs }}PDF417Details.html?src=cpp)	
+- [`PublicRuntimeSettings`]({{ site.structs }}PublicRuntimeSettings.html?src=cpp)	
+- [`QRCodeDetails`]({{ site.structs }}QRCodeDetails.html?src=cpp)
+- [`Quadrilateral`]({{ site.structs }}Quadrilateral.html?src=cpp)
+- [`RegionDefinition`]({{ site.structs }}RegionDefinition.html?src=cpp)	
+- [`RegionOfInterest`]({{ site.structs }}RegionOfInterest.html?src=cpp)	
+- [`SamplingImageData`]({{ site.structs }}SamplingImageData.html?src=cpp)	
+- [`TextResult`]({{ site.structs }}TextResult.html?src=cpp)	
+- [`TextResultArray`]({{ site.structs }}TextResultArray.html?src=cpp)
 
 
  
 
 
-## [Enumerations]({{ site.c_cpp_enumerations }})
+## [Enumerations]({{ site.c_cpp_enumerations }}?src=cpp)
 - [`AccompanyingTextRecognitionMode`]({{ site.c_cpp_enumerations }}parameter-mode-enums.html?src=cpp#accompanyingtextrecognitionmode)	
 - [`BarcodeColourMode`]({{ site.c_cpp_enumerations }}parameter-mode-enums.html?src=cpp#barcodecolourmode)	
 - [`BarcodeComplementMode`]({{ site.c_cpp_enumerations }}parameter-mode-enums.html?src=cpp#barcodecomplementmode)	

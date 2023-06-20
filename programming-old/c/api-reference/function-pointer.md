@@ -55,7 +55,7 @@ typedef void(* CB_IntermediateResult) (int frameId, IntermediateResultArray* pRe
 `pUser` Arguments passed to your function.
 
 **See Also**  
-[IntermediateResultArray]({{ site.structs }}IntermediateResultArray.html)
+[IntermediateResultArray]({{ site.structs }}IntermediateResultArray.html?src=c)
 
 
 
@@ -76,7 +76,7 @@ typedef void(* CB_TextResult) (int frameId, TextResultArray *pResults, void *pUs
 `pUser` Arguments passed to your function.
 
 **See Also**  
-[TextResultArray]({{ site.structs }}TextResultArray.html)
+[TextResultArray]({{ site.structs }}TextResultArray.html?src=c)
 
 
 
