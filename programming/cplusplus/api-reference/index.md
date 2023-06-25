@@ -27,7 +27,6 @@ permalink: /programming/cplusplus/api-reference/index.html
 - [`CCapturedResultArray`]({{ site.dcv_cpp_api }}core/basic-structures/captured-result-array.html)
 - [`CCapturedResultItem`]({{ site.dcv_cpp_api }}core/basic-structures/captured-result-item.html)
 - [`CDecodedBarcodesResult`]({{ site.cpp_api }}decoded-barcodes-result.html)
-- [`CDecodedBarcodesResultArray`]({{ site.cpp_api }}decoded-barcodes-result-array.html)
 - [`CRawImageResultItem`]({{ site.dcv_cpp_api }}core/basic-structures/raw-image-result-item.html)
 
 ## Final Results Filters
