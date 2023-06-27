@@ -226,9 +226,9 @@ The class `CDirectoryFetcher` is capable of converting a local directory to an i
             else
             {
                 int count = pResult->GetCount();
+                cout << "Decoded " << count << " barcodes" << endl;
                 for (int i = 0; i < count; i++) {
-                    const CBarcodeResultItem* barcodeResultItem = pResult->GetItem(i);
-                    cout << "Decoded " << count << " barcodes" << endl;
+                    const CBarcodeResultItem* barcodeResultItem = pResult->GetItem(i);                   
                     if (barcodeResultItem != NULL)
                     {
                         cout << "Result " << i + 1 << endl;
