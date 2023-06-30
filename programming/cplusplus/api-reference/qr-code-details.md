@@ -7,7 +7,7 @@ permalink: /programming/cplusplus/api-reference/qr-code-details.html
 ---
 # CQRCodeDetails
 
-The `CQRCodeDetails` class represents the details of a QR Code barcode. It is derived from the `CBarcodeDetails` class and contains various attributes related to the QR Code barcode.
+The `CQRCodeDetails` class represents the details of a QR Code. It is derived from the `CBarcodeDetails` class and contains various attributes related to the QR Code.
 
 ## Definition
 
@@ -35,7 +35,7 @@ class CQRCodeDetails : public CBarcodeDetails
 
 ### rows
 
-The row count of the QR Code barcode.
+The row count of the QR Code.
 
 ```cpp
 int rows
@@ -43,7 +43,7 @@ int rows
 
 ### columns
 
-The column count of the QR Code barcode.
+The column count of the QR Code.
 
 ```cpp
 int columns
@@ -51,7 +51,7 @@ int columns
 
 ### errorCorrectionLevel
 
-The error correction level of the QR Code barcode.
+The error correction level of the QR Code.
 
 ```cpp
 QRCodeErrorCorrectionLevel errorCorrectionLevel
@@ -59,7 +59,7 @@ QRCodeErrorCorrectionLevel errorCorrectionLevel
 
 ### version
 
-The version of the QR Code barcode.
+The version of the QR Code.
 
 ```cpp
 int version
@@ -67,7 +67,7 @@ int version
 
 ### model
 
-Number of models of the QR Code barcode.
+Number of models of the QR Code.
 
 ```cpp
 int model
@@ -75,7 +75,7 @@ int model
 
 ### mode
 
-Identify the first data encoding mode of the QR Code barcode.
+Identify the first data encoding mode of the QR Code.
 
 ```cpp
 int mode
@@ -83,7 +83,7 @@ int mode
 
 ### page
 
-Identify the position of the particular symbol in the Structured Append format of the QR Code barcode.
+Identify the position of the particular symbol in the Structured Append format of the QR Code.
 
 ```cpp
 int page
@@ -91,7 +91,7 @@ int page
 
 ### totalPage
 
-Identify the total number of symbols to be concatenated in the Structured Append format of the QR Code barcode.
+Identify the total number of symbols to be concatenated in the Structured Append format of the QR Code.
 
 ```cpp
 int totalPage
