@@ -82,9 +82,9 @@ Since class `CBarcodeReader` is replaced with class `CCaptureVisionRouter`. You 
 
 ```cpp
 // Capture from a file.
-CCapturedResultArray* Capture(const char* filePath, const char* templateName="");
+CCapturedResult* Capture(const char* filePath, const char* templateName="");
 // Capture from a file in memory.
-CCapturedResultArray* Capture(const unsigned char *fileBytes, int fileSize, const char* templateName="");
+CCapturedResult* Capture(const unsigned char *fileBytes, int fileSize, const char* templateName="");
 // Capture from a CImageData object.
 CCapturedResult* Capture(const CImageData* pImageData, const char* templateName="");
 ```
