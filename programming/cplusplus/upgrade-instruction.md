@@ -25,14 +25,19 @@ using namespace std;
 using namespace dynamsoft::license;
 using namespace dynamsoft::cvr;
 using namespace dynamsoft::dbr;
+using namespace dynamsoft::utility;
 
 #if defined(_WIN64) || defined(_WIN32)
     #ifdef _WIN64
+        #pragma comment(lib, "[INSTALLATION FOLDER]/Lib/Windows/x64/DynamsoftCorex64.lib")
         #pragma comment(lib, "[INSTALLATION FOLDER]/Lib/Windows/x64/DynamsoftLicensex64.lib")
         #pragma comment(lib, "[INSTALLATION FOLDER]/Lib/Windows/x64/DynamsoftCaptureVisionRouterx64.lib")
+        #pragma comment(lib, "[INSTALLATION FOLDER]/Lib/Windows/x64/DynamsoftUtilityx64.lib")
     #else
+        #pragma comment(lib, "[INSTALLATION FOLDER]/Lib/Windows/x86/DynamsoftCorex86.lib")
         #pragma comment(lib, "[INSTALLATION FOLDER]/Lib/Windows/x86/DynamsoftLicensex86.lib")
         #pragma comment(lib, "[INSTALLATION FOLDER]/Lib/Windows/x86/DynamsoftCaptureVisionRouterx86.lib")
+        #pragma comment(lib, "[INSTALLATION FOLDER]/Lib/Windows/x86/DynamsoftUtilityx86.lib")
     #endif
 #endif
 ```
@@ -72,7 +77,7 @@ The template system is upgraded. The template you used for the previous version 
 
 ### Replace PublicRuntimeSettings APIs with SimplifiedSettings APIs
 
-The setting configuration APIs are refactored. Class `PublicRuntimeSettings` is removed. Though a series of settings are still available via class `SimplifiedSettings`, the majority of settings are "template only". Please view the API reference of class `SimplifiedSettings` to see whether your settings are still available. If they are no longer supported by SimplifiedSettings, please <a href="https://www.dynamsoft.com/company/customer-service/#contact" target="_blank">contact us</a>. We will help you on generating a new template that supports your previous settings.
+The setting configuration APIs are refactored. Struct `PublicRuntimeSettings` is removed. Though a series of settings are still available via struct `SimplifiedCaptureVisionSettings`, the majority of settings are "template only". Please view the API reference of struct [`SimplifiedCaptureVisionSettings`]({{ site.dcv_cpp_api }}capture-vision-router/structs/simplified-capture-vision-settings.html) and [`SimplifiedBarcodeReaderSettings`]({{ site.cpp_api }}simplified-barcode-reader-settings.html) to see whether your settings are still available. If they are no longer supported by SimplifiedSettings, please <a href="https://www.dynamsoft.com/company/customer-service/#contact" target="_blank">contact us</a>. We will help you on generating a new template that supports your previous settings.
 
 ### Update Your Image Decoding Codes
 
@@ -101,12 +106,12 @@ CCapturedResult* Capture(const CImageData* pImageData, const char* templateName=
 
 #### Batch Image Decoding
 
-DCV architecture allows you to set a folder as an image source to fetch image from. To use this feature, you have to set `DirectoryFetcher` as the input via class `CCaptureVisionRouter`.
+DCV architecture allows you to set a folder as an image source to fetch image from. To use this feature, you have to set `CDirectoryFetcher` as the input via class `CCaptureVisionRouter`.
 
 ```cpp
 int main()
 {
-   CCaptureVisionRouter *cvr = new CCaptureVisionRouter
+   CCaptureVisionRouter *cvr = new CCaptureVisionRouter;
    // Create a CDirectoryFetcher instance and set is as the input of cvr
    CDirectoryFetcher *fetcher = new CDirectoryFetcher;
    // Replace the following directory path with your directory path:

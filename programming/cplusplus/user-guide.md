@@ -108,7 +108,6 @@ Let's start by creating a console application which demonstrates how to use the 
     CCapturedResult* result = cvr->Capture(imageFile.c_str(), CPresetTemplate::PT_READ_BARCODES);
     if (result->GetErrorCode() != 0) {
         cout << "Error: " << result->GetErrorCode() << "," << result->GetErrorString() << endl;
-        continue;
     }
     int capturedResultItemCount = result->GetCount();
     cout << "Decoded " << capturedResultItemCount << " barcodes" << endl;
