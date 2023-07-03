@@ -12,7 +12,7 @@ noTitleIndex: true
 
 In this guide, you will learn step by step on how to build a barcode reading application with Dynamsoft Barcode Reader SDK using C++ language.
 
-> Read more on [Dynamsoft Barcode Reader Features](https://www.dynamsoft.com/barcode-reader/docs/introduction/index.html)
+> Read more on [Dynamsoft Barcode Reader Features](https://www.dynamsoft.com/barcode-reader/features/)
 
 - [Getting Started with Dynamsoft Barcode Reader SDK C++ Edition](#getting-started-with-dynamsoft-barcode-reader-sdk-c-edition)
   - [Installation](#installation)
