@@ -150,6 +150,6 @@ int main()
 
 ### Result Obtaining
 
-If you are using batch image decoding or video streaming decoding, you have to register a `CCapturedResultReceiver` to receive the barcode decoding results.
+If you are using batch image decoding or video streaming decoding, you have to register a [`CCapturedResultReceiver`]({{ site.dcv_cpp_api }}core/basic-structures/captured-result-receiver.html) to receive the barcode decoding results.
 
-If you are using `Capture` APIs to process a single image, the barcode decoding results are still available from the return value of the `Capture` APIs.
+If you are using `Capture` APIs to process a single image, the barcode decoding results are returned from the `Capture` APIs.
