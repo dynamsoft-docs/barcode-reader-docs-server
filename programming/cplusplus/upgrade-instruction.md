@@ -107,11 +107,16 @@ DCV architecture allows you to set a folder as an image source to fetch image fr
 int main()
 {
    CCaptureVisionRouter *cvr = new CCaptureVisionRouter
- 
+   // Create a CDirectoryFetcher instance and set is as the input of cvr
    CDirectoryFetcher *fetcher = new CDirectoryFetcher;
    // Replace the following directory path with your directory path:
    fetcher->SetDirectory("C:\\my-directory-folder\\");
    cvr->SetInput(fetcher);
+   // Create a CCapturedResultReceiver instance 
+   CCapturedResultReceiver *capturedReceiver = new MyCapturedResultReceiver;
+   cvr->AddResultReceiver(capturedReceiver);
+   // Start capturing
+   errorCode = cvr->StartCapturing(CPresetTemplate::PT_READ_BARCODES, true, errorMsg, 512);
 }
 ```
 
