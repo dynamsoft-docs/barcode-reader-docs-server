@@ -16,6 +16,7 @@ permalink: /programming/cplusplus/api-reference/index.html
 ## Input
 
 - [`CDirectoryFetcher`]({{ site.dcv_cpp_api }}utility/directory-fetcher.html)
+- [`CFileFetcher`]({{ site.dcv_cpp_api }}utility/file-fetcher.html)
 - [`CImageSourceAdapter`]({{ site.dcv_cpp_api }}core/basic-structures/image-source-adapter.html)
 - [`CProactiveImageSourceAdapter`]({{ site.dcv_cpp_api }}utility/proactive-image-source-adapter.html)
 

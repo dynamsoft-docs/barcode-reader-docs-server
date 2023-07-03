@@ -42,42 +42,49 @@ using namespace dynamsoft::utility;
 #endif
 ```
 
-Put the following **.dll** files in your lib:
+Put the following **.dll/.so** files in your executable path:
 
-x64:
+* Windows
+  * x64:
+    * DynamsoftBarcodeReaderx64.dll
+    * DynamsoftCaptureVisionRouterx64.dll
+    * DynamsoftCorex64.dll
+    * DynamsoftImageProcessingx64.dll
+    * DynamsoftLicensex64.dll
+    * DynamsoftUtilityx64.dll
+  * x86:
+    * DynamsoftBarcodeReaderx86.dll
+    * DynamsoftCaptureVisionRouterx86.dll
+    * DynamsoftCorex86.dll
+    * DynamsoftImageProcessingx86.dll
+    * DynamsoftLicensex86.dll
+    * DynamsoftUtilityx86.dll
 
-* DynamsoftBarcodeReaderx64.dll
-* DynamsoftCaptureVisionRouterx64.dll
-* DynamsoftCorex64.dll
-* DynamsoftImageProcessingx64.dll
-* DynamsoftLicensex64.dll
-* DynamsoftUtilityx64.dll
-
-x86:
-
-* DynamsoftBarcodeReaderx86.dll
-* DynamsoftCaptureVisionRouterx86.dll
-* DynamsoftCorex86.dll
-* DynamsoftImageProcessingx86.dll
-* DynamsoftLicensex86.dll
-* DynamsoftUtilityx86.dll
+* Linux
+  * x64:
+    * libDynamsoftBarcodeReader.so
+    * libDynamsoftCaptureVisionRouter.so
+    * libDynamsoftCore.so
+    * libDynamsoftImageProcessing.so
+    * libDynamsoftLicense.so
+    * libDynamsoftUtility.so
 
 ### Migrate from Class CBarcodeReader to Class CCaptureVisionRouter
 
 Class `CCaptureVisionRouter` is added to replace class `CBarcodeReader`. Class `CCaptureVisionRouter` APIs includes the following features:
 
-* Retrieve images
-* Update templates and configure settings
-* Implement barcode decoding
-* Dispatch the results
-
+* Retrieving images from the `ImageSourceAdapter`.
+* Updating templates and configuring settings.
+* Dynamically loading the `DynamsoftBarcodeReader` module for barcode decoding.
+* Dispatching the results to registered receivers of type `CapturedResultReceiver`.
+  
 ### Templates
 
-The template system is upgraded. The template you used for the previous version can't be directly recognized by the new version. Please go to [this page]() to upgrade your template.
+The template system is upgraded. The template you used for the previous version can't be directly recognized by the new version. Please <a href="https://download2.dynamsoft.com/dcv/TemplateConverter.zip" target="_blank">download the TemplateConverter tool</a> or <a href="https://www.dynamsoft.com/company/customer-service/#contact" target="_blank">contact us</a> to upgrade your template.
 
 ### Replace PublicRuntimeSettings APIs with SimplifiedSettings APIs
 
-The setting configuration APIs are refactored. Struct `PublicRuntimeSettings` is removed. Though a series of settings are still available via struct `SimplifiedCaptureVisionSettings`, the majority of settings are "template only". Please view the API reference of struct [`SimplifiedCaptureVisionSettings`]({{ site.dcv_cpp_api }}capture-vision-router/structs/simplified-capture-vision-settings.html) and [`SimplifiedBarcodeReaderSettings`]({{ site.cpp_api }}simplified-barcode-reader-settings.html) to see whether your settings are still available. If they are no longer supported by SimplifiedSettings, please <a href="https://www.dynamsoft.com/company/customer-service/#contact" target="_blank">contact us</a>. We will help you on generating a new template that supports your previous settings.
+The setting configuration APIs are refactored. Struct `PublicRuntimeSettings` is removed. Though a series of settings are still available via struct `SimplifiedCaptureVisionSettings`, the majority of settings are "template only". Please view the API reference of struct [`SimplifiedCaptureVisionSettings`]({{ site.dcv_cpp_api }}capture-vision-router/structs/simplified-capture-vision-settings.html) and [`SimplifiedBarcodeReaderSettings`]({{ site.cpp_api }}simplified-barcode-reader-settings.html) to see whether your settings are still available. If they are no longer supported, please <a href="https://www.dynamsoft.com/company/customer-service/#contact" target="_blank">contact us</a>. We will help you on generating a new template that supports your previous settings.
 
 ### Update Your Image Decoding Codes
 
