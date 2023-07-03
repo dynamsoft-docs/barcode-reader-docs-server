@@ -10,7 +10,7 @@ permalink: /programming/cplusplus/upgrade-instruction.html
 
 ## From 9.x to 10.x
 
-`DynamsoftBarcodeReader` SDK has been refactored to integrate with `DynamsoftCaptureVision (DCV)` architecture. To upgrade from version 9.x to 10.x, we recommend you to follow the [User Guide](user-guide/getting-started.md) and re-write your codes.
+`DynamsoftBarcodeReader` SDK has been refactored to integrate with `DynamsoftCaptureVision (DCV)` architecture. To upgrade from version 9.x to 10.x, we recommend you to follow the [User Guide](user-guide.md) and re-write your codes.
 
 Notice the following break changes when upgrading your SDK.
 

@@ -20,7 +20,7 @@ Furthermore, DBR provides a powerful parameter system in order to cope with vari
 
 ## Getting Started with DBR C++ Edition
 
-The best way to start with the Dynamsoft Barcode Reader C++ Edition, is following the [`User Guide`](user-guide/getting-started.md) to build your first barcode reading application. Please note that the system requirements is as below:
+The best way to start with the Dynamsoft Barcode Reader C++ Edition, is following the [`User Guide`](user-guide.md) to build your first barcode reading application. Please note that the system requirements is as below:
 
 ### System Requirements
 

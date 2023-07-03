@@ -10,7 +10,7 @@ permalink: /programming/cplusplus/user-guide/index.html
 
 These articles will help you get the most out of Dynamsoft Barcode Reader CPP Edition.
 
-* If you have just started evaluating the SDK, read the [Getting Started](../user-guide.md).
+* If you have just started evaluating the SDK, read the [Getting Started]({{site.cpp_api}}user-guide.html).
 
 * If you want to explore the many features of the SDK and learn how to use them to best process the images you read in your application, read the articles in [Explore Features](explore-features/index.md).
 

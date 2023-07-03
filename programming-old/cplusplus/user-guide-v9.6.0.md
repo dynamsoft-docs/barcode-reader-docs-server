@@ -163,7 +163,7 @@ Let's start by creating a console application which demonstrates how to use the 
     cin.ignore();
     ```
 
-    >The SDK returns multiple barcode information, including barcode count, barcode format, barcode text, location, barcode raw data, etc. Check out [TextResult]({{ site.structs }}TextResult.html) for full supported result data.
+    >The SDK returns multiple barcode information, including barcode count, barcode format, barcode text, location, barcode raw data, etc. Check out [TextResult]({{ site.structs }}TextResult.html?src=cpp) for full supported result data.
 
 ### Release Allocated Memory
 
