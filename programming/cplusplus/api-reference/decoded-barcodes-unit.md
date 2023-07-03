@@ -42,6 +42,7 @@ Returns the number of decoded barcodes in the unit.
 
 ### GetDecodedBarcode
 
+Gets a pointer to the CDecodedBarcodeElement object at the specified index.
 
 ```cpp
 virtual const CDecodedBarcodeElement* GetDecodedBarcode(int index) const = 0;

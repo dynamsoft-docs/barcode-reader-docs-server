@@ -105,32 +105,28 @@ Let's start by creating a console application which demonstrates how to use the 
 
     ```cpp
     string imageFile = "[INSTALLATION FOLDER]/Resources/BarcodeReader/Images/AllSupportedBarcodeTypes.png";
-    CCapturedResultArray* results = cvr->Capture(imageFile.c_str(), CPresetTemplate::PT_READ_BARCODES);
-    int capturedResultCount = results->GetCount();
-    for (int i = 0; i < capturedResultCount; i++) {
-        const CCapturedResult* capturedResult = results->GetResult(i);
-        if (capturedResult->GetErrorCode() != 0) {
-            cout << "Error: " << capturedResult->GetErrorCode() << "," << capturedResult->GetErrorString() << endl;
-            continue;
-        }
-        int capturedResultItemCount = capturedResult->GetCount();
-        cout << "Decoded " << capturedResultItemCount << " barcodes" << endl;
-        
-        for (int j = 0; j < capturedResultItemCount; j++) 
+    CCapturedResult* result = cvr->Capture(imageFile.c_str(), CPresetTemplate::PT_READ_BARCODES);
+    if (result->GetErrorCode() != 0) {
+        cout << "Error: " << result->GetErrorCode() << "," << result->GetErrorString() << endl;
+        continue;
+    }
+    int capturedResultItemCount = result->GetCount();
+    cout << "Decoded " << capturedResultItemCount << " barcodes" << endl;
+    
+    for (int j = 0; j < capturedResultItemCount; j++) 
+    {
+        const CCapturedResultItem* capturedResultItem = result->GetItem(j);
+        /*
+        * There can be multiple types of result items per image.
+        * We check each of these items until we find the barcode result.
+        */
+        CapturedResultItemType type = capturedResultItem->GetType();
+        if (type == CapturedResultItemType::CRIT_BARCODE)
         {
-            const CCapturedResultItem* capturedResultItem = capturedResult->GetItem(j);
-            /*
-            * There can be multiple types of result items per image.
-            * We check each of these items until we find the barcode result.
-            */
-            CapturedResultItemType type = capturedResultItem->GetType();
-            if (type == CapturedResultItemType::CRIT_BARCODE)
-            {
-                const CBarcodeResultItem* barcodeResultItem = dynamic_cast<const CBarcodeResultItem*> (capturedResultItem);
-                cout << "Result " << j + 1 << endl;
-                cout << "Barcode Format: " << barcodeResultItem->GetFormatString() << endl;
-                cout << "Barcode Text: " << barcodeResultItem->GetText() << endl;
-            }
+            const CBarcodeResultItem* barcodeResultItem = dynamic_cast<const CBarcodeResultItem*> (capturedResultItem);
+            cout << "Result " << j + 1 << endl;
+            cout << "Barcode Format: " << barcodeResultItem->GetFormatString() << endl;
+            cout << "Barcode Text: " << barcodeResultItem->GetText() << endl;
         }
     }
     ```
@@ -143,7 +139,7 @@ Let's start by creating a console application which demonstrates how to use the 
 
 ```cpp
 delete cvr, cvr = NULL;
-delete results, results = NULL;
+delete result, result = NULL;
 ```
 
 ### Build and Run the Project

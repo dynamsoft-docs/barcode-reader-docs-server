@@ -24,16 +24,17 @@ permalink: /programming/cplusplus/api-reference/index.html
 - [`CBarcodeResultItem`]({{ site.cpp_api }}barcode-result-item.html)
 - [`CCapturedResultReceiver`]({{ site.dcv_cpp_api }}core/basic-structures/captured-result-receiver.html)
 - [`CCapturedResult`]({{ site.dcv_cpp_api }}core/basic-structures/captured-result.html)
-- [`CCapturedResultArray`]({{ site.dcv_cpp_api }}core/basic-structures/captured-result-array.html)
 - [`CCapturedResultItem`]({{ site.dcv_cpp_api }}core/basic-structures/captured-result-item.html)
 - [`CDecodedBarcodesResult`]({{ site.cpp_api }}decoded-barcodes-result.html)
 - [`CRawImageResultItem`]({{ site.dcv_cpp_api }}core/basic-structures/raw-image-result-item.html)
 
 ## Final Results Filters
+
 - [`CCapturedResultFilter`]({{ site.dcv_cpp_api }}core/basic-structures/captured-result-filter.html)
 - [`CMultiFrameResultCrossFilter`]({{ site.dcv_cpp_api }}utility/multi-frame-result-cross-filter.html)
 
 ## Detailed Barcode Results
+
 - [`CAztecDetails`]({{ site.cpp_api }}aztec-details.html)
 - [`CBarcodeDetails`]({{ site.cpp_api }}barcode-details.html)
 - [`CDataMatrixDetails`]({{ site.cpp_api }}datamatrix-details.html)
@@ -45,7 +46,7 @@ permalink: /programming/cplusplus/api-reference/index.html
 
 - [`CIntermediateResultManager`]({{ site.dcv_cpp_api }}core/intermediate-results/intermediate-result-manager.html)
 - [`CIntermediateResultReceiver`]({{ site.dcv_cpp_api }}core/intermediate-results/intermediate-result-receiver.html)
-- [`CObservedParameters`]({{ site.dcv_cpp_api }}core/intermediate-results/observed-parameters.html)
+- [`CObservationParameters`]({{ site.dcv_cpp_api }}core/intermediate-results/observed-parameters.html)
 - [`IntermediateResultExtraInfo`]({{ site.dcv_cpp_api }}core/structs/intermediate-result-extra-info.html)
 - [`CBinaryImageUnit`]({{ site.dcv_cpp_api }}core/intermediate-results/binary-image-unit.html)
 - [`CColourImageUnit`]({{ site.dcv_cpp_api }}core/intermediate-results/colour-image-unit.html)
@@ -86,7 +87,9 @@ permalink: /programming/cplusplus/api-reference/index.html
 - [`CCaptureStateListener`]({{ site.dcv_cpp_api }}capture-vision-router/auxiliary-classes/capture-state-listener.html)
 - [`CImageSourceStateListener`]({{ site.dcv_cpp_api }}capture-vision-router/auxiliary-classes/image-source-state-listener.html)
 
-## [`CLicenseManager`]({{ site.dcv_cpp_api }}license/license-manager.html)
+## License
+
+- [`CLicenseManager`]({{ site.dcv_cpp_api }}license/license-manager.html)
 
 ## Basic Structure
 
