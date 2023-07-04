@@ -43,7 +43,7 @@ If you haven't downloaded the SDK yet, <a href="https://www.dynamsoft.com/barcod
 
 Let's start by creating a console application which demonstrates how to use the minimum code to read barcodes from an picture of it.
 
-> You can <a href="https://github.com/Dynamsoft/barcode-reader-c-cpp-samples/tree/main/Samples/C%2B%2B/HelloWorld/ReadAnImage" target="_blank">download the entire source code from here</a>.
+> You can <a href="https://github.com/Dynamsoft/barcode-reader-c-cpp-samples/tree/main/Samples/HelloWorld/ReadAnImage" target="_blank">download the entire source code from here</a>.
 
 ### Create a New Project
 
@@ -169,7 +169,7 @@ delete result, result = NULL;
     ./DBRCPPSample
     ```
 
-> You can <a href="https://github.com/Dynamsoft/barcode-reader-c-cpp-samples/tree/main/Samples/C%2B%2B/HelloWorld/ReadAnImage" target="_blank">download the entire source code from here</a>.
+> You can <a href="https://github.com/Dynamsoft/barcode-reader-c-cpp-samples/tree/main/Samples/HelloWorld/ReadAnImage" target="_blank">download the entire source code from here</a>.
 
 ## Process Multiple Images
 
@@ -177,7 +177,7 @@ If, instead of processing one single image, you need to process many images at o
 
 > These steps follow the step [Initialize a Capture Vision Router Instance](#initialize-a-capture-vision-router-instance) mentioned above.
 
-> You can <a href="https://github.com/Dynamsoft/barcode-reader-c-cpp-samples/tree/main/Samples/C%2B%2B/HelloWorld/ReadMultipleImages" target="_blank">download the entire source code from here</a>.
+> You can <a href="https://github.com/Dynamsoft/barcode-reader-c-cpp-samples/tree/main/Samples/HelloWorld/ReadMultipleImages" target="_blank">download the entire source code from here</a>.
 
 ### Add an Image Source as the Input
 
@@ -294,5 +294,5 @@ delete capturedReceiver, capturedReceiver = NULL;
 
 Please refer to [Build and Run the Project](#build-and-run-the-project).
 
-> You can <a href="https://github.com/Dynamsoft/barcode-reader-c-cpp-samples/tree/main/Samples/C%2B%2B/HelloWorld/ReadMultipleImages" target="_blank">download the entire source code from here</a>.
+> You can <a href="https://github.com/Dynamsoft/barcode-reader-c-cpp-samples/tree/main/Samples/HelloWorld/ReadMultipleImages" target="_blank">download the entire source code from here</a>.
 

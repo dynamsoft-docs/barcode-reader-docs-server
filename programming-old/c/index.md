@@ -17,7 +17,7 @@ permalink: /programming/c/index.html
 
 ## Samples and Demo
 
-- <a href="https://github.com/Dynamsoft/barcode-reader-c-cpp-samples" target="_blank">C Samples</a>
+- <a href="https://github.com/Dynamsoft/barcode-reader-c-cpp-samplestree/v9.6.10/samples/C" target="_blank">C Samples</a>
 - <a href="https://demo.dynamsoft.com/barcode-reader/" target="_blank">Online Demo</a>
 
 ## API Reference
