@@ -1,56 +1,155 @@
 ---
-layout: default-layout
-title: Upgrade Instruction - Dynamsoft Barcode Reader SDK C++ Edition
-description: This page shows how to upgrade to latest version.
-keywords: Upgrade, how-to guides
+title: Upgrade Instructions - Dynamsoft Barcode Reader C++ Edition
+keywords: c++, cplusplus, upgrade
+description: This page introduces how to upgrade Dynamsoft Barcode Reader
 needAutoGenerateSidebar: false
+permalink: /programming/cplusplus/upgrade-instruction.html
 ---
 
+# How to Upgrade
 
-# How to Upgrade to Latest Version     
+## From version 9.x or earlier to version 10.x
 
-## From version 8.x
+`DynamsoftBarcodeReader` SDK has been refactored to integrate with `DynamsoftCaptureVision (DCV)` architecture. To upgrade from version 9.x or earlier to 10.x, we recommend you to follow the [User Guide](user-guide.md) and re-write your codes.
 
-- You need to replace the old assembly files with the ones in the latest version. Download the latest version [here](https://www.dynamsoft.com/Downloads/Dynamic-Barcode-Reader-Download.aspx).
+Notice the following break changes when upgrading your SDK.
 
-- Go to <a href="https://www.dynamsoft.com/customer/license/fullLicense" target="_blank">Customer Portal</a> to get your license key.
+### Update the Included Headers, libs & DLLs
 
-- Update your code to set the license
+Since the SDK architecture is changed, you have to change you code for including the headers, libs and DLLs. You can use the following code to replace your previous code.
+
 ```cpp
-  char errorBuf[512];
-  dynamsoft::dbr::CBarcodeReader::InitLicense("YOUR-LICENSE-KEY", errorBuf, 512);
-  CBarcodeReader* reader = new CBarcodeReader();
-  // add further process
+#include "[INSTALLATION FOLDER]/Include/DynamsoftCaptureVisionRouter.h"
+
+using namespace std;
+using namespace dynamsoft::license;
+using namespace dynamsoft::cvr;
+using namespace dynamsoft::dbr;
+using namespace dynamsoft::utility;
+
+#if defined(_WIN64) || defined(_WIN32)
+    #ifdef _WIN64
+        #pragma comment(lib, "[INSTALLATION FOLDER]/Lib/Windows/x64/DynamsoftCorex64.lib")
+        #pragma comment(lib, "[INSTALLATION FOLDER]/Lib/Windows/x64/DynamsoftLicensex64.lib")
+        #pragma comment(lib, "[INSTALLATION FOLDER]/Lib/Windows/x64/DynamsoftCaptureVisionRouterx64.lib")
+        #pragma comment(lib, "[INSTALLATION FOLDER]/Lib/Windows/x64/DynamsoftUtilityx64.lib")
+    #else
+        #pragma comment(lib, "[INSTALLATION FOLDER]/Lib/Windows/x86/DynamsoftCorex86.lib")
+        #pragma comment(lib, "[INSTALLATION FOLDER]/Lib/Windows/x86/DynamsoftLicensex86.lib")
+        #pragma comment(lib, "[INSTALLATION FOLDER]/Lib/Windows/x86/DynamsoftCaptureVisionRouterx86.lib")
+        #pragma comment(lib, "[INSTALLATION FOLDER]/Lib/Windows/x86/DynamsoftUtilityx86.lib")
+    #endif
+#endif
 ```
 
->Note:
->The following license activation related functions have been deprecated, they still work in this version but could be removed in version 10.0. We recommend you to use InitLicense to set the license.
+Put the following **.dll/.so** files in your executable path:
 
-- `InitLicenseFromDLS`
-- `InitLicenseFromServer`
-- `InitLicenseFromLicenseContent` 
+* Windows
+  * x64:
+    * DynamsoftBarcodeReaderx64.dll
+    * DynamsoftCaptureVisionRouterx64.dll
+    * DynamsoftCorex64.dll
+    * DynamsoftImageProcessingx64.dll
+    * DynamsoftLicensex64.dll
+    * DynamsoftUtilityx64.dll
+  * x86:
+    * DynamsoftBarcodeReaderx86.dll
+    * DynamsoftCaptureVisionRouterx86.dll
+    * DynamsoftCorex86.dll
+    * DynamsoftImageProcessingx86.dll
+    * DynamsoftLicensex86.dll
+    * DynamsoftUtilityx86.dll
 
-## From version 7.x
+* Linux
+  * x64:
+    * libDynamsoftBarcodeReader.so
+    * libDynamsoftCaptureVisionRouter.so
+    * libDynamsoftCore.so
+    * libDynamsoftImageProcessing.so
+    * libDynamsoftLicense.so
+    * libDynamsoftUtility.so
 
-- You need to replace the old assembly files with the ones in the latest version. Download the latest version [here](https://www.dynamsoft.com/Downloads/Dynamic-Barcode-Reader-Download.aspx).
+### Migrate from Class CBarcodeReader to Class CCaptureVisionRouter
 
-- Go to <a href="https://www.dynamsoft.com/customer/license/fullLicense" target="_blank">Customer Portal</a> to get your license key.
+Class `CCaptureVisionRouter` is added to replace class `CBarcodeReader`. Class `CCaptureVisionRouter` APIs includes the following features:
 
-- Update your code to set the license
+* Retrieving images from the `ImageSourceAdapter`.
+* Updating templates and configuring settings.
+* Dynamically loading the `DynamsoftBarcodeReader` module for barcode decoding.
+* Dispatching the results to registered receivers of type `CapturedResultReceiver`.
+  
+### Templates
+
+The template system is upgraded. The template you used for the previous version can't be directly recognized by the new version. Please <a href="https://download2.dynamsoft.com/dcv/TemplateConverter.zip" target="_blank">download the TemplateConverter tool</a> or <a href="https://www.dynamsoft.com/company/customer-service/#contact" target="_blank">contact us</a> to upgrade your template.
+
+### Replace PublicRuntimeSettings APIs with SimplifiedSettings APIs
+
+The setting configuration APIs are refactored. Struct `PublicRuntimeSettings` is removed. Though a series of settings are still available via struct `SimplifiedCaptureVisionSettings`, the majority of settings are "template only". Please view the API reference of struct [`SimplifiedCaptureVisionSettings`]({{ site.dcv_cpp_api }}capture-vision-router/structs/simplified-capture-vision-settings.html) and [`SimplifiedBarcodeReaderSettings`]({{ site.cpp_api }}simplified-barcode-reader-settings.html) to see whether your settings are still available. If they are no longer supported, please <a href="https://www.dynamsoft.com/company/customer-service/#contact" target="_blank">contact us</a>. We will help you on generating a new template that supports your previous settings.
+
+### Update Your Image Decoding Codes
+
+#### Single Image Decoding
+
+Since class `CBarcodeReader` is replaced with class `CCaptureVisionRouter`. You have to use the following `Capture` APIs instead of the `Decode` APIs:
+
 ```cpp
-  char errorBuf[512];
-  dynamsoft::dbr::CBarcodeReader::InitLicense("YOUR-LICENSE-KEY", errorBuf, 512);
-  CBarcodeReader* reader = new CBarcodeReader();
-  // add further process
+// Capture from a file.
+CCapturedResult* Capture(const char* filePath, const char* templateName="");
+// Capture from a file in memory.
+CCapturedResult* Capture(const unsigned char *fileBytes, int fileSize, const char* templateName="");
+// Capture from a CImageData object.
+CCapturedResult* Capture(const CImageData* pImageData, const char* templateName="");
 ```
 
->Note:
->The following license activation related functions have been deprecated, they still work in this version but could be removed in version 10.0. We recommend you to use InitLicense to set the license.
+**The Corresponding Capture APIs of the Decode APIs**
 
-- `InitLicenseFromServer`
-- `InitLicenseFromLicenseContent` 
+| Removed APIs | New APIs |
+| :----------- | :------- |
+| `DecodeFile` | `Capture(const char* filePath, const char* templateName="")` |
+| `DecodeFileInMemory` | `Capture(const unsigned char *fileBytes, int fileSize, const char* templateName="")` |
+| `DecodeBuffer` | `Capture(const CImageData* pImageData, const char* templateName="")` |
+| `DecodeBase64String` | **Currently not available**. |
+| `DecodeDIB` | **Currently not available**. |
 
+#### Batch Image Decoding
 
-## From version 6.x
+DCV architecture allows you to set a folder as an image source to fetch image from. To use this feature, you have to set `CDirectoryFetcher` as the input via class `CCaptureVisionRouter`.
 
-We made some structural updates in the new version. To upgrade from 6.x to 9.x, we recommend you to review our sample code and re-write the barcode scanning module.
+```cpp
+int main()
+{
+   CCaptureVisionRouter *cvr = new CCaptureVisionRouter;
+   // Create a CDirectoryFetcher instance and set is as the input of cvr
+   CDirectoryFetcher *fetcher = new CDirectoryFetcher;
+   // Replace the following directory path with your directory path:
+   fetcher->SetDirectory("C:\\my-directory-folder\\");
+   cvr->SetInput(fetcher);
+   // Create a CCapturedResultReceiver instance 
+   CCapturedResultReceiver *capturedReceiver = new MyCapturedResultReceiver;
+   cvr->AddResultReceiver(capturedReceiver);
+   // Start capturing
+   errorCode = cvr->StartCapturing(CPresetTemplate::PT_READ_BARCODES, true, errorMsg, 512);
+}
+```
+
+### Update Your Video Streaming Decoding Codes
+
+`CImageSourceAdapter` is added to replace the `FrameDecodeingParameters` and the previous video methods. The following steps shows how to implement video streaming barcode decoding with `CImageSourceAdapter`:
+
+```cpp
+class MyImageSource : public CImageSourceAdapter 
+{
+  // Add code to implement CImageSourceAdapter
+};
+int main()
+{
+  MyImageSource *source = new MyImageSource;
+  cvr->SetInput(source);
+}
+```
+
+### Result Obtaining
+
+If you are using batch image decoding or video streaming decoding, you have to register a [`CCapturedResultReceiver`]({{ site.dcv_cpp_api }}core/basic-structures/captured-result-receiver.html) to receive the barcode decoding results.
+
+If you are using `Capture` APIs to process a single image, the barcode decoding results are returned from the `Capture` APIs.

@@ -6,8 +6,16 @@ docHomePage: /barcode-reader/docs/core/introduction/
 
 useVersionTree: true
 
-enumerations: /barcode-reader/docs/server/programming/c-cplusplus/enumeration/
-structs: /barcode-reader/docs/server/programming/c-cplusplus/struct/
+
+dcv_cpp_api: /capture-vision/docs/server/programming/cplusplus/api-reference/
+dcv_introduction: /capture-vision/docs/core/introduction/
+dcv_parameters_reference: /capture-vision/docs/core/parameters/reference/
+dcv_enumerations: /capture-vision/docs/core/enums/
+
+introduction: /barcode-reader/docs/core/introduction/
+parameters_reference: /barcode-reader/docs/core/parameters/reference/
+c_cpp_enumerations: /barcode-reader/docs/server/programming/c-cplusplus/enumeration/
+structs: /barcode-reader/docs/server/programming/c-cplusplus/struct
 
 c: /barcode-reader/docs/server/programming/c/
 c_api: /barcode-reader/docs/server/programming/c/api-reference/
@@ -51,7 +59,6 @@ dnt_icon: /barcode-reader/docs/server/assets/img-icon/icon-dnt.svg
 camera: /camera-enhancer/docs/introduction/
 features: /barcode-reader/docs/core/programming/features/
 usecases: /barcode-reader/docs/core/programming/usecases/
-parameters_reference: /barcode-reader/docs/core/parameters/reference/
 license_activation: /barcode-reader/docs/core/license-activation/
 
 baseurl: "/barcode-reader/docs/server"
@@ -86,11 +93,29 @@ defaults:
     values:
       category: "original-repo"
       edition: "desktop"
+      docRootName: "Barcode Reader C Edition" 
+      docHomePage: "/barcode-reader/docs/server/programming/c/"
+  - scope:
+      path: "programming-old/c"
+    values:
+      category: "original-repo"
+      edition: "desktop"
+      docRootName: "Barcode Reader C Edition" 
+      docHomePage: "/barcode-reader/docs/server/programming/c/"
   - scope:
       path: "programming/cplusplus"
     values:
       category: "original-repo"
       edition: "desktop"
+      docRootName: "Barcode Reader C++ Edition" 
+      docHomePage: "/barcode-reader/docs/server/programming/cplusplus/"
+  - scope:
+      path: "programming-old/cplusplus"
+    values:
+      category: "original-repo"
+      edition: "desktop"
+      docRootName: "Barcode Reader C++ Edition" 
+      docHomePage: "/barcode-reader/docs/server/programming/cplusplus/"
   - scope:
       path: "programming/c-cplusplus"
     values:
@@ -101,16 +126,43 @@ defaults:
     values:
       category: "original-repo"
       edition: "desktop"
+      docRootName: "Barcode Reader DotNet Edition" 
+      docHomePage: "/barcode-reader/docs/server/programming/dotnet/"
+  - scope:
+      path: "programming-old/dotnet"
+    values:
+      category: "original-repo"
+      edition: "desktop"
+      docRootName: "Barcode Reader DotNet Edition" 
+      docHomePage: "/barcode-reader/docs/server/programming/dotnet/"
   - scope:
       path: "programming/python"
     values:
       category: "original-repo"
       edition: "desktop"
+      docRootName: "Barcode Reader Python Edition" 
+      docHomePage: "/barcode-reader/docs/server/programming/python/"
+  - scope:
+      path: "programming-old/python"
+    values:
+      category: "original-repo"
+      edition: "desktop"
+      docRootName: "Barcode Reader Python Edition" 
+      docHomePage: "/barcode-reader/docs/server/programming/python/"
   - scope:
       path: "programming/java"
     values:
       category: "original-repo"
       edition: "desktop"
+      docRootName: "Barcode Reader Java Edition" 
+      docHomePage: "/barcode-reader/docs/server/programming/java/"
+  - scope:
+      path: "programming-old/java"
+    values:
+      category: "original-repo"
+      edition: "desktop"
+      docRootName: "Barcode Reader Java Edition" 
+      docHomePage: "/barcode-reader/docs/server/programming/java/"
   - scope:
       path: ""
     values:

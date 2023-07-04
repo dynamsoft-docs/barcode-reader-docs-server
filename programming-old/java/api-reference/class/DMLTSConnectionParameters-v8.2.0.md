@@ -1,0 +1,195 @@
+---
+layout: default-layout
+title: DMLTSConnectionParameters Class - Dynamsoft Barcode Reader SDK Java Edition API Reference
+description: This page shows the DMLTSConnectionParameters Class of Dynamsoft Barcode Reader SDK Java Edition API Reference.
+keywords: DMLTSConnectionParameters, class, api reference, java
+needAutoGenerateSidebar: false
+permalink: /programming/java/api-reference/class/DMLTSConnectionParameters-v8.2.0.html
+---
+
+
+# DMLTSConnectionParameters
+
+Defines a struct to configure the parameters to connect to license tracking server.  
+
+
+
+## Attributes
+    
+| Attribute | Type |
+|---------- | ---- |
+| [`mainServerURL`](#mainserverurl) | *String* |
+| [`standbyServerURL`](#standbyserverurl) | *String* |
+| [`handshakeCode`](#handshakecode) | *String* |
+| [`sessionPassword`](#sessionpassword) | *String* |
+| [`deploymentType`](#deploymenttype) | *int* |
+| [`chargeWay`](#chargeway) | *int* |
+| [`uuidGenerationMethod`](#uuidgenerationmethod) | *int* |
+| [`maxBufferDays`](#maxbufferdays) | *int* |
+| [`limitedLicenseModules`](#limitedlicensemodules) | *int[]* |
+| [`maxConcurrentInstanceCount`](#maxconcurrentinstancecount) | *int* |
+
+
+### mainServerURL
+
+The URL of the license tracking server.
+
+```java
+String com.dynamsoft.dbr.DMLTSConnectionParameters.mainServerURL
+```
+
+- **Value range**   
+    Any string value   
+      
+- **Default value**   
+    null
+
+- **Remarks**   
+    If you choose "Dynamsoft-hosting", then no need to change the value of MainServerURL and StandbyServerURL. When both are set to null (default value), it will connect to Dynamsoft's license tracking servers for online verification.   
+
+
+### standbyServerURL
+
+The URL of the standby license tracking server.
+
+```java
+String com.dynamsoft.dbr.DMLTSConnectionParameters.standbyServerURL
+```
+
+- **Value range**   
+    Any string value   
+      
+- **Default value**   
+    null
+
+- **Remarks**   
+    If you choose "Dynamsoft-hosting", then no need to change the value of MainServerURL and StandbyServerURL. When both are set to null (default value), it will connect to Dynamsoft's license tracking servers for online verification.   
+
+
+### handshakeCode
+
+The handshake code.
+
+```java
+String com.dynamsoft.dbr.DMLTSConnectionParameters.handshakeCode
+```
+
+- **Value range**   
+    Any string value   
+      
+- **Default value**   
+    null
+
+### sessionPassword
+
+The session password of the handshake code set in license tracking server.
+
+```java
+String com.dynamsoft.dbr.DMLTSConnectionParameters.sessionPassword
+```
+
+- **Value range**   
+    Any string value   
+      
+- **Default value**   
+    null
+
+
+### deploymentType
+
+Sets the deployment type.
+
+```java
+int com.dynamsoft.dbr.DMLTSConnectionParameters.deploymentType
+```
+
+- **Value range**   
+    Any one of the [`EnumDMDeploymentType`]({{ site.java_enumerations }}other-enums.html#dm_deploymenttype) Enumeration items.   
+      
+- **Default value**   
+    DM_DT_DESKTOP   
+    
+- **See also**  
+    [`EnumDMDeploymentType`]({{ site.java_enumerations }}other-enums.html#dm_deploymenttype)    
+
+### chargeWay
+
+Sets the charge way.
+
+```java
+int com.dynamsoft.dbr.DMLTSConnectionParameters.chargeWay
+```
+
+- **Value range**   
+    Any one of the [`EnumDMChargeWay`]({{ site.java_enumerations }}other-enums.html#dm_chargeWay) Enumeration items.   
+      
+- **Default value**   
+    DM_CW_AUTO   
+    
+- **See also**  
+    [`EnumDMChargeWay`]({{ site.java_enumerations }}other-enums.html#dm_chargeWay)    
+
+
+### uuidGenerationMethod
+
+Sets the method to generate UUID.
+
+```java
+int com.dynamsoft.dbr.DMLTSConnectionParameters.uuidGenerationMethod
+```
+
+- **Value range**   
+    Any one of the [`EnumDMUUIDGenerationMethod`]({{ site.java_enumerations }}other-enums.html#dm_uuidgenerationmethod) Enumeration items.   
+      
+- **Default value**   
+    DM_UUIDGM_RANDOM   
+    
+- **See also**  
+    [`EnumDMUUIDGenerationMethod`]({{ site.java_enumerations }}other-enums.html#dm_uuidgenerationmethod)    
+
+### maxBufferDays
+
+Sets the max days to buffer the license info.
+
+```java
+int com.dynamsoft.dbr.DMLTSConnectionParameters.maxBufferDays
+```
+
+- **Value range**   
+    [7,0x7fffffff]  
+      
+- **Default value**   
+    7   
+    
+
+### limitedLicenseModules
+
+Sets the license modules to use.
+
+```java
+int[] com.dynamsoft.dbr.DMLTSConnectionParameters.limitedLicenseModules
+```
+
+- **Value range**   
+    Each array item can be any one of the [`EnumDMLicenseModule`]({{ site.java_enumerations }}other-enums.html#dm_licensemodule) Enumeration items.   
+      
+- **Default value**   
+    null   
+    
+- **See also**  
+    [`EnumDMLicenseModule`]({{ site.java_enumerations }}other-enums.html#dm_licensemodule)    
+
+
+### maxConcurrentInstanceCount
+Sets the max concurrent instance count.
+```java
+int com.dynamsoft.dbr.DMLTSConnectionParameters.maxConcurrentInstanceCount
+```
+- **Value range**   
+    [1,0x7fffffff]   
+      
+- **Default value**   
+    1
+- **Remarks**   
+    It works only when [chargeWay](#chargeway) is setting to DM_CW_CONCURRENT_INSTANCE_COUNT
+    It is the total number of instances used by multiple processes. For example, if there are two .EXE are running on the server and each .EXE may have 10 instances at most, then you should set maxConcurrentInstanceCount to 20.
