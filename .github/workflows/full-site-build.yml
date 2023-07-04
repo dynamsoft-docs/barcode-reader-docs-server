@@ -23,6 +23,7 @@ jobs:
           [ -d DBRDocServer ] && rm -rf DBRDocServer 
           [ -d barcode-reader-docs-server ] && rm -rf barcode-reader-docs-server
           [ -d Docs-Template-Repo-Preview-R3 ] && rm -rf Docs-Template-Repo-Preview-R3
+          
       - name: Build the full site (not incremental)
         run: |
           cd /home/ubuntu
