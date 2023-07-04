@@ -19,7 +19,7 @@ jobs:
   Build-Main:
     if: ${{ github.ref == 'refs/heads/main' }}
     # The type of runner that the job will run on
-    runs-on: self-hosted
+    runs-on: [self-hosted, r3]
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
@@ -29,9 +29,9 @@ jobs:
           cd /home/ubuntu
           [ ! -d DBRDocServer ] && mkdir -p DBRDocServer
           [ ! -d barcode-reader-docs-server ] && git clone --depth 1 https://github.com/dynamsoft-docs/barcode-reader-docs-server.git barcode-reader-docs-server
-          [ ! -d Docs-Template-Repo-Preview ] && git clone --depth 1 --branch preview https://github.com/dynamsoft-docs/Docs-Template-Repo.git Docs-Template-Repo-Preview
+          [ ! -d Docs-Template-Repo-Preview-R3 ] && git clone --depth 1 --branch preview https://github.com/dynamsoft-docs/Docs-Template-Repo.git Docs-Template-Repo-Preview-R3
           cd barcode-reader-docs-server && git pull && cd .. && cp -rfp ./barcode-reader-docs-server/* ./DBRDocServer/
-          cd Docs-Template-Repo-Preview && git pull && cd .. && cp -rfp ./Docs-Template-Repo-Preview/* ./DBRDocServer/
+          cd Docs-Template-Repo-Preview-R3 && git pull && cd .. && cp -rfp ./Docs-Template-Repo-Preview-R3/* ./DBRDocServer/
           cd DBRDocServer && bundle exec jekyll build --incremental
           # python3 /home/ubuntu/ftp.py /home/ubuntu/DBRDocServer/_site/ ./www.dynamsoft.com/barcode-reader/docs/server/ prod
 
@@ -48,7 +48,7 @@ jobs:
   Build-Preview:
     if: ${{ github.ref == 'refs/heads/preview' }}
     # The type of runner that the job will run on
-    runs-on: self-hosted
+    runs-on: [self-hosted, r3]
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
@@ -58,9 +58,9 @@ jobs:
           cd /home/ubuntu
           [ ! -d DBRDocServer-preview ] && mkdir -p DBRDocServer-preview
           [ ! -d barcode-reader-docs-server-preview ] && git clone --depth 1 --branch preview https://github.com/dynamsoft-docs/barcode-reader-docs-server.git barcode-reader-docs-server-preview
-          [ ! -d Docs-Template-Repo-Preview ] && git clone --depth 1 --branch preview https://github.com/dynamsoft-docs/Docs-Template-Repo.git Docs-Template-Repo-Preview
+          [ ! -d Docs-Template-Repo-Preview-R3 ] && git clone --depth 1 --branch preview https://github.com/dynamsoft-docs/Docs-Template-Repo.git Docs-Template-Repo-Preview-R3
           cd barcode-reader-docs-server-preview && git pull && cd .. && cp -rfp ./barcode-reader-docs-server-preview/* ./DBRDocServer-preview/
-          cd Docs-Template-Repo-Preview && git pull && cd .. && cp -rfp ./Docs-Template-Repo-Preview/* ./DBRDocServer-preview/
+          cd Docs-Template-Repo-Preview-R3 && git pull && cd .. && cp -rfp ./Docs-Template-Repo-Preview-R3/* ./DBRDocServer-preview/
           sed -i -e "1,3s/blob\/master$/blob\/preview/" \
           -e "1,3s/blob\/main$/blob\/preview/" /home/ubuntu/DBRDocServer-preview/_config.yml
           cd DBRDocServer-preview && bundle exec jekyll build --incremental
