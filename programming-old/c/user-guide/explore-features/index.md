@@ -28,7 +28,7 @@ While the SDK has been carefully tuned to provide the best possible performance 
 * [Read incomplete barcodes]({{site.features}}read-incomplete-barcodes.html?lang=c)
 * [Read dense barcodes]({{site.features}}read-dense-barcodes.html?lang=c)
 * [Read barcodes from a large image]({{site.features}}read-a-large-image.html?lang=c)
-* [Read Barcodes with small module size]({{site.features}}read-barcodes-with-small-modulesize.html?lang=c)
+* [Read Barcodes with small module size]({{site.features}}read-barcodes-with-small-module-size.html?lang=c)
 * [Read barcodes with imbalanced colors]({{site.features}}read-barcodes-with-imbalanced-colour.html?lang=c)
 * [Read barcodes with uneven lighting]({{site.features}}read-barcodes-with-uneven-lighting.html?lang=c)
 * [Read images with texture]({{site.features}}read-images-with-texture.html?lang=c)
