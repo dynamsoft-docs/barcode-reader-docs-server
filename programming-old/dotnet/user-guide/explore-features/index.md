@@ -28,7 +28,7 @@ While the SDK has been carefully tuned to provide the best possible performance 
 * [Read incomplete barcodes]({{site.features}}read-incomplete-barcodes.html?lang=csharp)
 * [Read dense barcodes]({{site.features}}read-dense-barcodes.html?lang=csharp)
 * [Read barcodes from a large image]({{site.features}}read-a-large-image.html?lang=csharp)
-* [Read Barcodes with small module size]({{site.features}}read-barcodes-with-small-modulesize.html?lang=csharp)
+* [Read Barcodes with small module size]({{site.features}}read-barcodes-with-small-module-size.html?lang=csharp)
 * [Read barcodes with imbalanced colors]({{site.features}}read-barcodes-with-imbalanced-colour.html?lang=csharp)
 * [Read barcodes with uneven lighting]({{site.features}}read-barcodes-with-uneven-lighting.html?lang=csharp)
 * [Read images with texture]({{site.features}}read-images-with-texture.html?lang=csharp)

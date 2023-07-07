@@ -71,6 +71,12 @@ jobs:
           -e "1,3s/blob\/main$/blob\/preview/" /home/ubuntu/DBRDocServer-preview/_config.yml
           cd DBRDocServer-preview && bundle exec jekyll build
 
+  Upload-Preview:
+    if: ${{ github.ref == 'refs/heads/preview' }}
+    # The type of runner that the job will run on
+    runs-on: [self-hosted, r3]
+
+    steps:
       - name: Sync files
         uses: SamKirkland/FTP-Deploy-Action@4.3.0
         with:
