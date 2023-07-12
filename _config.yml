@@ -15,7 +15,7 @@ dcv_enumerations: /capture-vision/docs/core/enums/
 introduction: /barcode-reader/docs/core/introduction/
 parameters_reference: /barcode-reader/docs/core/parameters/reference/
 c_cpp_enumerations: /barcode-reader/docs/server/programming/c-cplusplus/enumeration/
-structs: /barcode-reader/docs/server/programming/c-cplusplus/struct
+structs: /barcode-reader/docs/server/programming/c-cplusplus/struct/
 
 c: /barcode-reader/docs/server/programming/c/
 c_api: /barcode-reader/docs/server/programming/c/api-reference/
