@@ -1,16 +1,16 @@
 ---
 layout: default-layout
 title: Upgrade Instruction - Dynamsoft Barcode Reader SDK C++ Edition
-description: This page shows how to upgrade to latest version.
+description: This page shows how to upgrade to version 8.x.
 keywords: Upgrade, how-to guides
 needAutoGenerateSidebar: false
 permalink: /programming/cplusplus/upgrade-instruction-v8.9.3.html
 ---
 
 
-# How-to Guides - Upgrade to Latest Version     
+# How-to Upgrade to Version 8.x  
 
-## From version 8.0.0 to 8.x
+## From version 8.0.0
 
 Just replace the old assembly files with the ones in the latest version. Download the latest version [here](https://www.dynamsoft.com/Downloads/Dynamic-Barcode-Reader-Download.aspx). Your existing license for 8.0.0 is compatible with 8.x.
 
