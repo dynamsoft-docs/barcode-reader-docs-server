@@ -12,7 +12,7 @@ permalink: /programming/cplusplus/index-v9.6.20.html
 
 ## User Guide
 
-- [Getting Started]({{site.cpp_api}}user-guide.html)
+- [Getting Started]({{site.cpp}}user-guide.html)
 - [Explore Features](user-guide/explore-features/index.md)
 - [Check Use Cases](user-guide/use-cases/index.md)
 
@@ -33,7 +33,7 @@ permalink: /programming/cplusplus/index-v9.6.20.html
 
 ## Upgrade Instructions
 
-- [How to upgrade to latest version](upgrade-instruction.md)
+- [How to upgrade to latest version]({{site.cpp}}upgrade-instruction.html)
 
 ## Online Store
 

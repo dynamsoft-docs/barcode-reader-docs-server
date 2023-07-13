@@ -157,7 +157,7 @@ permalink: /programming/python/api-reference/index-v8.2.0.html
 - [`TextResult`](class/TextResult.md)	
 - [`DMLTSConnectionParameters`](class/DMLTSConnectionParameters.md)
 - [`IntermediateResultCallBack`](class/IntermediateResultCallBack.md)
-- [`TextResultResultCallBack`](class/TextResultResultCallBack.md)
+- [`TextResultCallBack`](class/TextResultCallBack.md)
 - [`ErrorCallBack`](class/ErrorCallBack.md)
 		
 

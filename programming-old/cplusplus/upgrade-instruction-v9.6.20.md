@@ -1,14 +1,14 @@
 ---
 layout: default-layout
 title: Upgrade Instruction - Dynamsoft Barcode Reader SDK C++ Edition
-description: This page shows how to upgrade to latest version.
+description: This page shows how to upgrade to version 9.x.
 keywords: Upgrade, how-to guides
 needAutoGenerateSidebar: false
-permalink: /programming/cplusplus/upgrade-instruction.html
+permalink: /programming/cplusplus/upgrade-instruction-v9.6.20.html
 ---
 
 
-# How to Upgrade to Latest Version     
+# How to Upgrade to Version 9.x  
 
 ## From version 8.x
 
