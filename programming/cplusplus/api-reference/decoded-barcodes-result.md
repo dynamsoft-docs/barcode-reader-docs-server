@@ -83,7 +83,7 @@ virtual const CBarcodeResultItem* GetItem(int index) const = 0;
 
 **Return value**
 
-Returns a pointer to the CDecodedBarcodesResult object at the specified index.
+Returns a pointer to the CBarcodeResultItem object at the specified index.
 
 ### HasItem
 
