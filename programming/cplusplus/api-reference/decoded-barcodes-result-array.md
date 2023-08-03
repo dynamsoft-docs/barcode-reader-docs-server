@@ -53,3 +53,7 @@ virtual const CDecodedBarcodesResult* GetResult(int index) const = 0;
 **Return value**
 
 Returns a pointer to the CDecodedBarcodesResult object at the specified index.
+
+**See Also**
+
+[CDecodedBarcodesResult]({{ site.cpp_api }}decoded-barcodes-result.html)

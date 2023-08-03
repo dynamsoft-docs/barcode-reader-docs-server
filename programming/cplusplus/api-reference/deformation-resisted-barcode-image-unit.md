@@ -15,6 +15,8 @@ The `CDeformationResistedBarcodeImageUnit` class represents a unit that contains
 
 *Assembly:* DynamsoftBarcodeReader
 
+*Inheritance:* [CIntermediateResultUnit]({{ site.dcv_cpp_api }}core/intermediate-results/intermediate-result-unit.html) -> CDeformationResistedBarcodeImageUnit
+
 ```cpp
 class CDeformationResistedBarcodeImageUnit: public CIntermediateResultUnit
 ```
@@ -37,3 +39,7 @@ virtual const CImageData* GetImageData() const = 0;
 **Return value**
 
 Returns a pointer to the deformation resisted barcode image data.
+
+**See Also**
+
+[CImageData]({{ site.dcv_cpp_api }}core/basic-structures/image-data.html)

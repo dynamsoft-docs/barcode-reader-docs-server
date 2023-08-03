@@ -15,6 +15,8 @@ The `CExtendedBarcodeResult` class represents an extended barcode result in a de
 
 *Assembly:* DynamsoftBarcodeReader
 
+*Inheritance:* [CDecodedBarcodeElement]({{ site.cpp_api }}decoded-barcode-element.html) -> CExtendedBarcodeResult
+
 ```cpp
 class CExtendedBarcodeResult : public CDecodedBarcodeElement
 ```
@@ -39,6 +41,10 @@ virtual ExtendedBarcodeResultType GetExtendedBarcodeResultType() const = 0;
 **Return value**
 
 Returns the type of the extended barcode result.
+
+**See Also**
+
+[Enumeration ExtendedBarcodeResultType]({{ site.dcv_enumerations }}barcode-reader/extended-barcode-result-type.html?src=cpp&&lang=cpp)
 
 ### GetDeformation
 
@@ -75,3 +81,7 @@ virtual const CImageData* GetSamplingImage() const = 0;
 **Return value**
 
 Returns a pointer to the sampling image of the barcode.
+
+**See Also**
+
+[CImageData]({{ site.dcv_cpp_api }}core/basic-structures/image-data.html)

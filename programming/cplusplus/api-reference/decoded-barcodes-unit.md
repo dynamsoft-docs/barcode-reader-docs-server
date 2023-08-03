@@ -15,6 +15,8 @@ The `CDecodedBarcodesUnit` class represents a unit that contains decoded barcode
 
 *Assembly:* DynamsoftBarcodeReader
 
+*Inheritance:* [CIntermediateResultUnit]({{ site.dcv_cpp_api }}core/intermediate-results/intermediate-result-unit.html) -> CDecodedBarcodesUnit
+
 ```cpp
 class CDecodedBarcodesUnit: public CIntermediateResultUnit
 ```
@@ -55,3 +57,7 @@ virtual const CDecodedBarcodeElement* GetDecodedBarcode(int index) const = 0;
 **Return value**
 
 Returns a pointer to the CDecodedBarcodeElement object at the specified index.
+
+**See Also**
+
+[CDecodedBarcodeElement]({{ site.cpp_api }}decoded-barcode-element.html)
