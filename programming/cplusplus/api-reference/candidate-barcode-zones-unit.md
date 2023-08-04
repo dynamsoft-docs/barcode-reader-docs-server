@@ -15,6 +15,8 @@ The `CCandidateBarcodeZonesUnit` class represents a unit that contains candidate
 
 *Assembly:* DynamsoftBarcodeReader
 
+*Inheritance:* [CIntermediateResultUnit]({{ site.dcv_cpp_api }}core/intermediate-results/intermediate-result-unit.html) -> CCandidateBarcodeZonesUnit
+
 ```cpp
 class CCandidateBarcodeZonesUnit: public CIntermediateResultUnit
 ```
@@ -54,3 +56,7 @@ virtual int GetCandidateBarcodeZone(int index, CQuadrilateral *quad) const = 0;
 **Return value**
 
 Returns 0 if successful, otherwise returns a negative value.
+
+**See Also**
+
+[CQuadrilateral]({{ site.dcv_cpp_api }}core/basic-structures/quadrilateral.html)

@@ -15,6 +15,8 @@ The `COneDCodeDetails` class represents detailed information about a one-dimensi
 
 *Assembly:* DynamsoftBarcodeReader
 
+*Inheritance:* [CBarcodeDetails]({{ site.cpp_api }}barcode-details.html) -> COneDCodeDetails
+
 ```cpp
 class COneDCodeDetails : public CBarcodeDetails
 ```

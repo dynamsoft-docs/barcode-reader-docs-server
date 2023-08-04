@@ -15,6 +15,8 @@ The `CQRCodeDetails` class represents the details of a QR Code. It is derived fr
 
 *Assembly:* DynamsoftBarcodeReader
 
+*Inheritance:* [CBarcodeDetails]({{ site.cpp_api }}barcode-details.html) -> CQRCodeDetails
+
 ```cpp
 class CQRCodeDetails : public CBarcodeDetails
 ```
@@ -56,6 +58,10 @@ The error correction level of the QR Code.
 ```cpp
 QRCodeErrorCorrectionLevel errorCorrectionLevel
 ```
+
+**See Also**
+
+[Enumeration QRCodeErrorCorrectionLevel]({{ site.dcv_enumerations }}barcode-reader/qr-code-error-correction-level.html?src=cpp&&lang=cpp)
 
 ### version
 

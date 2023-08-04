@@ -15,6 +15,8 @@ The `CDecodedBarcodeElement` class represents a decoded barcode element. It inhe
 
 *Assembly:* DynamsoftBarcodeReader
 
+*Inheritance:* [CRegionObjectElement]({{ site.dcv_cpp_api }}core/intermediate-results/region-object-element.html) -> CDecodedBarcodeElement
+
 ```cpp
 class CDecodedBarcodeElement : public CRegionObjectElement
 ```
@@ -57,6 +59,10 @@ BarcodeFormat GetFormat()
 **Return value**
 
 Returns the format of the barcode.
+
+**See Also**
+
+[Enumeration BarcodeFormat]({{ site.dcv_enumerations }}barcode-reader/barcode-format.html?src=cpp&&lang=cpp)
 
 ### GetFormatString
 
@@ -117,6 +123,15 @@ virtual const CBarcodeDetails* GetDetails() const = 0;
 **Return value**
 
 Returns a pointer to the details of the decoded barcode.
+
+**See Also**
+
+- [CAztecDetails]({{ site.cpp_api }}aztec-details.html)
+- [CBarcodeDetails]({{ site.cpp_api }}barcode-details.html)
+- [CDataMatrixDetails]({{ site.cpp_api }}datamatrix-details.html)
+- [COneDCodeDetails]({{ site.cpp_api }}oned-code-details.html)
+- [CPDF417Details]({{ site.cpp_api }}pdf417-details.html)
+- [CQRCodeDetails]({{ site.cpp_api }}qr-code-details.html)
 
 ### IsDPM
 
@@ -205,3 +220,7 @@ virtual const CExtendedBarcodeResult* GetExtendedBarcodeResult(int index) const 
 **Return value**
 
 Returns a pointer to the extended barcode result at the specified index for the decoded barcode.
+
+**See Also**
+
+[CExtendedBarcodeResult]({{ site.cpp_api }}extended-barcode-result.html)

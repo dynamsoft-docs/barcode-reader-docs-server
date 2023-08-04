@@ -15,6 +15,8 @@ The `CPDF417Details` class represents a barcode in PDF417 format. It inherits fr
 
 *Assembly:* DynamsoftBarcodeReader
 
+*Inheritance:* [CBarcodeDetails]({{ site.cpp_api }}barcode-details.html) -> CPDF417Details
+
 ```cpp
 class CPDF417Details : public CBarcodeDetails
 ```

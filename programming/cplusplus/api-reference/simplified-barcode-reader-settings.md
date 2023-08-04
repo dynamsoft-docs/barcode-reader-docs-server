@@ -10,7 +10,7 @@ breadcrumbText: CVR C++ SimplifiedBarcodeReaderSettings Struct
 
 # SimplifiedBarcodeReaderSettings
 
-The `SimplifiedBarcodeReaderSettings` struct contains settings for barcode decoding. It is a sub-parameter of `SimplifiedCaptureVisionSettings`
+The `SimplifiedBarcodeReaderSettings` struct contains settings for barcode decoding. It is a sub-parameter of [`SimplifiedCaptureVisionSettings`]({{ site.dcv_cpp_api }}capture-vision-router/structs/simplified-capture-vision-settings.html)
 
 ## Definition
 

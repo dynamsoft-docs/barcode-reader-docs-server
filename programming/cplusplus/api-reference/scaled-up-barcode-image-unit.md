@@ -15,6 +15,8 @@ The `CScaledUpBarcodeImageUnit` class represents a unit that contains scaled up 
 
 *Assembly:* DynamsoftBarcodeReader
 
+*Inheritance:* [CIntermediateResultUnit]({{ site.dcv_cpp_api }}core/intermediate-results/intermediate-result-unit.html) -> CScaledUpBarcodeImageUnit
+
 ```cpp
 class CScaledUpBarcodeImageUnit: public CIntermediateResultUnit
 ```
@@ -37,3 +39,7 @@ virtual const CImageData* GetImageData() const = 0;
 **Return value**
 
 Returns a pointer to the scaled up image of the barcode.
+
+**See Also**
+
+[CImageData]({{ site.dcv_cpp_api }}core/basic-structures/image-data.html)

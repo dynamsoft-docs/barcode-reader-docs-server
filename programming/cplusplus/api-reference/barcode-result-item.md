@@ -16,6 +16,8 @@ The `CBarcodeResultItem` class represents a barcode result item decoded by barco
 
 *Assembly:* DynamsoftBarcodeReader
 
+*Inheritance:* [CCapturedResultItem]({{ site.dcv_cpp_api }}core/basic-structures/captured-result-item.html) -> CBarcodeResultItem
+
 ```cpp
 class CBarcodeResultItem : public CCapturedResultItem
 ```
@@ -50,6 +52,10 @@ virtual BarcodeFormat GetFormat() const = 0;
 **Return value**
 
 Returns the format of the decoded barcode result.
+
+**See Also**
+
+[Enumeration BarcodeFormat]({{ site.dcv_enumerations }}barcode-reader/barcode-format.html?src=cpp&&lang=cpp)
 
 ### GetFormatString
 
@@ -111,6 +117,10 @@ virtual CQuadrilateral GetLocation() const = 0;
 
 Returns the location of the decoded barcode in a quadrilateral.
 
+**See Also**
+
+[CQuadrilateral]({{ site.dcv_cpp_api }}core/basic-structures/quadrilateral.html)
+
 ### GetConfidence
 
 It is used to get the confidence of the decoded barcode result.
@@ -159,6 +169,15 @@ virtual const CBarcodeDetails* GetDetails() const = 0;
 
 Returns the details of the decoded barcode result.
 
+**See Also**
+
+- [CAztecDetails]({{ site.cpp_api }}aztec-details.html)
+- [CBarcodeDetails]({{ site.cpp_api }}barcode-details.html)
+- [CDataMatrixDetails]({{ site.cpp_api }}datamatrix-details.html)
+- [COneDCodeDetails]({{ site.cpp_api }}oned-code-details.html)
+- [CPDF417Details]({{ site.cpp_api }}pdf417-details.html)
+- [CQRCodeDetails]({{ site.cpp_api }}qr-code-details.html)
+
 ### IsDPM
 
 It is used to get whether the decoded barcode is a DPM code.
@@ -195,6 +214,4 @@ virtual void GetRotationTransformMatrix(double matrix[9]) const = 0;
 
 `[out] matrix` The rotation transform matrix of the decoded barcode.
 
-**Return value**
 
-None.

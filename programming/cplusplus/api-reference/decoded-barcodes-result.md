@@ -57,6 +57,10 @@ virtual const CImageTag* GetSourceImageTag() const = 0;
 
 Returns a pointer to a CImageTag object representing the tag of the source image.
 
+**See Also**
+
+[CImageTag]({{ site.dcv_cpp_api }}core/basic-structures/image-tag.html)
+
 ### GetCount
 
 Gets the number of decoded barcode items in the barcode reading result.
@@ -85,6 +89,10 @@ virtual const CBarcodeResultItem* GetItem(int index) const = 0;
 
 Returns a pointer to the CBarcodeResultItem object at the specified index.
 
+**See Also**
+
+[CBarcodeResultItem]({{ site.cpp_api }}barcode-result-item.html)
+
 ### HasItem
 
 Check if the barcode result item is present in the array.
@@ -101,6 +109,10 @@ bool HasItem(const CBarcodeResultItem* item) const
 
 Returns a bool value indicating whether the item is present in the array or not.
 
+**See Also**
+
+[CBarcodeResultItem]({{ site.cpp_api }}barcode-result-item.html)
+
 ### RemoveItem
 
 Remove a specific barcode result item from the result array.
@@ -116,6 +128,10 @@ int RemoveItem(const CBarcodeResultItem* item)
 **Return value**
 
 Return value indicating whether the deletion was successful or not.
+
+**See Also**
+
+[CBarcodeResultItem]({{ site.cpp_api }}barcode-result-item.html)
 
 ### GetRotationTransformMatrix
 
@@ -140,6 +156,10 @@ virtual int GetErrorCode() const = 0;
 **Return value**
 
 Returns the error code of the barcode reading result, or 0 if no error occurred.
+
+**See Also**
+
+[Enumeration ErrorCode]({{ site.dcv_enumerations }}core/error-code.html?src=cpp&&lang=cpp)
 
 ### GetErrorString
 

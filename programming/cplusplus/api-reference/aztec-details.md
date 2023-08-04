@@ -15,6 +15,8 @@ The `CAztecDetails` class represents a barcode in Aztec format. It inherits from
 
 *Assembly:* DynamsoftBarcodeReader
 
+*Inheritance:* [CBarcodeDetails]({{ site.cpp_api }}barcode-details.html) -> CAztecDetails
+
 ```cpp
 class CAztecDetails : public CBarcodeDetails
 ```

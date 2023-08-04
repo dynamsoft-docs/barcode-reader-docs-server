@@ -14,6 +14,8 @@ The `CComplementedBarcodeImageUnit` class represents a unit that contains comple
 
 *Assembly:* DynamsoftBarcodeReader
 
+*Inheritance:* [CIntermediateResultUnit]({{ site.dcv_cpp_api }}core/intermediate-results/intermediate-result-unit.html) -> CComplementedBarcodeImageUnit
+
 ```cpp
 class CComplementedBarcodeImageUnit: public CIntermediateResultUnit
 ```
@@ -37,6 +39,10 @@ virtual CQuadrilateral GetLocation() const = 0;
 
 Returns the location of the complemented barcode in a quadrilateral.
 
+**See Also**
+
+[CQuadrilateral]({{ site.dcv_cpp_api }}core/basic-structures/quadrilateral.html)
+
 ### GetImageData
 
 Gets the complemented barcode image data.
@@ -48,3 +54,7 @@ virtual const CImageData* GetImageData() const = 0;
 **Return value**
 
 Returns a pointer to the complemented image of the barcode.
+
+**See Also**
+
+[CImageData]({{ site.dcv_cpp_api }}core/basic-structures/image-data.html)

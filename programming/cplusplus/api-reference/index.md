@@ -72,7 +72,7 @@ permalink: /programming/cplusplus/api-reference/index.html
 - [`CComplementedBarcodeImageUnit`]({{ site.cpp_api }}complemented-barcode-image-unit.html)
 - [`CDeformationResistedBarcodeImageUnit`]({{ site.cpp_api }}deformation-resisted-barcode-image-unit.html)
 - [`CLocalizedBarcodesUnit`]({{ site.cpp_api }}localized-barcodes-unit.html)
-- [`CLocalizedBarcodesElement`]({{ site.cpp_api }}localized-barcode-element.html)
+- [`CLocalizedBarcodeElement`]({{ site.cpp_api }}localized-barcode-element.html)
 - [`CDecodedBarcodesUnit`]({{ site.cpp_api }}decoded-barcodes-unit.html)
 - [`CDecodedBarcodeElement`]({{ site.cpp_api }}decoded-barcode-element.html)
 - [`CExtendedBarcodeResult`]({{ site.cpp_api }}extended-barcode-result.html)
