@@ -109,7 +109,7 @@ Let's start by creating a console application which demonstrates how to use the 
     if (result->GetErrorCode() != 0) {
         cout << "Error: " << result->GetErrorCode() << "," << result->GetErrorString() << endl;
     }
-    int capturedResultItemCount = result->GetItemsCount();
+    int capturedResultItemCount = result->GetCount();
     cout << "Decoded " << capturedResultItemCount << " barcodes" << endl;
     
     for (int j = 0; j < capturedResultItemCount; j++) 
@@ -220,7 +220,7 @@ The class `CDirectoryFetcher` is capable of converting a local directory to an i
             }
             else
             {
-                int count = pResult->GetItemsCount();
+                int count = pResult->GetCount();
                 cout << "Decoded " << count << " barcodes" << endl;
                 for (int i = 0; i < count; i++) {
                     const CBarcodeResultItem* barcodeResultItem = pResult->GetItem(i);                   

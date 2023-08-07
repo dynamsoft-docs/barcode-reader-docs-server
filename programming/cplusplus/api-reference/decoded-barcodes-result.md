@@ -2,7 +2,7 @@
 layout: default-layout
 title: CDecodedBarcodesResult Class
 description: This page shows CDecodedBarcodesResult class definition of Dynamsoft Barcode Reader SDK C++ Edition.
-keywords: GetSourceImageHashId, GetCount, GetErrorCode, CDecodedBarcodesResult, api reference
+keywords: GetOriginalImageHashId, GetItemsCount, GetErrorCode, CDecodedBarcodesResult, api reference
 permalink: /programming/cplusplus/api-reference/decoded-barcodes-result.html
 ---
 # CDecodedBarcodesResult Class
@@ -23,9 +23,9 @@ class CDecodedBarcodesResult
 
 | Method               | Description |
 |----------------------|-------------|
-| [`GetSourceImageHashId`](#getsourceimagehashid) | Gets the hash ID of the source image. |
-| [`GetSourceImageTag`](#getsourceimagetag) | Gets the tag of the source image. |
-| [`GetCount`](#getcount) | Gets the number of barcode result items in the barcode reading result. |
+| [`GetOriginalImageHashId`](#getoriginalimagehashid) | Gets the hash ID of the source image. |
+| [`GetOriginalImageTag`](#getoriginalimagetag) | Gets the tag of the source image. |
+| [`GetItemsCount`](#getitemscount) | Gets the number of barcode result items in the barcode reading result. |
 | [`GetItem`](#getitem) | Gets the barcode result item at the specified index. |
 | [`HasItem`](#hasitem) | Check if the barcode result item is present in the array.|
 | [`RemoveItem`](#removeitem) | Remove a specific barcode result item from the result array.|
@@ -33,24 +33,24 @@ class CDecodedBarcodesResult
 | [`GetErrorCode`](#geterrorcode) | Gets the error code of the barcode reading result, if an error occurred. |
 | [`GetErrorString`](#geterrorstring) | Gets the error message of the barcode reading result, if an error occurred. |
 
-### GetSourceImageHashId
+### GetOriginalImageHashId
 
 Gets the hash ID of the source image.
 
 ```cpp
-virtual const char* GetSourceImageHashId() const = 0;
+virtual const char* GetOriginalImageHashId() const = 0;
 ```
 
 **Return value**
 
 Returns a pointer to a null-terminated string containing the hash ID of the source image.
 
-### GetSourceImageTag
+### GetOriginalImageTag
 
 Gets the tag of the source image.
 
 ```cpp
-virtual const CImageTag* GetSourceImageTag() const = 0;
+virtual const CImageTag* GetOriginalImageTag() const = 0;
 ```
 
 **Return value**
@@ -61,12 +61,12 @@ Returns a pointer to a CImageTag object representing the tag of the source image
 
 [CImageTag]({{ site.dcv_cpp_api }}core/basic-structures/image-tag.html)
 
-### GetCount
+### GetItemsCount
 
 Gets the number of decoded barcode items in the barcode reading result.
 
 ```cpp
-virtual int GetCount() const = 0;
+virtual int GetItemsCount() const = 0;
 ```
 
 **Return value**

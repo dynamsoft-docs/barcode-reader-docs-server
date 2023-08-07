@@ -3,6 +3,7 @@ tree_file_list:
   - sidelist-programming/programming-python.html
   - sidelist-programming/programming-python-v8.9.3.html
   - sidelist-programming/programming-python-v8.4.0.html
+  - sidelist-programming/programming-python-v9.4.0.html
   - sidelist-programming/programming-java.html
   - sidelist-programming/programming-java-v8.9.3.html
   - sidelist-programming/programming-java-v8.4.0.html
@@ -13,6 +14,7 @@ tree_file_list:
   - sidelist-programming/programming-cpp-v8.9.3.html
   - sidelist-programming/programming-cpp-v8.4.0.html
   - sidelist-programming/programming-cpp-v9.6.20.html
+  - sidelist-programming/programming-cpp-v10.0.0.html
   - sidelist-programming/programming-c.html
   - sidelist-programming/programming-c-v8.9.3.html
   - sidelist-programming/programming-c-v8.4.0.html
