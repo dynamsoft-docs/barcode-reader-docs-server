@@ -13,10 +13,10 @@ permalink: /programming/cplusplus/release-notes/cpp-10.html
 
 ### New
 
-* Added a new class CVector4 in the core module.
+* Added a new class `CVector4` in the core module.
 * Added new methods `SetTransformMatrix` and `GetTransformMatrix` to the class `CIntermediateResultUnit`. Enumeration `TransformMatrixType` is also added to support users specifying the type of the target matrix.
 * Added `CRIT_NORMALIZED_IMAGE` to the available result types of result cross-verification.
-* Added method `GetContours` to the `CContourUnit` class to get all the `CContour` objects contained in the unit and their hierarchies.
+* Added method `GetContours` to the class `CContourUnit` to get all the `CContour` objects contained in the unit and their hierarchies.
 
 ### Improved
 
@@ -24,7 +24,7 @@ permalink: /programming/cplusplus/release-notes/cpp-10.html
   
 ### Fixed
 
-* Fixed a bug where the local license is not successfully updated when initialing the license again.
+* Fixed a bug where the local license is not successfully updated in some cases.
 * Fixed crash bugs that happen in rare cases.
 * Other small fixes and tweaks.
 
@@ -48,7 +48,7 @@ permalink: /programming/cplusplus/release-notes/cpp-10.html
 * Renamed the class `CRawImageResultItem` to `COriginalImageResultItem`.
 * Renamed an enumeration member of `CapturedResultItemType` from `CRIT_RAW_IMAGE` to `CRIT_ORIGINAL_IMAGE`.
 * Renamed an enumeration member of `BufferOverflowProtectionMode` from `BOPM_APPEND` to `BOPM_UPDATE`.
-* Renamed the following methods of `CMultiFrameResultCrossFilter`:
+* Renamed the following methods of class `CMultiFrameResultCrossFilter`:
   * from `EnableResultVerification` to `EnableResultCrossVerification`.
   * from `isResultVerificationEnable` to `isResultCrossVerificationEnabled`.
   * from `EnableDuplicateFilter ` to `EnableResultDeduplication`.
@@ -58,9 +58,9 @@ permalink: /programming/cplusplus/release-notes/cpp-10.html
 
 ### Removed
 
-* Removed `SetLocalToSourceImageTransformMatrix` and `GetLocalToSourceImageTransformMatrix` methods from `CIntermediateResultUnit` class.
-* Removed `Set/GetRotationTransformMatrix` methods from `CIntermediateResultUnit` class.
-* Removed methods `GetCount` and `GetContour` from CContourUnit class. Use the method `GetContours` instead.
+* Removed methods `SetLocalToSourceImageTransformMatrix` and `GetLocalToSourceImageTransformMatrix` from class `CIntermediateResultUnit`.
+* Removed methods `SetRotationTransformMatrix` and `GetRotationTransformMatrix` from class `CIntermediateResultUnit`.
+* Removed methods `GetCount` and `GetContour` from class `CContourUnit`. Use the method `GetContours` instead.
 
 ## 10.0.0 (07/04/2023)
 
