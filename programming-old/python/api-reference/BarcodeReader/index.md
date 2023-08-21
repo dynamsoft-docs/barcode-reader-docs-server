@@ -29,6 +29,7 @@ permalink: /programming/python/api-reference/BarcodeReader/index.html
   | [`set_device_friendly_name`](license.md#set_device_friendly_name) | Sets a human-readable name that identifies the device. |
   | [`set_license_cache_path`](license.md#set_license_cache_path) | Sets a directory path for saving the license cache. |
   | [`set_max_concurrent_instance_count`](license.md#set_max_concurrent_instance_count) | Sets the max concurrent instance count used for current device and process. |
+  | [`get_instance_pool_status`](license.md#get_instance_pool_status) | Gets a class to represent the status of an instance pool. |
   | [`get_idle_instances_count`](license.md#get_idle_instances_count) | `Deprecated` |
   | [`init_license_from_server`](license.md#init_license_from_server) | `Deprecated` |
   | [`init_license_from_license_content`](license.md#init_license_from_license_content) | `Deprecated` |

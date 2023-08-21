@@ -89,19 +89,11 @@ Let's start by creating a console application which demonstrates how to use the 
 2. Create an instance of Dynamsoft Barcode Reader.
 
     ```c
-    void* dbr = DBR_CreateInstance();
-    ```
-
-    *However, please note that if you are using a **concurrent instance license**, please use the new APIs [`DBR_GetInstance`](api-reference/methods/initialize-and-destroy.md#dbr_getinstance) to initialize the barcode reader instance and then [`DBR_RecycleInstance`](api-reference/methods/initialize-and-destroy.md#dbr_recycleinstance) to allow for better concurrent instance management by the library.*
-
-    ```c
     void* dbr = DBR_GetInstance();
-    // If no instance is available right away, the application will wait until one becomes available
     if(dbr != NULL)
     {
         // Add your code here to call decoding method, process barcode results and so on
         // ...
-        // Recycle the instance to make it idle for other concurrent tasks
         DBR_RecycleInstance(dbr);
     }
     ```
@@ -168,13 +160,6 @@ Let's start by creating a console application which demonstrates how to use the 
     ```
 
 1. Release the allocated memory for the instance.
-
-    ```c
-    if(dbr != NULL)           
-        DBR_DestroyInstance(dbr);
-    ```
-
-    *However, please note that if you are using a **concurrent instance license**, please use the new APIs [`DBR_RecycleInstance`](api-reference/methods/initialize-and-destroy.md#dbr_recycleinstance) to allow for better concurrent instance management by the library.*
 
     ```c
     if(dbr != NULL)           

@@ -21,6 +21,7 @@ permalink: /programming/java/api-reference/class/index.html
 - [`FrameDecodingParameters`](FrameDecodingParameters.md)
 - [`FurtherModes`](FurtherModes.md)
 - [`ImageData`](ImageData.md)	 
+- [`InstancePoolStatus`](InstancePoolStatus.md)
 - [`IntermediateResult`](IntermediateResult.md)	
 - [`LineSegment`](LineSegment.md)	 
 - [`LocalizationResult`](LocalizationResult.md)	

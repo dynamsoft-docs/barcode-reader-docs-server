@@ -10,7 +10,7 @@ permalink: /programming/dotnet/api-reference/class/LineSegment-v7.6.0.html
 # LineSegment
 Stores line segment data.
 
-```C#
+```csharp
 public class LineSegment
 ```  
 
@@ -25,14 +25,14 @@ public class LineSegment
 ### StartPoint
 The start point of the line segment.   
 
-```C#
+```csharp
 Point Dynamsoft.Barcode.LineSegment.StartPoint
 ```
 
 ### EndPoint
 The end point of the line segment.
 
-```C#
+```csharp
 Point Dynamsoft.Barcode.LineSegment.EndPoint
 ```
 
@@ -43,6 +43,6 @@ The confidence coefficients for lines. There are 4 coefficients in this set:
 3. linesConfidenceCoefficients\[2\] is average negative amplitude;   
 4. linesConfidenceCoefficients\[3\] is max negative amplitude.
 
-```C#
+```csharp
 byte[] Dynamsoft.Barcode.LineSegment.LinesConfidenceCoefficients
 ```

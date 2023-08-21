@@ -30,6 +30,7 @@ permalink: /programming/c/api-reference/methods/index.html
   | [`DBR_SetDeviceFriendlyName`](license.md#dbr_setdevicefriendlyname) | Sets a human-readable name that identifies the device. |
   | [`DBR_SetLicenseCachePath`](license.md#dbr_setlicensecachepath) | Sets a directory path for saving the license cache. |
   | [`DBR_SetMaxConcurrentInstanceCount`](license.md#dbr_setmaxconcurrentinstancecount) | Sets the max concurrent instance count used for current device and process. |
+  | [`DBR_GetInstancePoolStatus`](license.md#dbr_getinstancepoolstatus) | Gets a struct to represent the status of an instance pool. |
   | [`DBR_GetIdleInstancesCount`](license.md#dbr_getidleinstancescount) | `Deprecated` |
   | [`DBR_InitLicenseFromServer`](license.md#dbr_initlicensefromserver) | `Deprecated` |
   | [`DBR_InitLicenseFromLicenseContent`](license.md#dbr_initlicensefromlicensecontent) | `Deprecated` |

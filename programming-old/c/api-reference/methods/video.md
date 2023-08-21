@@ -52,9 +52,13 @@ Returns error code. Possible return(s): DBR_OK; DBRERR_FRAME_DECODING_THREAD_EXI
 ```c
 char errorBuf[512];
 DBR_InitLicense("YOUR-LICENSE-KEY", errorBuf, 512);
-void* barcodeReader = DBR_CreateInstance();
-int errorCode = DBR_StartFrameDecoding(barcodeReader, 2, 10, 1024, 720, 720, IPF_BINARY, "");
-DBR_DestroyInstance(barcodeReader);
+void* barcodeReader = DBR_GetInstance();
+if(barcodeReader != NULL)
+{
+    int errorCode = DBR_StartFrameDecoding(barcodeReader, 2, 10, 1024, 720, 720, IPF_BINARY, "");
+    //... more process here
+    DBR_RecycleInstance(barcodeReader);
+}
 ```
 
 
@@ -83,26 +87,30 @@ Returns error code. Possible return(s): DBR_OK; DBRERR_FRAME_DECODING_THREAD_EXI
 ```c
 char errorBuf[512];
 DBR_InitLicense("YOUR-LICENSE-KEY", errorBuf, 512);
-void* barcodeReader = DBR_CreateInstance();
-FrameDecodingParameters parameters;
-int errorCode = DBR_InitFrameDecodingParameters(barcodeReader, &parameters);
-if(errorCode == DBR_OK)
+void* barcodeReader = DBR_GetInstance();
+if(barcodeReader != NULL)
 {
-    parameters.maxQueueLength = 3;
-    parameters.maxResultQueueLength = 10;
-    parameters.width = 20;
-    parameters.height = 30;
-    parameters.stride = 10;
-    parameters.imagePixelFormat = IPF_GRAYSCALED;
-    parameters.region.regionMeasuredByPercentage = 1;
-    parameters.region.regionTop = 0;
-    parameters.region.regionBottom = 100;
-    parameters.region.regionLeft = 0;
-    parameters.region.regionRight = 100;
-    parameters.threshold = 0.1;
-    parameters.fps = 0;
-    int errorCode = DBR_StartFrameDecodingEx(barcodeReader, parameters, "");
-    DBR_DestroyInstance(barcodeReader);
+    FrameDecodingParameters parameters;
+    int errorCode = DBR_InitFrameDecodingParameters(barcodeReader, &parameters);
+    if(errorCode == DBR_OK)
+    {
+        parameters.maxQueueLength = 3;
+        parameters.maxResultQueueLength = 10;
+        parameters.width = 20;
+        parameters.height = 30;
+        parameters.stride = 10;
+        parameters.imagePixelFormat = IPF_GRAYSCALED;
+        parameters.region.regionMeasuredByPercentage = 1;
+        parameters.region.regionTop = 0;
+        parameters.region.regionBottom = 100;
+        parameters.region.regionLeft = 0;
+        parameters.region.regionRight = 100;
+        parameters.threshold = 0.1;
+        parameters.fps = 0;
+        int errorCode = DBR_StartFrameDecodingEx(barcodeReader, parameters, "");
+        //... more process here
+        DBR_RecycleInstance(barcodeReader);
+    }
 }
 ```
 
@@ -129,9 +137,13 @@ Returns the ID of the appended frame.
 ```c
 char errorBuf[512];
 DBR_InitLicense("YOUR-LICENSE-KEY", errorBuf, 512);
-void* barcodeReader = DBR_CreateInstance();
-int frameId = DBR_AppendFrame(barcodeReader, pBufferBytes);
-DBR_DestroyInstance(barcodeReader);
+void* barcodeReader = DBR_GetInstance();
+if(barcodeReader != NULL)
+{
+    int frameId = DBR_AppendFrame(barcodeReader, pBufferBytes);
+    //... more process here
+    DBR_RecycleInstance(barcodeReader);
+}
 ```
 
 
@@ -162,9 +174,13 @@ Returns error code. Possible return(s): DBR_OK; DBRERR_STOP_DECODING_THREAD_FAIL
 ```c
 char errorBuf[512];
 DBR_InitLicense("YOUR-LICENSE-KEY", errorBuf, 512);
-void* barcodeReader = DBR_CreateInstance();
-int errorCode = DBR_StopFrameDecoding(barcodeReader);
-DBR_DestroyInstance(barcodeReader);
+void* barcodeReader = DBR_GetInstance();
+if(barcodeReader != NULL)
+{
+    // call DBR_StartFrameDecodingEx and add more process here
+    int errorCode = DBR_StopFrameDecoding(barcodeReader);
+    DBR_RecycleInstance(barcodeReader);
+}
 ```
 
 
@@ -193,26 +209,30 @@ Returns error code. Possible return(s): DBR_OK; DBRERR_NULL_POINTER.
 ```c
 char errorBuf[512];
 DBR_InitLicense("YOUR-LICENSE-KEY", errorBuf, 512);
-void* barcodeReader = DBR_CreateInstance();
-FrameDecodingParameters parameters;
-int errorCode = DBR_InitFrameDecodingParameters(barcodeReader, &parameters);
-if(errorCode == DBR_OK)
+void* barcodeReader = DBR_GetInstance();
+if(barcodeReader != NULL)
 {
-    parameters.maxQueueLength = 3;
-    parameters.maxResultQueueLength = 10;
-    parameters.width = 20;
-    parameters.height = 30;
-    parameters.stride = 10;
-    parameters.imagePixelFormat = IPF_GRAYSCALED;
-    parameters.region.regionMeasuredByPercentage = 1;
-    parameters.region.regionTop = 0;
-    parameters.region.regionBottom = 100;
-    parameters.region.regionLeft = 0;
-    parameters.region.regionRight = 100;
-    parameters.threshold = 0.1;
-    parameters.fps = 0;
+    FrameDecodingParameters parameters;
+    int errorCode = DBR_InitFrameDecodingParameters(barcodeReader, &parameters);
+    if(errorCode == DBR_OK)
+    {
+        parameters.maxQueueLength = 3;
+        parameters.maxResultQueueLength = 10;
+        parameters.width = 20;
+        parameters.height = 30;
+        parameters.stride = 10;
+        parameters.imagePixelFormat = IPF_GRAYSCALED;
+        parameters.region.regionMeasuredByPercentage = 1;
+        parameters.region.regionTop = 0;
+        parameters.region.regionBottom = 100;
+        parameters.region.regionLeft = 0;
+        parameters.region.regionRight = 100;
+        parameters.threshold = 0.1;
+        parameters.fps = 0;
+    }
+    //... more process here
+    DBR_RecycleInstance(barcodeReader);
 }
-DBR_DestroyInstance(barcodeReader);
 ```
 
 
@@ -246,9 +266,14 @@ void ErrorFunction(int frameId, int errorCode, void * pUser)
 }
 char errorBuf[512];
 DBR_InitLicense("YOUR-LICENSE-KEY", errorBuf, 512);
-void* barcodeReader = DBR_CreateInstance();
-DBR_SetErrorCallback(barcodeReader, ErrorFunction, NULL);
-DBR_StartFrameDecoding(barcodeReader, 2, 10, 1024, 720, 720, IPF_BINARY, "");
+void* barcodeReader = DBR_GetInstance();
+if(barcodeReader != NULL)
+{
+    DBR_SetErrorCallback(barcodeReader, ErrorFunction, NULL);
+    DBR_StartFrameDecoding(barcodeReader, 2, 10, 1024, 720, 720, IPF_BINARY, "");
+    //... more process here
+    DBR_RecycleInstance(barcodeReader);
+}
 ```
 
 
@@ -280,9 +305,14 @@ void TextResultFunction(int frameId, TextResultArray *pResults, void * pUser)
 }
 char errorBuf[512];
 DBR_InitLicense("YOUR-LICENSE-KEY", errorBuf, 512);
-void* barcodeReader = DBR_CreateInstance();
-DBR_SetTextResultCallback(barcodeReader, TextResultFunction, NULL);
-DBR_StartFrameDecoding(barcodeReader, 2, 10, 1024, 720, 720, IPF_BINARY, "");
+void* barcodeReader = DBR_GetInstance();
+if(barcodeReader != NULL)
+{
+    DBR_SetTextResultCallback(barcodeReader, TextResultFunction, NULL);
+    DBR_StartFrameDecoding(barcodeReader, 2, 10, 1024, 720, 720, IPF_BINARY, "");
+    //... more process here
+    DBR_RecycleInstance(barcodeReader);
+}
 ```
 
 ## DBR_SetUniqueBarcodeCallback
@@ -310,9 +340,14 @@ void TextResultFunction(int frameId, TextResultArray *pResults, void * pUser)
 }
 char errorBuf[512];
 DBR_InitLicense("YOUR-LICENSE-KEY", errorBuf, 512);
-void* barcodeReader = DBR_CreateInstance();
-DBR_SetUniqueBarcodeCallback(barcodeReader, TextResultFunction, NULL);
-DBR_StartFrameDecoding(barcodeReader, 2, 10, 1024, 720, 720, IPF_BINARY, "");
+void* barcodeReader = DBR_GetInstance();
+if(barcodeReader != NULL)
+{
+    DBR_SetUniqueBarcodeCallback(barcodeReader, TextResultFunction, NULL);
+    DBR_StartFrameDecoding(barcodeReader, 2, 10, 1024, 720, 720, IPF_BINARY, "");
+    //... more process here
+    DBR_RecycleInstance(barcodeReader);
+}
 ```
 
 
@@ -344,14 +379,19 @@ void IntermediateResultFunction(int frameId, IntermediateResultArray *pResults, 
 }
 char errorBuf[512];
 DBR_InitLicense("YOUR-LICENSE-KEY", errorBuf, 512);
-void* barcodeReader = DBR_CreateInstance();
-PublicRuntimeSettings settings;
-int errorCode = DBR_GetRuntimeSettings(barcodeReader, &settings);
-settings.intermediateResultTypes = IRT_ORIGINAL_IMAGE | IRT_COLOUR_CLUSTERED_IMAGE | IRT_COLOUR_CONVERTED_GRAYSCALE_IMAGE;
-char errorMessage[256];
-DBR_UpdateRuntimeSettings(barcodeReader, &settings, errorMessage, 256);
-DBR_SetIntermediateResultCallback(barcodeReader, IntermediateResultFunction, NULL);
-DBR_StartFrameDecoding(barcodeReader, 2, 10, 1024, 720, 720, IPF_BINARY, "");
+void* barcodeReader = DBR_GetInstance();
+if(barcodeReader != NULL)
+{
+    PublicRuntimeSettings settings;
+    int errorCode = DBR_GetRuntimeSettings(barcodeReader, &settings);
+    settings.intermediateResultTypes = IRT_ORIGINAL_IMAGE | IRT_COLOUR_CLUSTERED_IMAGE | IRT_COLOUR_CONVERTED_GRAYSCALE_IMAGE;
+    char errorMessage[256];
+    DBR_UpdateRuntimeSettings(barcodeReader, &settings, errorMessage, 256);
+    DBR_SetIntermediateResultCallback(barcodeReader, IntermediateResultFunction, NULL);
+    DBR_StartFrameDecoding(barcodeReader, 2, 10, 1024, 720, 720, IPF_BINARY, "");
+    //... more process here
+    DBR_RecycleInstance(barcodeReader);
+}
 ```
 
 
@@ -378,9 +418,13 @@ Returns the length of the inner frame queue.
 ```c
 char errorBuf[512];
 DBR_InitLicense("YOUR-LICENSE-KEY", errorBuf, 512);
-void* barcodeReader = DBR_CreateInstance();
-int frameLength = DBR_GetLengthOfFrameQueue(barcodeReader);
-DBR_DestroyInstance(barcodeReader);
+void* barcodeReader = DBR_GetInstance();
+if(barcodeReader != NULL)
+{
+    int frameLength = DBR_GetLengthOfFrameQueue(barcodeReader);
+    //... more process here
+    DBR_RecycleInstance(barcodeReader);
+}
 ```
 
 

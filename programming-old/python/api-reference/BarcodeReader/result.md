@@ -35,43 +35,43 @@ license_key = 'YOUR-LICENSE-KEY'
 image_file = r'C:\Program Files (x86)\Dynamsoft\{Version number}\Images\AllSupportedBarcodeTypes.tif'
 
 BarcodeReader.init_license(license_key)
-reader = BarcodeReader()
-
-sts = reader.get_runtime_settings()
-sts.intermediate_result_saving_mode = EnumIntermediateResultSavingMode.IRSM_MEMORY
-sts.intermediate_result_types = EnumIntermediateResultType.IRT_BINARIZED_IMAGE
-reader.update_runtime_settings(sts)
-
-try:
-    text_results = reader.decode_file(image_file)
-    if text_results != None:
-        for text_result in text_results:
-            print("Barcode Format :")
-            print(text_result.barcode_format_string)
-            print("Barcode Text :")
-            print(text_result.barcode_text)
-            print("Localization Points : ")
-            print(text_result.localization_result.localization_points)
-            print("-------------")
-except BarcodeReaderError as bre:
-    print(bre)
-
-try: 
-    intermediateResults = reader.get_all_intermediate_results()
-    if intermediateResults != None:
-        for intermediateResult in intermediateResults:
-            if intermediateResult.data_type == EnumIMResultDataType.IMRDT_IMAGE
-                # deal with the image
-            else if intermediateResult.data_type == EnumIMResultDataType.IMRDT_LOCALIZATIONRESULT
-                # analyze the localization result
-            else if intermediateResult.data_type == EnumIMResultDataType.IMRDT_LINESEGMENT
-                # obtain the line segment info for each line
-            else if intermediateResult.data_type == EnumIMResultDataType.IMRDT_CONTOUR
-                # analyze the contour data
-            else if intermediateResult.data_type == EnumIMResultDataType.IMRDT_REGIONOFINTEREST
-                # obtain the whole region of interest
-            else
-                # Quadrilateral data
-except BarcodeReaderError as bre:
-    print(bre)
+reader = BarcodeReader.get_instance()
+if reader != None:
+    sts = reader.get_runtime_settings()
+    sts.intermediate_result_saving_mode = EnumIntermediateResultSavingMode.IRSM_MEMORY
+    sts.intermediate_result_types = EnumIntermediateResultType.IRT_BINARIZED_IMAGE
+    reader.update_runtime_settings(sts)
+    try:
+        text_results = reader.decode_file(image_file)
+        if text_results != None:
+            for text_result in text_results:
+                print("Barcode Format :")
+                print(text_result.barcode_format_string)
+                print("Barcode Text :")
+                print(text_result.barcode_text)
+                print("Localization Points : ")
+                print(text_result.localization_result.localization_points)
+                print("-------------")
+    except BarcodeReaderError as bre:
+        print(bre)
+    try: 
+        intermediateResults = reader.get_all_intermediate_results()
+        if intermediateResults != None:
+            for intermediateResult in intermediateResults:
+                if intermediateResult.data_type == EnumIMResultDataType.IMRDT_IMAGE
+                    # deal with the image
+                else if intermediateResult.data_type == EnumIMResultDataType.IMRDT_LOCALIZATIONRESULT
+                    # analyze the localization result
+                else if intermediateResult.data_type == EnumIMResultDataType.IMRDT_LINESEGMENT
+                    # obtain the line segment info for each line
+                else if intermediateResult.data_type == EnumIMResultDataType.IMRDT_CONTOUR
+                    # analyze the contour data
+                else if intermediateResult.data_type == EnumIMResultDataType.IMRDT_REGIONOFINTEREST
+                    # obtain the whole region of interest
+                else
+                    # Quadrilateral data
+        # add further process
+    except BarcodeReaderError as e:
+        print(e)
+    reader.recycle_instance()
 ```             

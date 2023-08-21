@@ -28,6 +28,7 @@ permalink: /programming/dotnet/api-reference/BarcodeReader/index.html
   | [`SetDeviceFriendlyName`](license.md#setdevicefriendlyname) | Sets a human-readable name that identifies the device. |
   | [`SetLicenseCachePath`](license.md#setlicensecachepath) | Sets a directory path for saving the license cache. |
   | [`SetMaxConcurrentInstanceCount`](license.md#setmaxconcurrentinstancecount) | Sets the max concurrent instance count used for current device and process. |
+  | [`GetInstancePoolStatus`](license.md#getinstancepoolstatus) | Gets a class to represent the status of an instance pool. |
   | [`GetIdleInstancesCount`](license.md#getidleinstancescount) | `Deprecated` |
   | [`InitLicenseFromServer`](license.md#initlicensefromserver) | `Deprecated` |
   | [`InitLicenseFromLicenseContent`](license.md#initlicensefromlicensecontent) | `Deprecated` |

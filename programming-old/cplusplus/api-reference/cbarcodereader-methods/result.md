@@ -42,12 +42,16 @@ Returns error code (returns 0 if the function operates successfully).
 ```cpp
 char errorBuf[512];
 dynamsoft::dbr::CBarcodeReader::InitLicense("YOUR-LICENSE-KEY", errorBuf, 512);
-CBarcodeReader* reader = new CBarcodeReader();
-TextResultArray* pResults;
-int errorCode = reader->DecodeFile("C:\\Program Files (x86)\\Dynamsoft\\{Version number}\\Images\\AllSupportedBarcodeTypes.tif", "");
-reader->GetAllTextResults(&pResults);
-dynamsoft::dbr::CBarcodeReader::FreeTextResults(&pResults);
-delete reader;
+CBarcodeReader* reader = CBarcodeReader::GetInstance();
+if(reader != NULL)
+{
+    TextResultArray* pResults;
+    int errorCode = reader->DecodeFile("C:\\Program Files (x86)\\Dynamsoft\\{Version number}\\Images\\AllSupportedBarcodeTypes.tif", "");
+    reader->GetAllTextResults(&pResults);
+    dynamsoft::dbr::CBarcodeReader::FreeTextResults(&pResults);
+    // add further process
+    reader->Recycle();
+}
 ```
 
 
@@ -70,12 +74,16 @@ static void dynamsoft::dbr::CBarcodeReader::FreeTextResults (TextResultArray** p
 ```cpp
 char errorBuf[512];
 dynamsoft::dbr::CBarcodeReader::InitLicense("YOUR-LICENSE-KEY", errorBuf, 512);
-CBarcodeReader* reader = new CBarcodeReader();
-TextResultArray* pResults;
-int errorCode = reader->DecodeFile("C:\\Program Files (x86)\\Dynamsoft\\{Version number}\\Images\\AllSupportedBarcodeTypes.tif", "");
-reader->GetAllTextResults(&pResults);
-dynamsoft::dbr::CBarcodeReader::FreeTextResults(&pResults);
-delete reader;
+CBarcodeReader* reader = CBarcodeReader::GetInstance();
+if(reader != NULL)
+{
+	TextResultArray* pResults;
+	int errorCode = reader->DecodeFile("C:\\Program Files (x86)\\Dynamsoft\\{Version number}\\Images\\AllSupportedBarcodeTypes.tif", "");
+	reader->GetAllTextResults(&pResults);
+	dynamsoft::dbr::CBarcodeReader::FreeTextResults(&pResults);
+    // add further process
+    reader->Recycle();
+}
 ```
 
 
@@ -102,18 +110,22 @@ Returns error code (returns 0 if the function operates successfully).
 ```cpp
 char errorBuf[512];
 dynamsoft::dbr::CBarcodeReader::InitLicense("YOUR-LICENSE-KEY", errorBuf, 512);
-CBarcodeReader* reader = new CBarcodeReader();
-PublicRuntimeSettings* pSettings = new PublicRuntimeSettings;
-reader->GetRuntimeSettings(pSettings);
-pSettings->intermediateResultTypes = IRT_ORIGINAL_IMAGE | IRT_COLOUR_CLUSTERED_IMAGE | IRT_COLOUR_CONVERTED_GRAYSCALE_IMAGE;
-char errorMessage[256];
-reader->UpdateRuntimeSettings(pSettings, errorMessage, 256);
-reader->DecodeFile("C:\\Program Files (x86)\\Dynamsoft\\{Version number}\\Images\\AllSupportedBarcodeTypes.tif", "");
-IntermediateResultArray* pResults = NULL;
-reader->GetIntermediateResults(&pResults);
-dynamsoft::dbr::CBarcodeReader::FreeIntermediateResults(&pResults);
-delete pSettings;
-delete reader;
+CBarcodeReader* reader = CBarcodeReader::GetInstance();
+if(reader != NULL)
+{
+	PublicRuntimeSettings* pSettings = new PublicRuntimeSettings;
+	reader->GetRuntimeSettings(pSettings);
+	pSettings->intermediateResultTypes = IRT_ORIGINAL_IMAGE | IRT_COLOUR_CLUSTERED_IMAGE | IRT_COLOUR_CONVERTED_GRAYSCALE_IMAGE;
+	char errorMessage[256];
+	reader->UpdateRuntimeSettings(pSettings, errorMessage, 256);
+	reader->DecodeFile("C:\\Program Files (x86)\\Dynamsoft\\{Version number}\\Images\\AllSupportedBarcodeTypes.tif", "");
+	IntermediateResultArray* pResults = NULL;
+	reader->GetIntermediateResults(&pResults);
+	dynamsoft::dbr::CBarcodeReader::FreeIntermediateResults(&pResults);
+	delete pSettings;
+    // add further process
+    reader->Recycle();
+}
 ```
 
 
@@ -137,16 +149,20 @@ static void dynamsoft::dbr::CBarcodeReader::FreeIntermediateResults (Intermediat
 ```cpp
 char errorBuf[512];
 dynamsoft::dbr::CBarcodeReader::InitLicense("YOUR-LICENSE-KEY", errorBuf, 512);
-CBarcodeReader* reader = new CBarcodeReader();
-PublicRuntimeSettings* pSettings = new PublicRuntimeSettings;
-reader->GetRuntimeSettings(pSettings);
-pSettings->intermediateResultTypes = IRT_ORIGINAL_IMAGE | IRT_COLOUR_CLUSTERED_IMAGE | IRT_COLOUR_CONVERTED_GRAYSCALE_IMAGE;
-char errorMessage[256];
-reader->UpdateRuntimeSettings(pSettings, errorMessage, 256);
-reader->DecodeFile("C:\\Program Files (x86)\\Dynamsoft\\{Version number}\\Images\\AllSupportedBarcodeTypes.tif", "");
-IntermediateResultArray* pResults = NULL;
-reader->GetIntermediateResults(&pResults);
-dynamsoft::dbr::CBarcodeReader::FreeIntermediateResults(&pResults);
-delete pSettings;
-delete reader;
+CBarcodeReader* reader = CBarcodeReader::GetInstance();
+if(reader != NULL)
+{
+	PublicRuntimeSettings* pSettings = new PublicRuntimeSettings;
+	reader->GetRuntimeSettings(pSettings);
+	pSettings->intermediateResultTypes = IRT_ORIGINAL_IMAGE | IRT_COLOUR_CLUSTERED_IMAGE | IRT_COLOUR_CONVERTED_GRAYSCALE_IMAGE;
+	char errorMessage[256];
+	reader->UpdateRuntimeSettings(pSettings, errorMessage, 256);
+	reader->DecodeFile("C:\\Program Files (x86)\\Dynamsoft\\{Version number}\\Images\\AllSupportedBarcodeTypes.tif", "");
+	IntermediateResultArray* pResults = NULL;
+	reader->GetIntermediateResults(&pResults);
+	dynamsoft::dbr::CBarcodeReader::FreeIntermediateResults(&pResults);
+	delete pSettings;
+    // add further process
+    reader->Recycle();
+}
 ```

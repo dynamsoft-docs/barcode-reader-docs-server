@@ -21,8 +21,10 @@ permalink: /programming/python/upgrade-instruction.html
 - Update your code to set the license
     ```python
     BarcodeReader.init_license("YOUR-LICENSE-KEY");
-    reader = BarcodeReader()
-    # add further process
+    reader = BarcodeReader.get_instance()
+    if reader != None:
+        # add further process
+        reader.recycle_instance()
     ```
 
 >Note:
@@ -43,8 +45,10 @@ permalink: /programming/python/upgrade-instruction.html
 - Update your code to set the license
     ```python
     BarcodeReader.init_license("YOUR-LICENSE-KEY");
-    reader = BarcodeReader()
-    # add further process
+    reader = BarcodeReader.get_instance()
+    if reader != None:
+        # add further process
+        reader.recycle_instance()
     ```
 
 >Note:

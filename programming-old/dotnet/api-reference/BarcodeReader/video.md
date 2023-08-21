@@ -53,9 +53,13 @@ Returns error code.
 ```csharp
 string errorMsg;
 BarcodeReader.InitLicense("YOUR-LICENSE-KEY", out errorMsg);
-BarcodeReader reader = new BarcodeReader();
-EnumErrorCode error = reader.StartFrameDecoding(2, 10, 1024, 720, 720, EnumImagePixelFormat.IPF_BINARY, "");
-reader.Dispose();
+BarcodeReader reader = BarcodeReader.GetInstance();
+if (reader != null)
+{
+	EnumErrorCode error = reader.StartFrameDecoding(2, 10, 1024, 720, 720, EnumImagePixelFormat.IPF_BINARY, "");
+	//... add further process
+    reader.Recycle();
+}
 ```
 
 
@@ -81,23 +85,27 @@ Returns error code.
 ```csharp
 string errorMsg;
 BarcodeReader.InitLicense("YOUR-LICENSE-KEY", out errorMsg);
-BarcodeReader reader = new BarcodeReader();
-FrameDecodingParameters parameters = reader.InitFrameDecodingParameters();
-parameters.MaxQueueLength = 3;
-parameters.MaxResultQueueLength = 10;
-parameters.Width = 20;
-parameters.Height = 30;
-parameters.Stride = 10;
-parameters.ImagePixelFormat = EnumImagePixelFormat.IPF_GRAYSCALED;
-parameters.Region.RegionMeasuredByPercentage = 1;
-parameters.Region.RegionTop = 0;
-parameters.Region.RegionBottom = 100;
-parameters.Region.RegionLeft = 0;
-parameters.Region.RegionRight = 100;
-parameters.Threshold = 0.1;
-parameters.FPS = 0;
-EnumErrorCode error = reader.StartFrameDecodingEx(ref parameters, "");
-reader.Dispose();
+BarcodeReader reader = BarcodeReader.GetInstance();
+if (reader != null)
+{
+	FrameDecodingParameters parameters = reader.InitFrameDecodingParameters();
+	parameters.MaxQueueLength = 3;
+	parameters.MaxResultQueueLength = 10;
+	parameters.Width = 20;
+	parameters.Height = 30;
+	parameters.Stride = 10;
+	parameters.ImagePixelFormat = EnumImagePixelFormat.IPF_GRAYSCALED;
+	parameters.Region.RegionMeasuredByPercentage = 1;
+	parameters.Region.RegionTop = 0;
+	parameters.Region.RegionBottom = 100;
+	parameters.Region.RegionLeft = 0;
+	parameters.Region.RegionRight = 100;
+	parameters.Threshold = 0.1;
+	parameters.FPS = 0;
+	EnumErrorCode error = reader.StartFrameDecodingEx(ref parameters, "");
+	//... add further process
+    reader.Recycle();
+}
 
 ```
 
@@ -122,9 +130,13 @@ Returns the ID of the appended frame.
 ```csharp
 string errorMsg;
 BarcodeReader.InitLicense("YOUR-LICENSE-KEY", out errorMsg);
-BarcodeReader reader = new BarcodeReader();
-int ret = reader.AppendFrame(pBufferBytes);
-reader.Dispose();
+BarcodeReader reader = BarcodeReader.GetInstance();
+if (reader != null)
+{
+	int ret = reader.AppendFrame(pBufferBytes);
+	//... add further process
+    reader.Recycle();
+}
 ```
 
 
@@ -146,9 +158,14 @@ Returns error code.
 ```csharp
 string errorMsg;
 BarcodeReader.InitLicense("YOUR-LICENSE-KEY", out errorMsg);
-BarcodeReader reader = new BarcodeReader();
-EnumErrorCode err = reader.StopFrameDecoding();
-reader.Dispose();
+BarcodeReader reader = BarcodeReader.GetInstance();
+if (reader != null)
+{
+	//... add further process
+	EnumErrorCode err = reader.StopFrameDecoding();
+	//... add further process
+    reader.Recycle();
+}
 ```
 
  
@@ -191,10 +208,14 @@ Returns error code.
 ```csharp
 string errorMsg;
 BarcodeReader.InitLicense("YOUR-LICENSE-KEY", out errorMsg);
-BarcodeReader reader = new BarcodeReader();
-reader.SetErrorCallback(ErrorFunction, NULL);
-EnumErrorCode error = reader.StartFrameDecoding(2, 10, 1024, 720, 720, IPF_BINARY, "");
-reader.Dispose();
+BarcodeReader reader = BarcodeReader.GetInstance();
+if (reader != null)
+{
+	reader.SetErrorCallback(ErrorFunction, NULL);
+	EnumErrorCode error = reader.StartFrameDecoding(2, 10, 1024, 720, 720, IPF_BINARY, "");
+	//... add further process
+    reader.Recycle();
+}
 ```
 
 
@@ -220,14 +241,18 @@ Returns error code.
 ```csharp
 string errorMsg;
 BarcodeReader.InitLicense("YOUR-LICENSE-KEY", out errorMsg);
-BarcodeReader reader = new BarcodeReader();
-PublicRuntimeSettings settings = new PublicRuntimeSettings();
-settings = reader.GetRuntimeSettings();
-settings.IntermediateResultTypes = (int)(EnumIntermediateResultType.IRT_ORIGINAL_IMAGE | EnumIntermediateResultType.IRT_COLOUR_CLUSTERED_IMAGE | EnumIntermediateResultType.IRT_COLOUR_CONVERTED_GRAYSCALE_IMAGE);
-reader.UpdateRuntimeSettings(settings);
-reader.SetIntermediateResultCallback(IntermediateResultFunction, NULL);
-EnumErrorCode error = reader.StartFrameDecoding(2, 10, 1024, 720, 720, IPF_BINARY, "");
-reader.Dispose();
+BarcodeReader reader = BarcodeReader.GetInstance();
+if (reader != null)
+{
+	PublicRuntimeSettings settings = new PublicRuntimeSettings();
+	settings = reader.GetRuntimeSettings();
+	settings.IntermediateResultTypes = (int)(EnumIntermediateResultType.IRT_ORIGINAL_IMAGE | EnumIntermediateResultType.IRT_COLOUR_CLUSTERED_IMAGE | EnumIntermediateResultType.IRT_COLOUR_CONVERTED_GRAYSCALE_IMAGE);
+	reader.UpdateRuntimeSettings(settings);
+	reader.SetIntermediateResultCallback(IntermediateResultFunction, NULL);
+	EnumErrorCode error = reader.StartFrameDecoding(2, 10, 1024, 720, 720, IPF_BINARY, "");
+	//... add further process
+    reader.Recycle();
+}
 ```
 
 
@@ -253,10 +278,14 @@ Returns error code.
 ```csharp
 string errorMsg;
 BarcodeReader.InitLicense("YOUR-LICENSE-KEY", out errorMsg);
-BarcodeReader reader = new BarcodeReader();
-reader.SetTextResultCallback(TextResultFunction, NULL);
-EnumErrorCode error = reader.StartFrameDecoding(2, 10, 1024, 720, 720, IPF_BINARY, "");
-reader.Dispose();
+BarcodeReader reader = BarcodeReader.GetInstance();
+if (reader != null)
+{
+	reader.SetTextResultCallback(TextResultFunction, NULL);
+	EnumErrorCode error = reader.StartFrameDecoding(2, 10, 1024, 720, 720, IPF_BINARY, "");
+	//... add further process
+    reader.Recycle();
+}
 ```
 
 ## SetUniqueBarcodeCallback
@@ -281,10 +310,14 @@ Returns [EnumErrorCode.DBR_SUCCESS]({{ site.dotnet_enumerations }}error-code.htm
 ```csharp
 string errorMsg;
 BarcodeReader.InitLicense("YOUR-LICENSE-KEY", out errorMsg);
-BarcodeReader reader = new BarcodeReader();
-reader.SetUniqueBarcodeCallback(TextResultFunction, NULL);
-EnumErrorCode error = reader.StartFrameDecoding(2, 10, 1024, 720, 720, IPF_BINARY, "");
-reader.Dispose();
+BarcodeReader reader = BarcodeReader.GetInstance();
+if (reader != null)
+{
+	reader.SetUniqueBarcodeCallback(TextResultFunction, NULL);
+	EnumErrorCode error = reader.StartFrameDecoding(2, 10, 1024, 720, 720, IPF_BINARY, "");
+	//... add further process
+    reader.Recycle();
+}
 ```
 
 ## GetLengthOfFrameQueue

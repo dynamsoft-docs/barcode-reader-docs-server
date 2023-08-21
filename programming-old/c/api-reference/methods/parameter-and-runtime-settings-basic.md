@@ -48,14 +48,18 @@ Returns error code. Possible return(s): DBR_OK; DBRERR_SET_MODE_ARGUMENT_ERROR.
 ```c
 char errorBuf[512];
 DBR_InitLicense("YOUR-LICENSE-KEY", errorBuf, 512);
-void* barcodeReader = DBR_CreateInstance();
-PublicRuntimeSettings settings;
-DBR_GetRuntimeSettings(barcodeReader, &settings);
-settings.binarizationModes[0] = BM_LOCAL_BLOCK;
-char errorMessage[256];
-DBR_UpdateRuntimeSettings(barcodeReader, &settings, errorMessage, 256);
-DBR_SetModeArgument(barcodeReader, "BinarizationModes", 0, "EnableFillBinaryVacancy", "1", errorMessage, 256);
-DBR_DestroyInstance(barcodeReader);
+void* barcodeReader = DBR_GetInstance();
+if(barcodeReader != NULL)
+{
+    PublicRuntimeSettings settings;
+    DBR_GetRuntimeSettings(barcodeReader, &settings);
+    settings.binarizationModes[0] = BM_LOCAL_BLOCK;
+    char errorMessage[256];
+    DBR_UpdateRuntimeSettings(barcodeReader, &settings, errorMessage, 256);
+    DBR_SetModeArgument(barcodeReader, "BinarizationModes", 0, "EnableFillBinaryVacancy", "1", errorMessage, 256);
+    //... more process here
+    DBR_RecycleInstance(barcodeReader);
+}
 ```
 
 **Remarks**  
@@ -105,16 +109,20 @@ Returns error code. Possible return(s): DBR_OK; DBRERR_GET_MODE_ARGUMENT_ERROR.
 ```c
 char errorBuf[512];
 DBR_InitLicense("YOUR-LICENSE-KEY", errorBuf, 512);
-void* barcodeReader = DBR_CreateInstance();
-PublicRuntimeSettings settings;
-DBR_GetRuntimeSettings(barcodeReader, &settings);
-settings.binarizationModes[0] = BM_LOCAL_BLOCK;
-char errorMessage[256];
-char argumentValue[480];
-DBR_UpdateRuntimeSettings(barcodeReader, &settings, errorMessage, 256);
-DBR_SetModeArgument(barcodeReader, "BinarizationModes", 0, "EnableFillBinaryVacancy", "1", errorMessage, 256);
-DBR_GetModeArgument(barcodeReader, "BinarizationModes", 0, "EnableFillBinaryVacancy", argumentValue, 480, errorMessage, 256);
-DBR_DestroyInstance(barcodeReader);
+void* barcodeReader = DBR_GetInstance();
+if(barcodeReader != NULL)
+{
+	PublicRuntimeSettings settings;
+	DBR_GetRuntimeSettings(barcodeReader, &settings);
+	settings.binarizationModes[0] = BM_LOCAL_BLOCK;
+	char errorMessage[256];
+	char argumentValue[480];
+	DBR_UpdateRuntimeSettings(barcodeReader, &settings, errorMessage, 256);
+	DBR_SetModeArgument(barcodeReader, "BinarizationModes", 0, "EnableFillBinaryVacancy", "1", errorMessage, 256);
+	DBR_GetModeArgument(barcodeReader, "BinarizationModes", 0, "EnableFillBinaryVacancy", argumentValue, 480, errorMessage, 256);
+    //... more process here
+    DBR_RecycleInstance(barcodeReader);
+}
 ```
 
 **Remarks**  
@@ -156,10 +164,14 @@ Returns error code (returns 0 if the function operates successfully).
 ```c
 char errorBuf[512];
 DBR_InitLicense("YOUR-LICENSE-KEY", errorBuf, 512);
-void* barcodeReader = DBR_CreateInstance();
-PublicRuntimeSettings settings;
-int errorCode = DBR_GetRuntimeSettings(barcodeReader, &settings);
-DBR_DestroyInstance(barcodeReader);
+void* barcodeReader = DBR_GetInstance();
+if(barcodeReader != NULL)
+{
+	PublicRuntimeSettings settings;
+	int errorCode = DBR_GetRuntimeSettings(barcodeReader, &settings);
+    //... more process here
+    DBR_RecycleInstance(barcodeReader);
+}
 ```
 
 
@@ -189,13 +201,17 @@ Returns error code (returns 0 if the function operates successfully).
 ```c
 char errorBuf[512];
 DBR_InitLicense("YOUR-LICENSE-KEY", errorBuf, 512);
-void* barcodeReader = DBR_CreateInstance();
-PublicRuntimeSettings settings;
-int errorCode = DBR_GetRuntimeSettings(barcodeReader, &settings);
-settings.deblurLevel = 9;
-char errorMessage[256];
-DBR_UpdateRuntimeSettings(barcodeReader, &settings, errorMessage, 256);
-DBR_DestroyInstance(barcodeReader);
+void* barcodeReader = DBR_GetInstance();
+if(barcodeReader != NULL)
+{
+	PublicRuntimeSettings settings;
+	int errorCode = DBR_GetRuntimeSettings(barcodeReader, &settings);
+	settings.deblurLevel = 9;
+	char errorMessage[256];
+	DBR_UpdateRuntimeSettings(barcodeReader, &settings, errorMessage, 256);
+    //... more process here
+    DBR_RecycleInstance(barcodeReader);
+}
 ```
 
 
@@ -223,11 +239,15 @@ Returns error code (returns 0 if the function operates successfully).
 ```c
 char errorBuf[512];
 DBR_InitLicense("YOUR-LICENSE-KEY", errorBuf, 512);
-void* barcodeReader = DBR_CreateInstance();
+void* barcodeReader = DBR_GetInstance();
+if(barcodeReader != NULL)
+{
 PublicRuntimeSettings settings;
 int errorCode = DBR_GetRuntimeSettings(barcodeReader, &settings);
 settings.deblurLevel = 9;
 DBR_UpdateRuntimeSettings(barcodeReader, &settings);
 DBR_ResetRuntimeSettings(barcodeReader);
-DBR_DestroyInstance(barcodeReader);
+    //... more process here
+    DBR_RecycleInstance(barcodeReader);
+}
 ```

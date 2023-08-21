@@ -41,12 +41,13 @@ BarcodeReader.init_runtime_settings_with_file(json_file, conflict_mode=EnumConfl
 
 ```python
 from dbr import *
-reader = BarcodeReader()
-
-error = reader.init_runtime_settings_with_file(r"C:\Program Files (x86)\Dynamsoft\{Version number}\Templates\RuntimeSettings.json")
-
-if error[0] != 0:
-    print(error[1])
+reader = BarcodeReader.get_instance()
+if reader != None:
+    error = reader.init_runtime_settings_with_file(r"C:\Program Files (x86)\Dynamsoft\{Version number}\Templates\RuntimeSettings.json")
+    if error[0] != 0:
+        print(error[1])
+    # add further process
+    reader.recycle_instance()
 ```
 
 ## init_runtime_settings_with_string
@@ -70,12 +71,13 @@ BarcodeReader.init_runtime_settings_with_string(json_string, conflict_mode=EnumC
 
 ```python
 from dbr import *
-reader = BarcodeReader()
-
-error = reader.init_runtime_settings_with_string('{"Version":"3.0", "ImageParameter":{"Name":"IP1", "BarcodeFormatIds":["BF_QR_CODE"], "ExpectedBarcodesCount":10}}')
-
-if error[0] != 0:
-    print(error[1])
+reader = BarcodeReader.get_instance()
+if reader != None:
+    error = reader.init_runtime_settings_with_string('{"Version":"3.0", "ImageParameter":{"Name":"IP1", "BarcodeFormatIds":["BF_QR_CODE"], "ExpectedBarcodesCount":10}}')
+    if error[0] != 0:
+        print(error[1])
+    # add further process
+    reader.recycle_instance()
 ```
 
 ## append_template_file_to_runtime_settings
@@ -96,17 +98,16 @@ BarcodeReader.append_template_file_to_runtime_settings(json_file, conflict_mode)
 **Code Snippet**  
 ```python
 from dbr import *
-reader = BarcodeReader()
-
-error = reader.init_runtime_settings_with_file(r"C:\Program Files (x86)\Dynamsoft\{Version number}\Templates\RuntimeSettings.json")
-
-if error[0] != 0:
-    print(error[1])
-
-error = reader.append_template_file_to_runtime_settings(r"C:\Program Files (x86)\Dynamsoft\{Version number}\Templates\RuntimeSettings_2.json", EnumConflictMode.CM_OVERWRITE)
-
-if error[0] != 0:
-    print(error[1])
+reader = BarcodeReader.get_instance()
+if reader != None:
+    error = reader.init_runtime_settings_with_file(r"C:\Program Files (x86)\Dynamsoft\{Version number}\Templates\RuntimeSettings.json")
+    if error[0] != 0:
+        print(error[1])
+    error = reader.append_template_file_to_runtime_settings(r"C:\Program Files (x86)\Dynamsoft\{Version number}\Templates\RuntimeSettings_2.json", EnumConflictMode.CM_OVERWRITE)
+    if error[0] != 0:
+        print(error[1])
+    # add further process
+    reader.recycle_instance()
 ```
 
 
@@ -133,17 +134,16 @@ BarcodeReader.append_template_string_to_runtime_settings(json_string, conflict_m
 
 ```python
 from dbr import *
-reader = BarcodeReader()
-
-error = reader.init_runtime_settings_with_string('{"Version":"3.0", "ImageParameter":{"Name":"IP1", "BarcodeFormatIds":["BF_QR_CODE"], "ExpectedBarcodesCount":10}}')
-
-if error[0] != 0:
-    print(error[1])
-  
-error = reader.append_template_string_to_runtime_settings('{"Version":"3.0", "ImageParameter":{"Name":"IP2", "BarcodeFormatIds":["BF_ONED"], "ExpectedBarcodesCount":10}}', EnumConflictMode.CM_OVERWRITE)
-
-if error[0] != 0:
-    print(error[1])
+reader = BarcodeReader.get_instance()
+if reader != None:
+    error = reader.init_runtime_settings_with_string('{"Version":"3.0", "ImageParameter":{"Name":"IP1", "BarcodeFormatIds":["BF_QR_CODE"], "ExpectedBarcodesCount":10}}')
+    if error[0] != 0:
+        print(error[1])
+    error = reader.append_template_string_to_runtime_settings('{"Version":"3.0", "ImageParameter":{"Name":"IP2", "BarcodeFormatIds":["BF_ONED"], "ExpectedBarcodesCount":10}}', EnumConflictMode.CM_OVERWRITE)
+    if error[0] != 0:
+        print(error[1])
+    # add further process
+    reader.recycle_instance()
 ```
 
 ## get_all_template_names
@@ -162,22 +162,20 @@ BarcodeReader.get_all_template_names()
 
 ```python
 from dbr import *
-reader = BarcodeReader()
-
-error = reader.init_runtime_settings_with_string('{"Version":"3.0", "ImageParameter":{"Name":"IP1", "BarcodeFormatIds":["BF_QR_CODE"], "ExpectedBarcodesCount":10}}')
-
-if error[0] != 0:
-    print(error[1])
-  
-error = reader.append_template_string_to_runtime_settings('{"Version":"3.0", "ImageParameter":{"Name":"IP2", "BarcodeFormatIds":["BF_ONED"], "ExpectedBarcodesCount":10}}', EnumConflictMode.CM_OVERWRITE)
-
-if error[0] != 0:
-    print(error[1])
-
-template_names = reader.get_all_template_names()
-print('There have {0} templates.'.format(len(template_names)))
-for i, template_name in range(len(template_names)), template_names:
-    print("{0} : {1}".format(i+1, template_name))
+reader = BarcodeReader.get_instance()
+if reader != None:
+    error = reader.init_runtime_settings_with_string('{"Version":"3.0", "ImageParameter":{"Name":"IP1", "BarcodeFormatIds":["BF_QR_CODE"], "ExpectedBarcodesCount":10}}')
+    if error[0] != 0:
+        print(error[1])
+    error = reader.append_template_string_to_runtime_settings('{"Version":"3.0", "ImageParameter":{"Name":"IP2", "BarcodeFormatIds":["BF_ONED"], "ExpectedBarcodesCount":10}}', EnumConflictMode.CM_OVERWRITE)
+    if error[0] != 0:
+        print(error[1])
+    template_names = reader.get_all_template_names()
+    print('There have {0} templates.'.format(len(template_names)))
+    for i, template_name in range(len(template_names)), template_names:
+        print("{0} : {1}".format(i+1, template_name))
+    # add further process
+    reader.recycle_instance()
 ```
 
 ## output_settings_to_json_file
@@ -200,14 +198,15 @@ BarcodeReader.output_settings_to_json_file(save_file_path)
 
 ```python
 from dbr import *
-reader = BarcodeReader()
-
-error = reader.init_runtime_settings_with_string('{"Version":"3.0", "ImageParameter":{"Name":"IP1", "BarcodeFormatIds":["BF_QR_CODE"], "ExpectedBarcodesCount":10}}')
-
-if error[0] != 0:
-    print(error[1])
-else:
-    error = reader.output_settings_to_json_file(r'template_output.json')
+reader = BarcodeReader.get_instance()
+if reader != None:
+    error = reader.init_runtime_settings_with_string('{"Version":"3.0", "ImageParameter":{"Name":"IP1", "BarcodeFormatIds":["BF_QR_CODE"], "ExpectedBarcodesCount":10}}')
+    if error[0] != 0:
+        print(error[1])
+    else:
+        error = reader.output_settings_to_json_file(r'template_output.json')
+    # add further process
+    reader.recycle_instance()
 ```
 
 ## output_settings_to_json_string
@@ -226,13 +225,14 @@ BarcodeReader.output_settings_to_json_string()
 
 ```python
 from dbr import *
-reader = BarcodeReader()
-
-error = reader.init_runtime_settings_with_string('{"Version":"3.0", "ImageParameter":{"Name":"IP1", "BarcodeFormatIds":["BF_QR_CODE"], "ExpectedBarcodesCount":10}}')
-
-if error[0] != 0:
-    print(error[1])
-else:
-    json_output = reader.output_settings_to_json_string()
-    print(json_output)
+reader = BarcodeReader.get_instance()
+if reader != None:
+    error = reader.init_runtime_settings_with_string('{"Version":"3.0", "ImageParameter":{"Name":"IP1", "BarcodeFormatIds":["BF_QR_CODE"], "ExpectedBarcodesCount":10}}')
+    if error[0] != 0:
+        print(error[1])
+    else:
+        json_output = reader.output_settings_to_json_string()
+        print(json_output)
+    # add further process
+    reader.recycle_instance()
 ```

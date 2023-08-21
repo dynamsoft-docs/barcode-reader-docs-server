@@ -19,8 +19,12 @@ permalink: /programming/java/upgrade-instruction.html
 - Update your code to set the license
 ```java
   BarcodeReader.initLicense("YOUR-LICENSE-KEY");
-  BarcodeReader reader = new BarcodeReader();
-  // add further process
+  BarcodeReader reader = BarcodeReader.getInstance();
+  if(reader != null)
+  {
+      // add further process
+      reader.recycle();
+  }
 ```
 
 >Note:
@@ -39,8 +43,12 @@ permalink: /programming/java/upgrade-instruction.html
 - Update your code to set the license
 ```java
   BarcodeReader.initLicense("YOUR-LICENSE-KEY");
-  BarcodeReader reader = new BarcodeReader();
-  // add further process
+  BarcodeReader reader = BarcodeReader.getInstance();
+  if(reader != null)
+  {
+      // add further process
+      reader.recycle();
+  }
 ```
 
 >Note:

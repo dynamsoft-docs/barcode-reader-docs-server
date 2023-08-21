@@ -31,6 +31,8 @@ permalink: /programming/c/api-reference/index.html
   | [`DBR_SetDeviceFriendlyName`](methods/license.md#dbr_setdevicefriendlyname) | Sets a human-readable name that identifies the device. |
   | [`DBR_SetLicenseCachePath`](methods/license.md#dbr_setlicensecachepath) | Sets a directory path for saving the license cache. |
   | [`DBR_SetMaxConcurrentInstanceCount`](methods/license.md#dbr_setmaxconcurrentinstancecount) | Sets the max concurrent instance count used for current device and process. |
+  | [`DBR_SetMaxConcurrentInstanceCountEx`](methods/license.md#dbr_setmaxconcurrentinstancecountex) | Sets the max concurrent instance count used for current device and process. |
+  | [`DBR_GetInstancePoolStatus`](methods/license.md#dbr_getinstancepoolstatus) | Gets a struct to represent the status of an instance pool. |
   | [`DBR_GetIdleInstancesCount`](methods/license.md#dbr_getidleinstancescount) | `Deprecated` |
   | [`DBR_InitLicenseFromServer`](methods/license.md#dbr_initlicensefromserver) | `Deprecated` |
   | [`DBR_InitLicenseFromLicenseContent`](methods/license.md#dbr_initlicensefromlicensecontent) | `Deprecated` |
@@ -147,6 +149,7 @@ permalink: /programming/c/api-reference/index.html
  | [`FrameDecodingParameters`]({{ site.structs }}FrameDecodingParameters.html?src=c) | Defines a struct to configure the frame decoding Parameters. |
  | [`FurtherModes`]({{ site.structs }}FurtherModes.html?src=c) | Stores the FurtherModes. |
  | [`ImageData`]({{ site.structs }}ImageData.html?src=c) | Stores the image data. |
+ | [`InstancePoolStatus`]({{ site.structs }}InstancePoolStatus.html?src=c) | Stores the status of an instance pool. |
  | [`IntermediateResult`]({{ site.structs }}IntermediateResult.html?src=c) | Stores the intermediate result. |
  | [`IntermediateResultArray`]({{ site.structs }}IntermediateResultArray.html?src=c) | Stores the intermediate result array. |
  | [`LineSegment`]({{ site.structs }}LineSegment.html?src=c) | Stores line segment data. |

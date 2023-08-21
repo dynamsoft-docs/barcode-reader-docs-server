@@ -27,7 +27,7 @@ permalink: /programming/dotnet/api-reference/BarcodeReader/decode-v7.6.0.html
 
 Decode barcodes from a specified image file.
 
-```C#
+```csharp
 TextResult[] Dynamsoft.Barcode.BarcodeReader.DecodeFile(string fileName, string templateName) 	
 ```
 
@@ -43,7 +43,7 @@ All barcode text results decoded successfully.
 
 
 #### Code Snippet
-```C#
+```csharp
 BarcodeReader reader = new BarcodeReader();
 reader.ProductKeys = "t0260NwAAAHV***************";
 TextResult[] result = reader.DecodeFile(@"C:\Program Files (x86)\Dynamsoft\{Version number}\Images\AllSupportedBarcodeTypes.tif", "");
@@ -60,7 +60,7 @@ reader.Dispose();
 
 Decode barcodes from an image file in memory.   
 
-```C#
+```csharp
 TextResult[] Dynamsoft.Barcode.BarcodeReader.DecodeFileInMemory(byte[] fileStream, string templateName)  
 ```   
    
@@ -75,7 +75,7 @@ All barcode text results decoded successfully.
 [`BarcodeReaderException`](../class/BarcodeReaderException.md) The exception thrown by Dynamsoft Barcode Reader.  
 
 #### Code Snippet
-```C#
+```csharp
 BarcodeReader reader = new BarcodeReader();
 reader.ProductKeys = "t0260NwAAAHV***************";
 byte[] fileStream = GetFileStream(@"C:\Program Files (x86)\Dynamsoft\{Version number}\Images\AllSupportedBarcodeTypes.tif");
@@ -93,7 +93,7 @@ reader.Dispose();
 
 Decode barcodes from the memory buffer containing image pixels in defined format.
 
-```C#
+```csharp
 TextResult[] Dynamsoft.Barcode.BarcodeReader.DecodeBuffer(byte[] buffer, int width, int height, int stride, EnumImagePixelFormat imagePixelFormat, string templateName)	
 ```
    
@@ -112,7 +112,7 @@ All barcode text results decoded successfully.
 [`BarcodeReaderException`](../class/BarcodeReaderException.md) The exception thrown by Dynamsoft Barcode Reader.  
 
 #### Code Snippet
-```C#
+```csharp
 BarcodeReader reader = new BarcodeReader();
 reader.ProductKeys = "t0260NwAAAHV***************";
 Bitmap bBMP = new Bitmap(@"C:\Program Files (x86)\Dynamsoft\{Version number}\Images\AllSupportedBarcodeTypes.tif");
@@ -139,7 +139,7 @@ reader.Dispose();
 
 Decode barcode from an image file encoded as a base64 string.
 
-```C#
+```csharp
 TextResult[] Dynamsoft.Barcode.BarcodeReader.DecodeBase64String(string base64, string templateName)	
 ```   
 
@@ -154,7 +154,7 @@ All barcode text results decoded successfully.
 [`BarcodeReaderException`](../class/BarcodeReaderException.md) The exception thrown by Dynamsoft Barcode Reader. 
 
 #### Code Snippet
-```C#
+```csharp
 BarcodeReader reader = new BarcodeReader();
 reader.ProductKeys = "t0260NwAAAHV***************";
 byte[] byteFileStream = GetFileStream(@"C:\Program Files (x86)\Dynamsoft\{Version number}\Images\AllSupportedBarcodeTypes.tif");
@@ -173,7 +173,7 @@ reader.Dispose();
 
 Decodes barcode from a bitmap.
 
-```C#
+```csharp
 TextResult[] Dynamsoft.Barcode.BarcodeReader.DecodeBitmap(Bitmap bitMap, string templateName)
 ```   
    
@@ -188,7 +188,7 @@ All barcode text results decoded successfully.
 [`BarcodeReaderException`](../class/BarcodeReaderException.md) The exception thrown by Dynamsoft Barcode Reader. 
 
 #### Code Snippet
-```C#
+```csharp
 BarcodeReader reader = new BarcodeReader();
 reader.ProductKeys = "t0260NwAAAHV***************";
 Bitmap bBMP = new Bitmap(@"C:\Program Files (x86)\Dynamsoft\{Version number}\Images\AllSupportedBarcodeTypes.tif");

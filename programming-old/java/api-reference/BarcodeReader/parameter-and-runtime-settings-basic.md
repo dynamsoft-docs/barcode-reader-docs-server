@@ -44,12 +44,16 @@ void com.dynamsoft.dbr.BarcodeReader.setModeArgument(String modesName, int index
 **Code Snippet**  
 ```java
 BarcodeReader.initLicense("YOUR-LICENSE-KEY");
-BarcodeReader reader = new BarcodeReader();
-PublicRuntimeSettings settings = reader.getRuntimeSettings();
-settings.binarizationModes[0] = EnumBinarizationMode.BM_LOCAL_BLOCK;
-reader.updateRuntimeSettings(settings);
-reader.setModeArgument("BinarizationModes", 0, "EnableFillBinaryVacancy", "1");
-reader.destroy();
+BarcodeReader reader = BarcodeReader.getInstance();
+if(reader != null)
+{
+    PublicRuntimeSettings settings = reader.getRuntimeSettings();
+    settings.binarizationModes[0] = EnumBinarizationMode.BM_LOCAL_BLOCK;
+    reader.updateRuntimeSettings(settings);
+    reader.setModeArgument("BinarizationModes", 0, "EnableFillBinaryVacancy", "1");
+    // add further process
+    reader.recycle();
+}
 ```
 
 **Remarks**  
@@ -95,13 +99,17 @@ the optional argument for a specified mode in Modes parameters.
 **Code Snippet**  
 ```java
 BarcodeReader.initLicense("YOUR-LICENSE-KEY");
-BarcodeReader reader = new BarcodeReader();
-PublicRuntimeSettings settings = reader.getRuntimeSettings();
-settings.binarizationModes[0] = EnumBinarizationMode.BM_LOCAL_BLOCK;
-reader.updateRuntimeSettings(settings);
-reader.setModeArgument("BinarizationModes", 0, "EnableFillBinaryVacancy", "1");
-String argumentValue = reader.getModeArgument("BinarizationModes", 0, "EnableFillBinaryVacancy");
-reader.destroy();
+BarcodeReader reader = BarcodeReader.getInstance();
+if(reader != null)
+{
+	PublicRuntimeSettings settings = reader.getRuntimeSettings();
+	settings.binarizationModes[0] = EnumBinarizationMode.BM_LOCAL_BLOCK;
+	reader.updateRuntimeSettings(settings);
+	reader.setModeArgument("BinarizationModes", 0, "EnableFillBinaryVacancy", "1");
+	String argumentValue = reader.getModeArgument("BinarizationModes", 0, "EnableFillBinaryVacancy");
+    // add further process
+    reader.recycle();
+}
 ```
 
 **Remarks**  
@@ -141,9 +149,13 @@ A [`PublicRuntimeSettings`](../class/PublicRuntimeSettings.md) with current sett
 **Code Snippet**  
 ```java
 BarcodeReader.initLicense("YOUR-LICENSE-KEY");
-BarcodeReader reader = new BarcodeReader();
-PublicRuntimeSettings settings = reader.getRuntimeSettings();
-reader.destroy();
+BarcodeReader reader = BarcodeReader.getInstance();
+if(reader != null)
+{
+	PublicRuntimeSettings settings = reader.getRuntimeSettings();
+    // add further process
+    reader.recycle();
+}
 ```
 
 
@@ -169,11 +181,15 @@ void com.dynamsoft.dbr.BarcodeReader.updateRuntimeSettings(PublicRuntimeSettings
 **Code Snippet**  
 ```java
 BarcodeReader.initLicense("YOUR-LICENSE-KEY");
-BarcodeReader reader = new BarcodeReader();
-PublicRuntimeSettings settings = reader.getRuntimeSettings();
-settings.deblurLevel = 9;
-reader.updateRuntimeSettings(settings);
-reader.destroy();
+BarcodeReader reader = BarcodeReader.getInstance();
+if(reader != null)
+{
+	PublicRuntimeSettings settings = reader.getRuntimeSettings();
+	settings.deblurLevel = 9;
+	reader.updateRuntimeSettings(settings);
+    // add further process
+    reader.recycle();
+}
 ```
 
 
@@ -197,10 +213,14 @@ void com.dynamsoft.dbr.BarcodeReader.resetRuntimeSettings()	throws BarcodeReader
 **Code Snippet**  
 ```java
 BarcodeReader.initLicense("YOUR-LICENSE-KEY");
-BarcodeReader reader = new BarcodeReader();
-PublicRuntimeSettings settings = reader.getRuntimeSettings();
-settings.deblurLevel = 9;
-reader.updateRuntimeSettings(settings);
-reader.resetRuntimeSettings();
-reader.destroy();
+BarcodeReader reader = BarcodeReader.getInstance();
+if(reader != null)
+{
+	PublicRuntimeSettings settings = reader.getRuntimeSettings();
+	settings.deblurLevel = 9;
+	reader.updateRuntimeSettings(settings);
+	reader.resetRuntimeSettings();
+    // add further process
+    reader.recycle();
+}
 ```

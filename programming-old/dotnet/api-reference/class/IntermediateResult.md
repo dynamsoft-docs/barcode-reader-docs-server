@@ -11,8 +11,6 @@ permalink: /programming/dotnet/api-reference/class/IntermediateResult.html
 # IntermediateResult
 Stores the intermediate result.
 
-## Typedefs
-
 ```csharp
 public class IntermediateResult
 ```  

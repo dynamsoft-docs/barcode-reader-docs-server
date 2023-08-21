@@ -18,6 +18,7 @@ permalink: /programming/cplusplus/api-reference/cbarcodereader-methods/license.h
   | [`SetDeviceFriendlyName`](#setdevicefriendlyname) | Sets a human-readable name that identifies the device. |
   | [`SetLicenseCachePath`](#setlicensecachepath) | Sets a directory path for saving the license cache. |
   | [`SetMaxConcurrentInstanceCount`](#setmaxconcurrentinstancecount) | Sets the max concurrent instance count used for current device and process. |
+  | [`GetInstancePoolStatus`](#getinstancepoolstatus) | Gets a struct to represent the status of an instance pool. |
   | [`GetIdleInstancesCount`](#getidleinstancescount) | `Deprecated` |
   | [`InitLicenseFromServer`](#initlicensefromserver) | `Deprecated` |
   | [`InitLicenseFromLicenseContent`](#initlicensefromlicensecontent) | `Deprecated` |
@@ -52,8 +53,12 @@ Returns error code (returns 0 if the function operates successfully).
 ```cpp
 char errorBuf[512];
 dynamsoft::dbr::CBarcodeReader::InitLicense("YOUR-LICENSE-KEY", errorBuf, 512);
-CBarcodeReader* reader = new CBarcodeReader();
-// add further process
+CBarcodeReader* reader = CBarcodeReader::GetInstance();
+if(reader != NULL)
+{
+    // add further process
+    reader->Recycle();
+}
 ```
 
 ## GetDeviceUUID
@@ -126,8 +131,12 @@ Returns error code (returns 0 if the function operates successfully).
 char errorBuf[512];
 dynamsoft::dbr::CBarcodeReader::SetDeviceFriendlyName("My-PC");
 dynamsoft::dbr::CBarcodeReader::InitLicense("YOUR-LICENSE-KEY", errorBuf, 512);
-CBarcodeReader* reader = new CBarcodeReader();
-// add further process
+CBarcodeReader* reader = CBarcodeReader::GetInstance();
+if(reader != NULL)
+{
+    // add further process
+    reader->Recycle();
+}
 ```
 
 ## SetLicenseCachePath
@@ -154,8 +163,12 @@ Returns error code (returns 0 if the function operates successfully).
 char errorBuf[512];
 dynamsoft::dbr::CBarcodeReader::SetLicenseCachePath("DIRECTORY-PATH-FOR-LICENSE-CACHE");
 dynamsoft::dbr::CBarcodeReader::InitLicense("YOUR-LICENSE-KEY", errorBuf, 512);
-CBarcodeReader* reader = new CBarcodeReader();
-// add further process
+CBarcodeReader* reader = CBarcodeReader::GetInstance();
+if(reader != NULL)
+{
+    // add further process
+    reader->Recycle();
+}
 ```
 
 ## SetMaxConcurrentInstanceCount
@@ -163,7 +176,7 @@ CBarcodeReader* reader = new CBarcodeReader();
 Sets the max concurrent instance count used for current device and process.
 
 ```cpp
-static void dynamsoft::dbr::CBarcodeReader::SetMaxConcurrentInstanceCount(int countForThisDevice, int countForThisProcess = 0)
+static void dynamsoft::dbr::CBarcodeReader::SetMaxConcurrentInstanceCount(int countForThisDevice, int countForThisProcess = 0, int timeout= 0)
 ```
 
 **Parameters**
@@ -171,6 +184,8 @@ static void dynamsoft::dbr::CBarcodeReader::SetMaxConcurrentInstanceCount(int co
 `[in] countForThisDevice` The maximum number of concurrent instances that the current device can run.
 
 `[in] countForThisProcess` <sub>Optional</sub> The maximum number of concurrent instances that the current process can run.
+
+`[in] timeout` <sub>Optional</sub> The maximum time (in milliseconds) to wait for an available authorization or instance when calling InitLicense, GetInstance, or Decode functions.
 
 **Code Snippet**
 
@@ -190,6 +205,19 @@ if(dbr != NULL)
     dbr->Recycle();
 }
 ```
+
+## GetInstancePoolStatus
+
+Gets a struct to represent the status of an instance pool.
+
+```cpp
+static InstancePoolStatus dynamsoft::dbr::CBarcodeReader::GetInstancePoolStatus()
+```
+
+**Return Value**
+
+Returns the [`InstancePoolStatus`]({{ site.structs }}InstancePoolStatus.html?src=cpp) struct representing the status of an instance pool.
+
 
 ## GetIdleInstancesCount
 

@@ -23,7 +23,7 @@ permalink: /programming/dotnet/api-reference/BarcodeReader/result-v7.6.0.html
 ## GetIntermediateResults
 Returns intermediate results containing the original image, the colour clustered image, the binarized Image, contours, Lines, TextBlocks, etc.
 
-```C#
+```csharp
 IntermediateResult[] Dynamsoft.Barcode.BarcodeReader.GetIntermediateResults() 
 ```   
 
@@ -31,7 +31,7 @@ IntermediateResult[] Dynamsoft.Barcode.BarcodeReader.GetIntermediateResults()
 Intermediate results. 
 
 #### Code Snippet
-```C#
+```csharp
 BarcodeReader reader = new BarcodeReader();
 reader.ProductKeys = "t0260NwAAAHV***************";
 PublicRuntimeSettings settings = new PublicRuntimeSettings();

@@ -27,8 +27,13 @@ The version info string.
 
 **Code Snippet**  
 ```csharp
-BarcodeReader reader = new BarcodeReader();
-string version = reader.GetVersion();
+BarcodeReader reader = BarcodeReader.GetInstance();
+if (reader != null)
+{
+	string version = reader.GetVersion();
+	//... add further process
+    reader.Recycle();
+}
 ```
 
 ## TransformCoordinates

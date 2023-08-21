@@ -33,13 +33,17 @@ IntermediateResult[] Dynamsoft.DBR.BarcodeReader.GetIntermediateResults()
 ```csharp
 string errorMsg;
 BarcodeReader.InitLicense("YOUR-LICENSE-KEY", out errorMsg);
-BarcodeReader reader = new BarcodeReader();
-PublicRuntimeSettings settings = new PublicRuntimeSettings();
-settings = reader.GetRuntimeSettings();
-settings.IntermediateResultTypes = (int)(EnumIntermediateResultType.IRT_ORIGINAL_IMAGE | EnumIntermediateResultType.IRT_COLOUR_CLUSTERED_IMAGE | EnumIntermediateResultType.IRT_COLOUR_CONVERTED_GRAYSCALE_IMAGE);
-reader.UpdateRuntimeSettings(settings);
-string fileName = @"C:\Program Files (x86)\Dynamsoft\{Version number}\Images\AllSupportedBarcodeTypes.tif";
-TextResult[] textResult = demo.DecodeFile(fileName, "");
-IntermediateResult[] intermediateResults = reader.GetIntermediateResults();
-reader.Dispose();
+BarcodeReader reader = BarcodeReader.GetInstance();
+if (reader != null)
+{
+	PublicRuntimeSettings settings = new PublicRuntimeSettings();
+	settings = reader.GetRuntimeSettings();
+	settings.IntermediateResultTypes = (int)(EnumIntermediateResultType.IRT_ORIGINAL_IMAGE | EnumIntermediateResultType.IRT_COLOUR_CLUSTERED_IMAGE | EnumIntermediateResultType.IRT_COLOUR_CONVERTED_GRAYSCALE_IMAGE);
+	reader.UpdateRuntimeSettings(settings);
+	string fileName = @"C:\Program Files (x86)\Dynamsoft\{Version number}\Images\AllSupportedBarcodeTypes.tif";
+	TextResult[] textResult = demo.DecodeFile(fileName, "");
+	IntermediateResult[] intermediateResults = reader.GetIntermediateResults();
+	//... add further process
+    reader.Recycle();
+}
 ```

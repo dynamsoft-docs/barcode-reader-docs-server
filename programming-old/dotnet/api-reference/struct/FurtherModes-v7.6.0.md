@@ -11,7 +11,7 @@ permalink: /programming/dotnet/api-reference/struct/FurtherModes-v7.6.0.html
 # FurtherModes
 Stores the FurtherModes. 
 
-```C#
+```csharp
 public struct FurtherModes
 ```  
 
@@ -36,7 +36,7 @@ public struct FurtherModes
 ### ColourClusteringModes
 Sets the mode and priority for colour categorization. Not supported yet.  
 
-```C#
+```csharp
 EnumColourClusteringMode[] Dynamsoft.Barcode.FurtherModes.ColourClusteringModes
 ```
 
@@ -52,7 +52,7 @@ EnumColourClusteringMode[] Dynamsoft.Barcode.FurtherModes.ColourClusteringModes
 ### ColourConversionModes
 Sets the mode and priority for converting a colour image to a grayscale image.
 
-```C#
+```csharp
 EnumColourConversionMode[] Dynamsoft.Barcode.FurtherModes.ColourConversionModes
 ```
 
@@ -68,7 +68,7 @@ EnumColourConversionMode[] Dynamsoft.Barcode.FurtherModes.ColourConversionModes
 ### GrayscaleTransformationModes
 Sets the mode and priority for the grayscale image conversion.
 
-```C#
+```csharp
 EnumGrayscaleTransformationMode[] Dynamsoft.Barcode.FurtherModes.GrayscaleTransformationModes
 ```
 
@@ -84,7 +84,7 @@ EnumGrayscaleTransformationMode[] Dynamsoft.Barcode.FurtherModes.GrayscaleTransf
 ### RegionPredetectionModes
 Sets the region pre-detection mode for barcodes search.
 
-```C#
+```csharp
 EnumRegionPredetectionMode[] Dynamsoft.Barcode.FurtherModes.RegionPredetectionModes
 ```
 
@@ -100,7 +100,7 @@ EnumRegionPredetectionMode[] Dynamsoft.Barcode.FurtherModes.RegionPredetectionMo
 ### ImagePreprocessingModes
 Sets the mode and priority for image preprocessing algorithms.
 
-```C#
+```csharp
 EnumImagePreprocessingMode[] Dynamsoft.Barcode.FurtherModes.ImagePreprocessingModes
 ```
 
@@ -116,7 +116,7 @@ EnumImagePreprocessingMode[] Dynamsoft.Barcode.FurtherModes.ImagePreprocessingMo
 ### TextureDetectionModes
 Sets the mode and priority for texture detection. 
 
-```C#
+```csharp
 EnumTextureDetectionMode[] Dynamsoft.Barcode.FurtherModes.TextureDetectionModes
 ```
 
@@ -132,7 +132,7 @@ EnumTextureDetectionMode[] Dynamsoft.Barcode.FurtherModes.TextureDetectionModes
 ### TextFilterModes
 Sets the mode and priority for text filter.
 
-```C#
+```csharp
 EnumTextFilterMode[] Dynamsoft.Barcode.FurtherModes.TextFilterModes
 ```
 
@@ -148,7 +148,7 @@ EnumTextFilterMode[] Dynamsoft.Barcode.FurtherModes.TextFilterModes
 ### TextAssistedCorrectionMode
 Sets the mode of text assisted correction for barcode decoding. ***Not supported yet***.
 
-```C#
+```csharp
 EnumTextAssistedCorrectionMode Dynamsoft.Barcode.FurtherModes.TextAssistedCorrectionMode
 ```
 
@@ -161,7 +161,7 @@ EnumTextAssistedCorrectionMode Dynamsoft.Barcode.FurtherModes.TextAssistedCorrec
 ### DPMCodeReadingModes
 Sets the mode and priority for DPM code reading.
 
-```C#
+```csharp
 EnumDPMCodeReadingMode[] Dynamsoft.Barcode.FurtherModes.DPMCodeReadingModes
 ```
 
@@ -177,7 +177,7 @@ EnumDPMCodeReadingMode[] Dynamsoft.Barcode.FurtherModes.DPMCodeReadingModes
 ### DeformationResistingModes
 Sets the mode and priority for deformation resisting.
 
-```C#
+```csharp
 EnumDeformationResistingMode[] Dynamsoft.Barcode.FurtherModes.DeformationResistingModes
 ```
 
@@ -193,7 +193,7 @@ EnumDeformationResistingMode[] Dynamsoft.Barcode.FurtherModes.DeformationResisti
 ### BarcodeComplementModes
 Sets the mode and priority to complement the missing parts in the barcode.
 
-```C#
+```csharp
 EnumColourConversionMode[] Dynamsoft.Barcode.FurtherModes.ColourConversionModes
 ```
 
@@ -209,7 +209,7 @@ EnumColourConversionMode[] Dynamsoft.Barcode.FurtherModes.ColourConversionModes
 ### BarcodeColourModes
 Sets the mode and priority for the barcode colour mode used to process the barcode zone.
 
-```C#
+```csharp
 EnumBarcodeColourMode[] Dynamsoft.Barcode.FurtherModes.BarcodeColourModes
 ```
 
@@ -225,7 +225,7 @@ EnumBarcodeColourMode[] Dynamsoft.Barcode.FurtherModes.BarcodeColourModes
 ### AccompanyingTextRecognitionModes
 Sets the mode and priority to recognize accompanying text.
 
-```C#
+```csharp
 EnumAccompanyingTextRecognitionMode[] Dynamsoft.Barcode.FurtherModes.AccompanyingTextRecognitionModes
 ```
 

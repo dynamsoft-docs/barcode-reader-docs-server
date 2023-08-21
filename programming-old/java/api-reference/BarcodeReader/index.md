@@ -33,6 +33,7 @@ permalink: /programming/java/api-reference/BarcodeReader/index.html
   | [`setDeviceFriendlyName`](license.md#setdevicefriendlyname) | Sets a human-readable name that identifies the device. |
   | [`setLicenseCachePath`](license.md#setlicensecachepath) | Sets a directory path for saving the license cache. |
   | [`setMaxConcurrentInstanceCount`](license.md#setmaxconcurrentinstancecount) | Sets the max concurrent instance count used for current device and process. |
+  | [`getInstancePoolStatus`](license.md#getinstancepoolstatus) | Gets a class to represent the status of an instance pool. |
   | [`getIdleInstancesCount`](license.md#getidleinstancescount) | `Deprecated` |
   | [`initLicenseFromServer`](license.md#initlicensefromserver) | `Deprecated` |
   | [`initLicenseFromLicenseContent`](license.md#initlicensefromlicensecontent) | `Deprecated` |

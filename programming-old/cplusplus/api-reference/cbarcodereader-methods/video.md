@@ -55,9 +55,13 @@ Returns error code. Possible return(s): DBR_OK; DBRERR_FRAME_DECODING_THREAD_EXI
 ```cpp
 char errorBuf[512];
 dynamsoft::dbr::CBarcodeReader::InitLicense("YOUR-LICENSE-KEY", errorBuf, 512);
-CBarcodeReader* reader = new CBarcodeReader();
-reader->StartFrameDecoding(2, 10, 1024, 720, 720, IPF_BINARY, "");
-delete reader;
+CBarcodeReader* reader = CBarcodeReader::GetInstance();
+if(reader != NULL)
+{
+    reader->StartFrameDecoding(2, 10, 1024, 720, 720, IPF_BINARY, "");
+    // add further process
+    reader->Recycle();
+}
 ```
 
 **Remarks**  
@@ -89,27 +93,31 @@ Returns error code. Possible return(s): DBR_OK; DBRERR_FRAME_DECODING_THREAD_EXI
 ```cpp
 char errorBuf[512];
 dynamsoft::dbr::CBarcodeReader::InitLicense("YOUR-LICENSE-KEY", errorBuf, 512);
-CBarcodeReader* reader = new CBarcodeReader();
-FrameDecodingParameters parameters;
-int errorCode = reader->InitFrameDecodingParameters(&parameters);
-if(errorCode == DBR_OK)
+CBarcodeReader* reader = CBarcodeReader::GetInstance();
+if(reader != NULL)
 {
-    parameters.maxQueueLength = 3;
-    parameters.maxResultQueueLength = 10;
-    parameters.width = 20;
-    parameters.height = 30;
-    parameters.stride = 10;
-    parameters.imagePixelFormat = IPF_GRAYSCALED;
-    parameters.region.regionMeasuredByPercentage = 1;
-    parameters.region.regionTop = 0;
-    parameters.region.regionBottom = 100;
-    parameters.region.regionLeft = 0;
-    parameters.region.regionRight = 100;
-    parameters.threshold = 0.1;
-    parameters.fps = 0;
-    reader->StartFrameDecodingEx(parameters, "");
+    FrameDecodingParameters parameters;
+    int errorCode = reader->InitFrameDecodingParameters(&parameters);
+    if(errorCode == DBR_OK)
+    {
+        parameters.maxQueueLength = 3;
+        parameters.maxResultQueueLength = 10;
+        parameters.width = 20;
+        parameters.height = 30;
+        parameters.stride = 10;
+        parameters.imagePixelFormat = IPF_GRAYSCALED;
+        parameters.region.regionMeasuredByPercentage = 1;
+        parameters.region.regionTop = 0;
+        parameters.region.regionBottom = 100;
+        parameters.region.regionLeft = 0;
+        parameters.region.regionRight = 100;
+        parameters.threshold = 0.1;
+        parameters.fps = 0;
+        reader->StartFrameDecodingEx(parameters, "");
+    }
+    // add further process
+    reader->Recycle();
 }
-delete reader;
 ```
 
 **Remarks**  
@@ -138,9 +146,13 @@ Returns the ID of the appended frame.
 ```cpp
 char errorBuf[512];
 dynamsoft::dbr::CBarcodeReader::InitLicense("YOUR-LICENSE-KEY", errorBuf, 512);
-CBarcodeReader* reader = new CBarcodeReader();
-int frameId = reader->AppendFrame(pBufferBytes);
-delete reader;
+CBarcodeReader* reader = CBarcodeReader::GetInstance();
+if(reader != NULL)
+{
+    int frameId = reader->AppendFrame(pBufferBytes);
+    // add further process
+    reader->Recycle();
+}
 ```
 
  
@@ -166,10 +178,14 @@ Returns error code. Possible return(s): DBR_OK; DBRERR_STOP_DECODING_THREAD_FAIL
 ```cpp
 char errorBuf[512];
 dynamsoft::dbr::CBarcodeReader::InitLicense("YOUR-LICENSE-KEY", errorBuf, 512);
-CBarcodeReader* reader = new CBarcodeReader();
-reader->StartFrameDecoding(2, 10, 1024, 720, 720, IPF_BINARY, "");
-int errorCode = reader->StopFrameDecoding();
-delete reader;
+CBarcodeReader* reader = CBarcodeReader::GetInstance();
+if(reader != NULL)
+{
+    reader->StartFrameDecoding(2, 10, 1024, 720, 720, IPF_BINARY, "");
+    int errorCode = reader->StopFrameDecoding();
+    // add further process
+    reader->Recycle();
+}
 ```
 
  
@@ -199,27 +215,31 @@ Returns error code. Possible return(s): DBR_OK.
 ```cpp
 char errorBuf[512];
 dynamsoft::dbr::CBarcodeReader::InitLicense("YOUR-LICENSE-KEY", errorBuf, 512);
-CBarcodeReader* reader = new CBarcodeReader();
-FrameDecodingParameters parameters;
-int errorCode = reader->InitFrameDecodingParameters(&parameters);
-if(errorCode == DBR_OK)
+CBarcodeReader* reader = CBarcodeReader::GetInstance();
+if(reader != NULL)
 {
-    parameters.maxQueueLength = 3;
-    parameters.maxResultQueueLength = 10;
-    parameters.width = 20;
-    parameters.height = 30;
-    parameters.stride = 10;
-    parameters.imagePixelFormat = IPF_GRAYSCALED;
-    parameters.region.regionMeasuredByPercentage = 1;
-    parameters.region.regionTop = 0;
-    parameters.region.regionBottom = 100;
-    parameters.region.regionLeft = 0;
-    parameters.region.regionRight = 100;
-    parameters.threshold = 0.1;
-    parameters.fps = 0;
-    reader->StartFrameDecodingEx(parameters, "");
+    FrameDecodingParameters parameters;
+    int errorCode = reader->InitFrameDecodingParameters(&parameters);
+    if(errorCode == DBR_OK)
+    {
+        parameters.maxQueueLength = 3;
+        parameters.maxResultQueueLength = 10;
+        parameters.width = 20;
+        parameters.height = 30;
+        parameters.stride = 10;
+        parameters.imagePixelFormat = IPF_GRAYSCALED;
+        parameters.region.regionMeasuredByPercentage = 1;
+        parameters.region.regionTop = 0;
+        parameters.region.regionBottom = 100;
+        parameters.region.regionLeft = 0;
+        parameters.region.regionRight = 100;
+        parameters.threshold = 0.1;
+        parameters.fps = 0;
+        reader->StartFrameDecodingEx(parameters, "");
+    }
+    // add further process
+    reader->Recycle();
 }
-delete reader;
 ```
 
  
@@ -253,9 +273,14 @@ void ErrorFunction(int frameId, int errorCode, void * pUser)
 }
 char errorBuf[512];
 dynamsoft::dbr::CBarcodeReader::InitLicense("YOUR-LICENSE-KEY", errorBuf, 512);
-CBarcodeReader* reader = new CBarcodeReader();
-reader->SetErrorCallback(ErrorFunction, NULL);
-reader->StartFrameDecoding(2, 10, 1024, 720, 720, IPF_BINARY, "");
+CBarcodeReader* reader = CBarcodeReader::GetInstance();
+if(reader != NULL)
+{
+    reader->SetErrorCallback(ErrorFunction, NULL);
+    reader->StartFrameDecoding(2, 10, 1024, 720, 720, IPF_BINARY, "");
+    // add further process
+    reader->Recycle();
+}
 ```
 
  
@@ -288,9 +313,14 @@ void TextResultFunction(int frameId, TextResultArray *pResults, void * pUser)
 }
 char errorBuf[512];
 dynamsoft::dbr::CBarcodeReader::InitLicense("YOUR-LICENSE-KEY", errorBuf, 512);
-CBarcodeReader* reader = new CBarcodeReader();
-reader->SetTextResultCallback(TextResultFunction, NULL);
-reader->StartFrameDecoding(2, 10, 1024, 720, 720, IPF_BINARY, "");
+CBarcodeReader* reader = CBarcodeReader::GetInstance();
+if(reader != NULL)
+{
+    reader->SetTextResultCallback(TextResultFunction, NULL);
+    reader->StartFrameDecoding(2, 10, 1024, 720, 720, IPF_BINARY, "");
+    // add further process
+    reader->Recycle();
+}
 ```
 
 ## SetUniqueBarcodeCallback
@@ -317,9 +347,14 @@ void TextResultFunction(int frameId, TextResultArray *pResults, void * pUser)
 }
 char errorBuf[512];
 dynamsoft::dbr::CBarcodeReader::InitLicense("YOUR-LICENSE-KEY", errorBuf, 512);
-CBarcodeReader* reader = new CBarcodeReader();
-reader->SetUniqueBarcodeCallback(TextResultFunction, NULL);
-reader->StartFrameDecoding(2, 10, 1024, 720, 720, IPF_BINARY, "");
+CBarcodeReader* reader = CBarcodeReader::GetInstance();
+if(reader != NULL)
+{
+    reader->SetUniqueBarcodeCallback(TextResultFunction, NULL);
+    reader->StartFrameDecoding(2, 10, 1024, 720, 720, IPF_BINARY, "");
+    // add further process
+    reader->Recycle();
+}
 ```
 
 
@@ -351,14 +386,19 @@ void IntermediateResultFunction(int frameId, IntermediateResultArray *pResults, 
 }
 char errorBuf[512];
 dynamsoft::dbr::CBarcodeReader::InitLicense("YOUR-LICENSE-KEY", errorBuf, 512);
-CBarcodeReader* reader = new CBarcodeReader();
-PublicRuntimeSettings* pSettings = new PublicRuntimeSettings;
-reader->GetRuntimeSettings(pSettings);
-pSettings->intermediateResultTypes = IRT_ORIGINAL_IMAGE | IRT_COLOUR_CLUSTERED_IMAGE | IRT_COLOUR_CONVERTED_GRAYSCALE_IMAGE;
-char errorMessage[256];
-reader->UpdateRuntimeSettings(pSettings, errorMessage, 256);
-reader->SetIntermediateResultCallback(IntermediateResultFunction, NULL);
-reader->StartFrameDecoding(2, 10, 1024, 720, 720, IPF_BINARY, "");
+CBarcodeReader* reader = CBarcodeReader::GetInstance();
+if(reader != NULL)
+{
+    PublicRuntimeSettings* pSettings = new PublicRuntimeSettings;
+    reader->GetRuntimeSettings(pSettings);
+    pSettings->intermediateResultTypes = IRT_ORIGINAL_IMAGE | IRT_COLOUR_CLUSTERED_IMAGE | IRT_COLOUR_CONVERTED_GRAYSCALE_IMAGE;
+    char errorMessage[256];
+    reader->UpdateRuntimeSettings(pSettings, errorMessage, 256);
+    reader->SetIntermediateResultCallback(IntermediateResultFunction, NULL);
+    reader->StartFrameDecoding(2, 10, 1024, 720, 720, IPF_BINARY, "");
+    // add further process
+    reader->Recycle();
+}
 ```
 
  
@@ -382,8 +422,12 @@ Returns length of current inner frame queue.
 ```cpp
 char errorBuf[512];
 dynamsoft::dbr::CBarcodeReader::InitLicense("YOUR-LICENSE-KEY", errorBuf, 512);
-CBarcodeReader* reader = new CBarcodeReader();
-int frameLength = reader->GetLengthOfFrameQueue();
-delete reader;
+CBarcodeReader* reader = CBarcodeReader::GetInstance();
+if(reader != NULL)
+{
+    int frameLength = reader->GetLengthOfFrameQueue();
+    // add further process
+    reader->Recycle();
+}
 ```
 

@@ -50,10 +50,14 @@ Returns error code (returns 0 if the function operates successfully).
 ```cpp
 char errorBuf[512];
 dynamsoft::dbr::CBarcodeReader::InitLicense("YOUR-LICENSE-KEY", errorBuf, 512);
-CBarcodeReader* reader = new CBarcodeReader();
-char errorMessage[256];
-reader->InitRuntimeSettingsWithFile("C:\\Program Files (x86)\\Dynamsoft\\{Version number}\\Templates\\RuntimeSettings.json", CM_OVERWRITE, errorMessage, 256);
-delete reader;
+CBarcodeReader* reader = CBarcodeReader::GetInstance();
+if(reader != NULL)
+{
+	char errorMessage[256];
+	reader->InitRuntimeSettingsWithFile("C:\\Program Files (x86)\\Dynamsoft\\{Version number}\\Templates\\RuntimeSettings.json", CM_OVERWRITE, errorMessage, 256);
+    // add further process
+    reader->Recycle();
+}
 ```
 
  
@@ -85,10 +89,14 @@ Returns error code (returns 0 if the function operates successfully).
 ```cpp
 char errorBuf[512];
 dynamsoft::dbr::CBarcodeReader::InitLicense("YOUR-LICENSE-KEY", errorBuf, 512);
-CBarcodeReader* reader = new CBarcodeReader();
-char errorMessage[256];
-reader->InitRuntimeSettingsWithString("{\"Version\":\"3.0\", \"ImageParameter\":{\"Name\":\"IP1\", \"BarcodeFormatIds\":[\"BF_QR_CODE\"], \"ExpectedBarcodesCount\":10}}", CM_OVERWRITE, errorMessage, 256);
-delete reader;
+CBarcodeReader* reader = CBarcodeReader::GetInstance();
+if(reader != NULL)
+{
+	char errorMessage[256];
+	reader->InitRuntimeSettingsWithString("{\"Version\":\"3.0\", \"ImageParameter\":{\"Name\":\"IP1\", \"BarcodeFormatIds\":[\"BF_QR_CODE\"], \"ExpectedBarcodesCount\":10}}", CM_OVERWRITE, errorMessage, 256);
+    // add further process
+    reader->Recycle();
+}
 ```
 
  
@@ -119,10 +127,14 @@ Returns error code (returns 0 if the function operates successfully).
 ```cpp
 char errorBuf[512];
 dynamsoft::dbr::CBarcodeReader::InitLicense("YOUR-LICENSE-KEY", errorBuf, 512);
-CBarcodeReader* reader = new CBarcodeReader();
-char errorMessage[256];
-reader->AppendTplFileToRuntimeSettings("C:\\Program Files (x86)\\Dynamsoft\\{Version number}\\Templates\\RuntimeSettings.json", CM_IGNORE, errorMessage, 256);
-delete reader;
+CBarcodeReader* reader = CBarcodeReader::GetInstance();
+if(reader != NULL)
+{
+	char errorMessage[256];
+	reader->AppendTplFileToRuntimeSettings("C:\\Program Files (x86)\\Dynamsoft\\{Version number}\\Templates\\RuntimeSettings.json", CM_IGNORE, errorMessage, 256);
+    // add further process
+    reader->Recycle();
+}
 ```
 
  
@@ -154,10 +166,14 @@ Returns error code (returns 0 if the function operates successfully).
 ```cpp
 char errorBuf[512];
 dynamsoft::dbr::CBarcodeReader::InitLicense("YOUR-LICENSE-KEY", errorBuf, 512);
-CBarcodeReader* reader = new CBarcodeReader();
-char errorMessage[256];
-reader->AppendTplStringToRuntimeSettings("{\"Version\":\"3.0\", \"ImageParameter\":{\"Name\":\"IP1\", \"BarcodeFormatIds\":[\"BF_QR_CODE\"], \"ExpectedBarcodesCount\":10}}", CM_IGNORE, errorMessage, 256);
-delete reader;
+CBarcodeReader* reader = CBarcodeReader::GetInstance();
+if(reader != NULL)
+{
+	char errorMessage[256];
+	reader->AppendTplStringToRuntimeSettings("{\"Version\":\"3.0\", \"ImageParameter\":{\"Name\":\"IP1\", \"BarcodeFormatIds\":[\"BF_QR_CODE\"], \"ExpectedBarcodesCount\":10}}", CM_IGNORE, errorMessage, 256);
+    // add further process
+    reader->Recycle();
+}
 ```
 
  
@@ -182,13 +198,17 @@ Returns the count of parameter template.
 ```cpp
 char errorBuf[512];
 dynamsoft::dbr::CBarcodeReader::InitLicense("YOUR-LICENSE-KEY", errorBuf, 512);
-CBarcodeReader* reader = new CBarcodeReader();
-char errorMessageInit[256];
-char errorMessageAppend[256];
-reader->InitRuntimeSettingsWithFile("C:\\Program Files (x86)\\Dynamsoft\\{Version number}\\Templates\\RuntimeSettings.json", CM_OVERWRITE, errorMessageInit, 256);
-reader->AppendTplStringToRuntimeSettings("{\"Version\":\"3.0\", \"ImageParameter\":{\"Name\":\"IP1\", \"BarcodeFormatIds\":[\"BF_QR_CODE\"], \"ExpectedBarcodesCount\":10}}", CM_IGNORE, errorMessageAppend, 256);
-int currentTemplateCount = reader->GetParameterTemplateCount();
-delete reader;
+CBarcodeReader* reader = CBarcodeReader::GetInstance();
+if(reader != NULL)
+{
+	char errorMessageInit[256];
+	char errorMessageAppend[256];
+	reader->InitRuntimeSettingsWithFile("C:\\Program Files (x86)\\Dynamsoft\\{Version number}\\Templates\\RuntimeSettings.json", CM_OVERWRITE, errorMessageInit, 256);
+	reader->AppendTplStringToRuntimeSettings("{\"Version\":\"3.0\", \"ImageParameter\":{\"Name\":\"IP1\", \"BarcodeFormatIds\":[\"BF_QR_CODE\"], \"ExpectedBarcodesCount\":10}}", CM_IGNORE, errorMessageAppend, 256);
+	int currentTemplateCount = reader->GetParameterTemplateCount();
+    // add further process
+    reader->Recycle();
+}
 ```
 
  
@@ -217,17 +237,21 @@ Returns error code (returns 0 if the function operates successfully).
 ```cpp
 char errorBuf[512];
 dynamsoft::dbr::CBarcodeReader::InitLicense("YOUR-LICENSE-KEY", errorBuf, 512);
-CBarcodeReader* reader = new CBarcodeReader();
-char errorMessageInit[256];
-char errorMessageAppend[256];
-reader->InitRuntimeSettingsWithFile("C:\\Program Files (x86)\\Dynamsoft\\{Version number}\\Templates\\RuntimeSettings.json", CM_OVERWRITE, errorMessageInit, 256);
-reader->AppendTplStringToRuntimeSettings("{\"Version\":\"3.0\", \"ImageParameter\":{\"Name\":\"IP1\", \"BarcodeFormatIds\":[\"BF_QR_CODE\"], \"ExpectedBarcodesCount\":10}}", CM_IGNORE, errorMessageAppend, 256);
-int currentTemplateCount = reader->GetParameterTemplateCount();
-int templateIndex = 1;
-// notice that the value of 'templateIndex' should less than currentTemplateCount.
-char templateName[256];
-reader->GetParameterTemplateName(templateIndex, templateName, 256);
-delete reader;
+CBarcodeReader* reader = CBarcodeReader::GetInstance();
+if(reader != NULL)
+{
+	char errorMessageInit[256];
+	char errorMessageAppend[256];
+	reader->InitRuntimeSettingsWithFile("C:\\Program Files (x86)\\Dynamsoft\\{Version number}\\Templates\\RuntimeSettings.json", CM_OVERWRITE, errorMessageInit, 256);
+	reader->AppendTplStringToRuntimeSettings("{\"Version\":\"3.0\", \"ImageParameter\":{\"Name\":\"IP1\", \"BarcodeFormatIds\":[\"BF_QR_CODE\"], \"ExpectedBarcodesCount\":10}}", CM_IGNORE, errorMessageAppend, 256);
+	int currentTemplateCount = reader->GetParameterTemplateCount();
+	int templateIndex = 1;
+	// notice that the value of 'templateIndex' should less than currentTemplateCount.
+	char templateName[256];
+	reader->GetParameterTemplateName(templateIndex, templateName, 256);
+    // add further process
+    reader->Recycle();
+}
 ```
 
  
@@ -256,13 +280,17 @@ Returns error code (returns 0 if the function operates successfully).
 ```cpp
 char errorBuf[512];
 dynamsoft::dbr::CBarcodeReader::InitLicense("YOUR-LICENSE-KEY", errorBuf, 512);
-CBarcodeReader* reader = new CBarcodeReader();
-char errorMessageInit[256];
-char errorMessageAppend[256];
-reader->InitRuntimeSettingsWithFile("C:\\Program Files (x86)\\Dynamsoft\\{Version number}\\Templates\\RuntimeSettings.json", CM_OVERWRITE, errorMessageInit, 256);
-reader->AppendTplStringToRuntimeSettings("{\"Version\":\"3.0\", \"ImageParameter\":{\"Name\":\"IP1\", \"BarcodeFormatIds\":[\"BF_QR_CODE\"], \"ExpectedBarcodesCount\":10}}", CM_IGNORE, errorMessageAppend, 256);
-reader->OutputSettingsToFile("C:\\Program Files (x86)\\Dynamsoft\\{Version number}\\Templates\\CurrentRuntimeSettings.json", "currentRuntimeSettings");
-delete reader;
+CBarcodeReader* reader = CBarcodeReader::GetInstance();
+if(reader != NULL)
+{
+	char errorMessageInit[256];
+	char errorMessageAppend[256];
+	reader->InitRuntimeSettingsWithFile("C:\\Program Files (x86)\\Dynamsoft\\{Version number}\\Templates\\RuntimeSettings.json", CM_OVERWRITE, errorMessageInit, 256);
+	reader->AppendTplStringToRuntimeSettings("{\"Version\":\"3.0\", \"ImageParameter\":{\"Name\":\"IP1\", \"BarcodeFormatIds\":[\"BF_QR_CODE\"], \"ExpectedBarcodesCount\":10}}", CM_IGNORE, errorMessageAppend, 256);
+	reader->OutputSettingsToFile("C:\\Program Files (x86)\\Dynamsoft\\{Version number}\\Templates\\CurrentRuntimeSettings.json", "currentRuntimeSettings");
+    // add further process
+    reader->Recycle();
+}
 ```
 
  
@@ -291,14 +319,18 @@ Returns error code (returns 0 if the function operates successfully).
 ```cpp
 char errorBuf[512];
 dynamsoft::dbr::CBarcodeReader::InitLicense("YOUR-LICENSE-KEY", errorBuf, 512);
-CBarcodeReader* reader = new CBarcodeReader();
-char errorMessageInit[256];
-char errorMessageAppend[256];
-reader->InitRuntimeSettingsWithFile("C:\\Program Files (x86)\\Dynamsoft\\{Version number}\\Templates\\RuntimeSettings.json", CM_OVERWRITE, errorMessageInit, 256);
-reader->AppendTplStringToRuntimeSettings("{\"Version\":\"3.0\", \"ImageParameter\":{\"Name\":\"IP1\", \"BarcodeFormatIds\":[\"BF_QR_CODE\"], \"ExpectedBarcodesCount\":10}}", CM_IGNORE, errorMessageAppend, 256);
-char content[256];
-reader->OutputSettingsToString(content, 256, "currentRuntimeSettings");
-delete reader;
+CBarcodeReader* reader = CBarcodeReader::GetInstance();
+if(reader != NULL)
+{
+	char errorMessageInit[256];
+	char errorMessageAppend[256];
+	reader->InitRuntimeSettingsWithFile("C:\\Program Files (x86)\\Dynamsoft\\{Version number}\\Templates\\RuntimeSettings.json", CM_OVERWRITE, errorMessageInit, 256);
+	reader->AppendTplStringToRuntimeSettings("{\"Version\":\"3.0\", \"ImageParameter\":{\"Name\":\"IP1\", \"BarcodeFormatIds\":[\"BF_QR_CODE\"], \"ExpectedBarcodesCount\":10}}", CM_IGNORE, errorMessageAppend, 256);
+	char content[256];
+	reader->OutputSettingsToString(content, 256, "currentRuntimeSettings");
+    // add further process
+    reader->Recycle();
+}
 ```
 
  
@@ -326,15 +358,19 @@ Returns error code (returns 0 if the function operates successfully).
 ```cpp
 char errorBuf[512];
 dynamsoft::dbr::CBarcodeReader::InitLicense("YOUR-LICENSE-KEY", errorBuf, 512);
-CBarcodeReader* reader = new CBarcodeReader();
-char errorMessageInit[256];
-char errorMessageAppend[256];
-reader->InitRuntimeSettingsWithFile("C:\\Program Files (x86)\\Dynamsoft\\{Version number}\\Templates\\RuntimeSettings.json", CM_OVERWRITE, errorMessageInit, 256);
-reader->AppendTplStringToRuntimeSettings("{\"Version\":\"3.0\", \"ImageParameter\":{\"Name\":\"IP1\", \"BarcodeFormatIds\":[\"BF_QR_CODE\"], \"ExpectedBarcodesCount\":10}}", CM_IGNORE, errorMessageAppend, 256);
-char* content = NULL;
-reader->OutputSettingsToStringPtr(&content, "currentRuntimeSettings");
-reader->FreeSettingsString(&content);
-delete reader;
+CBarcodeReader* reader = CBarcodeReader::GetInstance();
+if(reader != NULL)
+{
+	char errorMessageInit[256];
+	char errorMessageAppend[256];
+	reader->InitRuntimeSettingsWithFile("C:\\Program Files (x86)\\Dynamsoft\\{Version number}\\Templates\\RuntimeSettings.json", CM_OVERWRITE, errorMessageInit, 256);
+	reader->AppendTplStringToRuntimeSettings("{\"Version\":\"3.0\", \"ImageParameter\":{\"Name\":\"IP1\", \"BarcodeFormatIds\":[\"BF_QR_CODE\"], \"ExpectedBarcodesCount\":10}}", CM_IGNORE, errorMessageAppend, 256);
+	char* content = NULL;
+	reader->OutputSettingsToStringPtr(&content, "currentRuntimeSettings");
+	reader->FreeSettingsString(&content);
+    // add further process
+    reader->Recycle();
+}
 ```
 
  
@@ -357,15 +393,19 @@ void dynamsoft::dbr::CBarcodeReader::FreeSettingsString (char** content	)
 ```cpp
 char errorBuf[512];
 dynamsoft::dbr::CBarcodeReader::InitLicense("YOUR-LICENSE-KEY", errorBuf, 512);
-CBarcodeReader* reader = new CBarcodeReader();
-char errorMessageInit[256];
-char errorMessageAppend[256];
-reader->InitRuntimeSettingsWithFile("C:\\Program Files (x86)\\Dynamsoft\\{Version number}\\Templates\\RuntimeSettings.json", CM_OVERWRITE, errorMessageInit, 256);
-reader->AppendTplStringToRuntimeSettings("{\"Version\":\"3.0\", \"ImageParameter\":{\"Name\":\"IP1\", \"BarcodeFormatIds\":[\"BF_QR_CODE\"], \"ExpectedBarcodesCount\":10}}", CM_IGNORE, errorMessageAppend, 256);
-char* content = NULL;
-reader->OutputSettingsToStringPtr(&content, "currentRuntimeSettings");
-reader->FreeSettingsString(&content);
-delete reader;
+CBarcodeReader* reader = CBarcodeReader::GetInstance();
+if(reader != NULL)
+{
+	char errorMessageInit[256];
+	char errorMessageAppend[256];
+	reader->InitRuntimeSettingsWithFile("C:\\Program Files (x86)\\Dynamsoft\\{Version number}\\Templates\\RuntimeSettings.json", CM_OVERWRITE, errorMessageInit, 256);
+	reader->AppendTplStringToRuntimeSettings("{\"Version\":\"3.0\", \"ImageParameter\":{\"Name\":\"IP1\", \"BarcodeFormatIds\":[\"BF_QR_CODE\"], \"ExpectedBarcodesCount\":10}}", CM_IGNORE, errorMessageAppend, 256);
+	char* content = NULL;
+	reader->OutputSettingsToStringPtr(&content, "currentRuntimeSettings");
+	reader->FreeSettingsString(&content);
+    // add further process
+    reader->Recycle();
+}
 ```
 
 

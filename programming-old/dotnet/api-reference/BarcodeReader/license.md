@@ -18,6 +18,7 @@ permalink: /programming/dotnet/api-reference/BarcodeReader/license.html
   | [`SetDeviceFriendlyName`](#setdevicefriendlyname) | Sets a human-readable name that identifies the device. |
   | [`SetLicenseCachePath`](#setlicensecachepath) | Sets a directory path for saving the license cache. |
   | [`SetMaxConcurrentInstanceCount`](#setmaxconcurrentinstancecount) | Sets the max concurrent instance count used for current device and process. |
+  | [`GetInstancePoolStatus`](#getinstancepoolstatus) | Gets a class to represent the status of an instance pool. |
   | [`GetIdleInstancesCount`](#getidleinstancescount) | `Deprecated` |
   | [`InitLicenseFromServer`](#initlicensefromserver) | `Deprecated` |
   | [`InitLicenseFromLicenseContent`](#initlicensefromlicensecontent) | `Deprecated` |
@@ -48,8 +49,12 @@ Returns error code (returns DBR_SUCCESS if the function operates successfully).
 ```csharp
 string errorMsg;
 BarcodeReader.InitLicense("YOUR-LICENSE-KEY", out errorMsg);
-BarcodeReader reader = new BarcodeReader();
-// add further process
+BarcodeReader reader = BarcodeReader.GetInstance();
+if (reader != null)
+{
+	// add further process
+    reader.Recycle();
+}
 ```
 
 ## GetDeviceUUID
@@ -109,8 +114,12 @@ Returns error code (returns DBR_SUCCESS if the function operates successfully).
 string errorMsg;
 BarcodeReader.SetDeviceFriendlyName("My-PC");
 BarcodeReader.InitLicense("YOUR-LICENSE-KEY", out errorMsg);
-BarcodeReader reader = new BarcodeReader();
-// add further process
+BarcodeReader reader = BarcodeReader.GetInstance();
+if (reader != null)
+{
+	// add further process
+    reader.Recycle();
+}
 ```
 
 ## SetLicenseCachePath
@@ -135,8 +144,12 @@ Returns error code.
 string errorMsg;
 BarcodeReader.SetLicenseCachePath("DIRECTORY-PATH-FOR-LICENSE-CACHE");
 BarcodeReader.InitLicense("YOUR-LICENSE-KEY", out errorMsg);
-BarcodeReader reader = new BarcodeReader();
-// add further process
+BarcodeReader reader = BarcodeReader.GetInstance();
+if (reader != null)
+{
+	// add further process
+    reader.Recycle();
+}
 ```
 
 ## SetMaxConcurrentInstanceCount
@@ -145,6 +158,7 @@ Sets the max concurrent instance count used for current device and process.
 
 ```csharp
 static void Dynamsoft.DBR.BarcodeReader.SetMaxConcurrentInstanceCount(int countForThisDevice, int countForThisProcess = 0)
+static void Dynamsoft.DBR.BarcodeReader.SetMaxConcurrentInstanceCount(int countForThisDevice, int countForThisProcess = 0, int timeout= 0)
 ```
 
 **Parameters**
@@ -152,6 +166,8 @@ static void Dynamsoft.DBR.BarcodeReader.SetMaxConcurrentInstanceCount(int countF
 `[in] countForThisDevice` The maximum number of concurrent instances that the current device can run.
 
 `[in] countForThisProcess` <sub>Optional</sub> The maximum number of concurrent instances that the current process can run.
+
+`[in] timeout` The maximum time (in milliseconds) to wait for an available authorization or instance when calling InitLicense, GetInstance, or Decode functions.
 
 **Code Snippet**
 
@@ -171,6 +187,18 @@ if (reader != null)
     reader.Recycle();
 }
 ```
+
+## GetInstancePoolStatus
+
+Gets a class to represent the status of an instance pool.
+
+```cpp
+static InstancePoolStatus Dynamsoft.DBR.BarcodeReader.GetInstancePoolStatus()
+```
+
+**Return Value**
+
+Returns the [`InstancePoolStatus`]({{ site.dotnet_class }}InstancePoolStatus.html) class representing the status of an instance pool.
 
 ## GetIdleInstancesCount
 

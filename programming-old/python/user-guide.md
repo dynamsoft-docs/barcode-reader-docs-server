@@ -76,18 +76,11 @@ Import dbr package in the source file.
 2. Create an instance of Dynamsoft Barcode Reader.
 
    ```python
-   reader = BarcodeReader()
-   ```
-
-   *However, please note that if you are using a **concurrent instance license**, please use the new APIs [`get_instance`](api-reference/BarcodeReader/constructor-and-destructor.md#get_instance) to initialize the barcode reader instance and then [`recycle_instance`](api-reference/BarcodeReader/constructor-and-destructor.md#recycle_instance) to allow for better concurrent instance management by the library.*
-
-   ```python
    reader = BarcodeReader.get_instance()
-   # If no instance is available right away, the application will wait until one becomes available
    if reader != None:
       # Add your code here to call decoding method, process barcode results and so on
       # ...
-      # Recycle the instance to make it idle for other concurrent tasks
+      # Recycle the instance
       reader.recycle_instance()
    ```
 
@@ -136,12 +129,6 @@ Import dbr package in the source file.
 ### Release Resource
 
 Destroy the instance to release all resources.
-
-```python
-del reader
-```
-
-*However, please note that if you are using a **concurrent instance license**, please use the new APIs [`recycle_instance`](api-reference/BarcodeReader/constructor-and-destructor.md#recycle_instance) to allow for better concurrent instance management by the library.*
 
 ```python
 if reader != None:

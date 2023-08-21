@@ -40,6 +40,7 @@ permalink: /programming/dotnet/api-reference/index.html
   | [`SetDeviceFriendlyName`](BarcodeReader/license.md#setdevicefriendlyname) | Sets a human-readable name that identifies the device. |
   | [`SetLicenseCachePath`](BarcodeReader/license.md#setlicensecachepath) | Sets a directory path for saving the license cache. |
   | [`SetMaxConcurrentInstanceCount`](BarcodeReader/license.md#setmaxconcurrentinstancecount) | Sets the max concurrent instance count used for current device and process. |
+  | [`GetInstancePoolStatus`](BarcodeReader/license.md#getinstancepoolstatus) | Gets a class to represent the status of an instance pool |
   | [`GetIdleInstancesCount`](BarcodeReader/license.md#getidleinstancescount) | `Deprecated` |
   | [`InitLicenseFromServer`](BarcodeReader/license.md#initlicensefromserver) | `Deprecated` |
   | [`InitLicenseFromLicenseContent`](BarcodeReader/license.md#initlicensefromlicensecontent) | `Deprecated` |
@@ -163,6 +164,7 @@ permalink: /programming/dotnet/api-reference/index.html
 - [`ExtendedResult`](class/ExtendedResult.md)	
 - [`FrameDecodingParameters`](class/FrameDecodingParameters.md)	
 - [`ImageData`](class/ImageData.md)	 
+- [`InstancePoolStatus`](class/InstancePoolStatus.md)
 - [`IntermediateResult`](class/IntermediateResult.md)	
 - [`LineSegment`](class/LineSegment.md)	 
 - [`LocalizationResult`](class/LocalizationResult.md)	

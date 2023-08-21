@@ -18,6 +18,7 @@ permalink: /programming/java/api-reference/BarcodeReader/license.html
   | [`setDeviceFriendlyName`](#setdevicefriendlyname) | Sets a human-readable name that identifies the device. |
   | [`setLicenseCachePath`](#setlicensecachepath) | Sets a directory path for saving the license cache. |
   | [`setMaxConcurrentInstanceCount`](#setmaxconcurrentinstancecount) | Sets the max concurrent instance count used for current device and process. |
+  | [`getInstancePoolStatus`](#getinstancepoolstatus) | Gets a class to represent the status of an instance pool. |
   | [`getIdleInstancesCount`](#getidleinstancescount) | `Deprecated` |
   | [`initLicenseFromServer`](#initlicensefromserver) | `Deprecated` |
   | [`initLicenseFromLicenseContent`](#initlicensefromlicensecontent) | `Deprecated` |
@@ -48,8 +49,12 @@ static void com.dynamsoft.dbr.BarcodeReader.initLicense(String license) throws B
 
 ```java
 BarcodeReader.initLicense("YOUR-LICENSE-KEY");
-BarcodeReader reader = new BarcodeReader();
-// add further process
+BarcodeReader reader = BarcodeReader.getInstance();
+if(reader != null)
+{
+    // add further process
+    reader.recycle();
+}
 ```
 
 ## getDeviceUUID
@@ -112,8 +117,12 @@ static void com.dynamsoft.dbr.BarcodeReader.setDeviceFriendlyName(String name) t
 ```java
 BarcodeReader.setDeviceFriendlyName("My-PC");
 BarcodeReader.initLicense("YOUR-LICENSE-KEY");
-BarcodeReader reader = new BarcodeReader();
-// add further process
+BarcodeReader reader = BarcodeReader.getInstance();
+if(reader != null)
+{
+    // add further process
+    reader.recycle();
+}
 ```
 
 ## setLicenseCachePath
@@ -137,8 +146,12 @@ static void com.dynamsoft.dbr.BarcodeReader.setLicenseCachePath(String directory
 ```java
 BarcodeReader.setLicenseCachePath("DIRECTORY-PATH-FOR-LICENSE-CACHE");
 BarcodeReader.initLicense("YOUR-LICENSE-KEY");
-BarcodeReader reader = new BarcodeReader();
-// add further process
+BarcodeReader reader = BarcodeReader.getInstance();
+if(reader != null)
+{
+    // add further process
+    reader.recycle();
+}
 ```
 
 ## setMaxConcurrentInstanceCount
@@ -147,6 +160,7 @@ Sets the max concurrent instance count used for current device and process.
 
 ```java
 static void com.dynamsoft.dbr.BarcodeReader.setMaxConcurrentInstanceCount(int countForThisDevice, int countForThisProcess)
+static void com.dynamsoft.dbr.BarcodeReader.setMaxConcurrentInstanceCount(int countForThisDevice, int countForThisProcess, int timeout)
 ```
 
 **Parameters**
@@ -154,6 +168,8 @@ static void com.dynamsoft.dbr.BarcodeReader.setMaxConcurrentInstanceCount(int co
 `[in] countForThisDevice` The maximum number of concurrent instances that the current device can run.
 
 `[in] countForThisProcess` The maximum number of concurrent instances that the current process can run.
+
+`[in] timeout` The maximum time (in milliseconds) to wait for an available authorization or instance when calling initLicense, getInstance, or decode functions.
 
 **Code Snippet**
 
@@ -172,6 +188,22 @@ if(reader != null)
     reader.recycle();
 }
 ```
+
+## getInstancePoolStatus
+
+Gets a class to represent the status of an instance pool.
+
+```cpp
+static InstancePoolStatus com.dynamsoft.dbr.BarcodeReader.getInstancePoolStatus() throws BarcodeReaderException
+```
+
+**Return Value**
+
+Returns the [`InstancePoolStatus`]({{ site.java_class }}InstancePoolStatus.html) class representing the status of an instance pool.
+
+**Exception**
+
+[`BarcodeReaderException`](../class/BarcodeReaderException.md)
 
 ## getIdleInstancesCount
 

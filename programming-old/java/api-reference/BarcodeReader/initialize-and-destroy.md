@@ -93,12 +93,11 @@ Returns an idle Dynamsoft Barcode Reader instance running on concurrent instance
 ```java
 //Make sure initLicense have been called somewhere before getInstance
 BarcodeReader reader = BarcodeReader.getInstance();
-// If no instance is available right away, the application will wait until one becomes available
 if(reader != null)
 {
     // Add your code here to call decoding method, process barcode results and so on
     // ...
-    // Recycle the instance to make it idle for other concurrent tasks
+    // Recycle the instance
     reader.recycle();
 }
 ```
@@ -116,12 +115,11 @@ void com.dynamsoft.dbr.BarcodeReader.recycle()
 ```java
 //Make sure initLicense have been called somewhere before getInstance
 BarcodeReader reader = BarcodeReader.getInstance();
-// If no instance is available right away, the application will wait until one becomes available
 if(reader != null)
 {
     // Add your code here to call decoding method, process barcode results and so on
     // ...
-    // Recycle the instance to make it idle for other concurrent tasks
+    // Recycle the instance
     reader.recycle();
 }
 ```

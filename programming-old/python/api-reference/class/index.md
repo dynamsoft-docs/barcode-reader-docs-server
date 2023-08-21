@@ -18,6 +18,7 @@ permalink: /programming/python/api-reference/class/index.html
 - [`ExtendedResult`](ExtendedResult.md)	
 - [`FrameDecodingParameters`](FrameDecodingParameters.md)	
 - [`ImageData`](ImageData.md)	 
+- [`InstancePoolStatus`](InstancePoolStatus.md)
 - [`IntermediateResult`](IntermediateResult.md)	
 - [`LineSegment`](LineSegment.md)	 
 - [`LocalizationResult`](LocalizationResult.md)	
