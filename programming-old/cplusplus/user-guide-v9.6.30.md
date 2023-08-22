@@ -41,7 +41,7 @@ If you haven't downloaded the SDK yet, download the `C/C++ Package` now from <a 
 ## Build Your First Application
 
 Let's start by creating a console application which demonstrates how to use the minimum code to read barcodes from an image file.  
-> You can <a href="https://github.com/Dynamsoft/barcode-reader-c-cpp-samples/tree/v9.6.30/samples/C%2B%2B/GeneralSettings/GeneralSettings.cpp" target="_blank">download the entire source code here</a>.
+> You can <a href="https://github.com/Dynamsoft/barcode-reader-c-cpp-samples/tree/v9.x/samples/C%2B%2B/GeneralSettings/GeneralSettings.cpp" target="_blank">download the entire source code here</a>.
 
 ### Create a New Project
 
@@ -206,7 +206,7 @@ Please change all `[INSTALLATION FOLDER]` in above code snippet to your unpackin
     ./DBRCPPSample
     ```
 
-> You can <a href="https://github.com/Dynamsoft/barcode-reader-c-cpp-samples/tree/v9.6.30/samples/C%2B%2B/GeneralSettings/GeneralSettings.cpp" target="_blank">download the entire source code here</a>.
+> You can <a href="https://github.com/Dynamsoft/barcode-reader-c-cpp-samples/tree/v9.x/samples/C%2B%2B/GeneralSettings/GeneralSettings.cpp" target="_blank">download the entire source code here</a>.
 
 ## Next Steps
 
