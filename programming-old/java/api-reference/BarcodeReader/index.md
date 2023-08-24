@@ -16,8 +16,8 @@ permalink: /programming/java/api-reference/BarcodeReader/index.html
   |----------------------|-------------|
   | [`BarcodeReader`](initialize-and-destroy.md#barcodereader) | Initialization of `BarcodeReader` object.|
   | [`destroy`](initialize-and-destroy.md#destroy) | Destroys an instance of `BarcodeReader` object.|
-  | [`getInstance`](initialize-and-destroy.md#getinstance) | Gets an idle Dynamsoft Barcode Reader instance running on concurrent instance mode. |
-  | [`recycle`](initialize-and-destroy.md#recycle) | Recycles a Dynamsoft Barcode Reader instance running on concurrent instance mode. |
+  | [`getInstance`](initialize-and-destroy.md#getinstance) | Creates an instance of Dynamsoft Barcode Reader. |
+  | [`recycle`](initialize-and-destroy.md#recycle) | Destroys an instance of Dynamsoft Barcode Reader. |
    
    
 

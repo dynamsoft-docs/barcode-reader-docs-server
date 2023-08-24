@@ -9,6 +9,24 @@ permalink: /programming/cplusplus/release-notes/cpp-9.html
 
 # Release Notes for C++ Edition - 9.x
 
+## 9.6.30 (08/29/2023)
+
+### New
+
+- Added method `GetInstancePoolStatus` and struct `InstancePoolStatus` to provide a real-time view of how your concurrent instance licenses are being utilized.
+
+### Improved
+
+- Optimized the concurrent instance management and license usage statistics.
+- Extended the availability of methods `GetInstance` and `Recycle`, making them accessible for all licensing modes.
+- Implemented additional checkpoints to ensure timely timeout and termination.
+
+### Fixed
+
+- Fixed a bug where barcode decoding results varied across different operating systems.
+- Fixed a crash bug when initializing license with a segmented license string.
+- Fixed some bugs of barcode format settings when they are defined in the `RegionDefinition` area of the template.
+
 ## 9.6.20 (03/16/2023)
 
 ### Fixed

@@ -26,8 +26,8 @@ permalink: /programming/python/api-reference/index.html
   | Method               | Description |
   |----------------------|-------------|
   | [`BarcodeReader`](BarcodeReader/constructor-and-destructor.md#barcodereader) | Constructor of `BarcodeReader` object.|
-  | [`get_instance`](BarcodeReader/constructor-and-destructor.md#get_instance) | Gets an idle Dynamsoft Barcode Reader instance running on concurrent instance mode. |
-  | [`recycle_instance`](BarcodeReader/constructor-and-destructor.md#recycle_instance) | Recycles a Dynamsoft Barcode Reader instance running on concurrent instance mode. |
+  | [`get_instance`](BarcodeReader/constructor-and-destructor.md#get_instance) | Creates an instance of Dynamsoft Barcode Reader. |
+  | [`recycle_instance`](BarcodeReader/constructor-and-destructor.md#recycle_instance) | Destroys an instance of Dynamsoft Barcode Reader. |
 
    
  

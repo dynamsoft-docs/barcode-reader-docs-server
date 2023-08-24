@@ -18,8 +18,8 @@ permalink: /programming/c/api-reference/index.html
   |----------------------|-------------|
   | [`DBR_CreateInstance`](methods/initialize-and-destroy.md#dbr_createinstance) | Create an instance of Dynamsoft Barcode Reader. |
   | [`DBR_DestroyInstance`](methods/initialize-and-destroy.md#dbr_destroyinstance) | Destroy the instance of Dynamsoft Barcode Reader. |
-  | [`DBR_GetInstance`](methods/initialize-and-destroy.md#dbr_getinstance) | Gets an idle Dynamsoft Barcode Reader instance running on concurrent instance mode. |
-  | [`DBR_RecycleInstance`](methods/initialize-and-destroy.md#dbr_recycleinstance) | Recycles a Dynamsoft Barcode Reader instance running on concurrent instance mode. |
+  | [`DBR_GetInstance`](methods/initialize-and-destroy.md#dbr_getinstance) | Creates an instance of Dynamsoft Barcode Reader. |
+  | [`DBR_RecycleInstance`](methods/initialize-and-destroy.md#dbr_recycleinstance) | Destroys an instance of Dynamsoft Barcode Reader. |
 
 ### License Functions
 

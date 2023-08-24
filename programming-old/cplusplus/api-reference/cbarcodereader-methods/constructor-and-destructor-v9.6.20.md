@@ -4,7 +4,7 @@ title: CBarcodeReader Constructor and Destructor - Dynamsoft Barcode Reader SDK 
 description: This page shows CBarcodeReader constructor and destructor of Dynamsoft Barcode Reader SDK C++ Edition.
 keywords: CBarcodeReader, ~CBarcodeReader, constructor and destructor, api reference, c++
 needAutoGenerateSidebar: true
-permalink: /programming/cplusplus/api-reference/cbarcodereader-methods/constructor-and-destructor.html
+permalink: /programming/cplusplus/api-reference/cbarcodereader-methods/constructor-and-destructor-v9.6.20.html
 ---
 
 # Constructor and Destructor
@@ -13,8 +13,8 @@ permalink: /programming/cplusplus/api-reference/cbarcodereader-methods/construct
   |----------------------|-------------|
   | [`CBarcodeReader`](#cbarcodereader) | Default constructor of `CBarcodeReader` object.|
   | [`~CBarcodeReader`](#~cbarcodereader) | Destructor of `CBarcodeReader` object.|
-  | [`GetInstance`](#getinstance) | Creates an instance of Dynamsoft Barcode Reader. |
-  | [`Recycle`](#recycle) | Destroys an instance of Dynamsoft Barcode Reader. |
+  | [`GetInstance`](#getinstance) | Gets an idle Dynamsoft Barcode Reader instance running on concurrent instance mode. |
+  | [`Recycle`](#recycle) | Recycles a Dynamsoft Barcode Reader instance running on concurrent instance mode. |
 
 ## CBarcodeReader
 
@@ -36,14 +36,14 @@ dynamsoft::dbr::CBarcodeReader::~CBarcodeReader()
 
 ## GetInstance
 
-Creates an instance of Dynamsoft Barcode Reader.
+Gets an idle Dynamsoft Barcode Reader instance running on concurrent instance mode.
 
 ```cpp
 static CBarcodeReader* dynamsoft::dbr::CBarcodeReader::GetInstance()
 ```
 
 **Return Value**  
-Returns an instance of Dynamsoft Barcode Reader. If failed, returns `NULL`.
+Returns an idle Dynamsoft Barcode Reader instance running on concurrent instance mode. If failed, returns `NULL`.
 
 **Code Snippet**  
 
@@ -55,13 +55,14 @@ if(dbr != NULL)
 {
     // Add your code here to call decoding method, process barcode results and so on
     // ...
+    // Recycle the instance to make it idle for other concurrent tasks
     dbr->Recycle();
 }
 ```
 
 ## Recycle
 
-Recycles an instance of Dynamsoft Barcode Reader.
+Recycles a Dynamsoft Barcode Reader instance running on concurrent instance mode.
 
 ```cpp
 void dynamsoft::dbr::CBarcodeReader::Recycle()
@@ -77,6 +78,7 @@ if(dbr != NULL)
 {
     // Add your code here to call decoding method, process barcode results and so on
     // ...
+    // Recycle the instance to make it idle for other concurrent tasks
     dbr->Recycle();
 }
 ```

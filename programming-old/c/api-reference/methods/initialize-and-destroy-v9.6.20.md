@@ -4,7 +4,7 @@ title: Initialize and Destroy Functions - Dynamsoft Barcode Reader SDK C Edition
 description: This page shows Initialize and Destroy functions of Dynamsoft Barcode Reader SDK C Edition.
 keywords: DBR_CreateInstance, DBR_DestroyInstance, initialize and destroy functions, api reference, c
 needAutoGenerateSidebar: true
-permalink: /programming/c/api-reference/methods/initialize-and-destroy.html
+permalink: /programming/c/api-reference/methods/initialize-and-destroy-v9.6.20.html
 ---
 
 
@@ -14,8 +14,8 @@ permalink: /programming/c/api-reference/methods/initialize-and-destroy.html
   |----------------------|-------------|
   | [`DBR_CreateInstance`](#dbr_createinstance) | Creates an instance of Dynamsoft Barcode Reader. |
   | [`DBR_DestroyInstance`](#dbr_destroyinstance) | Destroys the instance of Dynamsoft Barcode Reader. |
-  | [`DBR_GetInstance`](#dbr_getinstance) | Creates an instance of Dynamsoft Barcode Reader. |
-  | [`DBR_RecycleInstance`](#dbr_recycleinstance) | Destroys an instance of Dynamsoft Barcode Reader. |
+  | [`DBR_GetInstance`](#dbr_getinstance) | Gets an idle Dynamsoft Barcode Reader instance running on concurrent instance mode. |
+  | [`DBR_RecycleInstance`](#dbr_recycleinstance) | Recycles a Dynamsoft Barcode Reader instance running on concurrent instance mode. |
   
   
 ## DBR_CreateInstance
@@ -63,14 +63,14 @@ DBR_DestroyInstance(barcodeReader);
 
 ## DBR_GetInstance
 
-Creates an instance of Dynamsoft Barcode Reader.
+Gets an idle Dynamsoft Barcode Reader instance running on concurrent instance mode.
 
 ```c
 DBR_API void* DBR_GetInstance()
 ```
 
 **Return Value**  
-Returns an instance of Dynamsoft Barcode Reader. If failed, returns `NULL`.
+Returns an idle Dynamsoft Barcode Reader instance running on concurrent instance mode. If failed, returns `NULL`.
 
 **Code Snippet**  
 
@@ -82,13 +82,14 @@ if(dbr != NULL)
 {
     // Add your code here to call decoding method, process barcode results and so on
     // ...
+    // Recycle the instance to make it idle for other concurrent tasks
     DBR_RecycleInstance(dbr);
 }
 ```
 
 ## DBR_RecycleInstance
 
-Destroys an instance of Dynamsoft Barcode Reader.
+Recycles a Dynamsoft Barcode Reader instance running on concurrent instance mode.
 
 ```c
 DBR_API void DBR_RecycleInstance (void* barcodeReader)
@@ -108,6 +109,7 @@ if(dbr != NULL)
 {
     // Add your code here to call decoding method, process barcode results and so on
     // ...
+    // Recycle the instance to make it idle for other concurrent tasks
     DBR_RecycleInstance(dbr);
 }
 ```

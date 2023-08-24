@@ -4,7 +4,7 @@ title: BarcodeReader Constructor and Destructor - Dynamsoft Barcode Reader SDK .
 description: This page shows BarcodeReader Constructor and Destructor of Dynamsoft Barcode Reader SDK .NET Edition.
 keywords: BarcodeReader, Dispose, api reference, .Net
 needAutoGenerateSidebar: true
-permalink: /programming/dotnet/api-reference/BarcodeReader/constructor-and-destructor.html
+permalink: /programming/dotnet/api-reference/BarcodeReader/constructor-and-destructor-v9.6.20.html
 ---
 
 # Constructor and Destructor
@@ -13,8 +13,8 @@ permalink: /programming/dotnet/api-reference/BarcodeReader/constructor-and-destr
   |----------------------|-------------|
   | [`BarcodeReader`](#barcodereader) | Default constructor of `BarcodeReader` object.|
   | [`Dispose`](#dispose) | Destroys an instance of Dynamsoft Barcode Reader. |
-  | [`GetInstance`](#getinstance) | Creates an instance of Dynamsoft Barcode Reader. |
-  | [`Recycle`](#recycle) | Destroys an instance of Dynamsoft Barcode Reader. |
+  | [`GetInstance`](#getinstance) | Gets an idle Dynamsoft Barcode Reader instance running on concurrent instance mode. |
+  | [`Recycle`](#recycle) | Recycles a Dynamsoft Barcode Reader instance running on concurrent instance mode. |
 
 ## BarcodeReader
 
@@ -55,14 +55,14 @@ void Dynamsoft.DBR.BarcodeReader.Dispose()
 
 ## GetInstance
 
-Creates an instance of Dynamsoft Barcode Reader.
+Gets an idle Dynamsoft Barcode Reader instance running on concurrent instance mode.
 
 ```csharp
 static BarcodeReader Dynamsoft.DBR.BarcodeReader.GetInstance()
 ```
 
 **Return Value**  
-Returns an instance of Dynamsoft Barcode Reader. If failed, returns `null`.
+Returns an idle Dynamsoft Barcode Reader instance running on concurrent instance mode. If failed, returns `null`.
 
 **Code Snippet**  
 
@@ -74,13 +74,14 @@ if (reader != null)
 {
     // Add your code here to call decoding method, process barcode results and so on
     // ...
+    // Recycle the instance to make it idle for other concurrent tasks
     reader.Recycle();
 }
 ```
 
 ## Recycle
 
-Recycles an instance of Dynamsoft Barcode Reader.
+Recycles a Dynamsoft Barcode Reader instance running on concurrent instance mode.
 
 ```csharp
 void Dynamsoft.DBR.BarcodeReader.Recycle()
@@ -96,6 +97,7 @@ if (reader != null)
 {
     // Add your code here to call decoding method, process barcode results and so on
     // ...
+    // Recycle the instance to make it idle for other concurrent tasks
     reader.Recycle();
 }
 ```

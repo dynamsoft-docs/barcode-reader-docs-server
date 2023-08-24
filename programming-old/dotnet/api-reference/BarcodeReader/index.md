@@ -15,8 +15,8 @@ permalink: /programming/dotnet/api-reference/BarcodeReader/index.html
   |----------------------|-------------|
   | [`BarcodeReader`](constructor-and-destructor.md#barcodereader) | Constructor of `BarcodeReader` object.|
   | [`Dispose`](constructor-and-destructor.md#dispose) | Destroys an instance of Dynamsoft Barcode Reader. |
-  | [`GetInstance`](constructor-and-destructor.md#getinstance) | Gets an idle Dynamsoft Barcode Reader instance running on concurrent instance mode. |
-  | [`Recycle`](constructor-and-destructor.md#recycle) | Recycles a Dynamsoft Barcode Reader instance running on concurrent instance mode. |
+  | [`GetInstance`](constructor-and-destructor.md#getinstance) | Creates an instance of Dynamsoft Barcode Reader. |
+  | [`Recycle`](constructor-and-destructor.md#recycle) | Destroys an instance of Dynamsoft Barcode Reader. |
  
 ## License
   

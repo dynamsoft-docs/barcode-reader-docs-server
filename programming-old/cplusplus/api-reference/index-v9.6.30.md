@@ -18,8 +18,8 @@ permalink: /programming/cplusplus/api-reference/index-v9.6.30.html
   |----------------------|-------------|
   | [`CBarcodeReader`](cbarcodereader-methods/constructor-and-destructor.md#cbarcodereader) | Default constructor of `CBarcodeReader` object.|
   | [`~CBarcodeReader`](cbarcodereader-methods/constructor-and-destructor.md#~cbarcodereader) | Destructor of `CBarcodeReader` object.|
-  | [`GetInstance`](cbarcodereader-methods/constructor-and-destructor.md#getinstance) | Gets an idle Dynamsoft Barcode Reader instance running on concurrent instance mode. |
-  | [`Recycle`](cbarcodereader-methods/constructor-and-destructor.md#recycle) | Recycles a Dynamsoft Barcode Reader instance running on concurrent instance mode. |
+  | [`GetInstance`](cbarcodereader-methods/constructor-and-destructor.md#getinstance) | Creates an instance of Dynamsoft Barcode Reader. |
+  | [`Recycle`](cbarcodereader-methods/constructor-and-destructor.md#recycle) | Destroys an instance of Dynamsoft Barcode Reader. |
 
 ### License Methods
   

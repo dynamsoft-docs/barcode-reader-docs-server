@@ -4,7 +4,7 @@ title: BarcodeReader Initialization and Destroy - Dynamsoft Barcode Reader SDK J
 description: This page shows BarcodeReader Initialization and Destroy of Dynamsoft Barcode Reader SDK Java Edition API Reference.
 keywords: BarcodeReader, destroy, initialization and destroy, api reference, java
 needAutoGenerateSidebar: true
-permalink: /programming/java/api-reference/BarcodeReader/initialize-and-destroy.html
+permalink: /programming/java/api-reference/BarcodeReader/initialize-and-destroy-v9.6.20.html
 ---
 
 # Initialization and Destroy
@@ -13,8 +13,8 @@ permalink: /programming/java/api-reference/BarcodeReader/initialize-and-destroy.
   |----------------------|-------------|
   | [`BarcodeReader`](#barcodereader) | Initialization of `BarcodeReader` object.|
   | [`destroy`](#destroy) | Destroys an instance of `BarcodeReader` object.|
-  | [`getInstance`](#getinstance) | Creates an instance of Dynamsoft Barcode Reader. |
-  | [`recycle`](#recycle) | Destroys an instance of Dynamsoft Barcode Reader. |
+  | [`getInstance`](#getinstance) | Gets an idle Dynamsoft Barcode Reader instance running on concurrent instance mode. |
+  | [`recycle`](#recycle) | Recycles a Dynamsoft Barcode Reader instance running on concurrent instance mode. |
 
 
 
@@ -79,14 +79,14 @@ reader.destroy();
 
 ## GetInstance
 
-Creates an instance of Dynamsoft Barcode Reader.
+Gets an idle Dynamsoft Barcode Reader instance running on concurrent instance mode.
 
 ```java
 static BarcodeReader com.dynamsoft.dbr.BarcodeReader.getInstance()
 ```
 
 **Return Value**  
-Returns an instance of Dynamsoft Barcode Reader. If failed, returns `null`.
+Returns an idle Dynamsoft Barcode Reader instance running on concurrent instance mode. If failed, returns `null`.
 
 **Code Snippet**  
 
@@ -104,7 +104,7 @@ if(reader != null)
 
 ## Recycle
 
-Destroys an instance of Dynamsoft Barcode Reader.
+Recycles a Dynamsoft Barcode Reader instance running on concurrent instance mode.
 
 ```java
 void com.dynamsoft.dbr.BarcodeReader.recycle()
