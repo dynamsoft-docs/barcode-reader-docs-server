@@ -10,6 +10,7 @@ permalink: /programming/python/release-notes/index.html
 
 # Release Notes for Python Edition
 
+- [9.6.30 (08/29/2023)](python-9.md#9630-08292023)
 - [9.6.20 (03/16/2023)](python-9.md#9620-03162023)
 - [9.6.10 (01/10/2023)](python-9.md#9610-01102023)
 - [9.6.0 (11/29/2022)](python-9.md#960-11292022)
