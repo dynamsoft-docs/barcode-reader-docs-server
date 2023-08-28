@@ -157,15 +157,15 @@ if (reader != null)
 Sets the max concurrent instance count used for current device and process.
 
 ```csharp
-static void Dynamsoft.DBR.BarcodeReader.SetMaxConcurrentInstanceCount(int countForThisDevice, int countForThisProcess = 0)
-static void Dynamsoft.DBR.BarcodeReader.SetMaxConcurrentInstanceCount(int countForThisDevice, int countForThisProcess = 0, int timeout= 0)
+static void Dynamsoft.DBR.BarcodeReader.SetMaxConcurrentInstanceCount(int countForThisDevice, int countForThisProcess)
+static void Dynamsoft.DBR.BarcodeReader.SetMaxConcurrentInstanceCount(int countForThisDevice, int countForThisProcess, int timeout)
 ```
 
 **Parameters**
 
 `[in] countForThisDevice` The maximum number of concurrent instances that the current device can run.
 
-`[in] countForThisProcess` <sub>Optional</sub> The maximum number of concurrent instances that the current process can run.
+`[in] countForThisProcess` The maximum number of concurrent instances that the current process can run.
 
 `[in] timeout` The maximum time (in milliseconds) to wait for an available authorization or instance when calling InitLicense, GetInstance, or Decode functions.
 

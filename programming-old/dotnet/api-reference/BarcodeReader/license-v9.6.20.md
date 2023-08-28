@@ -144,14 +144,14 @@ BarcodeReader reader = new BarcodeReader();
 Sets the max concurrent instance count used for current device and process.
 
 ```csharp
-static void Dynamsoft.DBR.BarcodeReader.SetMaxConcurrentInstanceCount(int countForThisDevice, int countForThisProcess = 0)
+static void Dynamsoft.DBR.BarcodeReader.SetMaxConcurrentInstanceCount(int countForThisDevice, int countForThisProcess)
 ```
 
 **Parameters**
 
 `[in] countForThisDevice` The maximum number of concurrent instances that the current device can run.
 
-`[in] countForThisProcess` <sub>Optional</sub> The maximum number of concurrent instances that the current process can run.
+`[in] countForThisProcess` The maximum number of concurrent instances that the current process can run.
 
 **Code Snippet**
 

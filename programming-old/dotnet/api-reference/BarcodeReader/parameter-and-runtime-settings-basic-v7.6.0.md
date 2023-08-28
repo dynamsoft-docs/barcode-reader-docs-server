@@ -86,7 +86,7 @@ EnumErrorCode Dynamsoft.Barcode.BarcodeReader.GetModeArgument(string modesName, 
 `[in]	index` <*int*> : The array index of mode parameter to indicate a specific mode.  
 `[in]	argumentName` <*string*> : The name of the argument to get.  
 `[in,out]	argumentValue` <*string*> : The value of the argument to get.  
-`[in,out]	errorMessage` <*Optional*><*string*> : The error message.
+`[in,out]	errorMessage` <*string*> : The error message.
 
 #### Return value
 Returns error code.
