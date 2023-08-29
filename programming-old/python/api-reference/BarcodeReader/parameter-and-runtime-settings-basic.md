@@ -43,18 +43,19 @@ BarcodeReader.set_mode_argument(modes_name, index, argument_name, argument_value
 
 ```python
 from dbr import *
-reader = BarcodeReader()
-
-settings = reader.get_runtime_settings()
-settings.binarization_modes[0] = EnumBinarizationMode.BM_LOCAL_BLOCK
-
-try:
-    reader.update_runtime_settings(settings)
-    error = reader.set_mode_argument("BinarizationModes", 0, "EnableFillBinaryVacancy", "1")
-    if error[0] != 0:
-        print(error[1])
-except BarcodeReaderError as e:
-    print(e)
+reader = BarcodeReader.get_instance()
+if reader != None:
+    settings = reader.get_runtime_settings()
+    settings.binarization_modes[0] = EnumBinarizationMode.BM_LOCAL_BLOCK
+    try:
+        reader.update_runtime_settings(settings)
+        error = reader.set_mode_argument("BinarizationModes", 0, "EnableFillBinaryVacancy", "1")
+        if error[0] != 0:
+            print(error[1])
+        # add further process
+    except BarcodeReaderError as e:
+        print(e)
+    reader.recycle_instance()
 ```
 
 **Remarks**  
@@ -101,18 +102,20 @@ BarcodeReader.get_mode_argument(modes_name, index, argument_name)
 
 ```python
 from dbr import *
-reader = BarcodeReader()
+reader = BarcodeReader.get_instance()
+if reader != None:
+    settings = reader.get_runtime_settings()
+    settings.binarization_modes[0] = EnumBinarizationMode.BM_LOCAL_BLOCK
+    try:
+        reader.update_runtime_settings(settings)
+        error = reader.set_mode_argument("BinarizationModes", 0, "EnableFillBinaryVacancy", "1")
 
-settings = reader.get_runtime_settings()
-settings.binarization_modes[0] = EnumBinarizationMode.BM_LOCAL_BLOCK
-try:
-    reader.update_runtime_settings(settings)
-    error = reader.set_mode_argument("BinarizationModes", 0, "EnableFillBinaryVacancy", "1")
-
-    value = reader.get_mode_argument("BinarizationModes", 0, "EnableFillBinaryVacancy")
-    print(value)
-except BarcodeReaderError as e:
-    print(e)
+        value = reader.get_mode_argument("BinarizationModes", 0, "EnableFillBinaryVacancy")
+        print(value)
+        # add further process
+    except BarcodeReaderError as e:
+        print(e)
+    reader.recycle_instance()
 ```
 
 
@@ -149,11 +152,13 @@ BarcodeReader.get_runtime_settings()
 
 ```python
 from dbr import *
-reader = BarcodeReader()
-
-settings = reader.get_runtime_settings()
-print(settings.barcode_format_ids)
-print(settings.expected_barcodes_count)
+reader = BarcodeReader.get_instance()
+if reader != None:
+    settings = reader.get_runtime_settings()
+    print(settings.barcode_format_ids)
+    print(settings.expected_barcodes_count)
+    # add further process
+    reader.recycle_instance()
 ```
 
 ## update_runtime_settings
@@ -176,18 +181,20 @@ BarcodeReader.update_runtime_settings(settings)
 
 ```python
 from dbr import *
-reader = BarcodeReader()
-
-settings = reader.get_runtime_settings()
-settings.barcode_format_ids = EnumBarcodeFormat.BF_ONED
-settings.expected_barcodes_count = 4
-try:
-    reader.update_runtime_settings(settings)
-    changed_settings = reader.get_runtime_settings()
-    print(changed_settings.barcode_format_ids)
-    print(changed_settings.expected_barcodes_count)
-except BarcodeReaderError as e:
-    print(e)
+reader = BarcodeReader.get_instance()
+if reader != None:
+    settings = reader.get_runtime_settings()
+    settings.barcode_format_ids = EnumBarcodeFormat.BF_ONED
+    settings.expected_barcodes_count = 4
+    try:
+        reader.update_runtime_settings(settings)
+        changed_settings = reader.get_runtime_settings()
+        print(changed_settings.barcode_format_ids)
+        print(changed_settings.expected_barcodes_count)
+        # add further process
+    except BarcodeReaderError as e:
+        print(e)
+    reader.recycle_instance()
 ```
 
 ## reset_runtime_settings
@@ -202,21 +209,23 @@ BarcodeReader.reset_runtime_settings()
 
 ```python
 from dbr import *
-reader = BarcodeReader()
+reader = BarcodeReader.get_instance()
+if reader != None:
+    settings = reader.get_runtime_settings()
+    settings.barcode_format_ids = EnumBarcodeFormat.BF_ONED
+    settings.expected_barcodes_count = 4
+    try:
+        reader.update_runtime_settings(settings)
+        changed_settings = reader.get_runtime_settings()
+        print(changed_settings.barcode_format_ids)
+        print(changed_settings.expected_barcodes_count)
 
-settings = reader.get_runtime_settings()
-settings.barcode_format_ids = EnumBarcodeFormat.BF_ONED
-settings.expected_barcodes_count = 4
-try:
-    reader.update_runtime_settings(settings)
-    changed_settings = reader.get_runtime_settings()
-    print(changed_settings.barcode_format_ids)
-    print(changed_settings.expected_barcodes_count)
-
-    reader.reset_runtime_settings()
-    reset_settings = reader.get_runtime_settings()
-    print(reset_settings.barcode_format_ids)
-    print(reset_settings.expected_barcodes_count)
-except BarcodeReaderError as e:
-    print(e)
+        reader.reset_runtime_settings()
+        reset_settings = reader.get_runtime_settings()
+        print(reset_settings.barcode_format_ids)
+        print(reset_settings.expected_barcodes_count)
+        # add further process
+    except BarcodeReaderError as e:
+        print(e)
+    reader.recycle_instance()
 ```

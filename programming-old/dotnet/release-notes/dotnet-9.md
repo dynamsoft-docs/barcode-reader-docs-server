@@ -9,6 +9,24 @@ permalink: /programming/dotnet/release-notes/dotnet-9.html
 
 # Release Notes for .NET Edition - 9.x
 
+## 9.6.30 (08/29/2023)
+
+### New
+
+- Added a new method [`GetInstancePoolStatus`]({{site.dotnet_methods}}license.html#getinstancepoolstatus) and class [`InstancePoolStatus`]({{site.dotnet_class}}InstancePoolStatus.html) to provide a real-time view of how the concurrent instance licenses are being utilized. This applies only if you are using a concurrent instance license.
+
+### Improved
+
+- Optimized the concurrent instance management and license usage statistics when using a concurrent instance license.
+- Extended the availability of methods `GetInstance` and `Recycle`, making them accessible to all licensing modes.
+- Implemented additional checkpoints to ensure timely timeout and termination.
+
+### Fixed
+
+- Fixed a bug where barcode results varied depending on the operating system being used.
+- Fixed a crash bug when initializing a license with a segmented license string.
+- Fixed some bugs related to the barcode format settings when they are defined in the `RegionDefinition` object of the template.
+
 ## 9.6.20 (03/16/2023)
 
 ### Fixed

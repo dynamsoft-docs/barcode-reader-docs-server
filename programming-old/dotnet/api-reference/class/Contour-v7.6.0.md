@@ -11,7 +11,7 @@ permalink: /programming/dotnet/api-reference/class/Contour-v7.6.0.html
 # Contour
 Stores the contour information.
 
-```C#
+```csharp
 public class Contour
 ```  
 
@@ -27,6 +27,6 @@ public class Contour
 ### Points
 The points array.
 
-```C#
+```csharp
 Point[] Dynamsoft.Barcode.Contour.Points
 ```  

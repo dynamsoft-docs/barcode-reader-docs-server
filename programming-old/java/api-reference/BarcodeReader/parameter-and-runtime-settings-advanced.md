@@ -43,9 +43,13 @@ void com.dynamsoft.dbr.BarcodeReader.initRuntimeSettingsWithFile(String filePath
 **Code Snippet**  
 ```java
 BarcodeReader.initLicense("YOUR-LICENSE-KEY");
-BarcodeReader reader = new BarcodeReader();
-reader.initRuntimeSettingsWithFile("your template file path", EnumConflictMode.CM_OVERWRITE);
-reader.destroy();
+BarcodeReader reader = BarcodeReader.getInstance();
+if(reader != null)
+{
+	reader.initRuntimeSettingsWithFile("your template file path", EnumConflictMode.CM_OVERWRITE);
+    // add further process
+    reader.recycle();
+}
 ```
 
  
@@ -73,9 +77,13 @@ void com.dynamsoft.dbr.BarcodeReader.initRuntimeSettingsWithString(String conten
 **Code Snippet**  
 ```java
 BarcodeReader.initLicense("YOUR-LICENSE-KEY");
-BarcodeReader reader = new BarcodeReader();
-reader.initRuntimeSettingsWithString("{\"Version\":\"3.0\", \"ImageParameter\":{\"Name\":\"IP1\", \"BarcodeFormatIds\":[\"BF_QR_CODE\"], \"ExpectedBarcodesCount\":10}}", EnumConflictMode.CM_OVERWRITE);
-reader.destroy();
+BarcodeReader reader = BarcodeReader.getInstance();
+if(reader != null)
+{
+	reader.initRuntimeSettingsWithString("{\"Version\":\"3.0\", \"ImageParameter\":{\"Name\":\"IP1\", \"BarcodeFormatIds\":[\"BF_QR_CODE\"], \"ExpectedBarcodesCount\":10}}", EnumConflictMode.CM_OVERWRITE);
+    // add further process
+    reader.recycle();
+}
 ```
 
  
@@ -102,9 +110,13 @@ void com.dynamsoft.dbr.BarcodeReader.appendTplFileToRuntimeSettings(String fileP
 **Code Snippet**  
 ```java
 BarcodeReader.initLicense("YOUR-LICENSE-KEY");
-BarcodeReader reader = new BarcodeReader();
-reader.appendTplFileToRuntimeSettings("your template file path", EnumConflictMode.CM_IGNORE);
-reader.destroy();
+BarcodeReader reader = BarcodeReader.getInstance();
+if(reader != null)
+{
+	reader.appendTplFileToRuntimeSettings("your template file path", EnumConflictMode.CM_IGNORE);
+    // add further process
+    reader.recycle();
+}
 ```
 
  
@@ -132,10 +144,14 @@ void com.dynamsoft.dbr.BarcodeReader.appendTplStringToRuntimeSettings(String con
 **Code Snippet**  
 ```java
 BarcodeReader.initLicense("YOUR-LICENSE-KEY");
-BarcodeReader reader = new BarcodeReader();
-reader.initRuntimeSettingsWithString("{\"Version\":\"3.0\", \"ImageParameter\":{\"Name\":\"IP1\", \"BarcodeFormatIds\":[\"BF_QR_CODE\"], \"ExpectedBarcodesCount\":10}}", EnumConflictMode.CM_OVERWRITE);
-reader.appendTplStringToRuntimeSettings("{\"Version\":\"3.0\", \"ImageParameter\":{\"Name\":\"IP2\", \"BarcodeFormatIds\":[\"BF_OneD\"], \"ExpectedBarcodesCount\":20}}", EnumConflictMode.CM_IGNORE);
-reader.destroy();
+BarcodeReader reader = BarcodeReader.getInstance();
+if(reader != null)
+{
+	reader.initRuntimeSettingsWithString("{\"Version\":\"3.0\", \"ImageParameter\":{\"Name\":\"IP1\", \"BarcodeFormatIds\":[\"BF_QR_CODE\"], \"ExpectedBarcodesCount\":10}}", EnumConflictMode.CM_OVERWRITE);
+	reader.appendTplStringToRuntimeSettings("{\"Version\":\"3.0\", \"ImageParameter\":{\"Name\":\"IP2\", \"BarcodeFormatIds\":[\"BF_OneD\"], \"ExpectedBarcodesCount\":20}}", EnumConflictMode.CM_IGNORE);
+    // add further process
+    reader.recycle();
+}
 ```
 
  
@@ -160,9 +176,13 @@ The template name array.
 **Code Snippet**  
 ```java
 BarcodeReader.initLicense("YOUR-LICENSE-KEY");
-BarcodeReader reader = new BarcodeReader();
-String[] templateNames = reader.getAllParameterTemplateNames();
-reader.destroy();
+BarcodeReader reader = BarcodeReader.getInstance();
+if(reader != null)
+{
+	String[] templateNames = reader.getAllParameterTemplateNames();
+    // add further process
+    reader.recycle();
+}
 ```
 
 
@@ -189,9 +209,13 @@ void com.dynamsoft.dbr.BarcodeReader.outputSettingsToFile(String filePath, Strin
 **Code Snippet**  
 ```java
 BarcodeReader.initLicense("YOUR-LICENSE-KEY");
-BarcodeReader reader = new BarcodeReader();
-reader.outputSettingsToFile("your saving file path", "currentRuntimeSettings");
-reader.destroy();
+BarcodeReader reader = BarcodeReader.getInstance();
+if(reader != null)
+{
+	reader.outputSettingsToFile("your saving file path", "currentRuntimeSettings");
+    // add further process
+    reader.recycle();
+}
 ```
 
  
@@ -216,9 +240,13 @@ The output string which stores the contents of current settings.
 **Code Snippet**  
 ```java
 BarcodeReader.initLicense("YOUR-LICENSE-KEY");
-BarcodeReader reader = new BarcodeReader();
-String settingStr = reader.outputSettingsToString("currentRuntimeSettings");
-reader.destroy();
+BarcodeReader reader = BarcodeReader.getInstance();
+if(reader != null)
+{
+	String settingStr = reader.outputSettingsToString("currentRuntimeSettings");
+    // add further process
+    reader.recycle();
+}
 ```
 
 

@@ -18,6 +18,7 @@ permalink: /programming/python/api-reference/BarcodeReader/license.html
   | [`set_device_friendly_name`](#set_device_friendly_name) | Sets a human-readable name that identifies the device. |
   | [`set_license_cache_path`](#set_license_cache_path) | Sets a directory path for saving the license cache. |
   | [`set_max_concurrent_instance_count`](#set_max_concurrent_instance_count) | Sets the max concurrent instance count used for current device and process. |
+  | [`get_instance_pool_status`](#get_instance_pool_status) | Gets a class to represent the status of an instance pool. |
   | [`get_idle_instances_count`](#get_idle_instances_count) | `Deprecated` |
   | [`init_license_from_server`](#init_license_from_server) | `Deprecated` |
   | [`init_license_from_license_content`](#init_license_from_license_content) | `Deprecated` |
@@ -121,6 +122,7 @@ Sets the max concurrent instance count used for current device and process.
 
 ```python
 BarcodeReader.set_max_concurrent_instance_count(count_for_this_device, count_for_this_process = 0)
+BarcodeReader.set_max_concurrent_instance_count(count_for_this_device, count_for_this_process = 0, timeout = 0)
 ```
 
 **Parameters**
@@ -128,6 +130,8 @@ BarcodeReader.set_max_concurrent_instance_count(count_for_this_device, count_for
 `[in] count_for_this_device` The maximum number of concurrent instances that the current device can run.
 
 `[in] count_for_this_process` <sub>Optional</sub> The maximum number of concurrent instances that the current process can run.
+
+`[in] timeout` The maximum time (in milliseconds) to wait for an available authorization or instance when calling init_license, get_instance, or decode functions.
 
 **Code Snippet**
 
@@ -143,6 +147,18 @@ if reader != None:
    # Recycle the instance to make it idle for other concurrent tasks
    reader.recycle_instance()
 ```
+
+## get_instance_pool_status
+
+Gets a class to represent the status of an instance pool.
+
+```cpp
+instance_pool_status <*class InstancePoolStatus*> BarcodeReader.get_instance_pool_status()
+```
+
+**Return Value**
+
+Returns the [`InstancePoolStatus`]({{ site.python_class }}InstancePoolStatus.html) class representing the status of an instance pool.
 
 ## get_idle_instances_count
 

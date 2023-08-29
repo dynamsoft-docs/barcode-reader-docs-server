@@ -57,9 +57,6 @@ BarcodeReader.start_video_mode(frame_decoding_parameters, text_result_callback_f
 ```python
 import cv2
 from dbr import *
-license_key = 'YOUR-LICENSE-KEY'
-BarcodeReader.init_license(license_key)
-reader = BarcodeReader()
 
 # The callback function for receiving barcode results
 def text_results_callback_func(frame_id, t_results, user_data):
@@ -159,8 +156,12 @@ def read_barcode():
 
 print("-------------------start------------------------")
 
-reader.init_license("t0260NwAAAHV***************")
-read_barcode()
+license_key = 'YOUR-LICENSE-KEY'
+BarcodeReader.init_license(license_key)
+reader = BarcodeReader.get_instance()
+if reader != None:
+    read_barcode()
+    reader.recycle_instance()
 
 print("-------------------over------------------------")
 ```

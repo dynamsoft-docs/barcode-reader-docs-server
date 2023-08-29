@@ -17,6 +17,8 @@ permalink: /programming/c/api-reference/methods/license.html
   | [`DBR_SetDeviceFriendlyName`](#dbr_setdevicefriendlyname) | Sets a human-readable name that identifies the device. |
   | [`DBR_SetLicenseCachePath`](#dbr_setlicensecachepath) | Sets a directory path for saving the license cache. |
   | [`DBR_SetMaxConcurrentInstanceCount`](#dbr_setmaxconcurrentinstancecount) | Sets the max concurrent instance count used for current device and process. |
+  | [`DBR_SetMaxConcurrentInstanceCountEx`](#dbr_setmaxconcurrentinstancecountex) | Sets the max concurrent instance count used for current device and process. |
+  | [`DBR_GetInstancePoolStatus`](#dbr_getinstancepoolstatus) | Gets a struct to represent the status of an instance pool. |
   | [`DBR_GetIdleInstancesCount`](#dbr_getidleinstancescount) | `Deprecated` |
   | [`DBR_InitLicenseFromServer`](#dbr_initlicensefromserver) | `Deprecated` |
   | [`DBR_InitLicenseFromLicenseContent`](#dbr_initlicensefromlicensecontent) | `Deprecated` |
@@ -55,8 +57,12 @@ Returns error code (returns 0 if the function operates successfully).
 ```c
 char errorBuf[512];
 DBR_InitLicense("YOUR-LICENSE-KEY", errorBuf, 512);
-void* barcodeReader = DBR_CreateInstance();
-// add further process
+void* barcodeReader = DBR_GetInstance();
+if(barcodeReader != NULL)
+{
+    // add further process
+    DBR_RecycleInstance(barcodeReader);
+}
 ```
 
 ## DBR_GetDeviceUUID
@@ -133,8 +139,12 @@ Returns error code (returns 0 if the function operates successfully).
 char errorBuf[512];
 DBR_SetDeviceFriendlyName("My-PC");
 DBR_InitLicense("YOUR-LICENSE-KEY", errorBuf, 512);
-void* barcodeReader = DBR_CreateInstance();
-// add further process
+void* barcodeReader = DBR_GetInstance();
+if(barcodeReader != NULL)
+{
+	// add further process
+    DBR_RecycleInstance(barcodeReader);
+}
 ```
 
 ## DBR_SetLicenseCachePath
@@ -161,8 +171,12 @@ Returns error code (returns 0 if the function operates successfully).
 char errorBuf[512];
 DBR_SetLicenseCachePath("DIRECTORY-PATH-FOR-LICENSE-CACHE");
 DBR_InitLicense("YOUR-LICENSE-KEY", errorBuf, 512);
-void* barcodeReader = DBR_CreateInstance();
-// add further process
+void* barcodeReader = DBR_GetInstance();
+if(barcodeReader != NULL)
+{
+	// add further process
+    DBR_RecycleInstance(barcodeReader);
+}
 ```
 
 ## DBR_SetMaxConcurrentInstanceCount
@@ -197,6 +211,54 @@ if(dbr != NULL)
     DBR_RecycleInstance(dbr);
 }
 ```
+
+## DBR_SetMaxConcurrentInstanceCountEx
+
+Sets the max concurrent instance count used for current device and process.
+
+```c
+DBR_API void DBR_SetMaxConcurrentInstanceCount(int countForThisDevice, int countForThisProcess, int timeout)
+```
+
+**Parameters**
+
+`[in] countForThisDevice` The maximum number of concurrent instances that the current device can run.
+
+`[in] countForThisProcess` The maximum number of concurrent instances that the current process can run.
+
+`[in] timeout` The maximum time (in milliseconds) to wait for an available authorization or instance when calling InitLicense, GetInstance, or Decode functions.
+
+**Code Snippet**
+
+```c
+char errorBuf[512];
+int countForThisDevice = 1; // The count value should be set based on your purchased license count
+int countForThisProcess = 1; // The count value should be set based on your purchased license count
+int timeout = 100; // The timeout value should be set based on your requirement
+DBR_SetMaxConcurrentInstanceCountEx(countForThisDevice, countForThisProcess, timeout);
+DBR_InitLicense("YOUR-LICENSE-KEY", errorBuf, 512);
+void* dbr = DBR_GetInstance();
+// If no instance is available right away, the application will wait until one becomes available
+if(dbr != NULL)
+{
+    // Add your code here to call decoding method, process barcode results and so on
+    // ...
+    // Recycle the instance to make it idle for other concurrent tasks
+    DBR_RecycleInstance(dbr);
+}
+```
+
+## DBR_GetInstancePoolStatus
+
+Gets a struct to represent the status of an instance pool.
+
+```c
+DBR_API InstancePoolStatus DBR_GetInstancePoolStatus()
+```
+
+**Return Value**
+
+Returns the [`InstancePoolStatus`]({{ site.structs }}InstancePoolStatus.html?src=c) struct representing the status of an instance pool.
 
 ## DBR_GetIdleInstancesCount
 

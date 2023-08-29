@@ -24,7 +24,7 @@ permalink: /programming/dotnet/api-reference/BarcodeReader/constructor-and-destr
 
 Default constructor of a `BarcodeReader` object.
 
-```C#
+```csharp
 Dynamsoft.Barcode.BarcodeReader.BarcodeReader()
 ```
 
@@ -32,7 +32,7 @@ Dynamsoft.Barcode.BarcodeReader.BarcodeReader()
 
 Constructor with a given product key.
 
-```C#
+```csharp
 Dynamsoft.Barcode.BarcodeReader.BarcodeReader(string productKey)
 ```
 
@@ -43,7 +43,7 @@ Dynamsoft.Barcode.BarcodeReader.BarcodeReader(string productKey)
 
 Constructor with a given product key and a given path to load DLLs.
 
-```C#
+```csharp
 Dynamsoft.Barcode.BarcodeReader.BarcodeReader(string modulePath, string productKey)
 ```
 
@@ -60,6 +60,6 @@ Dynamsoft.Barcode.BarcodeReader.BarcodeReader(string modulePath, string productK
 
 Destroys an instance of Dynamsoft Barcode Reader.
 
-```C#
+```csharp
 void Dynamsoft.Barcode.BarcodeReader.Dispose() 
 ```

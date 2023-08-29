@@ -9,6 +9,26 @@ permalink: /programming/python/release-notes/python-9.html
 
 # Release Notes for Python Edition - 9.x
 
+## 9.6.30 (08/29/2023)
+
+### New
+
+- Added a new method [`get_instance_pool_status`]({{site.python_methods}}license.html#get_instance_pool_status) and class [`InstancePoolStatus`]({{site.python_class}}InstancePoolStatus.html) to provide a real-time view of how the concurrent instance licenses are being utilized. This applies only if you are using a concurrent instance license.
+
+### Improved
+
+- Optimized the concurrent instance management and license usage statistics when using a concurrent instance license.
+- Extended the availability of methods `GetInstance` and `Recycle`, making them accessible to all licensing modes.
+- Implemented additional checkpoints to ensure timely timeout and termination.
+
+### Fixed
+
+- Fixed a bug where barcode results varied depending on the operating system being used.
+- Fixed a crash bug when initializing a license with a segmented license string.
+- Fixed some bugs related to the barcode format settings when they are defined in the `RegionDefinition` object of the template.
+- Fixed a memory leak issue.
+
+
 ## 9.6.20 (03/16/2023)
 
 ### Fixed

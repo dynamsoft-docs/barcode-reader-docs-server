@@ -11,7 +11,7 @@ permalink: /programming/dotnet/api-reference/class/FrameDecodingParameters-v7.6.
 # FrameDecodingParameters
 Defines a struct to configure the frame decoding Parameters.  
 
-```C#
+```csharp
 public class FrameDecodingParameters
 ```
 
@@ -38,7 +38,7 @@ public class FrameDecodingParameters
 ### MaxQueueLength
 The maximum number of frames waiting for decoding.
 
-```C#
+```csharp
 int Dynamsoft.Barcode.FrameDecodingParameters.MaxQueueLength
 ```
 
@@ -51,7 +51,7 @@ int Dynamsoft.Barcode.FrameDecodingParameters.MaxQueueLength
 ### MaxResultQueueLength
 The maximum number of frames whose results (text result/localization result) will be kept for further reference.  
 
-```C#
+```csharp
 int Dynamsoft.Barcode.FrameDecodingParameters.MaxResultQueueLength
 ```
 
@@ -64,7 +64,7 @@ int Dynamsoft.Barcode.FrameDecodingParameters.MaxResultQueueLength
 ### Width
 The width of the frame image in pixels. 
 
-```C#
+```csharp
 int Dynamsoft.Barcode.FrameDecodingParameters.Width
 ```
 
@@ -77,7 +77,7 @@ int Dynamsoft.Barcode.FrameDecodingParameters.Width
 ### Height
 The height of the frame image in pixels.
 
-```C#
+```csharp
 int Dynamsoft.Barcode.FrameDecodingParameters.Height
 ```
 
@@ -90,7 +90,7 @@ int Dynamsoft.Barcode.FrameDecodingParameters.Height
 ### Stride
 The stride (or scan width) of the frame image.
 
-```C#
+```csharp
 int Dynamsoft.Barcode.FrameDecodingParameters.Stride
 ```
 
@@ -103,7 +103,7 @@ int Dynamsoft.Barcode.FrameDecodingParameters.Stride
 ### ImagePixelFormat
 The image pixel format used in the image byte array.
 
-```C#
+```csharp
 EnumImagePixelFormat Dynamsoft.Barcode.FrameDecodingParameters.ImagePixelFormat
 ```
 
@@ -116,7 +116,7 @@ EnumImagePixelFormat Dynamsoft.Barcode.FrameDecodingParameters.ImagePixelFormat
 ### Region
 The region definition of the frame to calculate the internal indicator.  
 
-```C#
+```csharp
 RegionDefinition Dynamsoft.Barcode.FrameDecodingParameters.Region
 ```
 
@@ -129,7 +129,7 @@ RegionDefinition Dynamsoft.Barcode.FrameDecodingParameters.Region
 ### Threshold
 The threshold used for filtering frames.
 
-```C#
+```csharp
 float Dynamsoft.Barcode.FrameDecodingParameters.Threshold
 ```
 
@@ -145,7 +145,7 @@ float Dynamsoft.Barcode.FrameDecodingParameters.Threshold
 ### FPS
 The frequency of calling [`AppendFrame`](../BarcodeReader/video.md#appendframe) per second.
 
-```C#
+```csharp
 int Dynamsoft.Barcode.FrameDecodingParameters.FPS
 ```
 
@@ -161,7 +161,7 @@ int Dynamsoft.Barcode.FrameDecodingParameters.FPS
 ### AutoFilter
 Sets whether to filter frames automatically.
 
-```C#
+```csharp
 int Dynamsoft.Barcode.FrameDecodingParameters.AutoFilter
 ```
 
@@ -179,7 +179,7 @@ int Dynamsoft.Barcode.FrameDecodingParameters.AutoFilter
 ### ClarityCalculationMethod
 Sets the method used for calculating the clarity of the frames.
 
-```C#
+```csharp
 EnumClarityCalculationMethod Dynamsoft.Barcode.FrameDecodingParameters.ClarityCalculationMethod
 ```
 
@@ -192,7 +192,7 @@ EnumClarityCalculationMethod Dynamsoft.Barcode.FrameDecodingParameters.ClarityCa
 ### ClarityFilterMode
 Sets the mode used for filtering frames by calculated clarity.
 
-```C#
+```csharp
 EnumClarityFilterMode Dynamsoft.Barcode.FrameDecodingParameters.ClarityFilterMode
 ```
 

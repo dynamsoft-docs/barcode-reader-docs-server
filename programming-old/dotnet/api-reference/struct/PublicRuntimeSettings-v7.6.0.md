@@ -11,7 +11,7 @@ permalink: /programming/dotnet/api-reference/struct/PublicRuntimeSettings-v7.6.0
 # PublicRuntimeSettings
 Defines a struct to configure the barcode reading runtime settings. These settings control the barcode recognition process such as which barcode types to decode.
 
-```C#
+```csharp
 public struct PublicRuntimeSettings
 ```  
 
@@ -46,7 +46,7 @@ public struct PublicRuntimeSettings
 ### TerminatePhase
 Sets the phase to stop the barcode reading algorithm.
 
-```C#
+```csharp
 EnumTerminatePhase Dynamsoft.Barcode.PublicRuntimeSettings.TerminatePhase
 ```
 
@@ -62,7 +62,7 @@ EnumTerminatePhase Dynamsoft.Barcode.PublicRuntimeSettings.TerminatePhase
 ### Timeout
 Sets the maximum amount of time (in milliseconds) that should be spent searching for a barcode per page. It does not include the time taken to load/decode an image (TIFF, PNG, etc.) from disk into memory.
 
-```C#
+```csharp
 int Dynamsoft.Barcode.PublicRuntimeSettings.Timeout
 ```
 
@@ -78,7 +78,7 @@ int Dynamsoft.Barcode.PublicRuntimeSettings.Timeout
 ### MaxAlgorithmThreadCount
 Sets the number of threads the image processing algorithm will use to decode barcodes.
 
-```C#
+```csharp
 int Dynamsoft.Barcode.PublicRuntimeSettings.MaxAlgorithmThreadCount
 ```
 
@@ -94,7 +94,7 @@ int Dynamsoft.Barcode.PublicRuntimeSettings.MaxAlgorithmThreadCount
 ### ExpectedBarcodesCount
 Sets the number of barcodes expected to be detected for each image.
 
-```C#
+```csharp
 int Dynamsoft.Barcode.PublicRuntimeSettings.ExpectedBarcodesCount
 ```
 
@@ -110,7 +110,7 @@ int Dynamsoft.Barcode.PublicRuntimeSettings.ExpectedBarcodesCount
 ### BarcodeFormatIds
 Sets the formats of the barcode in BarcodeFormat group 1 to be read. Barcode formats in BarcodeFormat group 1 can be combined.
 
-```C#
+```csharp
 int Dynamsoft.Barcode.PublicRuntimeSettings.BarcodeFormatIds
 ```
 
@@ -129,7 +129,7 @@ int Dynamsoft.Barcode.PublicRuntimeSettings.BarcodeFormatIds
 ### BarcodeFormatIds_2
 Sets the formats of the barcode in BarcodeFormat group 2 to be read. Barcode formats in BarcodeFormat group 2 can be combined.
 
-```C#
+```csharp
 int Dynamsoft.Barcode.PublicRuntimeSettings.BarcodeFormatIds_2
 ```
 
@@ -148,7 +148,7 @@ int Dynamsoft.Barcode.PublicRuntimeSettings.BarcodeFormatIds_2
 ### PDFRasterDPI
 Sets the output image resolution.
 
-```C#
+```csharp
 EnumPDFReadingMode Dynamsoft.Barcode.PublicRuntimeSettings.PDFReadingMode
 ```
 
@@ -164,7 +164,7 @@ EnumPDFReadingMode Dynamsoft.Barcode.PublicRuntimeSettings.PDFReadingMode
 ### ScaleDownThreshold
 Sets the threshold for the image shrinking.
 
-```C#
+```csharp
 int Dynamsoft.Barcode.PublicRuntimeSettings.ScaleDownThreshold
 ```
 
@@ -180,7 +180,7 @@ int Dynamsoft.Barcode.PublicRuntimeSettings.ScaleDownThreshold
 ### BinarizationModes
 Sets the mode and priority for binarization.
 
-```C#
+```csharp
 EnumBinarizationMode[] Dynamsoft.Barcode.PublicRuntimeSettings.BinarizationModes
 ```
 
@@ -196,7 +196,7 @@ EnumBinarizationMode[] Dynamsoft.Barcode.PublicRuntimeSettings.BinarizationModes
 ### LocalizationModes
 Sets the mode and priority for localization algorithms.
 
-```C#
+```csharp
 EnumLocalizationMode[] Dynamsoft.Barcode.PublicRuntimeSettings.LocalizationModes
 ```
 
@@ -212,7 +212,7 @@ EnumLocalizationMode[] Dynamsoft.Barcode.PublicRuntimeSettings.LocalizationModes
 ### FurtherModes
 Sets further modes.
 
-```C#
+```csharp
 FurtherModes Dynamsoft.Barcode.PublicRuntimeSettings.FurtherModes
 ```
 
@@ -222,7 +222,7 @@ FurtherModes Dynamsoft.Barcode.PublicRuntimeSettings.FurtherModes
 ### DeblurLevel
 Sets the degree of blurriness of the barcode.
 
-```C#
+```csharp
 int Dynamsoft.Barcode.PublicRuntimeSettings.DeblurLevel
 ```
 
@@ -238,7 +238,7 @@ int Dynamsoft.Barcode.PublicRuntimeSettings.DeblurLevel
 ### IntermediateResultTypes
 Sets which types of intermediate result to be kept for further reference. Intermediate result types can be combined.
 
-```C#
+```csharp
 int Dynamsoft.Barcode.PublicRuntimeSettings.IntermediateResultTypes
 ```
 
@@ -251,7 +251,7 @@ int Dynamsoft.Barcode.PublicRuntimeSettings.IntermediateResultTypes
 ### IntermediateResultSavingMode
 Sets the mode for saving intermediate result.
 
-```C#
+```csharp
 EnumIntermediateResultSavingMode Dynamsoft.Barcode.PublicRuntimeSettings.IntermediateResultSavingMode
 ```
 
@@ -264,7 +264,7 @@ EnumIntermediateResultSavingMode Dynamsoft.Barcode.PublicRuntimeSettings.Interme
 ### ResultCoordinateType
 Specifies the format for the coordinates returned.
 
-```C#
+```csharp
 EnumResultCoordinateType Dynamsoft.Barcode.PublicRuntimeSettings.ResultCoordinateType
 ```
 
@@ -277,7 +277,7 @@ EnumResultCoordinateType Dynamsoft.Barcode.PublicRuntimeSettings.ResultCoordinat
 ### TextResultOrderModes
 Sets the mode and priority for the order of the text results returned.
 
-```C#
+```csharp
 EnumTextResultOrderMode[] Dynamsoft.Barcode.PublicRuntimeSettings.TextResultOrderModes
 ```
 
@@ -293,7 +293,7 @@ EnumTextResultOrderMode[] Dynamsoft.Barcode.PublicRuntimeSettings.TextResultOrde
 ### ReturnBarcodeZoneClarity
 Sets whether or not to return the clarity of the barcode zone.
 
-```C#
+```csharp
 int Dynamsoft.Barcode.PublicRuntimeSettings.ReturnBarcodeZoneClarity
 ```
 
@@ -309,14 +309,14 @@ int Dynamsoft.Barcode.PublicRuntimeSettings.ReturnBarcodeZoneClarity
 ### Region
 Sets the region definition including regionTop, regionLeft, regionRight, regionBottom, and regionMeasuredByPercentage.
 
-```C#
+```csharp
 RegionDefinition Dynamsoft.Barcode.PublicRuntimeSettings.Region
 ```
 
 ### MinBarcodeTextLength
 Sets the range of barcode text length for barcodes search.
 
-```C#
+```csharp
 int Dynamsoft.Barcode.PublicRuntimeSettings.MinBarcodeTextLength
 ```
 
@@ -332,7 +332,7 @@ int Dynamsoft.Barcode.PublicRuntimeSettings.MinBarcodeTextLength
 ### MinResultConfidence
 The minimum confidence of the result.
 
-```C#
+```csharp
 int Dynamsoft.Barcode.PublicRuntimeSettings.MinResultConfidence
 ```
 
@@ -348,7 +348,7 @@ int Dynamsoft.Barcode.PublicRuntimeSettings.MinResultConfidence
 ### ScaleUpModes
 Sets the mode and priority to control the sampling methods of scale-up for linear barcode with small module sizes.
 
-```C#
+```csharp
 EnumScaleUpMode[] Dynamsoft.Barcode.PublicRuntimeSettings.ScaleUpModes
 ```
 
@@ -364,7 +364,7 @@ EnumScaleUpMode[] Dynamsoft.Barcode.PublicRuntimeSettings.ScaleUpModes
 ### PDFReadingMode
 Sets the way to detect barcodes from a PDF file when using the DecodeFile method.
 
-```C#
+```csharp
 EnumPDFReadingMode Dynamsoft.Barcode.PublicRuntimeSettings.PDFReadingMode
 ```
 

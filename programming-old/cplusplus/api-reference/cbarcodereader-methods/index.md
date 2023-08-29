@@ -15,8 +15,8 @@ permalink: /programming/cplusplus/api-reference/cbarcodereader-methods/index.htm
   |----------------------|-------------|
   | [`CBarcodeReader`](constructor-and-destructor.md#cbarcodereader) | Default constructor of `CBarcodeReader` object.|
   | [`~CBarcodeReader`](constructor-and-destructor.md#~cbarcodereader) | Destructor of `CBarcodeReader` object.|
-  | [`GetInstance`](constructor-and-destructor.md#getinstance) | Gets an idle Dynamsoft Barcode Reader instance running on concurrent instance mode. |
-  | [`Recycle`](constructor-and-destructor.md#recycle) | Recycles a Dynamsoft Barcode Reader instance running on concurrent instance mode. |
+  | [`GetInstance`](constructor-and-destructor.md#getinstance) | Creates an instance of Dynamsoft Barcode Reader. |
+  | [`Recycle`](constructor-and-destructor.md#recycle) | Destroys an instance of Dynamsoft Barcode Reader. |
    
    
 ## License
@@ -29,6 +29,7 @@ permalink: /programming/cplusplus/api-reference/cbarcodereader-methods/index.htm
   | [`SetDeviceFriendlyName`](license.md#setdevicefriendlyname) | Sets a human-readable name that identifies the device. |
   | [`SetLicenseCachePath`](license.md#setlicensecachepath) | Sets a directory path for saving the license cache. |
   | [`SetMaxConcurrentInstanceCount`](license.md#setmaxconcurrentinstancecount) | Sets the max concurrent instance count used for current device and process. |
+  | [`GetInstancePoolStatus`](license.md#getinstancepoolstatus) | Gets a struct to represent the status of an instance pool. |
   | [`GetIdleInstancesCount`](license.md#getidleinstancescount) | `Deprecated` |
   | [`InitLicenseFromServer`](license.md#initlicensefromserver) | `Deprecated` |
   | [`InitLicenseFromLicenseContent`](license.md#initlicensefromlicensecontent) | `Deprecated` |

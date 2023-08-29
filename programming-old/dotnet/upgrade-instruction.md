@@ -20,8 +20,12 @@ permalink: /programming/dotnet/upgrade-instruction.html
 ```csharp
   string errorMsg;
   BarcodeReader.InitLicense("YOUR-LICENSE-KEY", out errorMsg);
-  BarcodeReader reader = new BarcodeReader();
-  // add further process
+  BarcodeReader reader = BarcodeReader.GetInstance();
+  if (reader != null)
+  {
+      // add further process
+      reader.Recycle();
+  }
 ```
 
 >Note:
@@ -52,8 +56,12 @@ permalink: /programming/dotnet/upgrade-instruction.html
 ```csharp
   string errorMsg;
   BarcodeReader.InitLicense("YOUR-LICENSE-KEY", out errorMsg);
-  BarcodeReader reader = new BarcodeReader();
-  // add further process
+  BarcodeReader reader = BarcodeReader.GetInstance();
+  if (reader != null)
+  {
+  	  // add further process
+      reader.Recycle();
+  }
 ```
 
 >Note:

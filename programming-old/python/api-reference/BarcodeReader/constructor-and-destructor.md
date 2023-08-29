@@ -13,8 +13,8 @@ permalink: /programming/python/api-reference/BarcodeReader/constructor-and-destr
   |----------------------|-------------|
   | [`BarcodeReader`](#barcodereader) | The default constructor of `BarcodeReader` object.|
   | [`__del__`](#__del__) | The default destructor of `BarcodeReader` object.|
-  | [`get_instance`](#get_instance) | Gets an idle Dynamsoft Barcode Reader instance running on concurrent instance mode. |
-  | [`recycle_instance`](#recycle_instance) | Recycles a Dynamsoft Barcode Reader instance running on concurrent instance mode. |
+  | [`get_instance`](#get_instance) | Creates an instance of Dynamsoft Barcode Reader. |
+  | [`recycle_instance`](#recycle_instance) | Destroys an instance of Dynamsoft Barcode Reader. |
 
 
 ## BarcodeReader
@@ -37,14 +37,14 @@ del reader
 
 ## get_instance
 
-Gets an idle Dynamsoft Barcode Reader instance running on concurrent instance mode.
+Creates an instance of Dynamsoft Barcode Reader.
 
 ```python
 BarcodeReader.get_instance()
 ```
 
 **Return Value**  
-Returns an idle Dynamsoft Barcode Reader instance running on concurrent instance mode. If failed, returns `None`.
+Returns an instance of Dynamsoft Barcode Reader. If failed, returns `None`.
 
 **Code Snippet**  
 
@@ -55,13 +55,12 @@ reader = BarcodeReader.get_instance()
 if reader != None:
    # Add your code here to call decoding method, process barcode results and so on
    # ...
-   # Recycle the instance to make it idle for other concurrent tasks
    reader.recycle_instance()
 ```
 
 ## recycle_instance
 
-Recycles a Dynamsoft Barcode Reader instance running on concurrent instance mode.
+Destroys an instance of Dynamsoft Barcode Reader.
 
 ```python
 BarcodeReader.recycle_instance()
@@ -76,6 +75,5 @@ reader = BarcodeReader.get_instance()
 if reader != None:
    # Add your code here to call decoding method, process barcode results and so on
    # ...
-   # Recycle the instance to make it idle for other concurrent tasks
    reader.recycle_instance()
 ```

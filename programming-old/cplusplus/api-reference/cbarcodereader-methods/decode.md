@@ -40,9 +40,13 @@ Returns error code (returns 0 if the function operates successfully).
 ```cpp
 char errorBuf[512];
 dynamsoft::dbr::CBarcodeReader::InitLicense("YOUR-LICENSE-KEY", errorBuf, 512);
-CBarcodeReader* reader = new CBarcodeReader();
-int errorCode = reader->DecodeFile("C:\\Program Files (x86)\\Dynamsoft\\{Version number}\\Images\\AllSupportedBarcodeTypes.tif", "");
-delete reader;
+CBarcodeReader* reader = CBarcodeReader::GetInstance();
+if(reader != NULL)
+{
+    int errorCode = reader->DecodeFile("C:\\Program Files (x86)\\Dynamsoft\\{Version number}\\Images\\AllSupportedBarcodeTypes.tif", "");
+    // add further process
+    reader->Recycle();
+}
 ```
 
 **Remarks**  
@@ -75,12 +79,16 @@ Returns error code (returns 0 if the function operates successfully).
 ```cpp
 char errorBuf[512];
 dynamsoft::dbr::CBarcodeReader::InitLicense("YOUR-LICENSE-KEY", errorBuf, 512);
-CBarcodeReader* reader = new CBarcodeReader();
-unsigned char* pFileBytes;
-int nFileSize = 0;
-GetFileStream("C:\\Program Files (x86)\\Dynamsoft\\{Version number}\\Images\\AllSupportedBarcodeTypes.tif", &pFileBytes, &nFileSize);
-int errorCode = reader->DecodeFileInMemory(pFileBytes, nFileSize, "");
-delete reader;
+CBarcodeReader* reader = CBarcodeReader::GetInstance();
+if(reader != NULL)
+{
+	unsigned char* pFileBytes;
+	int nFileSize = 0;
+	GetFileStream("C:\\Program Files (x86)\\Dynamsoft\\{Version number}\\Images\\AllSupportedBarcodeTypes.tif", &pFileBytes, &nFileSize);
+	int errorCode = reader->DecodeFileInMemory(pFileBytes, nFileSize, "");
+    // add further process
+    reader->Recycle();
+}
 ```
 
 **Remarks**  
@@ -120,17 +128,21 @@ Returns error code (returns 0 if the function operates successfully).
 ```cpp
 char errorBuf[512];
 dynamsoft::dbr::CBarcodeReader::InitLicense("YOUR-LICENSE-KEY", errorBuf, 512);
-CBarcodeReader* reader = new CBarcodeReader();
-unsigned char* pBufferBytes;
-int iWidth = 0;
-int iHeight = 0;
-int iStride = 0;
-ImagePixelFormat format;
-int iOrientation = 0;
-//get image data (pBufferBytes, iWidth, iHeight, iStride, format, iOrientation) somewhere else
-int errorCode = reader->DecodeBuffer(pBufferBytes, iWidth, iHeight, iStride, format, "");
-//int errorCode = reader->DecodeBuffer(pBufferBytes, iWidth, iHeight, iStride, format, iOrientation, "");
-delete reader;
+CBarcodeReader* reader = CBarcodeReader::GetInstance();
+if(reader != NULL)
+{
+	unsigned char* pBufferBytes;
+	int iWidth = 0;
+	int iHeight = 0;
+	int iStride = 0;
+	ImagePixelFormat format;
+	int iOrientation = 0;
+	//get image data (pBufferBytes, iWidth, iHeight, iStride, format, iOrientation) somewhere else
+	int errorCode = reader->DecodeBuffer(pBufferBytes, iWidth, iHeight, iStride, format, "");
+	//int errorCode = reader->DecodeBuffer(pBufferBytes, iWidth, iHeight, iStride, format, iOrientation, "");
+    // add further process
+    reader->Recycle();
+}
 ```
 
 **Remarks**  
@@ -163,14 +175,18 @@ Returns error code (returns 0 if the function operates successfully).
 ```cpp
 char errorBuf[512];
 dynamsoft::dbr::CBarcodeReader::InitLicense("YOUR-LICENSE-KEY", errorBuf, 512);
-CBarcodeReader* reader = new CBarcodeReader();
-unsigned char* pFileBytes;
-int nFileSize = 0;
-GetFileStream("C:\\Program Files (x86)\\Dynamsoft\\{Version number}\\Images\\AllSupportedBarcodeTypes.tif", &pFileBytes, &nFileSize);
-char* strBase64String;
-GetFileBase64String(pBufferBytes, &strBase64String);
-int errorCode = reader->DecodeBase64String(strBase64String, "");
-delete reader;
+CBarcodeReader* reader = CBarcodeReader::GetInstance();
+if(reader != NULL)
+{
+	unsigned char* pFileBytes;
+	int nFileSize = 0;
+	GetFileStream("C:\\Program Files (x86)\\Dynamsoft\\{Version number}\\Images\\AllSupportedBarcodeTypes.tif", &pFileBytes, &nFileSize);
+	char* strBase64String;
+	GetFileBase64String(pBufferBytes, &strBase64String);
+	int errorCode = reader->DecodeBase64String(strBase64String, "");
+    // add further process
+    reader->Recycle();
+}
 ```
 
 **Remarks**  
@@ -202,11 +218,15 @@ Returns error code (returns 0 if the function operates successfully).
 ```cpp
 char errorBuf[512];
 dynamsoft::dbr::CBarcodeReader::InitLicense("YOUR-LICENSE-KEY", errorBuf, 512);
-CBarcodeReader* reader = new CBarcodeReader();
-HANDLE pDIB;
-GetDIBFromImage("C:\\Program Files (x86)\\Dynamsoft\\{Version number}\\Images\\AllSupportedBarcodeTypes.tif", &pDIB);
-int errorCode = reader->DecodeDIB(pDIB, "");
-delete reader;
+CBarcodeReader* reader = CBarcodeReader::GetInstance();
+if(reader != NULL)
+{
+    HANDLE pDIB;
+    GetDIBFromImage("C:\\Program Files (x86)\\Dynamsoft\\{Version number}\\Images\\AllSupportedBarcodeTypes.tif", &pDIB);
+    int errorCode = reader->DecodeDIB(pDIB, "");
+    // add further process
+    reader->Recycle();
+}
 ```
 
 **Remarks**  
@@ -261,19 +281,23 @@ Returns error code (returns 0 if the function operates successfully).
 ```cpp
 char errorBuf[512];
 dynamsoft::dbr::CBarcodeReader::InitLicense("YOUR-LICENSE-KEY", errorBuf, 512);
-CBarcodeReader * reader = new CBarcodeReader();
-char fileName[] = "Your barcode file";
-
-PublicRuntimeSettings settings;
-reader->GetRuntimeSettings(&settings);
-settings.intermediateResultTypes = IRT_ORIGINAL_IMAGE;
-reader->UpdateRuntimeSettings(&settings);
-reader->DecodeFile(fileName, "");
-IntermediateResultArray * imResults = NULL;
-reader->GetIntermediateResults(&imResults);
-reader->DecodeIntermediateResults(imResults, "");
-TextArray * results = NULL;
-reader->GetAllTextResults(&results);
+CBarcodeReader* reader = CBarcodeReader::GetInstance();
+if(reader != NULL)
+{
+    char fileName[] = "Your barcode file";
+    PublicRuntimeSettings settings;
+    reader->GetRuntimeSettings(&settings);
+    settings.intermediateResultTypes = IRT_ORIGINAL_IMAGE;
+    reader->UpdateRuntimeSettings(&settings);
+    reader->DecodeFile(fileName, "");
+    IntermediateResultArray * imResults = NULL;
+    reader->GetIntermediateResults(&imResults);
+    reader->DecodeIntermediateResults(imResults, "");
+    TextArray * results = NULL;
+    reader->GetAllTextResults(&results);
+    // add further process
+    reader->Recycle();
+}
 ```
 
 **Remarks**

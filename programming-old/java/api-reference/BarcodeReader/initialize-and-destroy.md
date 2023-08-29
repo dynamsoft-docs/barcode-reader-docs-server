@@ -13,8 +13,8 @@ permalink: /programming/java/api-reference/BarcodeReader/initialize-and-destroy.
   |----------------------|-------------|
   | [`BarcodeReader`](#barcodereader) | Initialization of `BarcodeReader` object.|
   | [`destroy`](#destroy) | Destroys an instance of `BarcodeReader` object.|
-  | [`getInstance`](#getinstance) | Gets an idle Dynamsoft Barcode Reader instance running on concurrent instance mode. |
-  | [`recycle`](#recycle) | Recycles a Dynamsoft Barcode Reader instance running on concurrent instance mode. |
+  | [`getInstance`](#getinstance) | Creates an instance of Dynamsoft Barcode Reader. |
+  | [`recycle`](#recycle) | Destroys an instance of Dynamsoft Barcode Reader. |
 
 
 
@@ -79,33 +79,32 @@ reader.destroy();
 
 ## GetInstance
 
-Gets an idle Dynamsoft Barcode Reader instance running on concurrent instance mode.
+Creates an instance of Dynamsoft Barcode Reader.
 
 ```java
 static BarcodeReader com.dynamsoft.dbr.BarcodeReader.getInstance()
 ```
 
 **Return Value**  
-Returns an idle Dynamsoft Barcode Reader instance running on concurrent instance mode. If failed, returns `null`.
+Returns an instance of Dynamsoft Barcode Reader. If failed, returns `null`.
 
 **Code Snippet**  
 
 ```java
 //Make sure initLicense have been called somewhere before getInstance
 BarcodeReader reader = BarcodeReader.getInstance();
-// If no instance is available right away, the application will wait until one becomes available
 if(reader != null)
 {
     // Add your code here to call decoding method, process barcode results and so on
     // ...
-    // Recycle the instance to make it idle for other concurrent tasks
+    // Recycle the instance
     reader.recycle();
 }
 ```
 
 ## Recycle
 
-Recycles a Dynamsoft Barcode Reader instance running on concurrent instance mode.
+Destroys an instance of Dynamsoft Barcode Reader.
 
 ```java
 void com.dynamsoft.dbr.BarcodeReader.recycle()
@@ -116,12 +115,11 @@ void com.dynamsoft.dbr.BarcodeReader.recycle()
 ```java
 //Make sure initLicense have been called somewhere before getInstance
 BarcodeReader reader = BarcodeReader.getInstance();
-// If no instance is available right away, the application will wait until one becomes available
 if(reader != null)
 {
     // Add your code here to call decoding method, process barcode results and so on
     // ...
-    // Recycle the instance to make it idle for other concurrent tasks
+    // Recycle the instance
     reader.recycle();
 }
 ```

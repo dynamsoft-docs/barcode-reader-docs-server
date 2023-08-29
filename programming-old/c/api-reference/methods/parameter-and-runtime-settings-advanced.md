@@ -50,10 +50,13 @@ Returns error code (returns 0 if the function operates successfully).
 ```c
 char errorBuf[512];
 DBR_InitLicense("YOUR-LICENSE-KEY", errorBuf, 512);
-void* barcodeReader = DBR_CreateInstance();
-char errorMessage[256];
-DBR_InitRuntimeSettingsWithFile(barcodeReader, "C:\\Program Files (x86)\\Dynamsoft\\{Version number}\\Templates\\RuntimeSettings.json", CM_OVERWRITE, errorMessage, 256);
-DBR_DestroyInstance(barcodeReader);
+void* barcodeReader = DBR_GetInstance();
+if(barcodeReader != NULL)
+{
+	DBR_InitRuntimeSettingsWithFile(barcodeReader, "C:\\Program Files (x86)\\Dynamsoft\\{Version number}\\Templates\\RuntimeSettings.json", CM_OVERWRITE, errorBuf, 512);
+    //... more process here
+    DBR_RecycleInstance(barcodeReader);
+}
 ```
 
 
@@ -85,10 +88,13 @@ Returns error code (returns 0 if the function operates successfully).
 ```c
 char errorBuf[512];
 DBR_InitLicense("YOUR-LICENSE-KEY", errorBuf, 512);
-void* barcodeReader = DBR_CreateInstance();
-char errorMessage[256];
-DBR_InitRuntimeSettingsWithString(barcodeReader, "{\"Version\":\"3.0\", \"ImageParameter\":{\"Name\":\"IP1\", \"BarcodeFormatIds\":[\"BF_QR_CODE\"], \"ExpectedBarcodesCount\":10}}", CM_OVERWRITE, errorMessage, 256);
-DBR_DestroyInstance(barcodeReader);
+void* barcodeReader = DBR_GetInstance();
+if(barcodeReader != NULL)
+{
+	DBR_InitRuntimeSettingsWithString(barcodeReader, "{\"Version\":\"3.0\", \"ImageParameter\":{\"Name\":\"IP1\", \"BarcodeFormatIds\":[\"BF_QR_CODE\"], \"ExpectedBarcodesCount\":10}}", CM_OVERWRITE, errorBuf, 512);
+    //... more process here
+    DBR_RecycleInstance(barcodeReader);
+}
 ```
 
 
@@ -120,10 +126,13 @@ Returns error code (returns 0 if the function operates successfully).
 ```c
 char errorBuf[512];
 DBR_InitLicense("YOUR-LICENSE-KEY", errorBuf, 512);
-void* barcodeReader = DBR_CreateInstance();
-char errorMessage[256];
-DBR_AppendTplFileToRuntimeSettings(barcodeReader, "C:\\Program Files (x86)\\Dynamsoft\\{Version number}\\Templates\\RuntimeSettings.json", CM_IGNORE, errorMessage, 256);
-DBR_DestroyInstance(barcodeReader);
+void* barcodeReader = DBR_GetInstance();
+if(barcodeReader != NULL)
+{
+	DBR_AppendTplFileToRuntimeSettings(barcodeReader, "C:\\Program Files (x86)\\Dynamsoft\\{Version number}\\Templates\\RuntimeSettings.json", CM_IGNORE, errorBuf, 512);
+    //... more process here
+    DBR_RecycleInstance(barcodeReader);
+}
 ```
 
 
@@ -155,10 +164,13 @@ Returns error code (returns 0 if the function operates successfully).
 ```c
 char errorBuf[512];
 DBR_InitLicense("YOUR-LICENSE-KEY", errorBuf, 512);
-void* barcodeReader = DBR_CreateInstance();
-char errorMessage[256];
-DBR_AppendTplStringToRuntimeSettings(barcodeReader, "{\"Version\":\"3.0\", \"ImageParameter\":{\"Name\":\"IP1\", \"BarcodeFormatIds\":[\"BF_QR_CODE\"], \"ExpectedBarcodesCount\":10}}", CM_IGNORE, errorMessage, 256);
-DBR_DestroyInstance(barcodeReader);
+void* barcodeReader = DBR_GetInstance();
+if(barcodeReader != NULL)
+{
+	DBR_AppendTplStringToRuntimeSettings(barcodeReader, "{\"Version\":\"3.0\", \"ImageParameter\":{\"Name\":\"IP1\", \"BarcodeFormatIds\":[\"BF_QR_CODE\"], \"ExpectedBarcodesCount\":10}}", CM_IGNORE, errorBuf, 512);
+    //... more process here
+    DBR_RecycleInstance(barcodeReader);
+}
 ```
 
 
@@ -185,13 +197,15 @@ Returns the count of parameter templates. Returns -1 if DBRERR_NULL_POINTER happ
 ```c
 char errorBuf[512];
 DBR_InitLicense("YOUR-LICENSE-KEY", errorBuf, 512);
-void* barcodeReader = DBR_CreateInstance();
-char errorMessageInit[256];
-char errorMessageAppend[256];
-DBR_InitRuntimeSettingsWithFile(barcodeReader, "C:\\Program Files (x86)\\Dynamsoft\\{Version number}\\Templates\\RuntimeSettings.json", CM_OVERWRITE, errorMessageInit, 256);
-DBR_AppendTplStringToRuntimeSettings(barcodeReader, "{\"Version\":\"3.0\", \"ImageParameter\":{\"Name\":\"IP1\", \"BarcodeFormatIds\":[\"BF_QR_CODE\"], \"ExpectedBarcodesCount\":10}}", CM_IGNORE, errorMessageAppend, 256);
+void* barcodeReader = DBR_GetInstance();
+if(barcodeReader != NULL)
+{
+	DBR_InitRuntimeSettingsWithFile(barcodeReader, "C:\\Program Files (x86)\\Dynamsoft\\{Version number}\\Templates\\RuntimeSettings.json", CM_OVERWRITE, errorBuf, 512);
+	DBR_AppendTplStringToRuntimeSettings(barcodeReader, "{\"Version\":\"3.0\", \"ImageParameter\":{\"Name\":\"IP1\", \"BarcodeFormatIds\":[\"BF_QR_CODE\"], \"ExpectedBarcodesCount\":10}}", CM_IGNORE, errorBuf, 512);
 int currentTemplateCount = DBR_GetParameterTemplateCount(barcodeReader);
-DBR_DestroyInstance(barcodeReader);
+    //... more process here
+    DBR_RecycleInstance(barcodeReader);
+}
 ```
 
 
@@ -222,17 +236,19 @@ Returns error code (returns 0 if the function operates successfully).
 ```c
 char errorBuf[512];
 DBR_InitLicense("YOUR-LICENSE-KEY", errorBuf, 512);
-void* barcodeReader = DBR_CreateInstance();
-char errorMessageInit[256];
-char errorMessageAppend[256];
-DBR_InitRuntimeSettingsWithFile(barcodeReader, "C:\\Program Files (x86)\\Dynamsoft\\{Version number}\\Templates\\RuntimeSettings.json", CM_OVERWRITE, errorMessageInit, 256);
-DBR_AppendTplStringToRuntimeSettings(barcodeReader, "{\"Version\":\"3.0\", \"ImageParameter\":{\"Name\":\"IP1\", \"BarcodeFormatIds\":[\"BF_QR_CODE\"], \"ExpectedBarcodesCount\":10}}", CM_IGNORE, errorMessageAppend, 256);
-int currentTemplateCount = DBR_GetParameterTemplateCount(barcodeReader);
-int templateIndex = 1;
-// notice that the value of 'templateIndex' should less than currentTemplateCount.
-char templateName[256];
-DBR_GetParameterTemplateName(barcodeReader, templateIndex, templateName, 256);
-DBR_DestroyInstance(barcodeReader);
+void* barcodeReader = DBR_GetInstance();
+if(barcodeReader != NULL)
+{
+	DBR_InitRuntimeSettingsWithFile(barcodeReader, "C:\\Program Files (x86)\\Dynamsoft\\{Version number}\\Templates\\RuntimeSettings.json", CM_OVERWRITE, errorBuf, 512);
+	DBR_AppendTplStringToRuntimeSettings(barcodeReader, "{\"Version\":\"3.0\", \"ImageParameter\":{\"Name\":\"IP1\", \"BarcodeFormatIds\":[\"BF_QR_CODE\"], \"ExpectedBarcodesCount\":10}}", CM_IGNORE, errorBuf, 512);
+	int currentTemplateCount = DBR_GetParameterTemplateCount(barcodeReader);
+	int templateIndex = 1;
+	// notice that the value of 'templateIndex' should less than currentTemplateCount.
+	char templateName[256];
+	DBR_GetParameterTemplateName(barcodeReader, templateIndex, templateName, 256);
+    //... more process here
+    DBR_RecycleInstance(barcodeReader);
+}
 ```
 
 
@@ -262,13 +278,15 @@ Returns error code (returns 0 if the function operates successfully).
 ```c
 char errorBuf[512];
 DBR_InitLicense("YOUR-LICENSE-KEY", errorBuf, 512);
-void* barcodeReader = DBR_CreateInstance();
-char errorMessageInit[256];
-char errorMessageAppend[256];
-DBR_InitRuntimeSettingsWithFile(barcodeReader, "C:\\Program Files (x86)\\Dynamsoft\\{Version number}\\Templates\\RuntimeSettings.json", CM_OVERWRITE, errorMessageInit, 256);
-DBR_AppendTplStringToRuntimeSettings(barcodeReader, "{\"Version\":\"3.0\", \"ImageParameter\":{\"Name\":\"IP1\", \"BarcodeFormatIds\":[\"BF_QR_CODE\"], \"ExpectedBarcodesCount\":10}}", CM_IGNORE, errorMessageAppend, 256);
-DBR_OutputSettingsToFile(barcodeReader, "C:\\Program Files (x86)\\Dynamsoft\\{Version number}\\Templates\\CurrentRuntimeSettings.json", "currentRuntimeSettings");
-DBR_DestroyInstance(barcodeReader);
+void* barcodeReader = DBR_GetInstance();
+if(barcodeReader != NULL)
+{
+	DBR_InitRuntimeSettingsWithFile(barcodeReader, "C:\\Program Files (x86)\\Dynamsoft\\{Version number}\\Templates\\RuntimeSettings.json", CM_OVERWRITE, errorBuf, 512);
+	DBR_AppendTplStringToRuntimeSettings(barcodeReader, "{\"Version\":\"3.0\", \"ImageParameter\":{\"Name\":\"IP1\", \"BarcodeFormatIds\":[\"BF_QR_CODE\"], \"ExpectedBarcodesCount\":10}}", CM_IGNORE, errorBuf, 512);
+	DBR_OutputSettingsToFile(barcodeReader, "C:\\Program Files (x86)\\Dynamsoft\\{Version number}\\Templates\\CurrentRuntimeSettings.json", "currentRuntimeSettings");
+    //... more process here
+    DBR_RecycleInstance(barcodeReader);
+}
 ```
 
 
@@ -299,14 +317,16 @@ Returns error code (returns 0 if the function operates successfully).
 ```c
 char errorBuf[512];
 DBR_InitLicense("YOUR-LICENSE-KEY", errorBuf, 512);
-void* barcodeReader = DBR_CreateInstance();
-char errorMessageInit[256];
-char errorMessageAppend[256];
-DBR_InitRuntimeSettingsWithFile(barcodeReader, "C:\\Program Files (x86)\\Dynamsoft\\{Version number}\\Templates\\RuntimeSettings.json", CM_OVERWRITE, errorMessageInit, 256);
-DBR_AppendTplStringToRuntimeSettings(barcodeReader, "{\"Version\":\"3.0\", \"ImageParameter\":{\"Name\":\"IP1\", \"BarcodeFormatIds\":[\"BF_QR_CODE\"], \"ExpectedBarcodesCount\":10}}", CM_IGNORE, errorMessageAppend, 256);
-char pContent[256];
-DBR_OutputSettingsToString(barcodeReader, pContent, 256, "currentRuntimeSettings");
-DBR_DestroyInstance(barcodeReader);
+void* barcodeReader = DBR_GetInstance();
+if(barcodeReader != NULL)
+{
+	DBR_InitRuntimeSettingsWithFile(barcodeReader, "C:\\Program Files (x86)\\Dynamsoft\\{Version number}\\Templates\\RuntimeSettings.json", CM_OVERWRITE, errorBuf, 512);
+	DBR_AppendTplStringToRuntimeSettings(barcodeReader, "{\"Version\":\"3.0\", \"ImageParameter\":{\"Name\":\"IP1\", \"BarcodeFormatIds\":[\"BF_QR_CODE\"], \"ExpectedBarcodesCount\":10}}", CM_IGNORE, errorBuf, 512);
+	char pContent[256];
+	DBR_OutputSettingsToString(barcodeReader, pContent, 256, "currentRuntimeSettings");
+    //... more process here
+    DBR_RecycleInstance(barcodeReader);
+}
 ```
 
 
@@ -336,15 +356,17 @@ Returns error code (returns 0 if the function operates successfully).
 ```c
 char errorBuf[512];
 DBR_InitLicense("YOUR-LICENSE-KEY", errorBuf, 512);
-void* barcodeReader = DBR_CreateInstance();
-char errorMessageInit[256];
-char errorMessageAppend[256];
- DBR_InitRuntimeSettingsWithFile(barcodeReader, "C:\\Program Files (x86)\\Dynamsoft\\{Version number}\\Templates\\RuntimeSettings.json", CM_OVERWRITE, errorMessageInit, 256);
-DBR_AppendTplStringToRuntimeSettings(barcodeReader, "{\"Version\":\"3.0\", \"ImageParameter\":{\"Name\":\"IP1\", \"BarcodeFormatIds\":[\"BF_QR_CODE\"], \"ExpectedBarcodesCount\":10}}", CM_IGNORE, errorMessageAppend, 256);
-char* pContent = NULL;
-DBR_OutputSettingsToStringPtr(barcodeReader, &pContent, "currentRuntimeSettings");
-DBR_FreeSettingsString(&pContent);
-DBR_DestroyInstance(barcodeReader);
+void* barcodeReader = DBR_GetInstance();
+if(barcodeReader != NULL)
+{
+	DBR_InitRuntimeSettingsWithFile(barcodeReader, "C:\\Program Files (x86)\\Dynamsoft\\{Version number}\\Templates\\RuntimeSettings.json", CM_OVERWRITE, errorBuf, 512);
+	DBR_AppendTplStringToRuntimeSettings(barcodeReader, "{\"Version\":\"3.0\", \"ImageParameter\":{\"Name\":\"IP1\", \"BarcodeFormatIds\":[\"BF_QR_CODE\"], \"ExpectedBarcodesCount\":10}}", CM_IGNORE, errorBuf, 512);
+	char* pContent = NULL;
+	DBR_OutputSettingsToStringPtr(barcodeReader, &pContent, "currentRuntimeSettings");
+	DBR_FreeSettingsString(&pContent);
+    //... more process here
+    DBR_RecycleInstance(barcodeReader);
+}
 ```
 
 
@@ -368,14 +390,16 @@ DBR_API void DBR_FreeSettingsString (char** content)
 ```c
 char errorBuf[512];
 DBR_InitLicense("YOUR-LICENSE-KEY", errorBuf, 512);
-void* barcodeReader = DBR_CreateInstance();
-char errorMessageInit[256];
-char errorMessageAppend[256];
-DBR_InitRuntimeSettingsWithFile(barcodeReader, "C:\\Program Files (x86)\\Dynamsoft\\{Version number}\\Templates\\RuntimeSettings.json", CM_OVERWRITE, errorMessageInit, 256);
-DBR_AppendTplStringToRuntimeSettings(barcodeReader, "{\"Version\":\"3.0\", \"ImageParameter\":{\"Name\":\"IP1\", \"BarcodeFormatIds\":[\"BF_QR_CODE\"], \"ExpectedBarcodesCount\":10}}", CM_IGNORE, errorMessageAppend, 256);
-char* pContent = NULL;
-DBR_OutputSettingsToString(barcodeReader, &pContent, "currentRuntimeSettings");
-DBR_FreeSettingsString(&pContent);
-DBR_DestroyInstance(barcodeReader);
+void* barcodeReader = DBR_GetInstance();
+if(barcodeReader != NULL)
+{
+	DBR_InitRuntimeSettingsWithFile(barcodeReader, "C:\\Program Files (x86)\\Dynamsoft\\{Version number}\\Templates\\RuntimeSettings.json", CM_OVERWRITE, errorBuf, 512);
+	DBR_AppendTplStringToRuntimeSettings(barcodeReader, "{\"Version\":\"3.0\", \"ImageParameter\":{\"Name\":\"IP1\", \"BarcodeFormatIds\":[\"BF_QR_CODE\"], \"ExpectedBarcodesCount\":10}}", CM_IGNORE, errorBuf, 512);
+	char* pContent = NULL;
+	DBR_OutputSettingsToString(barcodeReader, &pContent, "currentRuntimeSettings");
+	DBR_FreeSettingsString(&pContent);
+    //... more process here
+    DBR_RecycleInstance(barcodeReader);
+}
 ```
 

@@ -44,13 +44,17 @@ Returns error code.
 ```csharp
 string errorMsg;
 BarcodeReader.InitLicense("YOUR-LICENSE-KEY", out errorMsg);
-BarcodeReader reader = new BarcodeReader();
-PublicRuntimeSettings settings =  reader.GetRuntimeSettings();
-pSettings.BinarizationModes[0] = BM_LOCAL_BLOCK;
-string errorMessage;
-reader.UpdateRuntimeSettings(pSettings);
-EnumErrorCode error = reader.SetModeArgument("BinarizationModes", 0, "EnableFillBinaryVacancy", "1", out errorMessage);
-reader.Dispose();
+BarcodeReader reader = BarcodeReader.GetInstance();
+if (reader != null)
+{
+    PublicRuntimeSettings settings =  reader.GetRuntimeSettings();
+    pSettings.BinarizationModes[0] = BM_LOCAL_BLOCK;
+    string errorMessage;
+    reader.UpdateRuntimeSettings(pSettings);
+    EnumErrorCode error = reader.SetModeArgument("BinarizationModes", 0, "EnableFillBinaryVacancy", "1", out errorMessage);
+	//... add further process
+    reader.Recycle();
+}
 ```
 
 **Remarks**  
@@ -84,7 +88,7 @@ EnumErrorCode Dynamsoft.DBR.BarcodeReader.GetModeArgument(string modesName, int 
 `[in]	index` <*int*> : The array index of mode parameter to indicate a specific mode.  
 `[in]	argumentName` <*string*> : The name of the argument to get.  
 `[in,out]	argumentValue` <*string*> : The value of the argument to get.  
-`[in,out]	errorMessage` <*Optional*><*string*> : The error message.
+`[in,out]	errorMessage` <*string*> : The error message.
 
 **Return Value**  
 Returns error code.
@@ -95,15 +99,19 @@ Returns error code.
 ```csharp
 string errorMsg;
 BarcodeReader.InitLicense("YOUR-LICENSE-KEY", out errorMsg);
-BarcodeReader reader = new BarcodeReader();
-PublicRuntimeSettings settings =  reader.GetRuntimeSettings();
-pSettings.BinarizationModes[0] = BM_LOCAL_BLOCK;
-string errorMessage;
-reader.UpdateRuntimeSettings(pSettings);
-EnumErrorCode error = reader.SetModeArgument("BinarizationModes", 0, "EnableFillBinaryVacancy", "1", errorMessage);
-string angumentValue;
-EnumErrorCode error = reader.GetModeArgument("BinarizationModes", 0, "EnableFillBinaryVacancy", out angumentValue, out errorMessage);
-reader.Dispose();
+BarcodeReader reader = BarcodeReader.GetInstance();
+if (reader != null)
+{
+	PublicRuntimeSettings settings =  reader.GetRuntimeSettings();
+	pSettings.BinarizationModes[0] = BM_LOCAL_BLOCK;
+	string errorMessage;
+	reader.UpdateRuntimeSettings(pSettings);
+	EnumErrorCode error = reader.SetModeArgument("BinarizationModes", 0, "EnableFillBinaryVacancy", "1", errorMessage);
+	string angumentValue;
+	EnumErrorCode error = reader.GetModeArgument("BinarizationModes", 0, "EnableFillBinaryVacancy", out angumentValue, out errorMessage);
+	//... add further process
+    reader.Recycle();
+}
 ```
 
 **Remarks**  
@@ -144,9 +152,13 @@ The struct of template settings.
 ```csharp
 string errorMsg;
 BarcodeReader.InitLicense("YOUR-LICENSE-KEY", out errorMsg);
-BarcodeReader reader = new BarcodeReader();
-PublicRuntimeSettings settings =  reader.GetRuntimeSettings();
-reader.Dispose();
+BarcodeReader reader = BarcodeReader.GetInstance();
+if (reader != null)
+{
+	PublicRuntimeSettings settings =  reader.GetRuntimeSettings();
+	//... add further process
+    reader.Recycle();
+}
 ```
 
 **See Also**  
@@ -174,12 +186,16 @@ void Dynamsoft.DBR.BarcodeReader.UpdateRuntimeSettings(PublicRuntimeSettings set
 ```csharp
 string errorMsg;
 BarcodeReader.InitLicense("YOUR-LICENSE-KEY", out errorMsg);
-BarcodeReader reader = new BarcodeReader();
-PublicRuntimeSettings settings =  reader.GetRuntimeSettings();
-settings.Timeout = 10000;
-settings.MaxAlgorithmThreadCount = 3;
-reader.UpdateRuntimeSettings(settings);
-reader.Dispose();
+BarcodeReader reader = BarcodeReader.GetInstance();
+if (reader != null)
+{
+	PublicRuntimeSettings settings =  reader.GetRuntimeSettings();
+	settings.Timeout = 10000;
+	settings.MaxAlgorithmThreadCount = 3;
+	reader.UpdateRuntimeSettings(settings);
+	//... add further process
+    reader.Recycle();
+}
 ```
 
 **See Also**  
@@ -201,12 +217,16 @@ void Dynamsoft.DBR.BarcodeReader.ResetRuntimeSettings()
 ```csharp
 string errorMsg;
 BarcodeReader.InitLicense("YOUR-LICENSE-KEY", out errorMsg);
-BarcodeReader reader = new BarcodeReader();
-PublicRuntimeSettings settings =  reader.GetRuntimeSettings();
-settings.Timeout = 10000;
-settings.MaxAlgorithmThreadCount = 3;
-reader.UpdateRuntimeSettings(settings);
-reader.ResetRuntimeSettings();
-reader.Dispose();
+BarcodeReader reader = BarcodeReader.GetInstance();
+if (reader != null)
+{
+	PublicRuntimeSettings settings =  reader.GetRuntimeSettings();
+	settings.Timeout = 10000;
+	settings.MaxAlgorithmThreadCount = 3;
+	reader.UpdateRuntimeSettings(settings);
+	reader.ResetRuntimeSettings();
+	//... add further process
+    reader.Recycle();
+}
 
 ```

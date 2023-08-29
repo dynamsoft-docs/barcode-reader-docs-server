@@ -21,6 +21,7 @@ permalink: /programming/c-cplusplus/struct/index.html
  | [`FrameDecodingParameters`](FrameDecodingParameters.md) | Defines a struct to configure the frame decoding Parameters. |
  | [`FurtherModes`](FurtherModes.md) | Stores the FurtherModes. |
  | [`ImageData`](ImageData.md) | Stores the image data. |
+ | [`InstancePoolStatus`](InstancePoolStatus.html) | Stores the status of an instance pool. |
  | [`IntermediateResult`](IntermediateResult.md) | Stores the intermediate result. |
  | [`IntermediateResultArray`](IntermediateResultArray.md) | Stores the intermediate result array. |
  | [`LineSegment`](LineSegment.md) | Stores line segment data. |

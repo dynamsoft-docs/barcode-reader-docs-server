@@ -44,9 +44,13 @@ TextResult[] Dynamsoft.DBR.BarcodeReader.DecodeFile(string fileName, string temp
 ```csharp
 string errorMsg;
 BarcodeReader.InitLicense("YOUR-LICENSE-KEY", out errorMsg);
-BarcodeReader reader = new BarcodeReader();
-TextResult[] result = reader.DecodeFile(@"C:\Program Files (x86)\Dynamsoft\{Version number}\Images\AllSupportedBarcodeTypes.tif", "");
-reader.Dispose();
+BarcodeReader reader = BarcodeReader.GetInstance();
+if (reader != null)
+{
+	TextResult[] result = reader.DecodeFile(@"C:\Program Files (x86)\Dynamsoft\{Version number}\Images\AllSupportedBarcodeTypes.tif", "");
+	//... add further process
+    reader.Recycle();
+}
 ```
 
 
@@ -75,10 +79,14 @@ TextResult[] Dynamsoft.DBR.BarcodeReader.DecodeFileInMemory(byte[] fileStream, s
 ```csharp
 string errorMsg;
 BarcodeReader.InitLicense("YOUR-LICENSE-KEY", out errorMsg);
-BarcodeReader reader = new BarcodeReader();
-byte[] fileStream = GetFileStream(@"C:\Program Files (x86)\Dynamsoft\{Version number}\Images\AllSupportedBarcodeTypes.tif");
-TextResult[] result = reader.DecodeFileInMemory(fileStream, "");
-reader.Dispose();
+BarcodeReader reader = BarcodeReader.GetInstance();
+if (reader != null)
+{
+	byte[] fileStream = GetFileStream(@"C:\Program Files (x86)\Dynamsoft\{Version number}\Images\AllSupportedBarcodeTypes.tif");
+	TextResult[] result = reader.DecodeFileInMemory(fileStream, "");
+	//... add further process
+    reader.Recycle();
+}
 ```
 
 
@@ -116,19 +124,23 @@ TextResult[] Dynamsoft.DBR.BarcodeReader.DecodeBuffer(byte[] buffer, int width, 
 ```csharp
 string errorMsg;
 BarcodeReader.InitLicense("YOUR-LICENSE-KEY", out errorMsg);
-BarcodeReader reader = new BarcodeReader();
-Bitmap bBMP = new Bitmap(@"C:\Program Files (x86)\Dynamsoft\{Version number}\Images\AllSupportedBarcodeTypes.tif");
-BitmapData bmdat = bBMP.LockBits(new Rectangle(Point.Empty, bBMP.Size), ImageLockMode.ReadOnly, PixelFormat.Format32bppArgb);
-int width = bBMP.Width;
-int height = bBMP.Height;
-int stride = bmdat.Stride;
-byte[] buffer = new byte[stride * bmdat.Height];
-Marshal.Copy(bmdat.Scan0, buffer, 0, buffer.Length);
-bBMP.UnlockBits(bmdat);
-EnumImagePixelFormat imagePixelFormat = EnumImagePixelFormat.IPF_ARGB_8888;
-TextResult[] result = reader.DecodeBuffer(buffer, width, height, stride, imagePixelFormat, "");
-//TextResult[] result = reader.DecodeBuffer(buffer, width, height, stride, imagePixelFormat, 0, "");
-reader.Dispose();
+BarcodeReader reader = BarcodeReader.GetInstance();
+if (reader != null)
+{
+	Bitmap bBMP = new Bitmap(@"C:\Program Files (x86)\Dynamsoft\{Version number}\Images\AllSupportedBarcodeTypes.tif");
+	BitmapData bmdat = bBMP.LockBits(new Rectangle(Point.Empty, bBMP.Size), ImageLockMode.ReadOnly, PixelFormat.Format32bppArgb);
+	int width = bBMP.Width;
+	int height = bBMP.Height;
+	int stride = bmdat.Stride;
+	byte[] buffer = new byte[stride * bmdat.Height];
+	Marshal.Copy(bmdat.Scan0, buffer, 0, buffer.Length);
+	bBMP.UnlockBits(bmdat);
+	EnumImagePixelFormat imagePixelFormat = EnumImagePixelFormat.IPF_ARGB_8888;
+	TextResult[] result = reader.DecodeBuffer(buffer, width, height, stride, imagePixelFormat, "");
+	//TextResult[] result = reader.DecodeBuffer(buffer, width, height, stride, imagePixelFormat, 0, "");
+	//... add further process
+    reader.Recycle();
+}
 ```
 
 
@@ -158,11 +170,15 @@ All barcode text results decoded successfully.
 ```csharp
 string errorMsg;
 BarcodeReader.InitLicense("YOUR-LICENSE-KEY", out errorMsg);
-BarcodeReader reader = new BarcodeReader();
-byte[] byteFileStream = GetFileStream(@"C:\Program Files (x86)\Dynamsoft\{Version number}\Images\AllSupportedBarcodeTypes.tif");
-string base64String = GetFileBase64String(byteFileStream);
-TextResult[] result = reader.DecodeBase64String(base64String, "");
-reader.Dispose();
+BarcodeReader reader = BarcodeReader.GetInstance();
+if (reader != null)
+{
+	byte[] byteFileStream = GetFileStream(@"C:\Program Files (x86)\Dynamsoft\{Version number}\Images\AllSupportedBarcodeTypes.tif");
+	string base64String = GetFileBase64String(byteFileStream);
+	TextResult[] result = reader.DecodeBase64String(base64String, "");
+	//... add further process
+    reader.Recycle();
+}
 ```
 
 **See Also**   
@@ -193,10 +209,14 @@ TextResult[] Dynamsoft.DBR.BarcodeReader.DecodeBitmap(Bitmap bitMap, string temp
 ```csharp
 string errorMsg;
 BarcodeReader.InitLicense("YOUR-LICENSE-KEY", out errorMsg);
-BarcodeReader reader = new BarcodeReader();
-Bitmap bBMP = new Bitmap(@"C:\Program Files (x86)\Dynamsoft\{Version number}\Images\AllSupportedBarcodeTypes.tif");
-TextResult[] result = reader.DecodeBitmap(bBMP, "");
-reader.Dispose();
+BarcodeReader reader = BarcodeReader.GetInstance();
+if (reader != null)
+{
+	Bitmap bBMP = new Bitmap(@"C:\Program Files (x86)\Dynamsoft\{Version number}\Images\AllSupportedBarcodeTypes.tif");
+	TextResult[] result = reader.DecodeBitmap(bBMP, "");
+	//... add further process
+    reader.Recycle();
+}
 ```
 
 
@@ -222,8 +242,13 @@ IntermediateResult Dynamsoft.DBR.BarcodeReader.InitIntermediateResult(EnumInterm
 
 **Code Snippet**  
 ```csharp
-BarcodeReader reader = new BarcodeReader();
-IntermediateResult imResult = reader.InitIntermediateResult(EnumIntermediateResultType.IRT_ORIGINAL_IMAGE);
+BarcodeReader reader = BarcodeReader.GetInstance();
+if (reader != null)
+{
+	IntermediateResult imResult = reader.InitIntermediateResult(EnumIntermediateResultType.IRT_ORIGINAL_IMAGE);
+	//... add further process
+    reader.Recycle();
+}
 ```
 
 
@@ -254,13 +279,18 @@ TextResult[] Dynamsoft.DBR.BarcodeReader.DecodeIntermediateResults(IntermediateR
 ```csharp
 string errorMsg;
 BarcodeReader.InitLicense("YOUR-LICENSE-KEY", out errorMsg);
-BarcodeReader reader = new BarcodeReader();
-PublicRuntimeSettings settings = reader.GetRuntimeSettings();
-settings.IntermediateResultType = (int)EnumIntermediateResultType.IRT_ORIGINAL_IMAGE;
-reader.UpdateRuntimeSettings(settings);
-reader.DecodeFile("Your file path", "");
-IntermediateResult[] IMRs = reader.GetIntermediateResults();
-TextResult[] result = reader.DecodeIntermediateResults(IMRs, "");
+BarcodeReader reader = BarcodeReader.GetInstance();
+if (reader != null)
+{
+	PublicRuntimeSettings settings = reader.GetRuntimeSettings();
+	settings.IntermediateResultType = (int)EnumIntermediateResultType.IRT_ORIGINAL_IMAGE;
+	reader.UpdateRuntimeSettings(settings);
+	reader.DecodeFile("Your file path", "");
+	IntermediateResult[] IMRs = reader.GetIntermediateResults();
+	TextResult[] result = reader.DecodeIntermediateResults(IMRs, "");
+	//... add further process
+    reader.Recycle();
+}
 ```
 
 

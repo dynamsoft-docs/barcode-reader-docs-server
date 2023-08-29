@@ -5,7 +5,7 @@ description: This is the main page of Dynamsoft Barcode Reader SDK C++ Edition A
 keywords: api reference, c++
 needAutoGenerateSidebar: true
 needGenerateH3Content: true
-permalink: /programming/cplusplus/api-reference/index-v9.6.3.html
+permalink: /programming/cplusplus/api-reference/index-v9.6.30.html
 ---
 
 # C++ Language API Reference
@@ -18,8 +18,8 @@ permalink: /programming/cplusplus/api-reference/index-v9.6.3.html
   |----------------------|-------------|
   | [`CBarcodeReader`](cbarcodereader-methods/constructor-and-destructor.md#cbarcodereader) | Default constructor of `CBarcodeReader` object.|
   | [`~CBarcodeReader`](cbarcodereader-methods/constructor-and-destructor.md#~cbarcodereader) | Destructor of `CBarcodeReader` object.|
-  | [`GetInstance`](cbarcodereader-methods/constructor-and-destructor.md#getinstance) | Gets an idle Dynamsoft Barcode Reader instance running on concurrent instance mode. |
-  | [`Recycle`](cbarcodereader-methods/constructor-and-destructor.md#recycle) | Recycles a Dynamsoft Barcode Reader instance running on concurrent instance mode. |
+  | [`GetInstance`](cbarcodereader-methods/constructor-and-destructor.md#getinstance) | Creates an instance of Dynamsoft Barcode Reader. |
+  | [`Recycle`](cbarcodereader-methods/constructor-and-destructor.md#recycle) | Destroys an instance of Dynamsoft Barcode Reader. |
 
 ### License Methods
   
@@ -31,6 +31,7 @@ permalink: /programming/cplusplus/api-reference/index-v9.6.3.html
   | [`SetDeviceFriendlyName`](cbarcodereader-methods/license.md#setdevicefriendlyname) | Sets a human-readable name that identifies the device. |
   | [`SetLicenseCachePath`](cbarcodereader-methods/license.md#setlicensecachepath) | Sets a directory path for saving the license cache. |
   | [`SetMaxConcurrentInstanceCount`](cbarcodereader-methods/license.md#setmaxconcurrentinstancecount) | Sets the max concurrent instance count used for current device and process. |
+  | [`GetInstancePoolStatus`](cbarcodereader-methods/license.md#getinstancepoolstatus) | Gets a struct to represent the status of an instance pool. |
   | [`GetIdleInstancesCount`](cbarcodereader-methods/license.md#getidleinstancescount) | `Deprecated` |
   | [`InitLicenseFromServer`](cbarcodereader-methods/license.md#initlicensefromserver) | `Deprecated` |
   | [`InitLicenseFromLicenseContent`](cbarcodereader-methods/license.md#initlicensefromlicensecontent) | `Deprecated` |
@@ -157,6 +158,7 @@ permalink: /programming/cplusplus/api-reference/index-v9.6.3.html
  | [`FrameDecodingParameters`]({{ site.structs }}FrameDecodingParameters.html?src=cpp) | Defines a struct to configure the frame decoding Parameters. |
  | [`FurtherModes`]({{ site.structs }}FurtherModes.html?src=cpp) | Stores the FurtherModes. |
  | [`ImageData`]({{ site.structs }}ImageData.html?src=cpp) | Stores the image data. |
+ | [`InstancePoolStatus`]({{ site.structs }}InstancePoolStatus.html?src=cpp) | Stores the status of an instance pool. |
  | [`IntermediateResult`]({{ site.structs }}IntermediateResult.html?src=cpp) | Stores the intermediate result. |
  | [`IntermediateResultArray`]({{ site.structs }}IntermediateResultArray.html?src=cpp) | Stores the intermediate result array. |
  | [`LineSegment`]({{ site.structs }}LineSegment.html?src=cpp) | Stores line segment data. |

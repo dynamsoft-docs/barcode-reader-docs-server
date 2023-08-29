@@ -34,10 +34,14 @@ The error message.
 ```cpp
 char errorBuf[512];
 dynamsoft::dbr::CBarcodeReader::InitLicense("YOUR-LICENSE-KEY", errorBuf, 512);
-CBarcodeReader* reader = new CBarcodeReader();
-int errorCode = reader->DecodeFile("C:\\Program Files (x86)\\Dynamsoft\\{Version number}\\Images\\AllSupportedBarcodeTypes.tif", "");
-const char* errorString = dynamsoft::dbr::CBarcodeReader::GetErrorString(errorCode);
-delete reader;
+CBarcodeReader* reader = CBarcodeReader::GetInstance();
+if(reader != NULL)
+{
+    int errorCode = reader->DecodeFile("C:\\Program Files (x86)\\Dynamsoft\\{Version number}\\Images\\AllSupportedBarcodeTypes.tif", "");
+    const char* errorString = dynamsoft::dbr::CBarcodeReader::GetErrorString(errorCode);
+    // add further process
+    reader->Recycle();
+}
 ```
 
 ## GetVersion

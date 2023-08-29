@@ -42,10 +42,14 @@ Returns error code.
 ```csharp
 string errorMsg;
 BarcodeReader.InitLicense("YOUR-LICENSE-KEY", out errorMsg);
-BarcodeReader reader = new BarcodeReader();
-string errorMessage;
-EnumErrorCode error = reader.InitRuntimeSettingsWithFile(@"C:\Program Files (x86)\Dynamsoft\{Version number}\Templates\RuntimeSettings.json", EnumConflictMode.CM_OVERWRITE, out errorMessage);
-reader.Dispose();
+BarcodeReader reader = BarcodeReader.GetInstance();
+if (reader != null)
+{
+    string errorMessage;
+    EnumErrorCode error = reader.InitRuntimeSettingsWithFile(@"C:\Program Files (x86)\Dynamsoft\{Version number}\Templates\RuntimeSettings.json",     EnumConflictMode.CM_OVERWRITE, out errorMessage);
+	//... add further process
+    reader.Recycle();
+}
 ```
 
 
@@ -73,10 +77,14 @@ Returns error code.
 ```csharp
 string errorMsg;
 BarcodeReader.InitLicense("YOUR-LICENSE-KEY", out errorMsg);
-BarcodeReader reader = new BarcodeReader();
-string errorMessage;
-EnumErrorCode error = reader.InitRuntimeSettingsWithString("{\"Version\":\"3.0\", \"ImageParameter\":{\"Name\":\"IP1\", \"BarcodeFormatIds\":[\"BF_QR_CODE\"], \"ExpectedBarcodesCount\":10}}", EnumConflictMode.CM_OVERWRITE, out errorMessage);
-reader.Dispose();
+BarcodeReader reader = BarcodeReader.GetInstance();
+if (reader != null)
+{
+	string errorMessage;
+	EnumErrorCode error = reader.InitRuntimeSettingsWithString("{\"Version\":\"3.0\", \"ImageParameter\":{\"Name\":\"IP1\", \"BarcodeFormatIds\":[\"BF_QR_CODE\"], \"ExpectedBarcodesCount\":10}}", EnumConflictMode.CM_OVERWRITE, out errorMessage);
+	//... add further process
+    reader.Recycle();
+}
 ```
 
 
@@ -103,10 +111,14 @@ Returns error code.
 ```csharp
 string errorMsg;
 BarcodeReader.InitLicense("YOUR-LICENSE-KEY", out errorMsg);
-BarcodeReader reader = new BarcodeReader();
-string errorMessage;
-EnumErrorCode error = reader.AppendTplFileToRuntimeSettings(@"C:\Program Files (x86)\Dynamsoft\Barcode Reader 6.4\Templates\RuntimeSettings.json", EnumConflictMode.CM_OVERWRITE, out errorMessage);
-reader.Dispose();
+BarcodeReader reader = BarcodeReader.GetInstance();
+if (reader != null)
+{
+	string errorMessage;
+	EnumErrorCode error = reader.AppendTplFileToRuntimeSettings(@"C:\Program Files (x86)\Dynamsoft\Barcode Reader 6.4\Templates\RuntimeSettings.json", EnumConflictMode.CM_OVERWRITE, out errorMessage);
+	//... add further process
+    reader.Recycle();
+}
 ```
 
 
@@ -133,10 +145,14 @@ Returns error code.
 ```csharp
 string errorMsg;
 BarcodeReader.InitLicense("YOUR-LICENSE-KEY", out errorMsg);
-BarcodeReader reader = new BarcodeReader();
-string errorMessage;
-EnumErrorCode error = reader.AppendTplStringToRuntimeSettings("{\"Version\":\"3.0\", \"ImageParameter\":{\"Name\":\"IP1\", \"BarcodeFormatIds\":[\"BF_QR_CODE\"], \"ExpectedBarcodesCount\":10}}", EnumConflictMode.CM_IGNORE, out errorMessage);
-reader.Dispose();
+BarcodeReader reader = BarcodeReader.GetInstance();
+if (reader != null)
+{
+	string errorMessage;
+	EnumErrorCode error = reader.AppendTplStringToRuntimeSettings("{\"Version\":\"3.0\", \"ImageParameter\":{\"Name\":\"IP1\", \"BarcodeFormatIds\":[\"BF_QR_CODE\"], \"ExpectedBarcodesCount\":10}}", EnumConflictMode.CM_IGNORE, out errorMessage);
+	//... add further process
+    reader.Recycle();
+}
 ```
 
 
@@ -158,12 +174,16 @@ The template name array.
 ```csharp
 string errorMsg;
 BarcodeReader.InitLicense("YOUR-LICENSE-KEY", out errorMsg);
-BarcodeReader reader = new BarcodeReader();
-string errorMessage;
-reader.InitRuntimeSettingsWithFile(@"C:\Program Files (x86)\Dynamsoft\{Version number}\Templates\RuntimeSettings.json", EnumConflictMode.CM_OVERWRITE, out errorMessage);
-reader.AppendTplStringToRuntimeSettings("{\"Version\":\"3.0\", \"ImageParameter\":{\"Name\":\"IP1\", \"BarcodeFormatIds\":[\"BF_QR_CODE\"], \"ExpectedBarcodesCount\":10}}", EnumConflictMode.CM_IGNORE, out errorMessage);
-string[] templateNameArray = reader.GetAllParameterTemplateNames();
-reader.Dispose();
+BarcodeReader reader = BarcodeReader.GetInstance();
+if (reader != null)
+{
+	string errorMessage;
+	reader.InitRuntimeSettingsWithFile(@"C:\Program Files (x86)\Dynamsoft\{Version number}\Templates\RuntimeSettings.json", EnumConflictMode.CM_OVERWRITE, out errorMessage);
+	reader.AppendTplStringToRuntimeSettings("{\"Version\":\"3.0\", \"ImageParameter\":{\"Name\":\"IP1\", \"BarcodeFormatIds\":[\"BF_QR_CODE\"], \"ExpectedBarcodesCount\":10}}", EnumConflictMode.CM_IGNORE, out errorMessage);
+	string[] templateNameArray = reader.GetAllParameterTemplateNames();
+	//... add further process
+    reader.Recycle();
+}
 ```
 
 
@@ -188,12 +208,16 @@ void Dynamsoft.DBR.BarcodeReader.OutputSettingsToFile(string outputFilePath, str
 ```csharp
 string errorMsg;
 BarcodeReader.InitLicense("YOUR-LICENSE-KEY", out errorMsg);
-BarcodeReader reader = new BarcodeReader();
-string errorMessage;
-reader.InitRuntimeSettingsWithFile(@"C:\Program Files (x86)\Dynamsoft\{Version number}\Templates\RuntimeSettings.json", EnumConflictMode.CM_OVERWRITE, out errorMessage);
-reader.AppendTplStringToRuntimeSettings("{\"Version\":\"3.0\", \"ImageParameter\":{\"Name\":\"IP1\", \"BarcodeFormatIds\":[\"BF_QR_CODE\"], \"ExpectedBarcodesCount\":10}}", EnumConflictMode.CM_IGNORE, out errorMessage);
-reader.OutputSettingsToFile(@"C:\Program Files (x86)\Dynamsoft\{Version number}\Templates\CurrentRuntimeSettings.json", "currentRuntimeSettings");
-reader.Dispose();
+BarcodeReader reader = BarcodeReader.GetInstance();
+if (reader != null)
+{
+	string errorMessage;
+	reader.InitRuntimeSettingsWithFile(@"C:\Program Files (x86)\Dynamsoft\{Version number}\Templates\RuntimeSettings.json", EnumConflictMode.CM_OVERWRITE, out errorMessage);
+	reader.AppendTplStringToRuntimeSettings("{\"Version\":\"3.0\", \"ImageParameter\":{\"Name\":\"IP1\", \"BarcodeFormatIds\":[\"BF_QR_CODE\"], \"ExpectedBarcodesCount\":10}}", EnumConflictMode.CM_IGNORE, out errorMessage);
+	reader.OutputSettingsToFile(@"C:\Program Files (x86)\Dynamsoft\{Version number}\Templates\CurrentRuntimeSettings.json", "currentRuntimeSettings");
+	//... add further process
+    reader.Recycle();
+}
 ```
 
 
@@ -220,10 +244,14 @@ The output string which stores the contents of current settings.
 ```csharp
 string errorMsg;
 BarcodeReader.InitLicense("YOUR-LICENSE-KEY", out errorMsg);
-BarcodeReader reader = new BarcodeReader();
-string errorMessage;
-reader.InitRuntimeSettingsWithFile(@"C:\Program Files (x86)\Dynamsoft\{Version number}\Templates\RuntimeSettings.json", EnumConflictMode.CM_OVERWRITE, out errorMessage);
-reader.AppendTplStringToRuntimeSettings("{\"Version\":\"3.0\", \"ImageParameter\":{\"Name\":\"IP1\", \"BarcodeFormatIds\":[\"BF_QR_CODE\"], \"ExpectedBarcodesCount\":10}}", EnumConflictMode.CM_IGNORE, out errorMessage);
-string currentSettings = reader.OutputSettingsToString("currentRuntimeSettings");
-reader.Dispose();
+BarcodeReader reader = BarcodeReader.GetInstance();
+if (reader != null)
+{
+	string errorMessage;
+	reader.InitRuntimeSettingsWithFile(@"C:\Program Files (x86)\Dynamsoft\{Version number}\Templates\RuntimeSettings.json", EnumConflictMode.CM_OVERWRITE, out errorMessage);
+	reader.AppendTplStringToRuntimeSettings("{\"Version\":\"3.0\", \"ImageParameter\":{\"Name\":\"IP1\", \"BarcodeFormatIds\":[\"BF_QR_CODE\"], \"ExpectedBarcodesCount\":10}}", EnumConflictMode.CM_IGNORE, out errorMessage);
+	string currentSettings = reader.OutputSettingsToString("currentRuntimeSettings");
+	//... add further process
+    reader.Recycle();
+}
 ```

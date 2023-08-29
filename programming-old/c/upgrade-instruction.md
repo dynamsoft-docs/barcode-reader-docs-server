@@ -20,8 +20,13 @@ permalink: /programming/c/upgrade-instruction.html
 ```c
   char errorBuf[512];
   DBR_InitLicense("YOUR-LICENSE-KEY", errorBuf, 512);
-  void* barcodeReader = DBR_CreateInstance();
-  // add further process
+  void* dbr = DBR_GetInstance();
+  if(dbr != NULL)
+  {
+      // Add your code here to call decoding method, process barcode results and so on
+      // ...
+      DBR_RecycleInstance(dbr);
+  }
 ```
 
 >Note:
@@ -41,8 +46,13 @@ permalink: /programming/c/upgrade-instruction.html
 ```c
   char errorBuf[512];
   DBR_InitLicense("YOUR-LICENSE-KEY", errorBuf, 512);
-  void* barcodeReader = DBR_CreateInstance();
-  // add further process
+  void* dbr = DBR_GetInstance();
+  if(dbr != NULL)
+  {
+      // Add your code here to call decoding method, process barcode results and so on
+      // ...
+      DBR_RecycleInstance(dbr);
+  }
 ```
 
 >Note:

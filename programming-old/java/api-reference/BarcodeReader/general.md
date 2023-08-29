@@ -28,9 +28,13 @@ The version information string.
 **Code Snippet**  
 ```java
 BarcodeReader.initLicense("YOUR-LICENSE-KEY");
-BarcodeReader reader = new BarcodeReader();
-String versionInfo = reader.getVersion();
-reader.destroy();
+BarcodeReader reader = BarcodeReader.getInstance();
+if(reader != null)
+{
+	String versionInfo = reader.getVersion();
+    // add further process
+    reader.recycle();
+}
 ```
 
 ## TransformCoordinates

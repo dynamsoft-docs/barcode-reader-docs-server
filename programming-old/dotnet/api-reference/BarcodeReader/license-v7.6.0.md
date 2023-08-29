@@ -22,7 +22,7 @@ permalink: /programming/dotnet/api-reference/BarcodeReader/license-v7.6.0.html
 ## InitLicenseFromServer
 Initialize the license and connect to the specified server for online verification.
 
-```C#
+```csharp
 int Dynamsoft.Barcode.BarcodeReader.InitLicenseFromServer(string licenseServer, string licenseKey)
 ```   
    
@@ -40,7 +40,7 @@ Returns error code.
 ## InitLicenseFromLicenseContent
 Initializes barcode reader license and connects to the specified server for online verification.
 
-```C#
+```csharp
 int Dynamsoft.Barcode.BarcodeReader.InitLicenseFromLicenseContent(string licenseKey, string strLicenseContent)
 ```
 
@@ -59,7 +59,7 @@ Returns error code.
 ## OutputLicenseToString
 Outputs the license content as an encrypted string from the license server to be used for offline license verification. 
 
-```C#
+```csharp
 string Dynamsoft.Barcode.BarcodeReader.OutputLicenseToString()
 ```
    

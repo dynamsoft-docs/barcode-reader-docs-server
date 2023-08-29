@@ -38,10 +38,14 @@ The error message.
 ```c
 char errorBuf[512];
 DBR_InitLicense("YOUR-LICENSE-KEY", errorBuf, 512);
-void* barcodeReader = DBR_CreateInstance();
-int errorCode = DBR_DecodeFile(barcodeReader, "C:\\Program Files (x86)\\Dynamsoft\\{Version number}\\Images\\AllSupportedBarcodeTypes.tif", "");
-const char* errorString = DBR_GetErrorString(errorCode);
-DBR_DestroyInstance(barcodeReader);
+void* barcodeReader = DBR_GetInstance();
+if(barcodeReader != NULL)
+{
+    int errorCode = DBR_DecodeFile(barcodeReader, "C:\\Program Files (x86)\\Dynamsoft\\{Version number}\\Images\\AllSupportedBarcodeTypes.tif", "");
+	const char* errorString = DBR_GetErrorString(errorCode);
+    //... more process here
+    DBR_RecycleInstance(barcodeReader);
+}
 ```
 
 

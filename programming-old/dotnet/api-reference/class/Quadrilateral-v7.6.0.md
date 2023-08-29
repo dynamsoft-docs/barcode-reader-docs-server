@@ -11,7 +11,7 @@ permalink: /programming/dotnet/api-reference/class/Quadrilateral-v7.6.0.html
 # Quadrilateral
 Stores the quadrilateral.  
 
-```C#
+```csharp
 public class Quadrilateral 
 ```  
 
@@ -25,7 +25,7 @@ public class Quadrilateral
 ### Points
 Four vertexes in a clockwise direction of a quadrilateral. Index 0 represents the left-most vertex. 
 
-```C#
+```csharp
 Point[] Dynamsoft.Barcode.Quadrilateral.Points
 ```
 

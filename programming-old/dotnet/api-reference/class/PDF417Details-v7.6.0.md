@@ -11,7 +11,7 @@ permalink: /programming/dotnet/api-reference/class/PDF417Details-v7.6.0.html
 # PDF417Details
 Stores the PDF417 details.
 
-```C#
+```csharp
 public class PDF417Details
 ```  
 
@@ -28,27 +28,27 @@ public class PDF417Details
 ### ModuleSize
 The barcode module size (the minimum bar width in pixel).
 
-```C#
+```csharp
 int Dynamsoft.Barcode.PDF417Details.ModuleSize
 ```
 
 ### Rows
 The row count of the barcode.
 
-```C#
+```csharp
 int Dynamsoft.Barcode.PDF417Details.Rows
 ```
 
 ### Columns
 The column count of codewords between the left and right row indicators, where the actual data and the ECC is encoded.
 
-```C#
+```csharp
 int Dynamsoft.Barcode.PDF417Details.Columns
 ```
 
 ### ErrorCorrectionLevel
 The error correction level of the barcode.
 
-```C#
+```csharp
 int Dynamsoft.Barcode.PDF417Details.ErrorCorrectionLevel
 ```

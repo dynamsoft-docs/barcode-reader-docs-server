@@ -36,13 +36,17 @@ An array of [`IntermediateResult`](../class/IntermediateResult.md)
 **Code Snippet**  
 ```java
 BarcodeReader.initLicense("YOUR-LICENSE-KEY");
-BarcodeReader reader = new BarcodeReader();
-PublicRuntimeSettings settings = reader.getRuntimeSettings();
-settings.intermediateResultTypes = EnumIntermediateResultType.IRT_ORIGINAL_IMAGE | EnumIntermediateResultType.IRT_COLOUR_CLUSTERED_IMAGE | EnumIntermediateResultType.IRT_COLOUR_CONVERTED_GRAYSCALE_IMAGE;
-reader.updateRuntimeSettings(settings);
-TextResult[] result = reader.decodeFile("your file path", "");
-IntermediateResult[] irtResult = reader.getIntermediateResults();
-reader.destroy();
+BarcodeReader reader = BarcodeReader.getInstance();
+if(reader != null)
+{
+  	PublicRuntimeSettings settings = reader.getRuntimeSettings();
+  	settings.intermediateResultTypes = EnumIntermediateResultType.IRT_ORIGINAL_IMAGE | EnumIntermediateResultType.IRT_COLOUR_CLUSTERED_IMAGE |  EnumIntermediateResultType.IRT_COLOUR_CONVERTED_GRAYSCALE_IMAGE;
+  	reader.updateRuntimeSettings(settings);
+  	TextResult[] result = reader.decodeFile("your file path", "");
+  	IntermediateResult[] irtResult = reader.getIntermediateResults();
+    // add further process
+    reader.recycle();
+}
 ```
 
 

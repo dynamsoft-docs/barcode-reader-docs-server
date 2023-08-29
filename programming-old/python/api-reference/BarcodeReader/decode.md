@@ -49,20 +49,22 @@ license_key = 'YOUR-LICENSE-KEY'
 image_file = r'C:\Program Files (x86)\Dynamsoft\{Version number}\Images\AllSupportedBarcodeTypes.tif'
 
 BarcodeReader.init_license(license_key)
-reader = BarcodeReader()
-try:
-    text_results = reader.decode_file(image_file)
-    if text_results != None:
-        for text_result in text_results:
-            print("Barcode Format :")
-            print(text_result.barcode_format_string)
-            print("Barcode Text :")
-            print(text_result.barcode_text)
-            print("Localization Points : ")
-            print(text_result.localization_result.localization_points)
-            print("-------------")
-except BarcodeReaderError as bre:
-    print(bre)
+reader = BarcodeReader.get_instance()
+if reader != None:
+    try:
+        text_results = reader.decode_file(image_file)
+        if text_results != None:
+            for text_result in text_results:
+                print("Barcode Format :")
+                print(text_result.barcode_format_string)
+                print("Barcode Text :")
+                print(text_result.barcode_text)
+                print("Localization Points : ")
+                print(text_result.localization_result.localization_points)
+                print("-------------")
+    except BarcodeReaderError as bre:
+        print(bre)
+    reader.recycle_instance()
 ```
 
 ## decode_buffer
@@ -96,20 +98,22 @@ image_file = r'C:\Program Files (x86)\Dynamsoft\{Version number}\Images\AllSuppo
 image = cv2.imread(image_file)
 
 BarcodeReader.init_license(license_key)
-reader = BarcodeReader()
-try:
-    text_results = reader.decode_buffer(image)
-    if text_results != None:
-        for text_result in text_results:
-            print("Barcode Format :")
-            print(text_result.barcode_format_string)
-            print("Barcode Text :")
-            print(text_result.barcode_text)
-            print("Localization Points : ")
-            print(text_result.localization_result.localization_points)
-            print("-------------")
-except BarcodeReaderError as bre:
-    print(bre)
+reader = BarcodeReader.get_instance()
+if reader != None:
+    try:
+        text_results = reader.decode_buffer(image)
+        if text_results != None:
+            for text_result in text_results:
+                print("Barcode Format :")
+                print(text_result.barcode_format_string)
+                print("Barcode Text :")
+                print(text_result.barcode_text)
+                print("Localization Points : ")
+                print(text_result.localization_result.localization_points)
+                print("-------------")
+    except BarcodeReaderError as bre:
+        print(bre)
+    reader.recycle_instance()
 ```
 
 ## decode_file_stream
@@ -144,20 +148,22 @@ with open(image_file, "rb") as fread:
     total = fread.read()
 
 BarcodeReader.init_license(license_key)
-reader = BarcodeReader()
-try:
-    text_results = reader.decode_file_stream(bytearray(total))
-    if text_results != None:
-        for text_result in text_results:
-            print("Barcode Format :")
-            print(text_result.barcode_format_string)
-            print("Barcode Text :")
-            print(text_result.barcode_text)
-            print("Localization Points : ")
-            print(text_result.localization_result.localization_points)
-            print("-------------")
-except BarcodeReaderError as bre:
-    print(bre)
+reader = BarcodeReader.get_instance()
+if reader != None:
+    try:
+        text_results = reader.decode_file_stream(bytearray(total))
+        if text_results != None:
+            for text_result in text_results:
+                print("Barcode Format :")
+                print(text_result.barcode_format_string)
+                print("Barcode Text :")
+                print(text_result.barcode_text)
+                print("Localization Points : ")
+                print(text_result.localization_result.localization_points)
+                print("-------------")
+    except BarcodeReaderError as bre:
+        print(bre)
+    reader.recycle_instance()
 ```
 
 
@@ -213,18 +219,20 @@ license_key = 'YOUR-LICENSE-KEY'
 base64_string = r'YOUR-BASE64-ENCODED-STRING'
 
 BarcodeReader.init_license(license_key)
-reader = BarcodeReader()
-try:
-    text_results = reader.decode_base64_string(base64_string)
-    if text_results != None:
-        for text_result in text_results:
-            print("Barcode Format :")
-            print(text_result.barcode_format_string)
-            print("Barcode Text :")
-            print(text_result.barcode_text)
-            print("-------------")
-except BarcodeReaderError as bre:
-    print(bre)
+reader = BarcodeReader.get_instance()
+if reader != None:
+    try:
+        text_results = reader.decode_base64_string(base64_string)
+        if text_results != None:
+            for text_result in text_results:
+                print("Barcode Format :")
+                print(text_result.barcode_format_string)
+                print("Barcode Text :")
+                print(text_result.barcode_text)
+                print("-------------")
+    except BarcodeReaderError as bre:
+        print(bre)
+    reader.recycle_instance()
 ```
 
 ## init_intermediate_result
@@ -255,20 +263,22 @@ license_key = 'YOUR-LICENSE-KEY'
 image_file = r'C:\Program Files (x86)\Dynamsoft\{Version number}\Images\AllSupportedBarcodeTypes.tif'
 
 BarcodeReader.init_license(license_key)
-reader = BarcodeReader()
-try:
-    text_results = reader.decode_file(image_file)
-    if text_results != None:
-        for text_result in text_results:
-            print("Barcode Format :")
-            print(text_result.barcode_format_string)
-            print("Barcode Text :")
-            print(text_result.barcode_text)
-            print("Localization Points : ")
-            print(text_result.localization_result.localization_points)
-            print("-------------")
-except BarcodeReaderError as bre:
-    print(bre)
+reader = BarcodeReader.get_instance()
+if reader != None:
+    try:
+        text_results = reader.decode_file(image_file)
+        if text_results != None:
+            for text_result in text_results:
+                print("Barcode Format :")
+                print(text_result.barcode_format_string)
+                print("Barcode Text :")
+                print(text_result.barcode_text)
+                print("Localization Points : ")
+                print(text_result.localization_result.localization_points)
+                print("-------------")
+    except BarcodeReaderError as bre:
+        print(bre)
+    reader.recycle_instance()
 ```
 
 ## decode_intermediate_results
@@ -300,19 +310,21 @@ license_key = 'YOUR-LICENSE-KEY'
 image_file = r'C:\Program Files (x86)\Dynamsoft\{Version number}\Images\AllSupportedBarcodeTypes.tif'
 
 BarcodeReader.init_license(license_key)
-reader = BarcodeReader()
-try:
-    text_results = reader.decode_file(image_file)
-    if text_results != None:
-        for text_result in text_results:
-            print("Barcode Format :")
-            print(text_result.barcode_format_string)
-            print("Barcode Text :")
-            print(text_result.barcode_text)
-            print("Localization Points : ")
-            print(text_result.localization_result.localization_points)
-            print("-------------")
-except BarcodeReaderError as bre:
-    print(bre)
+reader = BarcodeReader.get_instance()
+if reader != None:
+    try:
+        text_results = reader.decode_file(image_file)
+        if text_results != None:
+            for text_result in text_results:
+                print("Barcode Format :")
+                print(text_result.barcode_format_string)
+                print("Barcode Text :")
+                print(text_result.barcode_text)
+                print("Localization Points : ")
+                print(text_result.localization_result.localization_points)
+                print("-------------")
+    except BarcodeReaderError as bre:
+        print(bre)
+    reader.recycle_instance()
 ```
 

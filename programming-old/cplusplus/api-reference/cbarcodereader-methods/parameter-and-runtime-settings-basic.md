@@ -46,7 +46,9 @@ Returns error code. Possible return(s): DBR_OK; DBRERR_SET_MODE_ARGUMENT_ERROR.
 ```cpp
 char errorBuf[512];
 dynamsoft::dbr::CBarcodeReader::InitLicense("YOUR-LICENSE-KEY", errorBuf, 512);
-CBarcodeReader* reader = new CBarcodeReader();
+CBarcodeReader* reader = CBarcodeReader::GetInstance();
+if(reader != NULL)
+{
 PublicRuntimeSettings* pSettings = new PublicRuntimeSettings;
 reader->GetRuntimeSettings(pSettings);
 pSettings->binarizationModes[0] = BM_LOCAL_BLOCK;
@@ -54,7 +56,9 @@ char errorMessage[256];
 reader->UpdateRuntimeSettings(pSettings, errorMessage, 256);
 reader->SetModeArgument("BinarizationModes", 0, "EnableFillBinaryVacancy", "1", errorMessage, 256);
 delete pSettings;
-delete reader;
+    // add further process
+    reader->Recycle();
+}
 ```
 
 **Remarks**  
@@ -103,17 +107,21 @@ Returns error code. Possible return(s): DBR_OK; DBRERR_GET_MODE_ARGUMENT_ERROR.
 ```cpp
 char errorBuf[512];
 dynamsoft::dbr::CBarcodeReader::InitLicense("YOUR-LICENSE-KEY", errorBuf, 512);
-CBarcodeReader* reader = new CBarcodeReader();
-PublicRuntimeSettings* pSettings = new PublicRuntimeSettings;
-reader->GetRuntimeSettings(pSettings);
-pSettings->binarizationModes[0] = BM_LOCAL_BLOCK;
-char errorMessage[256];
-char argumentValue[480];
-reader->UpdateRuntimeSettings(pSettings, errorMessage, 256);
-reader->SetModeArgument("BinarizationModes", 0, "EnableFillBinaryVacancy", "1", errorMessage, 256);
-reader->GetModeArgument("BinarizationModes", 0, "EnableFillBinaryVacancy", argumentValue, 480, errorMessage, 256);
-delete pSettings;
-delete reader;
+CBarcodeReader* reader = CBarcodeReader::GetInstance();
+if(reader != NULL)
+{
+    PublicRuntimeSettings* pSettings = new PublicRuntimeSettings;
+    reader->GetRuntimeSettings(pSettings);
+    pSettings->binarizationModes[0] = BM_LOCAL_BLOCK;
+    char errorMessage[256];
+    char argumentValue[480];
+    reader->UpdateRuntimeSettings(pSettings, errorMessage, 256);
+    reader->SetModeArgument("BinarizationModes", 0, "EnableFillBinaryVacancy", "1", errorMessage, 256);
+    reader->GetModeArgument("BinarizationModes", 0, "EnableFillBinaryVacancy", argumentValue, 480, errorMessage, 256);
+    delete pSettings;
+    // add further process
+    reader->Recycle();
+}
 ```
 
 **Remarks**  
@@ -156,11 +164,15 @@ Returns error code (returns 0 if the function operates successfully).
 ```cpp
 char errorBuf[512];
 dynamsoft::dbr::CBarcodeReader::InitLicense("YOUR-LICENSE-KEY", errorBuf, 512);
-CBarcodeReader* reader = new CBarcodeReader();
-PublicRuntimeSettings* pSettings = new PublicRuntimeSettings;
-int errorCode = reader->GetRuntimeSettings(pSettings);
-delete pSettings;
-delete reader;
+CBarcodeReader* reader = CBarcodeReader::GetInstance();
+if(reader != NULL)
+{
+    PublicRuntimeSettings* pSettings = new PublicRuntimeSettings;
+    int errorCode = reader->GetRuntimeSettings(pSettings);
+    delete pSettings;
+    // add further process
+    reader->Recycle();
+}
 ```
 
 
@@ -190,14 +202,18 @@ Returns error code (returns 0 if the function operates successfully).
 ```cpp
 char errorBuf[512];
 dynamsoft::dbr::CBarcodeReader::InitLicense("YOUR-LICENSE-KEY", errorBuf, 512);
-CBarcodeReader* reader = new CBarcodeReader();
-PublicRuntimeSettings* pSettings = new PublicRuntimeSettings;
-int errorCode = reader->GetRuntimeSettings(pSettings);
-pSettings->deblurLevel = 9;
-char errorMessage[256];
-reader->UpdateRuntimeSettings(pSettings, errorMessage, 256);
-delete pSettings;
-delete reader;
+CBarcodeReader* reader = CBarcodeReader::GetInstance();
+if(reader != NULL)
+{
+    PublicRuntimeSettings* pSettings = new PublicRuntimeSettings;
+    int errorCode = reader->GetRuntimeSettings(pSettings);
+    pSettings->deblurLevel = 9;
+    char errorMessage[256];
+    reader->UpdateRuntimeSettings(pSettings, errorMessage, 256);
+    delete pSettings;
+    // add further process
+    reader->Recycle();
+}
 ```
 
 
@@ -222,13 +238,17 @@ Returns error code (returns 0 if the function operates successfully).
 ```cpp
 char errorBuf[512];
 dynamsoft::dbr::CBarcodeReader::InitLicense("YOUR-LICENSE-KEY", errorBuf, 512);
-CBarcodeReader* reader = new CBarcodeReader();
-PublicRuntimeSettings* pSettings = new PublicRuntimeSettings;
-int errorCode = reader->GetRuntimeSettings(pSettings);
-pSettings->deblurLevel = 9;
-char errorMessage[256];
-reader->UpdateRuntimeSettings(pSettings, errorMessage, 256);
-reader->ResetRuntimeSettings();
-delete pSettings;
-delete reader;
+CBarcodeReader* reader = CBarcodeReader::GetInstance();
+if(reader != NULL)
+{
+    PublicRuntimeSettings* pSettings = new PublicRuntimeSettings;
+    int errorCode = reader->GetRuntimeSettings(pSettings);
+    pSettings->deblurLevel = 9;
+    char errorMessage[256];
+    reader->UpdateRuntimeSettings(pSettings, errorMessage, 256);
+    reader->ResetRuntimeSettings();
+    delete pSettings;
+    // add further process
+    reader->Recycle();
+}
 ```
