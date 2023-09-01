@@ -140,4 +140,4 @@ python DBRPythonSample.py
 
 ## Related Articles
 
-- [How to upgrade to latest version](upgrade-instruction.md)
+- [How to upgrade to latest version]({{site.python}}upgrade-instruction.html)

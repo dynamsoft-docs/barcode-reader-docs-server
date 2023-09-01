@@ -146,8 +146,8 @@ Please change all `[INSTALLATION FOLDER]` in above code snippet to your unpackin
 
 ## Next Steps
 
-- Learn [How to Upgrade to Latest Version](upgrade-instruction.md)
-- [Explore SDK Features](user-guide/explore-features/index.md)
-- See how the SDK works in [Popular Use Cases](user-guide/use-cases/index.md)
-- Check out the [Official Samples and Demo](samples/index.md)
+- Learn [How to Upgrade to Latest Version]({{site.dotnet}}upgrade-instruction.html)
+- [Explore SDK Features]({{site.dotnet}}user-guide/explore-features/index.html)
+- See how the SDK works in [Popular Use Cases]({{site.dotnet}}user-guide/use-cases/index.html)
+- Check out the [Official Samples and Demo]({{site.dotnet}}samples/index.html)
 

@@ -12,13 +12,13 @@ permalink: /programming/python/index.html
 
 ## User Guide
 
-- [Getting Started](user-guide.md)
-- [Explore Features](user-guide/explore-features/index.md)
-- [Check Use Cases](user-guide/use-cases/index.md)
+- [Getting Started]({{site.python}}user-guide.html)
+- [Explore Features]({{site.python}}user-guide/explore-features/index.html)
+- [Check Use Cases]({{site.python}}user-guide/use-cases/index.html)
 
 ## API Reference
 
-- [API Reference](api-reference/index.md)
+- [API Reference]({{site.python_api}}index.html)
 
 ## Samples and Demo
 
@@ -33,7 +33,7 @@ permalink: /programming/python/index.html
 
 ## Upgrade Instructions
 
-- [How to upgrade to latest version](upgrade-instruction.md)
+- [How to upgrade to latest version]({{site.python}}upgrade-instruction.html)
 
 ## Online Store
 

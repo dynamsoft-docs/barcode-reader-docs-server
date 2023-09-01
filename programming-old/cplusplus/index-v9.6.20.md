@@ -13,8 +13,8 @@ permalink: /programming/cplusplus/index-v9.6.20.html
 ## User Guide
 
 - [Getting Started]({{site.cpp}}user-guide.html)
-- [Explore Features](user-guide/explore-features/index.md)
-- [Check Use Cases](user-guide/use-cases/index.md)
+- [Explore Features]({{site.cpp}}user-guide/explore-features/index.html)
+- [Check Use Cases]({{site.cpp}}user-guide/use-cases/index.html)
 
 ## Samples and Demo
 

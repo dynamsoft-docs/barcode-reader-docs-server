@@ -99,7 +99,7 @@ Let's start by creating a console application which demonstrates how to use the 
 
     >If you know exactly the barcode count you want to read, specify `expectedBarcodesCount` to speed up the process and improve the accuracy.
 
-    >The Barcode Reader SDK comes with a large array of runtime settings to optimize the performance of the library. To learn about all the runtime settings, please visit the [RuntimeSettings](api-reference/class/PublicRuntimeSettings.md) API page. To learn more about the cases and situations in which the settings can help, please visit the [Explore Features](user-guide/explore-features/index.md) page.
+    >The Barcode Reader SDK comes with a large array of runtime settings to optimize the performance of the library. To learn about all the runtime settings, please visit the [RuntimeSettings](api-reference/class/PublicRuntimeSettings.md) API page. To learn more about the cases and situations in which the settings can help, please visit the [Explore Features]({{site.java}}user-guide/explore-features/index.html) page.
 
 ### Decode and Output Results
 
@@ -152,7 +152,7 @@ Please change all `[INSTALLATION FOLDER]` in above code snippet to your unpackin
 
 ## Next Steps
 
-- Learn [How to Upgrade to Latest Version](upgrade-instruction.md)
-- [Explore SDK Features](user-guide/explore-features/index.md)
-- See how the SDK works in [Popular Use Cases](user-guide/use-cases/index.md)
-- Check out the [Official Samples and Demo](samples/index.md)
+- Learn [How to Upgrade to Latest Version]({{site.java}}upgrade-instruction.html)
+- [Explore SDK Features]({{site.java}}user-guide/explore-features/index.html)
+- See how the SDK works in [Popular Use Cases]({{site.java}}user-guide/use-cases/index.html)
+- Check out the [Official Samples and Demo]({{site.java}}samples/index.html)
