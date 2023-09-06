@@ -12,9 +12,9 @@ permalink: /programming/dotnet/index.html
 
 ## User Guide
 
-- [Getting Started](user-guide.md)
-- [Explore Features](user-guide/explore-features/index.md)
-- [Check Use Cases](user-guide/use-cases/index.md)
+- [Getting Started]({{site.dotnet}}user-guide.html)
+- [Explore Features]({{site.dotnet}}user-guide/explore-features/index.html)
+- [Check Use Cases]({{site.dotnet}}user-guide/use-cases/index.html)
 
 ## Samples and Demo
 
@@ -24,7 +24,7 @@ permalink: /programming/dotnet/index.html
 
 ## API Reference
 
-- [API Reference](api-reference/index.md)
+- [API Reference]({{site.dotnet_api}}index.html)
 
 ## Release Notes
 
@@ -34,7 +34,7 @@ permalink: /programming/dotnet/index.html
 
 ## Upgrade Instructions
 
-- [How to upgrade to latest version](upgrade-instruction.md)
+- [How to upgrade to latest version]({{site.dotnet}}upgrade-instruction.html)
 
 ## Online Store
 

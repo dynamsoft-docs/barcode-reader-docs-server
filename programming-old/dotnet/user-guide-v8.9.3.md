@@ -137,5 +137,5 @@ Please change all `[INSTALLATION FOLDER]` in above code snippet to your unpackin
 
 ## Related Articles
 
-- [How to upgrade to latest version](upgrade-instruction.md)
+- [How to upgrade to latest version]({{site.dotnet}}upgrade-instruction.html)
 

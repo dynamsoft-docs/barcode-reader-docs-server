@@ -10,7 +10,7 @@ permalink: /programming/cplusplus/index.html
 
 Dynamsoft Barcode Reader (DBR) SDK C++ Edition is a barcode reading tool designed specifically for C++ developers.
 
-Leveraging the efficiency and flexibility of the C++ language, DBR C++ Edition provides rich APIs for developers to easily integrate barcode reading functionality into your c++ applications. Please take a look at [API Reference](api-reference/index.md) to see details.
+Leveraging the efficiency and flexibility of the C++ language, DBR C++ Edition provides rich APIs for developers to easily integrate barcode reading functionality into your c++ applications. Please take a look at [API Reference]({{site.cpp_api}}index.html) to see details.
 
 In addition, DBR C++ Edition provides cross-platform support, running on multiple operating systems such as Windows, Linux, and Mac, to meet the needs of different development environments
 
@@ -20,18 +20,21 @@ Furthermore, DBR provides a powerful parameter system in order to cope with vari
 
 ## Getting Started with DBR C++ Edition
 
-The best way to start with the Dynamsoft Barcode Reader C++ Edition, is following the [`User Guide`](user-guide.md) to build your first barcode reading application. Please note that the system requirements is as below:
+The best way to start with the Dynamsoft Barcode Reader C++ Edition, is following the [`User Guide`]({{site.cpp}}user-guide.html) to build your first barcode reading application. Please note that the system requirements is as below:
 
 ### System Requirements
 
-- Operating System:
-  - Windows 7, 8, 10, 11
-  - Windows Server 2003, 2008, 2008 R2, 2012, 2016, 2019, 2022
-  - Linux x64: Ubuntu 14.04.4+ LTS, Debian 8+, etc
+- Windows:
+  - Supported Versions: Windows 7 and higher, or Windows Server 2003 and higher
+  - Architecture: x64 and x86
+  - Development Environment: Visual Studio 2012 or higher.
 
-- Developing Tool
-  - Visual Studio 2012 or above
-  - G++ 5.4+  
+- Linux:
+  - Supported Distributions: Ubuntu 14.04.4+ LTS, Debian 8+, CentOS 6+
+  - Architectures: x64 (arm 32-bit and arm 64-bit coming soon)
+  - Minimum GLIBC Version: GLIBC_2.18 or higher
+  - Compiler: G++ 5.4 or higher
+
 
 ## License Subscription
 
