@@ -32,7 +32,7 @@ jobs:
           git clone --depth 1 --branch preview https://github.com/dynamsoft-docs/Docs-Template-Repo.git Docs-Template-Repo-Preview-R3
           cp -rfp ./barcode-reader-docs-server/* ./DBRDocServer/
           cp -rfp ./Docs-Template-Repo-Preview-R3/* ./DBRDocServer/
-          cd DBRDocServer && bundle exec jekyll build
+          cd DBRDocServer && bundle install && bundle exec jekyll build
           #python3 /home/ubuntu/ftp.py /home/ubuntu/DBRDocServer/_site/ ./www.dynamsoft.com/barcode-reader/docs/server/ prod
 
       - name: Sync files
@@ -73,7 +73,7 @@ jobs:
           cp -rfp ./Docs-Template-Repo-Preview-R3/* ./DBRDocServer-preview/
           sed -i -e "1,3s/blob\/master$/blob\/preview/" \
           -e "1,3s/blob\/main$/blob\/preview/" /home/ubuntu/DBRDocServer-preview/_config.yml
-          cd DBRDocServer-preview && bundle exec jekyll build
+          cd DBRDocServer-preview  && bundle install && bundle exec jekyll build
 
   Upload-Preview:
     if: ${{ github.ref == 'refs/heads/preview' }}
