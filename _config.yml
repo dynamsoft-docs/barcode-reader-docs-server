@@ -64,6 +64,11 @@ license_activation: /barcode-reader/docs/core/license-activation/
 baseurl: "/barcode-reader/docs/server"
 plugins:
   - jemoji
+  - jekyll-webp
+  - jekyll-relative-links
+  - jekyll-redirect-from
+  - jekyll-readme-index
+  - jekyll-seo-tag
 
 edition: desktop
 
