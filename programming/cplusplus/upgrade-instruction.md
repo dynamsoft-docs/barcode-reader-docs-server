@@ -82,9 +82,10 @@ Class `CCaptureVisionRouter` is added to replace class `CBarcodeReader`. Class `
 
 The template system is upgraded. The template you used for the previous version can't be directly recognized by the new version. Please <a href="https://download2.dynamsoft.com/dcv/TemplateConverter.zip" target="_blank">download the TemplateConverter tool</a> or <a href="https://www.dynamsoft.com/company/customer-service/#contact" target="_blank">contact us</a> to upgrade your template.
 
+<!-- 
 ### Replace PublicRuntimeSettings APIs with SimplifiedSettings APIs
 
-The setting configuration APIs are refactored. Struct `PublicRuntimeSettings` is removed. Though a series of settings are still available via struct `SimplifiedCaptureVisionSettings`, the majority of settings are "template only". Please view the API reference of struct [`SimplifiedCaptureVisionSettings`]({{ site.dcv_cpp_api }}capture-vision-router/structs/simplified-capture-vision-settings.html) and [`SimplifiedBarcodeReaderSettings`]({{ site.cpp_api }}simplified-barcode-reader-settings.html) to see whether your settings are still available. If they are no longer supported, please <a href="https://www.dynamsoft.com/company/customer-service/#contact" target="_blank">contact us</a>. We will help you on generating a new template that supports your previous settings.
+The setting configuration APIs are refactored. Struct `PublicRuntimeSettings` is removed. Though a series of settings are still available via struct `SimplifiedCaptureVisionSettings`, the majority of settings are "template only". Please view the API reference of struct [`SimplifiedCaptureVisionSettings`]({{ site.dcv_cpp_api }}capture-vision-router/structs/simplified-capture-vision-settings.html) and [`SimplifiedBarcodeReaderSettings`]({{ site.cpp_api }}simplified-barcode-reader-settings.html) to see whether your settings are still available. If they are no longer supported, please <a href="https://www.dynamsoft.com/company/customer-service/#contact" target="_blank">contact us</a>. We will help you on generating a new template that supports your previous settings. -->
 
 ### Update Your Image Decoding Codes
 
@@ -153,3 +154,103 @@ int main()
 If you are using batch image decoding or video streaming decoding, you have to register a [`CCapturedResultReceiver`]({{ site.dcv_cpp_api }}core/basic-structures/captured-result-receiver.html) to receive the barcode decoding results.
 
 If you are using `Capture` APIs to process a single image, the barcode decoding results are returned from the `Capture` APIs.
+
+### Migrate Your PublicRuntimeSettings
+
+The setting configuration APIs are refactored. Struct `PublicRuntimeSettings` is removed. Though a series of settings are still available via struct `SimplifiedCaptureVisionSettings`, the majority of settings are "template only". Please view the following instructions to update your settings.
+
+#### Migrate to SimplifiedCaptureVisionSettings
+
+The following parameters are replaced by similar parameters under `SimplifiedCaptureVisionSettings`. They can also be set via a template file(String).
+
+| PublicRuntimeSettings | SimplifiedCaptureVisionSettings | Template File |
+| --------------------- | ------------------------------- | ------------- |
+| `region` | `roi` & `roiMeasuredInPercentage` | [`TargetROIDefOptions.Location.Offset`]({{ site.dcv_parameters_reference }}target-roi-def/location.html) |
+| `timeout` | `timeout` | [`CaptureVisionTemplates.Timeout`]({{ site.dcv_parameters_reference }}capture-vision-template/timeout.html) |
+
+#### Migrate to SimplifiedBarcodeReaderSettings
+
+The following parameters are replaced by similar parameters under `SimplifiedBarcodeReaderSettings`. The majority of them can also be set via a template file(String).
+
+| PublicRuntimeSettings | SimplifiedBarcodeReaderSettings | Template File |
+| --------------------- | ------------------------------- | ------------- |
+| `minBarcodeTextLength` | `minBarcodeTextLength` | [`BarcodeFormatSpecificationOptions.BarcodeTextLengthRangeArray`]({{ site.dcv_parameters_reference }}barcode-format-specification/barcode-text-length-range-array.html) |
+| `minResultConfidence` | `minResultConfidence` | [`BarcodeFormatSpecificationOptions.MinResultConfidence`]({{ site.dcv_parameters_reference }}barcode-format-specification/min-result-confidence.html) |
+| `localizationModes` | `localizationModes` | [`BarcodeReaderTaskSettingOptions.LocationModes`]({{ site.dcv_parameters_reference }}barcode-reader-task-settings/localization-modes.html) |
+| `expectedBarcodesCount` | `expectedBarcodesCount` | [`BarcodeReaderTaskSettingOptions.LocationModes`]({{ site.dcv_parameters_reference }}barcode-reader-task-settings/expected-barcodes-count.html) |
+| `barcodeFormatIds` | `barcodeFormatIds` | [`BarcodeReaderTaskSettingOptions.BarcodeFormatIds`]({{ site.dcv_parameters_reference }}barcode-reader-task-settings/barcode-format-ids.html) |
+| `barcodeFormatIds_2` | `barcodeFormatIds`. | [`BarcodeReaderTaskSettingOptions.BarcodeFormatIds`]({{ site.dcv_parameters_reference }}barcode-reader-task-settings/barcode-format-ids.html) |
+| `deblurModes` | `deblurModes` | [`BarcodeReaderTaskSettingOptions.DeblurModes`]({{ site.dcv_parameters_reference }}barcode-reader-task-settings/deblur-modes.html) |
+| `deblurLevel` | `deblurModes` | [`BarcodeReaderTaskSettingOptions.DeblurModes`]({{ site.dcv_parameters_reference }}barcode-reader-task-settings/deblur-modes.html) |
+
+> Remarks:
+>
+> * The 2 groups of barcode formats are merged.
+> * `DeblurLevel` is deprecated. You can use `DeblurModes` instead.
+
+| FurtherModes | SimplifiedBarcodeReaderSettings | Template File |
+| ------------ | ------------------------------- | ------------- |
+| `grayscaleTransformationModes` | `grayscaleTransformationModes` | [`ImageParameterOptions.GrayscaleTransformationModes`]({{ site.dcv_parameters_reference }}image-parameter/grayscale-enhancement-modes.html) |
+| `imagePreprocessingModes` | `grayscaleEnhancementModes` | [`ImageParameterOptions.GrayscaleEnhancementModes`]({{ site.dcv_parameters_reference }}image-parameter/grayscale-transformation-modes.html) |
+
+> Remarks: The mode `IPM_MORPHOLOGY` of `imagePreprocessingModes` is migrated to `BinarizationModes`. The mode arguments `MorphOperation`, `MorphOperationKernelSizeX`, `MorphOperationKernelSizeY`, `MorphShape` are now available for all modes of `BinarizationModes`.
+
+#### Migrate to Template File
+
+| PublicRuntimeSettings | Template File |
+| --------------------- | ------------- |
+| `scaleDownThreshold` | [`ScaleDownThreshold`]({{ site.dcv_parameters_reference }}image-parameter/scale-down-threshold.html) |
+| `binarizationModes` | [`BinarizationModes`]({{ site.dcv_parameters_reference }}image-parameter/binarization-modes.html) |
+| `resultCoordinateType` | [`ResultCoordinateType`]({{ site.dcv_parameters_reference }}barcode-reader-task-settings/result-coordinate-type.html) |
+| `textResultOrderModes` | [`TextResultOrderModes`]({{ site.dcv_parameters_reference }}barcode-reader-task-settings/text-result-order-modes.html) |
+| `returnBarcodeZoneClarity` | [`ReturnBarcodeZoneClarity`]({{ site.dcv_parameters_reference }}barcode-reader-task-settings/return-barcode-zone-clarity.html) |
+| `scaleUpModes` | [`ScaleUpModes`]({{ site.dcv_parameters_reference }}image-parameter/scale-up-modes.html) |
+| `barcodeZoneMinDistanceToImageBorders` | [`BarcodeZoneMinDistanceToImageBorders`]({{ site.dcv_parameters_reference }}barcode-format-specification/barcode-zone-min-distance-to-image-borders.html) |
+
+| FurtherModes | Template File |
+| ------------ | ------------- |
+| `colourConversionModes` | [`ColourConversionModes`]({{ site.dcv_parameters_reference }}image-parameter/colour-conversion-modes.html) |
+| `regionPredetectionModes` | [`RegionPredetectionModes`]({{ site.dcv_parameters_reference }}image-parameter/region-predetection-modes.html) |
+| `textureDetectionModes` | [`TextureDetectionModes`]({{ site.dcv_parameters_reference }}image-parameter/texture-detection-modes.html) |
+| `textFilterModes` | [`TextFilterModes`]({{ site.dcv_parameters_reference }}image-parameter/text-detection-mode.html & image-parameter/if-erase-text-zone.html) |
+| `dpmCodeReadingModes` | [`DPMCodeReadingModes`]({{ site.dcv_parameters_reference }}barcode-reader-task-settings/dpm-code-reading-modes.html) |
+| `deformationResistingModes` | [`DeformationResistingModes`]({{ site.dcv_parameters_reference }}barcode-reader-task-settings/deformation-resisting-modes.html) |
+| `barcodeComplementModes` | [`BarcodeComplementModes`]({{ site.dcv_parameters_reference }}barcode-reader-task-settings/barcode-complement-modes.html) |
+| `barcodeColourModes` | [`BarcodeColourModes`]({{ site.dcv_parameters_reference }}barcode-reader-task-settings/barcode-colour-modes.html) |
+| `terminatePhase` | [`TerminateSettings`]({{ site.dcv_parameters_reference }}barcode-reader-task-settings/terminate-setting.html) |
+| `maxAlgorithmThreadCount` | [`MaxThreadsInOneTask`]({{ site.dcv_parameters_reference }}barcode-reader-task-settings/max-threads-in-one-task.html) |
+
+#### Migrate to Other APIs
+
+The PDF paremeters of PublicRuntimeSettings are moved to set via the `setPDFReadingParameter` method of `DirectoryFetcher` and `FileFetcher` with a `CPDFReadingParameter` parameter.
+
+| PDF Parameters of PublicRuntimeSettings |
+| --------------------------------------- |
+| `pdfReadingMode` |
+| `pdfRasterDPI` |
+
+Class [`CPDFReadingParameter`]({{ site.dcv_cpp_api }}core/basic-structures/pdf-reading-parameter.html) is defined as follows:
+
+```cpp
+class DS_API CPDFReadingParameter {
+public:
+    PDFReadingMode mode;
+    int dpi;
+    RasterDataSource rasterDataSource;
+};
+```
+
+The `IntermediateResult` system is redesigned and the following parameters are deprecated.
+
+| PublicRuntimeSettings |
+| --------------------- |
+| `intermediateResultTypes` |
+| `intermediateResultSavingMode` |
+
+#### Removed
+
+The following parameter is removed.
+
+| PublicRuntimeSettings |
+| --------------------- |
+| `colourClusteringModes` |
