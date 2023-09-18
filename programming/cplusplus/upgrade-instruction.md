@@ -2,7 +2,8 @@
 title: Upgrade Instructions - Dynamsoft Barcode Reader C++ Edition
 keywords: c++, cplusplus, upgrade
 description: This page introduces how to upgrade Dynamsoft Barcode Reader
-needAutoGenerateSidebar: false
+needAutoGenerateSidebar: true
+needGenerateH3Content: true
 permalink: /programming/cplusplus/upgrade-instruction.html
 ---
 
@@ -163,8 +164,8 @@ The setting configuration APIs are refactored. Struct `PublicRuntimeSettings` is
 
 The following parameters are replaced by similar parameters under `SimplifiedCaptureVisionSettings`. They can also be set via a template file(String).
 
-| PublicRuntimeSettings | SimplifiedCaptureVisionSettings | Template File |
-| --------------------- | ------------------------------- | ------------- |
+| PublicRuntimeSettings Parameter | SimplifiedCaptureVisionSettings Parameter | Template File Parameter |
+| ------------------------------- | ----------------------------------------- | ----------------------- |
 | `region` | `roi` & `roiMeasuredInPercentage` | [`TargetROIDefOptions.Location.Offset`]({{ site.dcv_parameters_reference }}target-roi-def/location.html) |
 | `timeout` | `timeout` | [`CaptureVisionTemplates.Timeout`]({{ site.dcv_parameters_reference }}capture-vision-template/timeout.html) |
 
@@ -172,8 +173,8 @@ The following parameters are replaced by similar parameters under `SimplifiedCap
 
 The following parameters are replaced by similar parameters under `SimplifiedBarcodeReaderSettings`. The majority of them can also be set via a template file(String).
 
-| PublicRuntimeSettings | SimplifiedBarcodeReaderSettings | Template File |
-| --------------------- | ------------------------------- | ------------- |
+| PublicRuntimeSettings Parameter | SimplifiedCaptureVisionSettings Parameter | Template File Parameter |
+| ------------------------------- | ----------------------------------------- | ----------------------- |
 | `minBarcodeTextLength` | `minBarcodeTextLength` | [`BarcodeFormatSpecificationOptions.BarcodeTextLengthRangeArray`]({{ site.dcv_parameters_reference }}barcode-format-specification/barcode-text-length-range-array.html) |
 | `minResultConfidence` | `minResultConfidence` | [`BarcodeFormatSpecificationOptions.MinResultConfidence`]({{ site.dcv_parameters_reference }}barcode-format-specification/min-result-confidence.html) |
 | `localizationModes` | `localizationModes` | [`BarcodeReaderTaskSettingOptions.LocationModes`]({{ site.dcv_parameters_reference }}barcode-reader-task-settings/localization-modes.html) |
@@ -188,8 +189,8 @@ The following parameters are replaced by similar parameters under `SimplifiedBar
 > * The 2 groups of barcode formats are merged.
 > * `DeblurLevel` is deprecated. You can use `DeblurModes` instead.
 
-| FurtherModes | SimplifiedBarcodeReaderSettings | Template File |
-| ------------ | ------------------------------- | ------------- |
+| FurtherModes Parameter | SimplifiedCaptureVisionSettings Parameter | Template File Parameter |
+| ---------------------- | ----------------------------------------- | ----------------------- |
 | `grayscaleTransformationModes` | `grayscaleTransformationModes` | [`ImageParameterOptions.GrayscaleTransformationModes`]({{ site.dcv_parameters_reference }}image-parameter/grayscale-enhancement-modes.html) |
 | `imagePreprocessingModes` | `grayscaleEnhancementModes` | [`ImageParameterOptions.GrayscaleEnhancementModes`]({{ site.dcv_parameters_reference }}image-parameter/grayscale-transformation-modes.html) |
 
@@ -197,8 +198,10 @@ The following parameters are replaced by similar parameters under `SimplifiedBar
 
 #### Migrate to Template File
 
-| PublicRuntimeSettings | Template File |
-| --------------------- | ------------- |
+The following parameters can only be set via a template file.
+
+| PublicRuntimeSettings Parameter | Template File Parameter |
+| ------------------------------- | ----------------------- |
 | `scaleDownThreshold` | [`ScaleDownThreshold`]({{ site.dcv_parameters_reference }}image-parameter/scale-down-threshold.html) |
 | `binarizationModes` | [`BinarizationModes`]({{ site.dcv_parameters_reference }}image-parameter/binarization-modes.html) |
 | `resultCoordinateType` | [`ResultCoordinateType`]({{ site.dcv_parameters_reference }}barcode-reader-task-settings/result-coordinate-type.html) |
@@ -207,8 +210,10 @@ The following parameters are replaced by similar parameters under `SimplifiedBar
 | `scaleUpModes` | [`ScaleUpModes`]({{ site.dcv_parameters_reference }}image-parameter/scale-up-modes.html) |
 | `barcodeZoneMinDistanceToImageBorders` | [`BarcodeZoneMinDistanceToImageBorders`]({{ site.dcv_parameters_reference }}barcode-format-specification/barcode-zone-min-distance-to-image-borders.html) |
 
-| FurtherModes | Template File |
-| ------------ | ------------- |
+&nbsp;
+
+| FurtherModes Parameter | Template File Parameter |
+| ---------------------- | ----------------------- |
 | `colourConversionModes` | [`ColourConversionModes`]({{ site.dcv_parameters_reference }}image-parameter/colour-conversion-modes.html) |
 | `regionPredetectionModes` | [`RegionPredetectionModes`]({{ site.dcv_parameters_reference }}image-parameter/region-predetection-modes.html) |
 | `textureDetectionModes` | [`TextureDetectionModes`]({{ site.dcv_parameters_reference }}image-parameter/texture-detection-modes.html) |
