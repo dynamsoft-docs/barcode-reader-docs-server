@@ -152,7 +152,7 @@ int main()
 
 ### Result Obtaining
 
-If you are using batch image decoding or video streaming decoding, you have to register a [`CCapturedResultReceiver`]({{ site.dcv_cpp_api }}core/basic-structures/captured-result-receiver.html) to receive the barcode decoding results.
+If you are using batch image decoding or video streaming decoding, you have to register a [`CCapturedResultReceiver`]({{ site.dcv_cpp_api }}core/basic-structures/captured-result-receiver.html){:target="_blank"} to receive the barcode decoding results.
 
 If you are using `Capture` APIs to process a single image, the barcode decoding results are returned from the `Capture` APIs.
 
@@ -166,8 +166,8 @@ The following parameters are replaced by similar parameters under `SimplifiedCap
 
 | PublicRuntimeSettings Parameter | SimplifiedCaptureVisionSettings Parameter | Template File Parameter |
 | ------------------------------- | ----------------------------------------- | ----------------------- |
-| `region` | `roi` & `roiMeasuredInPercentage` | [`TargetROIDefOptions.Location.Offset`]({{ site.dcv_parameters_reference }}target-roi-def/location.html) |
-| `timeout` | `timeout` | [`CaptureVisionTemplates.Timeout`]({{ site.dcv_parameters_reference }}capture-vision-template/timeout.html) |
+| `region` | [`roi`]({{ site.dcv_cpp_api }}capture-vision-router/structs/simplified-capture-vision-settings.html){:target="_blank"} & [`roiMeasuredInPercentage`]({{ site.dcv_cpp_api }}capture-vision-router/structs/simplified-capture-vision-settings.html){:target="_blank"} | [`TargetROIDefOptions.Location.Offset`]({{ site.dcv_parameters_reference }}target-roi-def/location.html){:target="_blank"} |
+| `timeout` | [`timeout`]({{ site.dcv_cpp_api }}capture-vision-router/structs/simplified-capture-vision-settings.html){:target="_blank"} | [`CaptureVisionTemplates.Timeout`]({{ site.dcv_parameters_reference }}capture-vision-template/timeout.html){:target="_blank"} |
 
 #### Migrate to SimplifiedBarcodeReaderSettings
 
@@ -175,14 +175,14 @@ The following parameters are replaced by similar parameters under `SimplifiedBar
 
 | PublicRuntimeSettings Parameter | SimplifiedCaptureVisionSettings Parameter | Template File Parameter |
 | ------------------------------- | ----------------------------------------- | ----------------------- |
-| `minBarcodeTextLength` | `minBarcodeTextLength` | [`BarcodeFormatSpecificationOptions.BarcodeTextLengthRangeArray`]({{ site.dcv_parameters_reference }}barcode-format-specification/barcode-text-length-range-array.html) |
-| `minResultConfidence` | `minResultConfidence` | [`BarcodeFormatSpecificationOptions.MinResultConfidence`]({{ site.dcv_parameters_reference }}barcode-format-specification/min-result-confidence.html) |
-| `localizationModes` | `localizationModes` | [`BarcodeReaderTaskSettingOptions.LocationModes`]({{ site.dcv_parameters_reference }}barcode-reader-task-settings/localization-modes.html) |
-| `expectedBarcodesCount` | `expectedBarcodesCount` | [`BarcodeReaderTaskSettingOptions.LocationModes`]({{ site.dcv_parameters_reference }}barcode-reader-task-settings/expected-barcodes-count.html) |
-| `barcodeFormatIds` | `barcodeFormatIds` | [`BarcodeReaderTaskSettingOptions.BarcodeFormatIds`]({{ site.dcv_parameters_reference }}barcode-reader-task-settings/barcode-format-ids.html) |
-| `barcodeFormatIds_2` | `barcodeFormatIds`. | [`BarcodeReaderTaskSettingOptions.BarcodeFormatIds`]({{ site.dcv_parameters_reference }}barcode-reader-task-settings/barcode-format-ids.html) |
-| `deblurModes` | `deblurModes` | [`BarcodeReaderTaskSettingOptions.DeblurModes`]({{ site.dcv_parameters_reference }}barcode-reader-task-settings/deblur-modes.html) |
-| `deblurLevel` | `deblurModes` | [`BarcodeReaderTaskSettingOptions.DeblurModes`]({{ site.dcv_parameters_reference }}barcode-reader-task-settings/deblur-modes.html) |
+| `minBarcodeTextLength` | [`minBarcodeTextLength`](../cplusplus/api-reference/simplified-barcode-reader-settings.md#minbarcodetextlength) | [`BarcodeFormatSpecificationOptions.BarcodeTextLengthRangeArray`]({{ site.dcv_parameters_reference }}barcode-format-specification/barcode-text-length-range-array.html){:target="_blank"} |
+| `minResultConfidence` | [`minResultConfidence`](../cplusplus/api-reference/simplified-barcode-reader-settings.md#minresultconfidence) | [`BarcodeFormatSpecificationOptions.MinResultConfidence`]({{ site.dcv_parameters_reference }}barcode-format-specification/min-result-confidence.html){:target="_blank"} |
+| `localizationModes` | [`localizationModes`](../cplusplus/api-reference/simplified-barcode-reader-settings.md#localizationmodes) | [`BarcodeReaderTaskSettingOptions.LocationModes`]({{ site.dcv_parameters_reference }}barcode-reader-task-settings/localization-modes.html){:target="_blank"} |
+| `expectedBarcodesCount` | [`expectedBarcodesCount`](../cplusplus/api-reference/simplified-barcode-reader-settings.md#expectedbarcodescount) | [`BarcodeReaderTaskSettingOptions.LocationModes`]({{ site.dcv_parameters_reference }}barcode-reader-task-settings/expected-barcodes-count.html){:target="_blank"} |
+| `barcodeFormatIds` | [`barcodeFormatIds`](../cplusplus/api-reference/simplified-barcode-reader-settings.md#barcodeformatids) | [`BarcodeReaderTaskSettingOptions.BarcodeFormatIds`]({{ site.dcv_parameters_reference }}barcode-reader-task-settings/barcode-format-ids.html){:target="_blank"} |
+| `barcodeFormatIds_2` | [`barcodeFormatIds`](../cplusplus/api-reference/simplified-barcode-reader-settings.md#barcodeformatids) | [`BarcodeReaderTaskSettingOptions.BarcodeFormatIds`]({{ site.dcv_parameters_reference }}barcode-reader-task-settings/barcode-format-ids.html){:target="_blank"} |
+| `deblurModes` | [`deblurModes`](../cplusplus/api-reference/simplified-barcode-reader-settings.md#deblurmodes) | [`BarcodeReaderTaskSettingOptions.DeblurModes`]({{ site.dcv_parameters_reference }}barcode-reader-task-settings/deblur-modes.html){:target="_blank"} |
+| `deblurLevel` | [`deblurModes`](../cplusplus/api-reference/simplified-barcode-reader-settings.md#deblurmodes) | [`BarcodeReaderTaskSettingOptions.DeblurModes`]({{ site.dcv_parameters_reference }}barcode-reader-task-settings/deblur-modes.html){:target="_blank"} |
 
 > Remarks:
 >
@@ -191,59 +191,48 @@ The following parameters are replaced by similar parameters under `SimplifiedBar
 
 | FurtherModes Parameter | SimplifiedCaptureVisionSettings Parameter | Template File Parameter |
 | ---------------------- | ----------------------------------------- | ----------------------- |
-| `grayscaleTransformationModes` | `grayscaleTransformationModes` | [`ImageParameterOptions.GrayscaleTransformationModes`]({{ site.dcv_parameters_reference }}image-parameter/grayscale-enhancement-modes.html) |
-| `imagePreprocessingModes` | `grayscaleEnhancementModes` | [`ImageParameterOptions.GrayscaleEnhancementModes`]({{ site.dcv_parameters_reference }}image-parameter/grayscale-transformation-modes.html) |
+| `grayscaleTransformationModes` | [`grayscaleTransformationModes`]({{ site.dcv_cpp_api }}capture-vision-router/structs/simplified-capture-vision-settings.html){:target="_blank"} | [`ImageParameterOptions.GrayscaleTransformationModes`]({{ site.dcv_parameters_reference }}image-parameter/grayscale-enhancement-modes.html){:target="_blank"} |
+| `imagePreprocessingModes` | [`grayscaleEnhancementModes`]({{ site.dcv_cpp_api }}capture-vision-router/structs/simplified-capture-vision-settings.html){:target="_blank"} | [`ImageParameterOptions.GrayscaleEnhancementModes`]({{ site.dcv_parameters_reference }}image-parameter/grayscale-transformation-modes.html){:target="_blank"} |
 
 > Remarks: The mode `IPM_MORPHOLOGY` of `imagePreprocessingModes` is migrated to `BinarizationModes`. The mode arguments `MorphOperation`, `MorphOperationKernelSizeX`, `MorphOperationKernelSizeY`, `MorphShape` are now available for all modes of `BinarizationModes`.
 
 #### Migrate to Template File
 
-The following parameters can only be set via a template file.
+The following parameters can only be set via a template file. Please [contact us](https://www.dynamsoft.com/company/customer-service/#contact){:target="_blank"} so that we can help you to transform your current settings to a new template file.
 
 | PublicRuntimeSettings Parameter | Template File Parameter |
 | ------------------------------- | ----------------------- |
-| `scaleDownThreshold` | [`ScaleDownThreshold`]({{ site.dcv_parameters_reference }}image-parameter/scale-down-threshold.html) |
-| `binarizationModes` | [`BinarizationModes`]({{ site.dcv_parameters_reference }}image-parameter/binarization-modes.html) |
-| `resultCoordinateType` | [`ResultCoordinateType`]({{ site.dcv_parameters_reference }}barcode-reader-task-settings/result-coordinate-type.html) |
-| `textResultOrderModes` | [`TextResultOrderModes`]({{ site.dcv_parameters_reference }}barcode-reader-task-settings/text-result-order-modes.html) |
-| `returnBarcodeZoneClarity` | [`ReturnBarcodeZoneClarity`]({{ site.dcv_parameters_reference }}barcode-reader-task-settings/return-barcode-zone-clarity.html) |
-| `scaleUpModes` | [`ScaleUpModes`]({{ site.dcv_parameters_reference }}image-parameter/scale-up-modes.html) |
-| `barcodeZoneMinDistanceToImageBorders` | [`BarcodeZoneMinDistanceToImageBorders`]({{ site.dcv_parameters_reference }}barcode-format-specification/barcode-zone-min-distance-to-image-borders.html) |
+| `scaleDownThreshold` | [`ImageParameter.ScaleDownThreshold`]({{ site.dcv_parameters_reference }}image-parameter/scale-down-threshold.html){:target="_blank"} |
+| `binarizationModes` | [`ImageParameter.BinarizationModes`]({{ site.dcv_parameters_reference }}image-parameter/binarization-modes.html){:target="_blank"} |
+| `resultCoordinateType` | [`BarcodeReaderTaskSettingOptions.ResultCoordinateType`]({{ site.dcv_parameters_reference }}barcode-reader-task-settings/result-coordinate-type.html){:target="_blank"} |
+| `textResultOrderModes` | [`BarcodeReaderTaskSettingOptions.TextResultOrderModes`]({{ site.dcv_parameters_reference }}barcode-reader-task-settings/text-result-order-modes.html){:target="_blank"} |
+| `returnBarcodeZoneClarity` | [`BarcodeReaderTaskSettingOptions.ReturnBarcodeZoneClarity`]({{ site.dcv_parameters_reference }}barcode-reader-task-settings/return-barcode-zone-clarity.html){:target="_blank"} |
+| `scaleUpModes` | [`ImageParameter.ScaleUpModes`]({{ site.dcv_parameters_reference }}image-parameter/scale-up-modes.html){:target="_blank"} |
+| `barcodeZoneMinDistanceToImageBorders` | [`BarcodeFormatSpecificationOptions.BarcodeZoneMinDistanceToImageBorders`]({{ site.dcv_parameters_reference }}barcode-format-specification/barcode-zone-min-distance-to-image-borders.html){:target="_blank"} |
 
 &nbsp;
 
 | FurtherModes Parameter | Template File Parameter |
 | ---------------------- | ----------------------- |
-| `colourConversionModes` | [`ColourConversionModes`]({{ site.dcv_parameters_reference }}image-parameter/colour-conversion-modes.html) |
-| `regionPredetectionModes` | [`RegionPredetectionModes`]({{ site.dcv_parameters_reference }}image-parameter/region-predetection-modes.html) |
-| `textureDetectionModes` | [`TextureDetectionModes`]({{ site.dcv_parameters_reference }}image-parameter/texture-detection-modes.html) |
-| `textFilterModes` | [`TextFilterModes`]({{ site.dcv_parameters_reference }}image-parameter/text-detection-mode.html & image-parameter/if-erase-text-zone.html) |
-| `dpmCodeReadingModes` | [`DPMCodeReadingModes`]({{ site.dcv_parameters_reference }}barcode-reader-task-settings/dpm-code-reading-modes.html) |
-| `deformationResistingModes` | [`DeformationResistingModes`]({{ site.dcv_parameters_reference }}barcode-reader-task-settings/deformation-resisting-modes.html) |
-| `barcodeComplementModes` | [`BarcodeComplementModes`]({{ site.dcv_parameters_reference }}barcode-reader-task-settings/barcode-complement-modes.html) |
-| `barcodeColourModes` | [`BarcodeColourModes`]({{ site.dcv_parameters_reference }}barcode-reader-task-settings/barcode-colour-modes.html) |
-| `terminatePhase` | [`TerminateSettings`]({{ site.dcv_parameters_reference }}barcode-reader-task-settings/terminate-setting.html) |
-| `maxAlgorithmThreadCount` | [`MaxThreadsInOneTask`]({{ site.dcv_parameters_reference }}barcode-reader-task-settings/max-threads-in-one-task.html) |
+| `colourConversionModes` | [`ImageParameter.ColourConversionModes`]({{ site.dcv_parameters_reference }}image-parameter/colour-conversion-modes.html){:target="_blank"} |
+| `regionPredetectionModes` | [`ImageParameter.RegionPredetectionModes`]({{ site.dcv_parameters_reference }}image-parameter/region-predetection-modes.html){:target="_blank"} |
+| `textureDetectionModes` | [`ImageParameter.TextureDetectionModes`]({{ site.dcv_parameters_reference }}image-parameter/texture-detection-modes.html){:target="_blank"} |
+| `textFilterModes` | [`ImageParameter.TextFilterModes`]({{ site.dcv_parameters_reference }}image-parameter/text-detection-mode.html & image-parameter/if-erase-text-zone.html){:target="_blank"} |
+| `dpmCodeReadingModes` | [`BarcodeReaderTaskSettingOptions.DPMCodeReadingModes`]({{ site.dcv_parameters_reference }}barcode-reader-task-settings/dpm-code-reading-modes.html){:target="_blank"} |
+| `deformationResistingModes` | [`BarcodeReaderTaskSettingOptions.DeformationResistingModes`]({{ site.dcv_parameters_reference }}barcode-reader-task-settings/deformation-resisting-modes.html){:target="_blank"} |
+| `barcodeComplementModes` | [`BarcodeReaderTaskSettingOptions.BarcodeComplementModes`]({{ site.dcv_parameters_reference }}barcode-reader-task-settings/barcode-complement-modes.html){:target="_blank"} |
+| `barcodeColourModes` | [`BarcodeReaderTaskSettingOptions.BarcodeColourModes`]({{ site.dcv_parameters_reference }}barcode-reader-task-settings/barcode-colour-modes.html){:target="_blank"} |
+| `terminatePhase` | [`BarcodeReaderTaskSettingOptions.TerminateSettings`]({{ site.dcv_parameters_reference }}barcode-reader-task-settings/terminate-setting.html){:target="_blank"} |
+| `maxAlgorithmThreadCount` | [`BarcodeReaderTaskSettingOptions.MaxThreadsInOneTask`]({{ site.dcv_parameters_reference }}barcode-reader-task-settings/max-threads-in-one-task.html){:target="_blank"} |
 
 #### Migrate to Other APIs
 
-The PDF paremeters of PublicRuntimeSettings are moved to set via the `setPDFReadingParameter` method of `DirectoryFetcher` and `FileFetcher` with a `CPDFReadingParameter` parameter.
+The PDF paremeters of PublicRuntimeSettings are moved to set via the `setPDFReadingParameter` method of `DirectoryFetcher` and `FileFetcher` with a [`CPDFReadingParameter`]({{ site.dcv_cpp_api }}core/basic-structures/pdf-reading-parameter.html){:target="_blank"} parameter.
 
 | PDF Parameters of PublicRuntimeSettings |
 | --------------------------------------- |
 | `pdfReadingMode` |
 | `pdfRasterDPI` |
-
-Class [`CPDFReadingParameter`]({{ site.dcv_cpp_api }}core/basic-structures/pdf-reading-parameter.html) is defined as follows:
-
-```cpp
-class DS_API CPDFReadingParameter {
-public:
-    PDFReadingMode mode;
-    int dpi;
-    RasterDataSource rasterDataSource;
-};
-```
 
 The `IntermediateResult` system is redesigned and the following parameters are deprecated.
 
