@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: Error Code - Dynamsoft Barcode Reader SDK .NET Edition
-description: This article enumerates the error codes of Dynamsoft Barcode Reader
+description: This article enumerates the error codes of Dynamsoft Barcode Reader SDK .NET Edition
 keywords: error code, enumeration
 permalink: /programming/dotnet/api-reference/enumeration/error-code.html
 ---

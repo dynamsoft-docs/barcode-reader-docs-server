@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: Result Enumerations - Dynamsoft Barcode Reader SDK .NET Edition
-description: This article shows Result Enumerations of Dynamsoft Barcode Reader.
+description: This article shows Result Enumerations of Dynamsoft Barcode Reader SDK .NET Edition.
 keywords: IMResultDataType, IntermediateResultSavingMode, IntermediateResultType, ResultCoordinateType, ResultType, TextResultOrderMode, result enumeration, enumeration
 needGenerateH3Content: false
 permalink: /programming/dotnet/api-reference/enumeration/result-enums.html

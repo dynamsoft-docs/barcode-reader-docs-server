@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: Frame Decoding Enumerations - Dynamsoft Barcode Reader SDK C/C++ Edition
-description: This article shows Frame Decoding Enumerations of Dynamsoft Barcode Reader.
+description: This article shows Frame Decoding Enumerations of Dynamsoft Barcode Reader SDK C/C++ Edition.
 keywords: ClarityCalculationMethod, ClarityFilterMode, frame decoding enumeration, enumeration
 needGenerateH3Content: false
 permalink: /programming/c-cplusplus/enumeration/frame-decoding-enums.html
