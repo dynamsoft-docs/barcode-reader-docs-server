@@ -193,6 +193,7 @@ The following parameters are replaced by similar parameters under `SimplifiedBar
 | ---------------------- | ----------------------------------------- | ----------------------- |
 | `grayscaleTransformationModes` | [`grayscaleTransformationModes`]({{ site.cpp_api }}simplified-barcode-reader-settings.html#grayscaletransformationmodes) | [`ImageParameter.GrayscaleTransformationModes`]({{ site.dcv_parameters_reference }}image-parameter/grayscale-enhancement-modes.html){:target="_blank"} |
 | `imagePreprocessingModes` | [`grayscaleEnhancementModes`]({{ site.cpp_api }}simplified-barcode-reader-settings.html#grayscaleenhancementmodes) | [`ImageParameter.GrayscaleEnhancementModes`]({{ site.dcv_parameters_reference }}image-parameter/grayscale-transformation-modes.html){:target="_blank"} |
+| `maxAlgorithmThreadCount` | [`maxThreadsInOneTask`]({{ site.cpp_api }}simplified-barcode-reader-settings.html#maxthreadsinonetask) | [`BarcodeReaderTaskSetting.MaxThreadsInOneTask`]({{ site.dcv_parameters_reference }}barcode-reader-task-settings/max-threads-in-one-task.html){:target="_blank"} |
 
 > Remarks: The mode `IPM_MORPHOLOGY` of `imagePreprocessingModes` is migrated to `BinarizationModes`. The mode arguments `MorphOperation`, `MorphOperationKernelSizeX`, `MorphOperationKernelSizeY`, `MorphShape` are now available for all modes of `BinarizationModes`.
 
@@ -208,8 +209,9 @@ The following parameters can only be set via a template file. Please [contact us
 | `returnBarcodeZoneClarity` | [`BarcodeReaderTaskSetting.ReturnBarcodeZoneClarity`]({{ site.dcv_parameters_reference }}barcode-reader-task-settings/return-barcode-zone-clarity.html){:target="_blank"} |
 | `scaleUpModes` | [`ImageParameter.ScaleUpModes`]({{ site.dcv_parameters_reference }}image-parameter/scale-up-modes.html){:target="_blank"} |
 | `barcodeZoneMinDistanceToImageBorders` | [`BarcodeFormatSpecification.BarcodeZoneMinDistanceToImageBorders`]({{ site.dcv_parameters_reference }}barcode-format-specification/barcode-zone-min-distance-to-image-borders.html){:target="_blank"} |
+| `terminatePhase` | [`BarcodeReaderTaskSetting.TerminateSettings`]({{ site.dcv_parameters_reference }}barcode-reader-task-settings/terminate-setting.html){:target="_blank"} |
 
-&nbsp;
+
 
 | FurtherModes Parameter | Template File Parameter |
 | ---------------------- | ----------------------- |
@@ -221,8 +223,6 @@ The following parameters can only be set via a template file. Please [contact us
 | `deformationResistingModes` | [`BarcodeReaderTaskSetting.DeformationResistingModes`]({{ site.dcv_parameters_reference }}barcode-reader-task-settings/deformation-resisting-modes.html){:target="_blank"} |
 | `barcodeComplementModes` | [`BarcodeReaderTaskSetting.BarcodeComplementModes`]({{ site.dcv_parameters_reference }}barcode-reader-task-settings/barcode-complement-modes.html){:target="_blank"} |
 | `barcodeColourModes` | [`BarcodeReaderTaskSetting.BarcodeColourModes`]({{ site.dcv_parameters_reference }}barcode-reader-task-settings/barcode-colour-modes.html){:target="_blank"} |
-| `terminatePhase` | [`BarcodeReaderTaskSetting.TerminateSettings`]({{ site.dcv_parameters_reference }}barcode-reader-task-settings/terminate-setting.html){:target="_blank"} |
-| `maxAlgorithmThreadCount` | [`BarcodeReaderTaskSetting.MaxThreadsInOneTask`]({{ site.dcv_parameters_reference }}barcode-reader-task-settings/max-threads-in-one-task.html){:target="_blank"} |
 
 #### Migrate to Other APIs
 
