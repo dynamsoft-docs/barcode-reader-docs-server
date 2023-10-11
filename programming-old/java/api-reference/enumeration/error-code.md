@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: Error Code - Dynamsoft Barcode Reader SDK Java Edition
-description: This article enumerates the error codes of Dynamsoft Barcode Reader
+description: This article enumerates the error codes of Dynamsoft Barcode Reader SDK Java Edition
 keywords: error code, enumeration
 permalink: /programming/java/api-reference/enumeration/error-code.html
 ---

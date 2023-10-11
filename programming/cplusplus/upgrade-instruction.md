@@ -2,7 +2,8 @@
 title: Upgrade Instructions - Dynamsoft Barcode Reader C++ Edition
 keywords: c++, cplusplus, upgrade
 description: This page introduces how to upgrade Dynamsoft Barcode Reader
-needAutoGenerateSidebar: false
+needAutoGenerateSidebar: true
+needGenerateH3Content: true
 permalink: /programming/cplusplus/upgrade-instruction.html
 ---
 
@@ -82,9 +83,10 @@ Class `CCaptureVisionRouter` is added to replace class `CBarcodeReader`. Class `
 
 The template system is upgraded. The template you used for the previous version can't be directly recognized by the new version. Please <a href="https://download2.dynamsoft.com/dcv/TemplateConverter.zip" target="_blank">download the TemplateConverter tool</a> or <a href="https://www.dynamsoft.com/company/customer-service/#contact" target="_blank">contact us</a> to upgrade your template.
 
+<!-- 
 ### Replace PublicRuntimeSettings APIs with SimplifiedSettings APIs
 
-The setting configuration APIs are refactored. Struct `PublicRuntimeSettings` is removed. Though a series of settings are still available via struct `SimplifiedCaptureVisionSettings`, the majority of settings are "template only". Please view the API reference of struct [`SimplifiedCaptureVisionSettings`]({{ site.dcv_cpp_api }}capture-vision-router/structs/simplified-capture-vision-settings.html) and [`SimplifiedBarcodeReaderSettings`]({{ site.cpp_api }}simplified-barcode-reader-settings.html) to see whether your settings are still available. If they are no longer supported, please <a href="https://www.dynamsoft.com/company/customer-service/#contact" target="_blank">contact us</a>. We will help you on generating a new template that supports your previous settings.
+The setting configuration APIs are refactored. Struct `PublicRuntimeSettings` is removed. Though a series of settings are still available via struct `SimplifiedCaptureVisionSettings`, the majority of settings are "template only". Please view the API reference of struct [`SimplifiedCaptureVisionSettings`]({{ site.dcv_cpp_api }}capture-vision-router/structs/simplified-capture-vision-settings.html) and [`SimplifiedBarcodeReaderSettings`]({{ site.cpp_api }}simplified-barcode-reader-settings.html) to see whether your settings are still available. If they are no longer supported, please <a href="https://www.dynamsoft.com/company/customer-service/#contact" target="_blank">contact us</a>. We will help you on generating a new template that supports your previous settings. -->
 
 ### Update Your Image Decoding Codes
 
@@ -153,3 +155,96 @@ int main()
 If you are using batch image decoding or video streaming decoding, you have to register a [`CCapturedResultReceiver`]({{ site.dcv_cpp_api }}core/basic-structures/captured-result-receiver.html) to receive the barcode decoding results.
 
 If you are using `Capture` APIs to process a single image, the barcode decoding results are returned from the `Capture` APIs.
+
+### Migrate Your PublicRuntimeSettings
+
+The setting configuration APIs are refactored. Struct `PublicRuntimeSettings` is removed. Though a series of settings are still available via struct `SimplifiedCaptureVisionSettings`, the majority of settings are "template only". Please view the following instructions to update your settings.
+
+#### Migrate to SimplifiedCaptureVisionSettings
+
+The following parameters are replaced by similar parameters under `SimplifiedCaptureVisionSettings`. They can also be set via a template file(String).
+
+| PublicRuntimeSettings Parameter | SimplifiedCaptureVisionSettings Parameter | Template File Parameter |
+| ------------------------------- | ----------------------------------------- | ----------------------- |
+| `region` | [`roi`]({{ site.dcv_cpp_api }}capture-vision-router/structs/simplified-capture-vision-settings.html#roi) & [`roiMeasuredInPercentage`]({{ site.dcv_cpp_api }}capture-vision-router/structs/simplified-capture-vision-settings.html#roimeasuredinpercentage) | [`TargetROIDef.Location.Offset`]({{ site.dcv_parameters_reference }}target-roi-def/location.html?product=dbr&repoType=core){:target="_blank"} |
+| `timeout` | [`timeout`]({{ site.dcv_cpp_api }}capture-vision-router/structs/simplified-capture-vision-settings.html#timeout) | [`CaptureVisionTemplates.Timeout`]({{ site.dcv_parameters_reference }}capture-vision-template/timeout.html?product=dbr&repoType=core){:target="_blank"} |
+
+#### Migrate to SimplifiedBarcodeReaderSettings
+
+The following parameters are replaced by similar parameters under `SimplifiedBarcodeReaderSettings`. The majority of them can also be set via a template file(String).
+
+| PublicRuntimeSettings Parameter | SimplifiedBarcodeReaderSettings Parameter | Template File Parameter |
+| ------------------------------- | ----------------------------------------- | ----------------------- |
+| `minBarcodeTextLength` | [`minBarcodeTextLength`]({{ site.cpp_api }}simplified-barcode-reader-settings.html#minbarcodetextlength) | [`BarcodeFormatSpecification.BarcodeTextLengthRangeArray`]({{ site.dcv_parameters_reference }}barcode-format-specification/barcode-text-length-range-array.html?product=dbr&repoType=core){:target="_blank"} |
+| `minResultConfidence` | [`minResultConfidence`]({{ site.cpp_api }}simplified-barcode-reader-settings.html#minresultconfidence) | [`BarcodeFormatSpecification.MinResultConfidence`]({{ site.dcv_parameters_reference }}barcode-format-specification/min-result-confidence.html?product=dbr&repoType=core){:target="_blank"} |
+| `localizationModes` | [`localizationModes`]({{ site.cpp_api }}simplified-barcode-reader-settings.html#localizationmodes) | [`BarcodeReaderTaskSetting.LocationModes`]({{ site.dcv_parameters_reference }}barcode-reader-task-settings/localization-modes.html?product=dbr&repoType=core){:target="_blank"} |
+| `expectedBarcodesCount` | [`expectedBarcodesCount`]({{ site.cpp_api }}simplified-barcode-reader-settings.html#expectedbarcodescount) | [`BarcodeReaderTaskSetting.ExpectedBarcodesCount`]({{ site.dcv_parameters_reference }}barcode-reader-task-settings/expected-barcodes-count.html?product=dbr&repoType=core){:target="_blank"} |
+| `barcodeFormatIds` | [`barcodeFormatIds`]({{ site.cpp_api }}simplified-barcode-reader-settings.html#barcodeformatids) | [`BarcodeReaderTaskSetting.BarcodeFormatIds`]({{ site.dcv_parameters_reference }}barcode-reader-task-settings/barcode-format-ids.html?product=dbr&repoType=core){:target="_blank"} |
+| `barcodeFormatIds_2` | [`barcodeFormatIds`]({{ site.cpp_api }}simplified-barcode-reader-settings.html#barcodeformatids) | [`BarcodeReaderTaskSetting.BarcodeFormatIds`]({{ site.dcv_parameters_reference }}barcode-reader-task-settings/barcode-format-ids.html?product=dbr&repoType=core){:target="_blank"} |
+| `deblurModes` | [`deblurModes`]({{ site.cpp_api }}simplified-barcode-reader-settings.html#deblurmodes) | [`BarcodeReaderTaskSetting.DeblurModes`]({{ site.dcv_parameters_reference }}barcode-reader-task-settings/deblur-modes.html?product=dbr&repoType=core){:target="_blank"} |
+| `deblurLevel` | [`deblurModes`]({{ site.cpp_api }}simplified-barcode-reader-settings.html#deblurmodes) | [`BarcodeReaderTaskSetting.DeblurModes`]({{ site.dcv_parameters_reference }}barcode-reader-task-settings/deblur-modes.html?product=dbr&repoType=core){:target="_blank"} |
+| `maxAlgorithmThreadCount` | [`maxThreadsInOneTask`]({{ site.cpp_api }}simplified-barcode-reader-settings.html#maxthreadsinonetask) | [`BarcodeReaderTaskSetting.MaxThreadsInOneTask`]({{ site.dcv_parameters_reference }}barcode-reader-task-settings/max-threads-in-one-task.html?product=dbr&repoType=core){:target="_blank"} |
+
+> Remarks:
+>
+> * The 2 groups of barcode formats are merged.
+> * `DeblurLevel` is deprecated. You can use `DeblurModes` instead.
+
+| FurtherModes Parameter | SimplifiedBarcodeReaderSettings Parameter | Template File Parameter |
+| ---------------------- | ----------------------------------------- | ----------------------- |
+| `grayscaleTransformationModes` | [`grayscaleTransformationModes`]({{ site.cpp_api }}simplified-barcode-reader-settings.html#grayscaletransformationmodes) | [`ImageParameter.GrayscaleTransformationModes`]({{ site.dcv_parameters_reference }}image-parameter/grayscale-enhancement-modes.html?product=dbr&repoType=core){:target="_blank"} |
+| `imagePreprocessingModes` | [`grayscaleEnhancementModes`]({{ site.cpp_api }}simplified-barcode-reader-settings.html#grayscaleenhancementmodes) | [`ImageParameter.GrayscaleEnhancementModes`]({{ site.dcv_parameters_reference }}image-parameter/grayscale-transformation-modes.html?product=dbr&repoType=core){:target="_blank"} |
+
+> Remarks: The mode `IPM_MORPHOLOGY` of `imagePreprocessingModes` is migrated to `BinarizationModes`. The mode arguments `MorphOperation`, `MorphOperationKernelSizeX`, `MorphOperationKernelSizeY`, `MorphShape` are now available for all modes of `BinarizationModes`.
+
+#### Migrate to Template File
+
+The following parameters can only be set via a template file. Please [contact us](https://www.dynamsoft.com/company/customer-service/#contact){:target="_blank"} so that we can help you to transform your current settings to a new template file.
+
+| PublicRuntimeSettings Parameter | Template File Parameter |
+| ------------------------------- | ----------------------- |
+| `scaleDownThreshold` | [`ImageParameter.ScaleDownThreshold`]({{ site.dcv_parameters_reference }}image-parameter/scale-down-threshold.html?product=dbr&repoType=core){:target="_blank"} |
+| `binarizationModes` | [`ImageParameter.BinarizationModes`]({{ site.dcv_parameters_reference }}image-parameter/binarization-modes.html?product=dbr&repoType=core){:target="_blank"} |
+| `textResultOrderModes` | [`BarcodeReaderTaskSetting.TextResultOrderModes`]({{ site.dcv_parameters_reference }}barcode-reader-task-settings/text-result-order-modes.html?product=dbr&repoType=core){:target="_blank"} |
+| `returnBarcodeZoneClarity` | [`BarcodeReaderTaskSetting.ReturnBarcodeZoneClarity`]({{ site.dcv_parameters_reference }}barcode-reader-task-settings/return-barcode-zone-clarity.html?product=dbr&repoType=core){:target="_blank"} |
+| `scaleUpModes` | [`ImageParameter.ScaleUpModes`]({{ site.dcv_parameters_reference }}image-parameter/scale-up-modes.html?product=dbr&repoType=core){:target="_blank"} |
+| `barcodeZoneMinDistanceToImageBorders` | [`BarcodeFormatSpecification.BarcodeZoneMinDistanceToImageBorders`]({{ site.dcv_parameters_reference }}barcode-format-specification/barcode-zone-min-distance-to-image-borders.html?product=dbr&repoType=core){:target="_blank"} |
+| `terminatePhase` | [`BarcodeReaderTaskSetting.TerminateSettings`]({{ site.dcv_parameters_reference }}barcode-reader-task-settings/terminate-setting.html?product=dbr&repoType=core){:target="_blank"} |
+
+
+
+| FurtherModes Parameter | Template File Parameter |
+| ---------------------- | ----------------------- |
+| `colourConversionModes` | [`ImageParameter.ColourConversionModes`]({{ site.dcv_parameters_reference }}image-parameter/colour-conversion-modes.html?product=dbr&repoType=core){:target="_blank"} |
+| `regionPredetectionModes` | [`ImageParameter.RegionPredetectionModes`]({{ site.dcv_parameters_reference }}image-parameter/region-predetection-modes.html?product=dbr&repoType=core){:target="_blank"} |
+| `textureDetectionModes` | [`ImageParameter.TextureDetectionModes`]({{ site.dcv_parameters_reference }}image-parameter/texture-detection-modes.html?product=dbr&repoType=core){:target="_blank"} |
+| `textFilterModes` | [`ImageParameter.TextDetectionMode`]({{ site.dcv_parameters_reference }}image-parameter/text-detection-mode.html?product=dbr&repoType=core){:target="_blank"} & [`ImageParameter.IfEraseTextZone`]({{ site.dcv_parameters_reference }}image-parameter/if-erase-text-zone.html?product=dbr&repoType=core){:target="_blank"} |
+| `dpmCodeReadingModes` | [`BarcodeReaderTaskSetting.DPMCodeReadingModes`]({{ site.dcv_parameters_reference }}barcode-reader-task-settings/dpm-code-reading-modes.html?product=dbr&repoType=core){:target="_blank"} |
+| `deformationResistingModes` | [`BarcodeReaderTaskSetting.DeformationResistingModes`]({{ site.dcv_parameters_reference }}barcode-reader-task-settings/deformation-resisting-modes.html?product=dbr&repoType=core){:target="_blank"} |
+| `barcodeComplementModes` | [`BarcodeReaderTaskSetting.BarcodeComplementModes`]({{ site.dcv_parameters_reference }}barcode-reader-task-settings/barcode-complement-modes.html?product=dbr&repoType=core){:target="_blank"} |
+| `barcodeColourModes` | [`BarcodeReaderTaskSetting.BarcodeColourModes`]({{ site.dcv_parameters_reference }}barcode-reader-task-settings/barcode-colour-modes.html?product=dbr&repoType=core){:target="_blank"} |
+
+#### Migrate to Other APIs
+
+The PDF paremeters of PublicRuntimeSettings are moved to set via the `setPDFReadingParameter` method of `DirectoryFetcher` and `FileFetcher` with a [`CPDFReadingParameter`]({{ site.dcv_cpp_api }}core/basic-structures/pdf-reading-parameter.html) parameter.
+
+| PDF Parameters of PublicRuntimeSettings |
+| --------------------------------------- |
+| `pdfReadingMode` |
+| `pdfRasterDPI` |
+
+The `IntermediateResult` system is redesigned and the following parameters are deprecated.
+
+| PublicRuntimeSettings |
+| --------------------- |
+| `intermediateResultTypes` |
+| `intermediateResultSavingMode` |
+
+#### Removed
+
+The following parameter is removed.
+
+| PublicRuntimeSettings |
+| --------------------- |
+| `colourClusteringModes` |
+| `resultCoordinateType` |

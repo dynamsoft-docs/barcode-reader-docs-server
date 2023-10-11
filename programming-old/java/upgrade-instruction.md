@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: Upgrade Instruction - Dynamsoft Barcode Reader SDK Java Edition
-description: This page shows how to upgrade to latest version.
+description: This page shows how to upgrade to Dynamsoft Barcode Reader SDK Java Edition latest version.
 keywords: Upgrade, how-to guides
 needAutoGenerateSidebar: false
 permalink: /programming/java/upgrade-instruction.html

@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: Format Enumerations - Dynamsoft Barcode Reader SDK Python Edition
-description: This article shows Format Enumerations of Dynamsoft Barcode Reader.
+description: This article shows Format Enumerations of Dynamsoft Barcode Reader SDK Python Edition.
 keywords: BarcodeFormat, BarcodeFormat_2, format enumeration, enumeration
 needGenerateH3Content: false
 permalink: /programming/python/api-reference/enumeration/format-enums.html
@@ -53,7 +53,7 @@ class EnumBarcodeFormat(IntEnum)
 | BF_GS1_DATABAR_STACKED | 0x2000 | GS1 Databar Stacked |
 | BF_GS1_DATABAR_STACKED_OMNIDIRECTIONAL | 0x4000 | GS1 Databar Stacked Omnidirectional |
 | BF_GS1_DATABAR_EXPANDED | 0x8000 | GS1 Databar Expanded |
-| BF_GS1_DATABAR_EXPANDED_STACKED | 0x10000 | GS1 Databar Expaned Stacked |
+| BF_GS1_DATABAR_EXPANDED_STACKED | 0x10000 | GS1 Databar Expanded Stacked |
 | BF_GS1_DATABAR_LIMITED | 0x20000 | GS1 Databar Limited |
 | BF_PATCHCODE | 0x00040000 | Patch code |
 | BF_MICRO_PDF417 | 0x00080000 | Micro PDF417 |

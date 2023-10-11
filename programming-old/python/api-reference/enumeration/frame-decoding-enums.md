@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: Frame Decoding Enumerations - Dynamsoft Barcode Reader SDK Python Edition
-description: This article shows Frame Decoding Enumerations of Dynamsoft Barcode Reader.
+description: This article shows Frame Decoding Enumerations of Dynamsoft Barcode Reader SDK Python Edition.
 keywords: ClarityCalculationMethod, ClarityFilterMode, frame decoding enumeration, enumeration
 needGenerateH3Content: false
 permalink: /programming/python/api-reference/enumeration/frame-decoding-enums.html

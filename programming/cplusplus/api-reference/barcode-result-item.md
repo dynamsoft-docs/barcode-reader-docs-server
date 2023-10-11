@@ -38,7 +38,6 @@ class CBarcodeResultItem : public CCapturedResultItem
 | [`GetDetails`](#getdetails) | Gets the details of the decoded barcode result. |
 | [`IsDPM`](#isdpm) | Gets whether the decoded barcode is a DPM code. |
 | [`IsMirrored`](#ismirrored) | Gets whether the decoded barcode is a mirrored barcode. |
-| [`GetRotationTransformMatrix`](#getrotationtransformmatrix) | Gets the rotation transform matrix of the decoded barcode result. |
 
 
 ### GetFormat
@@ -201,17 +200,4 @@ virtual bool IsMirrored() const = 0;
 **Return value**
 
 Returns whether the decoded barcode is mirrored.
-
-### GetRotationTransformMatrix
-
-It is used to get the rotation transform matrix of the decoded barcode.
-
-```cpp
-virtual void GetRotationTransformMatrix(double matrix[9]) const = 0;
-```
-
-**Parameters**
-
-`[out] matrix` The rotation transform matrix of the decoded barcode.
-
 
