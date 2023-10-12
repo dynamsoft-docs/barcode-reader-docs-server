@@ -73,11 +73,11 @@ using namespace dynamsoft::dbr;
 
 #if defined(_WIN64) || defined(_WIN32)
     #ifdef _WIN64
-        #pragma comment(lib, "[INSTALLATION FOLDER]/Distributables/Lib/Windows/x64/DynamsoftLicensex64.lib")
-        #pragma comment(lib, "[INSTALLATION FOLDER]/Distributables/Lib/Windows/x64/DynamsoftCaptureVisionRouterx64.lib")
+        #pragma comment(lib, "[INSTALLATION FOLDER]/Lib/Windows/x64/DynamsoftLicensex64.lib")
+        #pragma comment(lib, "[INSTALLATION FOLDER]/Lib/Windows/x64/DynamsoftCaptureVisionRouterx64.lib")
     #else
-        #pragma comment(lib, "[INSTALLATION FOLDER]/Distributables/Lib/Windows/x86/DynamsoftLicensex86.lib")
-        #pragma comment(lib, "[INSTALLATION FOLDER]/Distributables/Lib/Windows/x86/DynamsoftCaptureVisionRouterx86.lib")
+        #pragma comment(lib, "[INSTALLATION FOLDER]/Lib/Windows/x86/DynamsoftLicensex86.lib")
+        #pragma comment(lib, "[INSTALLATION FOLDER]/Lib/Windows/x86/DynamsoftCaptureVisionRouterx86.lib")
     #endif
 #endif
 ```
@@ -149,11 +149,9 @@ delete result, result = NULL;
 
 2. Build the project to generate program `DBRCPPSample.exe`.
 
-3. Copy **ALL** `*.dll` files under `[INSTALLATION FOLDER]/Distributables/Lib/Windows/x64` to the same folder as the `DBRCPPSample.exe` ("[PROJECT FOLDER]\DBRCPPSample\x64\Release").
-   
-4. Copy `[INSTALLATION FOLDER]/Distributables/DBR-PresetTemplates.json` to the same folder as the `DBRCPPSample.exe`.
+3. Copy **ALL** `*.dll` files under `[INSTALLATION FOLDER]\Lib\Windows\x64` to the same folder as the `DBRCPPSample.exe` ("[PROJECT FOLDER]\DBRCPPSample\x64\Release").
 
-5. Run the program `DBRCPPSample.exe`.
+4. Run the program `DBRCPPSample.exe`.
 
 > The SDK supports both x86 and x64, please set the platform based on your needs.
 
@@ -162,8 +160,7 @@ delete result, result = NULL;
    Open a terminal and change to the target directory where `DBRCPPSample.cpp` is located. Build the sample:
 
     ```bash
-    g++ -o DBRCPPSample DBRCPPSample.cpp -lDynamsoftCaptureVisionRouter -lDynamsoftLicense -L ../Distributables/Lib/Linux/x64 -Wl,-rpath=../Distributables/Lib/Linux/x64 -std=c++11
-    cp ../Distributables/DBR-PresetTemplates.json ../Distributables/Lib/Linux/x64
+    g++ -o DBRCPPSample DBRCPPSample.cpp -lDynamsoftCaptureVisionRouter -lDynamsoftLicense -L ../Lib/Linux/x64 -Wl,-rpath=../Lib/Linux/x64 -std=c++11
     ```
 
    Run the program `DBRCPPSample`.
@@ -190,11 +187,11 @@ Include additional `DynamsoftUtility` and `DynamsoftCore` module.
 // Add the following lines
 using namespace dynamsoft::utility;
 #ifdef _WIN64
-#pragma comment(lib, "[INSTALLATION FOLDER]/Distributables/Lib/Windows/x64/DynamsoftCorex64.lib")
-#pragma comment(lib, "[INSTALLATION FOLDER]/Distributables/Lib/Windows/x64/DynamsoftUtilityx64.lib")
+#pragma comment(lib, "[INSTALLATION FOLDER]/Lib/Windows/x64/DynamsoftCorex64.lib")
+#pragma comment(lib, "[INSTALLATION FOLDER]/Lib/Windows/x64/DynamsoftUtilityx64.lib")
 #else
-#pragma comment(lib, "[INSTALLATION FOLDER]/Distributables/Lib/Windows/x86/DynamsoftCorex86.lib")
-#pragma comment(lib, "[INSTALLATION FOLDER]/Distributables/Lib/Windows/x86/DynamsoftUtilityx86.lib")
+#pragma comment(lib, "[INSTALLATION FOLDER]/Lib/Windows/x86/DynamsoftCorex86.lib")
+#pragma comment(lib, "[INSTALLATION FOLDER]/Lib/Windows/x86/DynamsoftUtilityx86.lib")
 #endif
 ```
 
