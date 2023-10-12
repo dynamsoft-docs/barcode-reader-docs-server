@@ -210,7 +210,7 @@ Create a class `MyCapturedResultReceiver` to implement the `CCapturedResultRecei
 ```cpp
 class MyCapturedResultReceiver : public CCapturedResultReceiver {
     void OnDecodedBarcodesReceived(const CDecodedBarcodesResult* pResult) {
-        const CFileImageTag *tag = dynamic_cast<const CFileImageTag*>(pResult->GetSourceImageTag());
+        const CFileImageTag *tag = dynamic_cast<const CFileImageTag*>(pResult->GetOriginalImageTag());
         cout << "File: " << tag->GetFilePath() << endl;
         if (pResult->GetErrorCode() != EC_OK)
         {
