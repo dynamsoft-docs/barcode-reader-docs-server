@@ -73,8 +73,6 @@ The APIs for decoding single image has been adjusted as follows:
 
 ### Update Video Streaming Decoding Code
 
-`CImageSourceAdapter` is added to replace the `FrameDecodeingParameters` and the previous video methods. You should implement CImageSourceAdapter to transfer the image data from camera or video file to the buffer. The following steps shows the basic usage of decoding video frames:
-
 `CImageSourceAdapter` is added to replace the `FrameDecodeingParameters` and the previous video methods. You should implement `CImageSourceAdapter` to transfer image data from camera or video file to buffer. The following code snippet demonstrate basic usage of decoding video frames:
 
 ```cpp
