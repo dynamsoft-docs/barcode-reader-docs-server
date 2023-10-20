@@ -12,43 +12,13 @@ jobs:
   # This workflow contains a single job called "build"
   Build-Main:
     if: ${{ github.ref == 'refs/heads/main' }}
-    # The type of runner that the job will run on
-    runs-on: [self-hosted, r3]
+    uses: dynamsoft-docs/Docs-Template-Repo/.github/workflows/called-workflow-build-sync-production.yml@main
+    with:
+      doc-repo: barcode-reader-docs-server
+      doc-url: barcode-reader/docs/server
+    secrets: inherit
 
-    # Steps represent a sequence of tasks that will be executed as part of the job
-    steps:
-      - name: clear space
-        run: |
-          cd /home/ubuntu 
-          [ -d DBRDocServer ] && rm -rf DBRDocServer 
-          [ -d barcode-reader-docs-server ] && rm -rf barcode-reader-docs-server
-          [ -d Docs-Template-Repo-Preview-R3 ] && rm -rf Docs-Template-Repo-Preview-R3
-          
-      - name: Build the full site (not incremental)
-        run: |
-          cd /home/ubuntu
-          mkdir -p DBRDocServer
-          git clone --depth 1 https://github.com/dynamsoft-docs/barcode-reader-docs-server.git barcode-reader-docs-server
-          git clone --depth 1 --branch preview https://github.com/dynamsoft-docs/Docs-Template-Repo.git Docs-Template-Repo-Preview-R3
-          cp -rfp ./barcode-reader-docs-server/* ./DBRDocServer/
-          cp -rfp ./Docs-Template-Repo-Preview-R3/* ./DBRDocServer/
-          cd DBRDocServer && bundle install && bundle exec jekyll build
-          #python3 /home/ubuntu/ftp.py /home/ubuntu/DBRDocServer/_site/ ./www.dynamsoft.com/barcode-reader/docs/server/ prod
-
-      - name: Sync files
-        uses: SamKirkland/FTP-Deploy-Action@4.3.0
-        with:
-          server: ${{ secrets.FTP_DYNAMSOFT_LOCAL_SERVER }}
-          username: ${{ secrets.FTP_DYNAMSOFT_LOCAL_USER }}
-          password: ${{ secrets.FTP_DYNAMSOFT_LOCAL_PASSWORD }}
-          port: 21 
-          local-dir: /home/ubuntu/DBRDocServer/_site/
-          server-dir: /www.dynamsoft.com/barcode-reader/docs/server/        
-
-      - name: Trigger Webhook 
-        run: | 
-          curl -X POST -H "${{ secrets.WEBHOOK_USER }}" -H "${{ secrets.WEBHOOK_TOKEN }}" -H "Content-Type: application/json" -d "[\"/barcode-reader/docs/server/*\"]" ${{ secrets.WEBHOOK_URL }}
-         
+    
   Build-Preview:
     if: ${{ github.ref == 'refs/heads/preview' }}
     # The type of runner that the job will run on
