@@ -14,10 +14,10 @@ permalink: /programming/cplusplus/release-notes/cpp-10.html
 ### New
 
 *	Added the following preset templates:
-  *	`PT_READ_BARCODES_SPEED_FIRST`
-  *	`PT_READ_BARCODES_READ_RATE_FIRST`
-  *	`PT_READ_SINGLE_BARCODE`
-*	Added parameter `Page` to `ImageSource` object.
+    *	`PT_READ_BARCODES_SPEED_FIRST`
+    *	`PT_READ_BARCODES_READ_RATE_FIRST`
+    *	`PT_READ_SINGLE_BARCODE`
+*	Added a new parameter `Page` to `ImageSource` object.
 *	Added a new method `SetPages` to the class `CDirectoryFetcher` and class `CFileFetcher`.
 *	Added a new parameter `scaleDownThreshold` to the struct `SimplifiedBarcodeReaderSettings`.
 *	Added `CImageSourceErrorListener` to receive the errors the `ImageSourceAdapter` returned. 
@@ -25,9 +25,9 @@ permalink: /programming/cplusplus/release-notes/cpp-10.html
 *	Added a new parameter `minImageCaptureInterval` which can be set via the struct `SimplifiedCaptureVisionSettings` or the `CaptureVisionTemplate` object of a JSON template file.
 *	Added "UNKNOWN" as a supported and default value of the `TextDetectionMode.Direction` parameter.
 *	Added the following error codes:
-  * `EC_FILE_ALREADY_EXISTS`
-  * `EC_CREATE_FILE_FAILED`
-  * `EC_IMGAE_DATA_INVALID`
+    * `EC_FILE_ALREADY_EXISTS`
+    * `EC_CREATE_FILE_FAILED`
+    * `EC_IMGAE_DATA_INVALID`
 
 ### Improved
 
@@ -46,13 +46,13 @@ permalink: /programming/cplusplus/release-notes/cpp-10.html
 *	Changed the upper limit to the `duplicateForgetTime`, which is 3 minutes.
 *	Changed the timing of `onOriginalImageResultReceived` so that it is triggered immediately after receiving the image.
 *	Changed the constructors of the following classes from public to protected.
-  *	`CImageTag`
-  *	`CCapturedResultReceiver`
-  *	`CCapturedResultFilter`
-  *	`CImageSourceAdapter`
-  *	`CProactiveImageSourceAdapter`
-  *	`CIntermediateResultUnit`
-  *	`CIntermediateResultReceiver`
+    *	`CImageTag`
+    *	`CCapturedResultReceiver`
+    *	`CCapturedResultFilter`
+    *	`CImageSourceAdapter`
+    *	`CProactiveImageSourceAdapter`
+    *	`CIntermediateResultUnit`
+    *	`CIntermediateResultReceiver`
 *	Removed `BF_PATCH_CODE` from the combined value of `BF_DEFAULT` as decoding `Patch Code` is not supported by default.
 *	Removed const modifiers of all callback methods of class `CCapturedResultReceiver` and class `CIntermediateResultReceiver`.
 
