@@ -20,8 +20,8 @@ permalink: /programming/cplusplus/release-notes/cpp-10.html
 *	Added a new parameter `Page` to `ImageSource` object.
 *	Added a new method `SetPages` to the class `CDirectoryFetcher` and class `CFileFetcher`.
 *	Added a new parameter `scaleDownThreshold` to the struct `SimplifiedBarcodeReaderSettings`.
-*	Added `CImageSourceErrorListener` to receive the errors the `ImageSourceAdapter` returned. 
-* Added a new method `setErrorListener` to class `ImageSourceAdapter` to add the `CImageSourceErrorListener`.
+*	Added `CImageSourceErrorListener` to receive the errors from an image source. 
+* Added a new method `SetErrorListener` to class `CImageSourceAdapter` to add the `CImageSourceErrorListener`.
 *	Added a new parameter `minImageCaptureInterval` which can be set via the struct `SimplifiedCaptureVisionSettings` or the `CaptureVisionTemplate` object of a JSON template file.
 *	Added "UNKNOWN" as a supported and default value of the `TextDetectionMode.Direction` parameter.
 *	Added the following error codes:
@@ -35,7 +35,7 @@ permalink: /programming/cplusplus/release-notes/cpp-10.html
 *	The class `CDirectoryFetcher` and `CFileFetcher` will be able to return error codes via `CImageSourceErrorListener`.
 *	Updated the error codes of the method `SaveToFile` of the class `CImageManager`.
 * Optimized the logic to support calling `CIntermediateResultManager.AddResultReceiver` and  `CIntermediateResultManager.RemoveResultReceiver` after StartCapturing.
-* Optimized the error handling when initlicense with offline license.
+* Optimized the error handling when `InitLicense` with offline license.
 
 ### Fixed
 
@@ -43,8 +43,8 @@ permalink: /programming/cplusplus/release-notes/cpp-10.html
 
 ### Changed
 
-*	Changed the upper limit to the `duplicateForgetTime`, which is 3 minutes.
-*	Changed the timing of `onOriginalImageResultReceived` so that it is triggered immediately after receiving the image.
+*	Changed the upper limit to the `DuplicateForgetTime`, which is 3 minutes.
+*	Changed the timing of `OnOriginalImageResultReceived` so that it is triggered immediately after receiving the image.
 *	Changed the constructors of the following classes from public to protected.
     *	`CImageTag`
     *	`CCapturedResultReceiver`
