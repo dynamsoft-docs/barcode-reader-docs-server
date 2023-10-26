@@ -9,6 +9,54 @@ permalink: /programming/cplusplus/release-notes/cpp-10.html
 
 # Release Notes for C++ Edition - 10.x
 
+## 10.0.20 (10/26/2023)
+
+### New
+
+*	Added the following preset templates:
+    *	`PT_READ_BARCODES_SPEED_FIRST`
+    *	`PT_READ_BARCODES_READ_RATE_FIRST`
+    *	`PT_READ_SINGLE_BARCODE`
+*	Added a new parameter `Page` to `ImageSource` object.
+*	Added a new method `SetPages` to the class `CDirectoryFetcher` and class `CFileFetcher`.
+*	Added a new parameter `scaleDownThreshold` to the struct `SimplifiedBarcodeReaderSettings`.
+*	Added `CImageSourceErrorListener` to receive the errors from an image source. 
+* Added a new method `SetErrorListener` to class `CImageSourceAdapter` to add the `CImageSourceErrorListener`.
+*	Added a new parameter `minImageCaptureInterval` which can be set via the struct `SimplifiedCaptureVisionSettings` or the `CaptureVisionTemplate` object of a JSON template file.
+*	Added "UNKNOWN" as a supported and default value of the `TextDetectionMode.Direction` parameter.
+*	Added the following error codes:
+    * `EC_FILE_ALREADY_EXISTS`
+    * `EC_CREATE_FILE_FAILED`
+    * `EC_IMGAE_DATA_INVALID`
+
+### Improved
+
+*	Added ability to output all templates via methods `OutputSettings` and `OutputSettingsToFile` by specifying "*" for the parameter `templateName`.
+*	The class `CDirectoryFetcher` and `CFileFetcher` will be able to return error codes via `CImageSourceErrorListener`.
+*	Updated the error codes of the method `SaveToFile` of the class `CImageManager`.
+* Optimized the logic to support calling `CIntermediateResultManager.AddResultReceiver` and  `CIntermediateResultManager.RemoveResultReceiver` after StartCapturing.
+* Optimized the error handling when `InitLicense` with offline license.
+
+### Fixed
+
+* Small fixes and tweaks.
+
+### Changed
+
+*	Changed the upper limit to the `DuplicateForgetTime`, which is 3 minutes.
+*	Changed the timing of `OnOriginalImageResultReceived` so that it is triggered immediately after receiving the image.
+*	Changed the constructors of the following classes from public to protected.
+    *	`CImageTag`
+    *	`CCapturedResultReceiver`
+    *	`CCapturedResultFilter`
+    *	`CImageSourceAdapter`
+    *	`CProactiveImageSourceAdapter`
+    *	`CIntermediateResultUnit`
+    *	`CIntermediateResultReceiver`
+*	Removed `BF_PATCH_CODE` from the combined value of `BF_DEFAULT` as decoding `Patch Code` is not supported by default.
+*	Removed const modifiers of all callback methods of class `CCapturedResultReceiver` and class `CIntermediateResultReceiver`.
+
+
 ## 10.0.10 (08/08/2023)
 
 ### New

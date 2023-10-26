@@ -27,8 +27,7 @@ typedef struct tagSimplifiedBarcodeReaderSettings
     int minBarcodeTextLength;
     char barcodeTextRegExPattern[256];
     int maxThreadsInOneTask;
-    int scaleDownThreshold;
-    char reserved[508];
+    char reserved[512];
 } SimplifiedBarcodeReaderSettings;
 ```
 
@@ -46,8 +45,7 @@ typedef struct tagSimplifiedBarcodeReaderSettings
 | [`minBarcodeTextLength`](#minbarcodetextlength) | *int* |
 | [`barcodeTextRegExPattern`](#barcodetextregexpattern) | *char* |
 | [`maxThreadsInOneTask`](#maxthreadsinonetask) | *int* |
-| [`scaleDownThreshold`](#scaledownthreshold) | *int* |
-| [`reserved`](#reserved) | *char[508]* |
+| [`reserved`](#reserved) | *char[512]* |
 
 ### barcodeFormatIds
 
@@ -136,18 +134,10 @@ Set the maximum available threads count in one barcode decoding task.
 int maxThreadsInOneTask;
 ```
 
-### scaleDownThreshold
-
-Set the threshold for image shrinking.
-
-```cpp
-int scaleDownThreshold;
-```
-
 ### reserved
 
 Reserved for future use.
 
 ```cpp
-char reserved[508];
+char reserved[512];
 ```

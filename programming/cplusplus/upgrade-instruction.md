@@ -11,9 +11,7 @@ permalink: /programming/cplusplus/upgrade-instruction.html
 
 ## From version 9.x or earlier to version 10.x
 
-`DynamsoftBarcodeReader` SDK has been refactored to integrate with `DynamsoftCaptureVision (DCV)` architecture. To upgrade from version 9.x or earlier to 10.x, we recommend you to follow the [User Guide]({{site.cpp}}user-guide.html) and re-write your codes.
-
-Notice the following break changes when upgrading your SDK.
+Dynamsoft Barcode Reader SDK has been refactored to integrate with [`DynamsoftCaptureVision (DCV)`]({{ site.dcv_introduction }}) architecture. To upgrade from version 9.x or earlier to 10.x, we recommend you to follow the [User Guide]({{site.cpp}}user-guide.html) and re-write your codes.
 
 ### Update the Included Headers, libs & DLLs
 
@@ -30,150 +28,139 @@ using namespace dynamsoft::utility;
 
 #if defined(_WIN64) || defined(_WIN32)
     #ifdef _WIN64
-        #pragma comment(lib, "[INSTALLATION FOLDER]/Lib/Windows/x64/DynamsoftCorex64.lib")
-        #pragma comment(lib, "[INSTALLATION FOLDER]/Lib/Windows/x64/DynamsoftLicensex64.lib")
-        #pragma comment(lib, "[INSTALLATION FOLDER]/Lib/Windows/x64/DynamsoftCaptureVisionRouterx64.lib")
-        #pragma comment(lib, "[INSTALLATION FOLDER]/Lib/Windows/x64/DynamsoftUtilityx64.lib")
+        #pragma comment(lib, "[INSTALLATION FOLDER]/Distributables/Lib/Windows/x64/DynamsoftCorex64.lib")
+        #pragma comment(lib, "[INSTALLATION FOLDER]/Distributables/Lib/Windows/x64/DynamsoftLicensex64.lib")
+        #pragma comment(lib, "[INSTALLATION FOLDER]/Distributables/Lib/Windows/x64/DynamsoftCaptureVisionRouterx64.lib")
+        #pragma comment(lib, "[INSTALLATION FOLDER]/Distributables/Lib/Windows/x64/DynamsoftUtilityx64.lib")
     #else
-        #pragma comment(lib, "[INSTALLATION FOLDER]/Lib/Windows/x86/DynamsoftCorex86.lib")
-        #pragma comment(lib, "[INSTALLATION FOLDER]/Lib/Windows/x86/DynamsoftLicensex86.lib")
-        #pragma comment(lib, "[INSTALLATION FOLDER]/Lib/Windows/x86/DynamsoftCaptureVisionRouterx86.lib")
-        #pragma comment(lib, "[INSTALLATION FOLDER]/Lib/Windows/x86/DynamsoftUtilityx86.lib")
+        #pragma comment(lib, "[INSTALLATION FOLDER]/Distributables/Lib/Windows/x86/DynamsoftCorex86.lib")
+        #pragma comment(lib, "[INSTALLATION FOLDER]/Distributables/Lib/Windows/x86/DynamsoftLicensex86.lib")
+        #pragma comment(lib, "[INSTALLATION FOLDER]/Distributables/Lib/Windows/x86/DynamsoftCaptureVisionRouterx86.lib")
+        #pragma comment(lib, "[INSTALLATION FOLDER]/Distributables/Lib/Windows/x86/DynamsoftUtilityx86.lib")
     #endif
 #endif
 ```
 
-Put the following **.dll/.so** files in your executable path:
+**Distribution**
 
-* Windows
-  * x64:
-    * DynamsoftBarcodeReaderx64.dll
-    * DynamsoftCaptureVisionRouterx64.dll
-    * DynamsoftCorex64.dll
-    * DynamsoftImageProcessingx64.dll
-    * DynamsoftLicensex64.dll
-    * DynamsoftUtilityx64.dll
-  * x86:
-    * DynamsoftBarcodeReaderx86.dll
-    * DynamsoftCaptureVisionRouterx86.dll
-    * DynamsoftCorex86.dll
-    * DynamsoftImageProcessingx86.dll
-    * DynamsoftLicensex86.dll
-    * DynamsoftUtilityx86.dll
+- Copy `[INSTALLATION FOLDER]/Distributables/DBR-PresetTemplates.json` to the same folder as the executable program.
+- Copy the libraries to the same folder as the executable program.
+  - For Windows: Copy **ALL** `*.dll` files under `[INSTALLATION FOLDER]/Distributables/Lib/Windows/[platform]`. Replace `[platform]` with your project's platform setting.
 
-* Linux
-  * x64:
-    * libDynamsoftBarcodeReader.so
-    * libDynamsoftCaptureVisionRouter.so
-    * libDynamsoftCore.so
-    * libDynamsoftImageProcessing.so
-    * libDynamsoftLicense.so
-    * libDynamsoftUtility.so
+  - For Linux: Copy **ALL** `*.so` files under `[INSTALLATION FOLDER]/Distributables/Lib/Linux/[platform]`. Replace `[platform]` with your project's platform setting.
 
-### Migrate from Class CBarcodeReader to Class CCaptureVisionRouter
+### Update the License Activation Code
 
-Class `CCaptureVisionRouter` is added to replace class `CBarcodeReader`. Class `CCaptureVisionRouter` APIs includes the following features:
+Starting from 10.0, we have unified the API for setting licenses across different Dynamsoft products.
 
-* Retrieving images from the `ImageSourceAdapter`.
-* Updating templates and configuring settings.
-* Dynamically loading the `DynamsoftBarcodeReader` module for barcode decoding.
-* Dispatching the results to registered receivers of type `CapturedResultReceiver`.
-  
-### Templates
+| Old APIs | New APIs |
+| :----------- | :------- |
+| `CBarcodeReader.InitLicense` | `CLicenseManager.InitLicense` |
+
+### Update Single Image Decoding APIs
+
+The APIs for decoding single image has been adjusted as follows:
+
+| Old APIs | New APIs |
+| :----------- | :------- |
+| `CBarcodeReader.DecodeFile` | `CCaptureVisionRouter.Capture(const char* filePath, const char* templateName)` |
+| `CBarcodeReader.DecodeFileInMemory` | `CCaptureVisionRouter.Capture(const unsigned char *fileBytes, int fileSize, const char* templateName)` |
+| `CBarcodeReader.DecodeBuffer` | `CCaptureVisionRouter.Capture(const CImageData* pImageData, const char* templateName)` |
+| `struct TextResult` | `class CBarcodeResultItem` |
+| `struct TextResultArray` | `class CCapturedResult` |
+| `CBarcodeReader.DecodeBase64String` | **Currently not available**. |
+| `CBarcodeReader.DecodeDIB` | **Currently not available**. |
+
+### Update Video Streaming Decoding Code
+
+`CImageSourceAdapter` is added to replace the `FrameDecodeingParameters` and the previous video methods. You should implement `CImageSourceAdapter` to transfer image data from camera or video file to buffer. The following code snippet demonstrate basic usage of decoding video frames:
+
+```cpp
+class MyVideoSource : public CProactiveImageSourceAdapter 
+{
+    // You should implement the `HasNextImageToFetch` method to indicate if there is a next frame
+    bool HasNextImageToFetch() const override 
+    {
+        return true;
+    }
+
+    // You should implement the `FetchImage` method to get the next frame
+    CImageData* FetchImage() override
+    {
+        // Add code to get the video frame from camera or video file
+    }
+};
+
+class MyBarcodeResultReceiver: public CCapturedResultReceiver
+{
+public:
+    virtual void OnDecodedBarcodesReceived(DecodedBarcodesResult * result) {
+        // Add code to process the result
+    }
+};
+
+int main()
+{
+    CCaptureVisionRouter *cvr = new CCaptureVisionRouter;
+
+    // Create your video source and bind it to the router
+    MyVideoSource *source = new MyVideoSource;
+    cvr->SetInput(source);
+
+    // Create a CCapturedResultReceiver instance 
+    MyBarcodeResultReceiver *barcodesReceiver = new MyCapturedResultReceiver;
+    cvr->AddResultReceiver(barcodesReceiver);
+
+    // Start capturing
+    errorCode = cvr->StartCapturing(CPresetTemplate::PT_READ_BARCODES, true, errorMsg, 512);
+
+    delete barcodesReceiver;
+    delete source;
+    delete cvr;
+}
+```
+
+### Migrate Your Templates
 
 The template system is upgraded. The template you used for the previous version can't be directly recognized by the new version. Please <a href="https://download2.dynamsoft.com/dcv/TemplateConverter.zip" target="_blank">download the TemplateConverter tool</a> or <a href="https://www.dynamsoft.com/company/customer-service/#contact" target="_blank">contact us</a> to upgrade your template.
 
-<!-- 
-### Replace PublicRuntimeSettings APIs with SimplifiedSettings APIs
+The template-based APIs have been updated as follows:
 
-The setting configuration APIs are refactored. Struct `PublicRuntimeSettings` is removed. Though a series of settings are still available via struct `SimplifiedCaptureVisionSettings`, the majority of settings are "template only". Please view the API reference of struct [`SimplifiedCaptureVisionSettings`]({{ site.dcv_cpp_api }}capture-vision-router/structs/simplified-capture-vision-settings.html) and [`SimplifiedBarcodeReaderSettings`]({{ site.cpp_api }}simplified-barcode-reader-settings.html) to see whether your settings are still available. If they are no longer supported, please <a href="https://www.dynamsoft.com/company/customer-service/#contact" target="_blank">contact us</a>. We will help you on generating a new template that supports your previous settings. -->
-
-### Update Your Image Decoding Codes
-
-#### Single Image Decoding
-
-Since class `CBarcodeReader` is replaced with class `CCaptureVisionRouter`. You have to use the following `Capture` APIs instead of the `Decode` APIs:
-
-```cpp
-// Capture from a file.
-CCapturedResult* Capture(const char* filePath, const char* templateName="");
-// Capture from a file in memory.
-CCapturedResult* Capture(const unsigned char *fileBytes, int fileSize, const char* templateName="");
-// Capture from a CImageData object.
-CCapturedResult* Capture(const CImageData* pImageData, const char* templateName="");
-```
-
-**The Corresponding Capture APIs of the Decode APIs**
-
-| Removed APIs | New APIs |
+| Old APIs | New APIs |
 | :----------- | :------- |
-| `DecodeFile` | `Capture(const char* filePath, const char* templateName="")` |
-| `DecodeFileInMemory` | `Capture(const unsigned char *fileBytes, int fileSize, const char* templateName="")` |
-| `DecodeBuffer` | `Capture(const CImageData* pImageData, const char* templateName="")` |
-| `DecodeBase64String` | **Currently not available**. |
-| `DecodeDIB` | **Currently not available**. |
-
-#### Batch Image Decoding
-
-DCV architecture allows you to set a folder as an image source to fetch image from. To use this feature, you have to set `CDirectoryFetcher` as the input via class `CCaptureVisionRouter`.
-
-```cpp
-int main()
-{
-   CCaptureVisionRouter *cvr = new CCaptureVisionRouter;
-   // Create a CDirectoryFetcher instance and set is as the input of cvr
-   CDirectoryFetcher *fetcher = new CDirectoryFetcher;
-   // Replace the following directory path with your directory path:
-   fetcher->SetDirectory("C:\\my-directory-folder\\");
-   cvr->SetInput(fetcher);
-   // Create a CCapturedResultReceiver instance 
-   CCapturedResultReceiver *capturedReceiver = new MyCapturedResultReceiver;
-   cvr->AddResultReceiver(capturedReceiver);
-   // Start capturing
-   errorCode = cvr->StartCapturing(CPresetTemplate::PT_READ_BARCODES, true, errorMsg, 512);
-}
-```
-
-### Update Your Video Streaming Decoding Codes
-
-`CImageSourceAdapter` is added to replace the `FrameDecodeingParameters` and the previous video methods. The following steps shows how to implement video streaming barcode decoding with `CImageSourceAdapter`:
-
-```cpp
-class MyImageSource : public CImageSourceAdapter 
-{
-  // Add code to implement CImageSourceAdapter
-};
-int main()
-{
-  MyImageSource *source = new MyImageSource;
-  cvr->SetInput(source);
-}
-```
-
-### Result Obtaining
-
-If you are using batch image decoding or video streaming decoding, you have to register a [`CCapturedResultReceiver`]({{ site.dcv_cpp_api }}core/basic-structures/captured-result-receiver.html) to receive the barcode decoding results.
-
-If you are using `Capture` APIs to process a single image, the barcode decoding results are returned from the `Capture` APIs.
+| `CBarcodeReader.InitRuntimeSettingsWithFile` | `CCaptureVisionRouter.InitSettingsFromFile` |
+| `CBarcodeReader.InitRuntimeSettingsWithString` | `CCaptureVisionRouter.InitSettings` |
+| `CBarcodeReader.OutputSettingsToFile` | `CCaptureVisionRouter.OutputSettingsToFile` |
+| `CBarcodeReader.OutputSettingsToString` | `CCaptureVisionRouter.OutputSettings` |
+| `CBarcodeReader.ResetRuntimeSettings` | `CCaptureVisionRouter.ResetSettings` |
+| `CBarcodeReader.AppendTplFileToRuntimeSettings` | **Not available**. |
+| `CBarcodeReader.AppendTplStringToRuntimeSettings` | **Not available**. |
 
 ### Migrate Your PublicRuntimeSettings
 
-The setting configuration APIs are refactored. Struct `PublicRuntimeSettings` is removed. Though a series of settings are still available via struct `SimplifiedCaptureVisionSettings`, the majority of settings are "template only". Please view the following instructions to update your settings.
+The struct `PublicRuntimeSettings` has been refactored. It retains commonly used properties while removing the previously complex property settings, which are now exclusively supported through templates.
+
+The APIs for accessing and updating `PublicRuntimeSettings` has been adjusted as follows:
+
+| Old APIs | New APIs |
+| :----------- | :------- |
+| `CBarcodeReader.GetRuntimeSettings` | `CCaptureVisionRouter.GetSimplifiedSettings` |
+| `CBarcodeReader.UpdateRuntimeSettings` | `CCaptureVisionRouter.UpdateSettings` |
 
 #### Migrate to SimplifiedCaptureVisionSettings
 
-The following parameters are replaced by similar parameters under `SimplifiedCaptureVisionSettings`. They can also be set via a template file(String).
+The following properties are replaced by similar properties under `SimplifiedCaptureVisionSettings`. They can also be set via a template file(String).
 
-| PublicRuntimeSettings Parameter | SimplifiedCaptureVisionSettings Parameter | Template File Parameter |
+| PublicRuntimeSettings Property | SimplifiedCaptureVisionSettings Parameter | Template File Parameter |
 | ------------------------------- | ----------------------------------------- | ----------------------- |
 | `region` | [`roi`]({{ site.dcv_cpp_api }}capture-vision-router/structs/simplified-capture-vision-settings.html#roi) & [`roiMeasuredInPercentage`]({{ site.dcv_cpp_api }}capture-vision-router/structs/simplified-capture-vision-settings.html#roimeasuredinpercentage) | [`TargetROIDef.Location.Offset`]({{ site.dcv_parameters_reference }}target-roi-def/location.html?product=dbr&repoType=core){:target="_blank"} |
 | `timeout` | [`timeout`]({{ site.dcv_cpp_api }}capture-vision-router/structs/simplified-capture-vision-settings.html#timeout) | [`CaptureVisionTemplates.Timeout`]({{ site.dcv_parameters_reference }}capture-vision-template/timeout.html?product=dbr&repoType=core){:target="_blank"} |
 
 #### Migrate to SimplifiedBarcodeReaderSettings
 
-The following parameters are replaced by similar parameters under `SimplifiedBarcodeReaderSettings`. The majority of them can also be set via a template file(String).
+The following properties are replaced by similar properties under `SimplifiedBarcodeReaderSettings`. The majority of them can also be set via a template file(String).
 
-| PublicRuntimeSettings Parameter | SimplifiedBarcodeReaderSettings Parameter | Template File Parameter |
+| PublicRuntimeSettings Property | SimplifiedBarcodeReaderSettings Property | Template File Parameter |
 | ------------------------------- | ----------------------------------------- | ----------------------- |
 | `minBarcodeTextLength` | [`minBarcodeTextLength`]({{ site.cpp_api }}simplified-barcode-reader-settings.html#minbarcodetextlength) | [`BarcodeFormatSpecification.BarcodeTextLengthRangeArray`]({{ site.dcv_parameters_reference }}barcode-format-specification/barcode-text-length-range-array.html?product=dbr&repoType=core){:target="_blank"} |
 | `minResultConfidence` | [`minResultConfidence`]({{ site.cpp_api }}simplified-barcode-reader-settings.html#minresultconfidence) | [`BarcodeFormatSpecification.MinResultConfidence`]({{ site.dcv_parameters_reference }}barcode-format-specification/min-result-confidence.html?product=dbr&repoType=core){:target="_blank"} |
@@ -190,7 +177,7 @@ The following parameters are replaced by similar parameters under `SimplifiedBar
 > * The 2 groups of barcode formats are merged.
 > * `DeblurLevel` is deprecated. You can use `DeblurModes` instead.
 
-| FurtherModes Parameter | SimplifiedBarcodeReaderSettings Parameter | Template File Parameter |
+| FurtherModes Property | SimplifiedBarcodeReaderSettings Property | Template File Parameter |
 | ---------------------- | ----------------------------------------- | ----------------------- |
 | `grayscaleTransformationModes` | [`grayscaleTransformationModes`]({{ site.cpp_api }}simplified-barcode-reader-settings.html#grayscaletransformationmodes) | [`ImageParameter.GrayscaleTransformationModes`]({{ site.dcv_parameters_reference }}image-parameter/grayscale-enhancement-modes.html?product=dbr&repoType=core){:target="_blank"} |
 | `imagePreprocessingModes` | [`grayscaleEnhancementModes`]({{ site.cpp_api }}simplified-barcode-reader-settings.html#grayscaleenhancementmodes) | [`ImageParameter.GrayscaleEnhancementModes`]({{ site.dcv_parameters_reference }}image-parameter/grayscale-transformation-modes.html?product=dbr&repoType=core){:target="_blank"} |
@@ -199,9 +186,9 @@ The following parameters are replaced by similar parameters under `SimplifiedBar
 
 #### Migrate to Template File
 
-The following parameters can only be set via a template file. Please [contact us](https://www.dynamsoft.com/company/customer-service/#contact){:target="_blank"} so that we can help you to transform your current settings to a new template file.
+The following properties can only be set via a template file. Please [contact us](https://www.dynamsoft.com/company/customer-service/#contact){:target="_blank"} so that we can help you to transform your current settings to a new template file.
 
-| PublicRuntimeSettings Parameter | Template File Parameter |
+| PublicRuntimeSettings Property | Template File Parameter |
 | ------------------------------- | ----------------------- |
 | `scaleDownThreshold` | [`ImageParameter.ScaleDownThreshold`]({{ site.dcv_parameters_reference }}image-parameter/scale-down-threshold.html?product=dbr&repoType=core){:target="_blank"} |
 | `binarizationModes` | [`ImageParameter.BinarizationModes`]({{ site.dcv_parameters_reference }}image-parameter/binarization-modes.html?product=dbr&repoType=core){:target="_blank"} |
@@ -211,9 +198,7 @@ The following parameters can only be set via a template file. Please [contact us
 | `barcodeZoneMinDistanceToImageBorders` | [`BarcodeFormatSpecification.BarcodeZoneMinDistanceToImageBorders`]({{ site.dcv_parameters_reference }}barcode-format-specification/barcode-zone-min-distance-to-image-borders.html?product=dbr&repoType=core){:target="_blank"} |
 | `terminatePhase` | [`BarcodeReaderTaskSetting.TerminateSettings`]({{ site.dcv_parameters_reference }}barcode-reader-task-settings/terminate-setting.html?product=dbr&repoType=core){:target="_blank"} |
 
-
-
-| FurtherModes Parameter | Template File Parameter |
+| FurtherModes Property | Template File Parameter |
 | ---------------------- | ----------------------- |
 | `colourConversionModes` | [`ImageParameter.ColourConversionModes`]({{ site.dcv_parameters_reference }}image-parameter/colour-conversion-modes.html?product=dbr&repoType=core){:target="_blank"} |
 | `regionPredetectionModes` | [`ImageParameter.RegionPredetectionModes`]({{ site.dcv_parameters_reference }}image-parameter/region-predetection-modes.html?product=dbr&repoType=core){:target="_blank"} |
@@ -226,25 +211,28 @@ The following parameters can only be set via a template file. Please [contact us
 
 #### Migrate to Other APIs
 
-The PDF paremeters of PublicRuntimeSettings are moved to set via the `setPDFReadingParameter` method of `DirectoryFetcher` and `FileFetcher` with a [`CPDFReadingParameter`]({{ site.dcv_cpp_api }}core/basic-structures/pdf-reading-parameter.html) parameter.
+The PDF properties of PublicRuntimeSettings are moved to set via the `setPDFReadingParameter` method of `CDirectoryFetcher` and `CFileFetcher` with a [`CPDFReadingParameter`]({{ site.dcv_cpp_api }}core/basic-structures/pdf-reading-parameter.html) parameter.
 
-| PDF Parameters of PublicRuntimeSettings |
+| PublicRuntimeSettings Property |
 | --------------------------------------- |
 | `pdfReadingMode` |
 | `pdfRasterDPI` |
 
-The `IntermediateResult` system is redesigned and the following parameters are deprecated.
+The `Intermediate Result` system is redesigned and the following properties are deprecated.
 
-| PublicRuntimeSettings |
+| PublicRuntimeSettings Property |
 | --------------------- |
 | `intermediateResultTypes` |
 | `intermediateResultSavingMode` |
 
 #### Removed
 
-The following parameter is removed.
+The following properties are removed.
 
-| PublicRuntimeSettings |
+| PublicRuntimeSettings Property|
+| --------------------- |
+| `resultCoordinateType` |
+
+| FurtherModes Property|
 | --------------------- |
 | `colourClusteringModes` |
-| `resultCoordinateType` |
