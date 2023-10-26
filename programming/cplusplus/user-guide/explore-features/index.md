@@ -16,7 +16,6 @@ Once you have got an application running with Dynamsoft Barcode Reader CPP editi
 ## Basic Features
 
 * [Specify barcode formats and count]({{site.features}}barcode-formats-and-count.html?lang=cpp)
-* [Read barcode from image]({{site.features}}read-different-source.html?lang=cpp)
 * [Read a specific area/region]({{site.features}}barcode-scan-region.html?lang=cpp)
 
 ## Handle Difficult Scenarios
@@ -42,10 +41,8 @@ While the SDK has been carefully tuned to provide the best possible performance 
 * [Get barcode location]({{site.features}}get-barcode-location.html?lang=cpp)
 * [Get detailed barcode information]({{site.features}}get-detailed-info.html?lang=cpp)
 * [Filter and sort decoding results]({{site.features}}filter-and-sort.html?lang=cpp)
-* [Use intermediate results]({{site.features}}use-intermidiate-results.html?lang=cpp)
 
 ## Advanced Features
 
-* [Control when to terminate a decoding process]({{site.features}}control-terminate-phase.html?lang=cpp)
-* [Use RuntimeSettings or Templates]({{site.features}}use-runtimesettings-or-templates.html?lang=cpp)
+* [Use SimplifiedSettings or Templates]({{site.features}}use-runtimesettings-or-templates.html?lang=cpp)
 * [Use format specific configurations]({{site.features}}use-format-specific-configuration.html?lang=cpp)
