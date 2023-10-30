@@ -116,5 +116,3 @@ permalink: /programming/cplusplus/release-notes/cpp-10.html
 
 {%- include release-notes/product-highlight-10.0.0.md -%}
 
-
-The APIs of Dynamsoft Barcode Reader are comprehensively updated. Please follow the view [upgrade instructions](../upgrade-instruction.html) to update your code.
