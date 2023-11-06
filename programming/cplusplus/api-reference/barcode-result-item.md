@@ -41,7 +41,7 @@ class CBarcodeResultItem : public CCapturedResultItem
 
 ### Inherited Methods
 
-The following methods are inherited from class [CCapturedResultItem]({{ site.dcv_cpp_api }}core/basic-structures/captured-result-item.html)
+The following methods are inherited from class [CCapturedResultItem]({{ site.dcv_cpp_api }}core/basic-structures/captured-result-item.html).
 
 {%- include inherited-methods/captured-result-item.md -%}
 

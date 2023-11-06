@@ -1,4 +1,5 @@
 
+
 | Method | Description |
 |--------|-------------|
 | [`GetType`]({{ site.dcv_cpp_api }}core/basic-structures/captured-result-item.html#gettype) | Gets the type of the captured result item. |
