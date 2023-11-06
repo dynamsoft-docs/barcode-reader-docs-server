@@ -1,5 +1,5 @@
 
-The following methods are inherited from class [CRegionObjectElement]({{ site.dcv_cpp_api }}core/intermediate-results/region-object-element.html).
+The following methods are inherited from class [`CRegionObjectElement`]({{ site.dcv_cpp_api }}core/intermediate-results/region-object-element.html).
 
 | Method | Description |
 |--------|-------------|

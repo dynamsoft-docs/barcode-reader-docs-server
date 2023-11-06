@@ -1,5 +1,5 @@
 
-The following methods are inherited from class [CIntermediateResultUnit]({{ site.dcv_cpp_api }}core/intermediate-results/intermediate-result-unit.html).
+The following methods are inherited from class [`CIntermediateResultUnit`]({{ site.dcv_cpp_api }}core/intermediate-results/intermediate-result-unit.html).
 
 | Method               | Description |
 |----------------------|-------------|
