@@ -28,6 +28,10 @@ class CCandidateBarcodeZonesUnit: public CIntermediateResultUnit
 | [`GetCount`](#getcount)           | Gets the number of candidate barcode zones in the unit.|
 | [`GetCandidateBarcodeZone`](#getcandidatebarcodezone)           | Gets the specific candidate barcode zone in the region.|
 
+### Inherited Methods
+
+{%- include inherited-methods/intermediate-result-unit.md -%}
+
 ### GetCount
 
 Gets the number of localized barcodes in the unit.

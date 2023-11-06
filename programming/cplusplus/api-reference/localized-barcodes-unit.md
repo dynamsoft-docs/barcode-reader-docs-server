@@ -28,6 +28,10 @@ class CLocalizedBarcodesUnit: public CIntermediateResultUnit
 | [`GetCount`](#getcount)           | Gets the number of localized barcodes in the unit.|
 | [`GetLocalizedBarcode`](#getlocalizedbarcode)           | Gets a pointer to a specific localized barcode element.|
 
+### Inherited Methods
+
+{%- include inherited-methods/intermediate-result-unit.md -%}
+
 ### GetCount
 
 Gets the number of localized barcodes in the unit.

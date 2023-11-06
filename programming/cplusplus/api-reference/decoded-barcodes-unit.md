@@ -28,7 +28,9 @@ class CDecodedBarcodesUnit: public CIntermediateResultUnit
 | [`GetCount`](#getcount)           | Gets the number of decoded barcodes in the unit.|
 | [`GetDecodedBarcode`](#getdecodedbarcode)           | Gets a pointer to the CDecodedBarcodeElement object at the specified index.|
 
+### Inherited Methods
 
+{%- include inherited-methods/intermediate-result-unit.md -%}
 
 ### GetCount
 

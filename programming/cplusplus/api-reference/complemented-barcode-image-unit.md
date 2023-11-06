@@ -27,6 +27,10 @@ class CComplementedBarcodeImageUnit: public CIntermediateResultUnit
 | [`GetLocation`](#getlocation) | Get the location of the complemented barcode in a quadrilateral.|
 | [`GetImageData`](#getimagedata) | Gets the complemented barcode image data.|
 
+### Inherited Methods
+
+{%- include inherited-methods/intermediate-result-unit.md -%}
+
 ### GetLocation
 
 Get the location of the complemented barcode in a quadrilateral.
