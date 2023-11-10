@@ -21,7 +21,6 @@ The `COneDCodeDetails` class represents detailed information about a one-dimensi
 class COneDCodeDetails : public CBarcodeDetails
 ```
 
----
 
 ## Attributes
 
