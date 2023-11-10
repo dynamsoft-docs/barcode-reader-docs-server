@@ -27,6 +27,9 @@ class CDeformationResistedBarcodeImageUnit: public CIntermediateResultUnit
 |-----------------------------------|-------------|
 | [`GetImageData`](#getimagedata)           | Gets the deformation resisted barcode image data.|
 
+### Inherited Methods
+
+{%- include inherited-methods/intermediate-result-unit.md -%}
 
 ### GetImageData
 

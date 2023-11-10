@@ -39,6 +39,9 @@ class CBarcodeResultItem : public CCapturedResultItem
 | [`IsDPM`](#isdpm) | Gets whether the decoded barcode is a DPM code. |
 | [`IsMirrored`](#ismirrored) | Gets whether the decoded barcode is a mirrored barcode. |
 
+### Inherited Methods
+
+{%- include inherited-methods/captured-result-item.md -%}
 
 ### GetFormat
 

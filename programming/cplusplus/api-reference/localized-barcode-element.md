@@ -31,6 +31,10 @@ class CLocalizedBarcodeElement : public CRegionObjectElement
 | [`GetPossibleFormatsString`](#getpossibleformatsstring) | Get all possible formats of the localized barcode in one string splited by ",". |
 | [`GetModuleSize`](#getmodulesize) | Gets the module size of the barcode. |
 
+### Inherited Methods
+
+{%- include inherited-methods/region-object-element.md -%}
+
 ### GetAngle
 
 It is used to get the orientation angle of the barcode.

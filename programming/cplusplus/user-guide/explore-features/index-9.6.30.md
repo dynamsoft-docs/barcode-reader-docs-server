@@ -4,7 +4,6 @@ title: Explore Features - Dynamsoft Barcode Reader SDK C++ Edition User Guide
 description: This page lists the topics to explore the features of Dynamsoft Barcode Reader CPP Edition.
 keywords: user guide, explore features, cpp
 noTitleIndex: false
-permalink: /programming/cplusplus/user-guide/explore-features/index.html
 ---
 
 # Explore Features

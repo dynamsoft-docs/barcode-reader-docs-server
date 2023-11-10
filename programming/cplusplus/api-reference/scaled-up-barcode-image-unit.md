@@ -27,6 +27,9 @@ class CScaledUpBarcodeImageUnit: public CIntermediateResultUnit
 |-----------------------------------|-------------|
 | [`GetImageData`](#getimagedata)           | Gets the scaled up barcode image data.|
 
+### Inherited Methods
+
+{%- include inherited-methods/intermediate-result-unit.md -%}
 
 ### GetImageData
 

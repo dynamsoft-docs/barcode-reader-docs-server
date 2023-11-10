@@ -116,4 +116,3 @@ permalink: /programming/cplusplus/release-notes/cpp-10.html
 
 {%- include release-notes/product-highlight-10.0.0.md -%}
 
-

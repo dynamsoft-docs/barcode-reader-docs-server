@@ -40,6 +40,10 @@ class CDecodedBarcodeElement : public CRegionObjectElement
 | [`GetExtendedBarcodeResultsCount`](#getextendedbarcoderesultscount) | Gets the number of extended barcode results for the decoded barcode.|
 | [`GetExtendedBarcodeResult`](#getextendedbarcoderesult) | Gets the extended barcode result at the specified index for the decoded barcode.|
 
+### Inherited Methods
+
+{%- include inherited-methods/region-object-element.md -%}
+
 ### ~CDecodedBarcodeElement
 
 Destructor.
