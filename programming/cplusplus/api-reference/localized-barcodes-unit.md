@@ -54,6 +54,7 @@ virtual const CLocalizedBarcodeElement* GetLocalizedBarcode(int index) const = 0
 ```
 
 **Parameters**
+
 `[in] index` The index of the localized barcode element to retrieve.
 
 **Return value**

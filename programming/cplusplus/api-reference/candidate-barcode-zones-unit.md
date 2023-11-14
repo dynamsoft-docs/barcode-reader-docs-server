@@ -54,8 +54,10 @@ virtual int GetCandidateBarcodeZone(int index, CQuadrilateral *quad) const = 0;
 ```
 
 **Parameters**
+
 `[in] index` The index of the candidate barcode zone element.
-`[out]quad` The quadrilateral of the candidate barcode zone element.
+
+`[out] quad` The quadrilateral of the candidate barcode zone element.
 
 **Return value**
 
