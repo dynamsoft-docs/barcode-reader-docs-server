@@ -48,6 +48,7 @@ virtual const CDecodedBarcodesResult* GetResult(int index) const = 0;
 ```
 
 **Parameters**
+
 `[in] index` The index of the decoded barcode.
 
 **Return value**
