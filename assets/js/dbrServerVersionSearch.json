@@ -1,0 +1,216 @@
+[
+    {
+        "version": "10.0.20",
+        "matchList": {
+            "cpp":{
+                "dcvRepoServer": [
+                    {
+                        "path": "/programming/cplusplus/api-reference/capture-vision-router",
+                        "version": "2.0.20"
+                    },
+                    {
+                        "path": "/programming/cplusplus/api-reference/core",
+                        "version": "3.0.20"
+                    },
+                    {
+                        "path": "/programming/cplusplus/api-reference/image-processing",
+                        "version": "2.0.20"
+                    },
+                    {
+                        "path": "/programming/cplusplus/api-reference/license",
+                        "version": "3.0.20"
+                    },
+                    {
+                        "path": "/programming/cplusplus/api-reference/utility",
+                        "version": "1.0.20"
+                    }
+                ],
+                "dcvRepoCore": [
+                    {
+                        "path": "/enums/barcode-reader",
+                        "version": "10.0.20"
+                    },
+                    {
+                        "path": "/enums/capture-vision-router",
+                        "version": "2.0.20"
+                    },
+                    {
+                        "path": "/enums/core",
+                        "version": "3.0.20"
+                    },
+                    {
+                        "path": "/parameters/reference/barcode-format-specification",
+                        "version": "10.0.20"
+                    },
+                    {
+                        "path": "/parameters/reference/barcode-reader-task-settings",
+                        "version": "10.0.20"
+                    },
+                    {
+                        "path": "/parameters/reference/capture-vision-template",
+                        "version": "2.0.20"
+                    },
+                    {
+                        "path": "/parameters/reference/global-parameter",
+                        "version": "2.0.20"
+                    },
+                    {
+                        "path": "/parameters/reference/image-parameter",
+                        "version": "2.0.20"
+                    },
+                    {
+                        "path": "/parameters/reference/image-source-options",
+                        "version": "3.0.20"
+                    },
+                    {
+                        "path": "/parameters/reference/target-roi-def",
+                        "version": "2.0.20"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "version": "10.0.10",
+        "matchList": {
+            "cpp":{
+                "dcvRepoServer": [
+                    {
+                        "path": "/programming/cplusplus/api-reference/capture-vision-router",
+                        "version": "2.0.10"
+                    },
+                    {
+                        "path": "/programming/cplusplus/api-reference/core",
+                        "version": "3.0.10"
+                    },
+                    {
+                        "path": "/programming/cplusplus/api-reference/image-processing",
+                        "version": "2.0.10"
+                    },
+                    {
+                        "path": "/programming/cplusplus/api-reference/license",
+                        "version": "3.0.10"
+                    },
+                    {
+                        "path": "/programming/cplusplus/api-reference/utility",
+                        "version": "1.0.10"
+                    }
+                ],
+                "dcvRepoCore": [
+                    {
+                        "path": "/enums/barcode-reader",
+                        "version": "10.0.10"
+                    },
+                    {
+                        "path": "/enums/capture-vision-router",
+                        "version": "2.0.10"
+                    },
+                    {
+                        "path": "/enums/core",
+                        "version": "3.0.10"
+                    },
+                    {
+                        "path": "/parameters/reference/barcode-format-specification",
+                        "version": "10.0.10"
+                    },
+                    {
+                        "path": "/parameters/reference/barcode-reader-task-settings",
+                        "version": "10.0.10"
+                    },
+                    {
+                        "path": "/parameters/reference/capture-vision-template",
+                        "version": "2.0.10"
+                    },
+                    {
+                        "path": "/parameters/reference/global-parameter",
+                        "version": "2.0.10"
+                    },
+                    {
+                        "path": "/parameters/reference/image-parameter",
+                        "version": "2.0.10"
+                    },
+                    {
+                        "path": "/parameters/reference/image-source-options",
+                        "version": "3.0.10"
+                    },
+                    {
+                        "path": "/parameters/reference/target-roi-def",
+                        "version": "2.0.10"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "version": "10.0.0",
+        "matchList": {
+            "cpp":{
+                "dcvRepoServer": [
+                    {
+                        "path": "/programming/cplusplus/api-reference/capture-vision-router",
+                        "version": "2.0.0"
+                    },
+                    {
+                        "path": "/programming/cplusplus/api-reference/core",
+                        "version": "3.0.0"
+                    },
+                    {
+                        "path": "/programming/cplusplus/api-reference/image-processing",
+                        "version": "2.0.0"
+                    },
+                    {
+                        "path": "/programming/cplusplus/api-reference/license",
+                        "version": "3.0.0"
+                    },
+                    {
+                        "path": "/programming/cplusplus/api-reference/utility",
+                        "version": "1.0.0"
+                    }
+                ],
+                "dcvRepoCore": [
+                    {
+                        "path": "/enums/barcode-reader",
+                        "version": "10.0.0"
+                    },
+                    {
+                        "path": "/enums/capture-vision-router",
+                        "version": "2.0.0"
+                    },
+                    {
+                        "path": "/enums/core",
+                        "version": "3.0.0"
+                    },
+                    {
+                        "path": "/parameters/reference/barcode-format-specification",
+                        "version": "10.0.0"
+                    },
+                    {
+                        "path": "/parameters/reference/barcode-reader-task-settings",
+                        "version": "10.0.0"
+                    },
+                    {
+                        "path": "/parameters/reference/capture-vision-template",
+                        "version": "2.0.0"
+                    },
+                    {
+                        "path": "/parameters/reference/global-parameter",
+                        "version": "2.0.0"
+                    },
+                    {
+                        "path": "/parameters/reference/image-parameter",
+                        "version": "2.0.0"
+                    },
+                    {
+                        "path": "/parameters/reference/image-source-options",
+                        "version": "3.0.0"
+                    },
+                    {
+                        "path": "/parameters/reference/target-roi-def",
+                        "version": "2.0.0"
+                    }
+                ]
+            }
+        }
+    }
+]
+    
