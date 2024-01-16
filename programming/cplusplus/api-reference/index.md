@@ -3,7 +3,6 @@ layout: default-layout
 title: Dynamsoft Barcode Reader C++ API Reference - Main Page
 description: This is the main page of Dynamsoft Barcode Reader SDK API Reference for C++ Language.
 keywords: CBarcodeReader, api reference, C++
-permalink: /programming/cplusplus/api-reference/index.html
 ---
 
 # API Reference - C++
@@ -24,7 +23,7 @@ permalink: /programming/cplusplus/api-reference/index.html
 ## Final Results
 
 - [`CBarcodeResultItem`]({{ site.cpp_api }}barcode-result-item.html)
-- [`CCapturedResultReceiver`]({{ site.dcv_cpp_api }}core/basic-structures/captured-result-receiver.html)
+- [`CCapturedResultReceiver`]({{ site.dcv_cpp_api }}capture-vision-router/auxiliary-classes/captured-result-receiver.html)
 - [`CCapturedResult`]({{ site.dcv_cpp_api }}core/basic-structures/captured-result.html)
 - [`CCapturedResultItem`]({{ site.dcv_cpp_api }}core/basic-structures/captured-result-item.html)
 - [`CDecodedBarcodesResult`]({{ site.cpp_api }}decoded-barcodes-result.html)
@@ -32,7 +31,7 @@ permalink: /programming/cplusplus/api-reference/index.html
 
 ## Final Results Filters
 
-- [`CCapturedResultFilter`]({{ site.dcv_cpp_api }}core/basic-structures/captured-result-filter.html)
+- [`CCapturedResultFilter`]({{ site.dcv_cpp_api }}capture-vision-router/auxiliary-classes/captured-result-filter.html)
 - [`CMultiFrameResultCrossFilter`]({{ site.dcv_cpp_api }}utility/multi-frame-result-cross-filter.html)
 
 ## Detailed Barcode Results
@@ -46,8 +45,8 @@ permalink: /programming/cplusplus/api-reference/index.html
 
 ## Intermediate Results
 
-- [`CIntermediateResultManager`]({{ site.dcv_cpp_api }}core/intermediate-results/intermediate-result-manager.html)
-- [`CIntermediateResultReceiver`]({{ site.dcv_cpp_api }}core/intermediate-results/intermediate-result-receiver.html)
+- [`CIntermediateResultManager`]({{ site.dcv_cpp_api }}capture-vision-router/auxiliary-classes/intermediate-result-manager.html)
+- [`CIntermediateResultReceiver`]({{ site.dcv_cpp_api }}capture-vision-router/auxiliary-classes/intermediate-result-receiver.html)
 - [`CObservationParameters`]({{ site.dcv_cpp_api }}core/intermediate-results/observed-parameters.html)
 - [`IntermediateResultExtraInfo`]({{ site.dcv_cpp_api }}core/structs/intermediate-result-extra-info.html)
 - [`CBinaryImageUnit`]({{ site.dcv_cpp_api }}core/intermediate-results/binary-image-unit.html)
@@ -62,6 +61,7 @@ permalink: /programming/cplusplus/api-reference/index.html
 - [`CPredetectedRegionsUnit`]({{ site.dcv_cpp_api }}core/intermediate-results/predetected-regions-unit.html)
 - [`CRegionObjectElement`]({{ site.dcv_cpp_api }}core/intermediate-results/region-object-element.html)
 - [`CScaledDownColourImageUnit`]({{ site.dcv_cpp_api }}core/intermediate-results/scaled-down-colour-image-unit.html)
+- [`CShortLinesUnit`]({{ site.dcv_cpp_api }}core/intermediate-results/short-lines-unit.html)
 - [`CTextRemovedBinaryImageUnit`]({{ site.dcv_cpp_api }}core/intermediate-results/text-removed-binary-image-unit.html)
 - [`CTextZonesUnit`]({{ site.dcv_cpp_api }}core/intermediate-results/text-zones-unit.html)
 - [`CTextureDetectionResultUnit`]({{ site.dcv_cpp_api }}core/intermediate-results/texture-detection-result-unit.html)
@@ -69,8 +69,10 @@ permalink: /programming/cplusplus/api-reference/index.html
 - [`CTextureRemovedGrayscaleImageUnit`]({{ site.dcv_cpp_api }}core/intermediate-results/texture-removed-grayscale-image-unit.html)
 - [`CTransformedGrayscaleImageUnit`]({{ site.dcv_cpp_api }}core/intermediate-results/transformed-grayscale-image-unit.html)
 - [`CScaledUpBarcodeImageUnit`]({{ site.cpp_api }}scaled-up-barcode-image-unit.html)
+- [`CCandidateBarcodeZone`]({{ site.cpp_api }}candidate-barcode-zone.html)
 - [`CCandidateBarcodeZonesUnit`]({{ site.cpp_api }}candidate-barcode-zones-unit.html)
 - [`CComplementedBarcodeImageUnit`]({{ site.cpp_api }}complemented-barcode-image-unit.html)
+- [`CDeformationResistedBarcode`]({{ site.cpp_api }}deformation-resisted-barcode.html)
 - [`CDeformationResistedBarcodeImageUnit`]({{ site.cpp_api }}deformation-resisted-barcode-image-unit.html)
 - [`CLocalizedBarcodesUnit`]({{ site.cpp_api }}localized-barcodes-unit.html)
 - [`CLocalizedBarcodeElement`]({{ site.cpp_api }}localized-barcode-element.html)

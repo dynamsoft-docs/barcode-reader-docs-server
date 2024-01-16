@@ -5,8 +5,6 @@ description: This page shows the C++ edition of the class CBarcodeReaderModule i
 keywords: barcode reader module, c++
 needAutoGenerateSidebar: true
 needGenerateH3Content: true
-breadcrumbText: C++ CBarcodeReaderModule Class
-permalink: /programming/cplusplus/api-reference/barcode-reader-module.html
 ---
 
 # CBarcodeReaderModule
@@ -28,6 +26,8 @@ class CBarcodeReaderModule
 | Method                                                    | Description                                        |
 | --------------------------------------------------------- | -------------------------------------------------- |
 | [GetVersion](#getversion)                                     | Returns the version of the barcode reader module. |
+| [CreateDecodedBarcodeElement](#createdecodedbarcodeelement) | Create a `CDecodedBarcodeElement` object. |
+| [CreateLocalizedBarcodeElement](#createlocalizedbarcodeelement) | Create a `CLocalizedBarcodeElement` object. |
 
 ## GetVersion
 
@@ -44,3 +44,35 @@ None.
 **Return Value**
 
 Returns a const char pointer representing the version of the barcode reader module.
+
+## CreateDecodedBarcodeElement
+
+Create a `CDecodedBarcodeElement` object.
+
+```cpp
+static intermediate_results::CDecodedBarcodeElement* CreateDecodedBarcodeElement();
+```
+
+**Return Value**
+
+Returns an object of `CDecodedBarcodeElement`.
+
+**See Also**
+
+[CDecodedBarcodeElement]({{ site.cpp_api }}decoded-barcode-element.html)
+
+## CreateLocalizedBarcodeElement
+
+Create a `CLocalizedBarcodeElement` object.
+
+```cpp
+static intermediate_results::CLocalizedBarcodeElement* CreateLocalizedBarcodeElement();
+```
+
+**Return Value**
+
+Returns an object of `CLocalizedBarcodeElement`.
+
+**See Also**
+
+[CLocalizedBarcodeElement]({{ site.cpp_api }}localized-barcode-element.html)

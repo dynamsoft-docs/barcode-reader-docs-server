@@ -2,8 +2,7 @@
 layout: default-layout
 title: CScaledUpBarcodeImageUnit Class
 description: This page shows CScaledUpBarcodeImageUnit class definition of Dynamsoft Barcode Reader SDK C++ Edition.
-keywords: GetImageData, CScaledUpBarcodeImageUnit, api reference
-permalink: /programming/cplusplus/api-reference/scaled-up-barcode-image-unit.html
+keywords: GetImageData, SetImageData, CScaledUpBarcodeImageUnit, api reference
 ---
 # CScaledUpBarcodeImageUnit Class
 
@@ -26,6 +25,7 @@ class CScaledUpBarcodeImageUnit: public CIntermediateResultUnit
 | Method                            | Description |
 |-----------------------------------|-------------|
 | [`GetImageData`](#getimagedata)           | Gets the scaled up barcode image data.|
+| [`SetImageData`](#setimagedata)           | Sets the scaled up image data.|
 
 ### Inherited Methods
 
@@ -42,6 +42,26 @@ virtual const CImageData* GetImageData() const = 0;
 **Return value**
 
 Returns a pointer to the scaled up image of the barcode.
+
+**See Also**
+
+[CImageData]({{ site.dcv_cpp_api }}core/basic-structures/image-data.html)
+
+### SetImageData
+
+Sets the scaled up image data.
+
+```cpp
+virtual int SetImageData(const CImageData* imgData) = 0;
+```
+
+**Parameters**
+
+`[in] imgData` The pointer to the scaled up image data.
+
+**Return value**
+
+Returns 0 if successful, otherwise returns a negative value.
 
 **See Also**
 
