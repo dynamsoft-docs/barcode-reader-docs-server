@@ -2,8 +2,7 @@
 layout: default-layout
 title: CLocalizedBarcodeElement Class
 description: This page shows CLocalizedBarcodeElement class definition of Dynamsoft Barcode Reader SDK C++ Edition.
-keywords: GetAngle, GetConfidence, GetFormat, GetFormatString, GetModuleSize, CLocalizedBarcodeElement, api reference
-permalink: /programming/cplusplus/api-reference/localized-barcode-element.html
+keywords: GetAngle, GetConfidence, GetPossibleFormats, GetPossibleFormatsString, GetModuleSize, SetPossibleFormats, CLocalizedBarcodeElement, api reference
 ---
 # CLocalizedBarcodeElement Class
 
@@ -30,6 +29,7 @@ class CLocalizedBarcodeElement : public CRegionObjectElement
 | [`GetPossibleFormats`](#getpossibleformats) | Gets the possible format of the barcode. |
 | [`GetPossibleFormatsString`](#getpossibleformatsstring) | Get all possible formats of the localized barcode in one string splited by ",". |
 | [`GetModuleSize`](#getmodulesize) | Gets the module size of the barcode. |
+| [`SetPossibleFormats`](#setpossibleformats) | Sets the posssible formats of the barcode. |
 
 ### Inherited Methods
 
@@ -98,3 +98,19 @@ int GetModuleSize() const
 **Return value**
 
 Returns the module size of the barcode.
+
+### SetPossibleFormats
+
+Sets the posssible formats of the barcode.
+
+```cpp
+virtual void SetPossibleFormats(unsigned long long possibleFormats) = 0;
+```
+
+**Parameters**
+
+`possibleFormats` The posssible formats of the barcode.
+
+**See Also**
+
+[BarcodeFormat]({{ site.dcv_enumerations }}barcode-reader/barcode-format.html?src=cpp&&lang=cpp)

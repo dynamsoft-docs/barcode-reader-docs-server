@@ -2,8 +2,7 @@
 layout: default-layout
 title: CCandidateBarcodeZonesUnit Class
 description: This page shows CCandidateBarcodeZonesUnit class definition of Dynamsoft Barcode Reader SDK C++ Edition.
-keywords: GetCount, GetCandidateBarcodeZone, CCandidateBarcodeZonesUnit, api reference
-permalink: /programming/cplusplus/api-reference/candidate-barcode-zones-unit.html
+keywords: GetCount, GetCandidateBarcodeZone, AddCandidateBarcodeZone, RemoveAllCandidateBarcodeZones, RemoveCandidateBarcodeZone, SetCandidateBarcodeZone, CCandidateBarcodeZonesUnit, api reference
 ---
 # CCandidateBarcodeZonesUnit Class
 
@@ -25,12 +24,56 @@ class CCandidateBarcodeZonesUnit: public CIntermediateResultUnit
 
 | Method                            | Description |
 |-----------------------------------|-------------|
+| [`AddCandidateBarcodeZone`](#addcandidatebarcodezone)           | Adds a candidate barcode zone.|
+| [`GetCandidateBarcodeZone`](#getcandidatebarcodezone)           | Gets a pointer to a specific candidate barcode zone.|
 | [`GetCount`](#getcount)           | Gets the number of candidate barcode zones in the unit.|
-| [`GetCandidateBarcodeZone`](#getcandidatebarcodezone)           | Gets the specific candidate barcode zone in the region.|
+| [`RemoveAllCandidateBarcodeZones`](#removeallcandidatebarcodezones)           | Removes all the candidate barcode zones.|
+| [`RemoveCandidateBarcodeZone`](#removecandidatebarcodezone)           | Removes a candidate barcode zone at the specified index.|
+| [`SetCandidateBarcodeZone`](#setcandidatebarcodezone)           | Sets a candidate barcode zone at the specified index.|
 
 ### Inherited Methods
 
 {%- include inherited-methods/intermediate-result-unit.md -%}
+
+### AddCandidateBarcodeZone
+
+Adds a candidate barcode zone.
+
+```cpp
+virtual int AddCandidateBarcodeZone(const CCandidateBarcodeZone& barcodeZone, const double matrixToOriginalImage[9] = IDENTITY_MATRIX) = 0;
+```
+
+**Parameters**
+
+`barcodeZone` The candidate barcode zone.
+
+`matrixToOriginalImage` The matrix to original image.
+
+**Return value**
+
+Returns 0 if successful, otherwise returns a negative value.
+
+### GetCandidateBarcodeZone
+
+Gets a pointer to a candidate barcode zone specified by index.
+
+```cpp
+virtual int GetCandidateBarcodeZone(int index, CCandidateBarcodeZone* barcodeZone) const = 0;
+```
+
+**Parameters**
+
+`[in] index` The index of the candidate barcode zone.
+
+`[out] quad` The pointer to the candidate barcode zone.
+
+**Return value**
+
+Returns 0 if successful, otherwise returns a negative value.
+
+**See Also**
+
+[CCandidateBarcodeZone]({{ site.cpp_api }}candidate-barcode-zone.html)
 
 ### GetCount
 
@@ -45,24 +88,47 @@ virtual int GetCount() const = 0;
 Returns the number of candidate barcode zones in the unit.
 
 
-### GetCandidateBarcodeZone
 
-Gets a pointer to a specific candidate barcode zone element.
+### RemoveAllCandidateBarcodeZones
+
+Removes all the candidate barcode zones
 
 ```cpp
-virtual int GetCandidateBarcodeZone(int index, CQuadrilateral *quad) const = 0;
+virtual void RemoveAllCandidateBarcodeZones() = 0;
+```
+
+### RemoveCandidateBarcodeZone
+
+Removes a candidate barcode zone at the specified index
+
+```cpp
+virtual int RemoveCandidateBarcodeZone(int index) = 0;
 ```
 
 **Parameters**
 
-`[in] index` The index of the candidate barcode zone element.
-
-`[out] quad` The quadrilateral of the candidate barcode zone element.
+`index` The index of the candidate barcode zone.
 
 **Return value**
 
 Returns 0 if successful, otherwise returns a negative value.
 
-**See Also**
+### SetCandidateBarcodeZone
 
-[CQuadrilateral]({{ site.dcv_cpp_api }}core/basic-structures/quadrilateral.html)
+Sets a candidate barcode zone at the specified index.
+
+```cpp
+virtual int SetCandidateBarcodeZone(int index, const CCandidateBarcodeZone& barcodeZone, const double matrixToOriginalImage[9] = IDENTITY_MATRIX) = 0;
+```
+
+**Parameters**
+
+`index` The index of the candidate barcode zone.
+
+`barcodeZone` The candidate barcode zone.
+
+`matrixToOriginalImage` The matrix to original image.
+
+**Return value**
+
+Returns 0 if successful, otherwise returns a negative value.

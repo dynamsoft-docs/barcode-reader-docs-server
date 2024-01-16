@@ -3,7 +3,6 @@ layout: default-layout
 title: CDecodedBarcodesResult Class
 description: This page shows CDecodedBarcodesResult class definition of Dynamsoft Barcode Reader SDK C++ Edition.
 keywords: GetOriginalImageHashId, GetItemsCount, GetErrorCode, CDecodedBarcodesResult, api reference
-permalink: /programming/cplusplus/api-reference/decoded-barcodes-result.html
 ---
 # CDecodedBarcodesResult Class
 
@@ -32,6 +31,9 @@ class CDecodedBarcodesResult
 | [`GetRotationTransformMatrix`](#getrotationtransformmatrix) | Get the rotation transformation matrix of the original image relative to the rotated image.|
 | [`GetErrorCode`](#geterrorcode) | Gets the error code of the barcode reading result, if an error occurred. |
 | [`GetErrorString`](#geterrorstring) | Gets the error message of the barcode reading result, if an error occurred. |
+| [`Release`](#release) | Decreases the reference count of the `CDecodedBarcodesResult` object. |
+| [`Retain`](#retain) | Increases the reference count of the `CDecodedBarcodesResult` object. |
+| [`operator[]`](#operator)           | Gets a pointer to the `CBarcodeResultItem` object at the specified index.|
 
 ### GetOriginalImageHashId
 
@@ -172,3 +174,43 @@ virtual const char* GetErrorString() const = 0;
 **Return value**
 
 Returns a pointer to a null-terminated string containing the error message of the barcode reading result, or a pointer to an empty string if no error occurred.
+
+### Release
+
+Decreases the reference count of the `CDecodedBarcodesResult` object.
+
+```cpp
+virtual void Release() = 0;
+```
+
+### Retain
+
+Increases the reference count of the `CDecodedBarcodesResult` object.
+
+```cpp
+virtual CDecodedBarcodesResult* Retain() = 0;
+```
+
+**Return value**
+
+Returns an object of `CDecodedBarcodesResult`.
+
+### operator[]
+
+Gets a pointer to the `CBarcodeResultItem` object at the specified index.
+
+```cpp
+virtual const CBarcodeResultItem* operator[](int index) const = 0;
+```
+
+**Parameters**
+
+`[in] index` The index of the barcode result item to retrieve.
+
+**Return value**
+
+Returns a pointer to the `CBarcodeResultItem` object at the specified index.
+
+**See Also**
+
+[CBarcodeResultItem]({{ site.cpp_api }}barcode-result-item.html)

@@ -2,8 +2,7 @@
 layout: default-layout
 title: CDeformationResistedBarcodeImageUnit Class
 description: This page shows CDeformationResistedBarcodeImageUnit class definition of Dynamsoft Barcode Reader SDK C++ Edition.
-keywords: GetImageData, CDeformationResistedBarcodeImageUnit, api reference
-permalink: /programming/cplusplus/api-reference/deformation-resisted-barcode-image-unit.html
+keywords: GetDeformationResistedBarcode, SetDeformationResistedBarcode, CDeformationResistedBarcodeImageUnit, api reference
 ---
 # CDeformationResistedBarcodeImageUnit Class
 
@@ -25,24 +24,47 @@ class CDeformationResistedBarcodeImageUnit: public CIntermediateResultUnit
 
 | Method                            | Description |
 |-----------------------------------|-------------|
-| [`GetImageData`](#getimagedata)           | Gets the deformation resisted barcode image data.|
+| [`GetDeformationResistedBarcode`](#getdeformationresistedbarcode) | Gets the deformation resisted barcode object.|
+| [`SetDeformationResistedBarcode`](#setdeformationresistedbarcode) | Sets the deformation resisted barcode object.|
 
 ### Inherited Methods
 
 {%- include inherited-methods/intermediate-result-unit.md -%}
 
-### GetImageData
+### GetDeformationResistedBarcode
 
-Gets the deformation resisted barcode image data.
+Gets the deformation resisted barcode object.
 
 ```cpp
-virtual const CImageData* GetImageData() const = 0;
+virtual CDeformationResistedBarcode GetDeformationResistedBarcode() const = 0;
 ```
 
 **Return value**
 
-Returns a pointer to the deformation resisted barcode image data.
+Returns an instance of CDeformationResistedBarcode.
 
 **See Also**
 
-[CImageData]({{ site.dcv_cpp_api }}core/basic-structures/image-data.html)
+[CDeformationResistedBarcode]({{ site.cpp_api }}deformation-resisted-barcode.html)
+
+### SetDeformationResistedBarcode
+
+Sets the deformation resisted barcode object.
+
+```cpp
+virtual int SetDeformationResistedBarcode(const CDeformationResistedBarcode& barcode, const double matrixToOriginalImage[9] = IDENTITY_MATRIX) = 0;
+```
+
+**Parameters**
+
+`[in] barcode` The deformation resisted barcode object.
+
+`matrixToOriginalImage` The matrix to original image.
+
+**Return value**
+
+Returns 0 if successful, otherwise returns a negative value.
+
+**See Also**
+
+[CDeformationResistedBarcode]({{ site.cpp_api }}deformation-resisted-barcode.html)

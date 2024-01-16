@@ -2,8 +2,7 @@
 layout: default-layout
 title: CComplementedBarcodeImageUnit Class
 description: This page shows CComplementedBarcodeImageUnit class definition of Dynamsoft Barcode Reader SDK C++ Edition.
-keywords: GetImageData, CComplementedBarcodeImageUnit, api reference
-permalink: /programming/cplusplus/api-reference/complemented-barcode-image-unit.html
+keywords: GetImageData, GetLocation, SetLocation, CComplementedBarcodeImageUnit, api reference
 ---
 # CComplementedBarcodeImageUnit Class
 The `CComplementedBarcodeImageUnit` class represents a unit that contains complemented barcode image data. It inherits from the `CIntermediateResultUnit` class.
@@ -24,28 +23,13 @@ class CComplementedBarcodeImageUnit: public CIntermediateResultUnit
 
 | Method                            | Description |
 |-----------------------------------|-------------|
-| [`GetLocation`](#getlocation) | Get the location of the complemented barcode in a quadrilateral.|
 | [`GetImageData`](#getimagedata) | Gets the complemented barcode image data.|
+| [`GetLocation`](#getlocation) | Gets the location of the complemented barcode in a quadrilateral.|
+| [`SetLocation`](#setlocation) | Sets the location of the complemented barcode in a quadrilateral.|
 
 ### Inherited Methods
 
 {%- include inherited-methods/intermediate-result-unit.md -%}
-
-### GetLocation
-
-Get the location of the complemented barcode in a quadrilateral.
-
-```cpp
-virtual CQuadrilateral GetLocation() const = 0;
-```
-
-**Return value**
-
-Returns the location of the complemented barcode in a quadrilateral.
-
-**See Also**
-
-[CQuadrilateral]({{ site.dcv_cpp_api }}core/basic-structures/quadrilateral.html)
 
 ### GetImageData
 
@@ -62,3 +46,42 @@ Returns a pointer to the complemented image of the barcode.
 **See Also**
 
 [CImageData]({{ site.dcv_cpp_api }}core/basic-structures/image-data.html)
+
+### GetLocation
+
+Gets the location of the complemented barcode in a quadrilateral.
+
+```cpp
+virtual CQuadrilateral GetLocation() const = 0;
+```
+
+**Return value**
+
+Returns the location of the complemented barcode in a quadrilateral.
+
+**See Also**
+
+[CQuadrilateral]({{ site.dcv_cpp_api }}core/basic-structures/quadrilateral.html)
+
+### SetLocation
+
+Sets the location of the complemented barcode in a quadrilateral.
+
+```cpp
+virtual int SetLocation(const CQuadrilateral& location, const double matrixToOriginalImage[9] = IDENTITY_MATRIX) = 0;
+```
+
+**Parameters**
+
+`location` The location of the complemented barcode.
+
+`matrixToOriginalImage` The matrix to original image.
+
+**Return value**
+
+Returns 0 if successful, otherwise returns a negative value.
+
+**See Also**
+
+[CQuadrilateral]({{ site.dcv_cpp_api }}core/basic-structures/quadrilateral.html)
+

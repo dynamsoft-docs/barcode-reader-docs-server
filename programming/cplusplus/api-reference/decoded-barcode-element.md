@@ -2,8 +2,7 @@
 layout: default-layout
 title: CDecodedBarcodeElement Class
 description: This page shows CDecodedBarcodeElement class definition of Dynamsoft Barcode Reader SDK C++ Edition.
-keywords: GetText, GetBytes, GetBytesLength, CDecodedBarcodeElement, api reference
-permalink: /programming/cplusplus/api-reference/decoded-barcode-element.html
+keywords: GetFormat, GetText, GetBytes, GetAngle, GetConfidence, IsDPM, CDecodedBarcodeElement, api reference
 ---
 # CDecodedBarcodeElement Class
 
@@ -25,7 +24,6 @@ class CDecodedBarcodeElement : public CRegionObjectElement
 
 | Method | Description |
 | --- | --- |
-| [`~CDecodedBarcodeElement`](#cdecodedbarcodeelement) | Destructor. |
 | [`GetFormat`](#getformat) | Gets the format of the barcode. |
 | [`GetFormatString`](#getformatstring) | Gets the string representation of the barcode format. |
 | [`GetText`](#gettext) | Gets the text of the decoded barcode. |
@@ -39,18 +37,14 @@ class CDecodedBarcodeElement : public CRegionObjectElement
 | [`GetConfidence`](#getconfidence) | Gets the confidence score of the barcode recognition result. |
 | [`GetExtendedBarcodeResultsCount`](#getextendedbarcoderesultscount) | Gets the number of extended barcode results for the decoded barcode.|
 | [`GetExtendedBarcodeResult`](#getextendedbarcoderesult) | Gets the extended barcode result at the specified index for the decoded barcode.|
+| [`SetFormat`](#setformat) | Sets the format of the barcode. |
+| [`SetText`](#settext) | Sets the text of the decoded barcode. |
+| [`SetBytes`](#setbytes)| Sets the raw bytes of the decoded barcode.|
+| [`SetConfidence`](#setconfidence) | Sets the confidence score of the barcode recognition result. |
 
 ### Inherited Methods
 
 {%- include inherited-methods/region-object-element.md -%}
-
-### ~CDecodedBarcodeElement
-
-Destructor.
-
-```cpp
-virtual ~CDecodedBarcodeElement() {}
-```
 
 ### GetFormat
 
@@ -228,3 +222,58 @@ Returns a pointer to the extended barcode result at the specified index for the 
 **See Also**
 
 [CExtendedBarcodeResult]({{ site.cpp_api }}extended-barcode-result.html)
+
+### SetFormat
+
+Sets the format of the barcode.
+
+```cpp
+virtual void SetFormat(BarcodeFormat format) = 0;
+```
+
+**Parameters**
+
+`[in] format` The format of the barcode.
+
+**See Also**
+
+[Enumeration BarcodeFormat]({{ site.dcv_enumerations }}barcode-reader/barcode-format.html?src=cpp&&lang=cpp)
+
+### SetText
+
+Sets the text of the barcode.
+
+```cpp
+virtual void SetText(const char* text) = 0;
+```
+
+**Parameters**
+
+`[in] text` The text of the barcode.
+
+### SetBytes
+
+Sets the raw bytes of the barcode.
+
+```cpp
+virtual void SetBytes(unsigned char* bytes, int bytesLength) = 0;
+```
+
+**Parameters**
+
+`[in] bytes` The raw bytes of the barcode.
+
+`[in] bytesLength` The length of the raw bytes of the decoded barcode.
+
+### SetConfidence
+
+Sets the confidence of the barcode.
+
+```cpp
+virtual void SetConfidence(int confidence) = 0;
+```
+
+**Parameters**
+
+`[in] confidence` The confidence of the barcode.
+

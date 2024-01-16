@@ -15,5 +15,4 @@ The following methods are inherited from class [`CIntermediateResultUnit`]({{ si
 | [`Release`]({{ site.dcv_cpp_api }}core/intermediate-results/intermediate-result-unit.html#release) | Decreases the reference count of the unit. |
 | [`GetTransformMatrix`]({{ site.dcv_cpp_api }}core/intermediate-results/intermediate-result-unit.html#gettransformmatrix) | Gets the transformation matrix via [`TransformMatrixType`]({{site.dcv_enumerations}}core/transform-matrix-type.html?src=cpp&&lang=cpp). |
 | [`SetTransformMatrix`]({{ site.dcv_cpp_api }}core/intermediate-results/intermediate-result-unit.html#settransformmatrix) | Sets the transformation matrix via [`TransformMatrixType`]({{site.dcv_enumerations}}core/transform-matrix-type.html?src=cpp&&lang=cpp). |
-| [`Replace`]({{ site.dcv_cpp_api }}core/intermediate-results/intermediate-result-unit.html#replace) | Replaces the `CIntermediateResultUnit` object to the specified `CIntermediateResultUnit` object. |
 

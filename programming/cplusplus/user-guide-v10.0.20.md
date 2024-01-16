@@ -137,8 +137,8 @@ for (int j = 0; j < capturedResultItemCount; j++)
 ### Release the Allocated Memory
 
 ```cpp
-result->Release();
 delete cvr, cvr = NULL;
+delete result, result = NULL;
 ```
 
 ### Build and Run the Project

@@ -3,7 +3,11 @@ The following methods are inherited from class [`CRegionObjectElement`]({{ site.
 
 | Method | Description |
 |--------|-------------|
-| [`GetLocation`]({{ site.dcv_cpp_api }}core/intermediate-results/region-object-element.html#getlocation) | Get the location of the region object element. |
-| [`GetReferencedElement`]({{ site.dcv_cpp_api }}core/intermediate-results/region-object-element.html#getreferencedelement) | Get a pointer to a referenced region object element. |
-| [`GetElementType`]({{ site.dcv_cpp_api }}core/intermediate-results/region-object-element.html#getelementtype) | Get the type of the region object element. |
+| [`GetLocation`]({{ site.dcv_cpp_api }}core/intermediate-results/region-object-element.html#getlocation) | Gets the location of the `CRegionObjectElement` object. |
+| [`GetReferencedElement`]({{ site.dcv_cpp_api }}core/intermediate-results/region-object-element.html#getreferencedelement) | Gets a pointer to a referenced `CRegionObjectElement` object. |
+| [`GetElementType`]({{ site.dcv_cpp_api }}core/intermediate-results/region-object-element.html#getelementtype) | Gets the type of the `CRegionObjectElement` object. |
+| [`SetLocation`]({{ site.dcv_cpp_api }}core/intermediate-results/region-object-element.html#setlocation) | Sets the location of the `CRegionObjectElement` object. |
+| [`Clone`]({{ site.dcv_cpp_api }}core/intermediate-results/region-object-element.html#clone) | Clones the region object element. |
+| [`Retain`]({{ site.dcv_cpp_api }}core/intermediate-results/region-object-element.html#retain) | Increases the reference count of the `CRegionObjectElement` object. |
+| [`Release`]({{ site.dcv_cpp_api }}core/intermediate-results/region-object-element.html#release) | Decreases the reference count of the `CRegionObjectElement` object. |
 
