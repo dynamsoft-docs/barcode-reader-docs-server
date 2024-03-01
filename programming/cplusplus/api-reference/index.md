@@ -24,6 +24,7 @@ needAutoGenerateSidebar: false
 
 - [`CCaptureStateListener`]({{ site.dcv_cpp_api }}capture-vision-router/auxiliary-classes/capture-state-listener.html)
 - [`CCaptureVisionRouterModule`]({{ site.dcv_cpp_api }}capture-vision-router/auxiliary-classes/capture-vision-router-module.html)
+- [`CCapturedResult`]({{ site.dcv_cpp_api }}capture-vision-router/auxiliary-classes/captured-result.html)
 - [`CCapturedResultFilter`]({{ site.dcv_cpp_api }}capture-vision-router/auxiliary-classes/captured-result-filter.html)
 - [`CCapturedResultReceiver`]({{ site.dcv_cpp_api }}capture-vision-router/auxiliary-classes/captured-result-receiver.html)
 - [`CImageSourceStateListener`]({{ site.dcv_cpp_api }}capture-vision-router/auxiliary-classes/image-source-state-listener.html)
@@ -81,7 +82,6 @@ needAutoGenerateSidebar: false
 - [`CAbstractIntermediateResultReceiver`]({{ site.dcv_cpp_api }}core/intermediate-results/abstract-intermediate-result-receiver.html)
 - [`CBinaryImageUnit`]({{ site.dcv_cpp_api }}core/intermediate-results/binary-image-unit.html)
 - [`CCapturedResultItem`]({{ site.dcv_cpp_api }}core/basic-structures/captured-result-item.html)
-- [`CCapturedResult`]({{ site.dcv_cpp_api }}core/basic-structures/captured-result.html)
 - [`CColourImageUnit`]({{ site.dcv_cpp_api }}core/intermediate-results/colour-image-unit.html)
 - [`CContoursUnit`]({{ site.dcv_cpp_api }}core/intermediate-results/contours-unit.html)
 - [`CContour`]({{ site.dcv_cpp_api }}core/basic-structures/contour.html)
