@@ -20,10 +20,6 @@
                 </div>
                 <div class="main row showRightSideMenu" id="articleContent" data-needh3="{{page.needGenerateH3Content}}">
                     <div class="content markdown-body headCounter {{noTitleIndex}} col-xs-12 col-md-12 col-lg-9 col-xl-10 showRightSideMenu" style="margin-bottom: 20px;">
-                        <div class="dbrThanksDownloading">
-                            <p class="thanksDownloadTitle">Thanks for downloading Dynamsoft Barcode Reader <span class="editionName"></span> Package!</p>
-                            <p style="margin-bottom: 0;">Your download will start shortly. If your download does not begin, <a class="bluelink downloadlink" href="">click here to retry</a>.</p>
-                        </div>
                         {{ content }}
 
                     </div>
@@ -90,27 +86,6 @@
         }
 
         $(document).ready(function() {
-            var download = getUrlParam('download');
-            if (download == 'true' && (getCookie('DynamsoftEmail') || getCookie('SourceServer') == '1')) {
-                var curHref = window.location.href.toLowerCase()
-                if (curHref.indexOf('/c/') > -1 || curHref.indexOf('/cplusplus/') > -1) {
-                    $('.editionName').html('C/C++');
-                    $('.downloadlink').attr('href', 'https://download2.dynamsoft.com/dbr/dynamsoft-barcode-reader-cpp-10.2.0.zip');
-                    $('.dbrThanksDownloading').show();
-                    $('.downloadlink')[0].click();
-                } else if (curHref.indexOf('/dotnet/') > -1) {
-                    $('.editionName').html('.NET');
-                    $('.downloadlink').attr('href', 'https://download2.dynamsoft.com/dbr/dynamsoft-barcode-reader-dotnet-9.6.30.zip');
-                    $('.dbrThanksDownloading').show();
-                    $('.downloadlink')[0].click();
-                } else if (curHref.indexOf('/java/') > -1) {
-                    $('.editionName').html('Java');
-                    $('.downloadlink').attr('href', 'https://download2.dynamsoft.com/dbr/dynamsoft-barcode-reader-java-9.6.30.zip');
-                    $('.dbrThanksDownloading').show();
-                    $('.downloadlink')[0].click();
-                }
-            }
-
             $('#txtSearch').keydown(function(e) {
                 if (e.keyCode == 13) {
                     let lang = getCurrentUrlLang(document.URL, true)

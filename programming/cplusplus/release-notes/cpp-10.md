@@ -9,6 +9,50 @@ permalink: /programming/cplusplus/release-notes/cpp-10.html
 
 # Release Notes for C++ Edition - 10.x
 
+## 10.2.10 (03/01/2024)
+
+### Improved
+
+- Security update for `DynamsoftBarcodeReader` library and other corresponding libraries.
+- Supported multiple instances of the class [`CCaptureVisionRouter`]({{ site.dcv_cpp_api }}capture-vision-router/capture-vision-router.html).
+- Improved the usage count logic of the concurrent license mode.
+- Improved the experience of local cache usage when failing to connect the license server. The renewal of the local cache is optimized as well.
+
+### New
+
+- Added new error codes:
+  - `EC_RESULT_TYPE_MISMATCH_IRREPLACEABLE`
+  - `EC_LICENSE_CACHE_USED`
+- Added a virtual destructor to the interface [`CImageSourceErrorListener`]({{ site.dcv_cpp_api }}core/basic-structures/image-source-error-listener.html) to prevent memory leaks.
+- Added new functions to get different types of captured results.
+- Added a new function [`GetDecodedBarcodesResult`]({{ site.dcv_cpp_api }}capture-vision-router/auxiliary-classes/captured-result.html#getdecodedbarcodesresult) to the `CCapturedResult` class to get all the result items with the type `CRIT_BARCODE`.
+- Added a new function [`GetRecognizedTextLinesResult`]({{ site.dcv_cpp_api }}capture-vision-router/auxiliary-classes/captured-result.html#getrecognizedtextlinesresult) to the `CCapturedResult` class to get all the result items with the type `CRIT_TEXT_LINE`.
+- Added a new function [`GetDetectedQuadsResult`]({{ site.dcv_cpp_api }}capture-vision-router/auxiliary-classes/captured-result.html#getdetectedquadsresult) to the `CCapturedResult` class to get all the result items with the type `CRIT_DETECTED_QUAD`.
+- Added a new function [`GetNormalizedImagesResult`]({{ site.dcv_cpp_api }}capture-vision-router/auxiliary-classes/captured-result.html#getnormalizedimagesresult) to the `CCapturedResult` class to get all the result items with the type `CRIT_NORMALIZED_IMAGE`.
+- Added a new function [`GetParsedResult`]({{ site.dcv_cpp_api }}capture-vision-router/auxiliary-classes/captured-result.html#getparsedresult) to the `CCapturedResult` class to get all the result items with the type `CRIT_PARSED_RESULT`.
+- Added new virtual destructors to the following interfaces to prevent memory leaks.
+  - [`CCaptureStateListener`]({{ site.dcv_cpp_api }}capture-vision-router/auxiliary-classes/capture-state-listener.html)
+  - [`CImageSourceStateListener`]({{ site.dcv_cpp_api }}capture-vision-router/auxiliary-classes/image-source-state-listener.html)
+
+### Changed
+
+- Changed the internal logic of the function [`SetResultUnitTypesOnlyForInput`]({{ site.dcv_cpp_api }}core/intermediate-results/observed-parameters.html#setresultunittypesonlyforinput) of `ObservationParameters`. The function only takes effect when the callback of the specified result unit is implemented.
+
+### Fixed
+
+- Fixed a crash bug of the Replace method of the [`IntermediateResultUnit`]({{ site.dcv_cpp_api }}core/intermediate-results/intermediate-result-unit.html) class. The method will return the error code `EC_RESULT_TYPE_MISMATCH_IRREPLACEABLE` when the result type is mismatched.
+- Fixed a bug where error messages are not output when parsing the parameter templates.
+- Fixed a misreading bug of the PDF417 barcodes on the South Carolina driver's license.
+- Internal changes to prevent crash bugs in barcode decoding.
+- Fixed a bug where the capture might be blocked due to the network latency.
+- Fixed a bug where the `DetectAndNormalizeDocument` task might be approved without a valid license.
+- Fixed the bugs of usage count.
+  - Count twice for a single PDF417 barcode when a code parser task is implemented on the result.
+  - The barcode decoding result might not be uploaded timely.
+  - The usage count of text line recognition might be double counted when the intermediate results are output.
+  - The document boundary detection result might be miscounted.
+  - Patchcode might be counted even if there is no Patchcode license item.
+
 ## 10.2.0 (01/16/2024)
 
 ### Highlights
