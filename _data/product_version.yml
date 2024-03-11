@@ -4,10 +4,10 @@ version_info_list_desktop:
   - value: latest version
   - value: 10.x
     child:
-      - 10.2.0
-      - 10.0.20
-      - 10.0.10
-      - 10.0.0
+      - 10.2.0_cplusplus
+      - 10.0.20_cplusplus
+      - 10.0.10_cplusplus
+      - 10.0.0_cplusplus
   - value: 9.x
     child:
       - 9.6.30
