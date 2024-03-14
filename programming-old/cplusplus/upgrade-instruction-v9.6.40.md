@@ -4,7 +4,7 @@ title: Upgrade Instruction - Dynamsoft Barcode Reader SDK C++ Edition
 description: This page shows how to upgrade to version 9.x.
 keywords: Upgrade, how-to guides
 needAutoGenerateSidebar: false
-permalink: /programming/cplusplus/upgrade-instruction-v9.6.30.html
+permalink: /programming/cplusplus/upgrade-instruction-v9.6.40.html
 ---
 
 

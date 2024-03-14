@@ -5,7 +5,7 @@ description: This is the main page of Dynamsoft Barcode Reader SDK C++ Edition.
 keywords: c++
 needAutoGenerateSidebar: false
 breadcrumbText: C++
-permalink: /programming/cplusplus/index-v9.6.30.html
+permalink: /programming/cplusplus/index-v9.6.40.html
 ---
 
 # Dynamsoft Barcode Reader C++ Edition Introduction

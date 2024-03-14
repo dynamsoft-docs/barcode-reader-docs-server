@@ -10,6 +10,7 @@ version_info_list_desktop:
       - 10.0.0_cplusplus
   - value: 9.x
     child:
+      - 9.6.40
       - 9.6.30
       - 9.6.20
       - 9.6.10

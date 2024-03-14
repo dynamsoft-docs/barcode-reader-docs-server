@@ -454,6 +454,12 @@ enum Dynamsoft.DBR.EnumErrorCode
   |-------------------|-------------------|-------------|
   | `DMERR_TRIAL_LICENSE` | -20010 | Using a trial license. |
 
+### Error code -20012
+
+  | Error Code | Value | Description |
+  |-------------------|-------------------|-------------|
+  | `DMERR_LICENSE_CACHE_USED` | -20012 | Online license validation failed due to network issues. Using cached license information for validation. |
+
 ### Error code -20200
 
   | Error Code | Value | Description |

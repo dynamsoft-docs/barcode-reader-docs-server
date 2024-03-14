@@ -1,14 +1,20 @@
 ---
 layout: default-layout
-title: Error Code - Dynamsoft Barcode Reader SDK C/C++ Edition
-description: This article enumerates the error codes of Dynamsoft Barcode Reader SDK C/C++ Edition
+title: Error Code - Dynamsoft Barcode Reader SDK Python Edition
+description: This article enumerates the error codes of Dynamsoft Barcode Reader SDK Python Edition
 keywords: error code, enumeration
-permalink: /programming/c-cplusplus/enumeration/error-code.html
+permalink: /programming/python/api-reference/enumeration/error-code-v9.6.30.html
 ---
 
 # Error Code
-  
-## Error code common to all programming languages
+
+## Declarations
+
+```python
+class EnumErrorCode(IntEnum)
+```
+
+## Members
 
 ### Error code 0
 
@@ -435,12 +441,6 @@ permalink: /programming/c-cplusplus/enumeration/error-code.html
   | Error Code | Value | Description |
   |-------------------|-------------------|-------------|
   | `DMERR_TRIAL_LICENSE` | -20010 | Using a trial license. |
-
-### Error code -20012
-
-  | Error Code | Value | Description |
-  |-------------------|-------------------|-------------|
-  | `DMERR_LICENSE_CACHE_USED` | -20012 | Online license validation failed due to network issues. Using cached license information for validation. |
 
 ### Error code -20200
 

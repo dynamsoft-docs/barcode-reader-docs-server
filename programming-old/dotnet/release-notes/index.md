@@ -10,6 +10,7 @@ permalink: /programming/dotnet/release-notes/index.html
 
 # Release Notes for .NET Edition
 
+- [9.6.40 (03/14/2024)](dotnet-9.md#9640-03142024)
 - [9.6.30 (08/29/2023)](dotnet-9.md#9630-08292023)
 - [9.6.20 (03/16/2023)](dotnet-9.md#9620-03162023)
 - [9.6.10 (01/10/2023)](dotnet-9.md#9610-01102023)
