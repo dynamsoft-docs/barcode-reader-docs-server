@@ -6,7 +6,7 @@ keywords: user guide, python
 needAutoGenerateSidebar: true
 needGenerateH3Content: true
 noTitleIndex: true
-permalink: /programming/python/user-guide.html
+permalink: /programming/python/user-guide-v9.6.30.html
 ---
 
 # Getting Started with Dynamsoft Barcode Reader Python Edition
@@ -21,7 +21,6 @@ In this guide, you will learn step by step on how to build a barcode reading app
   - macOS (10.15+)
 
 - Python Versions:
-  - Python 3.12
   - Python 3.11
   - Python 3.10
   - Python 3.9

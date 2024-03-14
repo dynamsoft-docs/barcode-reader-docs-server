@@ -158,7 +158,7 @@ permalink: /programming/cplusplus/release-notes/cpp-10.html
 
 - Fixed a crash bug that might happen when triggering the `SetNextImageToReturn` method of the `ImageSourceAdapter` class.
 
-#### Break Changes
+#### Breaking Changes
 
 - Changed the logic of the `StopCapturing` method.
   - `CaptureResultReceiver` will not receive results after `StopCapturing` is triggered with `waitForRemainingTasks` false.
