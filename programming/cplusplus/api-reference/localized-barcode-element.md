@@ -1,6 +1,6 @@
 ---
 layout: default-layout
-title: CLocalizedBarcodeElement Class
+title: CLocalizedBarcodeElement Class - Dynamsoft Barcode Reader C++ Edition API Reference
 description: This page shows CLocalizedBarcodeElement class definition of Dynamsoft Barcode Reader SDK C++ Edition.
 keywords: GetAngle, GetConfidence, GetPossibleFormats, GetPossibleFormatsString, GetModuleSize, SetPossibleFormats, CLocalizedBarcodeElement, api reference
 ---

@@ -6,7 +6,7 @@ keywords: user guide index, CPP
 permalink: /programming/cplusplus/user-guide/index.html
 ---
 
-# CPP Edition User Guide Index
+# CPP Edition User Guide
 
 These articles will help you get the most out of Dynamsoft Barcode Reader CPP Edition.
 

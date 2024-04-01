@@ -1,6 +1,6 @@
 ---
 layout: default-layout
-title: CCandidateBarcodeZonesUnit Class
+title: CCandidateBarcodeZonesUnit Class - Dynamsoft Barcode Reader C++ Edition API Reference
 description: This page shows CCandidateBarcodeZonesUnit class definition of Dynamsoft Barcode Reader SDK C++ Edition.
 keywords: GetCount, GetCandidateBarcodeZone, AddCandidateBarcodeZone, RemoveAllCandidateBarcodeZones, RemoveCandidateBarcodeZone, SetCandidateBarcodeZone, CCandidateBarcodeZonesUnit, api reference
 ---

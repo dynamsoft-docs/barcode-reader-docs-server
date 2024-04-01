@@ -6,7 +6,7 @@ keywords: user guide index, Python
 permalink: /programming/python/user-guide/index.html
 ---
 
-# Python Edition User Guide Index
+# Python Edition User Guide
 
 These articles will help you get the most out of Dynamsoft Barcode Reader Python Edition.
 

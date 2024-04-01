@@ -1,6 +1,6 @@
 ---
 layout: default-layout
-title: class CBarcodeReaderModule - Dynamsoft Barcode Reader Classes
+title: CBarcodeReaderModule Class - Dynamsoft Barcode Reader C++ Edition API Reference
 description: This page shows the C++ edition of the class CBarcodeReaderModule in Barcode Reader Module.
 keywords: barcode reader module, c++
 needAutoGenerateSidebar: true

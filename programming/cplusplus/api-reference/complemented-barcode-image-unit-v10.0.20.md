@@ -1,6 +1,6 @@
 ---
 layout: default-layout
-title: CComplementedBarcodeImageUnit Class
+title: CComplementedBarcodeImageUnit Class - Dynamsoft Barcode Reader C++ Edition API Reference
 description: This page shows CComplementedBarcodeImageUnit class definition of Dynamsoft Barcode Reader SDK C++ Edition.
 keywords: GetImageData, CComplementedBarcodeImageUnit, api reference
 ---
