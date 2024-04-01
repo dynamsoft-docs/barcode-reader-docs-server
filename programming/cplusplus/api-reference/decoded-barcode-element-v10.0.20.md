@@ -1,6 +1,6 @@
 ---
 layout: default-layout
-title: CDecodedBarcodeElement Class
+title: CDecodedBarcodeElement Class - Dynamsoft Barcode Reader C++ Edition API Reference
 description: This page shows CDecodedBarcodeElement class definition of Dynamsoft Barcode Reader SDK C++ Edition.
 keywords: GetText, GetBytes, GetBytesLength, CDecodedBarcodeElement, api reference
 ---

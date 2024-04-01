@@ -6,7 +6,7 @@ keywords: user guide index, Java
 permalink: /programming/java/user-guide/index.html
 ---
 
-# Java Edition User Guide Index
+# Java Edition User Guide
 
 These articles will help you get the most out of Dynamsoft Barcode Reader Java Edition.
 

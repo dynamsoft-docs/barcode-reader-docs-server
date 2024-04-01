@@ -1,6 +1,6 @@
 ---
 layout: default-layout
-title: CDeformationResistedBarcode Class
+title: CDeformationResistedBarcode Class - Dynamsoft Barcode Reader C++ Edition API Reference
 description: This page shows CDeformationResistedBarcode class definition of Dynamsoft Barcode Reader SDK C++ Edition.
 keywords: GetLocation, SetLocation, GetFormat, SetFormat, GetImageData, SetImageData, CDeformationResistedBarcode, api reference
 ---

@@ -6,7 +6,7 @@ keywords: user guide index, .NET
 permalink: /programming/dotnet/user-guide/index.html
 ---
 
-# .NET Edition User Guide Index
+# .NET Edition User Guide
 
 These articles will help you get the most out of Dynamsoft Barcode Reader .NET Edition.
 

@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: Main Page - Dynamsoft Barcode Reader SDK .NET Edition Enumerations
-description: This article shows the main page of Dynamsoft Barcode Reader Enumerations.
+description: This article shows the main page of Dynamsoft Barcode Reader .NET Edition Enumerations.
 keywords: enumerations
 breadcrumbText: Enumerations
 permalink: /programming/dotnet/api-reference/enumeration/

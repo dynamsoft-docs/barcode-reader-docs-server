@@ -6,7 +6,7 @@ keywords: user guide index, C
 permalink: /programming/c/user-guide/index.html
 ---
 
-# C Edition User Guide Index
+# C Edition User Guide
 
 These articles will help you get the most out of Dynamsoft Barcode Reader SDK C Edition.
 

@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: Main Page - Dynamsoft Barcode Reader SDK Java Edition Enumerations
-description: This article shows the main page of Dynamsoft Barcode Reader Enumerations.
+description: This article shows the main page of Dynamsoft Barcode Reader Java Edition Enumerations.
 keywords: enumerations
 permalink: /programming/java/api-reference/enumeration/
 ---

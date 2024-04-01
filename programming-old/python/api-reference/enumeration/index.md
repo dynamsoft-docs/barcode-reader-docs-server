@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: Main Page - Dynamsoft Barcode Reader SDK Python Edition Enumerations
-description: This article shows the main page of Dynamsoft Barcode Reader Enumerations.
+description: This article shows the main page of Dynamsoft Barcode Reader Python Edition Enumerations.
 keywords: enumerations
 permalink: /programming/python/api-reference/enumeration/
 ---
