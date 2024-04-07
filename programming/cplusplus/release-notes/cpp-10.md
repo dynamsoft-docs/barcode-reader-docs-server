@@ -17,6 +17,9 @@ permalink: /programming/cplusplus/release-notes/cpp-10.html
 - Supported multiple instances of the class [`CCaptureVisionRouter`]({{ site.dcv_cpp_api }}capture-vision-router/capture-vision-router.html).
 - Improved the usage count logic of the concurrent license mode.
 - Improved the experience of local cache usage when failing to connect the license server. The renewal of the local cache is optimized as well.
+- Improved the barcode decoding performance:
+  - Improved the accuracy when decoding OneD & PDF417 barcodes.
+  - Improved the readability of dense DataMatrix codes.
 
 ### New
 
