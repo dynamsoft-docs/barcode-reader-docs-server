@@ -5,7 +5,7 @@ description: This is the main page of Dynamsoft Barcode Reader SDK .NET Edition 
 keywords: api reference, .Net
 needAutoGenerateSidebar: true
 needGenerateH3Content: true
-permalink: /programming/dotnet/api-reference/index.html
+permalink: /programming/dotnet/api-reference/index-v9.6.40.html
 ---
 
 # .Net API Reference
@@ -189,63 +189,63 @@ permalink: /programming/dotnet/api-reference/index.html
 
   | Enumeration | Description |
   |-------------|-------------|
-  | [`BarcodeFormat`]({{ site.dotnet_enumerations }}format-enums.html#barcodeformat) | Describes the barcode types in BarcodeFormat group 1. |
-  | [`BarcodeFormat_2`]({{ site.dotnet_enumerations }}format-enums.html#barcodeformat_2) | Describes the barcode types in BarcodeFormat group 2. |
+  | [`BarcodeFormat`]({{ site.dbr_dotnet_enumerations }}format-enums.html#barcodeformat) | Describes the barcode types in BarcodeFormat group 1. |
+  | [`BarcodeFormat_2`]({{ site.dbr_dotnet_enumerations }}format-enums.html#barcodeformat_2) | Describes the barcode types in BarcodeFormat group 2. |
 
 ### Parameter Mode Enumeration
 
   | Enumeration | Description |
   |-------------|-------------|
-  | [`BarcodeColourMode`]({{ site.dotnet_enumerations }}parameter-mode-enums.html#barcodecolourmode) | Describes the barcode colour mode. |
-  | [`BarcodeComplementMode`]({{ site.dotnet_enumerations }}parameter-mode-enums.html#barcodecomplementmode) | Describes the barcode complement mode. |
-  | [`BinarizationMode`]({{ site.dotnet_enumerations }}parameter-mode-enums.html#binarizationmode) | Describes the binarization mode. |
-  | [`ColourClusteringMode`]({{ site.dotnet_enumerations }}parameter-mode-enums.html#colourclusteringmode) | Describes the colour clustering mode. |
-  | [`ColourConversionMode`]({{ site.dotnet_enumerations }}parameter-mode-enums.html#colourconversionmode) | Describes the colour conversion mode. |
-  | [`ConflictMode`]({{ site.dotnet_enumerations }}parameter-mode-enums.html#conflictmode) | Describes the conflict mode. |
-  | [`DeblurMode`]({{ site.dotnet_enumerations }}parameter-mode-enums.html#deblurmode) | Describes the deblur mode. |
-  | [`DeformationResistingMode`]({{ site.dotnet_enumerations }}parameter-mode-enums.html#deformationresistingmode) | Describes the deformation resisting mode. |
-  | [`DPMCodeReadingMode`]({{ site.dotnet_enumerations }}parameter-mode-enums.html#dpmcodereadingmode) | Describes the DPM code reading mode. |
-  | [`GrayscaleTransformationMode`]({{ site.dotnet_enumerations }}parameter-mode-enums.html#grayscaletransformationmode) | Describes the grayscale transformation mode. |
-  | [`ImagePreprocessingMode`]({{ site.dotnet_enumerations }}parameter-mode-enums.html#imagepreprocessingmode) | Describes the image preprocessing mode. |
-  | [`LocalizationMode`]({{ site.dotnet_enumerations }}parameter-mode-enums.html#localizationmode) | Describes the localization mode. | 
-  | [`PDFReadingMode`]({{ site.dotnet_enumerations }}parameter-mode-enums.html#pdfreadingmode) | Describes the PDF reading mode. |
-  | [`RegionPredetectionMode`]({{ site.dotnet_enumerations }}parameter-mode-enums.html#regionpredetectionmode) | Describes the region predetection mode. |
-  | [`ScaleUpMode`]({{ site.dotnet_enumerations }}parameter-mode-enums.html#scaleupmode) | Describes the scale up mode. |
-  | [`TerminatePhase`]({{ site.dotnet_enumerations }}parameter-mode-enums.html#terminatephase) | Describes the terminate phase. |
-  | [`TextFilterMode`]({{ site.dotnet_enumerations }}parameter-mode-enums.html#textfiltermode) | Describes the text filter mode. |
-  | [`TextureDetectionMode`]({{ site.dotnet_enumerations }}parameter-mode-enums.html#texturedetectionmode) | Describes the texture detection mode. | 
+  | [`BarcodeColourMode`]({{ site.dbr_dotnet_enumerations }}parameter-mode-enums.html#barcodecolourmode) | Describes the barcode colour mode. |
+  | [`BarcodeComplementMode`]({{ site.dbr_dotnet_enumerations }}parameter-mode-enums.html#barcodecomplementmode) | Describes the barcode complement mode. |
+  | [`BinarizationMode`]({{ site.dbr_dotnet_enumerations }}parameter-mode-enums.html#binarizationmode) | Describes the binarization mode. |
+  | [`ColourClusteringMode`]({{ site.dbr_dotnet_enumerations }}parameter-mode-enums.html#colourclusteringmode) | Describes the colour clustering mode. |
+  | [`ColourConversionMode`]({{ site.dbr_dotnet_enumerations }}parameter-mode-enums.html#colourconversionmode) | Describes the colour conversion mode. |
+  | [`ConflictMode`]({{ site.dbr_dotnet_enumerations }}parameter-mode-enums.html#conflictmode) | Describes the conflict mode. |
+  | [`DeblurMode`]({{ site.dbr_dotnet_enumerations }}parameter-mode-enums.html#deblurmode) | Describes the deblur mode. |
+  | [`DeformationResistingMode`]({{ site.dbr_dotnet_enumerations }}parameter-mode-enums.html#deformationresistingmode) | Describes the deformation resisting mode. |
+  | [`DPMCodeReadingMode`]({{ site.dbr_dotnet_enumerations }}parameter-mode-enums.html#dpmcodereadingmode) | Describes the DPM code reading mode. |
+  | [`GrayscaleTransformationMode`]({{ site.dbr_dotnet_enumerations }}parameter-mode-enums.html#grayscaletransformationmode) | Describes the grayscale transformation mode. |
+  | [`ImagePreprocessingMode`]({{ site.dbr_dotnet_enumerations }}parameter-mode-enums.html#imagepreprocessingmode) | Describes the image preprocessing mode. |
+  | [`LocalizationMode`]({{ site.dbr_dotnet_enumerations }}parameter-mode-enums.html#localizationmode) | Describes the localization mode. | 
+  | [`PDFReadingMode`]({{ site.dbr_dotnet_enumerations }}parameter-mode-enums.html#pdfreadingmode) | Describes the PDF reading mode. |
+  | [`RegionPredetectionMode`]({{ site.dbr_dotnet_enumerations }}parameter-mode-enums.html#regionpredetectionmode) | Describes the region predetection mode. |
+  | [`ScaleUpMode`]({{ site.dbr_dotnet_enumerations }}parameter-mode-enums.html#scaleupmode) | Describes the scale up mode. |
+  | [`TerminatePhase`]({{ site.dbr_dotnet_enumerations }}parameter-mode-enums.html#terminatephase) | Describes the terminate phase. |
+  | [`TextFilterMode`]({{ site.dbr_dotnet_enumerations }}parameter-mode-enums.html#textfiltermode) | Describes the text filter mode. |
+  | [`TextureDetectionMode`]({{ site.dbr_dotnet_enumerations }}parameter-mode-enums.html#texturedetectionmode) | Describes the texture detection mode. | 
 
 ### Result Related Enumeration
 
   | Enumeration | Description |
   |-------------|-------------|
-  | [`IMResultDataType`]({{ site.dotnet_enumerations }}result-enums.html#imresultdatatype) | Describes the intermediate result data type. |
-  | [`IntermediateResultSavingMode`]({{ site.dotnet_enumerations }}result-enums.html#intermediateresultsavingmode) | Describes the intermediate result saving mode. |
-  | [`IntermediateResultType`]({{ site.dotnet_enumerations }}result-enums.html#intermediateresulttype) | Describes the intermediate result type. |
-  | [`ResultCoordinateType`]({{ site.dotnet_enumerations }}result-enums.html#resultcoordinatetype) | Describes the result coordinate type. |
-  | [`ResultType`]({{ site.dotnet_enumerations }}result-enums.html#resulttype) | Describes the extended result type. |
-  | [`TextResultOrderMode`]({{ site.dotnet_enumerations }}result-enums.html#textresultordermode) | Describes the text result order mode. |
+  | [`IMResultDataType`]({{ site.dbr_dotnet_enumerations }}result-enums.html#imresultdatatype) | Describes the intermediate result data type. |
+  | [`IntermediateResultSavingMode`]({{ site.dbr_dotnet_enumerations }}result-enums.html#intermediateresultsavingmode) | Describes the intermediate result saving mode. |
+  | [`IntermediateResultType`]({{ site.dbr_dotnet_enumerations }}result-enums.html#intermediateresulttype) | Describes the intermediate result type. |
+  | [`ResultCoordinateType`]({{ site.dbr_dotnet_enumerations }}result-enums.html#resultcoordinatetype) | Describes the result coordinate type. |
+  | [`ResultType`]({{ site.dbr_dotnet_enumerations }}result-enums.html#resulttype) | Describes the extended result type. |
+  | [`TextResultOrderMode`]({{ site.dbr_dotnet_enumerations }}result-enums.html#textresultordermode) | Describes the text result order mode. |
 
 ### Frame Decoding Enumeration
 
   | Enumeration | Description |
   |-------------|-------------|
-  | [`ClarityCalculationMethod`]({{ site.dotnet_enumerations }}frame-decoding-enums.html#claritycalculationmethod) | Describes the clarity calculation method. |
-  | [`ClarityFilterMode`]({{ site.dotnet_enumerations }}frame-decoding-enums.html#clarityfiltermode) | Describes the clarity filter mode. |
+  | [`ClarityCalculationMethod`]({{ site.dbr_dotnet_enumerations }}frame-decoding-enums.html#claritycalculationmethod) | Describes the clarity calculation method. |
+  | [`ClarityFilterMode`]({{ site.dbr_dotnet_enumerations }}frame-decoding-enums.html#clarityfiltermode) | Describes the clarity filter mode. |
   
 ### Other Enumeration
 
   | Enumeration | Description |
   |-------------|-------------|
-  | [`DM_ChargeWay`]({{ site.dotnet_enumerations }}other-enums.html#dm_chargeway) | `Deprecated` |
-  | [`DM_DeploymentType`]({{ site.dotnet_enumerations }}other-enums.html#dm_deploymenttype) | `Deprecated` |
-  | [`DM_LicenseModule`]({{ site.dotnet_enumerations }}other-enums.html#dm_licensemodule) | `Deprecated` |
-  | [`DM_UUIDGenerationMethod`]({{ site.dotnet_enumerations }}other-enums.html#dm_uuidgenerationmethod) | `Deprecated` |
-  | [`ImagePixelFormat`]({{ site.dotnet_enumerations }}other-enums.html#imagepixelformat) | Describes the image pixel format. |
-  | [`QRCodeErrorCorrectionLevel`]({{ site.dotnet_enumerations }}other-enums.html#qrcodeerrorcorrectionlevel) | Describes the QR Code error correction level. |
-  | [`Product`]({{ site.dotnet_enumerations }}other-enums.html#product) | `Deprecated` |
+  | [`DM_ChargeWay`]({{ site.dbr_dotnet_enumerations }}other-enums.html#dm_chargeway) | `Deprecated` |
+  | [`DM_DeploymentType`]({{ site.dbr_dotnet_enumerations }}other-enums.html#dm_deploymenttype) | `Deprecated` |
+  | [`DM_LicenseModule`]({{ site.dbr_dotnet_enumerations }}other-enums.html#dm_licensemodule) | `Deprecated` |
+  | [`DM_UUIDGenerationMethod`]({{ site.dbr_dotnet_enumerations }}other-enums.html#dm_uuidgenerationmethod) | `Deprecated` |
+  | [`ImagePixelFormat`]({{ site.dbr_dotnet_enumerations }}other-enums.html#imagepixelformat) | Describes the image pixel format. |
+  | [`QRCodeErrorCorrectionLevel`]({{ site.dbr_dotnet_enumerations }}other-enums.html#qrcodeerrorcorrectionlevel) | Describes the QR Code error correction level. |
+  | [`Product`]({{ site.dbr_dotnet_enumerations }}other-enums.html#product) | `Deprecated` |
 
-### [Error Code]({{ site.dotnet_enumerations }}error-code.html)
+### [Error Code]({{ site.dbr_dotnet_enumerations }}error-code.html)
 
 
 ## Delegates

@@ -90,7 +90,7 @@ Returns a pointer to the CBarcodeResultItem object at the specified index.
 
 **See Also**
 
-[CBarcodeResultItem]({{ site.cpp_api }}barcode-result-item.html)
+[CBarcodeResultItem]({{ site.dbr_cpp_api }}barcode-result-item.html)
 
 ### HasItem
 
@@ -110,7 +110,7 @@ Returns a bool value indicating whether the item is present in the array or not.
 
 **See Also**
 
-[CBarcodeResultItem]({{ site.cpp_api }}barcode-result-item.html)
+[CBarcodeResultItem]({{ site.dbr_cpp_api }}barcode-result-item.html)
 
 ### RemoveItem
 
@@ -130,7 +130,7 @@ Return value indicating whether the deletion was successful or not.
 
 **See Also**
 
-[CBarcodeResultItem]({{ site.cpp_api }}barcode-result-item.html)
+[CBarcodeResultItem]({{ site.dbr_cpp_api }}barcode-result-item.html)
 
 ### GetRotationTransformMatrix
 

@@ -199,7 +199,7 @@ static InstancePoolStatus com.dynamsoft.dbr.BarcodeReader.getInstancePoolStatus(
 
 **Return Value**
 
-Returns the [`InstancePoolStatus`]({{ site.java_class }}InstancePoolStatus.html) class representing the status of an instance pool.
+Returns the [`InstancePoolStatus`]({{ site.dbr_java_class }}InstancePoolStatus.html) class representing the status of an instance pool.
 
 **Exception**
 

@@ -32,17 +32,17 @@ permalink: /programming/cplusplus/release-notes/cpp-8.html
 #### New
 
 - Added ARM64 components to the SDK.
-- Added a new `LocalizationModes` item [`LM_ONED_FAST_SCAN`]({{site.parameters_reference}}localization-modes.html#lm_oned_fast_scan), which significantly improved the localization speed for 1D barcodes.
+- Added a new `LocalizationModes` item [`LM_ONED_FAST_SCAN`]({{site.dbr_parameters_reference}}localization-modes.html#lm_oned_fast_scan), which significantly improved the localization speed for 1D barcodes.
 
 #### Improved
 
 - Improved the confidence calculation algorithm for 2D barcode results. Users can get even more accurate results by configuring the confidence filter.
-- Improved the barcode reading speed by applying the localized barcodes filter. The barcodes will be filtered according to the parameters [`BarcodeHeightRangeArray`]({{site.parameters_reference}}barcode-height-range-array.html), [`BarcodeWidthRangeArray`]({{site.parameters_reference}}barcode-width-range-array.html), [`BarcodeAngleRangeArray`]({{site.parameters_reference}}barcode-angle-range-array.html) and [`MinRatioOfBarcodeZoneWidthToHeight`]({{site.parameters_reference}}min-ratio-of-barcode-zone-width-to-height.html).
+- Improved the barcode reading speed by applying the localized barcodes filter. The barcodes will be filtered according to the parameters [`BarcodeHeightRangeArray`]({{site.dbr_parameters_reference}}barcode-height-range-array.html), [`BarcodeWidthRangeArray`]({{site.dbr_parameters_reference}}barcode-width-range-array.html), [`BarcodeAngleRangeArray`]({{site.dbr_parameters_reference}}barcode-angle-range-array.html) and [`MinRatioOfBarcodeZoneWidthToHeight`]({{site.dbr_parameters_reference}}min-ratio-of-barcode-zone-width-to-height.html).
 - Updated the exception message when the full license is invalid or has expired.
 
 #### Breaking Change(s)
 
-- The low confidence barcode results will no longer be returned by default. The default value of parameter [`minResultConfidence`]({{site.parameters_reference}}min-result-confidence.html) is preset to 30, which can filter out the majority of misreading results and keep as many correct results as possible.
+- The low confidence barcode results will no longer be returned by default. The default value of parameter [`minResultConfidence`]({{site.dbr_parameters_reference}}min-result-confidence.html) is preset to 30, which can filter out the majority of misreading results and keep as many correct results as possible.
 
 ## 8.6.0 (07/15/2021)
 
@@ -60,16 +60,16 @@ permalink: /programming/cplusplus/release-notes/cpp-8.html
 
 #### Improved
 
-- Improved the [`confidence`]({{site.structs}}ExtendedResult.html?src=cpp#confidence) algorithm for 1D barcode results. Users can get even more accurate results by configuring the `confidence` filter.
+- Improved the [`confidence`]({{site.dbr_structs}}ExtendedResult.html?src=cpp#confidence) algorithm for 1D barcode results. Users can get even more accurate results by configuring the `confidence` filter.
 
 ## 8.4.0 (06/08/2021)
 
 ### New
 
-- Added a new method [`GetIdleInstancesCount`]({{site.cpp_methods}}license.html#getidleinstancescount) to return the number of available instances when using the 'per concurrent instance' licensing model.
-- Added the [`organizationID`]({{site.structs}}DMLTSConnectionParameters.html?src=cpp#organizationid) property for license authentication.
-- Added a new attribute [`isMirrored`]({{site.structs}}TextResult.html?src=cpp#ismirrored) to the `TextResult` class. `isMirrored` returns whether the barcode is mirrored.
-- Added a new attribute [`isDPM`]({{site.structs}}TextResult.html?src=cpp#isdpm) to the `TextResult` class. `isDPM` returns whether the barcode is recognized by the DPM mode.
+- Added a new method [`GetIdleInstancesCount`]({{site.dbr_cpp_methods}}license.html#getidleinstancescount) to return the number of available instances when using the 'per concurrent instance' licensing model.
+- Added the [`organizationID`]({{site.dbr_structs}}DMLTSConnectionParameters.html?src=cpp#organizationid) property for license authentication.
+- Added a new attribute [`isMirrored`]({{site.dbr_structs}}TextResult.html?src=cpp#ismirrored) to the `TextResult` class. `isMirrored` returns whether the barcode is mirrored.
+- Added a new attribute [`isDPM`]({{site.dbr_structs}}TextResult.html?src=cpp#isdpm) to the `TextResult` class. `isDPM` returns whether the barcode is recognized by the DPM mode.
 - Added a new argument, `ThresholdCompensation`, to the `BinarizationModes` mode arguments.
 
 ### Improved
@@ -83,13 +83,13 @@ permalink: /programming/cplusplus/release-notes/cpp-8.html
 
 ### Fixed
 
-- Fixed an issue that happens when calling initLicenseFromLTS if [`handShakeCode`]({{site.structs}}DMLTSConnectionParameters.html?src=cpp#handshakecode) is not set.
+- Fixed an issue that happens when calling initLicenseFromLTS if [`handShakeCode`]({{site.dbr_structs}}DMLTSConnectionParameters.html?src=cpp#handshakecode) is not set.
 
 ## 8.2.0 (03/17/2021)
 
 ### New
 
-- Added a new mode argument, `FindAccurateBoundary`, to [`RegionPredetectionModes`]({{ site.parameters_reference }}region-predetection-modes.html#regionpredetectionmodes) that determines if the SDK attempts to find an accurate boundary when RegionPredetectionModes is set to `RPM_GENERAL_HSV_CONTRAST`. 
+- Added a new mode argument, `FindAccurateBoundary`, to [`RegionPredetectionModes`]({{ site.dbr_parameters_reference }}region-predetection-modes.html#regionpredetectionmodes) that determines if the SDK attempts to find an accurate boundary when RegionPredetectionModes is set to `RPM_GENERAL_HSV_CONTRAST`. 
 
 ### Improved
 
@@ -139,7 +139,7 @@ permalink: /programming/cplusplus/release-notes/cpp-8.html
 
 ### New
 
-- Implemented the mechanism of loading libraries dynamically at runtime when [Parameter Mode Enumerations]({{ site.c_cpp_enumerations }}parameter-mode-enums.html) are used (except *_AUTO and *_SKIP). Use LibraryFileName and LibraryParameters to configure.
+- Implemented the mechanism of loading libraries dynamically at runtime when [Parameter Mode Enumerations]({{ site.dbr_c_cpp_enumerations }}parameter-mode-enums.html) are used (except *_AUTO and *_SKIP). Use LibraryFileName and LibraryParameters to configure.
 - (For IntermediateResult Advanced Module) Added support for decoding IntermediateResult. For example, users with a binarized image could use this function to skip some image preprocessing steps.
 - Implemented a new licensing tracking mechanism, License 2.0, which makes it easier for users to track license usage.
 - Added a new format control parameter, BarcodeZoneMinDistanceToImageBorders, to set the minimum distance (in pixels) between the barcode zone and image borders.

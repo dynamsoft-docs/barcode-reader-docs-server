@@ -34,7 +34,7 @@ typedef void(* CB_Error) (int frameId, int errorCode, void* pUser)
 `pUser` Customized arguments passed to your function.
 
 **See Also**  
-[Error Code]({{ site.c_cpp_enumerations }}error-code.html)
+[Error Code]({{ site.dbr_c_cpp_enumerations }}error-code.html)
 
 
 
@@ -55,7 +55,7 @@ typedef void(* CB_IntermediateResult) (int frameId, IntermediateResultArray* pRe
 `pUser` Arguments passed to your function.
 
 **See Also**  
-[IntermediateResultArray]({{ site.structs }}IntermediateResultArray.html?src=c)
+[IntermediateResultArray]({{ site.dbr_structs }}IntermediateResultArray.html?src=c)
 
 
 
@@ -76,7 +76,7 @@ typedef void(* CB_TextResult) (int frameId, TextResultArray *pResults, void *pUs
 `pUser` Arguments passed to your function.
 
 **See Also**  
-[TextResultArray]({{ site.structs }}TextResultArray.html?src=c)
+[TextResultArray]({{ site.dbr_structs }}TextResultArray.html?src=c)
 
 
 

@@ -27,13 +27,13 @@ typedef struct tagFrameDecodingParameters  FrameDecodingParameters
 | [`width`](#width) | *int* |
 | [`height`](#height) | *int* |
 | [`stride`](#stride) | *int* |
-| [`imagePixelFormat`](#imagepixelformat) | [`ImagePixelFormat`]({{ site.c_cpp_enumerations }}other-enums.html#imagepixelformat) |
+| [`imagePixelFormat`](#imagepixelformat) | [`ImagePixelFormat`]({{ site.dbr_c_cpp_enumerations }}other-enums.html#imagepixelformat) |
 | [`region`](#region) | [`RegionDefinition`](RegionDefinition.md) |
 | [`threshold`](#threshold) | *float* |
 | [`fps`](#fps) | *int* |
 | [`autoFilter`](#autofilter) | *int* |
-| [`clarityCalculationMethod`](#claritycalculationmethod) | [`ClarityCalculationMethod`]({{ site.c_cpp_enumerations }}frame-decoding-enums.html#claritycalculationmethod) |
-| [`clarityFilterMode`](#clarityfiltermode) | [`ClarityFilterMode`]({{ site.c_cpp_enumerations }}frame-decoding-enums.html#clarityfiltermode) |
+| [`clarityCalculationMethod`](#claritycalculationmethod) | [`ClarityCalculationMethod`]({{ site.dbr_c_cpp_enumerations }}frame-decoding-enums.html#claritycalculationmethod) |
+| [`clarityFilterMode`](#clarityfiltermode) | [`ClarityFilterMode`]({{ site.dbr_c_cpp_enumerations }}frame-decoding-enums.html#clarityfiltermode) |
 | [`duplicateForgetTime`](#duplicateforgettime) | *int* |
 | [`orientation`](#orientation) | *int* |
 | [`reserved`](#reserved) | *char\[12\]* |
@@ -128,7 +128,7 @@ ImagePixelFormat tagFrameDecodingParameters::imagePixelFormat
 
 **Value Range**
 
-A value of [`ImagePixelFormat`]({{ site.c_cpp_enumerations }}other-enums.html#imagepixelformat) Enumeration items.
+A value of [`ImagePixelFormat`]({{ site.dbr_c_cpp_enumerations }}other-enums.html#imagepixelformat) Enumeration items.
 
 **Default Value**
 
@@ -136,7 +136,7 @@ A value of [`ImagePixelFormat`]({{ site.c_cpp_enumerations }}other-enums.html#im
 
 **See Also**
 
-[`ImagePixelFormat`]({{ site.c_cpp_enumerations }}other-enums.html#imagepixelformat)
+[`ImagePixelFormat`]({{ site.dbr_c_cpp_enumerations }}other-enums.html#imagepixelformat)
 
 ### region
 
@@ -172,11 +172,11 @@ float tagFrameDecodingParameters::threshold
 
 **Remarks**
 
-The SDK will calculate an inner indicator for each frame from [`AppendFrame`]({{ site.cpp_methods }}video.html#appendframe) or  [`DBR_AppendFrame`]({{ site.c_methods }}video.html#dbr_appendframe), if the change rate of the indicators between the current frame and the history frames is larger than the given threshold, the current frame will not be added to the inner frame queue waiting for decoding.
+The SDK will calculate an inner indicator for each frame from [`AppendFrame`]({{ site.dbr_cpp_methods }}video.html#appendframe) or  [`DBR_AppendFrame`]({{ site.dbr_c_methods }}video.html#dbr_appendframe), if the change rate of the indicators between the current frame and the history frames is larger than the given threshold, the current frame will not be added to the inner frame queue waiting for decoding.
 
 ### fps
 
-The frequency of calling [`AppendFrame`]({{ site.cpp_methods }}video.html#appendframe) or  [`DBR_AppendFrame`]({{ site.c_methods }}video.html#dbr_appendframe) per second.
+The frequency of calling [`AppendFrame`]({{ site.dbr_cpp_methods }}video.html#appendframe) or  [`DBR_AppendFrame`]({{ site.dbr_c_methods }}video.html#dbr_appendframe) per second.
 
 ```cpp
 int tagFrameDecodingParameters::fps
@@ -224,7 +224,7 @@ ClarityCalculationMethod tagFrameDecodingParameters::clarityCalculationMethod
 
 **Value Range**
 
-Any one of the [`ClarityCalculationMethod`]({{ site.c_cpp_enumerations }}frame-decoding-enums.html#claritycalculationmethod) Enumeration items.
+Any one of the [`ClarityCalculationMethod`]({{ site.dbr_c_cpp_enumerations }}frame-decoding-enums.html#claritycalculationmethod) Enumeration items.
 
 **Default Value**
 
@@ -232,7 +232,7 @@ ECCM_CONTRAST
 
 **See Also**
 
-[`ClarityCalculationMethod`]({{ site.c_cpp_enumerations }}frame-decoding-enums.html#claritycalculationmethod)
+[`ClarityCalculationMethod`]({{ site.dbr_c_cpp_enumerations }}frame-decoding-enums.html#claritycalculationmethod)
 
 ### clarityFilterMode
 
@@ -244,7 +244,7 @@ ClarityFilterMode tagFrameDecodingParameters::clarityFilterMode
 
 **Value Range**
 
-Any one of the [`ClarityFilterMode`]({{ site.c_cpp_enumerations }}frame-decoding-enums.html#clarityfiltermode) Enumeration items.
+Any one of the [`ClarityFilterMode`]({{ site.dbr_c_cpp_enumerations }}frame-decoding-enums.html#clarityfiltermode) Enumeration items.
 
 **Default Value**
 
@@ -252,7 +252,7 @@ CFM_GENERAL
 
 **See Also**
 
-[`ClarityFilterMode`]({{ site.c_cpp_enumerations }}frame-decoding-enums.html#clarityfiltermode)
+[`ClarityFilterMode`]({{ site.dbr_c_cpp_enumerations }}frame-decoding-enums.html#clarityfiltermode)
 
 ### duplicateForgetTime
 

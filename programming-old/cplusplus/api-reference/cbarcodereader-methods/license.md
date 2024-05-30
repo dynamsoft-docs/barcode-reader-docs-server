@@ -216,7 +216,7 @@ static InstancePoolStatus dynamsoft::dbr::CBarcodeReader::GetInstancePoolStatus(
 
 **Return Value**
 
-Returns the [`InstancePoolStatus`]({{ site.structs }}InstancePoolStatus.html?src=cpp) struct representing the status of an instance pool.
+Returns the [`InstancePoolStatus`]({{ site.dbr_structs }}InstancePoolStatus.html?src=cpp) struct representing the status of an instance pool.
 
 
 ## GetIdleInstancesCount

@@ -59,7 +59,7 @@ Returns an object of `CDecodedBarcodeElement`.
 
 **See Also**
 
-[CDecodedBarcodeElement]({{ site.cpp_api }}decoded-barcode-element.html)
+[CDecodedBarcodeElement]({{ site.dbr_cpp_api }}decoded-barcode-element.html)
 
 ## CreateLocalizedBarcodeElement
 
@@ -75,4 +75,4 @@ Returns an object of `CLocalizedBarcodeElement`.
 
 **See Also**
 
-[CLocalizedBarcodeElement]({{ site.cpp_api }}localized-barcode-element.html)
+[CLocalizedBarcodeElement]({{ site.dbr_cpp_api }}localized-barcode-element.html)

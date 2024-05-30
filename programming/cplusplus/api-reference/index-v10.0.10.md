@@ -21,11 +21,11 @@ keywords: CBarcodeReader, api reference, C++
 
 ## Final Results
 
-- [`CBarcodeResultItem`]({{ site.cpp_api }}barcode-result-item.html)
+- [`CBarcodeResultItem`]({{ site.dbr_cpp_api }}barcode-result-item.html)
 - [`CCapturedResultReceiver`]({{ site.dcv_cpp_api }}core/basic-structures/captured-result-receiver.html)
 - [`CCapturedResult`]({{ site.dcv_cpp_api }}core/basic-structures/captured-result.html)
 - [`CCapturedResultItem`]({{ site.dcv_cpp_api }}core/basic-structures/captured-result-item.html)
-- [`CDecodedBarcodesResult`]({{ site.cpp_api }}decoded-barcodes-result.html)
+- [`CDecodedBarcodesResult`]({{ site.dbr_cpp_api }}decoded-barcodes-result.html)
 - [`COriginalImageResultItem`]({{ site.dcv_cpp_api }}core/basic-structures/original-image-result-item.html)
 
 ## Final Results Filters
@@ -35,12 +35,12 @@ keywords: CBarcodeReader, api reference, C++
 
 ## Detailed Barcode Results
 
-- [`CAztecDetails`]({{ site.cpp_api }}aztec-details.html)
-- [`CBarcodeDetails`]({{ site.cpp_api }}barcode-details.html)
-- [`CDataMatrixDetails`]({{ site.cpp_api }}datamatrix-details.html)
-- [`COneDCodeDetails`]({{ site.cpp_api }}oned-code-details.html)
-- [`CPDF417Details`]({{ site.cpp_api }}pdf417-details.html)
-- [`CQRCodeDetails`]({{ site.cpp_api }}qr-code-details.html)
+- [`CAztecDetails`]({{ site.dbr_cpp_api }}aztec-details.html)
+- [`CBarcodeDetails`]({{ site.dbr_cpp_api }}barcode-details.html)
+- [`CDataMatrixDetails`]({{ site.dbr_cpp_api }}datamatrix-details.html)
+- [`COneDCodeDetails`]({{ site.dbr_cpp_api }}oned-code-details.html)
+- [`CPDF417Details`]({{ site.dbr_cpp_api }}pdf417-details.html)
+- [`CQRCodeDetails`]({{ site.dbr_cpp_api }}qr-code-details.html)
 
 ## Intermediate Results
 
@@ -66,20 +66,20 @@ keywords: CBarcodeReader, api reference, C++
 - [`CTextureRemovedBinaryImageUnit`]({{ site.dcv_cpp_api }}core/intermediate-results/texture-removed-binary-image-unit.html)
 - [`CTextureRemovedGrayscaleImageUnit`]({{ site.dcv_cpp_api }}core/intermediate-results/texture-removed-grayscale-image-unit.html)
 - [`CTransformedGrayscaleImageUnit`]({{ site.dcv_cpp_api }}core/intermediate-results/transformed-grayscale-image-unit.html)
-- [`CScaledUpBarcodeImageUnit`]({{ site.cpp_api }}scaled-up-barcode-image-unit.html)
-- [`CCandidateBarcodeZonesUnit`]({{ site.cpp_api }}candidate-barcode-zones-unit.html)
-- [`CComplementedBarcodeImageUnit`]({{ site.cpp_api }}complemented-barcode-image-unit.html)
-- [`CDeformationResistedBarcodeImageUnit`]({{ site.cpp_api }}deformation-resisted-barcode-image-unit.html)
-- [`CLocalizedBarcodesUnit`]({{ site.cpp_api }}localized-barcodes-unit.html)
-- [`CLocalizedBarcodeElement`]({{ site.cpp_api }}localized-barcode-element.html)
-- [`CDecodedBarcodesUnit`]({{ site.cpp_api }}decoded-barcodes-unit.html)
-- [`CDecodedBarcodeElement`]({{ site.cpp_api }}decoded-barcode-element.html)
-- [`CExtendedBarcodeResult`]({{ site.cpp_api }}extended-barcode-result.html)
+- [`CScaledUpBarcodeImageUnit`]({{ site.dbr_cpp_api }}scaled-up-barcode-image-unit.html)
+- [`CCandidateBarcodeZonesUnit`]({{ site.dbr_cpp_api }}candidate-barcode-zones-unit.html)
+- [`CComplementedBarcodeImageUnit`]({{ site.dbr_cpp_api }}complemented-barcode-image-unit.html)
+- [`CDeformationResistedBarcodeImageUnit`]({{ site.dbr_cpp_api }}deformation-resisted-barcode-image-unit.html)
+- [`CLocalizedBarcodesUnit`]({{ site.dbr_cpp_api }}localized-barcodes-unit.html)
+- [`CLocalizedBarcodeElement`]({{ site.dbr_cpp_api }}localized-barcode-element.html)
+- [`CDecodedBarcodesUnit`]({{ site.dbr_cpp_api }}decoded-barcodes-unit.html)
+- [`CDecodedBarcodeElement`]({{ site.dbr_cpp_api }}decoded-barcode-element.html)
+- [`CExtendedBarcodeResult`]({{ site.dbr_cpp_api }}extended-barcode-result.html)
 
 ## Settings
 
 - [`SimplifiedCaptureVisionSettings`]({{ site.dcv_cpp_api }}capture-vision-router/structs/simplified-capture-vision-settings.html)
-- [`SimplifiedBarcodeReaderSettings`]({{ site.cpp_api }}simplified-barcode-reader-settings.html)
+- [`SimplifiedBarcodeReaderSettings`]({{ site.dbr_cpp_api }}simplified-barcode-reader-settings.html)
 - [`CPresetTemplate`]({{ site.dcv_cpp_api }}capture-vision-router/auxiliary-classes/preset-template.html)
 
 ## State Listener
@@ -120,7 +120,7 @@ keywords: CBarcodeReader, api reference, C++
 - [`GrayscaleTransformationMode`]({{ site.dcv_enumerations }}core/grayscale-transformation-mode.html?src=cpp&&lang=cpp)
 - [`ImageCaptureDistanceMode`]({{ site.dcv_enumerations }}core/image-capture-distance-mode.html?src=cpp&&lang=cpp)
 - [`ImagePixelFormat`]({{ site.dcv_enumerations }}core/image-pixel-format.html?src=cpp&&lang=cpp)
-- [`ImageSourceState`]({{ site.dcv_enumerations }}core/image-source-state.html?src=cpp&&lang=cpp)
+- [`ImageSourceState`]({{ site.dcv_enumerations }}capture-vision-router/image-source-state.html?src=cpp&&lang=cpp)
 - [`ImageTagType`]({{ site.dcv_enumerations }}core/image-tag-type.html?src=cpp&&lang=cpp)
 - [`IntermediateResultUnitType`]({{ site.dcv_enumerations }}core/intermediate-result-unit-type.html?src=cpp&&lang=cpp)
 - [`LocalizationMode`]({{ site.dcv_enumerations }}barcode-reader/localization-mode.html?src=cpp&&lang=cpp)

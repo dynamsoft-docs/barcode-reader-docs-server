@@ -37,7 +37,7 @@ If you haven't downloaded the SDK yet, <a href="https://www.dynamsoft.com/barcod
 
 > For this tutorial, we will unpack it to a pseudo directory named `[INSTALLATION FOLDER]`. Please change it to your preferred unpacking path for the following content.
 
-> To find out whether your environment is supported, please read the [System Requirements]({{site.cpp}}index.html#system-requirements).
+> To find out whether your environment is supported, please read the [System Requirements]({{site.dbr_cpp}}index.html#system-requirements).
 
 ## Build Your First Application
 
@@ -91,7 +91,7 @@ char errorMsg[512];
 CLicenseManager::InitLicense("DLS2eyJvcmdhbml6YXRpb25JRCI6IjIwMDAwMSJ9", errorMsg, 512);
 ```
 
-> The string "DLS2eyJvcmdhbml6YXRpb25JRCI6IjIwMDAwMSJ9" here is a free public trial license. Note that network connection is required for this license to work. When it expires, you can request a 30-day free trial license from the <a href="https://www.dynamsoft.com/customer/license/trialLicense?utm_source=guide&product=dbr&package=desktop" target="_blank">Customer Portal</a>.
+> The string "DLS2eyJvcmdhbml6YXRpb25JRCI6IjIwMDAwMSJ9" here is a free public trial license. Note that network connection is required for this license to work. When it expires, you can request a 30-day free trial license from the <a href="https://www.dynamsoft.com/customer/license/trialLicense?utm_source=guide&product=dbr&package=c_cpp" target="_blank">Customer Portal</a>.
 
 Create an instance of Capture Vision Router.
 
@@ -280,7 +280,7 @@ Call the method `StartCapturing()` to start processing all the images in the spe
 int errorCode = cvr->StartCapturing(CPresetTemplate::PT_READ_BARCODES, true, errorMsg, 512);        
 ```
 
-During the process, the callback function `OnDecodedBarcodesReceived()` is triggered each time an image finishes processing. After all images are processed, the listener function `OnImageSourceAdapterStateChanged()` will return the image source state as `ISS_EXHAUSTED` and the process is stopped with the method `StopCapturing()`.
+During the process, the callback function `OnDecodedBarcodesReceived()` is triggered each time an image finishes processing. After all images are processed, the listener function `OnImageSourceStateReceived()` will return the image source state as `ISS_EXHAUSTED` and the process is stopped with the method `StopCapturing()`.
 
 ### Release the Allocated Memory
 

@@ -34,7 +34,7 @@ permalink: /programming/cplusplus/release-notes/cpp-9.html
 
 ### New
 
-- Added a new method [`GetInstancePoolStatus`]({{site.cpp_methods}}license.html#getinstancepoolstatus) and struct [`InstancePoolStatus`]({{ site.structs }}InstancePoolStatus.html?src=cpp) to provide a real-time view of how the concurrent instance licenses are being utilized. This applies only if you are using a concurrent instance license.
+- Added a new method [`GetInstancePoolStatus`]({{site.dbr_cpp_methods}}license.html#getinstancepoolstatus) and struct [`InstancePoolStatus`]({{ site.dbr_structs }}InstancePoolStatus.html?src=cpp) to provide a real-time view of how the concurrent instance licenses are being utilized. This applies only if you are using a concurrent instance license.
 
 ### Improved
 
@@ -60,8 +60,8 @@ permalink: /programming/cplusplus/release-notes/cpp-9.html
 
 ### New
 
-- Added a new method [`SetLicenseCachePath`]({{site.cpp_methods}}license.html#setlicensecachepath) in the `CBarcodeReader` class to support customizing the license cache saving path.
-- Add a new method [`GetDeviceUUID`]({{site.cpp_methods}}license.html#getdeviceuuid) in the `CBarcodeReader` class to support getting device UUID for license activating.
+- Added a new method [`SetLicenseCachePath`]({{site.dbr_cpp_methods}}license.html#setlicensecachepath) in the `CBarcodeReader` class to support customizing the license cache saving path.
+- Add a new method [`GetDeviceUUID`]({{site.dbr_cpp_methods}}license.html#getdeviceuuid) in the `CBarcodeReader` class to support getting device UUID for license activating.
 - Added error code `DMERR_LICENSE_BUFFER_FAILED` to the potential error list of the license activation methods and decode methods. The error code is returned when the directory of the license cache is inaccessible.
 
 ### Improved
@@ -73,7 +73,7 @@ permalink: /programming/cplusplus/release-notes/cpp-9.html
 
 - Fixed a crash bug when using a online license key on ARM64 environment.
 - Fixed a crash bug when using a online license key on the AWS lambda environment.
-- Fixed a bug that some OneD barcodes without start & stop characters are not decoded when parameter [`RequireStartStopChars`]({{site.parameters_reference}}require-start-stop-chars.html) is set to 0.
+- Fixed a bug that some OneD barcodes without start & stop characters are not decoded when parameter [`RequireStartStopChars`]({{site.dbr_parameters_reference}}require-start-stop-chars.html) is set to 0.
 - Other small fixes and tweaks.
 
 ## 9.6.0 (11/29/2022)
@@ -96,19 +96,19 @@ permalink: /programming/cplusplus/release-notes/cpp-9.html
 
 #### New
 
-- Added a property [`orientation`]({{ site.structs }}FrameDecodingParameters.html?src=cpp#orientation) to struct `FrameDecodingParameters` to set the orientation information of the video frame.
-- Added [`orientation`]({{ site.structs }}ImageData.html?src=cpp#orientation) to struct ImageData to set the orientation information.
+- Added a property [`orientation`]({{ site.dbr_structs }}FrameDecodingParameters.html?src=cpp#orientation) to struct `FrameDecodingParameters` to set the orientation information of the video frame.
+- Added [`orientation`]({{ site.dbr_structs }}ImageData.html?src=cpp#orientation) to struct ImageData to set the orientation information.
 - Enabled decoding methods `DecodeFile()`, `DecodeFileinMemory()` and `DecodeBase64String()` to read EXIF data of the given image so that the library can obtain the orientation information of the image file.
-- Overloaded method [`DecodeBuffer()`]({{site.cpp_methods}}decode.html#decodebuffer) with a new parameter `orientation` to set the orientation information of the image data.
-- Added a property [`transformationMatrix`]({{ site.structs }}LocalizationResult.html?src=cpp##transformationmatrix) to struct `LocalizationResult` so that the library can output a transformation matrix for transforming the localization coordinates to image's natural orientation.
-- Added a method [`TransformCoordinates()`]({{site.cpp_methods}}general.html#transformcoordinates) to support transforming the coordinates of a point based on a given transformation matrix.
-- Added a property [`duplicateForgetTime`]({{ site.structs }}FrameDecodingParameters.html?src=cpp#duplicateforgettime) to struct `FrameDecodingParameters` to set the time period used to filter out duplicate results found in frames.
-- Added a method [`SetUniqueBarcodeCallback()`]({{site.cpp_methods}}video.html#setuniquebarcodecallback) to set callback function to obtain unique barcode result.
-- Added properties [`hasLeftRowIndicator`]({{ site.structs }}PDF417Details.html?src=cpp#hasleftrowindicator) and [`hasRightRowIndicator`]({{ site.structs }}PDF417Details.html?src=cpp#hasrightrowindicator) to struct `PDF417Details` to return whether the left and right row indicator of the PDF417 barcode is detected.
-- Added a member `BF2_ALL` to enumeration [`BarcodeFormatIds_2`]({{ site.c_cpp_enumerations }}format-enums.html?src=cpp#barcodeformat_2) to support setting all barcode formats in BarcodeFormat group 2 with one enumeration.
+- Overloaded method [`DecodeBuffer()`]({{site.dbr_cpp_methods}}decode.html#decodebuffer) with a new parameter `orientation` to set the orientation information of the image data.
+- Added a property [`transformationMatrix`]({{ site.dbr_structs }}LocalizationResult.html?src=cpp##transformationmatrix) to struct `LocalizationResult` so that the library can output a transformation matrix for transforming the localization coordinates to image's natural orientation.
+- Added a method [`TransformCoordinates()`]({{site.dbr_cpp_methods}}general.html#transformcoordinates) to support transforming the coordinates of a point based on a given transformation matrix.
+- Added a property [`duplicateForgetTime`]({{ site.dbr_structs }}FrameDecodingParameters.html?src=cpp#duplicateforgettime) to struct `FrameDecodingParameters` to set the time period used to filter out duplicate results found in frames.
+- Added a method [`SetUniqueBarcodeCallback()`]({{site.dbr_cpp_methods}}video.html#setuniquebarcodecallback) to set callback function to obtain unique barcode result.
+- Added properties [`hasLeftRowIndicator`]({{ site.dbr_structs }}PDF417Details.html?src=cpp#hasleftrowindicator) and [`hasRightRowIndicator`]({{ site.dbr_structs }}PDF417Details.html?src=cpp#hasrightrowindicator) to struct `PDF417Details` to return whether the left and right row indicator of the PDF417 barcode is detected.
+- Added a member `BF2_ALL` to enumeration [`BarcodeFormatIds_2`]({{ site.dbr_c_cpp_enumerations }}format-enums.html?src=cpp#barcodeformat_2) to support setting all barcode formats in BarcodeFormat group 2 with one enumeration.
 - Extended the features of parameter `DeformationResistingModes`:
-  - Extended the valid mode arguments of `DRM_BROAD_WARP`, `DRM_LOCAL_REFERENCE` and `DRM_DEWRINKLE` with two new arguments: [`GrayscaleEnhancementMode`]({{site.parameters_reference}}deformation-resisting-modes.html#grayscaleenhancementmode) and [`BinarizationMode`]({{site.parameters_reference}}deformation-resisting-modes.html#binarizationmode).
-  - Supported mode [`DRM_AUTO`]({{site.parameters_reference}}deformation-resisting-modes.html#drm_auto).
+  - Extended the valid mode arguments of `DRM_BROAD_WARP`, `DRM_LOCAL_REFERENCE` and `DRM_DEWRINKLE` with two new arguments: [`GrayscaleEnhancementMode`]({{site.dbr_parameters_reference}}deformation-resisting-modes.html#grayscaleenhancementmode) and [`BinarizationMode`]({{site.dbr_parameters_reference}}deformation-resisting-modes.html#binarizationmode).
+  - Supported mode [`DRM_AUTO`]({{site.dbr_parameters_reference}}deformation-resisting-modes.html#drm_auto).
 
 #### Improved
 
@@ -134,9 +134,9 @@ permalink: /programming/cplusplus/release-notes/cpp-9.html
 
 #### New
 
-- Added an argument [`IsOneDStacked`]({{site.parameters_reference}}localization-modes.html#isonedstacked) to `LM_SCAN_DIRECTLY` to process stacked OneD barcodes.
-- Added a parameter [`PatchCodeSearchingMargins`]({{site.parameters_reference}}patchcode-searching-margins.html) to specify the searching area of PatchCode.
-- Added the supported data format of [`FormatSpecification.PartitionModes`]({{site.parameters_reference}}partition-modes.html) to enhance the readability of the parameters. Users can use a list of enumeration names to specify the `PartitionModes`.
+- Added an argument [`IsOneDStacked`]({{site.dbr_parameters_reference}}localization-modes.html#isonedstacked) to `LM_SCAN_DIRECTLY` to process stacked OneD barcodes.
+- Added a parameter [`PatchCodeSearchingMargins`]({{site.dbr_parameters_reference}}patchcode-searching-margins.html) to specify the searching area of PatchCode.
+- Added the supported data format of [`FormatSpecification.PartitionModes`]({{site.dbr_parameters_reference}}partition-modes.html) to enhance the readability of the parameters. Users can use a list of enumeration names to specify the `PartitionModes`.
 
 #### Improved
 
@@ -145,7 +145,7 @@ permalink: /programming/cplusplus/release-notes/cpp-9.html
 
 #### Deprecated
 
-- Deprecated the attribute `barcodeFormatString_2` of [`TextResult`]({{site.structs}}TextResult.html?src=cpppp#barcodeformatstring_2), [`ExtendedResult`]({{site.structs}}ExtendedResult.html?src=cpppp#barcodeformatstring_2) and [`LocalizationResult`]({{site.structs}}LocalizationResult.html?src=cpppp#barcodeformatstring_2). All the barcode format strings will be returned by the attribute `barcodeFormatString`.
+- Deprecated the attribute `barcodeFormatString_2` of [`TextResult`]({{site.dbr_structs}}TextResult.html?src=cpppp#barcodeformatstring_2), [`ExtendedResult`]({{site.dbr_structs}}ExtendedResult.html?src=cpppp#barcodeformatstring_2) and [`LocalizationResult`]({{site.dbr_structs}}LocalizationResult.html?src=cpppp#barcodeformatstring_2). All the barcode format strings will be returned by the attribute `barcodeFormatString`.
 
 ## 9.2.0 (06/07/2022)
 
@@ -157,7 +157,7 @@ permalink: /programming/cplusplus/release-notes/cpp-9.html
 
 #### New
 
-- Added a new method [`SetDeviceFriendlyName`]({{site.cpp_methods}}license.html#setdevicefriendlyname) to set a human-readable name that identifies the device.
+- Added a new method [`SetDeviceFriendlyName`]({{site.dbr_cpp_methods}}license.html#setdevicefriendlyname) to set a human-readable name that identifies the device.
 
 #### Fixed
 
@@ -174,21 +174,21 @@ permalink: /programming/cplusplus/release-notes/cpp-9.html
 
 #### New
 
-- Added `BF_CODE_11` under Enumeration [`BarcodeFormat`]({{ site.c_cpp_enumerations }}format-enums.html#barcodeformat) to specify newly supported barcode format, Code 11. 
-- Added `BF2_PHARMACODE_ONE_TRACK`, `BF2_PHARMACODE_TWO_TRACK` and `BF2_PHARMACODE` under Enumeration [`BarcodeFormat_2`]({{ site.c_cpp_enumerations }}format-enums.html#barcodeformat_2) to specify newly supported barcode format, Pharmacode. 
-- Added a new error code [`DBRERR_PHARMACODE_LICENSE_INVALID`]({{ site.c_cpp_enumerations }}error-code.html#error-code--10062) which will be returned when the license of Pharmacode is invalid.
-- Added `DRM_BROAD_WARP`, `DRM_LOCAL_REFERENCE` and `DRM_DEWRINKLE` under Enumeration [`DeformationResistingMode`]({{ site.c_cpp_enumerations }}parameter-mode-enums.html#deformationresistingmode) to apply new deformation resisting modes.
-- Added a parameter [`FormatSpecification.PartitionModes`]({{ site.parameters_reference }}partition-modes.html)
-- Added a parameter [`FormatSpecification.VerifyCheckDigit`]({{ site.parameters_reference }}verify-check-digit.html)
-- Added an Argument [`ConfidenceThreshold`]({{ site.parameters_reference }}localization-modes.html#confidencethreshold) to the `LocalizationModes` mode arguments.
+- Added `BF_CODE_11` under Enumeration [`BarcodeFormat`]({{ site.dbr_c_cpp_enumerations }}format-enums.html#barcodeformat) to specify newly supported barcode format, Code 11. 
+- Added `BF2_PHARMACODE_ONE_TRACK`, `BF2_PHARMACODE_TWO_TRACK` and `BF2_PHARMACODE` under Enumeration [`BarcodeFormat_2`]({{ site.dbr_c_cpp_enumerations }}format-enums.html#barcodeformat_2) to specify newly supported barcode format, Pharmacode. 
+- Added a new error code [`DBRERR_PHARMACODE_LICENSE_INVALID`]({{ site.dbr_c_cpp_enumerations }}error-code.html#error-code--10062) which will be returned when the license of Pharmacode is invalid.
+- Added `DRM_BROAD_WARP`, `DRM_LOCAL_REFERENCE` and `DRM_DEWRINKLE` under Enumeration [`DeformationResistingMode`]({{ site.dbr_c_cpp_enumerations }}parameter-mode-enums.html#deformationresistingmode) to apply new deformation resisting modes.
+- Added a parameter [`FormatSpecification.PartitionModes`]({{ site.dbr_parameters_reference }}partition-modes.html)
+- Added a parameter [`FormatSpecification.VerifyCheckDigit`]({{ site.dbr_parameters_reference }}verify-check-digit.html)
+- Added an Argument [`ConfidenceThreshold`]({{ site.dbr_parameters_reference }}localization-modes.html#confidencethreshold) to the `LocalizationModes` mode arguments.
 
 #### Changed
 
-- Changed method [`InitLicense`]({{ site.cpp_methods }}license.html#initlicense) to a static method and added two more parameters to return detailed error message.
-- Changed value of BF_ONED under Enumeration [`BarcodeFormat`]({{ site.c_cpp_enumerations }}format-enums.html#barcodeformat) to 0x003007FF to have BF_CODE_11 combined.
-- Changed value of BF_ALL under Enumeration [`BarcodeFormat`]({{ site.c_cpp_enumerations }}format-enums.html#barcodeformat) to 0xFE3FFFFF to have BF_CODE_11 combined.
-- Changed the behaviour of [`DeformationResistingMode`]({{ site.c_cpp_enumerations }}parameter-mode-enums.html#deformationresistingmode) DRM_GENERAL which now only applies basic process to resist deformation.
-- Changed the return value of the method [`GetIdleInstancesCount`]({{ site.cpp_methods }}license.html#getidleinstancescount) from 0 to -1 when the available count needs to be updated from server by calling InitLicense.
+- Changed method [`InitLicense`]({{ site.dbr_cpp_methods }}license.html#initlicense) to a static method and added two more parameters to return detailed error message.
+- Changed value of BF_ONED under Enumeration [`BarcodeFormat`]({{ site.dbr_c_cpp_enumerations }}format-enums.html#barcodeformat) to 0x003007FF to have BF_CODE_11 combined.
+- Changed value of BF_ALL under Enumeration [`BarcodeFormat`]({{ site.dbr_c_cpp_enumerations }}format-enums.html#barcodeformat) to 0xFE3FFFFF to have BF_CODE_11 combined.
+- Changed the behaviour of [`DeformationResistingMode`]({{ site.dbr_c_cpp_enumerations }}parameter-mode-enums.html#deformationresistingmode) DRM_GENERAL which now only applies basic process to resist deformation.
+- Changed the return value of the method [`GetIdleInstancesCount`]({{ site.dbr_cpp_methods }}license.html#getidleinstancescount) from 0 to -1 when the available count needs to be updated from server by calling InitLicense.
 
 
 #### Fixed
@@ -200,17 +200,17 @@ permalink: /programming/cplusplus/release-notes/cpp-9.html
 #### Deprecated
 
 The following items are now deprecated. They still work in this version but could be removed in the near future.
-- Method [`InitLicenseFromServer`]({{ site.cpp_methods }}license.html#initlicensefromserver)
-- Method [`InitLicenseFromLicenseContent`]({{ site.cpp_methods }}license.html#initlicensefromlicensecontent)
-- Method [`OutputLicenseToString`]({{ site.cpp_methods }}license.html#outputlicensetostring)
-- Method [`OutputLicenseToStringPtr`]({{ site.cpp_methods }}license.html#outputlicensetostringptr)
-- Method [`FreeLicenseString`]({{ site.cpp_methods }}license.html#freelicensestring)
-- Method [`InitDLSConnectionParameters`]({{ site.cpp_methods }}license.html#initdlsconnectionparameters)
-- Method [`InitLicenseFromDLS`]({{ site.cpp_methods }}license.html#initlicensefromdls)
-- Enumeration [`DM_ChargeWay`]({{ site.c_cpp_enumerations }}other-enums.html#dm_chargeway)
-- Enumeration [`DM_DeploymentType`]({{ site.c_cpp_enumerations }}other-enums.html#dm_deploymenttype)
-- Enumeration [`DM_LicenseModule`]({{ site.c_cpp_enumerations }}other-enums.html#dm_licensemodule)
-- Enumeration [`DM_UUIDGenerationMethod`]({{ site.c_cpp_enumerations }}other-enums.html#dm_uuidgenerationmethod)
-- Enumeration [`Product`]({{ site.c_cpp_enumerations }}other-enums.html#product)
+- Method [`InitLicenseFromServer`]({{ site.dbr_cpp_methods }}license.html#initlicensefromserver)
+- Method [`InitLicenseFromLicenseContent`]({{ site.dbr_cpp_methods }}license.html#initlicensefromlicensecontent)
+- Method [`OutputLicenseToString`]({{ site.dbr_cpp_methods }}license.html#outputlicensetostring)
+- Method [`OutputLicenseToStringPtr`]({{ site.dbr_cpp_methods }}license.html#outputlicensetostringptr)
+- Method [`FreeLicenseString`]({{ site.dbr_cpp_methods }}license.html#freelicensestring)
+- Method [`InitDLSConnectionParameters`]({{ site.dbr_cpp_methods }}license.html#initdlsconnectionparameters)
+- Method [`InitLicenseFromDLS`]({{ site.dbr_cpp_methods }}license.html#initlicensefromdls)
+- Enumeration [`DM_ChargeWay`]({{ site.dbr_c_cpp_enumerations }}other-enums.html#dm_chargeway)
+- Enumeration [`DM_DeploymentType`]({{ site.dbr_c_cpp_enumerations }}other-enums.html#dm_deploymenttype)
+- Enumeration [`DM_LicenseModule`]({{ site.dbr_c_cpp_enumerations }}other-enums.html#dm_licensemodule)
+- Enumeration [`DM_UUIDGenerationMethod`]({{ site.dbr_c_cpp_enumerations }}other-enums.html#dm_uuidgenerationmethod)
+- Enumeration [`Product`]({{ site.dbr_c_cpp_enumerations }}other-enums.html#product)
 
 

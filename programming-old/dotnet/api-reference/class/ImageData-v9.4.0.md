@@ -25,7 +25,7 @@ public class ImageData
 | [`Width`](#width) | *int* |
 | [`Height`](#height) | *int* |
 | [`Stride`](#stride) | *int* |
-| [`Format`](#format) | [`EnumImagePixelFormat`]({{ site.dotnet_enumerations }}other-enums.html#imagepixelformat) |
+| [`Format`](#format) | [`EnumImagePixelFormat`]({{ site.dbr_dotnet_enumerations }}other-enums.html#imagepixelformat) |
 
 
 ### Bytes

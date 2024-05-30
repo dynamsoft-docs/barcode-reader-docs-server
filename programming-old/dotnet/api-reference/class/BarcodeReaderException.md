@@ -32,7 +32,7 @@ Gets or sets the error code.
 EnumErrorCode Dynamsoft.DBR.BarcodeReaderException.Code
 ```  
 **See Also**  
-- [EnumErrorCode]({{site.dotnet_enumerations}}error-code.html)
+- [EnumErrorCode]({{site.dbr_dotnet_enumerations}}error-code.html)
 
 ### Message
 Gets the message that describes the current exception. 

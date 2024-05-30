@@ -15,7 +15,7 @@ The `CQRCodeDetails` class represents the details of a QR Code. It is derived fr
 
 *Assembly:* DynamsoftBarcodeReader
 
-*Inheritance:* [CBarcodeDetails]({{ site.cpp_api }}barcode-details.html) -> CQRCodeDetails
+*Inheritance:* [CBarcodeDetails]({{ site.dbr_cpp_api }}barcode-details.html) -> CQRCodeDetails
 
 ```cpp
 class CQRCodeDetails : public CBarcodeDetails

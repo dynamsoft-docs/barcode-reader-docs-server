@@ -19,18 +19,18 @@ public struct FurtherModes
   
 | Attribute | Type |
 |---------- | ---- |
-| [`ColourClusteringModes`](#colourclusteringmodes) | [`EnumColourClusteringMode`]({{ site.dotnet_enumerations }}parameter-mode-enums.html#colourclusteringmode)[ ] |
-| [`ColourConversionModes`](#colourconversionmodes) | [`EnumColourConversionMode`]({{ site.dotnet_enumerations }}parameter-mode-enums.html#colourconversionmode)[ ] |
-| [`GrayscaleTransformationModes`](#grayscaletransformationmodes) | [`EnumGrayscaleTransformationMode`]({{ site.dotnet_enumerations }}parameter-mode-enums.html#grayscaletransformationmode)[ ] |
-| [`RegionPredetectionModes`](#regionpredetectionmodes) | [`EnumRegionPredetectionMode`]({{ site.dotnet_enumerations }}parameter-mode-enums.html#regionpredetectionmode)[ ] |
-| [`ImagePreprocessingModes`](#imagepreprocessingmodes) | [`EnumImagePreprocessingMode`]({{ site.dotnet_enumerations }}parameter-mode-enums.html#imagepreprocessingmode)[ ] |
-| [`TextureDetectionModes`](#texturedetectionmodes) | [`EnumTextureDetectionMode`]({{ site.dotnet_enumerations }}parameter-mode-enums.html#texturedetectionmode)[ ] |
-| [`TextFilterModes`](#textfiltermodes) | [`EnumTextFilterMode`]({{ site.dotnet_enumerations }}parameter-mode-enums.html#textfiltermode)[ ] |
-| [`DPMCodeReadingModes`](#dpmcodereadingmodes) | [`EnumDPMCodeReadingMode`]({{ site.dotnet_enumerations }}parameter-mode-enums.html#dpmcodereadingmode)[ ] |
-| [`DeformationResistingModes`](#deformationresistingmodes) | [`EnumDeformationResistingMode`]({{ site.dotnet_enumerations }}parameter-mode-enums.html#deformationresistingmode)[ ] |
-| [`BarcodeComplementModes`](#barcodecomplementmodes) | [`EnumBarcodeComplementMode`]({{ site.dotnet_enumerations }}parameter-mode-enums.html#barcodecomplementmode)[ ] |
-| [`BarcodeColourModes`](#barcodecolourmodes) | [`EnumBarcodeColourMode`]({{ site.dotnet_enumerations }}parameter-mode-enums.html#barcodecolourmode)[ ] |
-| [`AccompanyingTextRecognitionModes`](#accompanyingtextrecognitionmodes) | [`EnumAccompanyingTextRecognitionMode`]({{ site.dotnet_enumerations }}parameter-mode-enums.html#accompanyingtextrecognitionmode)[ ] |
+| [`ColourClusteringModes`](#colourclusteringmodes) | [`EnumColourClusteringMode`]({{ site.dbr_dotnet_enumerations }}parameter-mode-enums.html#colourclusteringmode)[ ] |
+| [`ColourConversionModes`](#colourconversionmodes) | [`EnumColourConversionMode`]({{ site.dbr_dotnet_enumerations }}parameter-mode-enums.html#colourconversionmode)[ ] |
+| [`GrayscaleTransformationModes`](#grayscaletransformationmodes) | [`EnumGrayscaleTransformationMode`]({{ site.dbr_dotnet_enumerations }}parameter-mode-enums.html#grayscaletransformationmode)[ ] |
+| [`RegionPredetectionModes`](#regionpredetectionmodes) | [`EnumRegionPredetectionMode`]({{ site.dbr_dotnet_enumerations }}parameter-mode-enums.html#regionpredetectionmode)[ ] |
+| [`ImagePreprocessingModes`](#imagepreprocessingmodes) | [`EnumImagePreprocessingMode`]({{ site.dbr_dotnet_enumerations }}parameter-mode-enums.html#imagepreprocessingmode)[ ] |
+| [`TextureDetectionModes`](#texturedetectionmodes) | [`EnumTextureDetectionMode`]({{ site.dbr_dotnet_enumerations }}parameter-mode-enums.html#texturedetectionmode)[ ] |
+| [`TextFilterModes`](#textfiltermodes) | [`EnumTextFilterMode`]({{ site.dbr_dotnet_enumerations }}parameter-mode-enums.html#textfiltermode)[ ] |
+| [`DPMCodeReadingModes`](#dpmcodereadingmodes) | [`EnumDPMCodeReadingMode`]({{ site.dbr_dotnet_enumerations }}parameter-mode-enums.html#dpmcodereadingmode)[ ] |
+| [`DeformationResistingModes`](#deformationresistingmodes) | [`EnumDeformationResistingMode`]({{ site.dbr_dotnet_enumerations }}parameter-mode-enums.html#deformationresistingmode)[ ] |
+| [`BarcodeComplementModes`](#barcodecomplementmodes) | [`EnumBarcodeComplementMode`]({{ site.dbr_dotnet_enumerations }}parameter-mode-enums.html#barcodecomplementmode)[ ] |
+| [`BarcodeColourModes`](#barcodecolourmodes) | [`EnumBarcodeColourMode`]({{ site.dbr_dotnet_enumerations }}parameter-mode-enums.html#barcodecolourmode)[ ] |
+| [`AccompanyingTextRecognitionModes`](#accompanyingtextrecognitionmodes) | [`EnumAccompanyingTextRecognitionMode`]({{ site.dbr_dotnet_enumerations }}parameter-mode-enums.html#accompanyingtextrecognitionmode)[ ] |
 
 ### ColourClusteringModes
 Sets the mode and priority for colour categorization. Not supported yet.  
@@ -40,7 +40,7 @@ EnumColourClusteringMode[] Dynamsoft.DBR.FurtherModes.ColourClusteringModes
 ```
 
 **Value Range**    
-   Each array item can be any one of the [`ColourClusteringMode`]({{ site.dotnet_enumerations }}parameter-mode-enums.html#colourclusteringmode) Enumeration items.  
+   Each array item can be any one of the [`ColourClusteringMode`]({{ site.dbr_dotnet_enumerations }}parameter-mode-enums.html#colourclusteringmode) Enumeration items.  
      
 **Default Value**    
    `[EnumColourClusteringMode.CCM_SKIP, EnumColourClusteringMode.CCM_SKIP, EnumColourClusteringMode.CCM_SKIP, EnumColourClusteringMode.CCM_SKIP, EnumColourClusteringMode.CCM_SKIP, EnumColourClusteringMode.CCM_SKIP, EnumColourClusteringMode.CCM_SKIP, EnumColourClusteringMode.CCM_SKIP]`  
@@ -56,7 +56,7 @@ EnumColourConversionMode[] Dynamsoft.DBR.FurtherModes.ColourConversionModes
 ```
 
 **Value Range**    
-   Each array item can be any one of the [`ColourConversionMode`]({{ site.dotnet_enumerations }}parameter-mode-enums.html#colourconversionmode) Enumeration items. 
+   Each array item can be any one of the [`ColourConversionMode`]({{ site.dbr_dotnet_enumerations }}parameter-mode-enums.html#colourconversionmode) Enumeration items. 
      
 **Default Value**    
    `[EnumColourConversionMode.CICM_GENERAL, EnumColourConversionMode.CICM_SKIP, EnumColourConversionMode.CICM_SKIP, EnumColourConversionMode.CICM_SKIP, EnumColourConversionMode.CICM_SKIP, EnumColourConversionMode.CICM_SKIP, EnumColourConversionMode.CICM_SKIP, EnumColourConversionMode.CICM_SKIP]`  
@@ -72,7 +72,7 @@ EnumGrayscaleTransformationMode[] Dynamsoft.DBR.FurtherModes.GrayscaleTransforma
 ```
 
 **Value Range**    
-   Each array item can be any one of the [`GrayscaleTransformationMode`]({{ site.dotnet_enumerations }}parameter-mode-enums.html#grayscaletransformationmode) Enumeration items. 
+   Each array item can be any one of the [`GrayscaleTransformationMode`]({{ site.dbr_dotnet_enumerations }}parameter-mode-enums.html#grayscaletransformationmode) Enumeration items. 
      
 **Default Value**    
    `[EnumGrayscaleTransformationMode.GTM_ORIGINAL, EnumGrayscaleTransformationMode.GTM_SKIP, EnumGrayscaleTransformationMode.GTM_SKIP, EnumGrayscaleTransformationMode.GTM_SKIP, EnumGrayscaleTransformationMode.GTM_SKIP, EnumGrayscaleTransformationMode.GTM_SKIP, EnumGrayscaleTransformationMode.GTM_SKIP, EnumGrayscaleTransformationMode.GTM_SKIP]`  
@@ -88,7 +88,7 @@ EnumRegionPredetectionMode[] Dynamsoft.DBR.FurtherModes.RegionPredetectionModes
 ```
 
 **Value Range**    
-   Each array item can be any one of the [`RegionPredetectionMode`]({{ site.dotnet_enumerations }}parameter-mode-enums.html#regionpredetectionmode) Enumeration items.  
+   Each array item can be any one of the [`RegionPredetectionMode`]({{ site.dbr_dotnet_enumerations }}parameter-mode-enums.html#regionpredetectionmode) Enumeration items.  
      
 **Default Value**    
    `[EnumRegionPredetectionMode.RPM_GENERAL, EnumRegionPredetectionMode.RPM_SKIP, EnumRegionPredetectionMode.RPM_SKIP, EnumRegionPredetectionMode.RPM_SKIP, EnumRegionPredetectionMode.RPM_SKIP, EnumRegionPredetectionMode.RPM_SKIP, EnumRegionPredetectionMode.RPM_SKIP, EnumRegionPredetectionMode.RPM_SKIP]`  
@@ -104,7 +104,7 @@ EnumImagePreprocessingMode[] Dynamsoft.DBR.FurtherModes.ImagePreprocessingModes
 ```
 
 **Value Range**    
-   Each array item can be any one of the [`ImagePreprocessingMode`]({{ site.dotnet_enumerations }}parameter-mode-enums.html#imagepreprocessingmode) Enumeration items.  
+   Each array item can be any one of the [`ImagePreprocessingMode`]({{ site.dbr_dotnet_enumerations }}parameter-mode-enums.html#imagepreprocessingmode) Enumeration items.  
      
 **Default Value**    
    `[EnumImagePreprocessingMode.IPM_GENERAL, EnumImagePreprocessingMode.IPM_SKIP, EnumImagePreprocessingMode.IPM_SKIP, EnumImagePreprocessingMode.IPM_SKIP, EnumImagePreprocessingMode.IPM_SKIP, EnumImagePreprocessingMode.IPM_SKIP, EnumImagePreprocessingMode.IPM_SKIP, EnumImagePreprocessingMode.IPM_SKIP]`  
@@ -120,7 +120,7 @@ EnumTextureDetectionMode[] Dynamsoft.DBR.FurtherModes.TextureDetectionModes
 ```
 
 **Value Range**    
-   Each array item can be any one of the [`TextureDetectionMode`]({{ site.dotnet_enumerations }}parameter-mode-enums.html#texturedetectionmode) Enumeration items.  
+   Each array item can be any one of the [`TextureDetectionMode`]({{ site.dbr_dotnet_enumerations }}parameter-mode-enums.html#texturedetectionmode) Enumeration items.  
      
 **Default Value**    
    `[EnumTextureDetectionMode.TDM_GENERAL_WIDTH_CONCENTRATION, EnumTextureDetectionMode.TDM_SKIP, EnumTextureDetectionMode.TDM_SKIP, EnumTextureDetectionMode.TDM_SKIP, EnumTextureDetectionMode.TDM_SKIP, EnumTextureDetectionMode.TDM_SKIP, EnumTextureDetectionMode.TDM_SKIP, EnumTextureDetectionMode.TDM_SKIP]`  
@@ -136,7 +136,7 @@ EnumTextFilterMode[] Dynamsoft.DBR.FurtherModes.TextFilterModes
 ```
 
 **Value Range**    
-   Each array item can be any one of the [`TextFilterMode`]({{ site.dotnet_enumerations }}parameter-mode-enums.html#textfiltermode) Enumeration items.  
+   Each array item can be any one of the [`TextFilterMode`]({{ site.dbr_dotnet_enumerations }}parameter-mode-enums.html#textfiltermode) Enumeration items.  
      
 **Default Value**    
    `[EnumTextFilterMode.TFM_GENERAL_CONTOUR, EnumTextFilterMode.TFM_SKIP, EnumTextFilterMode.TFM_SKIP, EnumTextFilterMode.TFM_SKIP, EnumTextFilterMode.TFM_SKIP, EnumTextFilterMode.TFM_SKIP, EnumTextFilterMode.TFM_SKIP, EnumTextFilterMode.TFM_SKIP]`  
@@ -153,7 +153,7 @@ EnumDPMCodeReadingMode[] Dynamsoft.DBR.FurtherModes.DPMCodeReadingModes
 ```
 
 **Value Range**    
-   Each array item can be any one of the [`DPMCodeReadingMode`]({{ site.dotnet_enumerations }}parameter-mode-enums.html#dpmcodereadingmode) Enumeration items.  
+   Each array item can be any one of the [`DPMCodeReadingMode`]({{ site.dbr_dotnet_enumerations }}parameter-mode-enums.html#dpmcodereadingmode) Enumeration items.  
      
 **Default Value**    
    `[EnumDPMCodeReadingMode.DPMCRM_SKIP, EnumDPMCodeReadingMode.DPMCRM_SKIP, EnumDPMCodeReadingMode.DPMCRM_SKIP, EnumDPMCodeReadingMode.DPMCRM_SKIP, EnumDPMCodeReadingMode.DPMCRM_SKIP, EnumDPMCodeReadingMode.DPMCRM_SKIP, EnumDPMCodeReadingMode.DPMCRM_SKIP, EnumDPMCodeReadingMode.DPMCRM_SKIP]`  
@@ -169,7 +169,7 @@ EnumDeformationResistingMode[] Dynamsoft.DBR.FurtherModes.DeformationResistingMo
 ```
 
 **Value Range**    
-   Each array item can be any one of the [`DeformationResistingMode`]({{ site.dotnet_enumerations }}parameter-mode-enums.html#deformationresistingmode) Enumeration items.  
+   Each array item can be any one of the [`DeformationResistingMode`]({{ site.dbr_dotnet_enumerations }}parameter-mode-enums.html#deformationresistingmode) Enumeration items.  
      
 **Default Value**    
    `[EnumDeformationResistingMode.DRM_SKIP, EnumDeformationResistingMode.DRM_SKIP, EnumDeformationResistingMode.DRM_SKIP, EnumDeformationResistingMode.DRM_SKIP, EnumDeformationResistingMode.DRM_SKIP, EnumDeformationResistingMode.DRM_SKIP, EnumDeformationResistingMode.DRM_SKIP, EnumDeformationResistingMode.DRM_SKIP]`  
@@ -185,7 +185,7 @@ EnumColourConversionMode[] Dynamsoft.DBR.FurtherModes.ColourConversionModes
 ```
 
 **Value Range**    
-   Each array item can be any one of the [`BarcodeComplementMode`]({{ site.dotnet_enumerations }}parameter-mode-enums.html#barcodecomplementmode) Enumeration items.  
+   Each array item can be any one of the [`BarcodeComplementMode`]({{ site.dbr_dotnet_enumerations }}parameter-mode-enums.html#barcodecomplementmode) Enumeration items.  
      
 **Default Value**    
    `[EnumColourConversionMode.BCM_SKIP, EnumColourConversionMode.BCM_SKIP, EnumColourConversionMode.BCM_SKIP, EnumColourConversionMode.BCM_SKIP, EnumColourConversionMode.BCM_SKIP, EnumColourConversionMode.BCM_SKIP, EnumColourConversionMode.BCM_SKIP, EnumColourConversionMode.BCM_SKIP]`  
@@ -201,7 +201,7 @@ EnumBarcodeColourMode[] Dynamsoft.DBR.FurtherModes.BarcodeColourModes
 ```
 
 **Value Range**    
-   Each array item can be any one of the [`BarcodeColourMode`]({{ site.dotnet_enumerations }}parameter-mode-enums.html#barcodecolourmode) Enumeration items.  
+   Each array item can be any one of the [`BarcodeColourMode`]({{ site.dbr_dotnet_enumerations }}parameter-mode-enums.html#barcodecolourmode) Enumeration items.  
      
 **Default Value**    
    `[EnumBarcodeColourMode.BICM_DARK_ON_LIGHT, EnumBarcodeColourMode.BICM_SKIP, EnumBarcodeColourMode.BICM_SKIP, EnumBarcodeColourMode.BICM_SKIP, EnumBarcodeColourMode.BICM_SKIP, EnumBarcodeColourMode.BICM_SKIP, EnumBarcodeColourMode.BICM_SKIP, EnumBarcodeColourMode.BICM_SKIP]`  

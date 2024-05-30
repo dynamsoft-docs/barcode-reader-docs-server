@@ -21,17 +21,17 @@ permalink: /programming/python/release-notes/python-8.html
 
 #### New
 
-- Added a new `LocalizationModes` item [`LM_ONED_FAST_SCAN`]({{site.parameters_reference}}localization-modes.html#lm_oned_fast_scan), which significantly improved the localization speed for 1D barcodes.
+- Added a new `LocalizationModes` item [`LM_ONED_FAST_SCAN`]({{site.dbr_parameters_reference}}localization-modes.html#lm_oned_fast_scan), which significantly improved the localization speed for 1D barcodes.
 
 #### Improved
 
 - Improved the confidence calculation algorithm for 2D barcode results. Users can get even more accurate results by configuring the confidence filter.
-- Improved the barcode reading speed by applying the localized barcodes filter. The barcodes will be filtered according to the parameters [`BarcodeHeightRangeArray`]({{site.parameters_reference}}barcode-height-range-array.html), [`BarcodeWidthRangeArray`]({{site.parameters_reference}}barcode-width-range-array.html), [`BarcodeAngleRangeArray`]({{site.parameters_reference}}barcode-angle-range-array.html) and [`MinRatioOfBarcodeZoneWidthToHeight`]({{site.parameters_reference}}min-ratio-of-barcode-zone-width-to-height.html).
+- Improved the barcode reading speed by applying the localized barcodes filter. The barcodes will be filtered according to the parameters [`BarcodeHeightRangeArray`]({{site.dbr_parameters_reference}}barcode-height-range-array.html), [`BarcodeWidthRangeArray`]({{site.dbr_parameters_reference}}barcode-width-range-array.html), [`BarcodeAngleRangeArray`]({{site.dbr_parameters_reference}}barcode-angle-range-array.html) and [`MinRatioOfBarcodeZoneWidthToHeight`]({{site.dbr_parameters_reference}}min-ratio-of-barcode-zone-width-to-height.html).
 - Updated the exception message when the full license is invalid or has expired.
 
 #### Breaking Change(s)
 
-- The low confidence barcode results will no longer be returned by default. The default value of parameter [`minResultConfidence`]({{site.parameters_reference}}min-result-confidence.html) is preset to 30, which can filter out the majority of misreading results and keep as many correct results as possible.
+- The low confidence barcode results will no longer be returned by default. The default value of parameter [`minResultConfidence`]({{site.dbr_parameters_reference}}min-result-confidence.html) is preset to 30, which can filter out the majority of misreading results and keep as many correct results as possible.
 
 ## 8.6.0 (07/20/2021)
 
@@ -49,17 +49,17 @@ permalink: /programming/python/release-notes/python-8.html
 
 #### Improved
 
-- Improved the [`confidence`]({{site.python_class}}ExtendedResult.html#confidence) algorithm for 1D barcode results. Users can get even more accurate results by configuring the `confidence` filter.
+- Improved the [`confidence`]({{site.dbr_python_class}}ExtendedResult.html#confidence) algorithm for 1D barcode results. Users can get even more accurate results by configuring the `confidence` filter.
 
 ## 8.4.0 (06/10/2021)
 
 ### New
 
-- Added a new method [`get_idle_instances_count`]({{site.python_methods}}license.html#get_idle_instances_count) to return the number of available instances when using the 'per concurrent instance' licensing model.
-- Added the [`organizationID`]({{site.python_class}}DMLTSConnectionParameters.html#organization_id) property for license authentication.
-- Added a new attribute [`is_mirrored`]({{site.python_class}}TextResult.html#is_mirrored) to the `TextResult` class. `is_mirrored` returns whether the barcode is mirrored.
-- Added a new attribute [`is_dpm`]({{site.python_class}}TextResult.html#is_dpm) to the `TextResult` class. `is_dpm` returns whether the barcode is recognized by the DPM mode.
-- Added a new argument, [`ThresholdCompensation`]({{site.parameters_reference}}binarization-modes.html#thresholdcompensation), to the `BinarizationModes` mode arguments.
+- Added a new method [`get_idle_instances_count`]({{site.dbr_python_methods}}license.html#get_idle_instances_count) to return the number of available instances when using the 'per concurrent instance' licensing model.
+- Added the [`organizationID`]({{site.dbr_python_class}}DMLTSConnectionParameters.html#organization_id) property for license authentication.
+- Added a new attribute [`is_mirrored`]({{site.dbr_python_class}}TextResult.html#is_mirrored) to the `TextResult` class. `is_mirrored` returns whether the barcode is mirrored.
+- Added a new attribute [`is_dpm`]({{site.dbr_python_class}}TextResult.html#is_dpm) to the `TextResult` class. `is_dpm` returns whether the barcode is recognized by the DPM mode.
+- Added a new argument, [`ThresholdCompensation`]({{site.dbr_parameters_reference}}binarization-modes.html#thresholdcompensation), to the `BinarizationModes` mode arguments.
 
 ### Improved
 
@@ -78,7 +78,7 @@ permalink: /programming/python/release-notes/python-8.html
 
 ### New
 
-- Added a new mode argument, `FindAccurateBoundary`, to [`RegionPredetectionModes`]({{ site.parameters_reference }}region-predetection-modes.html#regionpredetectionmodes) that determines if the SDK attempts to find an accurate boundary when RegionPredetectionModes is set to `RPM_GENERAL_HSV_CONTRAST`.
+- Added a new mode argument, `FindAccurateBoundary`, to [`RegionPredetectionModes`]({{ site.dbr_parameters_reference }}region-predetection-modes.html#regionpredetectionmodes) that determines if the SDK attempts to find an accurate boundary when RegionPredetectionModes is set to `RPM_GENERAL_HSV_CONTRAST`.
 
 ### Improved
 

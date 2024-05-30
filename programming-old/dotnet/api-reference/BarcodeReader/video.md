@@ -301,7 +301,7 @@ EnumErrorCode Dynamsoft.DBR.BarcodeReader.SetUniqueBarcodeCallback(CB_TextResult
 `[in] pUser`Customized arguments passed to your function.
 
 **Return Value**  
-Returns [EnumErrorCode.DBR_SUCCESS]({{ site.dotnet_enumerations }}error-code.html#error-code-0) if the function operates successfully.
+Returns [EnumErrorCode.DBR_SUCCESS]({{ site.dbr_dotnet_enumerations }}error-code.html#error-code-0) if the function operates successfully.
 
 **Exception**  
 [`BarcodeReaderException`](../class/BarcodeReaderException.md) The exception thrown by Dynamsoft Barcode Reader.

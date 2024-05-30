@@ -58,18 +58,18 @@ if(reader != null)
 
 **Remarks**  
 Check follow link for available modes and arguments:
-- [`BarcodeColourModes`]({{ site.parameters_reference }}barcode-colour-modes.html#barcodecolourmodes)
-- [`BinarizationModes`]({{ site.parameters_reference }}binarization-modes.html#binarizationmodes)
-- [`ColourClusteringModes`]({{ site.parameters_reference }}colour-clustering-modes.html#colourclusteringmodes)
-- [`ColourConversionModes`]({{ site.parameters_reference }}colour-conversion-modes.html#colourconversionmodes)
-- [`DeformationResistingModes`]({{ site.parameters_reference }}deformation-resisting-modes.html#deformationresistingmodes)
-- [`ImagePreprocessingModes`]({{ site.parameters_reference }}image-preprocessing-modes.html#imagepreprocessingmodes)
-- [`IntermediateResultSavingMode`]({{ site.parameters_reference }}intermediate-result-saving-mode.html#intermediateresultsavingmode)
-- [`LocalizationModes`]({{ site.parameters_reference }}localization-modes.html#localizationmodes)
-- [`RegionPredetectionModes`]({{ site.parameters_reference }}region-predetection-modes.html#regionpredetectionmodes)
-- [`ScaleUpModes`]({{ site.parameters_reference }}scale-up-modes.html#scaleupmodes)
-- [`TextFilterModes`]({{ site.parameters_reference }}text-filter-modes.html#textfiltermodes)
-- [`TextureDetectionModes`]({{ site.parameters_reference }}texture-detection-modes.html#texturedetectionmodes) 
+- [`BarcodeColourModes`]({{ site.dbr_parameters_reference }}barcode-colour-modes.html#barcodecolourmodes)
+- [`BinarizationModes`]({{ site.dbr_parameters_reference }}binarization-modes.html#binarizationmodes)
+- [`ColourClusteringModes`]({{ site.dbr_parameters_reference }}colour-clustering-modes.html#colourclusteringmodes)
+- [`ColourConversionModes`]({{ site.dbr_parameters_reference }}colour-conversion-modes.html#colourconversionmodes)
+- [`DeformationResistingModes`]({{ site.dbr_parameters_reference }}deformation-resisting-modes.html#deformationresistingmodes)
+- [`ImagePreprocessingModes`]({{ site.dbr_parameters_reference }}image-preprocessing-modes.html#imagepreprocessingmodes)
+- [`IntermediateResultSavingMode`]({{ site.dbr_parameters_reference }}intermediate-result-saving-mode.html#intermediateresultsavingmode)
+- [`LocalizationModes`]({{ site.dbr_parameters_reference }}localization-modes.html#localizationmodes)
+- [`RegionPredetectionModes`]({{ site.dbr_parameters_reference }}region-predetection-modes.html#regionpredetectionmodes)
+- [`ScaleUpModes`]({{ site.dbr_parameters_reference }}scale-up-modes.html#scaleupmodes)
+- [`TextFilterModes`]({{ site.dbr_parameters_reference }}text-filter-modes.html#textfiltermodes)
+- [`TextureDetectionModes`]({{ site.dbr_parameters_reference }}texture-detection-modes.html#texturedetectionmodes) 
 
 
 
@@ -114,18 +114,18 @@ if(reader != null)
 
 **Remarks**  
 Check follow link for available modes and arguments:
-- [`BarcodeColourModes`]({{ site.parameters_reference }}barcode-colour-modes.html#barcodecolourmodes)
-- [`BinarizationModes`]({{ site.parameters_reference }}binarization-modes.html#binarizationmodes)
-- [`ColourClusteringModes`]({{ site.parameters_reference }}colour-clustering-modes.html#colourclusteringmodes)
-- [`ColourConversionModes`]({{ site.parameters_reference }}colour-conversion-modes.html#colourconversionmodes)
-- [`DeformationResistingModes`]({{ site.parameters_reference }}deformation-resisting-modes.html#deformationresistingmodes)
-- [`ImagePreprocessingModes`]({{ site.parameters_reference }}image-preprocessing-modes.html#imagepreprocessingmodes)
-- [`IntermediateResultSavingMode`]({{ site.parameters_reference }}intermediate-result-saving-mode.html#intermediateresultsavingmode)
-- [`LocalizationModes`]({{ site.parameters_reference }}localization-modes.html#localizationmodes)
-- [`RegionPredetectionModes`]({{ site.parameters_reference }}region-predetection-modes.html#regionpredetectionmodes)
-- [`ScaleUpModes`]({{ site.parameters_reference }}scale-up-modes.html#scaleupmodes)
-- [`TextFilterModes`]({{ site.parameters_reference }}text-filter-modes.html#textfiltermodes)
-- [`TextureDetectionModes`]({{ site.parameters_reference }}texture-detection-modes.html#texturedetectionmodes)    
+- [`BarcodeColourModes`]({{ site.dbr_parameters_reference }}barcode-colour-modes.html#barcodecolourmodes)
+- [`BinarizationModes`]({{ site.dbr_parameters_reference }}binarization-modes.html#binarizationmodes)
+- [`ColourClusteringModes`]({{ site.dbr_parameters_reference }}colour-clustering-modes.html#colourclusteringmodes)
+- [`ColourConversionModes`]({{ site.dbr_parameters_reference }}colour-conversion-modes.html#colourconversionmodes)
+- [`DeformationResistingModes`]({{ site.dbr_parameters_reference }}deformation-resisting-modes.html#deformationresistingmodes)
+- [`ImagePreprocessingModes`]({{ site.dbr_parameters_reference }}image-preprocessing-modes.html#imagepreprocessingmodes)
+- [`IntermediateResultSavingMode`]({{ site.dbr_parameters_reference }}intermediate-result-saving-mode.html#intermediateresultsavingmode)
+- [`LocalizationModes`]({{ site.dbr_parameters_reference }}localization-modes.html#localizationmodes)
+- [`RegionPredetectionModes`]({{ site.dbr_parameters_reference }}region-predetection-modes.html#regionpredetectionmodes)
+- [`ScaleUpModes`]({{ site.dbr_parameters_reference }}scale-up-modes.html#scaleupmodes)
+- [`TextFilterModes`]({{ site.dbr_parameters_reference }}text-filter-modes.html#textfiltermodes)
+- [`TextureDetectionModes`]({{ site.dbr_parameters_reference }}texture-detection-modes.html#texturedetectionmodes)    
 
 
 

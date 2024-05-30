@@ -59,18 +59,18 @@ delete reader;
 
 **Remarks**  
 Check follow link for available modes and arguments:
-- [`BarcodeColourModes`]({{ site.parameters_reference }}barcode-colour-modes.html)
-- [`BinarizationModes`]({{ site.parameters_reference }}binarization-modes.html)
-- [`ColourClusteringModes`]({{ site.parameters_reference }}colour-clustering-modes.html)
-- [`ColourConversionModes`]({{ site.parameters_reference }}colour-conversion-modes.html)
-- [`DeformationResistingModes`]({{ site.parameters_reference }}deformation-resisting-modes.html)
-- [`ImagePreprocessingModes`]({{ site.parameters_reference }}image-preprocessing-modes.html)
-- [`IntermediateResultSavingMode`]({{ site.parameters_reference }}intermediate-result-saving-mode.html)
-- [`LocalizationModes`]({{ site.parameters_reference }}localization-modes.html)
-- [`RegionPredetectionModes`]({{ site.parameters_reference }}region-predetection-modes.html)
-- [`ScaleUpModes`]({{ site.parameters_reference }}scale-up-modes.html)
-- [`TextFilterModes`]({{ site.parameters_reference }}text-filter-modes.html)
-- [`TextureDetectionModes`]({{ site.parameters_reference }}texture-detection-modes.html) 
+- [`BarcodeColourModes`]({{ site.dbr_parameters_reference }}barcode-colour-modes.html)
+- [`BinarizationModes`]({{ site.dbr_parameters_reference }}binarization-modes.html)
+- [`ColourClusteringModes`]({{ site.dbr_parameters_reference }}colour-clustering-modes.html)
+- [`ColourConversionModes`]({{ site.dbr_parameters_reference }}colour-conversion-modes.html)
+- [`DeformationResistingModes`]({{ site.dbr_parameters_reference }}deformation-resisting-modes.html)
+- [`ImagePreprocessingModes`]({{ site.dbr_parameters_reference }}image-preprocessing-modes.html)
+- [`IntermediateResultSavingMode`]({{ site.dbr_parameters_reference }}intermediate-result-saving-mode.html)
+- [`LocalizationModes`]({{ site.dbr_parameters_reference }}localization-modes.html)
+- [`RegionPredetectionModes`]({{ site.dbr_parameters_reference }}region-predetection-modes.html)
+- [`ScaleUpModes`]({{ site.dbr_parameters_reference }}scale-up-modes.html)
+- [`TextFilterModes`]({{ site.dbr_parameters_reference }}text-filter-modes.html)
+- [`TextureDetectionModes`]({{ site.dbr_parameters_reference }}texture-detection-modes.html) 
 
 
 
@@ -118,18 +118,18 @@ delete reader;
 
 **Remarks**  
 Check follow link for available modes and arguments:
-- [`BarcodeColourModes`]({{ site.parameters_reference }}barcode-colour-modes.html)
-- [`BinarizationModes`]({{ site.parameters_reference }}binarization-modes.html)
-- [`ColourClusteringModes`]({{ site.parameters_reference }}colour-clustering-modes.html)
-- [`ColourConversionModes`]({{ site.parameters_reference }}colour-conversion-modes.html)
-- [`DeformationResistingModes`]({{ site.parameters_reference }}deformation-resisting-modes.html)
-- [`ImagePreprocessingModes`]({{ site.parameters_reference }}image-preprocessing-modes.html)
-- [`IntermediateResultSavingMode`]({{ site.parameters_reference }}intermediate-result-saving-mode.html)
-- [`LocalizationModes`]({{ site.parameters_reference }}localization-modes.html)
-- [`RegionPredetectionModes`]({{ site.parameters_reference }}region-predetection-modes.html)
-- [`ScaleUpModes`]({{ site.parameters_reference }}scale-up-modes.html)
-- [`TextFilterModes`]({{ site.parameters_reference }}text-filter-modes.html)
-- [`TextureDetectionModes`]({{ site.parameters_reference }}texture-detection-modes.html)   
+- [`BarcodeColourModes`]({{ site.dbr_parameters_reference }}barcode-colour-modes.html)
+- [`BinarizationModes`]({{ site.dbr_parameters_reference }}binarization-modes.html)
+- [`ColourClusteringModes`]({{ site.dbr_parameters_reference }}colour-clustering-modes.html)
+- [`ColourConversionModes`]({{ site.dbr_parameters_reference }}colour-conversion-modes.html)
+- [`DeformationResistingModes`]({{ site.dbr_parameters_reference }}deformation-resisting-modes.html)
+- [`ImagePreprocessingModes`]({{ site.dbr_parameters_reference }}image-preprocessing-modes.html)
+- [`IntermediateResultSavingMode`]({{ site.dbr_parameters_reference }}intermediate-result-saving-mode.html)
+- [`LocalizationModes`]({{ site.dbr_parameters_reference }}localization-modes.html)
+- [`RegionPredetectionModes`]({{ site.dbr_parameters_reference }}region-predetection-modes.html)
+- [`ScaleUpModes`]({{ site.dbr_parameters_reference }}scale-up-modes.html)
+- [`TextFilterModes`]({{ site.dbr_parameters_reference }}text-filter-modes.html)
+- [`TextureDetectionModes`]({{ site.dbr_parameters_reference }}texture-detection-modes.html)   
 
 
 
@@ -139,7 +139,7 @@ Check follow link for available modes and arguments:
 
 ## GetRuntimeSettings
 
-Get current settings and save them into a [`PublicRuntimeSettings`]({{ site.structs }}PublicRuntimeSettings.html?src=cpp) struct.
+Get current settings and save them into a [`PublicRuntimeSettings`]({{ site.dbr_structs }}PublicRuntimeSettings.html?src=cpp) struct.
 
 ```cpp
 int dynamsoft::dbr::CBarcodeReader::GetRuntimeSettings (PublicRuntimeSettings* psettings)	
@@ -171,7 +171,7 @@ delete reader;
 
 ## UpdateRuntimeSettings
 
-Update runtime settings with a given [`PublicRuntimeSettings`]({{ site.structs }}PublicRuntimeSettings.html?src=cpp) struct.
+Update runtime settings with a given [`PublicRuntimeSettings`]({{ site.dbr_structs }}PublicRuntimeSettings.html?src=cpp) struct.
 
 ```cpp
 int dynamsoft::dbr::CBarcodeReader::UpdateRuntimeSettings (PublicRuntimeSettings* pSettings, char errorMsgBuffer[] = NULL, const int errorMsgBufferLen = 0)

@@ -23,7 +23,7 @@ public class QRCodeDetails
 | [`ModuleSize`](#modulesize) | *int* |
 | [`Rows`](#rows) | *int* |
 | [`Columns`](#columns) | *int* |
-| [`ErrorCorrectionLevel`](#errorcorrectionlevel) | [`EnumQRCodeErrorCorrectionLevel`]({{ site.dotnet_enumerations }}other-enums.html#qrcodeerrorcorrectionlevel) |
+| [`ErrorCorrectionLevel`](#errorcorrectionlevel) | [`EnumQRCodeErrorCorrectionLevel`]({{ site.dbr_dotnet_enumerations }}other-enums.html#qrcodeerrorcorrectionlevel) |
 | [`Version`](#version) | *int* |
 | [`Model`](#model) | *int* |
 | [`Mode`](#mode) | *int* |

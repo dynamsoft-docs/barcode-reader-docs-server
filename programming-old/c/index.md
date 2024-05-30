@@ -11,9 +11,9 @@ permalink: /programming/c/index.html
 
 ## User Guide
 
-- [Getting Started]({{site.c}}user-guide.html)
-- [Explore Features]({{site.c}}user-guide/explore-features/index.html)
-- [Check Use Cases]({{site.c}}user-guide/use-cases/index.html)
+- [Getting Started]({{site.dbr_c}}user-guide.html)
+- [Explore Features]({{site.dbr_c}}user-guide/explore-features/index.html)
+- [Check Use Cases]({{site.dbr_c}}user-guide/use-cases/index.html)
 
 ## Samples and Demo
 
@@ -22,7 +22,7 @@ permalink: /programming/c/index.html
 
 ## API Reference
 
-- [API Reference]({{site.c_api}}index.html)
+- [API Reference]({{site.dbr_c_api}}index.html)
 
 ## Release Notes
 
@@ -32,7 +32,7 @@ permalink: /programming/c/index.html
 
 ## Upgrade Instructions
 
-- [How to upgrade to latest version]({{site.c}}upgrade-instruction.html)
+- [How to upgrade to latest version]({{site.dbr_c}}upgrade-instruction.html)
 
 ## Online Store
 

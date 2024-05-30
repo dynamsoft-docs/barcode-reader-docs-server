@@ -61,7 +61,7 @@ Let's start by creating a console application which demonstrates how to use the 
     
     >Please replace `<insert DBR license key here>` with a valid DBR licensekey. There are two ways to obtain one:
     >- Search `initLicense` and find the license from `[INSTALLATION FOLDER]/samples/BarcodeReaderDemo/src/com/dynamsoft/demo/BarcodeReaderDemo.java`.
-    >- Request a trial license from <a href="https://www.dynamsoft.com/customer/license/trialLicense?utm_source=guide&product=dbr&package=desktop" target="_blank">Customer Portal</a>. 
+    >- Request a trial license from <a href="https://www.dynamsoft.com/customer/license/trialLicense?utm_source=guide&product=dbr&package=java" target="_blank">Customer Portal</a>. 
 
 ### Configure the Barcode Scanning Behavior
 1. Set barcode format and count to read.
@@ -74,7 +74,7 @@ Let's start by creating a console application which demonstrates how to use the 
    reader.updateRuntimeSettings(runtimeSettings);
     ```
 
-    >The barcode formats to enable is highly application-specific. We recommend that you only enable the barcode formats your application requires. Check out [Barcode Format Enumeration]({{ site.java_enumerations }}format-enums.html) for full supported barcode formats. 
+    >The barcode formats to enable is highly application-specific. We recommend that you only enable the barcode formats your application requires. Check out [Barcode Format Enumeration]({{ site.dbr_java_enumerations }}format-enums.html) for full supported barcode formats. 
 
     >If you know exactly the barcode count you want to read, specify `expectedBarcodesCount` to speed up the process and improve the accuracy. 
 
@@ -108,9 +108,9 @@ Let's start by creating a console application which demonstrates how to use the 
    }
     ```
 
-    >For the error handling mechanism, the SDK throws [BarcodeReaderException]({{site.java_class}}BarcodeReaderException.html) for each function. You should add codes for exception handling based on your needs. 
+    >For the error handling mechanism, the SDK throws [BarcodeReaderException]({{site.dbr_java_class}}BarcodeReaderException.html) for each function. You should add codes for exception handling based on your needs. 
 
-    >The SDK returns multiple barcode information, including barcode count, barcode format, barcode text, location, barcode raw data, etc. Check out [TextResult]({{ site.java_class }}TextResult.html) for full supported result data.
+    >The SDK returns multiple barcode information, including barcode count, barcode format, barcode text, location, barcode raw data, etc. Check out [TextResult]({{ site.dbr_java_class }}TextResult.html) for full supported result data.
 
 ### Release Resource
 
@@ -131,7 +131,7 @@ Please change all `[INSTALLATION FOLDER]` in above code snippet to your unpackin
 
 ## Related Articles
 
-- [How to upgrade to latest version]({{site.java}}upgrade-instruction.html)
+- [How to upgrade to latest version]({{site.dbr_java}}upgrade-instruction.html)
 
 
    

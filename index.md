@@ -10,8 +10,8 @@ description: Dynamsoft Barcode Reader SDK Documentation Homepage
 
 Learn how to use Dynamsoft Barcode Reader SDK in different programming languages:
 
-- [Python]({{ site.python }})
-- [C]({{ site.c }})
-- [C++]({{ site.cpp }})
-- [.NET]({{ site.dotnet }})
-- [Java]({{ site.java }})
+- [Python]({{ site.dbr_python }})
+- [C]({{ site.dbr_c }})
+- [C++]({{ site.dbr_cpp }})
+- [.NET]({{ site.dbr_dotnet }})
+- [Java]({{ site.dbr_java }})

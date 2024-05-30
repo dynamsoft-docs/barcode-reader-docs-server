@@ -171,7 +171,7 @@ static int dynamsoft::dbr::CBarcodeReader::InitLTSConnectionParameters(DM_LTSCon
 ```   
    
 #### Parameters
-`[in, out] pLTSConnectionParameters` The struct of [`DM_LTSConnectionParameters`]({{ site.structs }}DMLTSConnectionParameters.html).   
+`[in, out] pLTSConnectionParameters` The struct of [`DM_LTSConnectionParameters`]({{ site.dbr_structs }}DMLTSConnectionParameters.html).   
 
 #### Return value
 Returns error code (returns 0 if the function operates successfully).    
@@ -195,7 +195,7 @@ static int dynamsoft::dbr::CBarcodeReader::InitLicenseFromLTS(DM_LTSConnectionPa
 ```   
    
 #### Parameters
-`[in] pLTSConnectionParameters` The struct [`DM_LTSConnectionParameters`]({{ site.structs }}DMLTSConnectionParameters.html) with customized settings.   
+`[in] pLTSConnectionParameters` The struct [`DM_LTSConnectionParameters`]({{ site.dbr_structs }}DMLTSConnectionParameters.html) with customized settings.   
 `[in, out] errorMsgBuffer`<sub>Optional</sub> The buffer is allocated by the caller and the recommended length is 256. The error message will be copied to the buffer.  
 `[in]	errorMsgBufferLen`<sub>Optional</sub> The length of the allocated buffer.  
 

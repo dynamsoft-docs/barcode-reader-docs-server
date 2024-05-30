@@ -26,7 +26,7 @@ In this guide, you will learn step by step on how to build a barcode reading app
   - .NET 5.0 or 6.0
 
 >Note:
->Dynamsoft Barcode Reader provides both online and offline license options. The online license option might not work in an environment that doesn't have network connection. In such case, you can get an offline trial license key via <a href="https://www.dynamsoft.com/customer/license/trialLicense?utm_source=guide&product=dbr&package=desktop" target="_blank">Customer Portal</a> or by <a href="https://www.dynamsoft.com/contact/" target="_blank">contacting us</a>.
+>Dynamsoft Barcode Reader provides both online and offline license options. The online license option might not work in an environment that doesn't have network connection. In such case, you can get an offline trial license key via <a href="https://www.dynamsoft.com/customer/license/trialLicense?utm_source=guide&product=dbr&package=dotnet" target="_blank">Customer Portal</a> or by <a href="https://www.dynamsoft.com/contact/" target="_blank">contacting us</a>.
 
 <iframe width="400" height="225" src="https://www.youtube.com/embed/QjrP9EC6IlA" title="How to Use Dynamsoft Barcode Reader .NET SDK | Dynamsoft Tutorial" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -77,7 +77,7 @@ Let's start by creating a console application which demonstrates how to use the 
 
     >Please replace `<insert DBR license key here>` with a valid DBR licensekey. There are two ways to obtain one:
     >- Search `DBRLicense` and find the license from `[INSTALLATION FOLDER]\Samples\BarcodeReaderDemo\BarcodeReaderDemo\App.config`.
-    >- Request a trial license from <a href="https://www.dynamsoft.com/customer/license/trialLicense?utm_source=guide&product=dbr&package=desktop" target="_blank">Customer Portal</a>.
+    >- Request a trial license from <a href="https://www.dynamsoft.com/customer/license/trialLicense?utm_source=guide&product=dbr&package=dotnet" target="_blank">Customer Portal</a>.
 
 2. Create an instance of Dynamsoft Barcode Reader
 
@@ -111,11 +111,11 @@ Let's start by creating a console application which demonstrates how to use the 
     reader.UpdateRuntimeSettings(settings);
     ```
 
-    >The barcode formats to enable is highly application-specific. We recommend that you only enable the barcode formats your application requires. Check out [Barcode Format Enumeration]({{ site.dotnet_enumerations }}format-enums.html) for full supported barcode formats.
+    >The barcode formats to enable is highly application-specific. We recommend that you only enable the barcode formats your application requires. Check out [Barcode Format Enumeration]({{ site.dbr_dotnet_enumerations }}format-enums.html) for full supported barcode formats.
 
     >If you know exactly the barcode count you want to read, specify `ExpectedBarcodesCount` to speed up the process and improve the accuracy.
 
-    >The Barcode Reader SDK comes with a large array of runtime settings to optimize the performance of the library. To learn about all the runtime settings, please visit the [RuntimeSettings](api-reference/struct/PublicRuntimeSettings.md) API page. To learn more about the cases and situations in which the settings can help, please visit the [Explore Features]({{site.dotnet}}user-guide/explore-features/index.html) page.
+    >The Barcode Reader SDK comes with a large array of runtime settings to optimize the performance of the library. To learn about all the runtime settings, please visit the [RuntimeSettings](api-reference/struct/PublicRuntimeSettings.md) API page. To learn more about the cases and situations in which the settings can help, please visit the [Explore Features]({{site.dbr_dotnet}}user-guide/explore-features/index.html) page.
 
 ### Decode and Output Results
 
@@ -143,9 +143,9 @@ Let's start by creating a console application which demonstrates how to use the 
     }
     ```
 
-    >For the error handling mechanism, the SDK throws [BarcodeReaderException]({{site.dotnet_class}}BarcodeReaderException.html) for each function. You should add codes for exception handling based on your needs. 
+    >For the error handling mechanism, the SDK throws [BarcodeReaderException]({{site.dbr_dotnet_class}}BarcodeReaderException.html) for each function. You should add codes for exception handling based on your needs. 
 
-    >The SDK returns multiple barcode information, including barcode count, barcode format, barcode text, location, barcode raw data, etc. Check out [TextResult]({{ site.dotnet_class }}TextResult.html) for full supported result data.
+    >The SDK returns multiple barcode information, including barcode count, barcode format, barcode text, location, barcode raw data, etc. Check out [TextResult]({{ site.dbr_dotnet_class }}TextResult.html) for full supported result data.
 
 ### Release Resource
 
@@ -179,7 +179,7 @@ Please change all `[INSTALLATION FOLDER]` in above code snippet to your unpackin
 
 ## Next Steps
 
-- Learn [How to Upgrade to Latest Version]({{site.dotnet}}upgrade-instruction.html)
-- [Explore SDK Features]({{site.dotnet}}user-guide/explore-features/index.html)
-- See how the SDK works in [Popular Use Cases]({{site.dotnet}}user-guide/use-cases/index.html)
-- Check out the [Official Samples and Demo]({{site.dotnet}}samples/index.html)
+- Learn [How to Upgrade to Latest Version]({{site.dbr_dotnet}}upgrade-instruction.html)
+- [Explore SDK Features]({{site.dbr_dotnet}}user-guide/explore-features/index.html)
+- See how the SDK works in [Popular Use Cases]({{site.dbr_dotnet}}user-guide/use-cases/index.html)
+- Check out the [Official Samples and Demo]({{site.dbr_dotnet}}samples/index.html)

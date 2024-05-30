@@ -77,7 +77,7 @@ Let's start by creating a console application which demonstrates how to use the 
     
     >Please replace `<insert DBR license key here>` with a valid DBR licensekey. There are two ways to obtain one:
     >- Search `InitLicense` and find the license from `[INSTALLATION FOLDER]/Samples/BarcodeReaderDemo/BarcodeReaderDemo.cpp`.
-    >- Request a trial license from <a href="https://www.dynamsoft.com/customer/license/trialLicense?utm_source=guide&product=dbr&package=desktop" target="_blank">Customer Portal</a>. 
+    >- Request a trial license from <a href="https://www.dynamsoft.com/customer/license/trialLicense?utm_source=guide&product=dbr&package=c_cpp" target="_blank">Customer Portal</a>. 
 
 ### Configure the Barcode Scanning Behavior
 1. Set barcode format and count to read.
@@ -92,7 +92,7 @@ Let's start by creating a console application which demonstrates how to use the 
     dbr.UpdateRuntimeSettings(&runtimeSettings, sError, 512);
     ```
 
-    >The barcode formats to enable is highly application-specific. We recommend that you only enable the barcode formats your application requires. Check out [Barcode Format Enumeration]({{ site.c_cpp_enumerations }}format-enums.html) for full supported barcode formats. 
+    >The barcode formats to enable is highly application-specific. We recommend that you only enable the barcode formats your application requires. Check out [Barcode Format Enumeration]({{ site.dbr_c_cpp_enumerations }}format-enums.html) for full supported barcode formats. 
 
     >If you know exactly the barcode count you want to read, specify `expectedBarcodesCount` to speed up the process and improve the accuracy. 
 
@@ -106,7 +106,7 @@ Let's start by creating a console application which demonstrates how to use the 
         cout << dbr.GetErrorString(iErrorCode) << endl;
     ```
 
-    >For the error handling mechanism, the SDK returns Error Code for each function and provides a function `GetErrorString` to get the readable message. You should add codes for error handling based on your needs. Check out [Error Code]({{site.c_cpp_enumerations}}error-code.html) for full supported error codes.
+    >For the error handling mechanism, the SDK returns Error Code for each function and provides a function `GetErrorString` to get the readable message. You should add codes for error handling based on your needs. Check out [Error Code]({{site.dbr_c_cpp_enumerations}}error-code.html) for full supported error codes.
 
 2. Get and output barcode results.
 
@@ -126,7 +126,7 @@ Let's start by creating a console application which demonstrates how to use the 
     cin.ignore();
     ```
 
-    >The SDK returns multiple barcode information, including barcode count, barcode format, barcode text, location, barcode raw data, etc. Check out [TextResult]({{ site.structs }}TextResult.html) for full supported result data.
+    >The SDK returns multiple barcode information, including barcode count, barcode format, barcode text, location, barcode raw data, etc. Check out [TextResult]({{ site.dbr_structs }}TextResult.html) for full supported result data.
 
 ### Release Allocated Memory
 
@@ -200,4 +200,4 @@ Please change all `[INSTALLATION FOLDER]` in above code snippet to your unpackin
 
 ## Related Articles
 
-- [How to upgrade to latest version]({{site.cpp}}upgrade-instruction.html)
+- [How to upgrade to latest version]({{site.dbr_cpp}}upgrade-instruction.html)

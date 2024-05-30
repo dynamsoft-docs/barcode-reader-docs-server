@@ -138,30 +138,30 @@ permalink: /programming/cplusplus/api-reference/index-v9.4.0.html
 
  | Struct | Description |
  | ------ | ----------- |
- | [`AztecDetails`]({{ site.structs }}AztecDetails.html?src=cpp) | Stores the Aztec details. |
- | [`Contour`]({{ site.structs }}Contour.html?src=cpp) | Stores the contour information. |
- | [`DBRPoint`]({{ site.structs }}DBRPoint.html?src=cpp) | Stores an x- and y-coordinate pair in two-dimensional space. |
- | [`DataMatrixDetails`]({{ site.structs }}DataMatrixDetails.html?src=cpp) | Stores the DataMatrix details. |	
- | [`DM_DLSConnectionParameters`]({{ site.structs }}DMDLSConnectionParameters.html?src=c) | `Deprecated` |
- | [`DM_LTSConnectionParameters`]({{ site.structs }}DMLTSConnectionParameters.html?src=c) | `Deprecated` |
- | [`ExtendedResult`]({{ site.structs }}ExtendedResult.html?src=cpp) | Stores the extended result. |
- | [`FrameDecodingParameters`]({{ site.structs }}FrameDecodingParameters.html?src=cpp) | Defines a struct to configure the frame decoding Parameters. |
- | [`FurtherModes`]({{ site.structs }}FurtherModes.html?src=cpp) | Stores the FurtherModes. |
- | [`ImageData`]({{ site.structs }}ImageData.html?src=cpp) | Stores the image data. |
- | [`IntermediateResult`]({{ site.structs }}IntermediateResult.html?src=cpp) | Stores the intermediate result. |
- | [`IntermediateResultArray`]({{ site.structs }}IntermediateResultArray.html?src=cpp) | Stores the intermediate result array. |
- | [`LineSegment`]({{ site.structs }}LineSegment.html?src=cpp) | Stores line segment data. |
- | [`LocalizationResult`]({{ site.structs }}LocalizationResult.html?src=cpp) | Stores the localization result. |
- | [`OneDCodeDetails`]({{ site.structs }}OneDCodeDetails.html?src=cpp) | Stores the OneD code details. |
- | [`PDF417Details`]({{ site.structs }}PDF417Details.html?src=cpp) | Stores the PDF417 details. |
- | [`PublicRuntimeSettings`]({{ site.structs }}PublicRuntimeSettings.html?src=cpp) | Defines a struct to configure the barcode reading runtime settings. |
- | [`QRCodeDetails`]({{ site.structs }}QRCodeDetails.html?src=cpp) | Stores the QRCode details. |
- | [`Quadrilateral`]({{ site.structs }}Quadrilateral.html?src=cpp) | Stores the quadrilateral.  |
- | [`RegionDefinition`]({{ site.structs }}RegionDefinition.html?src=cpp) | Stores the region information. |
- | [`RegionOfInterest`]({{ site.structs }}RegionOfInterest.html?src=cpp) | Stores the region of interest. |
- | [`SamplingImageData`]({{ site.structs }}SamplingImageData.html?src=cpp) | Stores the sampling image data.  |
- | [`TextResult`]({{ site.structs }}TextResult.html?src=cpp) | Stores the text result. |
- | [`TextResultArray`]({{ site.structs }}TextResultArray.html?src=cpp) | Stores the text result array. |
+ | [`AztecDetails`]({{ site.dbr_structs }}AztecDetails.html?src=cpp) | Stores the Aztec details. |
+ | [`Contour`]({{ site.dbr_structs }}Contour.html?src=cpp) | Stores the contour information. |
+ | [`DBRPoint`]({{ site.dbr_structs }}DBRPoint.html?src=cpp) | Stores an x- and y-coordinate pair in two-dimensional space. |
+ | [`DataMatrixDetails`]({{ site.dbr_structs }}DataMatrixDetails.html?src=cpp) | Stores the DataMatrix details. |	
+ | [`DM_DLSConnectionParameters`]({{ site.dbr_structs }}DMDLSConnectionParameters.html?src=c) | `Deprecated` |
+ | [`DM_LTSConnectionParameters`]({{ site.dbr_structs }}DMLTSConnectionParameters.html?src=c) | `Deprecated` |
+ | [`ExtendedResult`]({{ site.dbr_structs }}ExtendedResult.html?src=cpp) | Stores the extended result. |
+ | [`FrameDecodingParameters`]({{ site.dbr_structs }}FrameDecodingParameters.html?src=cpp) | Defines a struct to configure the frame decoding Parameters. |
+ | [`FurtherModes`]({{ site.dbr_structs }}FurtherModes.html?src=cpp) | Stores the FurtherModes. |
+ | [`ImageData`]({{ site.dbr_structs }}ImageData.html?src=cpp) | Stores the image data. |
+ | [`IntermediateResult`]({{ site.dbr_structs }}IntermediateResult.html?src=cpp) | Stores the intermediate result. |
+ | [`IntermediateResultArray`]({{ site.dbr_structs }}IntermediateResultArray.html?src=cpp) | Stores the intermediate result array. |
+ | [`LineSegment`]({{ site.dbr_structs }}LineSegment.html?src=cpp) | Stores line segment data. |
+ | [`LocalizationResult`]({{ site.dbr_structs }}LocalizationResult.html?src=cpp) | Stores the localization result. |
+ | [`OneDCodeDetails`]({{ site.dbr_structs }}OneDCodeDetails.html?src=cpp) | Stores the OneD code details. |
+ | [`PDF417Details`]({{ site.dbr_structs }}PDF417Details.html?src=cpp) | Stores the PDF417 details. |
+ | [`PublicRuntimeSettings`]({{ site.dbr_structs }}PublicRuntimeSettings.html?src=cpp) | Defines a struct to configure the barcode reading runtime settings. |
+ | [`QRCodeDetails`]({{ site.dbr_structs }}QRCodeDetails.html?src=cpp) | Stores the QRCode details. |
+ | [`Quadrilateral`]({{ site.dbr_structs }}Quadrilateral.html?src=cpp) | Stores the quadrilateral.  |
+ | [`RegionDefinition`]({{ site.dbr_structs }}RegionDefinition.html?src=cpp) | Stores the region information. |
+ | [`RegionOfInterest`]({{ site.dbr_structs }}RegionOfInterest.html?src=cpp) | Stores the region of interest. |
+ | [`SamplingImageData`]({{ site.dbr_structs }}SamplingImageData.html?src=cpp) | Stores the sampling image data.  |
+ | [`TextResult`]({{ site.dbr_structs }}TextResult.html?src=cpp) | Stores the text result. |
+ | [`TextResultArray`]({{ site.dbr_structs }}TextResultArray.html?src=cpp) | Stores the text result array. |
 
 
 
@@ -171,63 +171,63 @@ permalink: /programming/cplusplus/api-reference/index-v9.4.0.html
 
   | Enumeration | Description |
   |-------------|-------------|
-  | [`BarcodeFormat`]({{ site.c_cpp_enumerations }}format-enums.html?src=cpp#barcodeformat) | Describes the barcode types in BarcodeFormat group 1. |
-  | [`BarcodeFormat_2`]({{ site.c_cpp_enumerations }}format-enums.html?src=cpp#barcodeformat_2) | Describes the barcode types in BarcodeFormat group 2. |
+  | [`BarcodeFormat`]({{ site.dbr_c_cpp_enumerations }}format-enums.html?src=cpp#barcodeformat) | Describes the barcode types in BarcodeFormat group 1. |
+  | [`BarcodeFormat_2`]({{ site.dbr_c_cpp_enumerations }}format-enums.html?src=cpp#barcodeformat_2) | Describes the barcode types in BarcodeFormat group 2. |
 
 ### Parameter Mode Enumeration
 
   | Enumeration | Description |
   |-------------|-------------|
-  | [`BarcodeColourMode`]({{ site.c_cpp_enumerations }}parameter-mode-enums.html?src=cpp#barcodecolourmode) | Describes the barcode colour mode. |
-  | [`BarcodeComplementMode`]({{ site.c_cpp_enumerations }}parameter-mode-enums.html?src=cpp#barcodecomplementmode) | Describes the barcode complement mode. |
-  | [`BinarizationMode`]({{ site.c_cpp_enumerations }}parameter-mode-enums.html?src=cpp#binarizationmode) | Describes the binarization mode. |
-  | [`ColourClusteringMode`]({{ site.c_cpp_enumerations }}parameter-mode-enums.html?src=cpp#colourclusteringmode) | Describes the colour clustering mode. |
-  | [`ColourConversionMode`]({{ site.c_cpp_enumerations }}parameter-mode-enums.html?src=cpp#colourconversionmode) | Describes the colour conversion mode. |
-  | [`ConflictMode`]({{ site.c_cpp_enumerations }}parameter-mode-enums.html?src=cpp#conflictmode) | Describes the conflict mode. |
-  | [`DeblurMode`]({{ site.c_cpp_enumerations }}parameter-mode-enums.html?src=cpp#deblurmode) | Describes the deblur mode. |
-  | [`DeformationResistingMode`]({{ site.c_cpp_enumerations }}parameter-mode-enums.html?src=cpp#deformationresistingmode) | Describes the deformation resisting mode. |
-  | [`DPMCodeReadingMode`]({{ site.c_cpp_enumerations }}parameter-mode-enums.html?src=cpp#dpmcodereadingmode) | Describes the DPM code reading mode. |
-  | [`GrayscaleTransformationMode`]({{ site.c_cpp_enumerations }}parameter-mode-enums.html?src=cpp#grayscaletransformationmode) | Describes the grayscale transformation mode. |
-  | [`ImagePreprocessingMode`]({{ site.c_cpp_enumerations }}parameter-mode-enums.html?src=cpp#imagepreprocessingmode) | Describes the image preprocessing mode. |
-  | [`LocalizationMode`]({{ site.c_cpp_enumerations }}parameter-mode-enums.html?src=cpp#localizationmode) | Describes the localization mode. | 
-  | [`PDFReadingMode`]({{ site.c_cpp_enumerations }}parameter-mode-enums.html?src=cpp#pdfreadingmode) | Describes the PDF reading mode. |
-  | [`RegionPredetectionMode`]({{ site.c_cpp_enumerations }}parameter-mode-enums.html?src=cpp#regionpredetectionmode) | Describes the region predetection mode. |
-  | [`ScaleUpMode`]({{ site.c_cpp_enumerations }}parameter-mode-enums.html?src=cpp#scaleupmode) | Describes the scale up mode. |
-  | [`TerminatePhase`]({{ site.c_cpp_enumerations }}parameter-mode-enums.html?src=cpp#terminatephase) | Describes the terminate phase. |
-  | [`TextFilterMode`]({{ site.c_cpp_enumerations }}parameter-mode-enums.html?src=cpp#textfiltermode) | Describes the text filter mode. |
-  | [`TextureDetectionMode`]({{ site.c_cpp_enumerations }}parameter-mode-enums.html?src=cpp#texturedetectionmode) | Describes the texture detection mode. | 
+  | [`BarcodeColourMode`]({{ site.dbr_c_cpp_enumerations }}parameter-mode-enums.html?src=cpp#barcodecolourmode) | Describes the barcode colour mode. |
+  | [`BarcodeComplementMode`]({{ site.dbr_c_cpp_enumerations }}parameter-mode-enums.html?src=cpp#barcodecomplementmode) | Describes the barcode complement mode. |
+  | [`BinarizationMode`]({{ site.dbr_c_cpp_enumerations }}parameter-mode-enums.html?src=cpp#binarizationmode) | Describes the binarization mode. |
+  | [`ColourClusteringMode`]({{ site.dbr_c_cpp_enumerations }}parameter-mode-enums.html?src=cpp#colourclusteringmode) | Describes the colour clustering mode. |
+  | [`ColourConversionMode`]({{ site.dbr_c_cpp_enumerations }}parameter-mode-enums.html?src=cpp#colourconversionmode) | Describes the colour conversion mode. |
+  | [`ConflictMode`]({{ site.dbr_c_cpp_enumerations }}parameter-mode-enums.html?src=cpp#conflictmode) | Describes the conflict mode. |
+  | [`DeblurMode`]({{ site.dbr_c_cpp_enumerations }}parameter-mode-enums.html?src=cpp#deblurmode) | Describes the deblur mode. |
+  | [`DeformationResistingMode`]({{ site.dbr_c_cpp_enumerations }}parameter-mode-enums.html?src=cpp#deformationresistingmode) | Describes the deformation resisting mode. |
+  | [`DPMCodeReadingMode`]({{ site.dbr_c_cpp_enumerations }}parameter-mode-enums.html?src=cpp#dpmcodereadingmode) | Describes the DPM code reading mode. |
+  | [`GrayscaleTransformationMode`]({{ site.dbr_c_cpp_enumerations }}parameter-mode-enums.html?src=cpp#grayscaletransformationmode) | Describes the grayscale transformation mode. |
+  | [`ImagePreprocessingMode`]({{ site.dbr_c_cpp_enumerations }}parameter-mode-enums.html?src=cpp#imagepreprocessingmode) | Describes the image preprocessing mode. |
+  | [`LocalizationMode`]({{ site.dbr_c_cpp_enumerations }}parameter-mode-enums.html?src=cpp#localizationmode) | Describes the localization mode. | 
+  | [`PDFReadingMode`]({{ site.dbr_c_cpp_enumerations }}parameter-mode-enums.html?src=cpp#pdfreadingmode) | Describes the PDF reading mode. |
+  | [`RegionPredetectionMode`]({{ site.dbr_c_cpp_enumerations }}parameter-mode-enums.html?src=cpp#regionpredetectionmode) | Describes the region predetection mode. |
+  | [`ScaleUpMode`]({{ site.dbr_c_cpp_enumerations }}parameter-mode-enums.html?src=cpp#scaleupmode) | Describes the scale up mode. |
+  | [`TerminatePhase`]({{ site.dbr_c_cpp_enumerations }}parameter-mode-enums.html?src=cpp#terminatephase) | Describes the terminate phase. |
+  | [`TextFilterMode`]({{ site.dbr_c_cpp_enumerations }}parameter-mode-enums.html?src=cpp#textfiltermode) | Describes the text filter mode. |
+  | [`TextureDetectionMode`]({{ site.dbr_c_cpp_enumerations }}parameter-mode-enums.html?src=cpp#texturedetectionmode) | Describes the texture detection mode. | 
 
 ### Result Related Enumeration
 
   | Enumeration | Description |
   |-------------|-------------|
-  | [`IMResultDataType`]({{ site.c_cpp_enumerations }}result-enums.html?src=cpp#imresultdatatype) | Describes the intermediate result data type. |
-  | [`IntermediateResultSavingMode`]({{ site.c_cpp_enumerations }}result-enums.html?src=cpp#intermediateresultsavingmode) | Describes the intermediate result saving mode. |
-  | [`IntermediateResultType`]({{ site.c_cpp_enumerations }}result-enums.html?src=cpp#intermediateresulttype) | Describes the intermediate result type. |
-  | [`ResultCoordinateType`]({{ site.c_cpp_enumerations }}result-enums.html?src=cpp#resultcoordinatetype) | Describes the result coordinate type. |
-  | [`ResultType`]({{ site.c_cpp_enumerations }}result-enums.html?src=cpp#resulttype) | Describes the extended result type. |
-  | [`TextResultOrderMode`]({{ site.c_cpp_enumerations }}result-enums.html?src=cpp#textresultordermode) | Describes the text result order mode. |
+  | [`IMResultDataType`]({{ site.dbr_c_cpp_enumerations }}result-enums.html?src=cpp#imresultdatatype) | Describes the intermediate result data type. |
+  | [`IntermediateResultSavingMode`]({{ site.dbr_c_cpp_enumerations }}result-enums.html?src=cpp#intermediateresultsavingmode) | Describes the intermediate result saving mode. |
+  | [`IntermediateResultType`]({{ site.dbr_c_cpp_enumerations }}result-enums.html?src=cpp#intermediateresulttype) | Describes the intermediate result type. |
+  | [`ResultCoordinateType`]({{ site.dbr_c_cpp_enumerations }}result-enums.html?src=cpp#resultcoordinatetype) | Describes the result coordinate type. |
+  | [`ResultType`]({{ site.dbr_c_cpp_enumerations }}result-enums.html?src=cpp#resulttype) | Describes the extended result type. |
+  | [`TextResultOrderMode`]({{ site.dbr_c_cpp_enumerations }}result-enums.html?src=cpp#textresultordermode) | Describes the text result order mode. |
 
 ### Frame Decoding Enumeration
 
   | Enumeration | Description |
   |-------------|-------------|
-  | [`ClarityCalculationMethod`]({{ site.c_cpp_enumerations }}frame-decoding-enums.html?src=cpp#claritycalculationmethod) | Describes the clarity calculation method. |
-  | [`ClarityFilterMode`]({{ site.c_cpp_enumerations }}frame-decoding-enums.html?src=cpp#clarityfiltermode) | Describes the clarity filter mode. |
+  | [`ClarityCalculationMethod`]({{ site.dbr_c_cpp_enumerations }}frame-decoding-enums.html?src=cpp#claritycalculationmethod) | Describes the clarity calculation method. |
+  | [`ClarityFilterMode`]({{ site.dbr_c_cpp_enumerations }}frame-decoding-enums.html?src=cpp#clarityfiltermode) | Describes the clarity filter mode. |
   
 ### Other Enumeration
 
   | Enumeration | Description |
   |-------------|-------------|
-  | [`DM_ChargeWay`]({{ site.c_cpp_enumerations }}other-enums.html?src=cpp#dm_chargeway) | `Deprecated` |
-  | [`DM_DeploymentType`]({{ site.c_cpp_enumerations }}other-enums.html?src=cpp#dm_deploymenttype) | `Deprecated` |
-  | [`DM_LicenseModule`]({{ site.c_cpp_enumerations }}other-enums.html?src=cpp#dm_licensemodule) | `Deprecated` |
-  | [`DM_UUIDGenerationMethod`]({{ site.c_cpp_enumerations }}other-enums.html?src=cpp#dm_uuidgenerationmethod) | `Deprecated` |
-  | [`ImagePixelFormat`]({{ site.c_cpp_enumerations }}other-enums.html?src=cpp#imagepixelformat) | Describes the image pixel format. |
-  | [`QRCodeErrorCorrectionLevel`]({{ site.c_cpp_enumerations }}other-enums.html?src=cpp#qrcodeerrorcorrectionlevel) | Describes the QR Code error correction level. |
-  | [`Product`]({{ site.c_cpp_enumerations }}other-enums.html?src=cpp#product) | `Deprecated` |
+  | [`DM_ChargeWay`]({{ site.dbr_c_cpp_enumerations }}other-enums.html?src=cpp#dm_chargeway) | `Deprecated` |
+  | [`DM_DeploymentType`]({{ site.dbr_c_cpp_enumerations }}other-enums.html?src=cpp#dm_deploymenttype) | `Deprecated` |
+  | [`DM_LicenseModule`]({{ site.dbr_c_cpp_enumerations }}other-enums.html?src=cpp#dm_licensemodule) | `Deprecated` |
+  | [`DM_UUIDGenerationMethod`]({{ site.dbr_c_cpp_enumerations }}other-enums.html?src=cpp#dm_uuidgenerationmethod) | `Deprecated` |
+  | [`ImagePixelFormat`]({{ site.dbr_c_cpp_enumerations }}other-enums.html?src=cpp#imagepixelformat) | Describes the image pixel format. |
+  | [`QRCodeErrorCorrectionLevel`]({{ site.dbr_c_cpp_enumerations }}other-enums.html?src=cpp#qrcodeerrorcorrectionlevel) | Describes the QR Code error correction level. |
+  | [`Product`]({{ site.dbr_c_cpp_enumerations }}other-enums.html?src=cpp#product) | `Deprecated` |
 
-### [Error Code]({{ site.c_cpp_enumerations }}error-code.html?src=cpp)
+### [Error Code]({{ site.dbr_c_cpp_enumerations }}error-code.html?src=cpp)
 
 ## Callbacks
 

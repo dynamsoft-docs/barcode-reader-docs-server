@@ -102,7 +102,7 @@ TextResult[] Dynamsoft.Barcode.BarcodeReader.DecodeBuffer(byte[] buffer, int wid
 `[in]	width` <*int*> : The width of the image in pixels.
 `[in]	height` <*int*> : The height of the image in pixels.
 `[in]	stride` <*int*> : The stride of the image (also called scan width).  
-`[in]	imagePixelFormat` <*[EnumImagePixelFormat]({{ site.dotnet_enumerations }}other-enums.html#imagepixelformat)*> : The image pixel format used in the image byte array. 
+`[in]	imagePixelFormat` <*[EnumImagePixelFormat]({{ site.dbr_dotnet_enumerations }}other-enums.html#imagepixelformat)*> : The image pixel format used in the image byte array. 
 `[in] templateName` <*string*> : The template name.
 
 #### Return value

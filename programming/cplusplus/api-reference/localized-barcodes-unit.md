@@ -86,7 +86,7 @@ Returns a const pointer to the localized barcode element at the specified index.
 
 **See Also**
 
-[CLocalizedBarcodeElement]({{ site.cpp_api }}localized-barcode-element.html)
+[CLocalizedBarcodeElement]({{ site.dbr_cpp_api }}localized-barcode-element.html)
 
 ### RemoveAllLocalizedBarcodes
 
@@ -150,4 +150,4 @@ Returns a const pointer to the localized barcode element at the specified index.
 
 **See Also**
 
-[CLocalizedBarcodeElement]({{ site.cpp_api }}localized-barcode-element.html)
+[CLocalizedBarcodeElement]({{ site.dbr_cpp_api }}localized-barcode-element.html)

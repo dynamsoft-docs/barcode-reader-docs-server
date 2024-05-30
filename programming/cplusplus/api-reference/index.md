@@ -2,7 +2,7 @@
 layout: default-layout
 title: Dynamsoft Barcode Reader C++ API Reference - Main Page
 description: This is the main page of Dynamsoft Barcode Reader SDK API Reference for C++ Language.
-keywords: CBarcodeReader, api reference, C++
+keywords: api reference, C++
 needAutoGenerateSidebar: false
 ---
 
@@ -39,33 +39,34 @@ needAutoGenerateSidebar: false
 ### Enums
 
 - [`CaptureState`]({{ site.dcv_enumerations }}capture-vision-router/capture-state.html?lang=cpp)
+- [`ImageSourceState`]({{ site.dcv_enumerations }}capture-vision-router/image-source-state.html?lang=cpp)
 
 ## DynamsoftBarcodeReader
 
 ### Classes
 
-- [`CAztecDetails`]({{ site.cpp_api }}aztec-details.html)
-- [`CBarcodeDetails`]({{ site.cpp_api }}barcode-details.html)
-- [`CBarcodeReaderModule`]({{ site.cpp_api }}barcode-reader-module.html)
-- [`CBarcodeResultItem`]({{ site.cpp_api }}barcode-result-item.html)
-- [`CCandidateBarcodeZonesUnit`]({{ site.cpp_api }}candidate-barcode-zones-unit.html)
-- [`CComplementedBarcodeImageUnit`]({{ site.cpp_api }}complemented-barcode-image-unit.html)
-- [`CDataMatrixDetails`]({{ site.cpp_api }}datamatrix-details.html)
-- [`CDecodedBarcodeElement`]({{ site.cpp_api }}decoded-barcode-element.html)
-- [`CDecodedBarcodesResult`]({{ site.cpp_api }}decoded-barcodes-result.html)
-- [`CDecodedBarcodesUnit`]({{ site.cpp_api }}decoded-barcodes-unit.html)
-- [`CDeformationResistedBarcodeImageUnit`]({{ site.cpp_api }}deformation-resisted-barcode-image-unit.html)
-- [`CExtendedBarcodeResult`]({{ site.cpp_api }}extended-barcode-result.html)
-- [`CLocalizedBarcodeElement`]({{ site.cpp_api }}localized-barcode-element.html)
-- [`CLocalizedBarcodesUnit`]({{ site.cpp_api }}localized-barcodes-unit.html)
-- [`COneDCodeDetails`]({{ site.cpp_api }}oned-code-details.html)
-- [`CPDF417Details`]({{ site.cpp_api }}pdf417-details.html)
-- [`CQRCodeDetails`]({{ site.cpp_api }}qr-code-details.html)
-- [`CScaledUpBarcodeImageUnit`]({{ site.cpp_api }}scaled-up-barcode-image-unit.html)
+- [`CAztecDetails`]({{ site.dbr_cpp_api }}aztec-details.html)
+- [`CBarcodeDetails`]({{ site.dbr_cpp_api }}barcode-details.html)
+- [`CBarcodeReaderModule`]({{ site.dbr_cpp_api }}barcode-reader-module.html)
+- [`CBarcodeResultItem`]({{ site.dbr_cpp_api }}barcode-result-item.html)
+- [`CCandidateBarcodeZonesUnit`]({{ site.dbr_cpp_api }}candidate-barcode-zones-unit.html)
+- [`CComplementedBarcodeImageUnit`]({{ site.dbr_cpp_api }}complemented-barcode-image-unit.html)
+- [`CDataMatrixDetails`]({{ site.dbr_cpp_api }}datamatrix-details.html)
+- [`CDecodedBarcodeElement`]({{ site.dbr_cpp_api }}decoded-barcode-element.html)
+- [`CDecodedBarcodesResult`]({{ site.dbr_cpp_api }}decoded-barcodes-result.html)
+- [`CDecodedBarcodesUnit`]({{ site.dbr_cpp_api }}decoded-barcodes-unit.html)
+- [`CDeformationResistedBarcodeImageUnit`]({{ site.dbr_cpp_api }}deformation-resisted-barcode-image-unit.html)
+- [`CExtendedBarcodeResult`]({{ site.dbr_cpp_api }}extended-barcode-result.html)
+- [`CLocalizedBarcodeElement`]({{ site.dbr_cpp_api }}localized-barcode-element.html)
+- [`CLocalizedBarcodesUnit`]({{ site.dbr_cpp_api }}localized-barcodes-unit.html)
+- [`COneDCodeDetails`]({{ site.dbr_cpp_api }}oned-code-details.html)
+- [`CPDF417Details`]({{ site.dbr_cpp_api }}pdf417-details.html)
+- [`CQRCodeDetails`]({{ site.dbr_cpp_api }}qr-code-details.html)
+- [`CScaledUpBarcodeImageUnit`]({{ site.dbr_cpp_api }}scaled-up-barcode-image-unit.html)
 
 ### Structs
 
-- [`SimplifiedBarcodeReaderSettings`]({{ site.cpp_api }}simplified-barcode-reader-settings.html)
+- [`SimplifiedBarcodeReaderSettings`]({{ site.dbr_cpp_api }}simplified-barcode-reader-settings.html)
 
 ### Enums
 
@@ -135,7 +136,6 @@ needAutoGenerateSidebar: false
 - [`GrayscaleTransformationMode`]({{ site.dcv_enumerations }}core/grayscale-transformation-mode.html?lang=cpp)
 - [`ImageCaptureDistanceMode`]({{ site.dcv_enumerations }}core/image-capture-distance-mode.html?lang=cpp)
 - [`ImagePixelFormat`]({{ site.dcv_enumerations }}core/image-pixel-format.html?lang=cpp)
-- [`ImageSourceState`]({{ site.dcv_enumerations }}core/image-source-state.html?lang=cpp)
 - [`ImageTagType`]({{ site.dcv_enumerations }}core/image-tag-type.html?lang=cpp)
 - [`IntermediateResultUnitType`]({{ site.dcv_enumerations }}core/intermediate-result-unit-type.html?lang=cpp)
 - [`PDFReadingMode`]({{ site.dcv_enumerations }}core/pdf-reading-mode.html?lang=cpp)                

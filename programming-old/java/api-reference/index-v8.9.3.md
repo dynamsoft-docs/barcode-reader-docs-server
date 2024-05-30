@@ -158,61 +158,61 @@ permalink: /programming/java/api-reference/index-v8.9.3.html
 
   | Enumeration | Description |
   |-------------|-------------|
-  | [`BarcodeFormat`]({{ site.java_enumerations }}format-enums.html#barcodeformat) | Describes the barcode types in BarcodeFormat group 1. |
-  | [`BarcodeFormat_2`]({{ site.java_enumerations }}format-enums.html#barcodeformat_2) | Describes the barcode types in BarcodeFormat group 2. |
+  | [`BarcodeFormat`]({{ site.dbr_java_enumerations }}format-enums.html#barcodeformat) | Describes the barcode types in BarcodeFormat group 1. |
+  | [`BarcodeFormat_2`]({{ site.dbr_java_enumerations }}format-enums.html#barcodeformat_2) | Describes the barcode types in BarcodeFormat group 2. |
 
 ### Parameter Mode Enumeration
 
   | Enumeration | Description |
   |-------------|-------------|
-  | [`BarcodeColourMode`]({{ site.java_enumerations }}parameter-mode-enums.html#barcodecolourmode) | Describes the barcode colour mode. |
-  | [`BarcodeComplementMode`]({{ site.java_enumerations }}parameter-mode-enums.html#barcodecomplementmode) | Describes the barcode complement mode. |
-  | [`BinarizationMode`]({{ site.java_enumerations }}parameter-mode-enums.html#binarizationmode) | Describes the binarization mode. |
-  | [`ColourClusteringMode`]({{ site.java_enumerations }}parameter-mode-enums.html#colourclusteringmode) | Describes the colour clustering mode. |
-  | [`ColourConversionMode`]({{ site.java_enumerations }}parameter-mode-enums.html#colourconversionmode) | Describes the colour conversion mode. |
-  | [`ConflictMode`]({{ site.java_enumerations }}parameter-mode-enums.html#conflictmode) | Describes the conflict mode. |
-  | [`DeblurMode`]({{ site.java_enumerations }}parameter-mode-enums.html#deblurmode) | Describes the deblur mode. |
-  | [`DeformationResistingMode`]({{ site.java_enumerations }}parameter-mode-enums.html#deformationresistingmode) | Describes the deformation resisting mode. |
-  | [`DPMCodeReadingMode`]({{ site.java_enumerations }}parameter-mode-enums.html#dpmcodereadingmode) | Describes the DPM code reading mode. |
-  | [`GrayscaleTransformationMode`]({{ site.java_enumerations }}parameter-mode-enums.html#grayscaletransformationmode) | Describes the grayscale transformation mode. |
-  | [`ImagePreprocessingMode`]({{ site.java_enumerations }}parameter-mode-enums.html#imagepreprocessingmode) | Describes the image preprocessing mode. |
-  | [`LocalizationMode`]({{ site.java_enumerations }}parameter-mode-enums.html#localizationmode) | Describes the localization mode. | 
-  | [`PDFReadingMode`]({{ site.java_enumerations }}parameter-mode-enums.html#pdfreadingmode) | Describes the PDF reading mode. |
-  | [`RegionPredetectionMode`]({{ site.java_enumerations }}parameter-mode-enums.html#regionpredetectionmode) | Describes the region predetection mode. |
-  | [`ScaleUpMode`]({{ site.java_enumerations }}parameter-mode-enums.html#scaleupmode) | Describes the scale up mode. |
-  | [`TerminatePhase`]({{ site.java_enumerations }}parameter-mode-enums.html#terminatephase) | Describes the terminate phase. |
-  | [`TextFilterMode`]({{ site.java_enumerations }}parameter-mode-enums.html#textfiltermode) | Describes the text filter mode. |
-  | [`TextureDetectionMode`]({{ site.java_enumerations }}parameter-mode-enums.html#texturedetectionmode) | Describes the texture detection mode. | 
+  | [`BarcodeColourMode`]({{ site.dbr_java_enumerations }}parameter-mode-enums.html#barcodecolourmode) | Describes the barcode colour mode. |
+  | [`BarcodeComplementMode`]({{ site.dbr_java_enumerations }}parameter-mode-enums.html#barcodecomplementmode) | Describes the barcode complement mode. |
+  | [`BinarizationMode`]({{ site.dbr_java_enumerations }}parameter-mode-enums.html#binarizationmode) | Describes the binarization mode. |
+  | [`ColourClusteringMode`]({{ site.dbr_java_enumerations }}parameter-mode-enums.html#colourclusteringmode) | Describes the colour clustering mode. |
+  | [`ColourConversionMode`]({{ site.dbr_java_enumerations }}parameter-mode-enums.html#colourconversionmode) | Describes the colour conversion mode. |
+  | [`ConflictMode`]({{ site.dbr_java_enumerations }}parameter-mode-enums.html#conflictmode) | Describes the conflict mode. |
+  | [`DeblurMode`]({{ site.dbr_java_enumerations }}parameter-mode-enums.html#deblurmode) | Describes the deblur mode. |
+  | [`DeformationResistingMode`]({{ site.dbr_java_enumerations }}parameter-mode-enums.html#deformationresistingmode) | Describes the deformation resisting mode. |
+  | [`DPMCodeReadingMode`]({{ site.dbr_java_enumerations }}parameter-mode-enums.html#dpmcodereadingmode) | Describes the DPM code reading mode. |
+  | [`GrayscaleTransformationMode`]({{ site.dbr_java_enumerations }}parameter-mode-enums.html#grayscaletransformationmode) | Describes the grayscale transformation mode. |
+  | [`ImagePreprocessingMode`]({{ site.dbr_java_enumerations }}parameter-mode-enums.html#imagepreprocessingmode) | Describes the image preprocessing mode. |
+  | [`LocalizationMode`]({{ site.dbr_java_enumerations }}parameter-mode-enums.html#localizationmode) | Describes the localization mode. | 
+  | [`PDFReadingMode`]({{ site.dbr_java_enumerations }}parameter-mode-enums.html#pdfreadingmode) | Describes the PDF reading mode. |
+  | [`RegionPredetectionMode`]({{ site.dbr_java_enumerations }}parameter-mode-enums.html#regionpredetectionmode) | Describes the region predetection mode. |
+  | [`ScaleUpMode`]({{ site.dbr_java_enumerations }}parameter-mode-enums.html#scaleupmode) | Describes the scale up mode. |
+  | [`TerminatePhase`]({{ site.dbr_java_enumerations }}parameter-mode-enums.html#terminatephase) | Describes the terminate phase. |
+  | [`TextFilterMode`]({{ site.dbr_java_enumerations }}parameter-mode-enums.html#textfiltermode) | Describes the text filter mode. |
+  | [`TextureDetectionMode`]({{ site.dbr_java_enumerations }}parameter-mode-enums.html#texturedetectionmode) | Describes the texture detection mode. | 
 
 ### Result Related Enumeration
 
   | Enumeration | Description |
   |-------------|-------------|
-  | [`IMResultDataType`]({{ site.java_enumerations }}result-enums.html#imresultdatatype) | Describes the intermediate result data type. |
-  | [`IntermediateResultSavingMode`]({{ site.java_enumerations }}result-enums.html#intermediateresultsavingmode) | Describes the intermediate result saving mode. |
-  | [`IntermediateResultType`]({{ site.java_enumerations }}result-enums.html#intermediateresulttype) | Describes the intermediate result type. |
-  | [`ResultCoordinateType`]({{ site.java_enumerations }}result-enums.html#resultcoordinatetype) | Describes the result coordinate type. |
-  | [`ResultType`]({{ site.java_enumerations }}result-enums.html#resulttype) | Describes the extended result type. |
-  | [`TextResultOrderMode`]({{ site.java_enumerations }}result-enums.html#textresultordermode) | Describes the text result order mode. |
+  | [`IMResultDataType`]({{ site.dbr_java_enumerations }}result-enums.html#imresultdatatype) | Describes the intermediate result data type. |
+  | [`IntermediateResultSavingMode`]({{ site.dbr_java_enumerations }}result-enums.html#intermediateresultsavingmode) | Describes the intermediate result saving mode. |
+  | [`IntermediateResultType`]({{ site.dbr_java_enumerations }}result-enums.html#intermediateresulttype) | Describes the intermediate result type. |
+  | [`ResultCoordinateType`]({{ site.dbr_java_enumerations }}result-enums.html#resultcoordinatetype) | Describes the result coordinate type. |
+  | [`ResultType`]({{ site.dbr_java_enumerations }}result-enums.html#resulttype) | Describes the extended result type. |
+  | [`TextResultOrderMode`]({{ site.dbr_java_enumerations }}result-enums.html#textresultordermode) | Describes the text result order mode. |
 
 ### Frame Decoding Enumeration
 
   | Enumeration | Description |
   |-------------|-------------|
-  | [`ClarityCalculationMethod`]({{ site.java_enumerations }}frame-decoding-enums.html#claritycalculationmethod) | Describes the clarity calculation method. |
-  | [`ClarityFilterMode`]({{ site.java_enumerations }}frame-decoding-enums.html#clarityfiltermode) | Describes the clarity filter mode. |
+  | [`ClarityCalculationMethod`]({{ site.dbr_java_enumerations }}frame-decoding-enums.html#claritycalculationmethod) | Describes the clarity calculation method. |
+  | [`ClarityFilterMode`]({{ site.dbr_java_enumerations }}frame-decoding-enums.html#clarityfiltermode) | Describes the clarity filter mode. |
   
 ### Other Enumeration
 
   | Enumeration | Description |
   |-------------|-------------|
-  | [`DM_ChargeWay`]({{ site.java_enumerations }}other-enums.html#dm_chargeway) | Describes the charge way. |
-  | [`DM_DeploymentType`]({{ site.java_enumerations }}other-enums.html#dm_deploymenttype) | Describes the deployment type. |
-  | [`DM_LicenseModule`]({{ site.java_enumerations }}other-enums.html#dm_licensemodule) | Describes Dynamsoft license modules. |
-  | [`DM_UUIDGenerationMethod`]({{ site.java_enumerations }}other-enums.html#dm_uuidgenerationmethod) | Describes the UUID generation method. |
-  | [`ImagePixelFormat`]({{ site.java_enumerations }}other-enums.html#imagepixelformat) | Describes the image pixel format. |
-  | [`QRCodeErrorCorrectionLevel`]({{ site.java_enumerations }}other-enums.html#qrcodeerrorcorrectionlevel) | Describes the QR Code error correction level. |
-  | [`Product`]({{ site.java_enumerations }}other-enums.html#product) | Describes Dynamsoft products. |
+  | [`DM_ChargeWay`]({{ site.dbr_java_enumerations }}other-enums.html#dm_chargeway) | Describes the charge way. |
+  | [`DM_DeploymentType`]({{ site.dbr_java_enumerations }}other-enums.html#dm_deploymenttype) | Describes the deployment type. |
+  | [`DM_LicenseModule`]({{ site.dbr_java_enumerations }}other-enums.html#dm_licensemodule) | Describes Dynamsoft license modules. |
+  | [`DM_UUIDGenerationMethod`]({{ site.dbr_java_enumerations }}other-enums.html#dm_uuidgenerationmethod) | Describes the UUID generation method. |
+  | [`ImagePixelFormat`]({{ site.dbr_java_enumerations }}other-enums.html#imagepixelformat) | Describes the image pixel format. |
+  | [`QRCodeErrorCorrectionLevel`]({{ site.dbr_java_enumerations }}other-enums.html#qrcodeerrorcorrectionlevel) | Describes the QR Code error correction level. |
+  | [`Product`]({{ site.dbr_java_enumerations }}other-enums.html#product) | Describes Dynamsoft products. |
 
 
 

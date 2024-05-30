@@ -13,9 +13,9 @@ permalink: /programming/java/index.html
 
 ## User Guide
 
-- [Getting Started]({{site.java}}user-guide.html)
-- [Explore Features]({{site.java}}user-guide/explore-features/index.html)
-- [Check Use Cases]({{site.java}}user-guide/use-cases/index.html)
+- [Getting Started]({{site.dbr_java}}user-guide.html)
+- [Explore Features]({{site.dbr_java}}user-guide/explore-features/index.html)
+- [Check Use Cases]({{site.dbr_java}}user-guide/use-cases/index.html)
 
 ## Samples and Demo
 
@@ -24,7 +24,7 @@ permalink: /programming/java/index.html
 
 ## API Reference
 
-- [API Reference]({{site.java_api}}index.html)
+- [API Reference]({{site.dbr_java_api}}index.html)
 
 ## Release Notes
 
@@ -34,7 +34,7 @@ permalink: /programming/java/index.html
 
 ## Upgrade Instructions
 
-- [How to upgrade to latest version]({{site.java}}upgrade-instruction.html)
+- [How to upgrade to latest version]({{site.dbr_java}}upgrade-instruction.html)
 
 ## Online Store
 

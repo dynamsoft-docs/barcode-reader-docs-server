@@ -91,13 +91,13 @@ The image pixel format used in the image byte array.
 int com.dynamsoft.barcode.FrameDecodingParameters.imagePixelFormat
 ```
 - **Value range**   
-    A value of [`EnumImagePixelFormat`]({{ site.java_enumerations }}other-enums.html#imagepixelformat) Enumeration items.
+    A value of [`EnumImagePixelFormat`]({{ site.dbr_java_enumerations }}other-enums.html#imagepixelformat) Enumeration items.
       
 - **Default value**   
     `IPF_GRAYSCALED`
     
 - **See also**  
-    [`EnumImagePixelFormat`]({{ site.java_enumerations }}other-enums.html#imagepixelformat)
+    [`EnumImagePixelFormat`]({{ site.dbr_java_enumerations }}other-enums.html#imagepixelformat)
       
 ### region
 The region definition of the frame to calculate the internal indicator.  
@@ -159,13 +159,13 @@ Sets the method used for calculating the clarity of the frames.
 int com.dynamsoft.barcode.FrameDecodingParameters.clarityCalculationMethod
 ```
 - **Value range**   
-    Any one of the [`EnumClarityCalculationMethod`]({{ site.java_enumerations }}frame-decoding-enums.html#claritycalculationmethod) Enumeration items.   
+    Any one of the [`EnumClarityCalculationMethod`]({{ site.dbr_java_enumerations }}frame-decoding-enums.html#claritycalculationmethod) Enumeration items.   
       
 - **Default value**   
     ECCM_CONTRAST   
     
 - **See also**  
-    [`EnumClarityCalculationMethod`]({{ site.java_enumerations }}frame-decoding-enums.html#claritycalculationmethod)    
+    [`EnumClarityCalculationMethod`]({{ site.dbr_java_enumerations }}frame-decoding-enums.html#claritycalculationmethod)    
     
 
 ### clarityFilterMode
@@ -174,11 +174,11 @@ Sets the mode used for filtering frames by calculated clarity.
 int com.dynamsoft.barcode.FrameDecodingParameters.clarityFilterMode
 ```
 - **Value range**   
-    Any one of the [`EnumClarityFilterMode`]({{ site.java_enumerations }}frame-decoding-enums.html#clarityfiltermode) Enumeration items.   
+    Any one of the [`EnumClarityFilterMode`]({{ site.dbr_java_enumerations }}frame-decoding-enums.html#clarityfiltermode) Enumeration items.   
       
 - **Default value**   
     CFM_GENERAL   
     
 - **See also**  
-    [`EnumClarityFilterMode`]({{ site.java_enumerations }}frame-decoding-enums.html#clarityfiltermode)    
+    [`EnumClarityFilterMode`]({{ site.dbr_java_enumerations }}frame-decoding-enums.html#clarityfiltermode)    
 

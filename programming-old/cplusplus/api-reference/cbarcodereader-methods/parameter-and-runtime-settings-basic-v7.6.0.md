@@ -45,20 +45,20 @@ Returns error code. Possible return(s): DBR_OK; DBRERR_SET_MODE_ARGUMENT_ERROR.
 
 #### Remark
 Check follow link for available modes and arguments:
-- [`AccompanyingTextRecognitionModes`]({{ site.parameters_reference }}accompanying-text-recognition-modes.html)
-- [`BarcodeColourModes`]({{ site.parameters_reference }}barcode-colour-modes.html)
-- [`BinarizationModes`]({{ site.parameters_reference }}binarization-modes.html)
-- [`ColourClusteringModes`]({{ site.parameters_reference }}colour-clustering-modes.html)
-- [`ColourConversionModes`]({{ site.parameters_reference }}colour-conversion-modes.html)
-- [`DeformationResistingModes`]({{ site.parameters_reference }}deformation-resisting-modes.html)
-- [`ImagePreprocessingModes`]({{ site.parameters_reference }}image-preprocessing-modes.html)
-- [`IntermediateResultSavingMode`]({{ site.parameters_reference }}intermediate-result-saving-mode.html)
-- [`LocalizationModes`]({{ site.parameters_reference }}localization-modes.html)
-- [`RegionPredetectionModes`]({{ site.parameters_reference }}region-predetection-modes.html)
-- [`ScaleUpModes`]({{ site.parameters_reference }}scale-up-modes.html)
-- [`TextAssistedCorrectionMode`]({{ site.parameters_reference }}text-assisted-correction-mode.html)
-- [`TextFilterModes`]({{ site.parameters_reference }}text-filter-modes.html)
-- [`TextureDetectionModes`]({{ site.parameters_reference }}texture-detection-modes.html) 
+- [`AccompanyingTextRecognitionModes`]({{ site.dbr_parameters_reference }}accompanying-text-recognition-modes.html)
+- [`BarcodeColourModes`]({{ site.dbr_parameters_reference }}barcode-colour-modes.html)
+- [`BinarizationModes`]({{ site.dbr_parameters_reference }}binarization-modes.html)
+- [`ColourClusteringModes`]({{ site.dbr_parameters_reference }}colour-clustering-modes.html)
+- [`ColourConversionModes`]({{ site.dbr_parameters_reference }}colour-conversion-modes.html)
+- [`DeformationResistingModes`]({{ site.dbr_parameters_reference }}deformation-resisting-modes.html)
+- [`ImagePreprocessingModes`]({{ site.dbr_parameters_reference }}image-preprocessing-modes.html)
+- [`IntermediateResultSavingMode`]({{ site.dbr_parameters_reference }}intermediate-result-saving-mode.html)
+- [`LocalizationModes`]({{ site.dbr_parameters_reference }}localization-modes.html)
+- [`RegionPredetectionModes`]({{ site.dbr_parameters_reference }}region-predetection-modes.html)
+- [`ScaleUpModes`]({{ site.dbr_parameters_reference }}scale-up-modes.html)
+- [`TextAssistedCorrectionMode`]({{ site.dbr_parameters_reference }}text-assisted-correction-mode.html)
+- [`TextFilterModes`]({{ site.dbr_parameters_reference }}text-filter-modes.html)
+- [`TextureDetectionModes`]({{ site.dbr_parameters_reference }}texture-detection-modes.html) 
 
 #### Code Snippet
 ```cpp
@@ -103,20 +103,20 @@ Returns error code. Possible return(s): DBR_OK; DBRERR_GET_MODE_ARGUMENT_ERROR.
 
 #### Remark
 Check follow link for available modes and arguments:
-- [`AccompanyingTextRecognitionModes`]({{ site.parameters_reference }}accompanying-text-recognition-modes.html)
-- [`BarcodeColourModes`]({{ site.parameters_reference }}barcode-colour-modes.html)
-- [`BinarizationModes`]({{ site.parameters_reference }}binarization-modes.html)
-- [`ColourClusteringModes`]({{ site.parameters_reference }}colour-clustering-modes.html)
-- [`ColourConversionModes`]({{ site.parameters_reference }}colour-conversion-modes.html)
-- [`DeformationResistingModes`]({{ site.parameters_reference }}deformation-resisting-modes.html)
-- [`ImagePreprocessingModes`]({{ site.parameters_reference }}image-preprocessing-modes.html)
-- [`IntermediateResultSavingMode`]({{ site.parameters_reference }}intermediate-result-saving-mode.html)
-- [`LocalizationModes`]({{ site.parameters_reference }}localization-modes.html)
-- [`RegionPredetectionModes`]({{ site.parameters_reference }}region-predetection-modes.html)
-- [`ScaleUpModes`]({{ site.parameters_reference }}scale-up-modes.html)
-- [`TextAssistedCorrectionMode`]({{ site.parameters_reference }}text-assisted-correction-mode.html)
-- [`TextFilterModes`]({{ site.parameters_reference }}text-filter-modes.html)
-- [`TextureDetectionModes`]({{ site.parameters_reference }}texture-detection-modes.html)   
+- [`AccompanyingTextRecognitionModes`]({{ site.dbr_parameters_reference }}accompanying-text-recognition-modes.html)
+- [`BarcodeColourModes`]({{ site.dbr_parameters_reference }}barcode-colour-modes.html)
+- [`BinarizationModes`]({{ site.dbr_parameters_reference }}binarization-modes.html)
+- [`ColourClusteringModes`]({{ site.dbr_parameters_reference }}colour-clustering-modes.html)
+- [`ColourConversionModes`]({{ site.dbr_parameters_reference }}colour-conversion-modes.html)
+- [`DeformationResistingModes`]({{ site.dbr_parameters_reference }}deformation-resisting-modes.html)
+- [`ImagePreprocessingModes`]({{ site.dbr_parameters_reference }}image-preprocessing-modes.html)
+- [`IntermediateResultSavingMode`]({{ site.dbr_parameters_reference }}intermediate-result-saving-mode.html)
+- [`LocalizationModes`]({{ site.dbr_parameters_reference }}localization-modes.html)
+- [`RegionPredetectionModes`]({{ site.dbr_parameters_reference }}region-predetection-modes.html)
+- [`ScaleUpModes`]({{ site.dbr_parameters_reference }}scale-up-modes.html)
+- [`TextAssistedCorrectionMode`]({{ site.dbr_parameters_reference }}text-assisted-correction-mode.html)
+- [`TextFilterModes`]({{ site.dbr_parameters_reference }}text-filter-modes.html)
+- [`TextureDetectionModes`]({{ site.dbr_parameters_reference }}texture-detection-modes.html)   
 
 #### Code Snippet
 ```cpp
@@ -142,7 +142,7 @@ delete reader;
 
 ## GetRuntimeSettings
 
-Get current settings and save them into a [`PublicRuntimeSettings`]({{ site.structs }}PublicRuntimeSettings.html) struct.
+Get current settings and save them into a [`PublicRuntimeSettings`]({{ site.dbr_structs }}PublicRuntimeSettings.html) struct.
 
 ```cpp
 int CBarcodeReader::GetRuntimeSettings (PublicRuntimeSettings* psettings)	
@@ -173,7 +173,7 @@ delete reader;
 
 ## UpdateRuntimeSettings
 
-Update runtime settings with a given [`PublicRuntimeSettings`]({{ site.structs }}PublicRuntimeSettings.html) struct.
+Update runtime settings with a given [`PublicRuntimeSettings`]({{ site.dbr_structs }}PublicRuntimeSettings.html) struct.
 
 ```cpp
 int CBarcodeReader::UpdateRuntimeSettings (PublicRuntimeSettings* pSettings, char errorMsgBuffer[] = NULL, const int errorMsgBufferLen = 0)

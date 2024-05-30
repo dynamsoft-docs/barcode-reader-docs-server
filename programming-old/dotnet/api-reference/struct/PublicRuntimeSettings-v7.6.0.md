@@ -19,7 +19,7 @@ public struct PublicRuntimeSettings
   
 | Attribute | Type |
 |---------- | ---- |
-| [`TerminatePhase`](#terminatephase) | [`EnumTerminatePhase`]({{ site.dotnet_enumerations }}parameter-mode-enums.html#terminatephase) |
+| [`TerminatePhase`](#terminatephase) | [`EnumTerminatePhase`]({{ site.dbr_dotnet_enumerations }}parameter-mode-enums.html#terminatephase) |
 | [`Timeout`](#timeout) | *int* |
 | [`MaxAlgorithmThreadCount`](#maxalgorithmthreadcount) | *int* |
 | [`ExpectedBarcodesCount`](#expectedbarcodescount) | *int* |
@@ -27,20 +27,20 @@ public struct PublicRuntimeSettings
 | [`BarcodeFormatIds_2`](#barcodeformatids_2) | *int* |
 | [`PDFRasterDPI`](#pdfrasterdpi) | *int* |
 | [`ScaleDownThreshold`](#scaledownthreshold) | *int* |
-| [`BinarizationModes`](#binarizationmodes) | [`EnumBinarizationMode`]({{ site.dotnet_enumerations }}parameter-mode-enums.html#binarizationmode)[ ] |
-| [`LocalizationModes`](#localizationmodes) | [`EnumLocalizationMode`]({{ site.dotnet_enumerations }}parameter-mode-enums.html#localizationmode)[ ] |
+| [`BinarizationModes`](#binarizationmodes) | [`EnumBinarizationMode`]({{ site.dbr_dotnet_enumerations }}parameter-mode-enums.html#binarizationmode)[ ] |
+| [`LocalizationModes`](#localizationmodes) | [`EnumLocalizationMode`]({{ site.dbr_dotnet_enumerations }}parameter-mode-enums.html#localizationmode)[ ] |
 | [`FurtherModes`](#furthermodes) | [`FurtherModes`](FurtherModes.md) |
 | [`DeblurLevel`](#deblurlevel) | *int* |
 | [`IntermediateResultTypes`](#intermediateresulttypes) | *int* |
-| [`IntermediateResultSavingMode`](#intermediateresultsavingmode) | [`EnumIntermediateResultSavingMode`]({{ site.dotnet_enumerations }}result-enums.html#intermediateresultsavingmode) |
-| [`ResultCoordinateType`](#resultcoordinatetype) | [`EnumResultCoordinateType`]({{ site.dotnet_enumerations }}result-enums.html#resultcoordinatetype) |
-| [`TextResultOrderModes`](#textresultordermodes) | [`EnumTextResultOrderMode`]({{ site.dotnet_enumerations }}result-enums.html#textresultordermode)[ ] |
+| [`IntermediateResultSavingMode`](#intermediateresultsavingmode) | [`EnumIntermediateResultSavingMode`]({{ site.dbr_dotnet_enumerations }}result-enums.html#intermediateresultsavingmode) |
+| [`ResultCoordinateType`](#resultcoordinatetype) | [`EnumResultCoordinateType`]({{ site.dbr_dotnet_enumerations }}result-enums.html#resultcoordinatetype) |
+| [`TextResultOrderModes`](#textresultordermodes) | [`EnumTextResultOrderMode`]({{ site.dbr_dotnet_enumerations }}result-enums.html#textresultordermode)[ ] |
 | [`ReturnBarcodeZoneClarity`](#returnbarcodezoneclarity) | *int* |
 | [`Region`](#region) | [`RegionDefinition`](RegionDefinition.md) |
 | [`MinBarcodeTextLength`](#minbarcodetextlength) | *int* |
 | [`MinResultConfidence`](#minresultconfidence) | *int* |
-| [`ScaleUpModes`](#scaleupmodes) | [`EnumScaleUpMode`]({{ site.dotnet_enumerations }}parameter-mode-enums.html#scaleupmode)[ ] |
-| [`PDFReadingMode`](#pdfreadingmode) | [`EnumPDFReadingMode`]({{ site.dotnet_enumerations }}parameter-mode-enums.html#pdfreadingmode) | 
+| [`ScaleUpModes`](#scaleupmodes) | [`EnumScaleUpMode`]({{ site.dbr_dotnet_enumerations }}parameter-mode-enums.html#scaleupmode)[ ] |
+| [`PDFReadingMode`](#pdfreadingmode) | [`EnumPDFReadingMode`]({{ site.dbr_dotnet_enumerations }}parameter-mode-enums.html#pdfreadingmode) | 
 
 
 ### TerminatePhase
@@ -51,7 +51,7 @@ EnumTerminatePhase Dynamsoft.Barcode.PublicRuntimeSettings.TerminatePhase
 ```
 
 - **Value range**   
-    Any one of the [`TerminatePhase`]({{ site.dotnet_enumerations }}parameter-mode-enums.html#terminatephase) Enumeration items
+    Any one of the [`TerminatePhase`]({{ site.dbr_dotnet_enumerations }}parameter-mode-enums.html#terminatephase) Enumeration items
       
 - **Default value**   
     `TP_BARCODE_RECOGNIZED`
@@ -115,16 +115,16 @@ int Dynamsoft.Barcode.PublicRuntimeSettings.BarcodeFormatIds
 ```
 
 - **Value range**   
-    A combined value of [`BarcodeFormat`]({{ site.dotnet_enumerations }}format-enums.html#barcodeformat) Enumeration items
+    A combined value of [`BarcodeFormat`]({{ site.dbr_dotnet_enumerations }}format-enums.html#barcodeformat) Enumeration items
       
 - **Default value**   
     `BF_ALL`
     
 - **Remark**   
-    If the barcode type(s) are certain, specifying the barcode type(s) to be read will speed up the recognition process. The barcode format our library will search for is composed of [BarcodeFormat group 1]({{ site.dotnet_enumerations }}format-enums.html#barcodeformat) and [BarcodeFormat group 2]({{ site.dotnet_enumerations }}format-enums.html#barcodeformat_2), so you need to specify the barcode format in group 1 and group 2 individually.
+    If the barcode type(s) are certain, specifying the barcode type(s) to be read will speed up the recognition process. The barcode format our library will search for is composed of [BarcodeFormat group 1]({{ site.dbr_dotnet_enumerations }}format-enums.html#barcodeformat) and [BarcodeFormat group 2]({{ site.dbr_dotnet_enumerations }}format-enums.html#barcodeformat_2), so you need to specify the barcode format in group 1 and group 2 individually.
     
 - **See also**  
-    [`EnumBarcodeFormat`]({{ site.dotnet_enumerations }}format-enums.html#barcodeformat), [`EnumBarcodeFormat_2`]({{ site.dotnet_enumerations }}format-enums.html#barcodeformat_2)
+    [`EnumBarcodeFormat`]({{ site.dbr_dotnet_enumerations }}format-enums.html#barcodeformat), [`EnumBarcodeFormat_2`]({{ site.dbr_dotnet_enumerations }}format-enums.html#barcodeformat_2)
       
 ### BarcodeFormatIds_2
 Sets the formats of the barcode in BarcodeFormat group 2 to be read. Barcode formats in BarcodeFormat group 2 can be combined.
@@ -134,16 +134,16 @@ int Dynamsoft.Barcode.PublicRuntimeSettings.BarcodeFormatIds_2
 ```
 
 - **Value range**   
-    A combined value of [`BarcodeFormat_2`]({{ site.dotnet_enumerations }}format-enums.html#barcodeformat_2) Enumeration items
+    A combined value of [`BarcodeFormat_2`]({{ site.dbr_dotnet_enumerations }}format-enums.html#barcodeformat_2) Enumeration items
       
 - **Default value**   
     `BF2_NULL`
     
 - **Remark**   
-    If the barcode type(s) are certain, specifying the barcode type(s) to be read will speed up the recognition process. The barcode format our library will search for is composed of [BarcodeFormat group 1]({{ site.dotnet_enumerations }}format-enums.html#barcodeformat) and [BarcodeFormat group 2]({{ site.dotnet_enumerations }}format-enums.html#barcodeformat_2), so you need to specify the barcode format in group 1 and group 2 individually.
+    If the barcode type(s) are certain, specifying the barcode type(s) to be read will speed up the recognition process. The barcode format our library will search for is composed of [BarcodeFormat group 1]({{ site.dbr_dotnet_enumerations }}format-enums.html#barcodeformat) and [BarcodeFormat group 2]({{ site.dbr_dotnet_enumerations }}format-enums.html#barcodeformat_2), so you need to specify the barcode format in group 1 and group 2 individually.
     
 - **See also**  
-    [`EnumBarcodeFormat`]({{ site.dotnet_enumerations }}format-enums.html#barcodeformat), [`EnumBarcodeFormat_2`]({{ site.dotnet_enumerations }}format-enums.html#barcodeformat_2)
+    [`EnumBarcodeFormat`]({{ site.dbr_dotnet_enumerations }}format-enums.html#barcodeformat), [`EnumBarcodeFormat_2`]({{ site.dbr_dotnet_enumerations }}format-enums.html#barcodeformat_2)
 
 ### PDFRasterDPI
 Sets the output image resolution.
@@ -185,7 +185,7 @@ EnumBinarizationMode[] Dynamsoft.Barcode.PublicRuntimeSettings.BinarizationModes
 ```
 
 - **Value range**   
-    Each array item can be any one of the [`BinarizationMode`]({{ site.dotnet_enumerations }}parameter-mode-enums.html#binarizationmode) Enumeration items.
+    Each array item can be any one of the [`BinarizationMode`]({{ site.dbr_dotnet_enumerations }}parameter-mode-enums.html#binarizationmode) Enumeration items.
       
 - **Default value**   
     `[EnumBinarizationMode.BM_LOCAL_BLOCK, EnumBinarizationMode.BM_SKIP, EnumBinarizationMode.BM_SKIP, EnumBinarizationMode.BM_SKIP, EnumBinarizationMode.BM_SKIP, EnumBinarizationMode.BM_SKIP, EnumBinarizationMode.BM_SKIP, EnumBinarizationMode.BM_SKIP]`
@@ -201,7 +201,7 @@ EnumLocalizationMode[] Dynamsoft.Barcode.PublicRuntimeSettings.LocalizationModes
 ```
 
 - **Value range**   
-    Each array item can be any one of the [`LocalizationMode`]({{ site.dotnet_enumerations }}parameter-mode-enums.html#localizationmode) Enumeration items.
+    Each array item can be any one of the [`LocalizationMode`]({{ site.dbr_dotnet_enumerations }}parameter-mode-enums.html#localizationmode) Enumeration items.
       
 - **Default value**   
     `[EnumLocalizationMode.LM_CONNECTED_BLOCKS, EnumLocalizationMode.LM_SCAN_DIRECTLY, EnumLocalizationMode.LM_STATISTICS, EnumLocalizationMode.LM_LINES, EnumLocalizationMode.LM_SKIP, EnumLocalizationMode.LM_SKIP, EnumLocalizationMode.LM_SKIP, EnumLocalizationMode.LM_SKIP]`
@@ -243,7 +243,7 @@ int Dynamsoft.Barcode.PublicRuntimeSettings.IntermediateResultTypes
 ```
 
 - **Value range**   
-    A combined value of [`IntermediateResultType`]({{ site.dotnet_enumerations }}result-enums.html#intermediateresulttype) Enumeration items
+    A combined value of [`IntermediateResultType`]({{ site.dbr_dotnet_enumerations }}result-enums.html#intermediateresulttype) Enumeration items
       
 - **Default value**   
     0
@@ -256,7 +256,7 @@ EnumIntermediateResultSavingMode Dynamsoft.Barcode.PublicRuntimeSettings.Interme
 ```
 
 - **Value range**   
-    A value of [`IntermediateResultSavingMode`]({{ site.dotnet_enumerations }}result-enums.html#intermediateresultsavingmode) Enumeration items
+    A value of [`IntermediateResultSavingMode`]({{ site.dbr_dotnet_enumerations }}result-enums.html#intermediateresultsavingmode) Enumeration items
       
 - **Default value**   
     `EnumIntermediateResultSavingMode.IRSM_MEMORY`
@@ -269,7 +269,7 @@ EnumResultCoordinateType Dynamsoft.Barcode.PublicRuntimeSettings.ResultCoordinat
 ```
 
 - **Value range**   
-    Any one of the [`ResultCoordinateType`]({{ site.dotnet_enumerations }}result-enums.html#resultcoordinatetype) Enumeration items
+    Any one of the [`ResultCoordinateType`]({{ site.dbr_dotnet_enumerations }}result-enums.html#resultcoordinatetype) Enumeration items
       
 - **Default value**   
     EnumResultCoordinateType.RCT_PIXEL
@@ -282,7 +282,7 @@ EnumTextResultOrderMode[] Dynamsoft.Barcode.PublicRuntimeSettings.TextResultOrde
 ```
 
 - **Value range**   
-    Each array item can be any one of the [`TextResultOrderMode`]({{ site.dotnet_enumerations }}result-enums.html#textresultordermode) Enumeration items.
+    Each array item can be any one of the [`TextResultOrderMode`]({{ site.dbr_dotnet_enumerations }}result-enums.html#textresultordermode) Enumeration items.
       
 - **Default value**   
     `[EnumTextResultOrderMode.TROM_CONFIDENCE, EnumTextResultOrderMode.TROM_POSITION, EnumTextResultOrderMode.TROM_FORMAT, EnumTextResultOrderMode.TROM_SKIP, EnumTextResultOrderMode.TROM_SKIP, EnumTextResultOrderMode.TROM_SKIP, EnumTextResultOrderMode.TROM_SKIP, EnumTextResultOrderMode.TROM_SKIP]`
@@ -353,7 +353,7 @@ EnumScaleUpMode[] Dynamsoft.Barcode.PublicRuntimeSettings.ScaleUpModes
 ```
 
 - **Value range**   
-    Each array item can be any one of the [`ScaleUpMode`]({{ site.dotnet_enumerations }}parameter-mode-enums.html#scaleupmode) Enumeration items.
+    Each array item can be any one of the [`ScaleUpMode`]({{ site.dbr_dotnet_enumerations }}parameter-mode-enums.html#scaleupmode) Enumeration items.
       
 - **Default value**   
     `[EnumScaleUpMode.SUM_AUTO, EnumScaleUpMode.SUM_SKIP, EnumScaleUpMode.SUM_SKIP, EnumScaleUpMode.SUM_SKIP, EnumScaleUpMode.SUM_SKIP, EnumScaleUpMode.SUM_SKIP, EnumScaleUpMode.SUM_SKIP, EnumScaleUpMode.SUM_SKIP]`
@@ -369,7 +369,7 @@ EnumPDFReadingMode Dynamsoft.Barcode.PublicRuntimeSettings.PDFReadingMode
 ```
 
 - **Value range**   
-    Any one of the [`PDFReadingMode`]({{ site.dotnet_enumerations }}parameter-mode-enums.html#pdfreadingmode) Enumeration items. 
+    Any one of the [`PDFReadingMode`]({{ site.dbr_dotnet_enumerations }}parameter-mode-enums.html#pdfreadingmode) Enumeration items. 
       
 - **Default value**   
     `EnumPDFReadingMode.PDFRM_AUTO`  

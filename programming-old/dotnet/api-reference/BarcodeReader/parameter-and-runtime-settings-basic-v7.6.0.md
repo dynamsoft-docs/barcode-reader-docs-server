@@ -42,20 +42,20 @@ Returns error code.
 
 #### Remark
 Check follow link for available modes and arguments:
-- [`EnumAccompanyingTextRecognitionModes`]({{ site.parameters_reference }}accompanying-text-recognition-modes.html#accompanyingtextrecognitionmodes)
-- [`EnumBarcodeColourModes`]({{ site.parameters_reference }}barcode-colour-modes.html#barcodecolourmodes)
-- [`EnumBinarizationModes`]({{ site.parameters_reference }}binarization-modes.html#binarizationmodes)
-- [`EnumColourClusteringModes`]({{ site.parameters_reference }}colour-clustering-modes.html#colourclusteringmodes)
-- [`EnumColourConversionModes`]({{ site.parameters_reference }}colour-conversion-modes.html#colourconversionmodes)
-- [`EnumDeformationResistingModes`]({{ site.parameters_reference }}deformation-resisting-modes.html#deformationresistingmodes)
-- [`EnumImagePreprocessingModes`]({{ site.parameters_reference }}image-preprocessing-modes.html#imagepreprocessingmodes)
-- [`EnumIntermediateResultSavingMode`]({{ site.parameters_reference }}intermediate-result-saving-mode.html#intermediateresultsavingmode)
-- [`EnumLocalizationModes`]({{ site.parameters_reference }}localization-modes.html#localizationmodes)
-- [`EnumRegionPredetectionModes`]({{ site.parameters_reference }}region-predetection-modes.html#regionpredetectionmodes)
-- [`EnumScaleUpModes`]({{ site.parameters_reference }}scale-up-modes.html#scaleupmodes)
-- [`EnumTextAssistedCorrectionMode`]({{ site.parameters_reference }}text-assisted-correction-mode.html)
-- [`EnumTextFilterModes`]({{ site.parameters_reference }}text-filter-modes.html#textfiltermodes)
-- [`EnumTextureDetectionModes`]({{ site.parameters_reference }}texture-detection-modes.html#texturedetectionmodes) 
+- [`EnumAccompanyingTextRecognitionModes`]({{ site.dbr_parameters_reference }}accompanying-text-recognition-modes.html#accompanyingtextrecognitionmodes)
+- [`EnumBarcodeColourModes`]({{ site.dbr_parameters_reference }}barcode-colour-modes.html#barcodecolourmodes)
+- [`EnumBinarizationModes`]({{ site.dbr_parameters_reference }}binarization-modes.html#binarizationmodes)
+- [`EnumColourClusteringModes`]({{ site.dbr_parameters_reference }}colour-clustering-modes.html#colourclusteringmodes)
+- [`EnumColourConversionModes`]({{ site.dbr_parameters_reference }}colour-conversion-modes.html#colourconversionmodes)
+- [`EnumDeformationResistingModes`]({{ site.dbr_parameters_reference }}deformation-resisting-modes.html#deformationresistingmodes)
+- [`EnumImagePreprocessingModes`]({{ site.dbr_parameters_reference }}image-preprocessing-modes.html#imagepreprocessingmodes)
+- [`EnumIntermediateResultSavingMode`]({{ site.dbr_parameters_reference }}intermediate-result-saving-mode.html#intermediateresultsavingmode)
+- [`EnumLocalizationModes`]({{ site.dbr_parameters_reference }}localization-modes.html#localizationmodes)
+- [`EnumRegionPredetectionModes`]({{ site.dbr_parameters_reference }}region-predetection-modes.html#regionpredetectionmodes)
+- [`EnumScaleUpModes`]({{ site.dbr_parameters_reference }}scale-up-modes.html#scaleupmodes)
+- [`EnumTextAssistedCorrectionMode`]({{ site.dbr_parameters_reference }}text-assisted-correction-mode.html)
+- [`EnumTextFilterModes`]({{ site.dbr_parameters_reference }}text-filter-modes.html#textfiltermodes)
+- [`EnumTextureDetectionModes`]({{ site.dbr_parameters_reference }}texture-detection-modes.html#texturedetectionmodes) 
 
 #### Code Snippet
 ```csharp
@@ -93,20 +93,20 @@ Returns error code.
 
 #### Remark
 Check follow link for available modes and arguments:
-- [`EnumAccompanyingTextRecognitionModes`]({{ site.parameters_reference }}accompanying-text-recognition-modes.html#accompanyingtextrecognitionmodes)
-- [`EnumBarcodeColourModes`]({{ site.parameters_reference }}barcode-colour-modes.html#barcodecolourmodes)
-- [`EnumBinarizationModes`]({{ site.parameters_reference }}binarization-modes.html#binarizationmodes)
-- [`EnumColourClusteringModes`]({{ site.parameters_reference }}colour-clustering-modes.html#colourclusteringmodes)
-- [`EnumColourConversionModes`]({{ site.parameters_reference }}colour-conversion-modes.html#colourconversionmodes)
-- [`EnumDeformationResistingModes`]({{ site.parameters_reference }}deformation-resisting-modes.html#deformationresistingmodes)
-- [`EnumImagePreprocessingModes`]({{ site.parameters_reference }}image-preprocessing-modes.html#imagepreprocessingmodes)
-- [`EnumIntermediateResultSavingMode`]({{ site.parameters_reference }}intermediate-result-saving-mode.html#intermediateresultsavingmode)
-- [`EnumLocalizationModes`]({{ site.parameters_reference }}localization-modes.html#localizationmodes)
-- [`EnumRegionPredetectionModes`]({{ site.parameters_reference }}region-predetection-modes.html#regionpredetectionmodes)
-- [`EnumScaleUpModes`]({{ site.parameters_reference }}scale-up-modes.html#scaleupmodes)
-- [`EnumTextAssistedCorrectionMode`]({{ site.parameters_reference }}text-assisted-correction-mode.html)
-- [`EnumTextFilterModes`]({{ site.parameters_reference }}text-filter-modes.html#textfiltermodes)
-- [`EnumTextureDetectionModes`]({{ site.parameters_reference }}texture-detection-modes.html#texturedetectionmodes)  
+- [`EnumAccompanyingTextRecognitionModes`]({{ site.dbr_parameters_reference }}accompanying-text-recognition-modes.html#accompanyingtextrecognitionmodes)
+- [`EnumBarcodeColourModes`]({{ site.dbr_parameters_reference }}barcode-colour-modes.html#barcodecolourmodes)
+- [`EnumBinarizationModes`]({{ site.dbr_parameters_reference }}binarization-modes.html#binarizationmodes)
+- [`EnumColourClusteringModes`]({{ site.dbr_parameters_reference }}colour-clustering-modes.html#colourclusteringmodes)
+- [`EnumColourConversionModes`]({{ site.dbr_parameters_reference }}colour-conversion-modes.html#colourconversionmodes)
+- [`EnumDeformationResistingModes`]({{ site.dbr_parameters_reference }}deformation-resisting-modes.html#deformationresistingmodes)
+- [`EnumImagePreprocessingModes`]({{ site.dbr_parameters_reference }}image-preprocessing-modes.html#imagepreprocessingmodes)
+- [`EnumIntermediateResultSavingMode`]({{ site.dbr_parameters_reference }}intermediate-result-saving-mode.html#intermediateresultsavingmode)
+- [`EnumLocalizationModes`]({{ site.dbr_parameters_reference }}localization-modes.html#localizationmodes)
+- [`EnumRegionPredetectionModes`]({{ site.dbr_parameters_reference }}region-predetection-modes.html#regionpredetectionmodes)
+- [`EnumScaleUpModes`]({{ site.dbr_parameters_reference }}scale-up-modes.html#scaleupmodes)
+- [`EnumTextAssistedCorrectionMode`]({{ site.dbr_parameters_reference }}text-assisted-correction-mode.html)
+- [`EnumTextFilterModes`]({{ site.dbr_parameters_reference }}text-filter-modes.html#textfiltermodes)
+- [`EnumTextureDetectionModes`]({{ site.dbr_parameters_reference }}texture-detection-modes.html#texturedetectionmodes)  
 
 
 #### Code Snippet

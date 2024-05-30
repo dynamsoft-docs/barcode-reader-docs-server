@@ -101,7 +101,7 @@ TextResult[] Dynamsoft.DBR.BarcodeReader.DecodeBuffer(byte[] buffer, int width, 
 `[in] width` <*int*> : The width of the image in pixels.  
 `[in] height` <*int*> : The height of the image in pixels.  
 `[in] stride` <*int*> : The stride of the image (also called scan width).  
-`[in] imagePixelFormat` <*[EnumImagePixelFormat]({{ site.dotnet_enumerations }}other-enums.html#imagepixelformat)*> : The image pixel format used in the image byte array.  
+`[in] imagePixelFormat` <*[EnumImagePixelFormat]({{ site.dbr_dotnet_enumerations }}other-enums.html#imagepixelformat)*> : The image pixel format used in the image byte array.  
 `[in] orientation` <*int*> : The orientation of the image data. The value is the angle that the image needs to be rotated clockwise so it shows correctly on the display in its natural orientation. It can be 0, 90, 180, or 270.  
 `[in] templateName` <*string*> : The template name.
 

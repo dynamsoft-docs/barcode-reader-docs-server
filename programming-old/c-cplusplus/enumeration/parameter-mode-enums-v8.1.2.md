@@ -56,12 +56,12 @@ Describes the barcode colour mode.
 | Member | Value | Description |
 | --------------------------  | ----- | ----------- |
 | BICM_SKIP | 0x00 | Skips the barcode colour operation. |
-| BICM_DARK_ON_LIGHT | 0x01 | Dark items on a light background. Check arguments of [`BarcodeColourModes`]({{ site.parameters_reference }}barcode-colour-modes.html) for available argument settings. |
-| BICM_LIGHT_ON_DARK  | 0x02 | Light items on a dark background. **Not supported yet**. Check arguments of [`BarcodeColourModes`]({{ site.parameters_reference }}barcode-colour-modes.html) for available argument settings. |
-| BICM_DARK_ON_DARK  | 0x04 | Dark items on a dark background. **Not supported yet**. Check arguments of [`BarcodeColourModes`]({{ site.parameters_reference }}barcode-colour-modes.html) for available argument settings. |
-| BICM_LIGHT_ON_LIGHT  | 0x08 | Light items on a light background. **Not supported yet**. Check arguments of [`BarcodeColourModes`]({{ site.parameters_reference }}barcode-colour-modes.html) for available argument settings. |
-| BICM_DARK_LIGHT_MIXED  | 0x10 | The background is mixed by dark and light. **Not supported yet**. Check arguments of [`BarcodeColourModes`]({{ site.parameters_reference }}barcode-colour-modes.html) for available argument settings. |
-| BICM_DARK_ON_LIGHT_DARK_SURROUNDING  | 0x20 | Dark item on a light background surrounded by dark. Check arguments of [`BarcodeColourModes`]({{ site.parameters_reference }}barcode-colour-modes.html) for available argument settings. |
+| BICM_DARK_ON_LIGHT | 0x01 | Dark items on a light background. Check arguments of [`BarcodeColourModes`]({{ site.dbr_parameters_reference }}barcode-colour-modes.html) for available argument settings. |
+| BICM_LIGHT_ON_DARK  | 0x02 | Light items on a dark background. **Not supported yet**. Check arguments of [`BarcodeColourModes`]({{ site.dbr_parameters_reference }}barcode-colour-modes.html) for available argument settings. |
+| BICM_DARK_ON_DARK  | 0x04 | Dark items on a dark background. **Not supported yet**. Check arguments of [`BarcodeColourModes`]({{ site.dbr_parameters_reference }}barcode-colour-modes.html) for available argument settings. |
+| BICM_LIGHT_ON_LIGHT  | 0x08 | Light items on a light background. **Not supported yet**. Check arguments of [`BarcodeColourModes`]({{ site.dbr_parameters_reference }}barcode-colour-modes.html) for available argument settings. |
+| BICM_DARK_LIGHT_MIXED  | 0x10 | The background is mixed by dark and light. **Not supported yet**. Check arguments of [`BarcodeColourModes`]({{ site.dbr_parameters_reference }}barcode-colour-modes.html) for available argument settings. |
+| BICM_DARK_ON_LIGHT_DARK_SURROUNDING  | 0x20 | Dark item on a light background surrounded by dark. Check arguments of [`BarcodeColourModes`]({{ site.dbr_parameters_reference }}barcode-colour-modes.html) for available argument settings. |
 
 
 
@@ -121,8 +121,8 @@ Describes the binarization mode.
 | --------------------------  | ----- | ----------- |
 | BM_SKIP | 0x00 | Skips the binarization. |
 | BM_AUTO | 0x01 | **Not supported yet.** |
-| BM_LOCAL_BLOCK | 0x02 | Binarizes the image based on the local block. Check arguments of [`BinarizationModes`]({{ site.parameters_reference }}binarization-modes.html) for available argument settings. |
-| BM_THRESHOLD | 0x04 | Performs image binarization based on the given threshold. Check arguments of [`BinarizationModes`]({{ site.parameters_reference }}binarization-modes.html) for available argument settings. |
+| BM_LOCAL_BLOCK | 0x02 | Binarizes the image based on the local block. Check arguments of [`BinarizationModes`]({{ site.dbr_parameters_reference }}binarization-modes.html) for available argument settings. |
+| BM_THRESHOLD | 0x04 | Performs image binarization based on the given threshold. Check arguments of [`BinarizationModes`]({{ site.dbr_parameters_reference }}binarization-modes.html) for available argument settings. |
 
 
 
@@ -152,7 +152,7 @@ Describes the colour clustering mode.
 | --------------------------  | ----- | ----------- |
 | CCM_SKIP | 0x00 | Skips the colour clustering. |
 | CCM_AUTO | 0x01 | **Not supported yet.** |
-| CCM_GENERAL_HSV | 0x02 | Clusters colours using the general algorithm based on HSV. Check arguments of [`ColourClusteringModes`]({{ site.parameters_reference }}colour-clustering-modes.html) for available argument settings. |
+| CCM_GENERAL_HSV | 0x02 | Clusters colours using the general algorithm based on HSV. Check arguments of [`ColourClusteringModes`]({{ site.dbr_parameters_reference }}colour-clustering-modes.html) for available argument settings. |
 
 
 
@@ -181,7 +181,7 @@ Describes the colour conversion mode.
 | Member | Value | Description |
 | --------------------------  | ----- | ----------- |
 | CICM_SKIP | 0x00 | Skip the colour conversion. |
-| CICM_GENERAL | 0x01 | Converts a colour image to a grayscale image using the general algorithm. Check arguments of [`ColourConversionModes`]({{ site.parameters_reference }}colour-conversion-modes.html) for available argument settings. |
+| CICM_GENERAL | 0x01 | Converts a colour image to a grayscale image using the general algorithm. Check arguments of [`ColourConversionModes`]({{ site.dbr_parameters_reference }}colour-conversion-modes.html) for available argument settings. |
 
 
 
@@ -275,7 +275,7 @@ Describes the deformation resisting mode.
 | --------------------------  | ----- | ----------- |
 | DRM_SKIP | 0x00 | Skip the deformation resisting. |
 | DRM_AUTO | 0x01 | **Not supported yet.** |
-| DRM_GENERAL | 0x02 | Resists deformation using the general algorithm. Check arguments of [`DeformationResistingModes`]({{ site.parameters_reference }}deformation-resisting-modes.html) for available argument settings.|
+| DRM_GENERAL | 0x02 | Resists deformation using the general algorithm. Check arguments of [`DeformationResistingModes`]({{ site.dbr_parameters_reference }}deformation-resisting-modes.html) for available argument settings.|
 
 
 
@@ -364,10 +364,10 @@ Describes the image preprocessing mode.
 | IPM_SKIP | 0x00 | Skips image preprocessing. |
 | IPM_AUTO | 0x01 | **Not supported yet.** |
 | IPM_GENERAL | 0x02 | Takes the unpreprocessed image for following operations. |
-| IPM_GRAY_EQUALIZE | 0x04 | Preprocesses the image using the gray equalization algorithm. Check arguments of [`ImagePreprocessingModes`]({{ site.parameters_reference }}image-preprocessing-modes.html) for available argument settings. |
-| IPM_GRAY_SMOOTH | 0x08 | Preprocesses the image using the gray smoothing algorithm. Check arguments of [`ImagePreprocessingModes`]({{ site.parameters_reference }}image-preprocessing-modes.html) for available argument settings. |
-| IPM_SHARPEN_SMOOTH | 0x10 | Preprocesses the image using the sharpening and smoothing algorithm. Check arguments of [`ImagePreprocessingModes`]({{ site.parameters_reference }}image-preprocessing-modes.html) for available argument settings. |
-| IPM_MORPHOLOGY  | 0x20 | Preprocesses the image using the morphology algorithm. Check arguments of [`ImagePreprocessingModes`]({{ site.parameters_reference }}image-preprocessing-modes.html) for available argument settings. |
+| IPM_GRAY_EQUALIZE | 0x04 | Preprocesses the image using the gray equalization algorithm. Check arguments of [`ImagePreprocessingModes`]({{ site.dbr_parameters_reference }}image-preprocessing-modes.html) for available argument settings. |
+| IPM_GRAY_SMOOTH | 0x08 | Preprocesses the image using the gray smoothing algorithm. Check arguments of [`ImagePreprocessingModes`]({{ site.dbr_parameters_reference }}image-preprocessing-modes.html) for available argument settings. |
+| IPM_SHARPEN_SMOOTH | 0x10 | Preprocesses the image using the sharpening and smoothing algorithm. Check arguments of [`ImagePreprocessingModes`]({{ site.dbr_parameters_reference }}image-preprocessing-modes.html) for available argument settings. |
+| IPM_MORPHOLOGY  | 0x20 | Preprocesses the image using the morphology algorithm. Check arguments of [`ImagePreprocessingModes`]({{ site.dbr_parameters_reference }}image-preprocessing-modes.html) for available argument settings. |
 
 
 
@@ -400,7 +400,7 @@ Describes the localization mode.
 | LM_CONNECTED_BLOCKS | 0x02 | Localizes barcodes by searching for connected blocks. This algorithm usually gives best result and it is recommended to set ConnectedBlocks to the highest priority. |
 | LM_STATISTICS | 0x04 | Localizes barcodes by groups of contiguous black-white regions. This is optimized for QRCode and DataMatrix. |
 | LM_LINES | 0x08 | Localizes barcodes by searching for groups of lines. This is optimized for 1D and PDF417 barcodes. |
-| LM_SCAN_DIRECTLY | 0x10 |  Localizes barcodes quickly. This mode is recommended in interactive scenario. Check arguments of [`LocalizationModes`]({{ site.parameters_reference }}localization-modes.html) for available argument settings. |
+| LM_SCAN_DIRECTLY | 0x10 |  Localizes barcodes quickly. This mode is recommended in interactive scenario. Check arguments of [`LocalizationModes`]({{ site.dbr_parameters_reference }}localization-modes.html) for available argument settings. |
 | LM_STATISTICS_MARKS | 0x20 | Localizes barcodes by groups of marks.This is optimized for DPM codes. |
 | LM_STATISTICS_POSTAL_CODE | 0x40 | Localizes barcodes by groups of connected blocks and lines.This is optimized for postal codes. |
 
@@ -463,9 +463,9 @@ Describes the region predetection mode.
 | RPM_SKIP | 0x00 | Skips region detection. |
 | RPM_AUTO | 0x01 | Lets the library choose an algorithm automatically to detect region. |
 | RPM_GENERAL | 0x02 | Takes the whole image as a region. |
-| RPM_GENERAL_RGB_CONTRAST | 0x04 | Detects region using the general algorithm based on RGB colour contrast. Check arguments of [`RegionPredetectionModes`]({{ site.parameters_reference }}region-predetection-modes.html) for available argument settings. |
-| RPM_GENERAL_GRAY_CONTRAST | 0x08 | Detects region using the general algorithm based on gray contrast. Check arguments of [`RegionPredetectionModes`]({{ site.parameters_reference }}region-predetection-modes.html) for available argument settings. |
-| RPM_GENERAL_HSV_CONTRAST | 0x10 | Detects region using the general algorithm based on HSV colour contrast. Check arguments of [`RegionPredetectionModes`]({{ site.parameters_reference }}region-predetection-modes.html) for available argument settings. |
+| RPM_GENERAL_RGB_CONTRAST | 0x04 | Detects region using the general algorithm based on RGB colour contrast. Check arguments of [`RegionPredetectionModes`]({{ site.dbr_parameters_reference }}region-predetection-modes.html) for available argument settings. |
+| RPM_GENERAL_GRAY_CONTRAST | 0x08 | Detects region using the general algorithm based on gray contrast. Check arguments of [`RegionPredetectionModes`]({{ site.dbr_parameters_reference }}region-predetection-modes.html) for available argument settings. |
+| RPM_GENERAL_HSV_CONTRAST | 0x10 | Detects region using the general algorithm based on HSV colour contrast. Check arguments of [`RegionPredetectionModes`]({{ site.dbr_parameters_reference }}region-predetection-modes.html) for available argument settings. |
 
 
 
@@ -495,8 +495,8 @@ Describes the scale up mode.
 | --------------------------  | ----- | ----------- |
 | SUM_SKIP | 0x00 | Skip the scale-up process. |
 | SUM_AUTO | 0x01 | The library chooses an interpolation method automatically to scale up. |
-| SUM_LINEAR_INTERPOLATION | 0x02 | Scales up using the linear interpolation method. Check arguments of [`ScaleUpModes`]({{ site.parameters_reference }}scale-up-modes.html) for available argument settings. |
-| SUM_NEAREST_NEIGHBOUR_INTERPOLATION | 0x04 | Scales up using the nearest-neighbour interpolation method. Check arguments of [`ScaleUpModes`]({{ site.parameters_reference }}scale-up-modes.html) for available argument settings. |
+| SUM_LINEAR_INTERPOLATION | 0x02 | Scales up using the linear interpolation method. Check arguments of [`ScaleUpModes`]({{ site.dbr_parameters_reference }}scale-up-modes.html) for available argument settings. |
+| SUM_NEAREST_NEIGHBOUR_INTERPOLATION | 0x04 | Scales up using the nearest-neighbour interpolation method. Check arguments of [`ScaleUpModes`]({{ site.dbr_parameters_reference }}scale-up-modes.html) for available argument settings. |
 
 
 
@@ -558,8 +558,8 @@ Describes the text assisted correction mode.
 | --------------------------  | ----- | ----------- |
 | TACM_SKIP | 0x00 | Skips the text assisted correction. |
 | TACM_AUTO | 0x01 | **Not supported yet.** |
-| TACM_VERIFYING | 0x02 | Uses the accompanying text to verify the decoded barcode result. Check arguments of [`TextAssistedCorrectionMode`]({{ site.parameters_reference }}text-assisted-correction-mode.html) for available argument settings. |
-| TACM_VERIFYING_PATCHING | 0x04 | Uses the accompanying text to verify and patch the decoded barcode result. Check arguments of [`TextAssistedCorrectionMode`]({{ site.parameters_reference }}text-assisted-correction-mode.html) for available argument settings. |
+| TACM_VERIFYING | 0x02 | Uses the accompanying text to verify the decoded barcode result. Check arguments of [`TextAssistedCorrectionMode`]({{ site.dbr_parameters_reference }}text-assisted-correction-mode.html) for available argument settings. |
+| TACM_VERIFYING_PATCHING | 0x04 | Uses the accompanying text to verify and patch the decoded barcode result. Check arguments of [`TextAssistedCorrectionMode`]({{ site.dbr_parameters_reference }}text-assisted-correction-mode.html) for available argument settings. |
 
 
 
@@ -588,7 +588,7 @@ Describes the text filter mode.
 | --------------------------  | ----- | ----------- |
 | TFM_SKIP | 0x00 | Skip the text filtering. |
 | TFM_AUTO | 0x01 | **Not supported yet.** |
-| TFM_GENERAL_CONTOUR | 0x02 | Filters text using the general algorithm based on contour. Check arguments of [`TextFilterModes`]({{ site.parameters_reference }}text-filter-modes.html) for available argument settings. |
+| TFM_GENERAL_CONTOUR | 0x02 | Filters text using the general algorithm based on contour. Check arguments of [`TextFilterModes`]({{ site.dbr_parameters_reference }}text-filter-modes.html) for available argument settings. |
 
 
 
@@ -618,6 +618,6 @@ Describes the texture detection mode.
 | --------------------------  | ----- | ----------- |
 | TDM_SKIP  | 0x00 | Skips texture detection. |
 | TDM_AUTO  | 0x01 | Not supported yet. |
-| TDM_GENERAL_WIDTH_CONCENTRATION  | 0x02 | Detects texture using the general algorithm. Check arguments of [`TextureDetectionModes`]({{ site.parameters_reference }}texture-detection-modes.html) for available argument settings. |
+| TDM_GENERAL_WIDTH_CONCENTRATION  | 0x02 | Detects texture using the general algorithm. Check arguments of [`TextureDetectionModes`]({{ site.dbr_parameters_reference }}texture-detection-modes.html) for available argument settings. |
 
 
