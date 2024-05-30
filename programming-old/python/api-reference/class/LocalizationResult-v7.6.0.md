@@ -19,10 +19,10 @@ public class LocalizationResult
   
 | Attribute | Type |
 |---------- | ---- |
-| [`terminate_phase`](#terminate_phase) | [`TerminatePhase`]({{ site.python_enumerations }}parameter-mode-enums.html#terminatephase) |
-| [`barcode_format`](#barcode_format) | [`BarcodeFormat`]({{ site.python_enumerations }}format-enums.html#barcodeformat) |
+| [`terminate_phase`](#terminate_phase) | [`TerminatePhase`]({{ site.dbr_python_enumerations }}parameter-mode-enums.html#terminatephase) |
+| [`barcode_format`](#barcode_format) | [`BarcodeFormat`]({{ site.dbr_python_enumerations }}format-enums.html#barcodeformat) |
 | [`barcode_format_string`](#barcode_format_string) | *str* |
-| [`barcode_format_2 `](#barcode_format_2 ) | [`BarcodeFormat_2`]({{ site.python_enumerations }}format-enums.html#barcodeformat_2) |
+| [`barcode_format_2 `](#barcode_format_2 ) | [`BarcodeFormat_2`]({{ site.dbr_python_enumerations }}format-enums.html#barcodeformat_2) |
 | [`barcode_format_string_2`](#barcode_format_string_2) | *str* |
 | [`localization_points`](#localization_points) | *tuple* |
 | [`angle`](#angle) | *int* |
@@ -30,7 +30,7 @@ public class LocalizationResult
 | [`page_number`](#page_number) | *int* |
 | [`region_name`](#region_name) | *str* |
 | [`document_name`](#document_name)| *str* |
-| [`result_coordinate_type`](#result_coordinate_type) | [`ResultCoordinateType`]({{ site.python_enumerations }}result-enums.html#resultcoordinatetype) |
+| [`result_coordinate_type`](#result_coordinate_type) | [`ResultCoordinateType`]({{ site.dbr_python_enumerations }}result-enums.html#resultcoordinatetype) |
 | [`accompanying_text_bytes`](#accompanying_text_bytes) | *bytearray* |
 | [`confidence`](#confidence) | *int* |
 

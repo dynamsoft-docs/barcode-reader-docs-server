@@ -11,7 +11,7 @@ permalink: /programming/java/user-guide/explore-features/index.html
 
 Once you have got an application running with Dynamsoft Barcode Reader Java edition, you can explore the many features of the SDK to see how to make the best out of the SDK.
 
-> If you are just getting started with Dynamsoft Barcode Reader Java Edition, we recommend that you read [Getting Started]({{site.java}}user-guide.html) first.
+> If you are just getting started with Dynamsoft Barcode Reader Java Edition, we recommend that you read [Getting Started]({{site.dbr_java}}user-guide.html) first.
 
 ## Basic Features
 

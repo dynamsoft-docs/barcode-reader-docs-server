@@ -124,12 +124,12 @@ Returns a pointer to the details of the decoded barcode.
 
 **See Also**
 
-- [CAztecDetails]({{ site.cpp_api }}aztec-details.html)
-- [CBarcodeDetails]({{ site.cpp_api }}barcode-details.html)
-- [CDataMatrixDetails]({{ site.cpp_api }}datamatrix-details.html)
-- [COneDCodeDetails]({{ site.cpp_api }}oned-code-details.html)
-- [CPDF417Details]({{ site.cpp_api }}pdf417-details.html)
-- [CQRCodeDetails]({{ site.cpp_api }}qr-code-details.html)
+- [CAztecDetails]({{ site.dbr_cpp_api }}aztec-details.html)
+- [CBarcodeDetails]({{ site.dbr_cpp_api }}barcode-details.html)
+- [CDataMatrixDetails]({{ site.dbr_cpp_api }}datamatrix-details.html)
+- [COneDCodeDetails]({{ site.dbr_cpp_api }}oned-code-details.html)
+- [CPDF417Details]({{ site.dbr_cpp_api }}pdf417-details.html)
+- [CQRCodeDetails]({{ site.dbr_cpp_api }}qr-code-details.html)
 
 ### IsDPM
 
@@ -221,7 +221,7 @@ Returns a pointer to the extended barcode result at the specified index for the 
 
 **See Also**
 
-[CExtendedBarcodeResult]({{ site.cpp_api }}extended-barcode-result.html)
+[CExtendedBarcodeResult]({{ site.dbr_cpp_api }}extended-barcode-result.html)
 
 ### SetFormat
 

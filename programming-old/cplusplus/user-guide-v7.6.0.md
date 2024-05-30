@@ -110,12 +110,12 @@ To deploy your application, make sure the DLLs are in the same folder as the EXE
 ## Decoding Methods
 The SDK provides multiple decoding methods that support reading barcodes from different sources, including static images,
 video stream, files in memory, base64 string, bitmap, etc. Here is a list of all decoding methods:
-- [DecodeFile]({{ site.cpp_methods }}decode.html#decodefile): Reads barcodes from a specified file (BMP, JPEG, PNG, GIF, TIFF or PDF).   
-- [DecodeBase64String]({{ site.cpp_methods }}decode.html#decodebase64string): Reads barcodes from a base64 encoded string of a file.   
-- [DecodeDIB]({{ site.cpp_methods }}decode.html#decodedib): Reads barcodes from a bitmap. When handling multi-page images, it will only decode the
+- [DecodeFile]({{ site.dbr_cpp_methods }}decode.html#decodefile): Reads barcodes from a specified file (BMP, JPEG, PNG, GIF, TIFF or PDF).   
+- [DecodeBase64String]({{ site.dbr_cpp_methods }}decode.html#decodebase64string): Reads barcodes from a base64 encoded string of a file.   
+- [DecodeDIB]({{ site.dbr_cpp_methods }}decode.html#decodedib): Reads barcodes from a bitmap. When handling multi-page images, it will only decode the
 current page.   
-- [DecodeBuffer]({{ site.cpp_methods }}decode.html#decodebuffer): Reads barcodes from raw buffer.
-- [DecodeFileInMemory]({{ site.cpp_methods }}decode.html#decodefileinmemory): Decodes barcodes from an image file in memory.   
+- [DecodeBuffer]({{ site.dbr_cpp_methods }}decode.html#decodebuffer): Reads barcodes from raw buffer.
+- [DecodeFileInMemory]({{ site.dbr_cpp_methods }}decode.html#decodefileinmemory): Decodes barcodes from an image file in memory.   
    
 You can find more samples in more programming languages at [Code Gallery](https://www.dynamsoft.com/Downloads/Dynamic-Barcode-Reader-Sample-Download.aspx).
 
@@ -133,7 +133,7 @@ you may use a template which is more flexible and easier to update.
 - [Use `PublicRuntimeSettings` Struct to Change Settings](#use-publicruntimesettings-struct-to-change-settings)   
 - [Use A Template to Change Settings](#use-a-template-to-change-settings)   
 
-### Use [`PublicRuntimeSettings`]({{ site.structs }}PublicRuntimeSettings.html?src=cpp) Struct to Change Settings
+### Use [`PublicRuntimeSettings`]({{ site.dbr_structs }}PublicRuntimeSettings.html?src=cpp) Struct to Change Settings
 Here are some common scanning settings you might find helpful:   
 - [Specify Barcode Type to Read](#specify-barcode-type-to-read)   
 - [Specify Maximum Barcode Count](#specify-maximum-barcode-count)   
@@ -144,7 +144,7 @@ For more scanning settings guide, check out the [How To](#how-to-guide) section.
 #### Specify Barcode Type to Read
 By default, the SDK will read all the supported barcode formats except Postal Codes and DotCode from the image. (See [Product Overview]({{ site.dbrOverview }}) for the full supported barcode list.)   
 
-If your full license only covers some barcode formats, you can use `BarcodeFormatIds` and `BarcodeFormatIds_2` to specify the barcode format(s). Check out [`BarcodeFormat`]({{ site.c_cpp_enumerations }}format-enums.html#barcodeformat) and [`BarcodeFormat_2`]({{ site.c_cpp_enumerations }}format-enums.html#barcodeformat_2).   
+If your full license only covers some barcode formats, you can use `BarcodeFormatIds` and `BarcodeFormatIds_2` to specify the barcode format(s). Check out [`BarcodeFormat`]({{ site.dbr_c_cpp_enumerations }}format-enums.html#barcodeformat) and [`BarcodeFormat_2`]({{ site.dbr_c_cpp_enumerations }}format-enums.html#barcodeformat_2).   
 
 For example, to enable only 1D barcode reading, you can use the following code:   
 
@@ -226,7 +226,7 @@ delete reader;
 ```
 
 ### Use A Template to Change Settings
-Besides the option of using the PublicRuntimeSettings struct, the SDK also provides [`InitRuntimeSettingsWithString`]({{ site.cpp_methods }}parameter-and-runtime-settings-advanced.html#initruntimesettingswithstring) and [`InitRuntimeSettingsWithFile`]({{ site.cpp_methods }}parameter-and-runtime-settings-advanced.html#initruntimesettingswithfile) APIs that enable you to use a template to control all the runtime settings. With a template, instead of writing many codes to modify the settings, you can manage all the runtime settings in a JSON file/string.    
+Besides the option of using the PublicRuntimeSettings struct, the SDK also provides [`InitRuntimeSettingsWithString`]({{ site.dbr_cpp_methods }}parameter-and-runtime-settings-advanced.html#initruntimesettingswithstring) and [`InitRuntimeSettingsWithFile`]({{ site.dbr_cpp_methods }}parameter-and-runtime-settings-advanced.html#initruntimesettingswithfile) APIs that enable you to use a template to control all the runtime settings. With a template, instead of writing many codes to modify the settings, you can manage all the runtime settings in a JSON file/string.    
 
 ```cpp
 char sError[512];
@@ -249,7 +249,7 @@ CBarcodeReader::FreeTextResults(&paryResult);
 delete reader;
 ```  
 
-Below is a template for your reference. To learn more about the APIs, you can check out [`PublicRuntimeSettings`]({{ site.structs }}PublicRuntimeSettings.html?src=cpp) Struct.  
+Below is a template for your reference. To learn more about the APIs, you can check out [`PublicRuntimeSettings`]({{ site.dbr_structs }}PublicRuntimeSettings.html?src=cpp) Struct.  
 ```json
 {
    "ImageParameter" : {

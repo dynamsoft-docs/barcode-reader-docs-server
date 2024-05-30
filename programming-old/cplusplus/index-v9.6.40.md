@@ -12,9 +12,9 @@ permalink: /programming/cplusplus/index-v9.6.40.html
 
 ## User Guide
 
-- [Getting Started]({{site.cpp}}user-guide.html)
-- [Explore Features]({{site.cpp}}user-guide/explore-features/index.html)
-- [Check Use Cases]({{site.cpp}}user-guide/use-cases/index.html)
+- [Getting Started]({{site.dbr_cpp}}user-guide.html)
+- [Explore Features]({{site.dbr_cpp}}user-guide/explore-features/index.html)
+- [Check Use Cases]({{site.dbr_cpp}}user-guide/use-cases/index.html)
 
 ## Samples and Demo
 
@@ -23,7 +23,7 @@ permalink: /programming/cplusplus/index-v9.6.40.html
 
 ## API Reference
 
-- [API Reference]({{site.cpp_api}}index.html)
+- [API Reference]({{site.dbr_cpp_api}}index.html)
 
 ## Release Notes
 
@@ -33,7 +33,7 @@ permalink: /programming/cplusplus/index-v9.6.40.html
 
 ## Upgrade Instructions
 
-- [How to upgrade to latest version]({{site.cpp}}upgrade-instruction.html)
+- [How to upgrade to latest version]({{site.dbr_cpp}}upgrade-instruction.html)
 
 ## Online Store
 

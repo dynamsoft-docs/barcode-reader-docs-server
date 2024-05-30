@@ -19,44 +19,44 @@ class PublicRuntimeSetting
   
 | Attribute | Type |
 |---------- | ---- |
-| [`accompanying_text_recognition_modes`](#accompanying_text_recognition_modes) | list[ [`EnumAccompanyingTextRecognitionMode`]({{ site.python_enumerations }}parameter-mode-enums.html#accompanyingtextrecognitionmode) ] |
+| [`accompanying_text_recognition_modes`](#accompanying_text_recognition_modes) | list[ [`EnumAccompanyingTextRecognitionMode`]({{ site.dbr_python_enumerations }}parameter-mode-enums.html#accompanyingtextrecognitionmode) ] |
 | [`barcode_format_ids`](#barcode_format_ids) | *int* |
 | [`barcode_format_ids_2`](#barcode_format_ids_2) | *int* |
-| [`barcode_colour_modes`](#barcode_colour_modes) | list[ [`EnumBarcodeColourMode`]({{ site.python_enumerations }}parameter-mode-enums.html#barcodecolourmode) ] |
-| [`barcode_complement_modes`](#barcode_complement_modes) | list[ [`EnumBarcodeComplementMode`]({{ site.python_enumerations }}parameter-mode-enums.html#barcodecomplementmode) ] |
-| [`binarization_modes`](#binarization_modes) | list[ [`EnumBinarizationMode`]({{ site.python_enumerations }}parameter-mode-enums.html#binarizationmode) ] |
-| [`colour_clustering_modes`](#colour_clustering_modes) | list[ [`EnumColourClusteringMode`]({{ site.python_enumerations }}parameter-mode-enums.html#colourclusteringmode) ] |
-| [`colour_conversion_modes`](#colour_conversion_modes) | list[ [`EnumColourConversionMode`]({{ site.python_enumerations }}parameter-mode-enums.html#colourconversionmode) ] |
+| [`barcode_colour_modes`](#barcode_colour_modes) | list[ [`EnumBarcodeColourMode`]({{ site.dbr_python_enumerations }}parameter-mode-enums.html#barcodecolourmode) ] |
+| [`barcode_complement_modes`](#barcode_complement_modes) | list[ [`EnumBarcodeComplementMode`]({{ site.dbr_python_enumerations }}parameter-mode-enums.html#barcodecomplementmode) ] |
+| [`binarization_modes`](#binarization_modes) | list[ [`EnumBinarizationMode`]({{ site.dbr_python_enumerations }}parameter-mode-enums.html#binarizationmode) ] |
+| [`colour_clustering_modes`](#colour_clustering_modes) | list[ [`EnumColourClusteringMode`]({{ site.dbr_python_enumerations }}parameter-mode-enums.html#colourclusteringmode) ] |
+| [`colour_conversion_modes`](#colour_conversion_modes) | list[ [`EnumColourConversionMode`]({{ site.dbr_python_enumerations }}parameter-mode-enums.html#colourconversionmode) ] |
 | [`deblur_level`](#deblurlevel) | *int* |
-| [`deblur_modes`](#deblur_modes) | list[ [`EnumDeblurMode`]({{ site.python_enumerations }}parameter-mode-enums.html#deblurmode) ] |
-| [`deformation_resisting_modes`](#deformation_resisting_modes) | list[ [`EnumDeformationResistingMode`]({{ site.python_enumerations }}parameter-mode-enums.html#deformationresistingmode) ] |
-| [`dpm_code_reading_modes`](#dpm_code_reading_modes) | list[ [`EnumDPMCodeReadingMode`]({{ site.python_enumerations }}parameter-mode-enums.html#dpmcodereadingmode) ] |
+| [`deblur_modes`](#deblur_modes) | list[ [`EnumDeblurMode`]({{ site.dbr_python_enumerations }}parameter-mode-enums.html#deblurmode) ] |
+| [`deformation_resisting_modes`](#deformation_resisting_modes) | list[ [`EnumDeformationResistingMode`]({{ site.dbr_python_enumerations }}parameter-mode-enums.html#deformationresistingmode) ] |
+| [`dpm_code_reading_modes`](#dpm_code_reading_modes) | list[ [`EnumDPMCodeReadingMode`]({{ site.dbr_python_enumerations }}parameter-mode-enums.html#dpmcodereadingmode) ] |
 | [`expected_barcodes_count`](#expected_barcodes_count) | *int* |
-| [`grayscale_transformation_modes`](#grayscale_transformation_modes) | list[ [`EnumGrayscaleTransformationMode`]({{ site.python_enumerations }}parameter-mode-enums.html#grayscaletransformationmode) ] |
-| [`image_preprocessing_modes`](#image_preprocessing_modes) | list[ [`EnumImagePreprocessingMode`]({{ site.python_enumerations }}parameter-mode-enums.html#imagepreprocessingmode) ] |
-| [`intermediate_result_saving_mode`](#intermediate_result_saving_mode) | [`EnumIntermediateResultSavingMode`]({{ site.python_enumerations }}result-enums.html#intermediateresultsavingmode) |
+| [`grayscale_transformation_modes`](#grayscale_transformation_modes) | list[ [`EnumGrayscaleTransformationMode`]({{ site.dbr_python_enumerations }}parameter-mode-enums.html#grayscaletransformationmode) ] |
+| [`image_preprocessing_modes`](#image_preprocessing_modes) | list[ [`EnumImagePreprocessingMode`]({{ site.dbr_python_enumerations }}parameter-mode-enums.html#imagepreprocessingmode) ] |
+| [`intermediate_result_saving_mode`](#intermediate_result_saving_mode) | [`EnumIntermediateResultSavingMode`]({{ site.dbr_python_enumerations }}result-enums.html#intermediateresultsavingmode) |
 | [`intermediate_result_types`](#intermediate_result_types) | *int* |
-| [`localization_modes`](#localization_modes) | list[ [`EnumLocalizationMode`]({{ site.python_enumerations }}parameter-mode-enums.html#localizationmode) ] |
+| [`localization_modes`](#localization_modes) | list[ [`EnumLocalizationMode`]({{ site.dbr_python_enumerations }}parameter-mode-enums.html#localizationmode) ] |
 | [`max_algorithm_thread_count`](#max_algorithm_thread_count) | *int* |
 | [`min_barcode_text_length`](#min_barcode_text_length) | *int* |
 | [`min_result_confidence`](#min_result_confidence) | *int* |
 | [`pdf_raster_dpi`](#pdf_raster_dpi) | *int* |
-| [`pdf_reading_mode`](#pdf_reading_mode) | [`EnumPDFReadingMode`]({{ site.python_enumerations }}parameter-mode-enums.html#pdfreadingmode) | 
+| [`pdf_reading_mode`](#pdf_reading_mode) | [`EnumPDFReadingMode`]({{ site.dbr_python_enumerations }}parameter-mode-enums.html#pdfreadingmode) | 
 | [`region_bottom`](#region_bottom) | *int* |
 | [`region_left`](#region_left) | *int* |
 | [`region_measured_by_percentage`](#region_measured_by_percentage) | *int* |
-| [`region_predetection_modes`](#region_predetection_modes) | list[ [`EnumRegionPredetectionMode`]({{ site.python_enumerations }}parameter-mode-enums.html#regionpredetectionmode) ] |
+| [`region_predetection_modes`](#region_predetection_modes) | list[ [`EnumRegionPredetectionMode`]({{ site.dbr_python_enumerations }}parameter-mode-enums.html#regionpredetectionmode) ] |
 | [`region_right`](#region_right) | *int* |
 | [`region_top`](#region_top) | *int* |
-| [`result_coordinate_type`](#result_coordinate_type) | [`EnumResultCoordinateType`]({{ site.python_enumerations }}result-enums.html#resultcoordinatetype) |
+| [`result_coordinate_type`](#result_coordinate_type) | [`EnumResultCoordinateType`]({{ site.dbr_python_enumerations }}result-enums.html#resultcoordinatetype) |
 | [`return_barcode_zone_clarity`](#return_barcode_zone_clarity) | *int* |
 | [`scale_down_threshold`](#scale_down_threshold) | *int* |
-| [`scale_up_modes`](#scale_up_modes) | list[ [`EnumScaleUpMode`]({{ site.python_enumerations }}parameter-mode-enums.html#scaleupmode) ] |
-| [`terminate_phase`](#terminate_phase) | [`EnumTerminatePhase`]({{ site.python_enumerations }}parameter-mode-enums.html#terminatephase) |
-| [`texture_detection_modes`](#texture_detection_modes) | list[ [`EnumTextureDetectionMode`]({{ site.python_enumerations }}parameter-mode-enums.html#texturedetectionmode) ] |
-| [`text_assisted_correction_mode`](#text_assisted_correction_mode) | list[ [`EnumTextResultOrderMode`]({{ site.python_enumerations }}result-enums.html#textresultordermode) ] |
-| [`text_filter_modes`](#text_filter_modes) | list[ [`EnumTextFilterMode`]({{ site.python_enumerations }}parameter-mode-enums.html#textfiltermode) ] |
-| [`text_result_order_modes`](#text_result_order_modes) | list[ [`TextResultOrderMode`]({{ site.python_enumerations }}result-enums.html#textresultordermode) ] |
+| [`scale_up_modes`](#scale_up_modes) | list[ [`EnumScaleUpMode`]({{ site.dbr_python_enumerations }}parameter-mode-enums.html#scaleupmode) ] |
+| [`terminate_phase`](#terminate_phase) | [`EnumTerminatePhase`]({{ site.dbr_python_enumerations }}parameter-mode-enums.html#terminatephase) |
+| [`texture_detection_modes`](#texture_detection_modes) | list[ [`EnumTextureDetectionMode`]({{ site.dbr_python_enumerations }}parameter-mode-enums.html#texturedetectionmode) ] |
+| [`text_assisted_correction_mode`](#text_assisted_correction_mode) | list[ [`EnumTextResultOrderMode`]({{ site.dbr_python_enumerations }}result-enums.html#textresultordermode) ] |
+| [`text_filter_modes`](#text_filter_modes) | list[ [`EnumTextFilterMode`]({{ site.dbr_python_enumerations }}parameter-mode-enums.html#textfiltermode) ] |
+| [`text_result_order_modes`](#text_result_order_modes) | list[ [`TextResultOrderMode`]({{ site.dbr_python_enumerations }}result-enums.html#textresultordermode) ] |
 | [`timeout`](#timeout) | *int* |
 
 
@@ -68,7 +68,7 @@ PublicRuntimeSetting.accompanying_text_recognition_modes
 ```
 
 - **Value range**   
-    Each list item can be any one of the [`AccompanyingTextRecognitionMode`]({{ site.python_enumerations }}parameter-mode-enums.html#accompanyingtextrecognitionmode) Enumeration items.
+    Each list item can be any one of the [`AccompanyingTextRecognitionMode`]({{ site.dbr_python_enumerations }}parameter-mode-enums.html#accompanyingtextrecognitionmode) Enumeration items.
       
 - **Default value**   
     [EnumAccompanyingTextRecognitionMode.ATRM_SKIP, EnumAccompanyingTextRecognitionMode.ATRM_SKIP, EnumAccompanyingTextRecognitionMode.ATRM_SKIP, EnumAccompanyingTextRecognitionMode.ATRM_SKIP, EnumAccompanyingTextRecognitionMode.ATRM_SKIP, EnumAccompanyingTextRecognitionMode.ATRM_SKIP, EnumAccompanyingTextRecognitionMode.ATRM_SKIP, EnumAccompanyingTextRecognitionMode.ATRM_SKIP]
@@ -85,7 +85,7 @@ PublicRuntimeSetting.barcode_format_ids
 ```
 
 - **Value range**   
-    A combined value of [`BarcodeFormat`]({{ site.python_enumerations }}format-enums.html#barcodeformat) Enumeration items
+    A combined value of [`BarcodeFormat`]({{ site.dbr_python_enumerations }}format-enums.html#barcodeformat) Enumeration items
       
 - **Default value**   
     EnumBarcodeFormat.BF_ALL
@@ -101,7 +101,7 @@ PublicRuntimeSetting.barcode_format_ids_2
 ```
 
 - **Value range**   
-    A combined value of [`BarcodeFormat_2`]({{ site.python_enumerations }}format-enums.html#barcodeformat_2) Enumeration items
+    A combined value of [`BarcodeFormat_2`]({{ site.dbr_python_enumerations }}format-enums.html#barcodeformat_2) Enumeration items
       
 - **Default value**   
     EnumBarcodeFormat_2.BF2_NULL
@@ -117,7 +117,7 @@ PublicRuntimeSetting.barcode_colour_modes
 ```
 
 - **Value range**   
-    Each list item can be any one of the [`BarcodeColourMode`]({{ site.python_enumerations }}parameter-mode-enums.html#barcodecolourmode) Enumeration items.
+    Each list item can be any one of the [`BarcodeColourMode`]({{ site.dbr_python_enumerations }}parameter-mode-enums.html#barcodecolourmode) Enumeration items.
       
 - **Default value**   
     [EnumBarcodeColourMode.BICM_DARK_ON_LIGHT, EnumBarcodeColourMode.BICM_SKIP, EnumBarcodeColourMode.BICM_SKIP, EnumBarcodeColourMode.BICM_SKIP, EnumBarcodeColourMode.BICM_SKIP, EnumBarcodeColourMode.BICM_SKIP, EnumBarcodeColourMode.BICM_SKIP, EnumBarcodeColourMode.BICM_SKIP]
@@ -133,7 +133,7 @@ PublicRuntimeSetting.barcode_complement_modes
 ```
 
 - **Value range**   
-    Each list item can be any one of the [`BarcodeComplementMode`]({{ site.python_enumerations }}parameter-mode-enums.html#barcodecomplementmode) Enumeration items.
+    Each list item can be any one of the [`BarcodeComplementMode`]({{ site.dbr_python_enumerations }}parameter-mode-enums.html#barcodecomplementmode) Enumeration items.
       
 - **Default value**   
     [EnumBarcodeComplementMode.BCM_SKIP, EnumBarcodeComplementMode.BCM_SKIP, EnumBarcodeComplementMode.BCM_SKIP, EnumBarcodeComplementMode.BCM_SKIP, EnumBarcodeComplementMode.BCM_SKIP, EnumBarcodeComplementMode.BCM_SKIP, EnumBarcodeComplementMode.BCM_SKIP, EnumBarcodeComplementMode.BCM_SKIP]
@@ -149,7 +149,7 @@ PublicRuntimeSetting.binarization_modes
 ```
 
 - **Value range**   
-    Each list item can be any one of the [`BinarizationMode`]({{ site.python_enumerations }}parameter-mode-enums.html#binarizationmode) Enumeration items.
+    Each list item can be any one of the [`BinarizationMode`]({{ site.dbr_python_enumerations }}parameter-mode-enums.html#binarizationmode) Enumeration items.
       
 - **Default value**   
     [EnumBinarizationMode.BM_LOCAL_BLOCK, EnumBinarizationMode.BM_SKIP, EnumBinarizationMode.BM_SKIP, EnumBinarizationMode.BM_SKIP, EnumBinarizationMode.BM_SKIP, EnumBinarizationMode.BM_SKIP, EnumBinarizationMode.BM_SKIP, EnumBinarizationMode.BM_SKIP]
@@ -165,7 +165,7 @@ PublicRuntimeSetting.colour_clustering_modes
 ```
 
 - **Value range**   
-    Each list item can be any one of the [`ColourClusteringMode`]({{ site.python_enumerations }}parameter-mode-enums.html#colourclusteringmode) Enumeration items.
+    Each list item can be any one of the [`ColourClusteringMode`]({{ site.dbr_python_enumerations }}parameter-mode-enums.html#colourclusteringmode) Enumeration items.
       
 - **Default value**   
     [EnumColourClusteringMode.CCM_SKIP, EnumColourClusteringMode.CCM_SKIP, EnumColourClusteringMode.CCM_SKIP, EnumColourClusteringMode.CCM_SKIP, EnumColourClusteringMode.CCM_SKIP, EnumColourClusteringMode.CCM_SKIP, EnumColourClusteringMode.CCM_SKIP, EnumColourClusteringMode.CCM_SKIP]
@@ -181,7 +181,7 @@ PublicRuntimeSetting.colour_conversion_modes
 ```
 
 - **Value range**   
-    Each list item can be any one of the [`ColourConversionMode`]({{ site.python_enumerations }}parameter-mode-enums.html#colourconversionmode) Enumeration items.
+    Each list item can be any one of the [`ColourConversionMode`]({{ site.dbr_python_enumerations }}parameter-mode-enums.html#colourconversionmode) Enumeration items.
       
 - **Default value**   
     [EnumColourConversionMode.CICM_GENERAL, EnumColourConversionMode.CICM_SKIP, EnumColourConversionMode.CICM_SKIP, EnumColourConversionMode.CICM_SKIP, EnumColourConversionMode.CICM_SKIP, EnumColourConversionMode.CICM_SKIP, EnumColourConversionMode.CICM_SKIP, EnumColourConversionMode.CICM_SKIP]
@@ -214,7 +214,7 @@ PublicRuntimeSetting.deblur_modes
 ```
 
 - **Value range**   
-    Each list item can be any one of the [`EnumDeblurMode`]({{ site.python_enumerations }}parameter-mode-enums.html#deblurmode) Enumeration items.
+    Each list item can be any one of the [`EnumDeblurMode`]({{ site.dbr_python_enumerations }}parameter-mode-enums.html#deblurmode) Enumeration items.
       
 - **Default value**   
     [EnumDeblurMode.DM_SKIP, EnumDeblurMode.DM_SKIP, EnumDeblurMode.DM_SKIP, EnumDeblurMode.DM_SKIP, EnumDeblurMode.DM_SKIP, EnumDeblurMode.DM_SKIP, EnumDeblurMode.DM_SKIP, EnumDeblurMode.DM_SKIP, EnumDeblurMode.DM_SKIP, EnumDeblurMode.DM_SKIP]
@@ -231,7 +231,7 @@ PublicRuntimeSetting.deformation_resisting_modes
 ```
 
 - **Value range**   
-    Each list item can be any one of the [`DeformationResistingMode`]({{ site.python_enumerations }}parameter-mode-enums.html#deformationresistingmode) Enumeration items.
+    Each list item can be any one of the [`DeformationResistingMode`]({{ site.dbr_python_enumerations }}parameter-mode-enums.html#deformationresistingmode) Enumeration items.
       
 - **Default value**   
     [EnumDeformationResistingMode.DRM_SKIP, EnumDeformationResistingMode.DRM_SKIP, EnumDeformationResistingMode.DRM_SKIP, EnumDeformationResistingMode.DRM_SKIP, EnumDeformationResistingMode.DRM_SKIP, EnumDeformationResistingMode.DRM_SKIP, EnumDeformationResistingMode.DRM_SKIP, EnumDeformationResistingMode.DRM_SKIP]
@@ -247,7 +247,7 @@ PublicRuntimeSetting.dpm_code_reading_modes
 ```
 
 - **Value range**   
-    Each list item can be any one of the [`DPMCodeReadingMode`]({{ site.python_enumerations }}parameter-mode-enums.html#dpmcodereadingmode) Enumeration items.
+    Each list item can be any one of the [`DPMCodeReadingMode`]({{ site.dbr_python_enumerations }}parameter-mode-enums.html#dpmcodereadingmode) Enumeration items.
       
 - **Default value**   
     [EnumDeformationResistingMode.DRM_SKIP, EnumDeformationResistingMode.DRM_SKIP, EnumDeformationResistingMode.DRM_SKIP, EnumDeformationResistingMode.DRM_SKIP, EnumDeformationResistingMode.DRM_SKIP, EnumDeformationResistingMode.DRM_SKIP, EnumDeformationResistingMode.DRM_SKIP, EnumDeformationResistingMode.DRM_SKIP]
@@ -281,7 +281,7 @@ PublicRuntimeSetting.grayscale_transformation_modes
 ```
 
 - **Value range**   
-    Each list item can be any one of the [`GrayscaleTransformationMode`]({{ site.python_enumerations }}parameter-mode-enums.html#grayscaletransformationmode) Enumeration items.
+    Each list item can be any one of the [`GrayscaleTransformationMode`]({{ site.dbr_python_enumerations }}parameter-mode-enums.html#grayscaletransformationmode) Enumeration items.
       
 - **Default value**   
     [EnumGrayscaleTransformationMode.GTM_ORIGINAL, EnumGrayscaleTransformationMode.GTM_SKIP, EnumGrayscaleTransformationMode.GTM_SKIP, EnumGrayscaleTransformationMode.GTM_SKIP, EnumGrayscaleTransformationMode.GTM_SKIP, EnumGrayscaleTransformationMode.GTM_SKIP, EnumGrayscaleTransformationMode.GTM_SKIP, EnumGrayscaleTransformationMode.GTM_SKIP]
@@ -297,7 +297,7 @@ PublicRuntimeSetting.intermediate_result_saving_mode
 ```
 
 - **Value range**   
-    One of the [`IntermediateResultSavingMode`]({{ site.python_enumerations }}result-enums.html#intermediateresultsavingmode) Enumeration items.
+    One of the [`IntermediateResultSavingMode`]({{ site.dbr_python_enumerations }}result-enums.html#intermediateresultsavingmode) Enumeration items.
       
 - **Default value**   
     EnumIntermediateResultSavingMode.IRSM_MEMORY
@@ -323,7 +323,7 @@ PublicRuntimeSetting.localization_modes
 ```
 
 - **Value range**   
-    Each list item can be any one of the [`LocalizationMode`]({{ site.python_enumerations }}parameter-mode-enums.html#localizationmode) Enumeration items.
+    Each list item can be any one of the [`LocalizationMode`]({{ site.dbr_python_enumerations }}parameter-mode-enums.html#localizationmode) Enumeration items.
       
 - **Default value**   
     [EnumLocalizationMode.LM_CONNECTED_BLOCKS, EnumLocalizationMode.LM_SCAN_DIRECTLY, EnumLocalizationMode.LM_STATISTICS, EnumLocalizationMode.LM_LINES, EnumLocalizationMode.LM_SKIP, EnumLocalizationMode.LM_SKIP, EnumLocalizationMode.LM_SKIP, EnumLocalizationMode.LM_SKIP]
@@ -404,7 +404,7 @@ PublicRuntimeSetting.pdf_reading_mode
 ```
 
 - **Value range**   
-    Any one of the [`PDFReadingMode`]({{ site.python_enumerations }}parameter-mode-enums.html#pdfreadingmode) Enumeration items. 
+    Any one of the [`PDFReadingMode`]({{ site.dbr_python_enumerations }}parameter-mode-enums.html#pdfreadingmode) Enumeration items. 
       
 - **Default value**   
     `PDFRM_AUTO`  
@@ -461,7 +461,7 @@ PublicRuntimeSetting.region_predetection_modes
 ```
 
 - **Value range**   
-    Each list item can be any one of the [`RegionPredetectionMode`]({{ site.python_enumerations }}parameter-mode-enums.html#regionpredetectionmode) Enumeration items.
+    Each list item can be any one of the [`RegionPredetectionMode`]({{ site.dbr_python_enumerations }}parameter-mode-enums.html#regionpredetectionmode) Enumeration items.
       
 - **Default value**   
     [EnumRegionPredetectionMode.RPM_GENERAL, EnumRegionPredetectionMode.RPM_SKIP, EnumRegionPredetectionMode.RPM_SKIP, EnumRegionPredetectionMode.RPM_SKIP, EnumRegionPredetectionMode.RPM_SKIP, EnumRegionPredetectionMode.RPM_SKIP, EnumRegionPredetectionMode.RPM_SKIP, EnumRegionPredetectionMode.RPM_SKIP]
@@ -548,7 +548,7 @@ PublicRuntimeSetting.scale_up_modes
 ```
 
 - **Value range**   
-    Each array item can be any one of the [`ScaleUpMode`]({{ site.python_enumerations }}parameter-mode-enums.html#scaleupmode) Enumeration items.
+    Each array item can be any one of the [`ScaleUpMode`]({{ site.dbr_python_enumerations }}parameter-mode-enums.html#scaleupmode) Enumeration items.
       
 - **Default value**   
     [EnumScaleUpMode.SUM_AUTO, EnumScaleUpMode.SUM_SKIP, EnumScaleUpMode.SUM_SKIP, EnumScaleUpMode.SUM_SKIP, EnumScaleUpMode.SUM_SKIP, EnumScaleUpMode.SUM_SKIP, EnumScaleUpMode.SUM_SKIP, EnumScaleUpMode.SUM_SKIP]
@@ -564,7 +564,7 @@ PublicRuntimeSetting.terminate_phase
 ```
 
 - **Value range**   
-    A combined value of [`TerminatePhase`]({{ site.python_enumerations }}parameter-mode-enums.html#terminatephase) Enumeration items
+    A combined value of [`TerminatePhase`]({{ site.dbr_python_enumerations }}parameter-mode-enums.html#terminatephase) Enumeration items
       
 - **Default value**   
     EnumTerminatePhase.TP_BARCODE_RECOGNIZED
@@ -577,7 +577,7 @@ PublicRuntimeSetting.texture_detection_modes
 ```
 
 - **Value range**   
-    Each array item can be any one of the [`TextureDetectionMode`]({{ site.python_enumerations }}parameter-mode-enums.html#texturedetectionmode) Enumeration items.
+    Each array item can be any one of the [`TextureDetectionMode`]({{ site.dbr_python_enumerations }}parameter-mode-enums.html#texturedetectionmode) Enumeration items.
       
 - **Default value**   
     [EnumTextureDetectionMode.TDM_GENERAL_WIDTH_CONCENTRATION, EnumTextureDetectionMode.TDM_SKIP, EnumTextureDetectionMode.TDM_SKIP, EnumTextureDetectionMode.TDM_SKIP, EnumTextureDetectionMode.TDM_SKIP, EnumTextureDetectionMode.TDM_SKIP, EnumTextureDetectionMode.TDM_SKIP, EnumTextureDetectionMode.TDM_SKIP]
@@ -606,7 +606,7 @@ PublicRuntimeSetting.text_filter_modes
 ```
 
 - **Value range**   
-    Each array item can be any one of the [`TextFilterMode`]({{ site.python_enumerations }}parameter-mode-enums.html#textfiltermode) Enumeration items.
+    Each array item can be any one of the [`TextFilterMode`]({{ site.dbr_python_enumerations }}parameter-mode-enums.html#textfiltermode) Enumeration items.
       
 - **Default value**   
     [EnumTextFilterMode.TFM_GENERAL_CONTOUR, EnumTextFilterMode.TFM_SKIP, EnumTextFilterMode.TFM_SKIP, EnumTextFilterMode.TFM_SKIP, EnumTextFilterMode.TFM_SKIP, EnumTextFilterMode.TFM_SKIP, EnumTextFilterMode.TFM_SKIP, EnumTextFilterMode.TFM_SKIP]
@@ -622,7 +622,7 @@ PublicRuntimeSetting.text_result_order_modes
 ```
 
 - **Value range**   
-    Each array item can be any one of the [`TextResultOrderMode`]({{ site.python_enumerations }}result-enums.html#textresultordermode) Enumeration items.
+    Each array item can be any one of the [`TextResultOrderMode`]({{ site.dbr_python_enumerations }}result-enums.html#textresultordermode) Enumeration items.
       
 - **Default value**   
     [EnumTextResultOrderMode.TROM_CONFIDENCE, EnumTextResultOrderMode.TROM_POSITION, EnumTextResultOrderMode.TROM_FORMAT, EnumTextResultOrderMode.TROM_SKIP, EnumTextResultOrderMode.TROM_SKIP, EnumTextResultOrderMode.TROM_SKIP, EnumTextResultOrderMode.TROM_SKIP, EnumTextResultOrderMode.TROM_SKIP]

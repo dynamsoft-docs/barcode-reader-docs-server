@@ -24,7 +24,7 @@ class FrameDecodingParameters
 | [`width`](#width) | *int* |
 | [`height`](#height) | *int* |
 | [`stride`](#stride) | *int* |
-| [`image_pixel_format`](#image_pixel_format) | [`ImagePixelFormat`]({{ site.python_enumerations }}other-enums.html#imagepixelformat) |
+| [`image_pixel_format`](#image_pixel_format) | [`ImagePixelFormat`]({{ site.dbr_python_enumerations }}other-enums.html#imagepixelformat) |
 | [`region_top`](#region_top) | *int* |
 | [`region_left`](#region_left) | *int* |
 | [`region_right`](#region_right) | *int* |
@@ -33,8 +33,8 @@ class FrameDecodingParameters
 | [`threshold`](#threshold) | *float* |
 | [`fps`](#fps) | *int* |
 | [`auto_filter`](#auto_filter) | *int* |
-| [`clarity_calculation_method`](#clarity_calculation_method) | [`ClarityCalculationMethod`]({{ site.python_enumerations }}frame-decoding-enums.html#claritycalculationmethod) |
-| [`clarity_filter_mode`](#clarity_filter_mode) | [`ClarityFilterMode`]({{ site.python_enumerations }}frame-decoding-enums.html#clarityfiltermode) |
+| [`clarity_calculation_method`](#clarity_calculation_method) | [`ClarityCalculationMethod`]({{ site.dbr_python_enumerations }}frame-decoding-enums.html#claritycalculationmethod) |
+| [`clarity_filter_mode`](#clarity_filter_mode) | [`ClarityFilterMode`]({{ site.dbr_python_enumerations }}frame-decoding-enums.html#clarityfiltermode) |
 | [`duplicate_forget_time`](#duplicate_forget_time) | *int* |
 | [`orientation`](#orientation) | *int* |
 
@@ -112,13 +112,13 @@ FrameDecodingParameters.image_pixel_format
 ```
 
 **Value Range**     
-    A value of [`ImagePixelFormat`]({{ site.python_enumerations }}other-enums.html#imagepixelformat) Enumeration items.
+    A value of [`ImagePixelFormat`]({{ site.dbr_python_enumerations }}other-enums.html#imagepixelformat) Enumeration items.
       
 **Default Value**     
     `IPF_GRAYSCALED`
     
 **See Also**      
-    [`ImagePixelFormat`]({{ site.python_enumerations }}other-enums.html#imagepixelformat)
+    [`ImagePixelFormat`]({{ site.dbr_python_enumerations }}other-enums.html#imagepixelformat)
       
 ### region_top
 The region definition of the frame to calculate the internal indicator.The top-most coordinate or percentage of the region. 
@@ -261,13 +261,13 @@ FrameDecodingParameters.clarity_calculation_method
 ```
 
 **Value Range**     
-    Any one of the [`ClarityCalculationMethod`]({{ site.python_enumerations }}frame-decoding-enums.html#claritycalculationmethod) Enumeration items.   
+    Any one of the [`ClarityCalculationMethod`]({{ site.dbr_python_enumerations }}frame-decoding-enums.html#claritycalculationmethod) Enumeration items.   
       
 **Default Value**     
     ECCM_CONTRAST   
     
 **See Also**      
-    [`ClarityCalculationMethod`]({{ site.python_enumerations }}frame-decoding-enums.html#claritycalculationmethod)    
+    [`ClarityCalculationMethod`]({{ site.dbr_python_enumerations }}frame-decoding-enums.html#claritycalculationmethod)    
     
 
 ### clarity_filter_mode
@@ -278,13 +278,13 @@ FrameDecodingParameters.clarity_filter_mode
 ```
 
 **Value Range**     
-    Any one of the [`ClarityFilterMode`]({{ site.python_enumerations }}frame-decoding-enums.html#clarityfiltermode) Enumeration items.   
+    Any one of the [`ClarityFilterMode`]({{ site.dbr_python_enumerations }}frame-decoding-enums.html#clarityfiltermode) Enumeration items.   
       
 **Default Value**     
     CFM_GENERAL   
     
 **See Also**      
-    [`ClarityFilterMode`]({{ site.python_enumerations }}frame-decoding-enums.html#clarityfiltermode)    
+    [`ClarityFilterMode`]({{ site.dbr_python_enumerations }}frame-decoding-enums.html#clarityfiltermode)    
 
 ### duplicate_forget_time
 

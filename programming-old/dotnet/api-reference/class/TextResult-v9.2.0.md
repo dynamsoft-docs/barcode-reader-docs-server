@@ -21,9 +21,9 @@ public class TextResult
   
 | Attribute | Type |
 |---------- | ---- |
-| [`BarcodeFormat`](#barcodeformat) | [`EnumBarcodeFormat`]({{ site.dotnet_enumerations }}format-enums.html#barcodeformat) |
+| [`BarcodeFormat`](#barcodeformat) | [`EnumBarcodeFormat`]({{ site.dbr_dotnet_enumerations }}format-enums.html#barcodeformat) |
 | [`BarcodeFormatString`](#barcodeformatstring) | *string* |
-| [`BarcodeFormat_2`](#barcodeformat_2) | [`EnumBarcodeFormat_2`]({{ site.dotnet_enumerations }}format-enums.html#barcodeformat_2) |
+| [`BarcodeFormat_2`](#barcodeformat_2) | [`EnumBarcodeFormat_2`]({{ site.dbr_dotnet_enumerations }}format-enums.html#barcodeformat_2) |
 | [`BarcodeFormatString_2`](#barcodeformatstring_2) | *string* |
 | [`BarcodeText`](#barcodetext) | *string* |
 | [`BarcodeBytes`](#barcodebytes) | *byte[ ]* |

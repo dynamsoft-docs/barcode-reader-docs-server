@@ -68,7 +68,7 @@ Import dbr package in the source file.
    ```python
    reader.init_license("<insert DBR license key here>")
    ```
-    > Please replace `<insert DBR license key here>` with a valid DBR license key. You can request a free trial from <a href="https://www.dynamsoft.com/customer/license/trialLicense?utm_source=guide&product=dbr&package=desktop" target="_blank">Customer Portal</a>. 
+    > Please replace `<insert DBR license key here>` with a valid DBR license key. You can request a free trial from <a href="https://www.dynamsoft.com/customer/license/trialLicense?utm_source=guide&product=dbr&package=python" target="_blank">Customer Portal</a>. 
 
 ### Configure the Barcode Scanning Behavior
 
@@ -82,7 +82,7 @@ DBR provides multiple APIs for you to customize the barcode scanning behavior. H
    reader.update_runtime_settings(settings)
    ```
 
-> For better performance, we recommend that you only enable the barcode formats your application requires. Check out [Barcode Format Enumeration]({{ site.python_enumerations }}format-enums.html) for fully supported barcode formats. 
+> For better performance, we recommend that you only enable the barcode formats your application requires. Check out [Barcode Format Enumeration]({{ site.dbr_python_enumerations }}format-enums.html) for fully supported barcode formats. 
 
 > If you know exactly the count of barcodes you want to read, specify `excepted_barcodes_count` to speed up the process and improve the accuracy. 
 
@@ -107,9 +107,9 @@ DBR provides multiple APIs for you to customize the barcode scanning behavior. H
       print(bre)
    ```
 
-   > For the error handling mechanism, the SDK throws [BarcodeReaderError]({{site.python_class}}BarcodeReaderError.html) for each function. You can add code for exception handling based on your needs. 
+   > For the error handling mechanism, the SDK throws [BarcodeReaderError]({{site.dbr_python_class}}BarcodeReaderError.html) for each function. You can add code for exception handling based on your needs. 
 
-   > The SDK returns multiple barcode information items, including barcode count, barcode format, barcode text, location, barcode raw data, etc. Check out [TextResult]({{ site.python_class }}TextResult.html) for fully supported result data.
+   > The SDK returns multiple barcode information items, including barcode count, barcode format, barcode text, location, barcode raw data, etc. Check out [TextResult]({{ site.dbr_python_class }}TextResult.html) for fully supported result data.
 
 
 ### Release Resource
@@ -136,4 +136,4 @@ python DBRPythonSample.py
 
 ## Related Articles
 
-- [How to upgrade to latest version]({{site.python}}upgrade-instruction.html)
+- [How to upgrade to latest version]({{site.dbr_python}}upgrade-instruction.html)

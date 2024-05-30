@@ -198,7 +198,7 @@ static InstancePoolStatus Dynamsoft.DBR.BarcodeReader.GetInstancePoolStatus()
 
 **Return Value**
 
-Returns the [`InstancePoolStatus`]({{ site.dotnet_class }}InstancePoolStatus.html) class representing the status of an instance pool.
+Returns the [`InstancePoolStatus`]({{ site.dbr_dotnet_class }}InstancePoolStatus.html) class representing the status of an instance pool.
 
 ## GetIdleInstancesCount
 

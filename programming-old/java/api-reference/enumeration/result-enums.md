@@ -65,9 +65,9 @@ class EnumIntermediateResultSavingMode
 | Member | Value | Description | Valid Argument(s) |
 | --------------- | ----- | ----------- | ----------------- |
 | IRSM_MEMORY | 0x01 | Saves intermediate results in memory with public data format. | `N/A` |
-| IRSM_FILESYSTEM | 0x02 | Saves intermediate results in file system. | [`FolderPath`]({{ site.parameters_reference }}intermediate-result-saving-mode.html#folderpath)<br>[`RecordsetSizeOfLatestImages`]({{ site.parameters_reference }}intermediate-result-saving-mode.html#recordsetsizeoflatestimages) |
-| IRSM_BOTH | 0x04 | Saves intermediate results using IRSM_MEMORY and IRSM_FILESYSTEM. | [`FolderPath`]({{ site.parameters_reference }}intermediate-result-saving-mode.html#folderpath) |
-| IRSM_REFERENCE_MEMORY | 0x08 | Saves intermediate results in memory with internal data format. | [`FolderPath`]({{ site.parameters_reference }}intermediate-result-saving-mode.html#folderpath)<br>[`RecordsetSizeOfLatestImages`]({{ site.parameters_reference }}intermediate-result-saving-mode.html#recordsetsizeoflatestimages) |
+| IRSM_FILESYSTEM | 0x02 | Saves intermediate results in file system. | [`FolderPath`]({{ site.dbr_parameters_reference }}intermediate-result-saving-mode.html#folderpath)<br>[`RecordsetSizeOfLatestImages`]({{ site.dbr_parameters_reference }}intermediate-result-saving-mode.html#recordsetsizeoflatestimages) |
+| IRSM_BOTH | 0x04 | Saves intermediate results using IRSM_MEMORY and IRSM_FILESYSTEM. | [`FolderPath`]({{ site.dbr_parameters_reference }}intermediate-result-saving-mode.html#folderpath) |
+| IRSM_REFERENCE_MEMORY | 0x08 | Saves intermediate results in memory with internal data format. | [`FolderPath`]({{ site.dbr_parameters_reference }}intermediate-result-saving-mode.html#folderpath)<br>[`RecordsetSizeOfLatestImages`]({{ site.dbr_parameters_reference }}intermediate-result-saving-mode.html#recordsetsizeoflatestimages) |
 
 ## IntermediateResultType
 

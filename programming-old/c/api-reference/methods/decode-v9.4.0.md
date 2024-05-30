@@ -221,8 +221,8 @@ DBR_API int DBR_InitIntermediateResult (IntermediateResultType intermediateResul
 ```   
    
 **Parameters**  
-`[in]	intermediateResultType` The type of the intermediate result defined by [`EnumIntermediateResultType`]({{site.c_cpp_enumerations}}result-enums.html?scr=c#intermediateresulttype).  
-`[in, out]	pIntermediateResult` The intermediate result struct of type [`IntermediateResult`]({{site.structs}}IntermediateResult.html?src=c).
+`[in]	intermediateResultType` The type of the intermediate result defined by [`EnumIntermediateResultType`]({{site.dbr_c_cpp_enumerations}}result-enums.html?scr=c#intermediateresulttype).  
+`[in, out]	pIntermediateResult` The intermediate result struct of type [`IntermediateResult`]({{site.dbr_structs}}IntermediateResult.html?src=c).
 
 **Return Value**  
 Returns error code (returns 0 if the function operates successfully).    
@@ -248,7 +248,7 @@ DBR_API int DBR_DecodeIntermediateResults (void* barcodeReader, const Intermedia
    
 **Parameters**  
 `[in] barcodeReader` Handle of the barcode reader instance.  
-`[in]	pIntermediateResultArray` The [`IntermediateResultArray`]({{site.structs}}IntermediateResultArray.html?src=c) for decoding.  
+`[in]	pIntermediateResultArray` The [`IntermediateResultArray`]({{site.dbr_structs}}IntermediateResultArray.html?src=c) for decoding.  
 `[in]	pTemplateName` The template name.
 
 **Return Value**  

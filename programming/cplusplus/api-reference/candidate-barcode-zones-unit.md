@@ -73,7 +73,7 @@ Returns 0 if successful, otherwise returns a negative value.
 
 **See Also**
 
-[CCandidateBarcodeZone]({{ site.cpp_api }}candidate-barcode-zone.html)
+[CCandidateBarcodeZone]({{ site.dbr_cpp_api }}candidate-barcode-zone.html)
 
 ### GetCount
 

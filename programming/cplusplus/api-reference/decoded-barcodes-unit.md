@@ -64,7 +64,7 @@ Returns a pointer to the `CDecodedBarcodeElement` object at the specified index.
 
 **See Also**
 
-[CDecodedBarcodeElement]({{ site.cpp_api }}decoded-barcode-element.html)
+[CDecodedBarcodeElement]({{ site.dbr_cpp_api }}decoded-barcode-element.html)
 
 ### RemoveAllDecodedBarcodes
 
@@ -94,7 +94,7 @@ Returns 0 if successful, otherwise returns a negative value.
 
 **See Also**
 
-[CDecodedBarcodeElement]({{ site.cpp_api }}decoded-barcode-element.html)
+[CDecodedBarcodeElement]({{ site.dbr_cpp_api }}decoded-barcode-element.html)
 
 ### operator[]
 
@@ -114,4 +114,4 @@ Returns a pointer to the `CDecodedBarcodeElement` object at the specified index.
 
 **See Also**
 
-[CDecodedBarcodeElement]({{ site.cpp_api }}decoded-barcode-element.html)
+[CDecodedBarcodeElement]({{ site.dbr_cpp_api }}decoded-barcode-element.html)

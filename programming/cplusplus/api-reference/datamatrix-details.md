@@ -15,7 +15,7 @@ The `CDataMatrixDetails` class represents the details of a DataMatrix barcode. I
 
 *Assembly:* DynamsoftBarcodeReader
 
-*Inheritance:* [CBarcodeDetails]({{ site.cpp_api }}barcode-details.html) -> CDataMatrixDetails
+*Inheritance:* [CBarcodeDetails]({{ site.dbr_cpp_api }}barcode-details.html) -> CDataMatrixDetails
 
 ```cpp
 class CDataMatrixDetails : public CBarcodeDetails

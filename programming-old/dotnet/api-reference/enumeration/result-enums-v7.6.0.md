@@ -65,8 +65,8 @@ enum Dynamsoft.Barcode.EnumIntermediateResultSavingMode
 | Member | Value | Description |
 | --------------------------  | ----- | ----------- |
 | IRSM_MEMORY | 0x01 | Saves intermediate results in memory. |
-| IRSM_FILESYSTEM | 0x02 | Saves intermediate results in file system. Check arguments of [`IntermediateResultSavingMode`]({{ site.parameters_reference }}intermediate-result-saving-mode.html) for available argument settings. |
-| IRSM_BOTH | 0x04 | Saves intermediate results in both memory and file system. Check arguments of [`IntermediateResultSavingMode`]({{ site.parameters_reference }}intermediate-result-saving-mode.html) for available argument settings. |
+| IRSM_FILESYSTEM | 0x02 | Saves intermediate results in file system. Check arguments of [`IntermediateResultSavingMode`]({{ site.dbr_parameters_reference }}intermediate-result-saving-mode.html) for available argument settings. |
+| IRSM_BOTH | 0x04 | Saves intermediate results in both memory and file system. Check arguments of [`IntermediateResultSavingMode`]({{ site.dbr_parameters_reference }}intermediate-result-saving-mode.html) for available argument settings. |
 
 
 

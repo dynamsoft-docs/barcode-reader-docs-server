@@ -4,14 +4,14 @@ title: Explore Features - Dynamsoft Barcode Reader SDK .NET Edition User Guide
 description: This page lists the topics to explore the features of Dynamsoft Barcode Reader .NET Edition.
 keywords: user guide, explore features, .NET
 noTitleIndex: false
-permalink: /programming/dotnet/user-guide/explore-features/index.html
+permalink: /programming/dotnet/user-guide/explore-features/index-v9.6.40.html
 ---
 
 # Explore Features
 
 Once you have got an application running with Dynamsoft Barcode Reader .NET edition, you can explore the many features of the SDK to see how to make the best out of the SDK.
 
-> If you are just getting started with Dynamsoft Barcode Reader .NET Edition, we recommend that you read [Getting Started]({{site.dotnet}}user-guide.html) first.
+> If you are just getting started with Dynamsoft Barcode Reader .NET Edition, we recommend that you read [Getting Started]({{site.dbr_dotnet}}user-guide.html) first.
 
 ## Basic Features
 

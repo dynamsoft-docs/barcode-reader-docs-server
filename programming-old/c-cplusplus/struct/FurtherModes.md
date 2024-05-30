@@ -21,17 +21,17 @@ typedef struct tagFurtherModes  FurtherModes
   
 | Attribute | Type |
 |---------- | ---- |
-| [`colourClusteringModes`](#colourclusteringmodes) | [`ColourClusteringMode`]({{ site.c_cpp_enumerations }}parameter-mode-enums.html#colourclusteringmode)\[8\] |
-| [`colourConversionModes`](#colourconversionmodes) | [`ColourConversionMode`]({{ site.c_cpp_enumerations }}parameter-mode-enums.html#colourconversionmode)\[8\] |
-| [`grayscaleTransformationModes`](#grayscaletransformationmodes) | [`GrayscaleTransformationMode`]({{ site.c_cpp_enumerations }}parameter-mode-enums.html#grayscaletransformationmode)\[8\] |
-| [`regionPredetectionModes`](#regionpredetectionmodes) | [`RegionPredetectionMode`]({{ site.c_cpp_enumerations }}parameter-mode-enums.html#regionpredetectionmode)\[8\] |
-| [`imagePreprocessingModes`](#imagepreprocessingmodes) | [`ImagePreprocessingMode`]({{ site.c_cpp_enumerations }}parameter-mode-enums.html#imagepreprocessingmode)\[8\] |
-| [`textureDetectionModes`](#texturedetectionmodes) | [`TextureDetectionMode`]({{ site.c_cpp_enumerations }}parameter-mode-enums.html#texturedetectionmode)\[8\] |
-| [`textFilterModes`](#textfiltermodes) | [`TextFilterMode`]({{ site.c_cpp_enumerations }}parameter-mode-enums.html#textfiltermode)\[8\] |
-| [`dpmCodeReadingModes`](#dpmcodereadingmodes) | [`DPMCodeReadingMode`]({{ site.c_cpp_enumerations }}parameter-mode-enums.html#dpmcodereadingmode)\[8\] |
-| [`deformationResistingModes`](#deformationresistingmodes) | [`DeformationResistingMode`]({{ site.c_cpp_enumerations }}parameter-mode-enums.html#deformationresistingmode)\[8\] |
-| [`barcodeComplementModes`](#barcodecomplementmodes) | [`BarcodeComplementMode`]({{ site.c_cpp_enumerations }}parameter-mode-enums.html#barcodecomplementmode)\[8\] |
-| [`barcodeColourModes`](#barcodecolourmodes) | [`BarcodeColourMode`]({{ site.c_cpp_enumerations }}parameter-mode-enums.html#barcodecolourmode)\[8\] |
+| [`colourClusteringModes`](#colourclusteringmodes) | [`ColourClusteringMode`]({{ site.dbr_c_cpp_enumerations }}parameter-mode-enums.html#colourclusteringmode)\[8\] |
+| [`colourConversionModes`](#colourconversionmodes) | [`ColourConversionMode`]({{ site.dbr_c_cpp_enumerations }}parameter-mode-enums.html#colourconversionmode)\[8\] |
+| [`grayscaleTransformationModes`](#grayscaletransformationmodes) | [`GrayscaleTransformationMode`]({{ site.dbr_c_cpp_enumerations }}parameter-mode-enums.html#grayscaletransformationmode)\[8\] |
+| [`regionPredetectionModes`](#regionpredetectionmodes) | [`RegionPredetectionMode`]({{ site.dbr_c_cpp_enumerations }}parameter-mode-enums.html#regionpredetectionmode)\[8\] |
+| [`imagePreprocessingModes`](#imagepreprocessingmodes) | [`ImagePreprocessingMode`]({{ site.dbr_c_cpp_enumerations }}parameter-mode-enums.html#imagepreprocessingmode)\[8\] |
+| [`textureDetectionModes`](#texturedetectionmodes) | [`TextureDetectionMode`]({{ site.dbr_c_cpp_enumerations }}parameter-mode-enums.html#texturedetectionmode)\[8\] |
+| [`textFilterModes`](#textfiltermodes) | [`TextFilterMode`]({{ site.dbr_c_cpp_enumerations }}parameter-mode-enums.html#textfiltermode)\[8\] |
+| [`dpmCodeReadingModes`](#dpmcodereadingmodes) | [`DPMCodeReadingMode`]({{ site.dbr_c_cpp_enumerations }}parameter-mode-enums.html#dpmcodereadingmode)\[8\] |
+| [`deformationResistingModes`](#deformationresistingmodes) | [`DeformationResistingMode`]({{ site.dbr_c_cpp_enumerations }}parameter-mode-enums.html#deformationresistingmode)\[8\] |
+| [`barcodeComplementModes`](#barcodecomplementmodes) | [`BarcodeComplementMode`]({{ site.dbr_c_cpp_enumerations }}parameter-mode-enums.html#barcodecomplementmode)\[8\] |
+| [`barcodeColourModes`](#barcodecolourmodes) | [`BarcodeColourMode`]({{ site.dbr_c_cpp_enumerations }}parameter-mode-enums.html#barcodecolourmode)\[8\] |
 | [`reserved`](#reserved) | *char\[32\]* |
 
 ### colourClusteringModes
@@ -40,7 +40,7 @@ Sets the mode and priority for colour categorization. Not supported yet.
 ColourClusteringMode tagFurtherModes::colourClusteringModes[8]
 ```
 **Value Range**    
-   Each array item can be any one of the [`ColourClusteringMode`]({{ site.c_cpp_enumerations }}parameter-mode-enums.html#colourclusteringmode) Enumeration items.  
+   Each array item can be any one of the [`ColourClusteringMode`]({{ site.dbr_c_cpp_enumerations }}parameter-mode-enums.html#colourclusteringmode) Enumeration items.  
      
 **Default Value**    
    `[CCM_SKIP,CCM_SKIP,CCM_SKIP,CCM_SKIP,CCM_SKIP,CCM_SKIP,CCM_SKIP,CCM_SKIP]`  
@@ -49,7 +49,7 @@ ColourClusteringMode tagFurtherModes::colourClusteringModes[8]
    The array index represents the priority of the item. The smaller index is, the higher priority is. 
    
 **See Also**      
-   [`ColourClusteringMode`]({{ site.c_cpp_enumerations }}parameter-mode-enums.html#colourclusteringmode)
+   [`ColourClusteringMode`]({{ site.dbr_c_cpp_enumerations }}parameter-mode-enums.html#colourclusteringmode)
 
 ### colourConversionModes
 Sets the mode and priority for converting a colour image to a grayscale image.
@@ -57,7 +57,7 @@ Sets the mode and priority for converting a colour image to a grayscale image.
 ColourConversionMode tagFurtherModes::colourConversionModes[8]
 ```
 **Value Range**    
-   Each array item can be any one of the [`ColourConversionMode`]({{ site.c_cpp_enumerations }}parameter-mode-enums.html#colourconversionmode) Enumeration items. 
+   Each array item can be any one of the [`ColourConversionMode`]({{ site.dbr_c_cpp_enumerations }}parameter-mode-enums.html#colourconversionmode) Enumeration items. 
      
 **Default Value**    
    `[CICM_GENERAL,CICM_SKIP,CICM_SKIP,CICM_SKIP,CICM_SKIP,CICM_SKIP,CICM_SKIP,CICM_SKIP]`  
@@ -66,7 +66,7 @@ ColourConversionMode tagFurtherModes::colourConversionModes[8]
    The array index represents the priority of the item. The smaller index is, the higher priority is.  
    
 **See Also**      
-   [`ColourConversionMode`]({{ site.c_cpp_enumerations }}parameter-mode-enums.html#colourconversionmode)
+   [`ColourConversionMode`]({{ site.dbr_c_cpp_enumerations }}parameter-mode-enums.html#colourconversionmode)
    
 ### grayscaleTransformationModes
 Sets the mode and priority for the grayscale image conversion.
@@ -74,7 +74,7 @@ Sets the mode and priority for the grayscale image conversion.
 GrayscaleTransformationMode tagFurtherModes::grayscaleTransformationModes[8]
 ```
 **Value Range**    
-   Each array item can be any one of the [`GrayscaleTransformationMode`]({{ site.c_cpp_enumerations }}parameter-mode-enums.html#grayscaletransformationmode) Enumeration items. 
+   Each array item can be any one of the [`GrayscaleTransformationMode`]({{ site.dbr_c_cpp_enumerations }}parameter-mode-enums.html#grayscaletransformationmode) Enumeration items. 
      
 **Default Value**    
    `[GTM_ORIGINAL,GTM_SKIP,GTM_SKIP,GTM_SKIP,GTM_SKIP,GTM_SKIP,GTM_SKIP,GTM_SKIP]`  
@@ -83,7 +83,7 @@ GrayscaleTransformationMode tagFurtherModes::grayscaleTransformationModes[8]
    The array index represents the priority of the item. The smaller index is, the higher priority is.  
    
 **See Also**      
-   [`GrayscaleTransformationMode`]({{ site.c_cpp_enumerations }}parameter-mode-enums.html#grayscaletransformationmode)
+   [`GrayscaleTransformationMode`]({{ site.dbr_c_cpp_enumerations }}parameter-mode-enums.html#grayscaletransformationmode)
 
 ### regionPredetectionModes
 Sets the region pre-detection mode for barcodes search.
@@ -91,7 +91,7 @@ Sets the region pre-detection mode for barcodes search.
 RegionPredetectionMode tagFurtherModes::regionPredetectionModes[8]
 ```
 **Value Range**    
-   Each array item can be any one of the [`RegionPredetectionMode`]({{ site.c_cpp_enumerations }}parameter-mode-enums.html#regionpredetectionmode) Enumeration items.  
+   Each array item can be any one of the [`RegionPredetectionMode`]({{ site.dbr_c_cpp_enumerations }}parameter-mode-enums.html#regionpredetectionmode) Enumeration items.  
      
 **Default Value**    
    `[RPM_GENERAL,RPM_SKIP,RPM_SKIP,RPM_SKIP,RPM_SKIP,RPM_SKIP,RPM_SKIP,RPM_SKIP]`  
@@ -100,7 +100,7 @@ RegionPredetectionMode tagFurtherModes::regionPredetectionModes[8]
    The array index represents the priority of the item. The smaller index is, the higher priority is. If the image is large and the barcode on the image is very small, it is recommended to enable region predetection to speed up the localization process and recognition accuracy.
    
 **See Also**      
-   [`RegionPredetectionMode`]({{ site.c_cpp_enumerations }}parameter-mode-enums.html#regionpredetectionmode)
+   [`RegionPredetectionMode`]({{ site.dbr_c_cpp_enumerations }}parameter-mode-enums.html#regionpredetectionmode)
 
 ### imagePreprocessingModes
 Sets the mode and priority for image preprocessing algorithms.
@@ -108,7 +108,7 @@ Sets the mode and priority for image preprocessing algorithms.
 ImagePreprocessingMode tagFurtherModes::imagePreprocessingModes[8]
 ```
 **Value Range**    
-   Each array item can be any one of the [`ImagePreprocessingMode`]({{ site.c_cpp_enumerations }}parameter-mode-enums.html#imagepreprocessingmode) Enumeration items.  
+   Each array item can be any one of the [`ImagePreprocessingMode`]({{ site.dbr_c_cpp_enumerations }}parameter-mode-enums.html#imagepreprocessingmode) Enumeration items.  
      
 **Default Value**    
    `[IPM_GENERAL,IPM_SKIP,IPM_SKIP,IPM_SKIP,IPM_SKIP,IPM_SKIP,IPM_SKIP,IPM_SKIP]`  
@@ -117,7 +117,7 @@ ImagePreprocessingMode tagFurtherModes::imagePreprocessingModes[8]
    The array index represents the priority of the item. The smaller index is, the higher priority is.
    
 **See Also**      
-   [`ImagePreprocessingMode`]({{ site.c_cpp_enumerations }}parameter-mode-enums.html#imagepreprocessingmode)
+   [`ImagePreprocessingMode`]({{ site.dbr_c_cpp_enumerations }}parameter-mode-enums.html#imagepreprocessingmode)
 
 ### textureDetectionModes
 Sets the mode and priority for texture detection. 
@@ -125,7 +125,7 @@ Sets the mode and priority for texture detection.
 TextureDetectionMode tagFurtherModes::textureDetectionModes[8]
 ```
 **Value Range**    
-   Each array item can be any one of the [`TextureDetectionMode`]({{ site.c_cpp_enumerations }}parameter-mode-enums.html#texturedetectionmode) Enumeration items.  
+   Each array item can be any one of the [`TextureDetectionMode`]({{ site.dbr_c_cpp_enumerations }}parameter-mode-enums.html#texturedetectionmode) Enumeration items.  
      
 **Default Value**    
    `[TDM_GENERAL_WIDTH_CONCENTRATION,TDM_SKIP,TDM_SKIP,TDM_SKIP,TDM_SKIP,TDM_SKIP,TDM_SKIP,TDM_SKIP]`  
@@ -134,7 +134,7 @@ TextureDetectionMode tagFurtherModes::textureDetectionModes[8]
    The array index represents the priority of the item. The smaller index is, the higher priority is.
    
 **See Also**      
-   [`TextureDetectionMode`]({{ site.c_cpp_enumerations }}parameter-mode-enums.html#texturedetectionmode)
+   [`TextureDetectionMode`]({{ site.dbr_c_cpp_enumerations }}parameter-mode-enums.html#texturedetectionmode)
    
 ### textFilterModes
 Sets the mode and priority for text filter.
@@ -142,7 +142,7 @@ Sets the mode and priority for text filter.
 TextFilterMode tagFurtherModes::textFilterModes[8]
 ```
 **Value Range**    
-   Each array item can be any one of the [`TextFilterMode`]({{ site.c_cpp_enumerations }}parameter-mode-enums.html#textfiltermode) Enumeration items.  
+   Each array item can be any one of the [`TextFilterMode`]({{ site.dbr_c_cpp_enumerations }}parameter-mode-enums.html#textfiltermode) Enumeration items.  
      
 **Default Value**    
    `[TFM_GENERAL_CONTOUR,TFM_SKIP,TFM_SKIP,TFM_SKIP,TFM_SKIP,TFM_SKIP,TFM_SKIP,TFM_SKIP]`  
@@ -151,7 +151,7 @@ TextFilterMode tagFurtherModes::textFilterModes[8]
    The array index represents the priority of the item. The smaller index is, the higher priority is. If the image contains a lot of text, you can enable text filter to speed up the localization process.
    
 **See Also**      
-   [`TextFilterMode`]({{ site.c_cpp_enumerations }}parameter-mode-enums.html#textfiltermode)
+   [`TextFilterMode`]({{ site.dbr_c_cpp_enumerations }}parameter-mode-enums.html#textfiltermode)
    
    
 ### dpmCodeReadingModes
@@ -160,7 +160,7 @@ Sets the mode and priority for DPM code reading.
 DPMCodeReadingMode tagFurtherModes::dpmCodeReadingModes[8]
 ```
 **Value Range**    
-   Each array item can be any one of the [`DPMCodeReadingMode`]({{ site.c_cpp_enumerations }}parameter-mode-enums.html#dpmcodereadingmode) Enumeration items.  
+   Each array item can be any one of the [`DPMCodeReadingMode`]({{ site.dbr_c_cpp_enumerations }}parameter-mode-enums.html#dpmcodereadingmode) Enumeration items.  
      
 **Default Value**    
    `[DPMCRM_SKIP,DPMCRM_SKIP,DPMCRM_SKIP,DPMCRM_SKIP,DPMCRM_SKIP,DPMCRM_SKIP,DPMCRM_SKIP,DPMCRM_SKIP]`  
@@ -169,7 +169,7 @@ DPMCodeReadingMode tagFurtherModes::dpmCodeReadingModes[8]
    The array index represents the priority of the item. The smaller index is, the higher priority is.  
    
 **See Also**      
-   [`DPMCodeReadingMode`]({{ site.c_cpp_enumerations }}parameter-mode-enums.html#dpmcodereadingmode)
+   [`DPMCodeReadingMode`]({{ site.dbr_c_cpp_enumerations }}parameter-mode-enums.html#dpmcodereadingmode)
 
 ### deformationResistingModes
 Sets the mode and priority for deformation resisting.
@@ -177,7 +177,7 @@ Sets the mode and priority for deformation resisting.
 DeformationResistingMode tagFurtherModes::deformationResistingModes[8]
 ```
 **Value Range**    
-   Each array item can be any one of the [`DeformationResistingMode`]({{ site.c_cpp_enumerations }}parameter-mode-enums.html#deformationresistingmode) Enumeration items.  
+   Each array item can be any one of the [`DeformationResistingMode`]({{ site.dbr_c_cpp_enumerations }}parameter-mode-enums.html#deformationresistingmode) Enumeration items.  
      
 **Default Value**    
    `[DRM_SKIP,DRM_SKIP,DRM_SKIP,DRM_SKIP,DRM_SKIP,DRM_SKIP,DRM_SKIP,DRM_SKIP]`  
@@ -186,7 +186,7 @@ DeformationResistingMode tagFurtherModes::deformationResistingModes[8]
    The array index represents the priority of the item. The smaller index is, the higher priority is.  
    
 **See Also**      
-   [`DeformationResistingMode`]({{ site.c_cpp_enumerations }}parameter-mode-enums.html#deformationresistingmode) 
+   [`DeformationResistingMode`]({{ site.dbr_c_cpp_enumerations }}parameter-mode-enums.html#deformationresistingmode) 
 
 ### barcodeComplementModes
 Sets the mode and priority to complement the missing parts in the barcode.
@@ -194,7 +194,7 @@ Sets the mode and priority to complement the missing parts in the barcode.
 BarcodeComplementMode tagFurtherModes::barcodeComplementModes[8]
 ```
 **Value Range**    
-   Each array item can be any one of the [`BarcodeComplementMode`]({{ site.c_cpp_enumerations }}parameter-mode-enums.html#barcodecomplementmode) Enumeration items.  
+   Each array item can be any one of the [`BarcodeComplementMode`]({{ site.dbr_c_cpp_enumerations }}parameter-mode-enums.html#barcodecomplementmode) Enumeration items.  
      
 **Default Value**    
    `[BCM_SKIP,BCM_SKIP,BCM_SKIP,BCM_SKIP,BCM_SKIP,BCM_SKIP,BCM_SKIP,BCM_SKIP]`  
@@ -203,7 +203,7 @@ BarcodeComplementMode tagFurtherModes::barcodeComplementModes[8]
    The array index represents the priority of the item. The smaller index is, the higher priority is.  
    
 **See Also**      
-   [`BarcodeComplementMode`]({{ site.c_cpp_enumerations }}parameter-mode-enums.html#barcodecomplementmode) 
+   [`BarcodeComplementMode`]({{ site.dbr_c_cpp_enumerations }}parameter-mode-enums.html#barcodecomplementmode) 
 
 ### barcodeColourModes
 Sets the mode and priority for the barcode colour mode used to process the barcode zone.
@@ -211,7 +211,7 @@ Sets the mode and priority for the barcode colour mode used to process the barco
 BarcodeColourMode tagFurtherModes::barcodeColourModes[8]
 ```
 **Value Range**    
-   Each array item can be any one of the [`BarcodeColourMode`]({{ site.c_cpp_enumerations }}parameter-mode-enums.html#barcodecolourmode) Enumeration items.  
+   Each array item can be any one of the [`BarcodeColourMode`]({{ site.dbr_c_cpp_enumerations }}parameter-mode-enums.html#barcodecolourmode) Enumeration items.  
      
 **Default Value**    
    `[BICM_DARK_ON_LIGHT,BICM_SKIP,BICM_SKIP,BICM_SKIP,BICM_SKIP,BICM_SKIP,BICM_SKIP,BICM_SKIP]`  
@@ -220,7 +220,7 @@ BarcodeColourMode tagFurtherModes::barcodeColourModes[8]
    The array index represents the priority of the item. The smaller index is, the higher priority is.  
    
 **See Also**      
-   [`BarcodeColourMode`]({{ site.c_cpp_enumerations }}parameter-mode-enums.html#barcodecolourmode)
+   [`BarcodeColourMode`]({{ site.dbr_c_cpp_enumerations }}parameter-mode-enums.html#barcodecolourmode)
 
 ### reserved
 Reserved memory for struct. The length of this array indicates the size of the memory reserved for this struct.

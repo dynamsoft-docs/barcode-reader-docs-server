@@ -15,7 +15,7 @@ The `CExtendedBarcodeResult` class represents an extended barcode result in a de
 
 *Assembly:* DynamsoftBarcodeReader
 
-*Inheritance:* [CDecodedBarcodeElement]({{ site.cpp_api }}decoded-barcode-element.html) -> CExtendedBarcodeResult
+*Inheritance:* [CDecodedBarcodeElement]({{ site.dbr_cpp_api }}decoded-barcode-element.html) -> CExtendedBarcodeResult
 
 ```cpp
 class CExtendedBarcodeResult : public CDecodedBarcodeElement

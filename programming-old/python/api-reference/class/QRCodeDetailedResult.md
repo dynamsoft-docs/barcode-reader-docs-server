@@ -23,7 +23,7 @@ class QRCodeDetailedResult
 | [`module_size`](#module_size) | *int* |
 | [`rows`](#rows) | *int* |
 | [`columns`](#columns) | *int* |
-| [`error_correction_level`](#error_correction_level) | [`EnumQRCodeErrorCorrectionLevel`]({{ site.python_enumerations }}other-enums.html#qrcodeerrorcorrectionlevel) |
+| [`error_correction_level`](#error_correction_level) | [`EnumQRCodeErrorCorrectionLevel`]({{ site.dbr_python_enumerations }}other-enums.html#qrcodeerrorcorrectionlevel) |
 | [`version`](#version) | *int* |
 | [`model`](#model) | *int* |
 | [`mode`](#mode) | *int* |

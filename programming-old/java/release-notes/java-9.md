@@ -33,7 +33,7 @@ permalink: /programming/java/release-notes/java-9.html
 
 ### New
 
-- Added a new method [`getInstancePoolStatus`]({{site.java_methods}}license.html#getinstancepoolstatus) and class [`InstancePoolStatus`]({{site.java_class}}InstancePoolStatus.html) to provide a real-time view of how the concurrent instance licenses are being utilized. This applies only if you are using a concurrent instance license.
+- Added a new method [`getInstancePoolStatus`]({{site.dbr_java_methods}}license.html#getinstancepoolstatus) and class [`InstancePoolStatus`]({{site.dbr_java_class}}InstancePoolStatus.html) to provide a real-time view of how the concurrent instance licenses are being utilized. This applies only if you are using a concurrent instance license.
 
 ### Improved
 
@@ -59,8 +59,8 @@ permalink: /programming/java/release-notes/java-9.html
 
 ### New
 
-- Added a new method [`setLicenseCachePath`]({{site.java_methods}}license.html#setlicensecachepath) in the `BarcodeReader` class to support customizing the license cache saving path.
-- Add a new method [`getDeviceUUID`]({{site.java_methods}}license.html#getdeviceuuid) in the `BarcodeReader` class to support getting device UUID for license activating.
+- Added a new method [`setLicenseCachePath`]({{site.dbr_java_methods}}license.html#setlicensecachepath) in the `BarcodeReader` class to support customizing the license cache saving path.
+- Add a new method [`getDeviceUUID`]({{site.dbr_java_methods}}license.html#getdeviceuuid) in the `BarcodeReader` class to support getting device UUID for license activating.
 - Added error code `DM_LICENSE_BUFFER_FAILED` to the potential error list of the license activation methods and decode methods. The error code is returned when the directory of the license cache is inaccessible.
 
 ### Improved
@@ -72,7 +72,7 @@ permalink: /programming/java/release-notes/java-9.html
 
 - Fixed a crash bug when using a online license key on ARM64 environment.
 - Fixed a crash bug when using a online license key on the AWS lambda environment.
-- Fixed a bug that some OneD barcodes without start & stop characters are not decoded when parameter [`RequireStartStopChars`]({{site.parameters_reference}}require-start-stop-chars.html) is set to 0.
+- Fixed a bug that some OneD barcodes without start & stop characters are not decoded when parameter [`RequireStartStopChars`]({{site.dbr_parameters_reference}}require-start-stop-chars.html) is set to 0.
 - Other small fixes and tweaks.
 
 ## 9.6.0 (11/29/2022)
@@ -95,19 +95,19 @@ permalink: /programming/java/release-notes/java-9.html
 
 #### New
 
-- Added a property [`orientation`]({{ site.java_class }}FrameDecodingParameters.html#orientation) to class `FrameDecodingParameters` to set the orientation information of the video frame.
-- Added [`orientation`]({{ site.java_class }}ImageData.html#orientation) to class ImageData to set the orientation information.
+- Added a property [`orientation`]({{ site.dbr_java_class }}FrameDecodingParameters.html#orientation) to class `FrameDecodingParameters` to set the orientation information of the video frame.
+- Added [`orientation`]({{ site.dbr_java_class }}ImageData.html#orientation) to class ImageData to set the orientation information.
 - Enabled decoding methods `decodeFile()`, `decodeFileinMemory()` and `decodeBase64String()` to read EXIF data of the given image so that the library can obtain the orientation information of the image file.
-- Overloaded method [`decodeBuffer()`]({{site.java_methods}}decode.html#decodebuffer) with a new parameter `orientation` to set the orientation information of the image data.
-- Added a property [`transformationMatrix`]({{ site.java_class }}LocalizationResult.html##transformationmatrix) to class `LocalizationResult` so that the library can output a transformation matrix for transforming the localization coordinates to image's natural orientation.
-- Added a method [`transformCoordinates()`]({{site.java_methods}}general.html#transformcoordinates) to support transforming the coordinates of a point based on a given transformation matrix.
-- Added a property [`duplicateForgetTime`]({{ site.java_class }}FrameDecodingParameters.html#duplicateforgettime) to class `FrameDecodingParameters` to set the time period used to filter out duplicate results found in frames.
-- Added a callback method [`uniqueBarcodeCallback()`]({{site.java_api}}interface.html#uniqueBarcodeCallback) to interface `TextResultCallback` which will be triggered when the library finishes decoding a frame and finds unique barcodes.
-- Added properties [`hasLeftRowIndicator`]({{ site.java_class }}PDF417Details.html#hasleftrowindicator) and [`hasRightRowIndicator`]({{ site.java_class }}PDF417Details.html#hasrightrowindicator) to class `PDF417Details` to return whether the left and right row indicator of the PDF417 barcode is detected.
-- Added a member `BF2_ALL` to enumeration [`BarcodeFormatIds_2`]({{ site.java_enumerations }}format-enums.html#barcodeformat_2) to support setting all barcode formats in BarcodeFormat group 2 with one enumeration.
+- Overloaded method [`decodeBuffer()`]({{site.dbr_java_methods}}decode.html#decodebuffer) with a new parameter `orientation` to set the orientation information of the image data.
+- Added a property [`transformationMatrix`]({{ site.dbr_java_class }}LocalizationResult.html##transformationmatrix) to class `LocalizationResult` so that the library can output a transformation matrix for transforming the localization coordinates to image's natural orientation.
+- Added a method [`transformCoordinates()`]({{site.dbr_java_methods}}general.html#transformcoordinates) to support transforming the coordinates of a point based on a given transformation matrix.
+- Added a property [`duplicateForgetTime`]({{ site.dbr_java_class }}FrameDecodingParameters.html#duplicateforgettime) to class `FrameDecodingParameters` to set the time period used to filter out duplicate results found in frames.
+- Added a callback method [`uniqueBarcodeCallback()`]({{site.dbr_java_api}}interface.html#uniqueBarcodeCallback) to interface `TextResultCallback` which will be triggered when the library finishes decoding a frame and finds unique barcodes.
+- Added properties [`hasLeftRowIndicator`]({{ site.dbr_java_class }}PDF417Details.html#hasleftrowindicator) and [`hasRightRowIndicator`]({{ site.dbr_java_class }}PDF417Details.html#hasrightrowindicator) to class `PDF417Details` to return whether the left and right row indicator of the PDF417 barcode is detected.
+- Added a member `BF2_ALL` to enumeration [`BarcodeFormatIds_2`]({{ site.dbr_java_enumerations }}format-enums.html#barcodeformat_2) to support setting all barcode formats in BarcodeFormat group 2 with one enumeration.
 - Extended the features of parameter `DeformationResistingModes`:
-  - Extended the valid mode arguments of `DRM_BROAD_WARP`, `DRM_LOCAL_REFERENCE` and `DRM_DEWRINKLE` with two new arguments: [`GrayscaleEnhancementMode`]({{site.parameters_reference}}deformation-resisting-modes.html#grayscaleenhancementmode) and [`BinarizationMode`]({{site.parameters_reference}}deformation-resisting-modes.html#binarizationmode).
-  - Supported mode [`DRM_AUTO`]({{site.parameters_reference}}deformation-resisting-modes.html#drm_auto).
+  - Extended the valid mode arguments of `DRM_BROAD_WARP`, `DRM_LOCAL_REFERENCE` and `DRM_DEWRINKLE` with two new arguments: [`GrayscaleEnhancementMode`]({{site.dbr_parameters_reference}}deformation-resisting-modes.html#grayscaleenhancementmode) and [`BinarizationMode`]({{site.dbr_parameters_reference}}deformation-resisting-modes.html#binarizationmode).
+  - Supported mode [`DRM_AUTO`]({{site.dbr_parameters_reference}}deformation-resisting-modes.html#drm_auto).
 
 #### Improved
 
@@ -133,9 +133,9 @@ permalink: /programming/java/release-notes/java-9.html
 
 #### New
 
-- Added an argument [`IsOneDStacked`]({{site.parameters_reference}}localization-modes.html#isonedstacked) to `LM_SCAN_DIRECTLY` to process stacked OneD barcodes.
-- Added a parameter [`PatchCodeSearchingMargins`]({{site.parameters_reference}}patchcode-searching-margins.html) to specify the searching area of PatchCode.
-- Added the supported data format of [`FormatSpecification.PartitionModes`]({{site.parameters_reference}}partition-modes.html) to enhance the readability of the parameters. Users can use a list of enumeration names to specify the `PartitionModes`.
+- Added an argument [`IsOneDStacked`]({{site.dbr_parameters_reference}}localization-modes.html#isonedstacked) to `LM_SCAN_DIRECTLY` to process stacked OneD barcodes.
+- Added a parameter [`PatchCodeSearchingMargins`]({{site.dbr_parameters_reference}}patchcode-searching-margins.html) to specify the searching area of PatchCode.
+- Added the supported data format of [`FormatSpecification.PartitionModes`]({{site.dbr_parameters_reference}}partition-modes.html) to enhance the readability of the parameters. Users can use a list of enumeration names to specify the `PartitionModes`.
 
 #### Improved
 
@@ -144,7 +144,7 @@ permalink: /programming/java/release-notes/java-9.html
 
 #### Deprecated
 
-- Deprecated the attribute `barcodeFormatString_2` of [`TextResult`]({{site.java_class}}TextResult.html#barcodeformatstring_2), [`ExtendedResult`]({{site.java_class}}ExtendedResult.html#barcodeformatstring_2) and [`LocalizationResult`]({{site.java_class}}LocalizationResult.html#barcodeformatstring_2). All the barcode format strings will be returned by the attribute `barcodeFormatString`.
+- Deprecated the attribute `barcodeFormatString_2` of [`TextResult`]({{site.dbr_java_class}}TextResult.html#barcodeformatstring_2), [`ExtendedResult`]({{site.dbr_java_class}}ExtendedResult.html#barcodeformatstring_2) and [`LocalizationResult`]({{site.dbr_java_class}}LocalizationResult.html#barcodeformatstring_2). All the barcode format strings will be returned by the attribute `barcodeFormatString`.
 
 ## 9.2.0 (06/07/2022)
 
@@ -166,7 +166,7 @@ permalink: /programming/java/release-notes/java-9.html
 
 #### New
 
-- Added a new method [`setDeviceFriendlyName`]({{site.java_methods}}license.html#setdevicefriendlyname) to set a human-readable name that identifies the device.
+- Added a new method [`setDeviceFriendlyName`]({{site.dbr_java_methods}}license.html#setdevicefriendlyname) to set a human-readable name that identifies the device.
 
 ## 9.0.0 (03/15/2022)
 
@@ -188,26 +188,26 @@ permalink: /programming/java/release-notes/java-9.html
 
 #### New
 
-- Added `BF_CODE_11` under Enumeration [`EnumBarcodeFormat`]({{ site.java_enumerations }}format-enums.html#barcodeformat) to specify newly supported barcode format, Code 11. 
-- Added `BF2_PHARMACODE_ONE_TRACK`, `BF2_PHARMACODE_TWO_TRACK` and `BF2_PHARMACODE` under Enumeration [`EnumBarcodeFormat_2`]({{ site.java_enumerations }}format-enums.html#barcodeformat_2) to specify newly supported barcode format, Pharmacode. 
-- Added a new error code [`DBR_PHARMACODE_LICENSE_INVALID`]({{ site.java_enumerations }}error-code.html#error-code--10062) which will be returned when the license of Pharmacode is invalid.
-- Added `DRM_BROAD_WARP`, `DRM_LOCAL_REFERENCE` and `DRM_DEWRINKLE` under Enumeration [`EnumDeformationResistingMode`]({{ site.java_enumerations }}parameter-mode-enums.html#deformationresistingmode) to apply new deformation resisting modes.
-- Added a parameter [`FormatSpecification.PartitionModes`]({{ site.parameters_reference }}partition-modes.html)
-- Added a parameter [`FormatSpecification.VerifyCheckDigit`]({{ site.parameters_reference }}verify-check-digit.html)
-- Added an Argument [`ConfidenceThreshold`]({{ site.parameters_reference }}localization-modes.html#confidencethreshold) to the `LocalizationModes` mode arguments.
+- Added `BF_CODE_11` under Enumeration [`EnumBarcodeFormat`]({{ site.dbr_java_enumerations }}format-enums.html#barcodeformat) to specify newly supported barcode format, Code 11. 
+- Added `BF2_PHARMACODE_ONE_TRACK`, `BF2_PHARMACODE_TWO_TRACK` and `BF2_PHARMACODE` under Enumeration [`EnumBarcodeFormat_2`]({{ site.dbr_java_enumerations }}format-enums.html#barcodeformat_2) to specify newly supported barcode format, Pharmacode. 
+- Added a new error code [`DBR_PHARMACODE_LICENSE_INVALID`]({{ site.dbr_java_enumerations }}error-code.html#error-code--10062) which will be returned when the license of Pharmacode is invalid.
+- Added `DRM_BROAD_WARP`, `DRM_LOCAL_REFERENCE` and `DRM_DEWRINKLE` under Enumeration [`EnumDeformationResistingMode`]({{ site.dbr_java_enumerations }}parameter-mode-enums.html#deformationresistingmode) to apply new deformation resisting modes.
+- Added a parameter [`FormatSpecification.PartitionModes`]({{ site.dbr_parameters_reference }}partition-modes.html)
+- Added a parameter [`FormatSpecification.VerifyCheckDigit`]({{ site.dbr_parameters_reference }}verify-check-digit.html)
+- Added an Argument [`ConfidenceThreshold`]({{ site.dbr_parameters_reference }}localization-modes.html#confidencethreshold) to the `LocalizationModes` mode arguments.
 
 #### Changed
 
-- Changed method [`InitLicense`]({{ site.java_methods }}license.html#initlicense) to a static method.
-- Changed value of BF_ONED under Enumeration [`EnumBarcodeFormat`]({{ site.java_enumerations }}format-enums.html#barcodeformat) to 0x003007FF to have BF_CODE_11 combined.
-- Changed value of BF_ALL under Enumeration [`EnumBarcodeFormat`]({{ site.java_enumerations }}format-enums.html#barcodeformat) to 0xFE3FFFFF to have BF_CODE_11 combined.
-- Changed the behaviour of [`DeformationResistingMode`]({{ site.java_enumerations }}parameter-mode-enums.html#deformationresistingmode) DRM_GENERAL which now only applies basic process to resist deformation.
-- Changed the return value of the method [getIdleInstancesCount]({{ site.java_methods }}license.html#getidleinstancescount) from 0 to -1 when the available count needs to be updated from server by calling initLicense.
+- Changed method [`InitLicense`]({{ site.dbr_java_methods }}license.html#initlicense) to a static method.
+- Changed value of BF_ONED under Enumeration [`EnumBarcodeFormat`]({{ site.dbr_java_enumerations }}format-enums.html#barcodeformat) to 0x003007FF to have BF_CODE_11 combined.
+- Changed value of BF_ALL under Enumeration [`EnumBarcodeFormat`]({{ site.dbr_java_enumerations }}format-enums.html#barcodeformat) to 0xFE3FFFFF to have BF_CODE_11 combined.
+- Changed the behaviour of [`DeformationResistingMode`]({{ site.dbr_java_enumerations }}parameter-mode-enums.html#deformationresistingmode) DRM_GENERAL which now only applies basic process to resist deformation.
+- Changed the return value of the method [getIdleInstancesCount]({{ site.dbr_java_methods }}license.html#getidleinstancescount) from 0 to -1 when the available count needs to be updated from server by calling initLicense.
 
 
 #### Fixed
 - Fixed a bug that might cause a crash when using multiple threads for barcode decoding.
-- Fixed a bug that throws exceptions when using method [getIdleInstancesCount]({{ site.java_methods }}license.html#getidleinstancescount).
+- Fixed a bug that throws exceptions when using method [getIdleInstancesCount]({{ site.dbr_java_methods }}license.html#getidleinstancescount).
 - Fixed a bug that Function Code 1 (FNC1) character would not return if it was in the first position of GS1-128 codes.
 - Other small fixes and tweaks.
 
@@ -215,15 +215,15 @@ permalink: /programming/java/release-notes/java-9.html
 #### Deprecated
 
 The following items are now deprecated. They still work in this version but could be removed in the near future.
-- Method [`initLicenseFromServer`]({{ site.java_methods }}license.html#initlicensefromserver)
-- Method [`initLicenseFromLicenseContent`]({{ site.java_methods }}license.html#initlicensefromlicensecontent)
-- Method [`outputLicenseToString`]({{ site.java_methods }}license.html#outputlicensetostring)
-- Method [`initDLSConnectionParameters`]({{ site.java_methods }}license.html#initdlsconnectionparameters)
-- Method [`initLicenseFromDLS`]({{ site.java_methods }}license.html#initlicensefromdls)
-- Enumeration [`EnumDMChargeWay`]({{ site.java_enumerations }}other-enums.html#dm_chargeway)
-- Enumeration [`EnumDMDeploymentType`]({{ site.java_enumerations }}other-enums.html#dm_deploymenttype)
-- Enumeration [`EnumDMLicenseModule`]({{ site.java_enumerations }}other-enums.html#dm_licensemodule)
-- Enumeration [`EnumDMUUIDGenerationMethod`]({{ site.java_enumerations }}other-enums.html#dm_uuidgenerationmethod)
-- Enumeration [`EnumProduct`]({{ site.java_enumerations }}other-enums.html#product)
+- Method [`initLicenseFromServer`]({{ site.dbr_java_methods }}license.html#initlicensefromserver)
+- Method [`initLicenseFromLicenseContent`]({{ site.dbr_java_methods }}license.html#initlicensefromlicensecontent)
+- Method [`outputLicenseToString`]({{ site.dbr_java_methods }}license.html#outputlicensetostring)
+- Method [`initDLSConnectionParameters`]({{ site.dbr_java_methods }}license.html#initdlsconnectionparameters)
+- Method [`initLicenseFromDLS`]({{ site.dbr_java_methods }}license.html#initlicensefromdls)
+- Enumeration [`EnumDMChargeWay`]({{ site.dbr_java_enumerations }}other-enums.html#dm_chargeway)
+- Enumeration [`EnumDMDeploymentType`]({{ site.dbr_java_enumerations }}other-enums.html#dm_deploymenttype)
+- Enumeration [`EnumDMLicenseModule`]({{ site.dbr_java_enumerations }}other-enums.html#dm_licensemodule)
+- Enumeration [`EnumDMUUIDGenerationMethod`]({{ site.dbr_java_enumerations }}other-enums.html#dm_uuidgenerationmethod)
+- Enumeration [`EnumProduct`]({{ site.dbr_java_enumerations }}other-enums.html#product)
 
 

@@ -45,7 +45,7 @@ Returns an instance of CDeformationResistedBarcode.
 
 **See Also**
 
-[CDeformationResistedBarcode]({{ site.cpp_api }}deformation-resisted-barcode.html)
+[CDeformationResistedBarcode]({{ site.dbr_cpp_api }}deformation-resisted-barcode.html)
 
 ### SetDeformationResistedBarcode
 
@@ -67,4 +67,4 @@ Returns 0 if successful, otherwise returns a negative value.
 
 **See Also**
 
-[CDeformationResistedBarcode]({{ site.cpp_api }}deformation-resisted-barcode.html)
+[CDeformationResistedBarcode]({{ site.dbr_cpp_api }}deformation-resisted-barcode.html)

@@ -258,7 +258,7 @@ DBR_API InstancePoolStatus DBR_GetInstancePoolStatus()
 
 **Return Value**
 
-Returns the [`InstancePoolStatus`]({{ site.structs }}InstancePoolStatus.html?src=c) struct representing the status of an instance pool.
+Returns the [`InstancePoolStatus`]({{ site.dbr_structs }}InstancePoolStatus.html?src=c) struct representing the status of an instance pool.
 
 ## DBR_GetIdleInstancesCount
 

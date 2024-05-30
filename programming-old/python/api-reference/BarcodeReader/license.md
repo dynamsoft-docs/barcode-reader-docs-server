@@ -158,7 +158,7 @@ instance_pool_status <*class InstancePoolStatus*> BarcodeReader.get_instance_poo
 
 **Return Value**
 
-Returns the [`InstancePoolStatus`]({{ site.python_class }}InstancePoolStatus.html) class representing the status of an instance pool.
+Returns the [`InstancePoolStatus`]({{ site.dbr_python_class }}InstancePoolStatus.html) class representing the status of an instance pool.
 
 ## get_idle_instances_count
 

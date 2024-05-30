@@ -11,7 +11,7 @@ permalink: /programming/c/user-guide/explore-features/index.html
 
 Once you have got an application running with Dynamsoft Barcode Reader SDK C Edition, you can explore the many features of the SDK to see how to make the best out of the SDK.
 
-> If you are just getting started with Dynamsoft Barcode Reader SDK C Edition, we recommend that you read [Getting Started]({{site.c}}user-guide.html) first.
+> If you are just getting started with Dynamsoft Barcode Reader SDK C Edition, we recommend that you read [Getting Started]({{site.dbr_c}}user-guide.html) first.
 
 ## Basic Features
 

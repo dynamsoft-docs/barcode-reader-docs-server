@@ -5,16 +5,16 @@ description: This is the main page of Dynamsoft Barcode Reader SDK .NET Edition.
 keywords: .Net
 needAutoGenerateSidebar: false
 breadcrumbText: .NET
-permalink: /programming/dotnet/index.html
+permalink: /programming/dotnet/index-v9.6.40.html
 ---
 
 # Dynamsoft Barcode Reader .NET Edition Introduction
 
 ## User Guide
 
-- [Getting Started]({{site.dotnet}}user-guide.html)
-- [Explore Features]({{site.dotnet}}user-guide/explore-features/index.html)
-- [Check Use Cases]({{site.dotnet}}user-guide/use-cases/index.html)
+- [Getting Started]({{site.dbr_dotnet}}user-guide.html)
+- [Explore Features]({{site.dbr_dotnet}}user-guide/explore-features/index.html)
+- [Check Use Cases]({{site.dbr_dotnet}}user-guide/use-cases/index.html)
 
 ## Samples and Demo
 
@@ -24,7 +24,7 @@ permalink: /programming/dotnet/index.html
 
 ## API Reference
 
-- [API Reference]({{site.dotnet_api}}index.html)
+- [API Reference]({{site.dbr_dotnet_api}}index.html)
 
 ## Release Notes
 
@@ -34,7 +34,7 @@ permalink: /programming/dotnet/index.html
 
 ## Upgrade Instructions
 
-- [How to upgrade to latest version]({{site.dotnet}}upgrade-instruction.html)
+- [How to upgrade to latest version]({{site.dbr_dotnet}}upgrade-instruction.html)
 
 ## Online Store
 
