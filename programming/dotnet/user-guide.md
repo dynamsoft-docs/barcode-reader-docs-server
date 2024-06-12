@@ -89,7 +89,7 @@ Open the `Program.cs` file and add the following code inside the `Main` method t
 int errorCode = 1;
 string errorMsg;
 errorCode = LicenseManager.InitLicense("DLS2eyJvcmdhbml6YXRpb25JRCI6IjIwMDAwMSJ9", out errorMsg);
-if (errorCode != (int)EnumErrorCode.EC_OK)
+if (errorCode != (int)EnumErrorCode.EC_OK && errorCode != (int)EnumErrorCode.EC_LICENSE_CACHE_USED)
     Console.WriteLine("License initialization error: " + errorMsg);
 ```
 
