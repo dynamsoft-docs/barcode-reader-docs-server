@@ -56,6 +56,7 @@ needAutoGenerateSidebar: false
 
 - [`EnumBarcodeFormat`]({{ site.dcv_enumerations }}barcode-reader/barcode-format.html?lang=dotnet)
 - [`EnumDeblurMode`]({{ site.dcv_enumerations }}barcode-reader/deblur-mode.html?lang=dotnet)
+- [`EnumExtendedBarcodeResultType`]({{ site.dcv_enumerations }}barcode-reader/extended-barcode-result-type.html?lang=dotnet)
 - [`EnumLocalizationMode`]({{ site.dcv_enumerations }}barcode-reader/localization-mode.html?lang=dotnet)
 - [`EnumQRCodeErrorCorrectionLevel`]({{ site.dcv_enumerations }}barcode-reader/qr-code-error-correction-level.html?lang=dotnet)
 

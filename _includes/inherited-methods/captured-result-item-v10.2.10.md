@@ -9,6 +9,5 @@ The following methods are inherited from class [`CCapturedResultItem`]({{ site.d
 | [`GetTaskName`]({{ site.dcv_cpp_api }}core/basic-structures/captured-result-item.html#gettaskname) | Gets the name of the task which generate current captured result item. |
 | [`Retain`]({{ site.dcv_cpp_api }}core/basic-structures/captured-result-item.html#retain) | Increases the reference count of the `CCapturedResultItem` object. |
 | [`Release`]({{ site.dcv_cpp_api }}core/basic-structures/captured-result-item.html#release) | Decreases the reference count of the `CCapturedResultItem` object. |
-| [`Clone`]({{ site.dcv_cpp_api }}core/basic-structures/captured-result-item.html#clone) | Clone the `CCapturedResultItem` object. |
 
 

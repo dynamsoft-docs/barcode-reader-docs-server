@@ -3,7 +3,6 @@ layout: default-layout
 title: CQRCodeDetails Class - Dynamsoft Barcode Reader C++ Edition API Reference
 description: This page shows CQRCodeDetails class definition of Dynamsoft Barcode Reader SDK C++ Edition.
 keywords: rows, columns, errorCorrectionLevel, version, model, CQRCodeDetails, api reference
-permalink: /programming/cplusplus/api-reference/qr-code-details.html
 ---
 # CQRCodeDetails
 
@@ -34,6 +33,9 @@ class CQRCodeDetails : public CBarcodeDetails
 | [`page`](#page) | *int* |
 | [`totalPage`](#totalpage) | *int* |
 | [`parityData`](#paritydata) | *unsigned char* |
+| [`dataMaskPattern`](#datamaskpattern) | *int* |
+| [`codewords`](#codewords) | *unsigned char\** |
+| [`codewordsCount`](#codewordscount) | *int* |
 
 ### rows
 
@@ -109,4 +111,28 @@ The Parity Data shall be an 8 bit byte following the Symbol Sequence Indicator. 
 
 ```cpp
 unsigned char parityData
+```
+
+### dataMaskPattern
+
+The data mask pattern reference for QR Code symbols.
+
+```cpp
+int dataMaskPattern
+```
+
+### codewords
+
+The codewords of the QR Code.
+
+```cpp
+unsigned char* codewords
+```
+
+### codewordsCount
+
+The count of the codewords.
+
+```cpp
+int codewordsCount
 ```

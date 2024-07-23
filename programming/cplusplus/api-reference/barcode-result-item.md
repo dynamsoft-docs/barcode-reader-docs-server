@@ -37,6 +37,7 @@ class CBarcodeResultItem : public CCapturedResultItem
 | [`GetDetails`](#getdetails) | Gets the details of the decoded barcode result. |
 | [`IsDPM`](#isdpm) | Gets whether the decoded barcode is a DPM code. |
 | [`IsMirrored`](#ismirrored) | Gets whether the decoded barcode is a mirrored barcode. |
+| [`SetLocation`](#setlocation) | Set the location of the barcode item. |
 
 ### Inherited Methods
 
@@ -203,3 +204,22 @@ virtual bool IsMirrored() const = 0;
 
 Returns whether the decoded barcode is mirrored.
 
+### SetLocation
+
+Set the location of the barcode item.
+
+```cpp
+virtual int SetLocation(const CQuadrilateral& location) = 0;
+```
+
+**Parameters**
+
+`[in] location` The location of the barcode item.
+
+**Return value**
+
+Returns an error code. Zero indicates success.
+
+**See Also**
+
+[CQuadrilateral]({{ site.dcv_cpp_api }}core/basic-structures/quadrilateral.html)

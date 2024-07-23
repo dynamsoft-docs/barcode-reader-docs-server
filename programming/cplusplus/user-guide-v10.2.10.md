@@ -104,23 +104,25 @@ CCaptureVisionRouter* cvr = new CCaptureVisionRouter;
 Decode barcodes from an image file.
 
 ```cpp
-string imageFile = "[INSTALLATION FOLDER]/Dynamsoft/Resources/BarcodeReader/Images/GeneralBarcodes.png";
+string imageFile = "[INSTALLATION FOLDER]/Dynamsoft/Resources/BarcodeReader/Images/AllSupportedBarcodeTypes.png";
 CCapturedResult* result = cvr->Capture(imageFile.c_str(), CPresetTemplate::PT_READ_BARCODES);
 if (result->GetErrorCode() != 0) {
     cout << "Error: " << result->GetErrorCode() << "," << result->GetErrorString() << endl;
 }
-CDecodedBarcodesResult *barcodeResult = result->GetDecodedBarcodesResult();
-if (barcodeResult == nullptr || barcodeResult->GetItemsCount() == 0)
+int capturedResultItemCount = result->GetItemsCount();
+cout << "Decoded " << capturedResultItemCount << " barcodes" << endl;
+
+for (int j = 0; j < capturedResultItemCount; j++) 
 {
-    cout << "No barcode found." << endl;
-}
-else
-{
-    int barcodeResultItemCount = barcodeResult->GetItemsCount();
-    cout << "Decoded " << barcodeResultItemCount << " barcodes" << endl;
-    for (int j = 0; j < barcodeResultItemCount; j++)
+    const CCapturedResultItem* capturedResultItem = result->GetItem(j);
+    /*
+    * There can be multiple types of result items per image.
+    * We check each of these items until we find the barcode result.
+    */
+    CapturedResultItemType type = capturedResultItem->GetType();
+    if (type == CapturedResultItemType::CRIT_BARCODE)
     {
-        const CBarcodeResultItem *barcodeResultItem = barcodeResult->GetItem(j);
+        const CBarcodeResultItem* barcodeResultItem = dynamic_cast<const CBarcodeResultItem*> (capturedResultItem);
         cout << "Result " << j + 1 << endl;
         cout << "Barcode Format: " << barcodeResultItem->GetFormatString() << endl;
         cout << "Barcode Text: " << barcodeResultItem->GetText() << endl;

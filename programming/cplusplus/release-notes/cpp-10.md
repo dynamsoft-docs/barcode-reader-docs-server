@@ -9,6 +9,38 @@ permalink: /programming/cplusplus/release-notes/cpp-10.html
 
 # Release Notes for C++ Edition - 10.x
 
+## 10.4.10 (07/23/2024)
+
+### Improved
+
+- Improved the read rate and speed of the following barcode formats:
+  - EAN-13
+  - DotCode
+
+### New
+
+- Added support for decoding add-on codes (also known as Extension Codes) for UPC-A, UPC-E, EAN-8 and EAN-13 codes.
+- Added new properties to the [`CQRCodeDetails`]({{ site.dbr_cpp_api }}qr-code-details.html) class
+  - [`dataMaskPattern`]({{ site.dbr_cpp_api }}qr-code-details.html#dataMaskPattern)
+  - [`codewords`]({{ site.dbr_cpp_api }}qr-code-details.html#codewords)
+  - [`codewordsCount`]({{ site.dbr_cpp_api }}qr-code-details.html#codewordsCount)
+- Added a new function [`AddItem`]({{ site.dbr_cpp_api }}decoded-barcodes-result.html#additem) to the class [`CDecodedBarcodesResult`]({{ site.dbr_cpp_api }}decoded-barcodes-result.html).
+- Added a new function [`SetLocation`]({{ site.dbr_cpp_api }}barcode-result-item.html#setlocation) to the class [`CBarcodeResultItem`]({{ site.dbr_cpp_api }}barcode-result-item.html).
+- Added a new function [`Clone`]({{ site.dcv_cpp_api }}core/basic-structures/captured-result-item.html#clone) to the class [`CCapturedResultItem`]({{ site.dcv_cpp_api }}core/basic-structures/captured-result-item.html).
+- Added a new function [`AddItem`]({{ site.dcv_cpp_api }}capture-vision-router/auxiliary-classes/captured-result.html#additem) to the class [`CCapturedResult`]({{ site.dcv_cpp_api }}capture-vision-router/auxiliary-classes/captured-result.html).
+
+### Changed
+
+- Changed the maximum length of the `name` parameter to 255 for the [`SetDeviceFriendlyName`]({{ site.dcv_cpp_api }}license/license-manager.html#setdevicefriendlyname) method. If the length exceeds 255, it will be truncated.
+
+- Changed the default value of the `waitForThreadExit` parameter to `true` for the [`StopCapturing`]({{ site.dcv_cpp_api }}capture-vision-router/multiple-file-processing.html#stopcapturing) method.
+ 
+### Fixed
+
+- Fixed a bug where UPC-E barcodes starting with the digit 1 cannot be decoded.
+- Fixed a bug where `CaptureVisionRouter.StartCapturing` would erroneously halt the fetching process when its status was running, leading to an unnecessary stop and restart of the fetching operation.
+- Fixed a bug where `CDirectoryFetcher` would prematurely read an image before verifying if the buffer was full, resulting in potential loss of the image that did not make it into the buffer upon calling `StopFetching`.
+  
 ## 10.2.10 (03/01/2024)
 
 ### Improved
