@@ -34,6 +34,7 @@ class CDecodedBarcodesResult
 | [`Release`](#release) | Decreases the reference count of the `CDecodedBarcodesResult` object. |
 | [`Retain`](#retain) | Increases the reference count of the `CDecodedBarcodesResult` object. |
 | [`operator[]`](#operator)           | Gets a pointer to the `CBarcodeResultItem` object at the specified index.|
+| [`AddItem`](#additem) | Adds a specific item to the array in the decoded barcodes result. |
 
 ### GetOriginalImageHashId
 
@@ -210,6 +211,26 @@ virtual const CBarcodeResultItem* operator[](int index) const = 0;
 **Return value**
 
 Returns a pointer to the `CBarcodeResultItem` object at the specified index.
+
+**See Also**
+
+[CBarcodeResultItem]({{ site.dbr_cpp_api }}barcode-result-item.html)
+
+### AddItem
+
+Adds a specific item to the array in the parsed result.
+
+```cpp
+virtual int AddItem(const CBarcodeResultItem* item) = 0;
+```
+
+**Parameters**
+
+`[in] item` The specific item to be added.
+
+**Return value**
+
+Returns an error code. Zero indicates success.
 
 **See Also**
 
