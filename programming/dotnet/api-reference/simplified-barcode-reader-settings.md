@@ -62,18 +62,18 @@ int expectedBarcodesCount;
 
 ### grayscaleTransformationModes
 
-Set the grayscale transformation modes using an [`EnumGrayscaleEnhancementMode`]({{ site.dcv_enumerations }}core/grayscale-transformation-mode.html?lang=dotnet) array with 8 elements. View the reference page of <a href="{{ site.dcv_parameters_reference }}image-parameter/grayscale-transformation-modes.html?product=dbr&repoType=core" target="_blank">`GrayscaleTransformationModes`</a> for more detail about grayscale transformation modes.
+Set the grayscale transformation modes using an [`EnumGrayscaleTransformationMode`]({{ site.dcv_enumerations }}core/grayscale-transformation-mode.html?lang=dotnet) array with 8 elements. View the reference page of <a href="{{ site.dcv_parameters_reference }}image-parameter/grayscale-transformation-modes.html?product=dbr&repoType=core" target="_blank">`GrayscaleTransformationModes`</a> for more detail about grayscale transformation modes.
 
 ```csharp
-EnumGrayscaleEnhancementMode[] grayscaleTransformationModes;
+EnumGrayscaleTransformationMode[] grayscaleTransformationModes;
 ```
 
 ### grayscaleEnhancementModes
 
-Set the grayscale enhancement modes using an [`EnumGrayscaleTransformationMode`]({{ site.dcv_enumerations }}core/grayscale-enhancement-mode.html?lang=dotnet) array with 8 elements. View the reference page of <a href="{{ site.dcv_parameters_reference }}image-parameter/grayscale-enhancement-modes.html?product=dbr&repoType=core" target="_blank">`GrayscaleEnhancementModes`</a> for more detail about grayscale enhancement modes.
+Set the grayscale enhancement modes using an [`EnumGrayscaleEnhancementMode`]({{ site.dcv_enumerations }}core/grayscale-enhancement-mode.html?lang=dotnet) array with 8 elements. View the reference page of <a href="{{ site.dcv_parameters_reference }}image-parameter/grayscale-enhancement-modes.html?product=dbr&repoType=core" target="_blank">`GrayscaleEnhancementModes`</a> for more detail about grayscale enhancement modes.
 
 ```csharp
-EnumGrayscaleTransformationMode[] grayscaleEnhancementModes;
+EnumGrayscaleEnhancementMode[] grayscaleEnhancementModes;
 ```
 
 ### localizationModes
