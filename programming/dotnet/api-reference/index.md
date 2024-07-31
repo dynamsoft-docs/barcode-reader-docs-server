@@ -16,7 +16,6 @@ needAutoGenerateSidebar: false
 - [`Single-File Processing`]({{ site.dcv_dotnet_api }}capture-vision-router/single-file-processing.html)
 - [`Multiple-File Processing`]({{ site.dcv_dotnet_api }}capture-vision-router/multiple-file-processing.html)
 - [`Settings`]({{ site.dcv_dotnet_api }}capture-vision-router/settings.html)
-- [`Auxiliary Methods`]({{ site.dcv_dotnet_api }}capture-vision-router/auxiliary-methods.html)
 
 ### Classes
 
