@@ -14,7 +14,7 @@ The `CLocalizedBarcodeElement` class represents a localized barcode element dete
 
 *Assembly:* DynamsoftBarcodeReader
 
-*Inheritance:* [CRegionObjectElement]({{ site.dcv_cpp_api }}core/intermediate-results/region-object-element.html) -> CLocalizedBarcodeElement
+*Inheritance:* [CRegionObjectElement]({{ site.dcvb_cpp_api }}core/intermediate-results/region-object-element.html) -> CLocalizedBarcodeElement
 
 ```cpp
 class CLocalizedBarcodeElement : public CRegionObjectElement
@@ -73,7 +73,7 @@ Returns the format of the barcode.
 
 **See Also**
 
-[Enumeration BarcodeFormat]({{ site.dcv_enumerations }}barcode-reader/barcode-format.html?src=cpp&&lang=cpp)
+[Enumeration BarcodeFormat]({{ site.dcvb_enumerations }}barcode-reader/barcode-format.html?src=cpp&&lang=cpp)
 
 ### GetPossibleFormatsString
 
@@ -113,4 +113,4 @@ virtual void SetPossibleFormats(unsigned long long possibleFormats) = 0;
 
 **See Also**
 
-[BarcodeFormat]({{ site.dcv_enumerations }}barcode-reader/barcode-format.html?src=cpp&&lang=cpp)
+[BarcodeFormat]({{ site.dcvb_enumerations }}barcode-reader/barcode-format.html?src=cpp&&lang=cpp)

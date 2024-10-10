@@ -60,15 +60,9 @@ Search for and install the `Dynamsoft.DotNet.BarcodeReader.Bundle` nuget package
 > 
 > <a href="https://www.dynamsoft.com/barcode-reader/downloads/?utm_source=docs" target="_blank">Download the `.NET Package`</a> now and extract it into a directory of your choice.
 > 
-> Add the extracted `.\Dynamsoft\Packages` directory as a new package source
-> 
-> Install following packages from the added package source:
-> * Dynamsoft.DotNet.BarcodeReader
-> * Dynamsoft.DotNet.CaptureVisionRouter
-> * Dynamsoft.DotNet.Core
-> * Dynamsoft.DotNet.ImageProcessing
-> * Dynamsoft.DotNet.License
-> * Dynamsoft.DotNet.Utility
+> You can find the nuget package under `.\DynamsoftBarcodeReader\Packages`.
+
+
 
 ### Import the Namespace
 
@@ -116,8 +110,6 @@ using (CaptureVisionRouter cvr = new CaptureVisionRouter())
 ```
 
 > Please change the `[PATH-TO-THE-IMAGE-FILE]` to a real barcode image file path.
-> 
-> Sample images are also available in the `\Dynamsoft\Resources\BarcodeReader\Images` directory within the downloaded `.NET package`.
 
 ### Filter and Get Barcode Details
 
@@ -177,7 +169,7 @@ using Dynamsoft.Utility;
 
 ### Create an ImageSource as the Input
 
-An `ImageSource` is required when crreating a multi-image processing application. You can either utilize ready-made image sources such as [`FileFetcher`]({{ site.dcv_dotnet_api }}utility/file-fetcher.html) and [`DirectoryFetcher`]({{ site.dcv_dotnet_api }}utility/directory-fetcher.html), or customize your own image source based on the base class [`ImageSourceAdapter`]({{ site.dcv_dotnet_api }}core/basic-classes/image-source-adapter.html).
+An `ImageSource` is required when creating a multi-image processing application. You can either utilize ready-made image sources such as [`FileFetcher`]({{ site.dcv_dotnet_api }}utility/file-fetcher.html) and [`DirectoryFetcher`]({{ site.dcv_dotnet_api }}utility/directory-fetcher.html), or customize your own image source based on the base class [`ImageSourceAdapter`]({{ site.dcv_dotnet_api }}core/basic-classes/image-source-adapter.html).
 
 In this sample, we will use the `DirectoryFetcher` to retrieve images from a local directory.
 
@@ -187,8 +179,6 @@ fetcher.SetDirectory("[THE DIRECTORY THAT HOLDS THE IMAGES]");
 ```
 
 > Please change the `[THE DIRECTORY THAT HOLDS THE IMAGES]` to full path of the directory holding barcode image files.
-> 
-> Sample images are also available in the `\Dynamsoft\Resources\BarcodeReader\Images` directory within the downloaded `.NET package`.
 
 ### Implement a CapturedResultReceiver as the Output Listener
 

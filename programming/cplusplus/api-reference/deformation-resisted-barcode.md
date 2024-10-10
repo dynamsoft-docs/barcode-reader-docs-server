@@ -82,7 +82,7 @@ Returns the format of the deformation resisted barcode.
 
 **See Also**
 
-[BarcodeFormat]({{ site.dcv_enumerations }}barcode-reader/barcode-format.html?src=cpp&&lang=cpp)
+[BarcodeFormat]({{ site.dcvb_enumerations }}barcode-reader/barcode-format.html?src=cpp&&lang=cpp)
 
 ### SetFormat
 
@@ -98,7 +98,7 @@ void SetFormat(BarcodeFormat format);
 
 **See Also**
 
-[BarcodeFormat]({{ site.dcv_enumerations }}barcode-reader/barcode-format.html?src=cpp&&lang=cpp)
+[BarcodeFormat]({{ site.dcvb_enumerations }}barcode-reader/barcode-format.html?src=cpp&&lang=cpp)
 
 ### GetImageData
 
@@ -114,7 +114,7 @@ Returns the pointer to the deformation resisted barcode image.
 
 **See Also**
 
-[CImageData]({{ site.dcv_cpp_api }}core/basic-structures/image-data.html)
+[CImageData]({{ site.dcvb_cpp_api }}core/basic-structures/image-data.html)
 
 ### SetImageData
 
@@ -132,7 +132,7 @@ void SetImageData(const CImageData* img, FreeImageFunc freeImageFunc);
 
 **See Also**
 
-[CImageData]({{ site.dcv_cpp_api }}core/basic-structures/image-data.html)
+[CImageData]({{ site.dcvb_cpp_api }}core/basic-structures/image-data.html)
 
 ### GetLocation
 
@@ -148,7 +148,7 @@ Returns the location of the deformation resisted barcode.
 
 **See Also**
 
-[CQuadrilateral]({{ site.dcv_cpp_api }}core/basic-structures/quadrilateral.html)
+[CQuadrilateral]({{ site.dcvb_cpp_api }}core/basic-structures/quadrilateral.html)
 
 ### SetLocation
 
@@ -164,7 +164,7 @@ void SetLocation(const CQuadrilateral& loc);
 
 **See Also**
 
-[CQuadrilateral]({{ site.dcv_cpp_api }}core/basic-structures/quadrilateral.html)
+[CQuadrilateral]({{ site.dcvb_cpp_api }}core/basic-structures/quadrilateral.html)
 
 ### operator=
 

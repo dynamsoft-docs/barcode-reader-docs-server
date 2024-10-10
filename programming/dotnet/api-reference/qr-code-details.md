@@ -33,6 +33,8 @@ public class QRCodeDetails : BarcodeDetails
 | [`page`](#page) | *int* |
 | [`totalPage`](#totalpage) | *int* |
 | [`parityData`](#paritydata) | *byte* |
+| [`codewords`](#codewords) | *byte[]* |
+| [`dataMaskPattern`](#datamaskpattern) | *int* |
 
 ### rows
 
@@ -60,7 +62,7 @@ EnumQRCodeErrorCorrectionLevel errorCorrectionLevel;
 
 **See Also**
 
-[EnumQRCodeErrorCorrectionLevel]({{ site.dcv_enumerations }}barcode-reader/qr-code-error-correction-level.html?lang=dotnet)
+[EnumQRCodeErrorCorrectionLevel]({{ site.dcvb_enumerations }}barcode-reader/qr-code-error-correction-level.html?lang=dotnet)
 
 ### version
 
@@ -108,4 +110,20 @@ The Parity Data shall be an 8 bit byte following the Symbol Sequence Indicator. 
 
 ```csharp
 byte parityData;
+```
+
+### codewords
+
+The codewords of the QR Code.
+
+```csharp
+byte[] codewords;
+```
+
+### dataMaskPattern
+
+The data mask pattern reference for QR Code symbols.
+
+```csharp
+int dataMaskPattern;
 ```

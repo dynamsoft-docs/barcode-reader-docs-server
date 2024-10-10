@@ -14,7 +14,7 @@ The `CDecodedBarcodeElement` class represents a decoded barcode element. It inhe
 
 *Assembly:* DynamsoftBarcodeReader
 
-*Inheritance:* [CRegionObjectElement]({{ site.dcv_cpp_api }}core/intermediate-results/region-object-element.html) -> CDecodedBarcodeElement
+*Inheritance:* [CRegionObjectElement]({{ site.dcvb_cpp_api }}core/intermediate-results/region-object-element.html) -> CDecodedBarcodeElement
 
 ```cpp
 class CDecodedBarcodeElement : public CRegionObjectElement
@@ -60,7 +60,7 @@ Returns the format of the barcode.
 
 **See Also**
 
-[Enumeration BarcodeFormat]({{ site.dcv_enumerations }}barcode-reader/barcode-format.html?src=cpp&&lang=cpp)
+[Enumeration BarcodeFormat]({{ site.dcvb_enumerations }}barcode-reader/barcode-format.html?src=cpp&&lang=cpp)
 
 ### GetFormatString
 
@@ -237,7 +237,7 @@ virtual void SetFormat(BarcodeFormat format) = 0;
 
 **See Also**
 
-[Enumeration BarcodeFormat]({{ site.dcv_enumerations }}barcode-reader/barcode-format.html?src=cpp&&lang=cpp)
+[Enumeration BarcodeFormat]({{ site.dcvb_enumerations }}barcode-reader/barcode-format.html?src=cpp&&lang=cpp)
 
 ### SetText
 

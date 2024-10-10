@@ -6,7 +6,7 @@ keywords: user guide, python
 needAutoGenerateSidebar: true
 needGenerateH3Content: true
 noTitleIndex: true
-permalink: /programming/python/user-guide.html
+permalink: /programming/python/user-guide-v9.6.40.html
 ---
 
 # Getting Started with Dynamsoft Barcode Reader Python Edition

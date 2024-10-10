@@ -10,5 +10,5 @@ needGenerateH3Content: true
 
 ## From version 9.x or earlier to version 10.x
 
-Dynamsoft Barcode Reader SDK has been refactored to integrate with [`DynamsoftCaptureVision (DCV)`]({{ site.dcv_introduction }}) architecture. To upgrade from version 9.x or earlier to 10.x, we recommend you to follow the [User Guide]({{ site.dbr_dotnet}}user-guide.html) and re-write your codes.
+Dynamsoft Barcode Reader SDK has been refactored to integrate with [`DynamsoftCaptureVision (DCV)`]({{ site.dcvb_architecture }}) architecture. To upgrade from version 9.x or earlier to 10.x, we recommend you to follow the [User Guide]({{ site.dbr_dotnet}}user-guide.html) and re-write your codes.
 

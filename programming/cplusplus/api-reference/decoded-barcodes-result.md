@@ -62,7 +62,7 @@ Returns a pointer to a CImageTag object representing the tag of the source image
 
 **See Also**
 
-[CImageTag]({{ site.dcv_cpp_api }}core/basic-structures/image-tag.html)
+[CImageTag]({{ site.dcvb_cpp_api }}core/basic-structures/image-tag.html)
 
 ### GetItemsCount
 
@@ -162,7 +162,7 @@ Returns the error code of the barcode reading result, or 0 if no error occurred.
 
 **See Also**
 
-[Enumeration ErrorCode]({{ site.dcv_enumerations }}core/error-code.html?src=cpp&&lang=cpp)
+[Enumeration ErrorCode]({{ site.dcvb_enumerations }}core/error-code.html?src=cpp&&lang=cpp)
 
 ### GetErrorString
 

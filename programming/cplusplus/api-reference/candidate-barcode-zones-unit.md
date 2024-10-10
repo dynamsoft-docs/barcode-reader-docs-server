@@ -14,7 +14,7 @@ The `CCandidateBarcodeZonesUnit` class represents a unit that contains candidate
 
 *Assembly:* DynamsoftBarcodeReader
 
-*Inheritance:* [CIntermediateResultUnit]({{ site.dcv_cpp_api }}core/intermediate-results/intermediate-result-unit.html) -> CCandidateBarcodeZonesUnit
+*Inheritance:* [CIntermediateResultUnit]({{ site.dcvb_cpp_api }}core/intermediate-results/intermediate-result-unit.html) -> CCandidateBarcodeZonesUnit
 
 ```cpp
 class CCandidateBarcodeZonesUnit: public CIntermediateResultUnit

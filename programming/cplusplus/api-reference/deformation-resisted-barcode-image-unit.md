@@ -14,7 +14,7 @@ The `CDeformationResistedBarcodeImageUnit` class represents a unit that contains
 
 *Assembly:* DynamsoftBarcodeReader
 
-*Inheritance:* [CIntermediateResultUnit]({{ site.dcv_cpp_api }}core/intermediate-results/intermediate-result-unit.html) -> CDeformationResistedBarcodeImageUnit
+*Inheritance:* [CIntermediateResultUnit]({{ site.dcvb_cpp_api }}core/intermediate-results/intermediate-result-unit.html) -> CDeformationResistedBarcodeImageUnit
 
 ```cpp
 class CDeformationResistedBarcodeImageUnit: public CIntermediateResultUnit

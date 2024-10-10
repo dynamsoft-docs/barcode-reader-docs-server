@@ -43,7 +43,7 @@ Returns the error code of the barcode reading result, or 0 if no error occurred.
 
 **See Also**
 
-[EnumErrorCode]({{ site.dcv_enumerations }}core/error-code.html?lang=dotnet)
+[EnumErrorCode]({{ site.dcvb_enumerations }}core/error-code.html?lang=dotnet)
 
 ### GetErrorString
 

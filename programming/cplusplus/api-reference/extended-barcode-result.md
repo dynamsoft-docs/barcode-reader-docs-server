@@ -44,7 +44,7 @@ Returns the type of the extended barcode result.
 
 **See Also**
 
-[Enumeration ExtendedBarcodeResultType]({{ site.dcv_enumerations }}barcode-reader/extended-barcode-result-type.html?src=cpp&&lang=cpp)
+[Enumeration ExtendedBarcodeResultType]({{ site.dcvb_enumerations }}barcode-reader/extended-barcode-result-type.html?src=cpp&&lang=cpp)
 
 ### GetDeformation
 
@@ -84,4 +84,4 @@ Returns a pointer to the sampling image of the barcode.
 
 **See Also**
 
-[CImageData]({{ site.dcv_cpp_api }}core/basic-structures/image-data.html)
+[CImageData]({{ site.dcvb_cpp_api }}core/basic-structures/image-data.html)

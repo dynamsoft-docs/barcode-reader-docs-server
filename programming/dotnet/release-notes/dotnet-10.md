@@ -8,6 +8,46 @@ needGenerateH3Content: false
 
 # Release Notes for .NET Edition - 10.x
 
+## 10.4.2000 (10/10/2024)
+
+### Highlights
+
+- Added to-the-latest overlapping feature.
+- Improved the error handling logic of `Capture`, `StartCapturing` and `InitLicense` methods to clearly report an licensing issue.
+
+### Changelogs
+
+#### New
+
+- Added a new functions [`SetMaxOverlappingFrames`]({{ site.dcvb_dotnet_api }}utility/multi-frame-result-cross-filter.html#setmaxoverlappingframes), [`GetMaxOverlappingFrames`]({{ site.dcvb_dotnet_api }}utility/multi-frame-result-cross-filter.html#getmaxoverlappingframes), [`EnableLatestOverlapping`]({{ site.dcvb_dotnet_api }}utility/multi-frame-result-cross-filter.html#enablelatestoverlapping) and [`IsLatestOverlappingEnabled`]({{ site.dcvb_dotnet_api }}utility/multi-frame-result-cross-filter.html#islatestoverlappingenabled) to the class `CMultiFrameResultCrossFilter`).
+
+- Added new error codes
+  - `EC_LICENSE_WARNING`: The license is initialized successfully but detected invalid content in your key.
+  - `EC_BARCODE_READER_LICENSE_NOT_FOUND`: [Barcode Reader] No license found.
+
+- Added new properties to the [`QRCodeDetails`]({{ site.dbr_dotnet_api }}qr-code-details.html) class
+  - [`codewords`]({{ site.dbr_dotnet_api }}qr-code-details.html#codewords)
+  - [`dataMaskPattern`]({{ site.dbr_dotnet_api }}qr-code-details.html#datamaskpattern)
+
+#### Fixed
+
+- Fixed a crash bug caused by the usage of RegEx.
+- Fixed a bug that might cause `GS1_DATABAR_EXPANDED_STACKED` barcode unread.
+- Small fixes and tweaks.
+
+#### Changed
+
+- Changed the template loading mode. By default, the library loads all template files from the `Templates` folder in the same directory as the library file.
+- Changed the enumeration value of `EnumBarcodeFormat.BF_ALL` to 0xFFFFFFFEFFFFFFFF.
+- Integrated the previously separate nuget packages directly into the `Dynamsoft.DotNet.BarcodeReader.Bundle` package. As a result, the following nuget packages have been announced as deprecated.
+    - Dynamsoft.DotNet.BarcodeReader
+    - Dynamsoft.DotNet.CaptureVisionRouter
+    - Dynamsoft.DotNet.Core
+    - Dynamsoft.DotNet.ImageProcessing
+    - Dynamsoft.DotNet.License
+    - Dynamsoft.DotNet.Utility
+
+
 ## 10.2.12 (06/19/2024)
 
 - Fixed a bug that caused 32-bit applications to crash on startup under .NET Framework.

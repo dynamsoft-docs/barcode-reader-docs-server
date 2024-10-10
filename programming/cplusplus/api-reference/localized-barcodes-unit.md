@@ -14,7 +14,7 @@ The `CLocalizedBarcodesUnit` class represents a unit that contains localized bar
 
 *Assembly:* DynamsoftBarcodeReader
 
-*Inheritance:* [CIntermediateResultUnit]({{ site.dcv_cpp_api }}core/intermediate-results/intermediate-result-unit.html) -> CLocalizedBarcodesUnit
+*Inheritance:* [CIntermediateResultUnit]({{ site.dcvb_cpp_api }}core/intermediate-results/intermediate-result-unit.html) -> CLocalizedBarcodesUnit
 
 ```cpp
 class CLocalizedBarcodesUnit: public CIntermediateResultUnit
