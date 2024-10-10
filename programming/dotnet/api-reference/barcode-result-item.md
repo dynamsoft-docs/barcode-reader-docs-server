@@ -53,7 +53,7 @@ Returns the format of the decoded barcode result.
 
 **See Also**
 
-[EnumBarcodeFormat]({{ site.dcv_enumerations }}barcode-reader/barcode-format.html?lang=dotnet)
+[EnumBarcodeFormat]({{ site.dcvb_enumerations }}barcode-reader/barcode-format.html?lang=dotnet)
 
 ### GetFormatString
 
@@ -202,7 +202,7 @@ Returns the type of the captured result item.
 
 **See Also**
 
-[EnumCapturedResultItemType]({{ site.dcv_enumerations }}core/captured-result-item-type.html?lang=dotnet)
+[EnumCapturedResultItemType]({{ site.dcvb_enumerations }}core/captured-result-item-type.html?lang=dotnet)
 
 ### GetReferenceItem
 

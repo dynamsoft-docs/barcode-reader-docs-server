@@ -14,9 +14,9 @@ Leveraging the efficiency and flexibility of the C++ language, DBR C++ Edition p
 
 In addition, DBR C++ Edition provides cross-platform support, running on multiple operating systems such as Windows, Linux, and Mac, to meet the needs of different development environments
 
-As one of the functional products of the Dynamsoft Capture Vision (DCV) framework, DBR is also designed to seamlessly integrate with other DCV components and provide developers with a comprehensive set of image processing tools, which cover image capturing, content understanding, result parsing, and interactive workflow. If you are building such a capturing and processing solution, take a look at [Introduction to Dynamsoft Capture Vision]({{site.dcv_introduction}}).
+As one of the functional products of the Dynamsoft Capture Vision (DCV) framework, DBR is also designed to seamlessly integrate with other DCV components and provide developers with a comprehensive set of image processing tools, which cover image capturing, content understanding, result parsing, and interactive workflow. If you are building such a capturing and processing solution, take a look at [Introduction to Dynamsoft Capture Vision]({{site.dcvb_architecture}}).
 
-Furthermore, DBR provides a powerful parameter system in order to cope with various scenarios. Read <a href="{{site.dbr_parameters_reference}}index.html" target="_blank">Parameter Reference</a> for details.
+Furthermore, DBR provides a powerful parameter system in order to cope with various scenarios. Read <a href="{{site.dbr_parameters_reference}}index.html">Parameter Reference</a> for details.
 
 ## Getting Started with DBR C++ Edition
 
@@ -31,9 +31,11 @@ The best way to start with the Dynamsoft Barcode Reader C++ Edition, is followin
 
 - Linux:
   - Supported Distributions: Ubuntu 14.04.4+ LTS, Debian 8+, CentOS 6+
-  - Architectures: x64 (arm 32-bit and arm 64-bit coming soon)
+  - Architectures: x64, ARM 64-bit, ARM 32-bit (for versions below 9.6.40.2)
   - Minimum GLIBC Version: GLIBC_2.18 or higher
   - Compiler: G++ 5.4 or higher
+
+- MacOS 64bit: 10.12+ (not included in the trial package, contact us to get the SDK)
 
 
 ## License Subscription

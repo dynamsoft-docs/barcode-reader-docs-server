@@ -13,7 +13,7 @@ The `CComplementedBarcodeImageUnit` class represents a unit that contains comple
 
 *Assembly:* DynamsoftBarcodeReader
 
-*Inheritance:* [CIntermediateResultUnit]({{ site.dcv_cpp_api }}core/intermediate-results/intermediate-result-unit.html) -> CComplementedBarcodeImageUnit
+*Inheritance:* [CIntermediateResultUnit]({{ site.dcvb_cpp_api }}core/intermediate-results/intermediate-result-unit.html) -> CComplementedBarcodeImageUnit
 
 ```cpp
 class CComplementedBarcodeImageUnit: public CIntermediateResultUnit
@@ -45,7 +45,7 @@ Returns a pointer to the complemented image of the barcode.
 
 **See Also**
 
-[CImageData]({{ site.dcv_cpp_api }}core/basic-structures/image-data.html)
+[CImageData]({{ site.dcvb_cpp_api }}core/basic-structures/image-data.html)
 
 ### GetLocation
 
@@ -61,7 +61,7 @@ Returns the location of the complemented barcode in a quadrilateral.
 
 **See Also**
 
-[CQuadrilateral]({{ site.dcv_cpp_api }}core/basic-structures/quadrilateral.html)
+[CQuadrilateral]({{ site.dcvb_cpp_api }}core/basic-structures/quadrilateral.html)
 
 ### SetLocation
 
@@ -83,5 +83,5 @@ Returns 0 if successful, otherwise returns a negative value.
 
 **See Also**
 
-[CQuadrilateral]({{ site.dcv_cpp_api }}core/basic-structures/quadrilateral.html)
+[CQuadrilateral]({{ site.dcvb_cpp_api }}core/basic-structures/quadrilateral.html)
 

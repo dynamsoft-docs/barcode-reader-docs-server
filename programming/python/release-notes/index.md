@@ -4,12 +4,11 @@ title: Release Notes - Dynamsoft Barcode Reader SDK Python Edition
 description: This is the release notes page of Dynamsoft Barcode Reader SDK Python Edition.
 keywords: release notes, python
 needAutoGenerateSidebar: false
-breadcrumbText: Release Notes
-permalink: /programming/python/release-notes/index.html
 ---
 
 # Release Notes for Python Edition
 
+- [10.4.2000 (10/10/2024)](python-10.md#1042000-10102024)
 - [9.6.40 (03/14/2024)](python-9.md#9640-03142024)
 - [9.6.30 (08/29/2023)](python-9.md#9630-08292023)
 - [9.6.20 (03/16/2023)](python-9.md#9620-03162023)

@@ -14,7 +14,7 @@ The `CDecodedBarcodesUnit` class represents a unit that contains decoded barcode
 
 *Assembly:* DynamsoftBarcodeReader
 
-*Inheritance:* [CIntermediateResultUnit]({{ site.dcv_cpp_api }}core/intermediate-results/intermediate-result-unit.html) -> CDecodedBarcodesUnit
+*Inheritance:* [CIntermediateResultUnit]({{ site.dcvb_cpp_api }}core/intermediate-results/intermediate-result-unit.html) -> CDecodedBarcodesUnit
 
 ```cpp
 class CDecodedBarcodesUnit: public CIntermediateResultUnit

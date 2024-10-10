@@ -7,14 +7,24 @@ docHomePage: /barcode-reader/docs/core/introduction/
 useVersionTree: true
 
 
-dcv_cpp_api: /capture-vision/docs/server/programming/cplusplus/api-reference/
-dcv_dotnet_api: /capture-vision/docs/server/programming/dotnet/api-reference/
-dcv_introduction: /capture-vision/docs/core/introduction/
-dcv_parameters_reference: /capture-vision/docs/core/parameters/reference/
-dcv_enumerations: /capture-vision/docs/core/enums/
+dcv_cpp_api: /capture-vision/docs-archive/server/programming/cplusplus/api-reference/
+dcv_parameters_reference: /capture-vision/docs-archive/core/parameters/reference/
+dcv_enumerations: /capture-vision/docs-archive/core/enums/
+
+dcvb_cpp_api: /capture-vision/docs/server/programming/cplusplus/api-reference/
+dcvb_dotnet_api: /capture-vision/docs/server/programming/dotnet/api-reference/
+dcvb_python_api: /capture-vision/docs/server/programming/python/api-reference/
+dcvb_introduction: /capture-vision/docs/core/introduction/
+dcvb_parameters_reference: /capture-vision/docs/core/parameters/reference/
+dcvb_enumerations: /capture-vision/docs/core/enums/
+dcvb_architecture: /capture-vision/docs/core/architecture/
+dcvb_parameters: /capture-vision/docs/core/parameters/
+
 
 dbr_introduction: /barcode-reader/docs/core/introduction/
+dbr_parameters: /barcode-reader/docs/core/parameters/
 dbr_parameters_reference: /barcode-reader/docs/core/parameters/reference/
+dbr_performance: /barcode-reader/docs/core/performance/
 dbr_c_cpp_enumerations: /barcode-reader/docs/server/programming/c-cplusplus/enumeration/
 dbr_structs: /barcode-reader/docs/server/programming/c-cplusplus/struct/
 

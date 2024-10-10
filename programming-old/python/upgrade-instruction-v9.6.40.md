@@ -4,7 +4,7 @@ title: Upgrade Instruction - Dynamsoft Barcode Reader SDK Python Edition
 description: This page shows how to upgrade to Dynamsoft Barcode Reader SDK Python Edition latest version.
 keywords: Upgrade, how-to guides
 needAutoGenerateSidebar: false
-permalink: /programming/python/upgrade-instruction.html
+permalink: /programming/python/upgrade-instruction-v9.6.40.html
 ---
 
 

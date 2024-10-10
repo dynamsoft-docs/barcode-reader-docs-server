@@ -66,7 +66,7 @@ Returns the location of the candidate barcode.
 
 **See Also**
 
-[CQuadrilateral]({{ site.dcv_cpp_api }}core/basic-structures/quadrilateral.html)
+[CQuadrilateral]({{ site.dcvb_cpp_api }}core/basic-structures/quadrilateral.html)
 
 ### SetLocation
 
@@ -82,7 +82,7 @@ void SetLocation(const CQuadrilateral& loc);
 
 **See Also**
 
-[CQuadrilateral]({{ site.dcv_cpp_api }}core/basic-structures/quadrilateral.html)
+[CQuadrilateral]({{ site.dcvb_cpp_api }}core/basic-structures/quadrilateral.html)
 
 ### GetPossibleFormats
 
@@ -98,7 +98,7 @@ Returns the posssible formats of the candidate barcode.
 
 **See Also**
 
-[BarcodeFormat]({{ site.dcv_enumerations }}barcode-reader/barcode-format.html?src=cpp&&lang=cpp)
+[BarcodeFormat]({{ site.dcvb_enumerations }}barcode-reader/barcode-format.html?src=cpp&&lang=cpp)
 
 ### SetPossibleFormats
 
@@ -114,4 +114,4 @@ void SetPossibleFormats(unsigned long long formats);
 
 **See Also**
 
-[BarcodeFormat]({{ site.dcv_enumerations }}barcode-reader/barcode-format.html?src=cpp&&lang=cpp)
+[BarcodeFormat]({{ site.dcvb_enumerations }}barcode-reader/barcode-format.html?src=cpp&&lang=cpp)

@@ -14,7 +14,7 @@ The `CScaledUpBarcodeImageUnit` class represents a unit that contains scaled up 
 
 *Assembly:* DynamsoftBarcodeReader
 
-*Inheritance:* [CIntermediateResultUnit]({{ site.dcv_cpp_api }}core/intermediate-results/intermediate-result-unit.html) -> CScaledUpBarcodeImageUnit
+*Inheritance:* [CIntermediateResultUnit]({{ site.dcvb_cpp_api }}core/intermediate-results/intermediate-result-unit.html) -> CScaledUpBarcodeImageUnit
 
 ```cpp
 class CScaledUpBarcodeImageUnit: public CIntermediateResultUnit
@@ -45,7 +45,7 @@ Returns a pointer to the scaled up image of the barcode.
 
 **See Also**
 
-[CImageData]({{ site.dcv_cpp_api }}core/basic-structures/image-data.html)
+[CImageData]({{ site.dcvb_cpp_api }}core/basic-structures/image-data.html)
 
 ### SetImageData
 
@@ -65,4 +65,4 @@ Returns 0 if successful, otherwise returns a negative value.
 
 **See Also**
 
-[CImageData]({{ site.dcv_cpp_api }}core/basic-structures/image-data.html)
+[CImageData]({{ site.dcvb_cpp_api }}core/basic-structures/image-data.html)

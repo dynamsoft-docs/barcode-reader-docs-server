@@ -8,6 +8,7 @@ needAutoGenerateSidebar: false
 
 # Release Notes - C++ Edition
 
+- [10.4.2000 (10/10/2024)]({{ site.dbr_cpp_release_notes }}cpp-10.html#1042000-10102024)
 - [10.4.10 (07/23/2024)]({{ site.dbr_cpp_release_notes }}cpp-10.html#10410-07232024)
 - [10.2.10 (03/01/2024)]({{ site.dbr_cpp_release_notes }}cpp-10.html#10210-03012024)
 - [10.2.0 (01/16/2024)]({{ site.dbr_cpp_release_notes }}cpp-10.html#1020-01162024)

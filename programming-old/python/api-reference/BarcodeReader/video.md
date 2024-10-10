@@ -27,7 +27,7 @@ BarcodeReader.start_video_mode(frame_decoding_parameters, text_result_callback_f
 
 **Parameters**  
 
-`[in] frame_decoding_parameters` <*class FrameDecodingParameters*> : The frame decoding parameters. You can get it by using init_frame_decoding_parameters() then modifying its parameters' value.
+`[in] frame_decoding_parameters` <*class [FrameDecodingParameters](../class/FrameDecodingParameters.md)*> : The frame decoding parameters. You can get it by using init_frame_decoding_parameters() then modifying its parameters' value.
 
 `[in] text_result_callback_func` <*function pointer*> : Sets callback function to process text results which is triggered when the library finishes decoding a frame.
 
@@ -200,7 +200,7 @@ BarcodeReader.init_frame_decoding_parameters()
 ```
 
 **Return Value**  
-`frame_decoding_parameters` <*class FrameDecodingParameters*> : The frame decoding parameters.
+`frame_decoding_parameters` <*class [FrameDecodingParameters](../class/FrameDecodingParameters.md)*> : The frame decoding parameters.
 
 ## get_length_of_frame_queue
 

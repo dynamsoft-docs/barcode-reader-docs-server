@@ -15,7 +15,7 @@ The `CBarcodeResultItem` class represents a barcode result item decoded by barco
 
 *Assembly:* DynamsoftBarcodeReader
 
-*Inheritance:* [CCapturedResultItem]({{ site.dcv_cpp_api }}core/basic-structures/captured-result-item.html) -> CBarcodeResultItem
+*Inheritance:* [CCapturedResultItem]({{ site.dcvb_cpp_api }}core/basic-structures/captured-result-item.html) -> CBarcodeResultItem
 
 ```cpp
 class CBarcodeResultItem : public CCapturedResultItem
@@ -57,7 +57,7 @@ Returns the format of the decoded barcode result.
 
 **See Also**
 
-[Enumeration BarcodeFormat]({{ site.dcv_enumerations }}barcode-reader/barcode-format.html?src=cpp&&lang=cpp)
+[Enumeration BarcodeFormat]({{ site.dcvb_enumerations }}barcode-reader/barcode-format.html?src=cpp&&lang=cpp)
 
 ### GetFormatString
 
@@ -121,7 +121,7 @@ Returns the location of the decoded barcode in a quadrilateral.
 
 **See Also**
 
-[CQuadrilateral]({{ site.dcv_cpp_api }}core/basic-structures/quadrilateral.html)
+[CQuadrilateral]({{ site.dcvb_cpp_api }}core/basic-structures/quadrilateral.html)
 
 ### GetConfidence
 
@@ -222,4 +222,4 @@ Returns an error code. Zero indicates success.
 
 **See Also**
 
-[CQuadrilateral]({{ site.dcv_cpp_api }}core/basic-structures/quadrilateral.html)
+[CQuadrilateral]({{ site.dcvb_cpp_api }}core/basic-structures/quadrilateral.html)

@@ -40,7 +40,7 @@ class CBarcodeResultItem : public CCapturedResultItem
 
 ### Inherited Methods
 
-{%- include inherited-methods/captured-result-item.md -%}
+{%- include inherited-methods/captured-result-item-10.2.10.md -%}
 
 ### GetFormat
 

@@ -127,12 +127,12 @@ The region definition of the frame to calculate the internal indicator.The top-m
 FrameDecodingParameters.region_top
 ```
 
-- **Default Value**  
+**Default Value**  
     0
 
 **Value Range**  
-    - if region_measured_by_percentage = 0, [0,0x7fffffff] 
-    - if region_measured_by_percentage = 1, [0,100] 
+* if region_measured_by_percentage = 0, [0,0x7fffffff] 
+* if region_measured_by_percentage = 1, [0,100] 
 
 ### region_left
 The region definition of the frame to calculate the internal indicator.The left-most coordinate or percentage of the region. 
@@ -141,12 +141,12 @@ The region definition of the frame to calculate the internal indicator.The left-
 FrameDecodingParameters.region_left
 ```
 
-- **Default Value**  
+**Default Value**  
     0
 
 **Value Range**  
-    - if region_measured_by_percentage = 0, [0,0x7fffffff] 
-    - if region_measured_by_percentage = 1, [0,100]
+* if region_measured_by_percentage = 0, [0,0x7fffffff] 
+* if region_measured_by_percentage = 1, [0,100]
 
 ### region_right
 The region definition of the frame to calculate the internal indicator.The right-most coordinate or percentage of the region. 
@@ -155,12 +155,12 @@ The region definition of the frame to calculate the internal indicator.The right
 FrameDecodingParameters.region_right
 ```
 
-- **Default Value**  
+**Default Value**  
     0
 
 **Value Range**  
-    - if region_measured_by_percentage = 0, [0,0x7fffffff] 
-    - if region_measured_by_percentage = 1, [0,100]
+* if region_measured_by_percentage = 0, [0,0x7fffffff] 
+* if region_measured_by_percentage = 1, [0,100]
 
 ### region_bottom
 The region definition of the frame to calculate the internal indicator.The bottom-most coordinate or percentage of the region. 
@@ -169,12 +169,12 @@ The region definition of the frame to calculate the internal indicator.The botto
 FrameDecodingParameters.region_bottom
 ```
 
-- **Default Value**  
+**Default Value**  
     0
 
 **Value Range**  
-    - if region_measured_by_percentage = 0, [0,0x7fffffff] 
-    - if region_measured_by_percentage = 1, [0,100]
+* if region_measured_by_percentage = 0, [0,0x7fffffff] 
+* if region_measured_by_percentage = 1, [0,100]
 
 ### region_measured_by_percentage
 Sets whether or not to use percentage to measure the region size.
@@ -183,25 +183,11 @@ Sets whether or not to use percentage to measure the region size.
 FrameDecodingParameters.region_measured_by_percentage
 ```
 
-- **Default Value**  
+**Default Value**  
     0
 
 **Value Range**  
     [0,1]
-
-### region_top
-The region definition of the frame to calculate the internal indicator.The top-most coordinate or percentage of the region. 
-
-```python
-FrameDecodingParameters.region_top
-```
-
-- **Default Value**  
-    0
-
-**Value Range**  
-    - if region_measured_by_percentage = 0, [0,0x7fffffff] 
-    - if region_measured_by_percentage = 1, [0,100]
 
 ### threshold
 The threshold used for filtering frames.

@@ -11,9 +11,9 @@ Dynamsoft Barcode Reader (DBR) SDK .NET Edition is a barcode reading tool design
 
 Leveraging the efficiency and flexibility of the .NET language, DBR .NET Edition provides rich APIs for developers to easily integrate barcode reading functionality into your .NET applications. Please take a look at [API Reference]({{ site.dbr_dotnet_api}}index.html) to see details.
 
-As one of the functional products of the Dynamsoft Capture Vision (DCV) framework, DBR is also designed to seamlessly integrate with other DCV components and provide developers with a comprehensive set of image processing tools, which cover image capturing, content understanding, result parsing, and interactive workflow. If you are building such a capturing and processing solution, take a look at [Introduction to Dynamsoft Capture Vision]({{site.dcv_introduction}}){:target="_blank"}.
+As one of the functional products of the Dynamsoft Capture Vision (DCV) framework, DBR is also designed to seamlessly integrate with other DCV components and provide developers with a comprehensive set of image processing tools, which cover image capturing, content understanding, result parsing, and interactive workflow. If you are building such a capturing and processing solution, take a look at [Introduction to Dynamsoft Capture Vision]({{site.dcvb_architecture}}).
 
-Furthermore, DBR provides a powerful parameter system in order to cope with various scenarios. Read <a href="{{site.dbr_parameters_reference}}index.html" target="_blank">Parameter Reference</a> for details.
+Furthermore, DBR provides a powerful parameter system in order to cope with various scenarios. Read <a href="{{site.dbr_parameters_reference}}index.html">Parameter Reference</a> for details.
 
 ## Getting Started with DBR .NET Edition
 
@@ -37,7 +37,11 @@ The best way to start with the Dynamsoft Barcode Reader .NET Edition, is followi
 
 ## API Reference
 
-- [API Reference]({{site.dbr_dotnet_api}})
+For an overview of the APIs, see the [API Reference]({{ site.dbr_dotnet_api }}).
+
+## Release Notes
+
+For a peek of DBR .NET Edition history, check the [Release Notes]({{ site.dbr_dotnet_release_notes }}).
 
 ## License Subscription
 
