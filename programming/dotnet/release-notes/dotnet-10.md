@@ -13,17 +13,17 @@ needGenerateH3Content: false
 ### Highlights
 
 - Added to-the-latest overlapping feature.
-- Improved the error handling logic of `Capture`, `StartCapturing` and `InitLicense` methods to clearly report an licensing issue.
+- Improved the error handling logic of `Capture`, `StartCapturing` and `InitLicense` methods to clearly report a licensing issue.
 
 ### Changelogs
 
 #### New
 
-- Added a new functions [`SetMaxOverlappingFrames`]({{ site.dcvb_dotnet_api }}utility/multi-frame-result-cross-filter.html#setmaxoverlappingframes), [`GetMaxOverlappingFrames`]({{ site.dcvb_dotnet_api }}utility/multi-frame-result-cross-filter.html#getmaxoverlappingframes), [`EnableLatestOverlapping`]({{ site.dcvb_dotnet_api }}utility/multi-frame-result-cross-filter.html#enablelatestoverlapping) and [`IsLatestOverlappingEnabled`]({{ site.dcvb_dotnet_api }}utility/multi-frame-result-cross-filter.html#islatestoverlappingenabled) to the class `CMultiFrameResultCrossFilter`.
+- Added new functions [`SetMaxOverlappingFrames`]({{ site.dcvb_dotnet_api }}utility/multi-frame-result-cross-filter.html#setmaxoverlappingframes), [`GetMaxOverlappingFrames`]({{ site.dcvb_dotnet_api }}utility/multi-frame-result-cross-filter.html#getmaxoverlappingframes), [`EnableLatestOverlapping`]({{ site.dcvb_dotnet_api }}utility/multi-frame-result-cross-filter.html#enablelatestoverlapping) and [`IsLatestOverlappingEnabled`]({{ site.dcvb_dotnet_api }}utility/multi-frame-result-cross-filter.html#islatestoverlappingenabled) to the class `CMultiFrameResultCrossFilter`.
 
 - Added new error codes
-  - `EC_LICENSE_WARNING`: The license is initialized successfully but detected invalid content in your key.
-  - `EC_BARCODE_READER_LICENSE_NOT_FOUND`: [Barcode Reader] No license found.
+  - `EC_LICENSE_WARNING`
+  - `EC_BARCODE_READER_LICENSE_NOT_FOUND`
 
 - Added new properties to the [`QRCodeDetails`]({{ site.dbr_dotnet_api }}qr-code-details.html) class
   - [`codewords`]({{ site.dbr_dotnet_api }}qr-code-details.html#codewords)
@@ -32,7 +32,7 @@ needGenerateH3Content: false
 #### Fixed
 
 - Fixed a crash bug caused by the usage of RegEx.
-- Fixed a bug that might cause `GS1_DATABAR_EXPANDED_STACKED` barcode unread.
+- Fixed a bug that could prevent the reading of `GS1_DATABAR_EXPANDED_STACKED` barcodes.
 - Small fixes and tweaks.
 
 #### Changed

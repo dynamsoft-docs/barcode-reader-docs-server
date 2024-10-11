@@ -15,23 +15,23 @@ permalink: /programming/cplusplus/release-notes/cpp-10.html
 
 - Added to-the-latest overlapping feature.
 - Added ARM64 and MacOS components back to the SDK.
-- Improved the error handling logic of `Capture`, `StartCapturing` and `InitLicense` methods to clearly report an licensing issue.
+- Improved the error handling logic of `Capture`, `StartCapturing` and `InitLicense` methods to clearly report a licensing issue.
 
 ### Changelogs
 
 #### New
 
-- Added a new functions [`SetMaxOverlappingFrames`]({{ site.dcvb_cpp_api }}utility/multi-frame-result-cross-filter.html#setmaxoverlappingframes), [`GetMaxOverlappingFrames`]({{ site.dcvb_cpp_api }}utility/multi-frame-result-cross-filter.html#getmaxoverlappingframes), [`EnableLatestOverlapping`]({{ site.dcvb_cpp_api }}utility/multi-frame-result-cross-filter.html#enablelatestoverlapping) and [`IsLatestOverlappingEnabled`]({{ site.dcvb_cpp_api }}utility/multi-frame-result-cross-filter.html#islatestoverlappingenabled) to the class `CMultiFrameResultCrossFilter`.
+- Added new functions [`SetMaxOverlappingFrames`]({{ site.dcvb_cpp_api }}utility/multi-frame-result-cross-filter.html#setmaxoverlappingframes), [`GetMaxOverlappingFrames`]({{ site.dcvb_cpp_api }}utility/multi-frame-result-cross-filter.html#getmaxoverlappingframes), [`EnableLatestOverlapping`]({{ site.dcvb_cpp_api }}utility/multi-frame-result-cross-filter.html#enablelatestoverlapping) and [`IsLatestOverlappingEnabled`]({{ site.dcvb_cpp_api }}utility/multi-frame-result-cross-filter.html#islatestoverlappingenabled) to the class `CMultiFrameResultCrossFilter`.
 
 - Added new error codes
-  - `EC_LICENSE_WARNING`: The license is initialized successfully but detected invalid content in your key.
-  - `EC_BARCODE_READER_LICENSE_NOT_FOUND`: [Barcode Reader] No license found.
+  - `EC_LICENSE_WARNING`
+  - `EC_BARCODE_READER_LICENSE_NOT_FOUND`
 
 
 #### Fixed
 
 - Fixed a crash bug caused by the usage of RegEx.
-- Fixed a bug that might cause `GS1_DATABAR_EXPANDED_STACKED` barcode unread.
+- Fixed a bug that could prevent the reading of `GS1_DATABAR_EXPANDED_STACKED` barcodes.
 - Small fixes and tweaks.
 
 #### Changed
