@@ -15,7 +15,7 @@ Dynamsoft Barcode Reader SDK has been refactored to integrate with [`DynamsoftCa
 
 ### Update the Included Headers, libs & DLLs
 
-Since the SDK architecture is changed, you have to change you code for including the headers, libs and DLLs. You can use the following code to replace your previous code.
+Since the SDK architecture is changed, you have to change your code for including the headers, libs and DLLs. You can use the following code to replace your previous code.
 
 ```cpp
 #include "[INSTALLATION FOLDER]/Include/DynamsoftCaptureVisionRouter.h"
