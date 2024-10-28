@@ -10,24 +10,24 @@ needAutoGenerateSidebar: false
 
 ## DynamsoftCaptureVisionRouter
 
-### [CaptureVisionRouter]({{ site.dcv_python_api }}capture-vision-router/capture-vision-router.html)
+### [CaptureVisionRouter]({{ site.dcvb_python_api }}capture-vision-router/capture-vision-router.html)
 
-- [`Constructor`]({{ site.dcv_python_api }}capture-vision-router/instantiate.html)
-- [`Single-File Processing`]({{ site.dcv_python_api }}capture-vision-router/single-file-processing.html)
-- [`Multiple-File Processing`]({{ site.dcv_python_api }}capture-vision-router/multiple-file-processing.html)
-- [`Settings`]({{ site.dcv_python_api }}capture-vision-router/settings.html)
-- [`Buffered Items`]({{ site.dcv_python_api }}capture-vision-router/buffered-items.html)
+- [`Constructor`]({{ site.dcvb_python_api }}capture-vision-router/instantiate.html)
+- [`Single-File Processing`]({{ site.dcvb_python_api }}capture-vision-router/single-file-processing.html)
+- [`Multiple-File Processing`]({{ site.dcvb_python_api }}capture-vision-router/multiple-file-processing.html)
+- [`Settings`]({{ site.dcvb_python_api }}capture-vision-router/settings.html)
+- [`Buffered Items`]({{ site.dcvb_python_api }}capture-vision-router/buffered-items.html)
 
 ### Classes
 
-- [`CapturedResult`]({{ site.dcv_python_api }}capture-vision-router/auxiliary-classes/captured-result.html)
-- [`CapturedResultFilter`]({{ site.dcv_python_api }}capture-vision-router/auxiliary-classes/captured-result-filter.html)
-- [`CapturedResultReceiver`]({{ site.dcv_python_api }}capture-vision-router/auxiliary-classes/captured-result-receiver.html)
-- [`CaptureVisionRouterModule`]({{ site.dcv_python_api }}capture-vision-router/auxiliary-classes/capture-vision-router-module.html)
-- [`SimplifiedCaptureVisionSettings`]({{ site.dcv_python_api }}capture-vision-router/auxiliary-classes/simplified-capture-vision-settings.html)
-- [`CaptureStateListener`]({{ site.dcv_python_api }}capture-vision-router/auxiliary-classes/capture-state-listener.html)
-- [`ImageSourceStateListener`]({{ site.dcv_python_api }}capture-vision-router/auxiliary-classes/image-source-state-listener.html)
-- [`BufferedItemsManager`]({{ site.dcv_python_api }}capture-vision-router/auxiliary-classes/buffered-items-manager.html)
+- [`CapturedResult`]({{ site.dcvb_python_api }}capture-vision-router/auxiliary-classes/captured-result.html)
+- [`CapturedResultFilter`]({{ site.dcvb_python_api }}capture-vision-router/auxiliary-classes/captured-result-filter.html)
+- [`CapturedResultReceiver`]({{ site.dcvb_python_api }}capture-vision-router/auxiliary-classes/captured-result-receiver.html)
+- [`CaptureVisionRouterModule`]({{ site.dcvb_python_api }}capture-vision-router/auxiliary-classes/capture-vision-router-module.html)
+- [`SimplifiedCaptureVisionSettings`]({{ site.dcvb_python_api }}capture-vision-router/auxiliary-classes/simplified-capture-vision-settings.html)
+- [`CaptureStateListener`]({{ site.dcvb_python_api }}capture-vision-router/auxiliary-classes/capture-state-listener.html)
+- [`ImageSourceStateListener`]({{ site.dcvb_python_api }}capture-vision-router/auxiliary-classes/image-source-state-listener.html)
+- [`BufferedItemsManager`]({{ site.dcvb_python_api }}capture-vision-router/auxiliary-classes/buffered-items-manager.html)
 
 ### Enums
 
@@ -62,19 +62,19 @@ needAutoGenerateSidebar: false
 
 ### Classes
 
-- [`CapturedResultItem`]({{ site.dcv_python_api }}core/basic-classes/captured-result-item.html)
-- [`CoreModule`]({{ site.dcv_python_api }}core/basic-classes/core-module.html)
-- [`FileImageTag`]({{ site.dcv_python_api }}core/basic-classes/file-image-tag.html)
-- [`ImageData`]({{ site.dcv_python_api }}core/basic-classes/image-data.html)
-- [`ImageSourceAdapter`]({{ site.dcv_python_api }}core/basic-classes/image-source-adapter.html)
-- [`ImageSourceErrorListener`]({{ site.dcv_python_api }}core/basic-classes/image-source-error-listener.html)
-- [`ImageTag`]({{ site.dcv_python_api }}core/basic-classes/image-tag.html)
-- [`OriginalImageResultItem`]({{ site.dcv_python_api }}core/basic-classes/original-image-result-item.html)
-- [`PDFReadingParameter`]({{ site.dcv_python_api }}core/basic-classes/pdf-reading-parameter.html)
-- [`Point`]({{ site.dcv_python_api }}core/basic-classes/point.html)
-- [`Quadrilateral`]({{ site.dcv_python_api }}core/basic-classes/quadrilateral.html)
-- [`Rect`]({{ site.dcv_python_api }}core/basic-classes/rect.html)
-- [`VideoFrameTag`]({{ site.dcv_python_api }}core/basic-classes/video-frame-tag.html)
+- [`CapturedResultItem`]({{ site.dcvb_python_api }}core/basic-classes/captured-result-item.html)
+- [`CoreModule`]({{ site.dcvb_python_api }}core/basic-classes/core-module.html)
+- [`FileImageTag`]({{ site.dcvb_python_api }}core/basic-classes/file-image-tag.html)
+- [`ImageData`]({{ site.dcvb_python_api }}core/basic-classes/image-data.html)
+- [`ImageSourceAdapter`]({{ site.dcvb_python_api }}core/basic-classes/image-source-adapter.html)
+- [`ImageSourceErrorListener`]({{ site.dcvb_python_api }}core/basic-classes/image-source-error-listener.html)
+- [`ImageTag`]({{ site.dcvb_python_api }}core/basic-classes/image-tag.html)
+- [`OriginalImageResultItem`]({{ site.dcvb_python_api }}core/basic-classes/original-image-result-item.html)
+- [`PDFReadingParameter`]({{ site.dcvb_python_api }}core/basic-classes/pdf-reading-parameter.html)
+- [`Point`]({{ site.dcvb_python_api }}core/basic-classes/point.html)
+- [`Quadrilateral`]({{ site.dcvb_python_api }}core/basic-classes/quadrilateral.html)
+- [`Rect`]({{ site.dcvb_python_api }}core/basic-classes/rect.html)
+- [`VideoFrameTag`]({{ site.dcvb_python_api }}core/basic-classes/video-frame-tag.html)
 
 ### Enums
 
@@ -93,20 +93,20 @@ needAutoGenerateSidebar: false
 
 ## DynamsoftUtility
 
-- [`DirectoryFetcher`]({{ site.dcv_python_api }}utility/directory-fetcher.html)
-- [`FileFetcher`]({{ site.dcv_python_api }}utility/file-fetcher.html)
-- [`ImageManager`]({{ site.dcv_python_api }}utility/image-manager.html)
-- [`MultiFrameResultCrossFilter`]({{ site.dcv_python_api }}utility/multi-frame-result-cross-filter.html)
-- [`ProactiveImageSourceAdapter`]({{ site.dcv_python_api }}utility/proactive-image-source-adapter.html)
-- [`UtilityModule`]({{ site.dcv_python_api }}utility/utility-module.html)
+- [`DirectoryFetcher`]({{ site.dcvb_python_api }}utility/directory-fetcher.html)
+- [`FileFetcher`]({{ site.dcvb_python_api }}utility/file-fetcher.html)
+- [`ImageManager`]({{ site.dcvb_python_api }}utility/image-manager.html)
+- [`MultiFrameResultCrossFilter`]({{ site.dcvb_python_api }}utility/multi-frame-result-cross-filter.html)
+- [`ProactiveImageSourceAdapter`]({{ site.dcvb_python_api }}utility/proactive-image-source-adapter.html)
+- [`UtilityModule`]({{ site.dcvb_python_api }}utility/utility-module.html)
 
 ## DynamsoftLicense
 
-- [`LicenseManager`]({{ site.dcv_python_api }}license/license-manager.html)
-- [`LicenseModule`]({{ site.dcv_python_api }}license/license-module.html)
+- [`LicenseManager`]({{ site.dcvb_python_api }}license/license-manager.html)
+- [`LicenseModule`]({{ site.dcvb_python_api }}license/license-module.html)
 
 
 ## DynamsoftImageProcessing
 
-- [`ImageProcessingModule`]({{ site.dcv_python_api }}image-processing/image-processing-module.html)
+- [`ImageProcessingModule`]({{ site.dcvb_python_api }}image-processing/image-processing-module.html)
 
