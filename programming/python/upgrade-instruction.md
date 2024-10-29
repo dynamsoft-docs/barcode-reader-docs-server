@@ -43,7 +43,7 @@ The APIs for decoding single image has been adjusted as follows:
 
 ### Update Video Streaming Decoding Code
 
-`ImageSourceAdapter` is added to replace the `FrameDecodeingParameters` and the previous video methods. You should implement `ImageSourceAdapter` to transfer image data from camera or video file to buffer. Checkout the [Video Decoding](https://github.com/Dynamsoft/barcode-reader-python-samples/blob/master/Samples/video_decoding.py) sample for details.
+`ImageSourceAdapter` is added to replace the `FrameDecodeingParameters` and the previous video methods. You should implement `ImageSourceAdapter` to transfer image data from camera or video file to buffer.
 
 
 ### Migrate Your Templates
