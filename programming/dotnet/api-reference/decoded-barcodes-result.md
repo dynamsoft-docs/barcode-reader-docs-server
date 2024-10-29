@@ -99,7 +99,7 @@ Returns an `ImageTag` object representing the tag of the source image.
 
 **See Also**
 
-[ImageTag]({{ site.dcv_dotnet_api }}core/basic-classes/image-tag.html)
+[ImageTag]({{ site.dcvb_dotnet_api }}core/basic-classes/image-tag.html)
 
 ### GetRotationTransformMatrix
 

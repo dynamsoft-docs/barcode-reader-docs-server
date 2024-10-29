@@ -131,7 +131,7 @@ The following properties can only be set via a template file. Please [contact us
 
 #### Migrate to Other APIs
 
-The PDF properties of `PublicRuntimeSetting` are moved to set via the `set_pdf_reading_parameter` method of [`DirectoryFetcher`]({{ site.dcv_python_api }}utility/directory-fetcher.html) and [`FileFetcher`]({{ site.dcv_python_api }}utility/file-fetcher.html) with a [`PDFReadingParameter`]({{ site.dcvb_python_api }}core/basic-classes/pdf-reading-parameter.html) parameter.
+The PDF properties of `PublicRuntimeSetting` are moved to set via the `set_pdf_reading_parameter` method of [`DirectoryFetcher`]({{ site.dcvb_python_api }}utility/directory-fetcher.html) and [`FileFetcher`]({{ site.dcvb_python_api }}utility/file-fetcher.html) with a [`PDFReadingParameter`]({{ site.dcvb_python_api }}core/basic-classes/pdf-reading-parameter.html) parameter.
 
 | PublicRuntimeSetting Property |
 | ----------------------------- |

@@ -9,7 +9,7 @@ needGenerateH3Content: true
 
 # SimplifiedBarcodeReaderSettings
 
-The `SimplifiedBarcodeReaderSettings` class contains settings for barcode decoding. It is a sub-parameter of [`SimplifiedCaptureVisionSettings`]({{ site.dcv_dotnet_api }}capture-vision-router/auxiliary-classes/simplified-capture-vision-settings.html).
+The `SimplifiedBarcodeReaderSettings` class contains settings for barcode decoding. It is a sub-parameter of [`SimplifiedCaptureVisionSettings`]({{ site.dcvb_dotnet_api }}capture-vision-router/auxiliary-classes/simplified-capture-vision-settings.html).
 
 ## Definition
 

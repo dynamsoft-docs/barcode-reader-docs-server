@@ -169,7 +169,7 @@ using Dynamsoft.Utility;
 
 ### Create an ImageSource as the Input
 
-An `ImageSource` is required when creating a multi-image processing application. You can either utilize ready-made image sources such as [`FileFetcher`]({{ site.dcv_dotnet_api }}utility/file-fetcher.html) and [`DirectoryFetcher`]({{ site.dcv_dotnet_api }}utility/directory-fetcher.html), or customize your own image source based on the base class [`ImageSourceAdapter`]({{ site.dcv_dotnet_api }}core/basic-classes/image-source-adapter.html).
+An `ImageSource` is required when creating a multi-image processing application. You can either utilize ready-made image sources such as [`FileFetcher`]({{ site.dcvb_dotnet_api }}utility/file-fetcher.html) and [`DirectoryFetcher`]({{ site.dcvb_dotnet_api }}utility/directory-fetcher.html), or customize your own image source based on the base class [`ImageSourceAdapter`]({{ site.dcvb_dotnet_api }}core/basic-classes/image-source-adapter.html).
 
 In this sample, we will use the `DirectoryFetcher` to retrieve images from a local directory.
 

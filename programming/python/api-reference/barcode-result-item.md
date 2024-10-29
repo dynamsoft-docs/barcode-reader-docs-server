@@ -13,7 +13,7 @@ The `BarcodeResultItem` class represents a barcode result item decoded by barcod
 
 *Module:* dynamsoft_barcode_reader
 
-*Inheritance:* [CapturedResultItem]({{ site.dcv_python_api }}core/basic-classes/captured-result-item.html) -> BarcodeResultItem
+*Inheritance:* [CapturedResultItem]({{ site.dcvb_python_api }}core/basic-classes/captured-result-item.html) -> BarcodeResultItem
 
 ```python
 class BarcodeResultItem(dynamsoft_core.CapturedResultItem)
@@ -101,7 +101,7 @@ Returns the location of the decoded barcode in a quadrilateral.
 
 **See Also**
 
-[Quadrilateral]({{ site.dcv_python_api }}core/basic-classes/quadrilateral.html)
+[Quadrilateral]({{ site.dcvb_python_api }}core/basic-classes/quadrilateral.html)
 
 ### get_confidence
 

@@ -15,7 +15,7 @@ The `BarcodeResultItem` class represents a barcode result item decoded by barcod
 
 *Assembly:* Dynamsoft.BarcodeReader.dll
 
-*Inheritance:* [CapturedResultItem]({{ site.dcv_dotnet_api }}core/basic-classes/captured-result-item.html) -> BarcodeResultItem
+*Inheritance:* [CapturedResultItem]({{ site.dcvb_dotnet_api }}core/basic-classes/captured-result-item.html) -> BarcodeResultItem
 
 ```csharp
 public class BarcodeResultItem : CapturedResultItem
@@ -105,7 +105,7 @@ Returns the location of the decoded barcode in a quadrilateral.
 
 **See Also**
 
-[Quadrilateral]({{ site.dcv_dotnet_api }}core/basic-classes/quadrilateral.html)
+[Quadrilateral]({{ site.dcvb_dotnet_api }}core/basic-classes/quadrilateral.html)
 
 ### GetConfidence
 
@@ -218,4 +218,4 @@ Returns the referenced item in the captured result item.
 
 **See Also**
 
-[CapturedResultItem]({{ site.dcv_dotnet_api }}core/basic-classes/captured-result-item.html)
+[CapturedResultItem]({{ site.dcvb_dotnet_api }}core/basic-classes/captured-result-item.html)

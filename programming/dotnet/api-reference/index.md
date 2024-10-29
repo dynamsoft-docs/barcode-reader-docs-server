@@ -10,26 +10,26 @@ needAutoGenerateSidebar: false
 
 ## DynamsoftCaptureVisionRouter
 
-### [CaptureVisionRouter]({{ site.dcv_dotnet_api }}capture-vision-router/capture-vision-router.html)
+### [CaptureVisionRouter]({{ site.dcvb_dotnet_api }}capture-vision-router/capture-vision-router.html)
 
-- [`Constructor and Destructor`]({{ site.dcv_dotnet_api }}capture-vision-router/instantiate.html)
-- [`Single-File Processing`]({{ site.dcv_dotnet_api }}capture-vision-router/single-file-processing.html)
-- [`Multiple-File Processing`]({{ site.dcv_dotnet_api }}capture-vision-router/multiple-file-processing.html)
-- [`Settings`]({{ site.dcv_dotnet_api }}capture-vision-router/settings.html)
+- [`Constructor and Destructor`]({{ site.dcvb_dotnet_api }}capture-vision-router/instantiate.html)
+- [`Single-File Processing`]({{ site.dcvb_dotnet_api }}capture-vision-router/single-file-processing.html)
+- [`Multiple-File Processing`]({{ site.dcvb_dotnet_api }}capture-vision-router/multiple-file-processing.html)
+- [`Settings`]({{ site.dcvb_dotnet_api }}capture-vision-router/settings.html)
 
 ### Classes
 
-- [`CapturedResult`]({{ site.dcv_dotnet_api }}capture-vision-router/auxiliary-classes/captured-result.html)
-- [`CapturedResultFilter`]({{ site.dcv_dotnet_api }}capture-vision-router/auxiliary-classes/captured-result-filter.html)
-- [`CapturedResultReceiver`]({{ site.dcv_dotnet_api }}capture-vision-router/auxiliary-classes/captured-result-receiver.html)
-- [`CaptureVisionRouterModule`]({{ site.dcv_dotnet_api }}capture-vision-router/auxiliary-classes/capture-vision-router-module.html)
-- [`PresetTemplate`]({{ site.dcv_dotnet_api }}capture-vision-router/auxiliary-classes/preset-template.html)
-- [`SimplifiedCaptureVisionSettings`]({{ site.dcv_dotnet_api }}capture-vision-router/auxiliary-classes/simplified-capture-vision-settings.html)
+- [`CapturedResult`]({{ site.dcvb_dotnet_api }}capture-vision-router/auxiliary-classes/captured-result.html)
+- [`CapturedResultFilter`]({{ site.dcvb_dotnet_api }}capture-vision-router/auxiliary-classes/captured-result-filter.html)
+- [`CapturedResultReceiver`]({{ site.dcvb_dotnet_api }}capture-vision-router/auxiliary-classes/captured-result-receiver.html)
+- [`CaptureVisionRouterModule`]({{ site.dcvb_dotnet_api }}capture-vision-router/auxiliary-classes/capture-vision-router-module.html)
+- [`PresetTemplate`]({{ site.dcvb_dotnet_api }}capture-vision-router/auxiliary-classes/preset-template.html)
+- [`SimplifiedCaptureVisionSettings`]({{ site.dcvb_dotnet_api }}capture-vision-router/auxiliary-classes/simplified-capture-vision-settings.html)
 
 ### Interfaces
 
-- [`ICaptureStateListener`]({{ site.dcv_dotnet_api }}capture-vision-router/auxiliary-classes/capture-state-listener.html)
-- [`IImageSourceStateListener`]({{ site.dcv_dotnet_api }}capture-vision-router/auxiliary-classes/image-source-state-listener.html)
+- [`ICaptureStateListener`]({{ site.dcvb_dotnet_api }}capture-vision-router/auxiliary-classes/capture-state-listener.html)
+- [`IImageSourceStateListener`]({{ site.dcvb_dotnet_api }}capture-vision-router/auxiliary-classes/image-source-state-listener.html)
 
 ### Enums
 
@@ -63,22 +63,22 @@ needAutoGenerateSidebar: false
 
 ### Classes
 
-- [`CapturedResultItem`]({{ site.dcv_dotnet_api }}core/basic-classes/captured-result-item.html)
-- [`CoreModule`]({{ site.dcv_dotnet_api }}core/basic-classes/core-module.html)
-- [`FileImageTag`]({{ site.dcv_dotnet_api }}core/basic-classes/file-image-tag.html)
-- [`ImageData`]({{ site.dcv_dotnet_api }}core/basic-classes/image-data.html)
-- [`ImageSourceAdapter`]({{ site.dcv_dotnet_api }}core/basic-classes/image-source-adapter.html)
-- [`ImageTag`]({{ site.dcv_dotnet_api }}core/basic-classes/image-tag.html)
-- [`OriginalImageResultItem`]({{ site.dcv_dotnet_api }}core/basic-classes/original-image-result-item.html)
-- [`PDFReadingParameter`]({{ site.dcv_dotnet_api }}core/basic-classes/pdf-reading-parameter.html)
-- [`Point`]({{ site.dcv_dotnet_api }}core/basic-classes/point.html)
-- [`Quadrilateral`]({{ site.dcv_dotnet_api }}core/basic-classes/quadrilateral.html)
-- [`Rect`]({{ site.dcv_dotnet_api }}core/basic-classes/rect.html)
-- [`VideoFrameTag`]({{ site.dcv_dotnet_api }}core/basic-classes/video-frame-tag.html)
+- [`CapturedResultItem`]({{ site.dcvb_dotnet_api }}core/basic-classes/captured-result-item.html)
+- [`CoreModule`]({{ site.dcvb_dotnet_api }}core/basic-classes/core-module.html)
+- [`FileImageTag`]({{ site.dcvb_dotnet_api }}core/basic-classes/file-image-tag.html)
+- [`ImageData`]({{ site.dcvb_dotnet_api }}core/basic-classes/image-data.html)
+- [`ImageSourceAdapter`]({{ site.dcvb_dotnet_api }}core/basic-classes/image-source-adapter.html)
+- [`ImageTag`]({{ site.dcvb_dotnet_api }}core/basic-classes/image-tag.html)
+- [`OriginalImageResultItem`]({{ site.dcvb_dotnet_api }}core/basic-classes/original-image-result-item.html)
+- [`PDFReadingParameter`]({{ site.dcvb_dotnet_api }}core/basic-classes/pdf-reading-parameter.html)
+- [`Point`]({{ site.dcvb_dotnet_api }}core/basic-classes/point.html)
+- [`Quadrilateral`]({{ site.dcvb_dotnet_api }}core/basic-classes/quadrilateral.html)
+- [`Rect`]({{ site.dcvb_dotnet_api }}core/basic-classes/rect.html)
+- [`VideoFrameTag`]({{ site.dcvb_dotnet_api }}core/basic-classes/video-frame-tag.html)
 
 ### Interface
 
-- [`IImageSourceErrorListener`]({{ site.dcv_dotnet_api }}core/basic-classes/image-source-error-listener.html)
+- [`IImageSourceErrorListener`]({{ site.dcvb_dotnet_api }}core/basic-classes/image-source-error-listener.html)
 
 ### Enums
 
@@ -97,20 +97,20 @@ needAutoGenerateSidebar: false
 
 ## DynamsoftUtility
 
-- [`DirectoryFetcher`]({{ site.dcv_dotnet_api }}utility/directory-fetcher.html)
-- [`FileFetcher`]({{ site.dcv_dotnet_api }}utility/file-fetcher.html)
-- [`ImageManager`]({{ site.dcv_dotnet_api }}utility/image-manager.html)
-- [`MultiFrameResultCrossFilter`]({{ site.dcv_dotnet_api }}utility/multi-frame-result-cross-filter.html)
-- [`ProactiveImageSourceAdapter`]({{ site.dcv_dotnet_api }}utility/proactive-image-source-adapter.html)
-- [`UtilityModule`]({{ site.dcv_dotnet_api }}utility/utility-module.html)
+- [`DirectoryFetcher`]({{ site.dcvb_dotnet_api }}utility/directory-fetcher.html)
+- [`FileFetcher`]({{ site.dcvb_dotnet_api }}utility/file-fetcher.html)
+- [`ImageManager`]({{ site.dcvb_dotnet_api }}utility/image-manager.html)
+- [`MultiFrameResultCrossFilter`]({{ site.dcvb_dotnet_api }}utility/multi-frame-result-cross-filter.html)
+- [`ProactiveImageSourceAdapter`]({{ site.dcvb_dotnet_api }}utility/proactive-image-source-adapter.html)
+- [`UtilityModule`]({{ site.dcvb_dotnet_api }}utility/utility-module.html)
 
 ## DynamsoftLicense
 
-- [`LicenseManager`]({{ site.dcv_dotnet_api }}license/license-manager.html)
-- [`LicenseModule`]({{ site.dcv_dotnet_api }}license/license-module.html)
+- [`LicenseManager`]({{ site.dcvb_dotnet_api }}license/license-manager.html)
+- [`LicenseModule`]({{ site.dcvb_dotnet_api }}license/license-module.html)
 
 
 ## DynamsoftImageProcessing
 
-- [`ImageProcessingModule`]({{ site.dcv_dotnet_api }}image-processing/image-processing-module.html)
+- [`ImageProcessingModule`]({{ site.dcvb_dotnet_api }}image-processing/image-processing-module.html)
 
