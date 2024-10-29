@@ -97,7 +97,7 @@ Returns an `ImageTag` object representing the tag of the source image.
 
 **See Also**
 
-[ImageTag]({{ site.dcv_python_api }}core/basic-classes/image-tag.html)
+[ImageTag]({{ site.dcvb_python_api }}core/basic-classes/image-tag.html)
 
 ### get_rotation_transform_matrix
 
