@@ -12,6 +12,20 @@ needGenerateH3Content: true
 
 Dynamsoft Barcode Reader SDK has been refactored to integrate with [`DynamsoftCaptureVision (DCV)`]({{ site.dcvb_architecture }}) architecture. To upgrade from version 9.x or earlier to 10.x, we recommend you to follow the [User Guide]({{ site.dbr_python }}user-guide.html) and re-write your codes.
 
+### Update the License Key
+
+#### Request a 30-Day Free Trial License
+
+Visit the [Request a Trial License](https://www.dynamsoft.com/customer/license/trialLicense?product=dbr&utm_source=docs){:target="_blank"} page to obtain a 30-day free license. This option is ideal for initial evaluation or testing of new SDK features.
+
+#### Annual Online Full License
+
+If you are using an Annual Online Full License, your license will continue to work with the current SDK version without the need for updates. Go to <a href="https://www.dynamsoft.com/customer/license/fullLicense" target="_blank">Customer Portal</a> to get your license key.
+
+#### Perpetual License
+
+For users with a Perpetual License, please contact our sales team to update your license. You can reach out through our [Contacting Us](https://www.dynamsoft.com/contact/){:target="_blank"} page for assistance.
+
 ### Migrate to New Package
 
 As of version 10.0, the `dbr` package has been renamed to `dynamsoft_barcode_reader_bundle` to reflect changes in both architecture and API design. Start terminal or command prompt and run the following command to install the new package.
