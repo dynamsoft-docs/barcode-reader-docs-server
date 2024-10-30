@@ -13,6 +13,20 @@ permalink: /programming/cplusplus/upgrade-instruction.html
 
 Dynamsoft Barcode Reader SDK has been refactored to integrate with [`DynamsoftCaptureVision (DCV)`]({{ site.dcvb_architecture }}) architecture. To upgrade from version 9.x or earlier to 10.x, we recommend you to follow the [User Guide]({{site.dbr_cpp}}user-guide.html) and re-write your codes.
 
+### Update the License Key
+
+#### Request a 30-Day Free Trial License
+
+Visit the [Request a Trial License](https://www.dynamsoft.com/customer/license/trialLicense?product=dbr&utm_source=docs){:target="_blank"} page to obtain a 30-day free license. This option is ideal for initial evaluation or testing of new SDK features.
+
+#### Annual Online Full License
+
+If you are using an Annual Online Full License, your license will continue to work with the current SDK version without the need for updates. Go to <a href="https://www.dynamsoft.com/customer/license/fullLicense" target="_blank">Customer Portal</a> to get your license key.
+
+#### Perpetual License
+
+For users with a Perpetual License, please contact our sales team to update your license. You can reach out through our [Contacting Us](https://www.dynamsoft.com/contact/){:target="_blank"} page for assistance.
+
 ### Update the Included Headers, libs & DLLs
 
 Since the SDK architecture is changed, you have to change your code for including the headers, libs and DLLs. You can use the following code to replace your previous code.
