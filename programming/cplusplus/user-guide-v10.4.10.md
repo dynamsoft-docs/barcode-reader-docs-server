@@ -55,7 +55,7 @@ Let's start by creating a console application which demonstrates how to use the 
 
 - For Linux
 
-   Create a new source file named `DBRCPPSample.cpp` and place it into the folder `[INSTALLATION FOLDER]/DynamsoftBarcodeReader/Samples`.
+   Create a new source file named `DBRCPPSample.cpp` and place it into the folder `[INSTALLATION FOLDER]/Dynamsoft/Samples`.
 
 ### Include the Library
 
@@ -64,7 +64,7 @@ Add headers and libs in `DBRCPPSample.cpp`.
 ```cpp
 #include <iostream>
 #include <string>
-#include "[INSTALLATION FOLDER]/DynamsoftBarcodeReader/Include/DynamsoftCaptureVisionRouter.h"
+#include "[INSTALLATION FOLDER]/Dynamsoft/Include/DynamsoftCaptureVisionRouter.h"
 
 using namespace std;
 using namespace dynamsoft::license;
@@ -73,11 +73,11 @@ using namespace dynamsoft::dbr;
 
 #if defined(_WIN64) || defined(_WIN32)
     #ifdef _WIN64
-        #pragma comment(lib, "[INSTALLATION FOLDER]/DynamsoftBarcodeReader/Distributables/Lib/Windows/x64/DynamsoftLicensex64.lib")
-        #pragma comment(lib, "[INSTALLATION FOLDER]/DynamsoftBarcodeReader/Distributables/Lib/Windows/x64/DynamsoftCaptureVisionRouterx64.lib")
+        #pragma comment(lib, "[INSTALLATION FOLDER]/Dynamsoft/Distributables/Lib/Windows/x64/DynamsoftLicensex64.lib")
+        #pragma comment(lib, "[INSTALLATION FOLDER]/Dynamsoft/Distributables/Lib/Windows/x64/DynamsoftCaptureVisionRouterx64.lib")
     #else
-        #pragma comment(lib, "[INSTALLATION FOLDER]/DynamsoftBarcodeReader/Distributables/Lib/Windows/x86/DynamsoftLicensex86.lib")
-        #pragma comment(lib, "[INSTALLATION FOLDER]/DynamsoftBarcodeReader/Distributables/Lib/Windows/x86/DynamsoftCaptureVisionRouterx86.lib")
+        #pragma comment(lib, "[INSTALLATION FOLDER]/Dynamsoft/Distributables/Lib/Windows/x86/DynamsoftLicensex86.lib")
+        #pragma comment(lib, "[INSTALLATION FOLDER]/Dynamsoft/Distributables/Lib/Windows/x86/DynamsoftCaptureVisionRouterx86.lib")
     #endif
 #endif
 ```
@@ -104,7 +104,7 @@ CCaptureVisionRouter* cvr = new CCaptureVisionRouter;
 Decode barcodes from an image file.
 
 ```cpp
-string imageFile = "[PATH-TO-A-BARCODE-IMAGE]";
+string imageFile = "[INSTALLATION FOLDER]/Dynamsoft/Resources/BarcodeReader/Images/GeneralBarcodes.png";
 CCapturedResult* result = cvr->Capture(imageFile.c_str(), CPresetTemplate::PT_READ_BARCODES);
 if (result->GetErrorCode() != 0) {
     cout << "Error: " << result->GetErrorCode() << "," << result->GetErrorString() << endl;
@@ -147,9 +147,9 @@ delete cvr, cvr = NULL;
 
 2. Build the project to generate program `DBRCPPSample.exe`.
 
-3. Copy **ALL** `*.dll` files under `[INSTALLATION FOLDER]/DynamsoftBarcodeReader/Distributables/Lib/Windows/x64` to the same folder as the `DBRCPPSample.exe` ("[PROJECT FOLDER]\DBRCPPSample\x64\Release").
+3. Copy **ALL** `*.dll` files under `[INSTALLATION FOLDER]/Dynamsoft/Distributables/Lib/Windows/x64` to the same folder as the `DBRCPPSample.exe` ("[PROJECT FOLDER]\DBRCPPSample\x64\Release").
    
-4. Copy folder `[INSTALLATION FOLDER]/DynamsoftBarcodeReader/Distributables/Templates` to the same folder as the `DBRCPPSample.exe`.
+4. Copy `[INSTALLATION FOLDER]/Dynamsoft/Distributables/DBR-PresetTemplates.json` to the same folder as the `DBRCPPSample.exe`.
 
 5. Run the program `DBRCPPSample.exe`.
 
@@ -188,11 +188,11 @@ Include additional `DynamsoftUtility` and `DynamsoftCore` module.
 // Add the following lines
 using namespace dynamsoft::utility;
 #ifdef _WIN64
-#pragma comment(lib, "[INSTALLATION FOLDER]/DynamsoftBarcodeReader/Distributables/Lib/Windows/x64/DynamsoftCorex64.lib")
-#pragma comment(lib, "[INSTALLATION FOLDER]/DynamsoftBarcodeReader/Distributables/Lib/Windows/x64/DynamsoftUtilityx64.lib")
+#pragma comment(lib, "[INSTALLATION FOLDER]/Dynamsoft/Distributables/Lib/Windows/x64/DynamsoftCorex64.lib")
+#pragma comment(lib, "[INSTALLATION FOLDER]/Dynamsoft/Distributables/Lib/Windows/x64/DynamsoftUtilityx64.lib")
 #else
-#pragma comment(lib, "[INSTALLATION FOLDER]/DynamsoftBarcodeReader/Distributables/Lib/Windows/x86/DynamsoftCorex86.lib")
-#pragma comment(lib, "[INSTALLATION FOLDER]/DynamsoftBarcodeReader/Distributables/Lib/Windows/x86/DynamsoftUtilityx86.lib")
+#pragma comment(lib, "[INSTALLATION FOLDER]/Dynamsoft/Distributables/Lib/Windows/x86/DynamsoftCorex86.lib")
+#pragma comment(lib, "[INSTALLATION FOLDER]/Dynamsoft/Distributables/Lib/Windows/x86/DynamsoftUtilityx86.lib")
 #endif
 ```
 
