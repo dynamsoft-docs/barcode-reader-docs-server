@@ -4,7 +4,6 @@ title: Explore Features - Dynamsoft Barcode Reader SDK .NET Edition User Guide
 description: This page lists the topics to explore the features of Dynamsoft Barcode Reader .NET Edition.
 keywords: user guide, explore features, .NET
 noTitleIndex: false
-permalink: /programming/dotnet/user-guide/explore-features/index-v9.6.40.html
 ---
 
 # Explore Features
