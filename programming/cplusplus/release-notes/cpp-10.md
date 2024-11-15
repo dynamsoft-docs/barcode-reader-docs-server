@@ -27,6 +27,10 @@ permalink: /programming/cplusplus/release-notes/cpp-10.html
   - `EC_LICENSE_WARNING`
   - `EC_BARCODE_READER_LICENSE_NOT_FOUND`
 
+- Added new properties to the [`CPDF417Details`]({{ site.dbr_cpp_api }}pdf417-details.html) class
+  - [`codewords`]({{ site.dbr_cpp_api }}pdf417-details.html#codewords)
+  - [`codewordsCount`]({{ site.dbr_cpp_api }}pdf417-details.html#codewordscount)
+
 
 #### Fixed
 

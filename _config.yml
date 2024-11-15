@@ -59,6 +59,12 @@ dbr_python_class: /barcode-reader/docs/server/programming/python/api-reference/c
 dbr_python_release_notes: /barcode-reader/docs/server/programming/python/release-notes/
 dbr_python_enumerations: /barcode-reader/docs/server/programming/python/api-reference/enumeration/
 
+
+dbr_js: /barcode-reader/docs/web/programming/javascript/
+dbr_android: /barcode-reader/docs/mobile/programming/android/
+dbr_ios: /barcode-reader/docs/mobile/programming/objectivec-swift/
+dbr_maui: /barcode-reader/docs/mobile/programming/maui/
+
 assets: /barcode-reader/docs/server/assets/
 edit_icon: /barcode-reader/docs/server/assets/img-icon/edit-icon.png
 smile_icon: /barcode-reader/docs/server/assets/img-icon/icon-smile.png
