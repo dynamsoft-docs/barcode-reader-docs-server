@@ -3,7 +3,6 @@ layout: default-layout
 title: CPDF417Details Class - Dynamsoft Barcode Reader C++ Edition API Reference
 description: This page shows CPDF417Details class definition of Dynamsoft Barcode Reader SDK C++ Edition.
 keywords: rows, columns, errorCorrectionLevel, CPDF417Details, api reference
-permalink: /programming/cplusplus/api-reference/pdf417-details.html
 ---
 # CPDF417Details
 
@@ -30,6 +29,8 @@ class CPDF417Details : public CBarcodeDetails
 | [`errorCorrectionLevel`](#errorcorrectionlevel) | *int* |
 | [`hasLeftRowIndicator`](#hasleftrowindicator) | *int* |
 | [`hasRightRowIndicator`](#hasrightrowindicator) | *int* |
+| [`codewords`](#codewords) | *unsigned int\** |
+| [`codewordsCount`](#codewordscount) | *int* |
 
 ### rows
 
@@ -69,4 +70,20 @@ Specifies whether the right row indicator of the PDF417 code exists.
 
 ```cpp
 int hasRightRowIndicator
+```
+
+### codewords
+
+The codewords of the PDF417 barcode.
+
+```cpp
+unsigned int* codewords
+```
+
+### codewordsCount
+
+The count of the codewords.
+
+```cpp
+int codewordsCount
 ```
