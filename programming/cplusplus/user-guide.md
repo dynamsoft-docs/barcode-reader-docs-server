@@ -135,6 +135,8 @@ else
 ### Release the Allocated Memory
 
 ```cpp
+if (barcodeResult)
+    barcodeResult->Release();
 result->Release();
 delete cvr, cvr = NULL;
 ```
