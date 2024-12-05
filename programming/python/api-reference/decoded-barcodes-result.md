@@ -13,7 +13,7 @@ The `DecodedBarcodesResult` class represents the result of a barcode reading pro
 *Module:* dynamsoft_barcode_reader
 
 ```python
-class DecodedBarcodesResult(object)
+class DecodedBarcodesResult
 ```
 
 ## Methods

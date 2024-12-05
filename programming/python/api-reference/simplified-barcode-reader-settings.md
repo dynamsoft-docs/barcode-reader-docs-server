@@ -16,7 +16,7 @@ The `SimplifiedBarcodeReaderSettings` class contains settings for barcode decodi
 *Module:* dynamsoft_barcode_reader
 
 ```python
-class SimplifiedBarcodeReaderSettings(object)
+class SimplifiedBarcodeReaderSettings
 ```
 
 ## Properties

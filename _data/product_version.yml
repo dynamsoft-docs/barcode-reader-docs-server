@@ -4,6 +4,7 @@ version_info_list_desktop:
   - value: latest version
   - value: 10.x
     child:
+      - 10.4.2100_python
       - 10.4.2000_python
       - 10.4.10_cplusplus
       - 10.2.10_cplusplus

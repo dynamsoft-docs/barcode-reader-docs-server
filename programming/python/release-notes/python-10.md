@@ -8,6 +8,13 @@ needGenerateH3Content: false
 
 # Release Notes for Python Edition - 10.x
 
+## 10.5.2100 (12/05/2024)
+
+### New
+
+- Added `Intermediate Results`, completing DCV's feature set with real-time feedback and interactivity. Learn more about [Bidirectional Interactivity with Intermediate Results]({{ site.dcvb_architecture}}index.html#bidirectional-interactivity-with-intermediate-results).
+- Added support for Python 3.13.
+
 ## 10.4.2100 (11/07/2024)
 
 ### New

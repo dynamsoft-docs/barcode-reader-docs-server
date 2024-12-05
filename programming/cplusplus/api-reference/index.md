@@ -49,12 +49,14 @@ needAutoGenerateSidebar: false
 - [`CBarcodeDetails`]({{ site.dbr_cpp_api }}barcode-details.html)
 - [`CBarcodeReaderModule`]({{ site.dbr_cpp_api }}barcode-reader-module.html)
 - [`CBarcodeResultItem`]({{ site.dbr_cpp_api }}barcode-result-item.html)
+- [`CCandidateBarcodeZone`]({{ site.dbr_cpp_api }}candidate-barcode-zone.html)
 - [`CCandidateBarcodeZonesUnit`]({{ site.dbr_cpp_api }}candidate-barcode-zones-unit.html)
 - [`CComplementedBarcodeImageUnit`]({{ site.dbr_cpp_api }}complemented-barcode-image-unit.html)
 - [`CDataMatrixDetails`]({{ site.dbr_cpp_api }}datamatrix-details.html)
 - [`CDecodedBarcodeElement`]({{ site.dbr_cpp_api }}decoded-barcode-element.html)
 - [`CDecodedBarcodesResult`]({{ site.dbr_cpp_api }}decoded-barcodes-result.html)
 - [`CDecodedBarcodesUnit`]({{ site.dbr_cpp_api }}decoded-barcodes-unit.html)
+- [`CDeformationResistedBarcode`]({{ site.dbr_cpp_api }}deformation-resisted-barcode.html)
 - [`CDeformationResistedBarcodeImageUnit`]({{ site.dbr_cpp_api }}deformation-resisted-barcode-image-unit.html)
 - [`CExtendedBarcodeResult`]({{ site.dbr_cpp_api }}extended-barcode-result.html)
 - [`CLocalizedBarcodeElement`]({{ site.dbr_cpp_api }}localized-barcode-element.html)
@@ -142,7 +144,7 @@ needAutoGenerateSidebar: false
 - [`RasterDataSource`]({{ site.dcvb_enumerations }}core/raster-data-source.html?lang=cpp)
 - [`RegionObjectElementType`]({{ site.dcvb_enumerations }}core/region-object-element-type.html?lang=cpp)
 - [`SectionType`]({{ site.dcvb_enumerations }}core/section-type.html?lang=cpp)
-- [`TargetType`]({{ site.dcvb_enumerations }}core/target-type.html?lang=cpp)
+- [`TransformMatrixType`]({{ site.dcvb_enumerations }}core/transform-matrix-type.html?lang=cpp)
 - [`VideoFrameQuality`]({{ site.dcvb_enumerations }}core/video-frame-quality.html?lang=cpp)
 
 ## DynamsoftUtility
