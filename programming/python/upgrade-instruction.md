@@ -40,7 +40,7 @@ Starting from 10.0, we have unified the API for setting licenses across differen
 
 | Old APIs | New APIs |
 | :----------- | :------- |
-| `BarcodeReader.init_license` | `LicenseManager.init_license` |
+| `BarcodeReader.init_license` | [`LicenseManager.init_license`]({{ site.dcvb_python_api }}license/license-manager.html#init_license) |
 
 ### Update Single Image Decoding APIs
 
@@ -48,12 +48,12 @@ The APIs for decoding single image has been adjusted as follows:
 
 | Old APIs | New APIs |
 | :----------- | :------- |
-| `BarcodeReader.decode_file` | `CaptureVisionRouter.capture(self, *args) -> CapturedResult` |
-| `BarcodeReader.decode_file_stream` | `CaptureVisionRouter.capture(self, *args) -> CapturedResult` |
-| `BarcodeReader.decode_buffer_manually` | `CaptureVisionRouter.capture(self, *args) -> CapturedResult` |
-| `class TextResult` | `class BarcodeResultItem` |
+| `BarcodeReader.decode_file` | [`CaptureVisionRouter.capture`]({{ site.dcvb_python_api }}capture-vision-router/single-file-processing.html#capture) |
+| `BarcodeReader.decode_file_stream` | [`CaptureVisionRouter.capture`]({{ site.dcvb_python_api }}capture-vision-router/single-file-processing.html#capture) |
+| `BarcodeReader.decode_buffer_manually` | [`CaptureVisionRouter.capture`]({{ site.dcvb_python_api }}capture-vision-router/single-file-processing.html#capture) |
+| `class TextResult` | [`class BarcodeResultItem`]({{ site.dbr_python_api }}barcode-result-item.html) |
 | `BarcodeReader.decode_base64_string` | **Currently not available**. |
-| `BarcodeReader.decode_buffer` | **Currently not available**. |
+| `BarcodeReader.decode_buffer` | [`CaptureVisionRouter.capture`]({{ site.dcvb_python_api }}capture-vision-router/single-file-processing.html#capture)(Available since v10.4.2100) |
 
 ### Update Video Streaming Decoding Code
 
@@ -68,11 +68,11 @@ The template-based APIs have been updated as follows:
 
 | Old APIs | New APIs |
 | :----------- | :------- |
-| `BarcodeReader.init_runtime_settings_with_file` | `CaptureVisionRouter.init_settings_from_file` |
-| `BarcodeReader.init_runtime_settings_with_string` | `CaptureVisionRouter.init_settings` |
-| `BarcodeReader.output_settings_to_json_file` | `CaptureVisionRouter.output_settings_to_file` |
-| `BarcodeReader.output_settings_to_json_string` | `CaptureVisionRouter.output_settings` |
-| `BarcodeReader.reset_runtime_settings` | `CaptureVisionRouter.reset_settings` |
+| `BarcodeReader.init_runtime_settings_with_file` | [`CaptureVisionRouter.init_settings_from_file`]({{ site.dcvb_python_api }}capture-vision-router/settings.html#init_settings_from_file) |
+| `BarcodeReader.init_runtime_settings_with_string` | [`CaptureVisionRouter.init_settings`]({{ site.dcvb_python_api }}capture-vision-router/settings.html#init_settings) |
+| `BarcodeReader.output_settings_to_json_file` | [`CaptureVisionRouter.output_settings_to_file`]({{ site.dcvb_python_api }}capture-vision-router/settings.html#output_settings_to_file) |
+| `BarcodeReader.output_settings_to_json_string` | [`CaptureVisionRouter.output_settings`]({{ site.dcvb_python_api }}capture-vision-router/settings.html#output_settings) |
+| `BarcodeReader.reset_runtime_settings` | [`CaptureVisionRouter.reset_settings`]({{ site.dcvb_python_api }}capture-vision-router/settings.html#reset_settings) |
 | `BarcodeReader.append_template_file_to_runtime_settings` | **Not available**. |
 | `BarcodeReader.append_template_string_to_runtime_settings` | **Not available**. |
 | `BarcodeReader.get_all_template_names` | **Not available**. |
@@ -85,8 +85,8 @@ The APIs for accessing and updating runtime settings has been adjusted as follow
 
 | Old APIs | New APIs |
 | :----------- | :------- |
-| `BarcodeReader.get_runtime_settings` | `CaptureVisionRouter.get_simplified_settings` |
-| `BarcodeReader.update_runtime_settings` | `CaptureVisionRouter.update_settings` |
+| `BarcodeReader.get_runtime_settings` | [`CaptureVisionRouter.get_simplified_settings`]({{ site.dcvb_python_api }}capture-vision-router/settings.html#get_simplified_settings) |
+| `BarcodeReader.update_runtime_settings` | [`CaptureVisionRouter.update_settings`]({{ site.dcvb_python_api }}capture-vision-router/settings.html#update_settings) |
 
 #### Migrate to SimplifiedCaptureVisionSettings
 
