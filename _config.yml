@@ -102,7 +102,6 @@ defaults:
     values:
       docRootName: "Barcode Reader C Edition" 
       docHomePage: "/barcode-reader/docs/server/programming/c/"
-      ignore: true
   - scope:
       path: "programming/cplusplus"
     values:
@@ -151,7 +150,6 @@ defaults:
     values:
       docRootName: "Barcode Reader Java Edition" 
       docHomePage: "/barcode-reader/docs/server/programming/java/"
-      ignore: true
   - scope:
       path: ""
     values:
