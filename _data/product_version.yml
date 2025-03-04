@@ -6,6 +6,7 @@ version_info_list_desktop:
     child:
       - 10.4.2100_python
       - 10.4.2000_python
+      - 10.4.2000_cplusplus
       - 10.4.10_cplusplus
       - 10.2.10_cplusplus
       - 10.2.0_cplusplus

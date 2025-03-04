@@ -57,7 +57,7 @@ Returns the format of the decoded barcode result.
 
 **See Also**
 
-[Enumeration BarcodeFormat]({{ site.dcvb_enumerations }}barcode-reader/barcode-format.html?src=cpp&&lang=cpp)
+[Enumeration BarcodeFormat]({{ site.dbr_cpp_api }}enum-barcode-format.html?src=cpp&&lang=cpp)
 
 ### GetFormatString
 
