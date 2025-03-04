@@ -98,7 +98,7 @@ Returns the posssible formats of the candidate barcode.
 
 **See Also**
 
-[BarcodeFormat]({{ site.dbr_cpp_api }}enum-barcode-format.html?src=cpp&&lang=cpp)
+[BarcodeFormat]({{ site.dcvb_enumerations }}barcode-reader/barcode-format.html?src=cpp&&lang=cpp)
 
 ### SetPossibleFormats
 
@@ -114,4 +114,4 @@ void SetPossibleFormats(unsigned long long formats);
 
 **See Also**
 
-[BarcodeFormat]({{ site.dbr_cpp_api }}enum-barcode-format.html?src=cpp&&lang=cpp)
+[BarcodeFormat]({{ site.dcvb_enumerations }}barcode-reader/barcode-format.html?src=cpp&&lang=cpp)

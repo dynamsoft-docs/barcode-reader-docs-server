@@ -82,7 +82,7 @@ Returns the format of the deformation resisted barcode.
 
 **See Also**
 
-[BarcodeFormat]({{ site.dbr_cpp_api }}enum-barcode-format.html?src=cpp&&lang=cpp)
+[BarcodeFormat]({{ site.dcvb_enumerations }}barcode-reader/barcode-format.html?src=cpp&&lang=cpp)
 
 ### SetFormat
 
@@ -98,7 +98,7 @@ void SetFormat(BarcodeFormat format);
 
 **See Also**
 
-[BarcodeFormat]({{ site.dbr_cpp_api }}enum-barcode-format.html?src=cpp&&lang=cpp)
+[BarcodeFormat]({{ site.dcvb_enumerations }}barcode-reader/barcode-format.html?src=cpp&&lang=cpp)
 
 ### GetImageData
 
