@@ -18,7 +18,6 @@ needGenerateH3Content: false
 
 - Deep Learning Integration
   - Improved the reading rate of 1D barcode by introducing a new deblurring deep-learning model.
-  - Lowered the error rate of 1D and DataMatrix barcode localization using custom deep-learning object detection.
 
 - Algorithm Enhancements
   - Enabled deduplication at the Region of Interest (ROI) level to consolidate results from multiple tasks.
