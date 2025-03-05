@@ -162,7 +162,7 @@ delete cvr, cvr = NULL;
    Open a terminal and change to the target directory where `DBRCPPSample.cpp` is located. Build the sample:
 
     ```bash
-    g++ -o DBRCPPSample DBRCPPSample.cpp -lDynamsoftCaptureVisionRouter -lDynamsoftLicense -L ../Dist/Lib/Linux/x64 -Wl,-rpath=../Dist/Lib/Linux/x64 -std=c++11
+    g++ -o DBRCPPSample DBRCPPSample.cpp -lDynamsoftCaptureVisionRouter -lDynamsoftLicense -lDynamsoftCore -lDynamsoftUtility -L ../Dist/Lib/Linux/x64 -Wl,-rpath=../Dist/Lib/Linux/x64 -std=c++11
     cp ../Dist/DBR-PresetTemplates.json ../Dist/Lib/Linux/x64
     ```
 
