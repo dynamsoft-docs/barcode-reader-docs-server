@@ -1,24 +1,11 @@
 tree_file_list:
   - sidelist-full-tree.html
-  - sidelist-programming/programming-python.html
-  - sidelist-programming/programming-python-v8.9.3.html
-  - sidelist-programming/programming-python-v8.4.0.html
-  - sidelist-programming/programming-python-v9.4.0.html
-  - sidelist-programming/programming-python-v9.6.20.html
-  - sidelist-programming/programming-python-v9.6.40.html
-  - sidelist-programming/programming-python-v10.4.2100.html
-  - sidelist-programming/programming-java.html
-  - sidelist-programming/programming-java-v8.9.3.html
-  - sidelist-programming/programming-java-v8.4.0.html
-  - sidelist-programming/programming-java-v9.6.20.html
-  - sidelist-programming/programming-dotnet.html
-  - sidelist-programming/programming-dotnet-v8.9.3.html
-  - sidelist-programming/programming-dotnet-v8.4.0.html
-  - sidelist-programming/programming-dotnet-v9.6.20.html
-  - sidelist-programming/programming-dotnet-v9.6.40.html
-  - sidelist-programming/programming-cpp.html
-  - sidelist-programming/programming-cpp-v8.9.3.html
+  - sidelist-programming/programming-c-v8.4.0.html
+  - sidelist-programming/programming-c-v8.9.3.html
+  - sidelist-programming/programming-c-v9.6.20.html
+  - sidelist-programming/programming-c.html
   - sidelist-programming/programming-cpp-v8.4.0.html
+  - sidelist-programming/programming-cpp-v8.9.3.html
   - sidelist-programming/programming-cpp-v9.6.20.html
   - sidelist-programming/programming-cpp-v9.6.40.html
   - sidelist-programming/programming-cpp-v10.0.0.html
@@ -27,16 +14,30 @@ tree_file_list:
   - sidelist-programming/programming-cpp-v10.2.0.html
   - sidelist-programming/programming-cpp-v10.4.10.html
   - sidelist-programming/programming-cpp-v10.4.2000.html
-  - sidelist-programming/programming-c.html
-  - sidelist-programming/programming-c-v8.9.3.html
-  - sidelist-programming/programming-c-v8.4.0.html
-  - sidelist-programming/programming-c-v9.6.20.html
+  - sidelist-programming/programming-cpp.html
+  - sidelist-programming/programming-dotnet-v8.4.0.html
+  - sidelist-programming/programming-dotnet-v8.9.3.html
+  - sidelist-programming/programming-dotnet-v9.6.20.html
+  - sidelist-programming/programming-dotnet-v9.6.40.html
+  - sidelist-programming/programming-dotnet.html
+  - sidelist-programming/programming-java-v8.4.0.html
+  - sidelist-programming/programming-java-v8.9.3.html
+  - sidelist-programming/programming-java-v9.6.20.html
+  - sidelist-programming/programming-java.html
+  - sidelist-programming/programming-python-v8.4.0.html
+  - sidelist-programming/programming-python-v8.9.3.html
+  - sidelist-programming/programming-python-v9.4.0.html
+  - sidelist-programming/programming-python-v9.6.20.html
+  - sidelist-programming/programming-python-v9.6.40.html
+  - sidelist-programming/programming-python-v10.4.2100.html
+  - sidelist-programming/programming-python.html
   - sidelist-programming/sidelist-architecture.html
+  - sidelist-programming/sidelist-faq.html
+  - sidelist-programming/sidelist-parameter-reference-v10.5.2100.html
   - sidelist-programming/sidelist-parameter-reference.html
   - sidelist-programming/sidelist-parameters-organization-v10.5.2100.html
   - sidelist-programming/sidelist-parameters-organization.html
   - sidelist-programming/sidelist-performance.html
-  - sidelist-programming/sidelist-understanding.html
   - sidelist-programming/sidelist-understanding-v10.5.2100.html
-  - sidelist-programming/sidelist-faq.html
+  - sidelist-programming/sidelist-understanding.html
   
