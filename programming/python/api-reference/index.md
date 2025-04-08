@@ -34,9 +34,9 @@ needAutoGenerateSidebar: false
 
 ### Enums
 
-- [`EnumCaptureState`]({{ site.dcvb_python_api }}capture-vision-router/enum-capture-state.html?lang=python)
-- [`EnumImageSourceState`]({{ site.dcvb_python_api }}capture-vision-router/enum-image-source-state.html?lang=python)
-- [`EnumPresetTemplate`]({{ site.dcvb_python_api }}capture-vision-router/enum-preset-template.html?lang=python)
+- [`EnumCaptureState`]({{ site.dcvb_python_api }}capture-vision-router/enum-capture-state.html)
+- [`EnumImageSourceState`]({{ site.dcvb_python_api }}capture-vision-router/enum-image-source-state.html)
+- [`EnumPresetTemplate`]({{ site.dcvb_python_api }}capture-vision-router/enum-preset-template.html)
 
 ## DynamsoftBarcodeReader
 
@@ -66,11 +66,11 @@ needAutoGenerateSidebar: false
 
 ### Enums
 
-- [`EnumBarcodeFormat`]({{ site.dbr_python_api }}enum-barcode-format.html?lang=python)
-- [`EnumDeblurMode`]({{ site.dbr_python_api }}enum-deblur-mode.html?lang=python)
-- [`EnumExtendedBarcodeResultType`]({{ site.dbr_python_api }}enum-extended-barcode-result-type.html?lang=python)
-- [`EnumLocalizationMode`]({{ site.dbr_python_api }}enum-localization-mode.html?lang=python)
-- [`EnumQRCodeErrorCorrectionLevel`]({{ site.dbr_python_api }}enum-qr-code-error-correction-level.html?lang=python)
+- [`EnumBarcodeFormat`]({{ site.dbr_python_api }}enum-barcode-format.html)
+- [`EnumDeblurMode`]({{ site.dbr_python_api }}enum-deblur-mode.html)
+- [`EnumExtendedBarcodeResultType`]({{ site.dbr_python_api }}enum-extended-barcode-result-type.html)
+- [`EnumLocalizationMode`]({{ site.dbr_python_api }}enum-localization-mode.html)
+- [`EnumQRCodeErrorCorrectionLevel`]({{ site.dbr_python_api }}enum-qr-code-error-correction-level.html)
 
 ## DynamsoftCore
 
@@ -121,25 +121,25 @@ needAutoGenerateSidebar: false
 
 ### Enums
 
-- [`EnumBufferOverflowProtectionMode`]({{ site.dcvb_python_api }}core/enum-buffer-overflow-protection-mode.html?lang=python)
-- [`EnumCapturedResultItemType`]({{ site.dcvb_python_api }}core/enum-captured-result-item-type.html?lang=python)
-- [`EnumColourChannelUsageType`]({{ site.dcvb_python_api }}core/enum-colour-channel-usage-type.html?lang=python)
-- [`EnumCornerType`]({{ site.dcvb_python_api }}core/enum-corner-type.html?lang=python)
-- [`EnumCrossVerificationStatus`]({{ site.dcvb_python_api }}core/enum-cross-verification-status.html?lang=python)
-- [`EnumErrorCode`]({{ site.dcvb_python_api }}core/enum-error-code.html?lang=python)
-- [`EnumGrayscaleEnhancementMode`]({{ site.dcvb_python_api }}core/enum-grayscale-enhancement-mode.html?lang=python)
-- [`EnumGrayscaleTransformationMode`]({{ site.dcvb_python_api }}core/enum-grayscale-transformation-mode.html?lang=python)
-- [`EnumImageCaptureDistanceMode`]({{ site.dcvb_python_api }}core/enum-image-capture-distance-mode.html?lang=python)
-- [`EnumImageFileFormat`]({{ site.dcvb_python_api }}core/enum-image-file-format.html?lang=python)
-- [`EnumImagePixelFormat`]({{ site.dcvb_python_api }}core/enum-image-pixel-format.html?lang=python)
-- [`EnumImageTagType`]({{ site.dcvb_python_api }}core/enum-image-tag-type.html?lang=python)
-- [`IntermediateResultUnitType`]({{ site.dcvb_python_api }}core/enum-intermediate-result-unit-type.html?lang=python)
-- [`EnumPDFReadingMode`]({{ site.dcvb_python_api }}core/enum-pdf-reading-mode.html?lang=python)                
-- [`EnumRasterDataSource`]({{ site.dcvb_python_api }}core/enum-raster-data-source.html?lang=python)
-- [`EnumRegionObjectElementType`]({{ site.dcvb_python_api }}core/enum-region-object-element-type.html?lang=python)
-- [`EnumSectionType`]({{ site.dcvb_python_api }}core/enum-section-type.html?lang=python)
-- [`EnumTransformMatrixType`]({{ site.dcvb_python_api }}core/enum-transform-matrix-type.html?lang=python)
-- [`EnumVideoFrameQuality`]({{ site.dcvb_python_api }}core/enum-video-frame-quality.html?lang=python)
+- [`EnumBufferOverflowProtectionMode`]({{ site.dcvb_python_api }}core/enum-buffer-overflow-protection-mode.html)
+- [`EnumCapturedResultItemType`]({{ site.dcvb_python_api }}core/enum-captured-result-item-type.html)
+- [`EnumColourChannelUsageType`]({{ site.dcvb_python_api }}core/enum-colour-channel-usage-type.html)
+- [`EnumCornerType`]({{ site.dcvb_python_api }}core/enum-corner-type.html)
+- [`EnumCrossVerificationStatus`]({{ site.dcvb_python_api }}core/enum-cross-verification-status.html)
+- [`EnumErrorCode`]({{ site.dcvb_python_api }}core/enum-error-code.html)
+- [`EnumGrayscaleEnhancementMode`]({{ site.dcvb_python_api }}core/enum-grayscale-enhancement-mode.html)
+- [`EnumGrayscaleTransformationMode`]({{ site.dcvb_python_api }}core/enum-grayscale-transformation-mode.html)
+- [`EnumImageCaptureDistanceMode`]({{ site.dcvb_python_api }}core/enum-image-capture-distance-mode.html)
+- [`EnumImageFileFormat`]({{ site.dcvb_python_api }}core/enum-image-file-format.html)
+- [`EnumImagePixelFormat`]({{ site.dcvb_python_api }}core/enum-image-pixel-format.html)
+- [`EnumImageTagType`]({{ site.dcvb_python_api }}core/enum-image-tag-type.html)
+- [`IntermediateResultUnitType`]({{ site.dcvb_python_api }}core/enum-intermediate-result-unit-type.html)
+- [`EnumPDFReadingMode`]({{ site.dcvb_python_api }}core/enum-pdf-reading-mode.html)                
+- [`EnumRasterDataSource`]({{ site.dcvb_python_api }}core/enum-raster-data-source.html)
+- [`EnumRegionObjectElementType`]({{ site.dcvb_python_api }}core/enum-region-object-element-type.html)
+- [`EnumSectionType`]({{ site.dcvb_python_api }}core/enum-section-type.html)
+- [`EnumTransformMatrixType`]({{ site.dcvb_python_api }}core/enum-transform-matrix-type.html)
+- [`EnumVideoFrameQuality`]({{ site.dcvb_python_api }}core/enum-video-frame-quality.html)
 
 ## DynamsoftUtility
 
@@ -156,7 +156,7 @@ needAutoGenerateSidebar: false
 
 ### Enums
 
-- [`FilterType`]({{ site.dcvb_python_api }}utility/enum-filter-type.html?lang=python)
+- [`FilterType`]({{ site.dcvb_python_api }}utility/enum-filter-type.html)
 
 ## DynamsoftLicense
 
