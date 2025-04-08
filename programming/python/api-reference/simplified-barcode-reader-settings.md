@@ -39,7 +39,7 @@ class SimplifiedBarcodeReaderSettings
 
 Specifies the targeting format(s) of the barcode(s) to be decoded.
 
-It is a bitwise OR combination of one or more values from the [`EnumBarcodeFormat`]({{ site.dcvb_enumerations }}barcode-reader/barcode-format.html?lang=python) enumeration.
+It is a bitwise OR combination of one or more values from the [`EnumBarcodeFormat`]({{ site.dbr_python_api }}enum-barcode-format.html?lang=python) enumeration.
 
 ### expected_barcodes_count
 
@@ -56,7 +56,7 @@ Specifies the expected barcode count. The default value is 0.
 
 Specifies how grayscale transformations should be applied, including whether to process inverted grayscale images and the specific transformation mode to use.
 
-It is a list of 8 integers, where each integer represents a mode specified by the [`EnumGrayscaleTransformationMode`]({{ site.dcvb_enumerations }}core/grayscale-transformation-mode.html?lang=python) enumeration.
+It is a list of 8 integers, where each integer represents a mode specified by the [`EnumGrayscaleTransformationMode`]({{ site.dcvb_python_api }}core/enum-grayscale-transformation-mode.html?lang=python) enumeration.
 
 View the parameter reference page of <a href="{{ site.dcvb_parameters_reference }}image-parameter/grayscale-transformation-modes.html">`GrayscaleTransformationModes`</a> for more detail about grayscale transformation modes.
 
@@ -64,7 +64,7 @@ View the parameter reference page of <a href="{{ site.dcvb_parameters_reference 
 
 Specifies how to enhance the quality of the grayscale image.
 
-It is a list of 8 integers, where each integer represents a mode specified by the [`EnumGrayscaleEnhancementMode`]({{ site.dcvb_enumerations }}core/grayscale-enhancement-mode.html?lang=python) enumeration.
+It is a list of 8 integers, where each integer represents a mode specified by the [`EnumGrayscaleEnhancementMode`]({{ site.dcvb_python_api }}core/enum-grayscale-enhancement-mode.html?lang=python) enumeration.
 
 View the parameter reference page of <a href="{{ site.dcvb_parameters_reference }}image-parameter/grayscale-enhancement-modes.html">`GrayscaleEnhancementModes`</a> for more detail about grayscale enhancement modes.
 
@@ -72,7 +72,7 @@ View the parameter reference page of <a href="{{ site.dcvb_parameters_reference 
 
 Specifies how to localize barcodes. 
 
-It is a list of 8 integers, where each integer represents a mode specified by the [`EnumLocalizationMode`]({{ site.dcvb_enumerations }}barcode-reader/localization-mode.html?lang=python) enumeration.
+It is a list of 8 integers, where each integer represents a mode specified by the [`EnumLocalizationMode`]({{ site.dbr_python_api }}enum-localization-mode.html?lang=python) enumeration.
 
 View the parameter reference page of <a href="{{ site.dcvb_parameters_reference }}barcode-reader-task-settings/localization-modes.html">`LocalizationModes`</a> for more detail about location modes.
 
@@ -80,7 +80,7 @@ View the parameter reference page of <a href="{{ site.dcvb_parameters_reference 
 
 Specifies the mode and priority for deblurring. 
 
-It is a list of 10 integers, where each integer represents a mode specified by the [`EnumDeblurMode`]({{ site.dcvb_enumerations }}barcode-reader/deblur-mode.html?lang=python) enumeration.
+It is a list of 10 integers, where each integer represents a mode specified by the [`EnumDeblurMode`]({{ site.dbr_python_api }}enum-deblur-mode.html?lang=python) enumeration.
 
 View the parameter reference page of <a href="{{ site.dcvb_parameters_reference }}barcode-reader-task-settings/deblur-modes.html">`DeblurModes`</a> for more detail about deblur modes.
 

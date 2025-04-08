@@ -61,16 +61,16 @@ needAutoGenerateSidebar: false
 - [`OneDCodeDetails`]({{ site.dbr_python_api }}oned-code-details.html)
 - [`PDF417Details`]({{ site.dbr_python_api }}pdf417-details.html)
 - [`QRCodeDetails`]({{ site.dbr_python_api }}qr-code-details.html)
-- [`ScaledBarcodeImageUnit`]({{ site.dbr_python_api }}scaled-barcode-image-unit.html)
+- [`ScaledUpBarcodeImageUnit`]({{ site.dbr_python_api }}scaled-up-barcode-image-unit.html)
 - [`SimplifiedBarcodeReaderSettings`]({{ site.dbr_python_api }}simplified-barcode-reader-settings.html)
 
 ### Enums
 
-- [`EnumBarcodeFormat`]({{ site.dbr_python_api }}enum-barcode-format.html?lang=python)
-- [`EnumDeblurMode`]({{ site.dbr_python_api }}enum-deblur-mode.html?lang=python)
-- [`EnumExtendedBarcodeResultType`]({{ site.dbr_python_api }}enum-extended-barcode-result-type.html?lang=python)
-- [`EnumLocalizationMode`]({{ site.dbr_python_api }}enum-localization-mode.html?lang=python)
-- [`EnumQRCodeErrorCorrectionLevel`]({{ site.dbr_python_api }}enum-qr-code-error-correction-level.html?lang=python)
+- [`EnumBarcodeFormat`]({{ site.dbr_python_api }}barcode-reader/enum-barcode-format.html?lang=python)
+- [`EnumDeblurMode`]({{ site.dbr_python_api }}barcode-reader/enum-deblur-mode.html?lang=python)
+- [`EnumExtendedBarcodeResultType`]({{ site.dbr_python_api }}barcode-reader/enum-extended-barcode-result-type.html?lang=python)
+- [`EnumLocalizationMode`]({{ site.dbr_python_api }}barcode-reader/enum-localization-mode.html?lang=python)
+- [`EnumQRCodeErrorCorrectionLevel`]({{ site.dbr_python_api }}barcode-reader/enum-qr-code-error-correction-level.html?lang=python)
 
 ## DynamsoftCore
 
@@ -78,13 +78,11 @@ needAutoGenerateSidebar: false
 
 - [`AbstractIntermediateResultReceiver`]({{ site.dcvb_python_api }}core/intermediate-results/abstract-intermediate-result-receiver.html)
 - [`BinaryImageUnit`]({{ site.dcvb_python_api }}core/intermediate-results/binary-image-unit.html)
-- [`CapturedResultBase`]({{ site.dcvb_python_api }}core/basic-classes/captured-result-base.html)
 - [`CapturedResultItem`]({{ site.dcvb_python_api }}core/basic-classes/captured-result-item.html)
 - [`ColourImageUnit`]({{ site.dcvb_python_api }}core/intermediate-results/colour-image-unit.html)
 - [`ContoursUnit`]({{ site.dcvb_python_api }}core/intermediate-results/contours-unit.html)
 - [`Contour`]({{ site.dcvb_python_api }}core/basic-classes/contour.html)
 - [`CoreModule`]({{ site.dcvb_python_api }}core/basic-classes/core-module.html)
-- [`Corner`]({{ site.dcvb_python_api }}core/basic-classes/corner.html)
 - [`Edge`]({{ site.dcvb_python_api }}core/basic-classes/edge.html)
 - [`EnhancedGrayscaleImageUnit`]({{ site.dcvb_python_api }}core/intermediate-results/enhanced-grayscale-image-unit.html)
 - [`FileImageTag`]({{ site.dcvb_python_api }}core/basic-classes/file-image-tag.html)
@@ -107,7 +105,7 @@ needAutoGenerateSidebar: false
 - [`Quadrilateral`]({{ site.dcvb_python_api }}core/basic-classes/quadrilateral.html)
 - [`Rect`]({{ site.dcvb_python_api }}core/basic-classes/rect.html)
 - [`RegionObjectElement`]({{ site.dcvb_python_api }}core/intermediate-results/region-object-element.html)
-- [`ScaledColourImageUnit`]({{ site.dcvb_python_api }}core/intermediate-results/scaled-colour-image-unit.html)
+- [`ScaledDownColourImageUnit`]({{ site.dcvb_python_api }}core/intermediate-results/scaled-down-colour-image-unit.html)
 - [`ShortLinesUnit`]({{ site.dcvb_python_api }}core/intermediate-results/short-lines-unit.html)
 - [`TextRemovedBinaryImageUnit`]({{ site.dcvb_python_api }}core/intermediate-results/text-removed-binary-image-unit.html)
 - [`TextZone`]({{ site.dcvb_python_api }}core/intermediate-results/text-zone.html)
@@ -124,13 +122,10 @@ needAutoGenerateSidebar: false
 - [`EnumBufferOverflowProtectionMode`]({{ site.dcvb_python_api }}core/enum-buffer-overflow-protection-mode.html?lang=python)
 - [`EnumCapturedResultItemType`]({{ site.dcvb_python_api }}core/enum-captured-result-item-type.html?lang=python)
 - [`EnumColourChannelUsageType`]({{ site.dcvb_python_api }}core/enum-colour-channel-usage-type.html?lang=python)
-- [`EnumCornerType`]({{ site.dcvb_python_api }}core/enum-corner-type.html?lang=python)
-- [`EnumCrossVerificationStatus`]({{ site.dcvb_python_api }}core/enum-cross-verification-status.html?lang=python)
 - [`EnumErrorCode`]({{ site.dcvb_python_api }}core/enum-error-code.html?lang=python)
 - [`EnumGrayscaleEnhancementMode`]({{ site.dcvb_python_api }}core/enum-grayscale-enhancement-mode.html?lang=python)
 - [`EnumGrayscaleTransformationMode`]({{ site.dcvb_python_api }}core/enum-grayscale-transformation-mode.html?lang=python)
 - [`EnumImageCaptureDistanceMode`]({{ site.dcvb_python_api }}core/enum-image-capture-distance-mode.html?lang=python)
-- [`EnumImageFileFormat`]({{ site.dcvb_python_api }}core/enum-image-file-format.html?lang=python)
 - [`EnumImagePixelFormat`]({{ site.dcvb_python_api }}core/enum-image-pixel-format.html?lang=python)
 - [`EnumImageTagType`]({{ site.dcvb_python_api }}core/enum-image-tag-type.html?lang=python)
 - [`IntermediateResultUnitType`]({{ site.dcvb_python_api }}core/enum-intermediate-result-unit-type.html?lang=python)
@@ -143,20 +138,12 @@ needAutoGenerateSidebar: false
 
 ## DynamsoftUtility
 
-### Classes
-
 - [`DirectoryFetcher`]({{ site.dcvb_python_api }}utility/directory-fetcher.html)
 - [`FileFetcher`]({{ site.dcvb_python_api }}utility/file-fetcher.html)
-- [`ImageIO`]({{ site.dcvb_python_api }}utility/image-io.html)
-- [`ImageProcessor`]({{ site.dcvb_python_api }}utility/image-processor.html)
-- [`ImageDrawer`]({{ site.dcvb_python_api }}utility/image-drawer.html)
+- [`ImageManager`]({{ site.dcvb_python_api }}utility/image-manager.html)
 - [`MultiFrameResultCrossFilter`]({{ site.dcvb_python_api }}utility/multi-frame-result-cross-filter.html)
 - [`ProactiveImageSourceAdapter`]({{ site.dcvb_python_api }}utility/proactive-image-source-adapter.html)
 - [`UtilityModule`]({{ site.dcvb_python_api }}utility/utility-module.html)
-
-### Enums
-
-- [`FilterType`]({{ site.dcvb_python_api }}utility/enum-filter-type.html?lang=python)
 
 ## DynamsoftLicense
 

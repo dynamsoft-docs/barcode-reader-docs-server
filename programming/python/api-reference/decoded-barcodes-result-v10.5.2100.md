@@ -12,10 +12,8 @@ The `DecodedBarcodesResult` class represents the result of a barcode reading pro
 
 *Module:* dynamsoft_barcode_reader
 
-*Inheritance:* [CapturedResultBase]({{ site.dcvb_python_api }}core/basic-classes/captured-result-base.html) -> DecodedBarcodesResult
-
 ```python
-class DecodedBarcodesResult(CapturedResultBase):
+class DecodedBarcodesResult
 ```
 
 ## Methods

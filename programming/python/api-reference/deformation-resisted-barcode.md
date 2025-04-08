@@ -49,7 +49,7 @@ def __init__(self, *args):
 
 [Quadrilateral]({{ site.dcvb_python_api }}core/basic-classes/quadrilateral.html)
 
-[EnumBarcodeFormat]({{ site.dcvb_enumerations }}barcode-reader/barcode-format.html?lang=python)
+[EnumBarcodeFormat]({{ site.dbr_python_api }}enum-barcode-format.html)
 
 ### get_format
 
@@ -65,7 +65,7 @@ Returns the format of the deformation resisted barcode.
 
 **See Also**
 
-[EnumBarcodeFormat]({{ site.dcvb_enumerations }}barcode-reader/barcode-format.html?lang=python)
+[EnumBarcodeFormat]({{ site.dbr_python_api }}enum-barcode-format.html)
 
 ### set_format
 
@@ -81,7 +81,7 @@ def set_format(self, format: int) -> None:
 
 **See Also**
 
-[EnumBarcodeFormat]({{ site.dcvb_enumerations }}barcode-reader/barcode-format.html?lang=python)
+[EnumBarcodeFormat]({{ site.dbr_python_api }}enum-barcode-format.html)
 
 ### get_image_data
 

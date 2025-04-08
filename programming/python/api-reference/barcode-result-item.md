@@ -49,7 +49,7 @@ Returns the format of the decoded barcode result which is a value of the `EnumBa
 
 **See Also**
 
-[EnumBarcodeFormat]({{ site.dcvb_enumerations }}barcode-reader/barcode-format.html?lang=python)
+[EnumBarcodeFormat]({{ site.dbr_python_api }}enum-barcode-format.html)
 
 ### get_format_string
 
