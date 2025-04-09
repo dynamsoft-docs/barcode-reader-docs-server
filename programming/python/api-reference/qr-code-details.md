@@ -50,7 +50,7 @@ It is a value of the `EnumQRCodeErrorCorrectionLevel` enumeration.
 
 **See Also**
 
-[EnumQRCodeErrorCorrectionLevel]({{ site.dcvb_enumerations }}barcode-reader/qr-code-error-correction-level.html?lang=python)
+[EnumQRCodeErrorCorrectionLevel]({{ site.dbr_python_api }}enum-qr-code-error-correction-level.html)
 
 ### version
 

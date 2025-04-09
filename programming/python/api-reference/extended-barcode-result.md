@@ -41,7 +41,7 @@ Returns the type of the extended barcode result. This is one of the values of th
 
 **See Also**
 
-[EnumExtendedBarcodeResultType]({{ site.dcvb_enumerations }}barcode-reader/extended-barcode-result-type.html?lang=python)
+[EnumExtendedBarcodeResultType]({{ site.dbr_python_api }}enum-extended-barcode-result-type.html)
 
 ### get_deformation
 

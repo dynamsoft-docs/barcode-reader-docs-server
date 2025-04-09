@@ -76,7 +76,7 @@ Returns the format of the barcode.
 
 **See Also**
 
-[EnumBarcodeFormat]({{ site.dcvb_enumerations }}barcode-reader/barcode-format.html?lang=python)
+[EnumBarcodeFormat]({{ site.dbr_python_api }}enum-barcode-format.html)
 
 ### get_possible_formats_string
 
@@ -116,4 +116,4 @@ def set_possible_formats(self, possible_formats: int) -> None:
 
 **See Also**
 
-[EnumBarcodeFormat]({{ site.dcvb_enumerations }}barcode-reader/barcode-format.html?lang=python)
+[EnumBarcodeFormat]({{ site.dbr_python_api }}enum-barcode-format.html)
