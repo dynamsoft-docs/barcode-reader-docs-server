@@ -8,7 +8,7 @@ needGenerateH3Content: false
 
 # Release Notes for Python Edition - 11.x
 
-## 11.0.2000 (04/08/2025)
+## 11.0.2000 (04/09/2025)
 
 ### [Highlights](https://www.dynamsoft.com/release-highlights/?product=dbr11.0)
 

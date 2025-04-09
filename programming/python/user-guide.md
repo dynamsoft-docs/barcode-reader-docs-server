@@ -110,7 +110,7 @@ else:
 
 ### Build and Run the Project
 
-1. Save the ``DBRPythonSample.py` file.
+1. Save the `DBRPythonSample.py` file.
 2. Start terminal or command prompt and change to the target directory where `DBRPythonSample.py` located in.
 3. Run the command
 
