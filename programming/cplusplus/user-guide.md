@@ -163,7 +163,12 @@ delete cvr, cvr = NULL;
 
     ```bash
     g++ -o DBRCPPSample DBRCPPSample.cpp -lDynamsoftCaptureVisionRouter -lDynamsoftLicense -lDynamsoftCore -lDynamsoftUtility -L ../Dist/Lib/Linux/x64 -Wl,-rpath=../Dist/Lib/Linux/x64 -std=c++11
-    cp ../Dist/DBR-PresetTemplates.json ../Dist/Lib/Linux/x64
+    ```
+
+   Copy the preset template.
+
+    ```bash
+    cp -r ../Dist/Templates ../Dist/Lib/Linux/x64/
     ```
 
    Run the program `DBRCPPSample`.
