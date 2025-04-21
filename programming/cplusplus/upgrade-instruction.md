@@ -147,22 +147,22 @@ public:
 
 int main()
 {
-    CCaptureVisionRouter *cvr = new CCaptureVisionRouter;
+    CCaptureVisionRouter *cvRouter = new CCaptureVisionRouter;
 
     // Create your video source and bind it to the router
     MyVideoSource *source = new MyVideoSource;
-    cvr->SetInput(source);
+    cvRouter->SetInput(source);
 
     // Create a CCapturedResultReceiver instance 
     MyBarcodeResultReceiver *barcodesReceiver = new MyCapturedResultReceiver;
-    cvr->AddResultReceiver(barcodesReceiver);
+    cvRouter->AddResultReceiver(barcodesReceiver);
 
     // Start capturing
-    errorCode = cvr->StartCapturing(CPresetTemplate::PT_READ_BARCODES, true, errorMsg, 512);
+    errorCode = cvRouter->StartCapturing(CPresetTemplate::PT_READ_BARCODES, true, errorMsg, 512);
 
     delete barcodesReceiver;
     delete source;
-    delete cvr;
+    delete cvRouter;
 }
 ```
 

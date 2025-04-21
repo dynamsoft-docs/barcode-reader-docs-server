@@ -36,6 +36,11 @@ The best way to start with the Dynamsoft Barcode Reader C++ Edition, is followin
 
 - MacOS 64bit: 10.12+ (not included in the trial package, contact us to get the SDK)
 
+- For Embedded Devices:
+For embedded or ARM-based platforms, we recommend using a device with performance equivalent to or better than a Raspberry Pi 4 Model B (4GB RAM). Minimum recommended specs:
+  - Quad-core ARM Cortex-A72 processor (or equivalent)
+  - 4 GB RAM
+  - Linux-based OS (e.g., Raspberry Pi OS, Ubuntu Server)
 
 ## License Subscription
 
