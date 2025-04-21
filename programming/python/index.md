@@ -38,6 +38,12 @@ The best way to start with the Dynamsoft Barcode Reader Python Edition, is follo
   - Python 3.5 (for versions below DBR 7.5)
   - Python 2.7 (for versions below DBR 7.2.2.3)
 
+- For Embedded Devices:
+For embedded or ARM-based platforms, we recommend using a device with performance equivalent to or better than a Raspberry Pi 4 Model B (4GB RAM). Minimum recommended specs:
+  - Quad-core ARM Cortex-A72 processor (or equivalent)
+  - 4 GB RAM
+  - Linux-based OS (e.g., Raspberry Pi OS, Ubuntu Server)
+
 ## API Reference
 
 For an overview of the APIs, see the [API Reference]({{ site.dbr_python_api }}).

@@ -96,7 +96,7 @@ CLicenseManager::InitLicense("DLS2eyJvcmdhbml6YXRpb25JRCI6IjIwMDAwMSJ9", errorMs
 Create an instance of Capture Vision Router.
 
 ```cpp
-CCaptureVisionRouter* cvr = new CCaptureVisionRouter;
+CCaptureVisionRouter* cvRouter = new CCaptureVisionRouter;
 ```
 
 ### Decode and Output Results
@@ -105,7 +105,7 @@ Decode barcodes from an image file.
 
 ```cpp
 string imageFile = "[PATH-TO-A-BARCODE-IMAGE]";
-CCapturedResult* result = cvr->Capture(imageFile.c_str(), CPresetTemplate::PT_READ_BARCODES);
+CCapturedResult* result = cvRouter->Capture(imageFile.c_str(), CPresetTemplate::PT_READ_BARCODES);
 if (result->GetErrorCode() != 0) {
     cout << "Error: " << result->GetErrorCode() << "," << result->GetErrorString() << endl;
 }
@@ -138,7 +138,7 @@ else
 if (barcodeResult)
     barcodeResult->Release();
 result->Release();
-delete cvr, cvr = NULL;
+delete cvRouter, cvRouter = NULL;
 ```
 
 ### Build and Run the Project
@@ -208,7 +208,7 @@ Set up a `CDirectoryFetcher` object to retrieve image data sources from a direct
 ```cpp
 CDirectoryFetcher *fetcher = new CDirectoryFetcher;
 fetcher->SetDirectory("[THE DIRECTORY THAT HOLDS THE IMAGES]");
-cvr->SetInput(fetcher);
+cvRouter->SetInput(fetcher);
 ```
 
 ### Add a Result Receiver as the Output
@@ -247,7 +247,7 @@ Create and register a `MyCapturedResultReceiver` object as the result receiver.
 
 ```cpp
 CCapturedResultReceiver *capturedReceiver = new MyCapturedResultReceiver;
-cvr->AddResultReceiver(capturedReceiver);
+cvRouter->AddResultReceiver(capturedReceiver);
 ```
 
 ### Add an Object to Listen to the Status of the Image Source
@@ -273,8 +273,8 @@ public:
 Create and register a `MyImageSourceStateListener` object as the listener.
 
 ```cpp
-CImageSourceStateListener *listener = new MyImageSourceStateListener(cvr);
-cvr->AddImageSourceStateListener(listener);
+CImageSourceStateListener *listener = new MyImageSourceStateListener(cvRouter);
+cvRouter->AddImageSourceStateListener(listener);
 ```
 
 ### Start the Process
@@ -282,7 +282,7 @@ cvr->AddImageSourceStateListener(listener);
 Call the method `StartCapturing()` to start processing all the images in the specified folder.
 
 ```cpp
-int errorCode = cvr->StartCapturing(CPresetTemplate::PT_READ_BARCODES, true, errorMsg, 512);        
+int errorCode = cvRouter->StartCapturing(CPresetTemplate::PT_READ_BARCODES, true, errorMsg, 512);        
 ```
 
 During the process, the callback function `OnDecodedBarcodesReceived()` is triggered each time an image finishes processing. After all images are processed, the listener function `OnImageSourceStateReceived()` will return the image source state as `ISS_EXHAUSTED` and the process is stopped with the method `StopCapturing()`.
@@ -290,7 +290,7 @@ During the process, the callback function `OnDecodedBarcodesReceived()` is trigg
 ### Release the Allocated Memory
 
 ```cpp
-delete cvr, cvr = NULL;
+delete cvRouter, cvRouter = NULL;
 delete fetcher, fetcher = NULL;
 delete listener, listener = NULL;
 delete capturedReceiver, capturedReceiver = NULL;

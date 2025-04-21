@@ -92,7 +92,7 @@ if (errorCode != (int)EnumErrorCode.EC_OK && errorCode != (int)EnumErrorCode.EC_
 ### Create a CaptureVisionRouter Instance
 
 ```csharp
-using (CaptureVisionRouter cvr = new CaptureVisionRouter())
+using (CaptureVisionRouter cvRouter = new CaptureVisionRouter())
 {
     //code for invoking the barcode capturing
 }
@@ -101,10 +101,10 @@ using (CaptureVisionRouter cvr = new CaptureVisionRouter())
 ### Invoke the Barcode Capturing
 
 ```csharp
-using (CaptureVisionRouter cvr = new CaptureVisionRouter())
+using (CaptureVisionRouter cvRouter = new CaptureVisionRouter())
 {
     string imageFile = "[PATH-TO-THE-IMAGE-FILE]";
-    CapturedResult? result = cvr.Capture(imageFile, PresetTemplate.PT_READ_BARCODES);
+    CapturedResult? result = cvRouter.Capture(imageFile, PresetTemplate.PT_READ_BARCODES);
     //code for filtering and getting barcode details
 }
 ```
@@ -218,18 +218,18 @@ Create a class `MyImageSourceStateListener` to implement the `IImageSourceStateL
 ```csharp
 class MyImageSourceStateListener : IImageSourceStateListener
 {
-    private CaptureVisionRouter? cvr = null;
-    public MyImageSourceStateListener(CaptureVisionRouter cvr)
+    private CaptureVisionRouter? cvRouter = null;
+    public MyImageSourceStateListener(CaptureVisionRouter cvRouter)
     {
-        this.cvr = cvr;
+        this.cvRouter = cvRouter;
     }
     public void OnImageSourceStateReceived(EnumImageSourceState state)
     {
         if (state == EnumImageSourceState.ISS_EXHAUSTED)
         {
-            if (cvr != null)
+            if (cvRouter != null)
             {
-                cvr.StopCapturing();
+                cvRouter.StopCapturing();
             }
         }
     }
@@ -239,11 +239,11 @@ class MyImageSourceStateListener : IImageSourceStateListener
 ### Register the Input, Output Listener and ImageSource State Listener to the CaptureVisionRouter Instance
 
 ```csharp
-cvr.SetInput(fetcher);
+cvRouter.SetInput(fetcher);
 CapturedResultReceiver receiver = new MyCapturedResultReceiver();
-cvr.AddResultReceiver(receiver);
-MyImageSourceStateListener listener = new MyImageSourceStateListener(cvr);
-cvr.AddImageSourceStateListener(listener);
+cvRouter.AddResultReceiver(receiver);
+MyImageSourceStateListener listener = new MyImageSourceStateListener(cvRouter);
+cvRouter.AddImageSourceStateListener(listener);
 ```
 
 ### Start the Capturing Process
@@ -251,7 +251,7 @@ cvr.AddImageSourceStateListener(listener);
 Call the method `StartCapturing()` to start processing all the images in the specified folder.
 
 ```csharp
-errorCode = cvr.StartCapturing(PresetTemplate.PT_READ_BARCODES, true, out errorMsg);
+errorCode = cvRouter.StartCapturing(PresetTemplate.PT_READ_BARCODES, true, out errorMsg);
 if (errorCode != (int)EnumErrorCode.EC_OK)
 {
     Console.WriteLine("error: " + errorMsg);

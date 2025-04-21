@@ -80,13 +80,13 @@ else:
 ### Create a CaptureVisionRouter Instance
 
 ```python
-cvr = CaptureVisionRouter()
+cvr_instance = CaptureVisionRouter()
 ```
 
 ### Invoke the Barcode Capturing
 
 ```python
-result = cvr.capture("[PATH-TO-THE-IMAGE-FILE]", EnumPresetTemplate.PT_READ_BARCODES.value)
+result = cvr_instance.capture("[PATH-TO-THE-IMAGE-FILE]", EnumPresetTemplate.PT_READ_BARCODES.value)
 ```
 
 > Please change the `[PATH-TO-THE-IMAGE-FILE]` to a real barcode image file path.
@@ -181,23 +181,23 @@ Create a class `MyImageSourceStateListener` to implement the `ImageSourceStateLi
 
 ```python
 class MyImageSourceStateListener(ImageSourceStateListener):
-    def __init__(self, cvr:CaptureVisionRouter) -> None:
+    def __init__(self, cvr_instance:CaptureVisionRouter) -> None:
         super().__init__()
-        self.cvr = cvr
+        self.cvr_instance = cvr_instance
     def on_image_source_state_received(self, state: int) -> None:
         if state == EnumImageSourceState.ISS_EXHAUSTED:
-            if self.cvr != None:
-                self.cvr.stop_capturing()
+            if self.cvr_instance != None:
+                self.cvr_instance.stop_capturing()
 ```
 
 ### Register the Input, Output Listener and ImageSource State Listener to the CaptureVisionRouter Instance
 
 ```python
-cvr.set_input(fetcher)
+cvr_instance.set_input(fetcher)
 receiver = MyCapturedResultReceiver()
-cvr.add_result_receiver(receiver)
-listener = MyImageSourceStateListener(cvr)
-cvr.add_image_source_state_listener(listener)
+cvr_instance.add_result_receiver(receiver)
+listener = MyImageSourceStateListener(cvr_instance)
+cvr_instance.add_image_source_state_listener(listener)
 ```
 
 ### Start the Capturing Process
@@ -205,7 +205,7 @@ cvr.add_image_source_state_listener(listener)
 Call the method `start_capturing()` to start processing all the images in the specified folder.
 
 ```python
-errorCode, errorMsg = cvr.start_capturing("", True)
+errorCode, errorMsg = cvr_instance.start_capturing("", True)
 if errorCode != EnumErrorCode.EC_OK:
     print("error:", errorMsg)
 ```
