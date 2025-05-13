@@ -12,7 +12,6 @@ The `OneDCodeDetails` class represents detailed information about a one-dimensio
 
 *Namespace:* Dynamsoft.DBR
 
-*Assembly:* Dynamsoft.BarcodeReader.dll
 
 *Inheritance:* [BarcodeDetails]({{ site.dbr_dotnet_api }}barcode-details.html) -> OneDCodeDetails
 

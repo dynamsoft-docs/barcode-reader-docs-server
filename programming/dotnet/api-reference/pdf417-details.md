@@ -12,7 +12,6 @@ The `PDF417Details` class represents a barcode in PDF417 format. It inherits fro
 
 *Namespace:* Dynamsoft.DBR
 
-*Assembly:* Dynamsoft.BarcodeReader.dll
 
 *Inheritance:* [BarcodeDetails]({{ site.dbr_dotnet_api }}barcode-details.html) -> PDF417Details
 
@@ -29,6 +28,7 @@ public class PDF417Details : BarcodeDetails
 | [`errorCorrectionLevel`](#errorcorrectionlevel) | *int* |
 | [`hasLeftRowIndicator`](#hasleftrowindicator) | *int* |
 | [`hasRightRowIndicator`](#hasrightrowindicator) | *int* |
+| [`codewords`](#codewords) | *uint[]* |
 
 ### rows
 
@@ -68,4 +68,12 @@ Specifies whether the right row indicator of the PDF417 code exists.
 
 ```csharp
 int hasRightRowIndicator;
+```
+
+### codewords
+
+Specifies  the codewords of the PDF417 barcode.
+
+```csharp
+uint[] codewords;
 ```

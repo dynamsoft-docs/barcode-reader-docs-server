@@ -13,7 +13,6 @@ The `BarcodeResultItem` class represents a barcode result item decoded by barcod
 
 *Namespace:* Dynamsoft.DBR
 
-*Assembly:* Dynamsoft.BarcodeReader.dll
 
 *Inheritance:* [CapturedResultItem]({{ site.dcvb_dotnet_api }}core/basic-classes/captured-result-item.html) -> BarcodeResultItem
 
@@ -53,7 +52,7 @@ Returns the format of the decoded barcode result.
 
 **See Also**
 
-[EnumBarcodeFormat]({{ site.dcvb_enumerations }}barcode-reader/barcode-format.html?lang=dotnet)
+[EnumBarcodeFormat]({{ site.dbr_dotnet_api }}enum-barcode-format.html)
 
 ### GetFormatString
 
@@ -202,7 +201,7 @@ Returns the type of the captured result item.
 
 **See Also**
 
-[EnumCapturedResultItemType]({{ site.dcvb_enumerations }}core/captured-result-item-type.html?lang=dotnet)
+[EnumCapturedResultItemType]({{ site.dcvb_dotnet_api }}core/enum-captured-result-item-type.html)
 
 ### GetReferenceItem
 

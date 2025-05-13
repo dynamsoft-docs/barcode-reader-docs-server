@@ -13,7 +13,6 @@ The `AztecDetails` class represents a barcode in Aztec format. It inherits from 
 
 *Namespace:* Dynamsoft.DBR
 
-*Assembly:* Dynamsoft.BarcodeReader.dll
 
 *Inheritance:* [BarcodeDetails]({{ site.dbr_dotnet_api }}barcode-details.html) -> AztecDetails
 

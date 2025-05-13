@@ -12,50 +12,19 @@ The `DecodedBarcodesResult` class represents the result of a barcode reading pro
 
 *Namespace:* Dynamsoft.DBR
 
-*Assembly:* Dynamsoft.BarcodeReader.dll
+*Inheritance:* [CapturedResultBase]({{ site.dcv_dotnet_api }}core/basic-classes/captured-result-base.html) -> DecodedBarcodesResult
 
 ```csharp
-public class DecodedBarcodesResult
+public class DecodedBarcodesResult : CapturedResultBase, IEnumerable<BarcodeResultItem>
 ```
 
 ## Methods
 
 | Method               | Description |
 |----------------------|-------------|
-| [`GetErrorCode`](#geterrorcode) | Gets the error code of the barcode reading result, if an error occurred. |
-| [`GetErrorString`](#geterrorstring) | Gets the error message of the barcode reading result, if an error occurred. |
 | [`GetItems`](#getitems) | Gets all the barcode result items. |
-| [`GetOriginalImageHashId`](#getoriginalimagehashid) | Gets the hash ID of the source image. |
-| [`GetOriginalImageTag`](#getoriginalimagetag) | Gets the tag of the source image. |
-| [`GetRotationTransformMatrix`](#getrotationtransformmatrix) | Gets the 3x3 rotation transformation matrix of the original image relative to the rotated image.|
-
-### GetErrorCode
-
-Gets the error code of the barcode reading result, if an error occurred.
-
-```csharp
-int GetErrorCode()
-```
-
-**Return Value**
-
-Returns the error code of the barcode reading result, or 0 if no error occurred.
-
-**See Also**
-
-[EnumErrorCode]({{ site.dcvb_enumerations }}core/error-code.html?lang=dotnet)
-
-### GetErrorString
-
-Gets the error message of the barcode reading result, if an error occurred.
-
-```csharp
-string GetErrorString()
-```
-
-**Return Value**
-
-Returns a string containing the error message of the barcode reading result, or an empty string if no error occurred.
+| [`GetItemsCount`](#getitemscount) | Gets the number of barcode result items in current result object. |
+| [`GetItem`](#getitem) | Gets a specific barcode result item. |
 
 ### GetItems
 
@@ -73,42 +42,34 @@ Returns a `BarcodeResultItem` array.
 
 [BarcodeResultItem]({{ site.dbr_dotnet_api }}barcode-result-item.html)
 
-### GetOriginalImageHashId
+### GetItemsCount
 
-Gets the hash ID of the source image.
-
-```csharp
-string GetOriginalImageHashId()
-```
-
-**Return Value**
-
-Returns a string containing the hash ID of the source image.
-
-### GetOriginalImageTag
-
-Gets the tag of the source image.
+Gets the number of barcode result items in current result object.
 
 ```csharp
-ImageTag GetOriginalImageTag()
+int GetItemsCount()
 ```
 
-**Return Value**
+**Return value**
 
-Returns an `ImageTag` object representing the tag of the source image.
+Returns the number of barcode result items in current result object.
+
+### GetItem
+
+Gets a specific barcode result item.
+
+```csharp
+BarcodeResultItem GetItem(int index)
+```
+
+**Parameters**
+
+`[in] index` The index of specific barcode result item.
+
+**Return value**
+
+Returns the specific barcode result item.
 
 **See Also**
 
-[ImageTag]({{ site.dcvb_dotnet_api }}core/basic-classes/image-tag.html)
-
-### GetRotationTransformMatrix
-
-Gets the 3x3 rotation transformation matrix of the original image relative to the rotated image.
-
-```csharp
-double[] GetRotationTransformMatrix()
-```
-
-**Return Value**
-
-Returns a double array of length 9 which represents a 3x3 rotation matrix.
+[BarcodeResultItem]({{ site.dbr_dotnet_api }}barcode-result-item.html)
