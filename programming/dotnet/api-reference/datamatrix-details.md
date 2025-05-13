@@ -12,7 +12,6 @@ The `DataMatrixDetails` class represents the details of a DataMatrix barcode. It
 
 *Namespace:* Dynamsoft.DBR
 
-*Assembly:* Dynamsoft.BarcodeReader.dll
 
 *Inheritance:* [BarcodeDetails]({{ site.dbr_dotnet_api }}barcode-details.html) -> DataMatrixDetails
 

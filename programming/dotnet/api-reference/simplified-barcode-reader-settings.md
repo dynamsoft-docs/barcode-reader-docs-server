@@ -15,7 +15,6 @@ The `SimplifiedBarcodeReaderSettings` class contains settings for barcode decodi
 
 *Namespace:* Dynamsoft.DBR
 
-*Assembly:* Dynamsoft.BarcodeReader.dll
 
 ```csharp
 public class SimplifiedBarcodeReaderSettings
@@ -39,7 +38,7 @@ public class SimplifiedBarcodeReaderSettings
 
 ### barcodeFormatIds
 
-Input a combined value of enumeration [`EnumBarcodeFormat`]({{ site.dcvb_enumerations }}barcode-reader/barcode-format.html?lang=dotnet) to specify the targeting barcode formats.
+Input a combined value of enumeration [`EnumBarcodeFormat`]({{ site.dbr_dotnet_api }}enum-barcode-format.html) to specify the targeting barcode formats.
 
 ```csharp
 ulong barcodeFormatIds;
@@ -62,7 +61,7 @@ int expectedBarcodesCount;
 
 ### grayscaleTransformationModes
 
-Set the grayscale transformation modes using an [`EnumGrayscaleTransformationMode`]({{ site.dcvb_enumerations }}core/grayscale-transformation-mode.html?lang=dotnet) array with 8 elements. View the reference page of <a href="{{ site.dcvb_parameters_reference }}image-parameter/grayscale-transformation-modes.html">`GrayscaleTransformationModes`</a> for more detail about grayscale transformation modes.
+Set the grayscale transformation modes using an [`EnumGrayscaleTransformationMode`]({{ site.dcvb_dotnet_api }}core/enum-grayscale-transformation-mode.html) array with 8 elements. View the reference page of <a href="{{ site.dcvb_parameters_reference }}image-parameter/grayscale-transformation-modes.html">`GrayscaleTransformationModes`</a> for more detail about grayscale transformation modes.
 
 ```csharp
 EnumGrayscaleTransformationMode[] grayscaleTransformationModes;
@@ -70,7 +69,7 @@ EnumGrayscaleTransformationMode[] grayscaleTransformationModes;
 
 ### grayscaleEnhancementModes
 
-Set the grayscale enhancement modes using an [`EnumGrayscaleEnhancementMode`]({{ site.dcvb_enumerations }}core/grayscale-enhancement-mode.html?lang=dotnet) array with 8 elements. View the reference page of <a href="{{ site.dcvb_parameters_reference }}image-parameter/grayscale-enhancement-modes.html">`GrayscaleEnhancementModes`</a> for more detail about grayscale enhancement modes.
+Set the grayscale enhancement modes using an [`EnumGrayscaleEnhancementMode`]({{ site.dcvb_dotnet_api }}core/enum-grayscale-enhancement-mode.html) array with 8 elements. View the reference page of <a href="{{ site.dcvb_parameters_reference }}image-parameter/grayscale-enhancement-modes.html">`GrayscaleEnhancementModes`</a> for more detail about grayscale enhancement modes.
 
 ```csharp
 EnumGrayscaleEnhancementMode[] grayscaleEnhancementModes;
@@ -78,7 +77,7 @@ EnumGrayscaleEnhancementMode[] grayscaleEnhancementModes;
 
 ### localizationModes
 
-Set the location modes using an [`EnumLocalizationMode`]({{ site.dcvb_enumerations }}barcode-reader/localization-mode.html?lang=dotnet) array with 8 elements. View the reference page of <a href="{{ site.dcvb_parameters_reference }}barcode-reader-task-settings/localization-modes.html">`LocalizationModes`</a> for more detail about location modes.
+Set the location modes using an [`EnumLocalizationMode`]({{ site.dbr_dotnet_api }}enum-localization-mode.html) array with 8 elements. View the reference page of <a href="{{ site.dcvb_parameters_reference }}barcode-reader-task-settings/localization-modes.html">`LocalizationModes`</a> for more detail about location modes.
 
 ```csharp
 EnumLocalizationMode[] localizationModes;
@@ -86,7 +85,7 @@ EnumLocalizationMode[] localizationModes;
 
 ### deblurModes
 
-Set the deblur modes using an [`EnumDeblurMode`]({{ site.dcvb_enumerations }}barcode-reader/deblur-mode.html?lang=dotnet) array with 10 elements. View the reference page of <a href="{{ site.dcvb_parameters_reference }}barcode-reader-task-settings/deblur-modes.html">`DeblurModes`</a> for more detail about deblur modes.
+Set the deblur modes using an [`EnumDeblurMode`]({{ site.dbr_dotnet_api }}enum-deblur-mode.html) array with 10 elements. View the reference page of <a href="{{ site.dcvb_parameters_reference }}barcode-reader-task-settings/deblur-modes.html">`DeblurModes`</a> for more detail about deblur modes.
 
 ```csharp
 EnumDeblurMode[] deblurModes;

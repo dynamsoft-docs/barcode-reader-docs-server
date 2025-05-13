@@ -12,7 +12,6 @@ The `QRCodeDetails` class represents the details of a QR Code. It is derived fro
 
 *Namespace:* Dynamsoft.DBR
 
-*Assembly:* Dynamsoft.BarcodeReader.dll
 
 *Inheritance:* [BarcodeDetails]({{ site.dbr_dotnet_api }}barcode-details.html) -> QRCodeDetails
 
@@ -62,7 +61,7 @@ EnumQRCodeErrorCorrectionLevel errorCorrectionLevel;
 
 **See Also**
 
-[EnumQRCodeErrorCorrectionLevel]({{ site.dcvb_enumerations }}barcode-reader/qr-code-error-correction-level.html?lang=dotnet)
+[EnumQRCodeErrorCorrectionLevel]({{ site.dbr_dotnet_api }}enum-qr-code-error-correction-level.html)
 
 ### version
 

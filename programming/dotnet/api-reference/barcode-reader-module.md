@@ -15,7 +15,6 @@ The `BarcodeReaderModule` class defines general functions in the barcode reader 
 
 *Namespace:* Dynamsoft.DBR
 
-*Assembly:* Dynamsoft.BarcodeReader.dll
 
 ```csharp
 public class BarcodeReaderModule 

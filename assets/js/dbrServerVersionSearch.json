@@ -1,5 +1,12 @@
 [
     {
+        "version": "11.0.3000",
+        "matchVersion": {
+            "cpp": "3.0.3000",
+            "dotnet": "3.0.3000"
+        }
+    },
+    {
         "version": "11.0.2000",
         "matchVersion": {
             "python": "3.0.2000"

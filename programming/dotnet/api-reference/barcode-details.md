@@ -13,7 +13,6 @@ The `BarcodeDetails` class represents the details of a barcode. It is an abstrac
 
 *Namespace:* Dynamsoft.DBR
 
-*Assembly:* Dynamsoft.BarcodeReader.dll
 
 ```csharp
 public abstract class BarcodeDetails
