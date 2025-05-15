@@ -17,7 +17,7 @@ needGenerateH3Content: false
 ### Fixed
 
 - Fixed an issue where calling `StartCapturing` or `Capture` with `templateName` set to an empty string ("") would result in error `-40103`.
-- Resolved a performance issue where decoding certain specific images could cause unusually high CPU and memory usage.
+- Resolved a performance issue that could cause unusually high CPU and memory usage in some cases.
 
 ### Changed
 
