@@ -27,7 +27,6 @@ class PDF417Details(BarcodeDetails)
 | [`error_correction_level`](#error_correction_level) | *int* |
 | [`has_left_row_indicator`](#has_left_row_indicator) | *int* |
 | [`has_right_row_indicator`](#has_right_row_indicator) | *int* |
-| [`codewords`](#codewords) | *List[int]* |
 
 ### rows
 
@@ -48,7 +47,3 @@ Specifies whether the left row indicator of the PDF417 code exists.
 ### has_right_row_indicator
 
 Specifies whether the right row indicator of the PDF417 code exists.
-
-### codewords
-
-Specifies the codewords of the PDF417 barcode.
