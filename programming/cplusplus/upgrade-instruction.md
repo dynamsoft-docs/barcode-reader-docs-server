@@ -35,7 +35,7 @@ For users with a Perpetual License, please contact our sales team to update your
 
 ### 3. Migrate Your Templates
 
-The template system is upgraded. The template you used for the previous version can't be directly recognized by the new version. Please <a href="https://www.dynamsoft.com/contact/" target="_blank">contact us</a> to upgrade your template.
+The template system is upgraded. The template you used for the previous version can't be directly recognized by the new version. Please use the <a href="https://www.dynamsoft.com/tools/template-upgrade/" target="_blank">template upgrade tool</a> to upgrade your template.
 
 ### 4. Rebuild the Project
 
@@ -168,7 +168,7 @@ int main()
 
 ### Migrate Your Templates
 
-The template system is upgraded. The template you used for the previous version can't be directly recognized by the new version. Please <a href="https://www.dynamsoft.com/contact/" target="_blank">contact us</a> to upgrade your template.
+The template system is upgraded. The template you used for the previous version can't be directly recognized by the new version. Please use the <a href="https://www.dynamsoft.com/tools/template-upgrade/" target="_blank">template upgrade tool</a> to upgrade your template.
 
 The template-based APIs have been updated as follows:
 
@@ -232,7 +232,7 @@ The following properties are replaced by similar properties under `SimplifiedBar
 
 #### Migrate to Template File
 
-The following properties can only be set via a template file. Please <a href="https://www.dynamsoft.com/contact/" target="_blank">contact us</a> to upgrade your template.
+The following properties can only be set via a template file. Please call `CBarcodeReader.OutputSettingsToFile` first with the old version to export the settings and then use the <a href="https://www.dynamsoft.com/tools/template-upgrade/" target="_blank">template upgrade tool</a> to upgrade your template.
 
 | PublicRuntimeSettings Property | Template File Parameter |
 | ------------------------------- | ----------------------- |
