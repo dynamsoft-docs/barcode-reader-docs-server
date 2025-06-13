@@ -127,6 +127,10 @@ def get_angle(self) -> int:
 
 Returns the angle of the decoded barcode result.
 
+**See Also**
+
+[How the angle is calculated for different barcode types]({{site.features}}get-confidence-rotation.html?lang=python#barcode-rotation-angle)
+
 ### get_module_size
 
 Gets the module size of the decoded barcode result.

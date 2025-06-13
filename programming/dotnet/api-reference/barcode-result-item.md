@@ -130,6 +130,10 @@ int GetAngle()
 
 Returns the angle of the decoded barcode result.
 
+**See Also**
+
+[How the angle is calculated for different barcode types]({{site.features}}get-confidence-rotation.html?lang=csharp#barcode-rotation-angle)
+
 ### GetModuleSize
 
 Gets the module size of the decoded barcode result.
