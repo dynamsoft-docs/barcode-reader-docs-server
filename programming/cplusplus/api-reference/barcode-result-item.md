@@ -147,6 +147,10 @@ virtual int GetAngle() const = 0;
 
 Returns the angle of the decoded barcode result.
 
+**See Also**
+
+[How the angle is calculated for different barcode types]({{site.features}}get-confidence-rotation.html?lang=cpp#barcode-rotation-angle)
+
 ### GetModuleSize
 
 It is used to get the module size of the decoded barcode result.
