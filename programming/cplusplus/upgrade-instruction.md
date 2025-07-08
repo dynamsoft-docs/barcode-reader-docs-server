@@ -105,7 +105,7 @@ Starting from 10.0, we have unified the API for setting licenses across differen
 
 ### Update Single Image Decoding APIs
 
-The APIs for decoding single image has been adjusted as follows:
+The APIs for decoding single image have been adjusted as follows:
 
 | Old APIs | New APIs |
 | :----------- | :------- |
@@ -186,7 +186,7 @@ The template-based APIs have been updated as follows:
 
 The struct `PublicRuntimeSettings` has been refactored. It retains commonly used properties while removing the previously complex property settings, which are now exclusively supported through templates.
 
-The APIs for accessing and updating `PublicRuntimeSettings` has been adjusted as follows:
+The APIs for accessing and updating `PublicRuntimeSettings` have been adjusted as follows:
 
 | Old APIs | New APIs |
 | :----------- | :------- |
