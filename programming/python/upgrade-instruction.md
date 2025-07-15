@@ -31,7 +31,7 @@ For users with a Perpetual License, please contact our sales team to update your
 Run the following command to upgrade the assembly files.
 
 ```bash
-pip install dynamsoft_barcode_reader_bundle --upgrade
+pip install dynamsoft-barcode-reader-bundle --upgrade
 ```
 
 ### 3. Migrate Your Templates
@@ -59,10 +59,10 @@ For users with a Perpetual License, please contact our sales team to update your
 
 ### Migrate to New Package
 
-As of version 10.0, the `dbr` package has been renamed to `dynamsoft_barcode_reader_bundle` to reflect changes in both architecture and API design. Start terminal or command prompt and run the following command to install the new package.
+As of version 10.0, the `dbr` package has been renamed to `dynamsoft-barcode-reader-bundle` to reflect changes in both architecture and API design. Start terminal or command prompt and run the following command to install the new package.
 
 ```bash
-pip install dynamsoft_barcode_reader_bundle
+pip install dynamsoft-barcode-reader-bundle
 ```
 
 ### Update the License Activation Code

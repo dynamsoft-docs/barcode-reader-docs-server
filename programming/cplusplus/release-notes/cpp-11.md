@@ -8,6 +8,26 @@ needGenerateH3Content: false
 
 # Release Notes for C++ Edition - 11.x
 
+## 11.0.4000 (07/15/2025)
+
+### New
+
+- **Tile-Based TIFF Image Support**: Added support for TIFF images with tile-based storage format.
+
+- **Base64 String Conversion**: Enabled bidirectional conversion between `ImageData` and Base64 strings.
+
+- **Template Version Validation**: Introduced version checking for templates to prevent compatibility issues and mismatches.
+
+### Changed
+
+- **License Validation Behavior**: Instead of stopping execution immediately on an invalid license module, the library now continues processing and returns results from modules with valid licenses. An error is still reported to indicate the license issue.
+
+- **PDFR License Control Removal**: Removed the license check for the PDFR module.
+
+### Fixed
+
+- Fixed various minor bugs and improved overall stability.
+
 ## 11.0.3000 (05/13/2025)
 
 ### New

@@ -9,11 +9,11 @@ needAutoGenerateSidebar: false
 
 Dynamsoft Barcode Reader (DBR) SDK .NET Edition is a barcode reading tool designed specifically for .NET developers.
 
-Leveraging the efficiency and flexibility of the .NET language, DBR .NET Edition provides rich APIs for developers to easily integrate barcode reading functionality into your .NET applications. Please take a look at [API Reference]({{ site.dbr_dotnet_api}}index.html) to see details.
+Leveraging the efficiency and flexibility of the .NET language, DBR .NET Edition provides rich APIs for developers to easily integrate barcode reading functionality into your .NET applications. Please take a look at [API Reference]({{ site.dbr_dotnet_api }}index.html) to see details.
 
-As one of the functional products of the Dynamsoft Capture Vision (DCV) framework, DBR is also designed to seamlessly integrate with other DCV components and provide developers with a comprehensive set of image processing tools, which cover image capturing, content understanding, result parsing, and interactive workflow. If you are building such a capturing and processing solution, take a look at [Introduction to Dynamsoft Capture Vision]({{site.dcvb_architecture}}).
+As one of the functional products of the Dynamsoft Capture Vision (DCV) framework, DBR is also designed to seamlessly integrate with other DCV components and provide developers with a comprehensive set of image processing tools, which cover image capturing, content understanding, result parsing, and interactive workflow. If you are building such a capturing and processing solution, take a look at [Introduction to Dynamsoft Capture Vision]({{ site.dcvb_architecture }}).
 
-Furthermore, DBR provides a powerful parameter system in order to cope with various scenarios. Read <a href="{{site.dbr_parameters_reference}}index.html">Parameter Reference</a> for details.
+Furthermore, DBR provides a powerful parameter system in order to cope with various scenarios. Read [Parameters]({{ site.dbr_parameters }}structure-and-interfaces-of-parameters.html) for details.
 
 ## Getting Started with DBR .NET Edition
 

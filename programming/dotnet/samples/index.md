@@ -18,6 +18,9 @@ needAutoGenerateSidebar: false
 | <a href="https://github.com/Dynamsoft/barcode-reader-dotnet-samples/tree/main/Samples/HelloWorld/ReadMultipleImages" target="_blank">ReadMultipleImages</a> | This sample demonstrates the simplest way to read barcodes from directory with image files and output barcode format and text. |
 | <a href="https://github.com/Dynamsoft/barcode-reader-dotnet-samples/tree/main/Samples/GeneralSettings" target="_blank">GeneralSettings</a> | This sample demonstrates how to configure general used settings and read barcodes from an image file. |
 | <a href="https://github.com/Dynamsoft/barcode-reader-dotnet-samples/tree/main/Samples/ReadDPMBarcode" target="_blank">ReadDPMBarcode</a> | This sample demonstrates how to read DPM (Direct Part Marking) barcodes and get barcode results. |
+| <a href="https://github.com/Dynamsoft/barcode-reader-dotnet-samples/tree/main/Samples/ParameterTuner" target="_blank">ParameterTuner</a> | This sample demonstrates how to adjust and test different parameter settings to optimize barcode recognition performance. |
+| <a href="https://github.com/Dynamsoft/barcode-reader-dotnet-samples/tree/main/Samples/ShowLocalizedVSDecodedBarcodes" target="_blank">ShowLocalizedVSDecodedBarcodes</a> | This sample demonstrates how to highlight successfully decoded and only-localized barcodes with different styles of rectangles. |
+| <a href="https://github.com/Dynamsoft/barcode-reader-dotnet-samples/tree/main/Samples/ServerSideBarcodeDecoder" target="_blank">ServerSideBarcodeDecoder</a> | This sample demonstrates how to decode barcodes on the server side by sending images from a client application. |
 
 ### Additional Samples using Capture Vision SDK
 
@@ -28,8 +31,9 @@ In addition to the classic barcode decoding samples listed above, the following 
 
 | Sample Name | Description |
 | --- | --- |
-| <a href="https://github.com/Dynamsoft/capture-vision-dotnet-samples/blob/main/Samples/DriverLicenseScanner" target="_blank">DriverLicenseScanner</a> | Shows how to capture and extract user's information from driver license/ID. |
-| <a href="https://github.com/Dynamsoft/capture-vision-dotnet-samples/blob/main/Samples/VINScanner" target="_blank">VINScanner</a> | Shows how to capture and extract vehicle's information from Vehicle Identification Number (VIN). |
+| <a href="https://github.com/Dynamsoft/capture-vision-dotnet-samples/tree/main/Samples/DriverLicenseScanner" target="_blank">DriverLicenseScanner</a> | Shows how to capture and extract user's information from driver license/ID. |
+| <a href="https://github.com/Dynamsoft/capture-vision-dotnet-samples/tree/main/Samples/VINScanner" target="_blank">VINScanner</a> | Shows how to capture and extract vehicle's information from Vehicle Identification Number (VIN). |
+| <a href="https://github.com/Dynamsoft/capture-vision-dotnet-samples/tree/main/Samples/GS1AIScanner" target="_blank">GS1AIScanner</a> | Shows how to extract and interpret GS1 Application Identifiers (AIs) from GS1 barcodes. |
 
 ## Official Online Demo
 This <a href="https://demo.dynamsoft.com/barcode-reader/" target="_blank">Online Demo</a> is an online barcode scanner for all barcode types. All supported parameters are opened for customization to see how Dynamsoft Barcode Reader works in different usage scenarios. 

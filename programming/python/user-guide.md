@@ -42,7 +42,7 @@ To find out whether your environment is supported, please read the [System Requi
 Start terminal or command prompt to run the following command:
 
 ```
-pip install dynamsoft_barcode_reader_bundle
+pip install dynamsoft-barcode-reader-bundle
 ```
 
 ## Build Your First Application
