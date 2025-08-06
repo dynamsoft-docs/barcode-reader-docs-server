@@ -15,12 +15,12 @@ needAutoGenerateSidebar: false
 
 | Sample Name | Description |
 | --- | --- |
-| <a href="https://github.com/Dynamsoft/barcode-reader-java-samples/tree/main/Samples/HelloWorld" target="_blank">HelloWorld</a> | This is a Java sample that illustrates the simplest way to recognize barcodes from images with Dynamsoft Barcode Reader SDK. |
-| <a href="https://github.com/Dynamsoft/barcode-reader-java-samples/tree/main/Samples/GeneralSettings" target="_blank">GeneralSettings</a> | This sample demonstrates how to configure general used settings and read barcodes from an image file. |
-| <a href="https://github.com/Dynamsoft/barcode-reader-java-samples/tree/main/Samples/VideoDecoding" target="_blank">VideoDecoding</a> | This sample demonstrates how to read barcodes from video frames. |
-| <a href="https://github.com/Dynamsoft/barcode-reader-java-samples/tree/main/Samples/ReadDPMBarcode" target="_blank">ReadDPMBarcode</a> | This sample demonstrates how to read DPM (Direct Part Marking) barcodes and get barcode results. |
-| <a href="https://github.com/Dynamsoft/barcode-reader-java-samples/tree/main/Samples/ParameterTuner" target="_blank">ParameterTuner</a> | This sample demonstrates how to adjust and test different parameter settings to optimize barcode recognition performance. |
-| <a href="https://github.com/Dynamsoft/barcode-reader-java-samples/tree/main/Samples/ShowLocalizedVSDecodedBarcodes" target="_blank">ShowLocalizedVSDecodedBarcodes</a> | This sample demonstrates how to highlight successfully decoded and only-localized barcodes with different styles of rectangles. |
+| <a href="https://github.com/Dynamsoft/barcode-reader-java-samples/tree/main/samples/HelloWorld" target="_blank">HelloWorld</a> | This is a Java sample that illustrates the simplest way to recognize barcodes from images with Dynamsoft Barcode Reader SDK. |
+| <a href="https://github.com/Dynamsoft/barcode-reader-java-samples/tree/main/samples/GeneralSettings" target="_blank">GeneralSettings</a> | This sample demonstrates how to configure general used settings and read barcodes from an image file. |
+| <a href="https://github.com/Dynamsoft/barcode-reader-java-samples/tree/main/samples/VideoDecoding" target="_blank">VideoDecoding</a> | This sample demonstrates how to read barcodes from video frames. |
+| <a href="https://github.com/Dynamsoft/barcode-reader-java-samples/tree/main/samples/ReadDPMBarcode" target="_blank">ReadDPMBarcode</a> | This sample demonstrates how to read DPM (Direct Part Marking) barcodes and get barcode results. |
+| <a href="https://github.com/Dynamsoft/barcode-reader-java-samples/tree/main/samples/ParameterTuner" target="_blank">ParameterTuner</a> | This sample demonstrates how to adjust and test different parameter settings to optimize barcode recognition performance. |
+| <a href="https://github.com/Dynamsoft/barcode-reader-java-samples/tree/main/samples/ShowLocalizedVSDecodedBarcodes" target="_blank">ShowLocalizedVSDecodedBarcodes</a> | This sample demonstrates how to highlight successfully decoded and only-localized barcodes with different styles of rectangles. |
 
 ### Additional Samples using Capture Vision SDK
 
