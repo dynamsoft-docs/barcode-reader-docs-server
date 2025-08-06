@@ -8,6 +8,7 @@ needAutoGenerateSidebar: false
 
 # Release Notes for Python Edition
 
+- [11.0.6000 (08/06/2025)]({{ site.dbr_python_release_notes }}python-11.html#1106000-08062025)
 - [11.0.4000 (07/15/2025)]({{ site.dbr_python_release_notes }}python-11.html#1104000-07152025)
 - [11.0.3000 (05/15/2025)]({{ site.dbr_python_release_notes }}python-11.html#1103000-05152025)
 - [11.0.2000 (04/09/2025)]({{ site.dbr_python_release_notes }}python-11.html#1102000-04092025)
