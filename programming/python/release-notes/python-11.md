@@ -8,6 +8,17 @@ needGenerateH3Content: false
 
 # Release Notes for Python Edition - 11.x
 
+## 11.0.6000 (08/06/2025)
+
+### Changed
+
+- `start_capturing` now stops immediately and returns a license-related error code if none of the tasks have a valid license, instead of proceeding and returning an empty result.
+
+### Fixed
+
+- Fixed a bug that caused a crash when using a specific type of license.
+- Fixed various minor bugs and improved overall stability.
+
 ## 11.0.4000 (07/15/2025)
 
 ### New

@@ -16,6 +16,7 @@ dcv_enumerations: /capture-vision/docs-archive/core/enums/
 dcvb_cpp_api: /capture-vision/docs/server/programming/cplusplus/api-reference/
 dcvb_dotnet_api: /capture-vision/docs/server/programming/dotnet/api-reference/
 dcvb_python_api: /capture-vision/docs/server/programming/python/api-reference/
+dcvb_java_api: /capture-vision/docs/server/programming/java/api-reference/
 dcvb_introduction: /capture-vision/docs/core/introduction/
 dcvb_parameters_reference: /capture-vision/docs/core/parameters/reference/
 dcvb_enumerations: /capture-vision/docs/core/enums/

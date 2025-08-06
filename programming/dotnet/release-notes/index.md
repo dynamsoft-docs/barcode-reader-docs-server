@@ -8,6 +8,7 @@ needAutoGenerateSidebar: false
 
 # Release Notes for .NET Edition
 
+- [11.0.6000 (08/06/2025)]({{ site.dbr_dotnet_release_notes }}dotnet-11.html#1106000-08062025)
 - [11.0.4000 (07/15/2025)]({{ site.dbr_dotnet_release_notes}}dotnet-11.html#1104000-07152025)
 - [11.0.3000 (05/13/2025)]({{ site.dbr_dotnet_release_notes}}dotnet-11.html#1103000-05132025)
 - [10.4.2000 (10/10/2024)]({{ site.dbr_dotnet_release_notes}}dotnet-10.html#1042000-10102024)
