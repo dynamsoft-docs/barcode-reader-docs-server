@@ -58,57 +58,89 @@ public int expectedBarcodesCount
 **Remarks**
 
 * Set `expectedBarcodesCount` to 0 if the barcode count is unknown. The library will try to find at least 1 barcode.
-* Set `expected_barcodes_count` to 1 to reach the highest speed for processing single barcode.
-* Set `expected_barcodes_count` to "n" if there will be "n" barcodes to process from an image.
-* Set `expected_barcodes_count` to the highest expected value if there exists multiple barcode but the exact count is not confirmed.
+* Set `expectedBarcodesCount` to 1 to reach the highest speed for processing single barcode.
+* Set `expectedBarcodesCount` to "n" if there will be "n" barcodes to process from an image.
+* Set `expectedBarcodesCount` to the highest expected value if there exists multiple barcode but the exact count is not confirmed.
 
-### grayscale_transformation_modes
+### grayscaleTransformationModes
 
 Specifies how grayscale transformations should be applied, including whether to process inverted grayscale images and the specific transformation mode to use.
 
-It is a list of 8 integers, where each integer represents a mode specified by the [`EnumGrayscaleTransformationMode`]({{ site.dcvb_python_api }}core/enum-grayscale-transformation-mode.html) enumeration.
+```java
+public int[] grayscaleTransformationModes
+```
+
+It is an array of 8 integers, where each integer represents a mode specified by the [`EnumGrayscaleTransformationMode`]({{ site.dcvb_java_api }}core/enum-grayscale-transformation-mode.html) enumeration.
 
 View the parameter reference page of <a href="{{ site.dcvb_parameters_reference }}image-parameter/grayscale-transformation-modes.html">`GrayscaleTransformationModes`</a> for more detail about grayscale transformation modes.
 
-### grayscale_enhancement_modes
+### grayscaleEnhancementModes
 
 Specifies how to enhance the quality of the grayscale image.
 
-It is a list of 8 integers, where each integer represents a mode specified by the [`EnumGrayscaleEnhancementMode`]({{ site.dcvb_python_api }}core/enum-grayscale-enhancement-mode.html) enumeration.
+```java
+public int[] grayscaleEnhancementModes
+```
+
+It is an array of 8 integers, where each integer represents a mode specified by the [`EnumGrayscaleEnhancementMode`]({{ site.dcvb_java_api }}core/enum-grayscale-enhancement-mode.html) enumeration.
 
 View the parameter reference page of <a href="{{ site.dcvb_parameters_reference }}image-parameter/grayscale-enhancement-modes.html">`GrayscaleEnhancementModes`</a> for more detail about grayscale enhancement modes.
 
-### localization_modes
+### localizationModes
 
-Specifies how to localize barcodes. 
+Specifies how to localize barcodes.
 
-It is a list of 8 integers, where each integer represents a mode specified by the [`EnumLocalizationMode`]({{ site.dbr_python_api }}enum-localization-mode.html) enumeration.
+```java
+public int[] localizationModes
+```
+
+It is an array of 8 integers, where each integer represents a mode specified by the [`EnumLocalizationMode`]({{ site.dbr_java_api }}enum-localization-mode.html) enumeration.
 
 View the parameter reference page of <a href="{{ site.dcvb_parameters_reference }}barcode-reader-task-settings/localization-modes.html">`LocalizationModes`</a> for more detail about location modes.
 
-### deblur_modes
+### deblurModes
 
-Specifies the mode and priority for deblurring. 
+Specifies the mode and priority for deblurring.
 
-It is a list of 10 integers, where each integer represents a mode specified by the [`EnumDeblurMode`]({{ site.dbr_python_api }}enum-deblur-mode.html) enumeration.
+```java
+public int[] deblurModes
+```
+
+It is an array of 10 integers, where each integer represents a mode specified by the [`EnumDeblurMode`]({{ site.dbr_java_api }}enum-deblur-mode.html) enumeration.
 
 View the parameter reference page of <a href="{{ site.dcvb_parameters_reference }}barcode-reader-task-settings/deblur-modes.html">`DeblurModes`</a> for more detail about deblur modes.
 
-### min_result_confidence
+### minResultConfidence
 
 Specifies the minimum result confidence to filter out the low confidence results. The default value is 30.
 
-### min_barcode_text_length
+```java
+public int minResultConfidence
+```
+
+### minBarcodeTextLength
 
 Specifies the minimum barcode text length to filter out the unqualified results.
 
-### barcode_text_regex_pattern
+```java
+public int minBarcodeTextLength
+```
+
+### barcodeTextRegExPattern
 
 Specifies the RegEx pattern of the barcode text to filter out the unqualified results.
 
-### max_threads_in_one_task
+```java
+public String barcodeTextRegExPattern
+```
+
+### maxThreadsInOneTask
 
 Specifies the maximum available threads count in one barcode decoding task.
+
+```java
+public int maxThreadsInOneTask
+```
 
 **Value Range**
 
@@ -118,9 +150,13 @@ Specifies the maximum available threads count in one barcode decoding task.
 
 4
 
-### scale_down_threshold
+### scaleDownThreshold
 
 Specifies the threshold for image shrinking.
+
+```java
+public int scaleDownThreshold
+```
 
 **Value Range**
 
@@ -133,18 +169,4 @@ Specifies the threshold for image shrinking.
 **Remarks**
 
 If the shorter edge size is larger than the given threshold value, the library will calculate the required height and width of the target image and shrink the image to that size before further operation. Otherwise, the library will perform operation on the original image.
-
-## Methods
-  
-| Method | Description |
-|------- | ---- |
-| [`__init__`](#__init__) | Initializes a new instance of the `SimplifiedBarcodeReaderSettings` class. |
-
-### \_\_init\_\_
-
-Initializes a new instance of the `SimplifiedBarcodeReaderSettings` class.
-
-```python
-def __init__(self):
-```
 

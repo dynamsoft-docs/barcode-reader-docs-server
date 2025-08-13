@@ -1,12 +1,12 @@
 ---
 layout: default-layout
-title: Samples - Dynamsoft Barcode Reader SDK Python Edition
-description: Sample list page of Dynamsoft Barcode Reader Python Edition.
-keywords: python
+title: Samples - Dynamsoft Barcode Reader SDK Java Edition
+description: Sample list page of Dynamsoft Barcode Reader Java Edition.
+keywords: java
 needAutoGenerateSidebar: false
 ---
 
-# Samples and Demos - Python Edition
+# Samples and Demos - Java Edition
 
 
 ## Samples
