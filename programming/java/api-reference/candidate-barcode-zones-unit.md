@@ -63,6 +63,10 @@ Returns the candidate barcode zone at the specified index.
 
 `BarcodeReaderException`: Thrown when an error occurs during the operation.
 
+**See Also**
+
+[BarcodeReaderException]({{ site.dbr_java_api }}barcode-reader-exception.html)
+
 ### getCandidateBarcodeZones
 
 Gets all candidate barcode zones.
@@ -91,6 +95,10 @@ public void addCandidateBarcodeZone(CandidateBarcodeZone candidateBarcodeZone) t
 
 `BarcodeReaderException`: Thrown when an error occurs during the operation.
 
+**See Also**
+
+[BarcodeReaderException]({{ site.dbr_java_api }}barcode-reader-exception.html)
+
 ### removeAllCandidateBarcodeZones
 
 Removes all the candidate barcode zones.
@@ -114,3 +122,8 @@ public void removeCandidateBarcodeZone(int index) throws BarcodeReaderException
 **Exceptions**
 
 `BarcodeReaderException`: Thrown when an error occurs during the operation.
+
+**See Also**
+
+[BarcodeReaderException]({{ site.dbr_java_api }}barcode-reader-exception.html)
+

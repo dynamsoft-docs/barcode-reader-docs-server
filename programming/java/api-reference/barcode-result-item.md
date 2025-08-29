@@ -209,6 +209,10 @@ public void setLocation(Quadrilateral location) throws BarcodeReaderException
 
 `BarcodeReaderException`: Thrown when an error occurs during the operation.
 
+**See Also**
+
+[BarcodeReaderException]({{ site.dbr_java_api }}barcode-reader-exception.html)
+
 ### setText
 
 Sets the text of the decoded barcode.

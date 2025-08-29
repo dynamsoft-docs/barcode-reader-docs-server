@@ -59,4 +59,6 @@ public void setImageData(ImageData imgData) throws BarcodeReaderException
 
 **See Also**
 
+[BarcodeReaderException]({{ site.dbr_java_api }}barcode-reader-exception.html)
+
 [ImageData]({{ site.dcvb_java_api }}core/basic-classes/image-data.html)

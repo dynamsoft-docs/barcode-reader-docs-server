@@ -53,6 +53,8 @@ public void addLocalizedBarcode(LocalizedBarcodeElement localizedBarcode, double
 
 **See Also**
 
+[BarcodeReaderException]({{ site.dbr_java_api }}barcode-reader-exception.html)
+
 [LocalizedBarcodeElement]({{ site.dbr_java_api }}localized-barcode-element.html)
 
 ### getCount
@@ -88,6 +90,8 @@ Returns a `LocalizedBarcodeElement` object at the specified index.
 `BarcodeReaderException` If an error occurs while retrieving the localized barcode.
 
 **See Also**
+
+[BarcodeReaderException]({{ site.dbr_java_api }}barcode-reader-exception.html)
 
 [LocalizedBarcodeElement]({{ site.dbr_java_api }}localized-barcode-element.html)
 
@@ -131,6 +135,10 @@ public void removeLocalizedBarcode(int index) throws BarcodeReaderException
 
 `BarcodeReaderException` If an error occurs while removing the localized barcode.
 
+**See Also**
+
+[BarcodeReaderException]({{ site.dbr_java_api }}barcode-reader-exception.html)
+
 ### setLocalizedBarcode
 
 Sets the localized barcode at the specified index.
@@ -155,6 +163,8 @@ public void setLocalizedBarcode(int index, LocalizedBarcodeElement localizedBarc
 `IllegalArgumentException` If the `matrixToOriginalImage` array length is not 9.
 
 **See Also**
+
+[BarcodeReaderException]({{ site.dbr_java_api }}barcode-reader-exception.html)
 
 [LocalizedBarcodeElement]({{ site.dbr_java_api }}localized-barcode-element.html)
 
