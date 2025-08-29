@@ -62,6 +62,8 @@ Returns the `DecodedBarcodeElement` object at the specified index.
 
 **See Also**
 
+[BarcodeReaderException]({{ site.dbr_java_api }}barcode-reader-exception.html)
+
 [DecodedBarcodeElement]({{ site.dbr_java_api }}decoded-barcode-element.html)
 
 ### getDecodedBarcodes
@@ -110,5 +112,7 @@ public void setDecodedBarcode(DecodedBarcodeElement element, double[] matrixToOr
 `IllegalArgumentException` If the `matrixToOriginalImage` array length is not 9.
 
 **See Also**
+
+[BarcodeReaderException]({{ site.dbr_java_api }}barcode-reader-exception.html)
 
 [DecodedBarcodeElement]({{ site.dbr_java_api }}decoded-barcode-element.html)

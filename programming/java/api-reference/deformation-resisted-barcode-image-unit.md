@@ -64,4 +64,6 @@ public void setDeformationResistedBarcode(DeformationResistedBarcode barcode, do
 
 **See Also**
 
+[BarcodeReaderException]({{ site.dbr_java_api }}barcode-reader-exception.html)
+
 [DeformationResistedBarcode]({{ site.dbr_java_api }}deformation-resisted-barcode.html)
