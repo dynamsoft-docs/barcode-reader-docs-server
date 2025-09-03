@@ -1,168 +1,249 @@
 ---
 layout: default-layout
-title: Dynamsoft Barcode Reader C++ API Reference - Main Page
-description: This is the main page of Dynamsoft Barcode Reader SDK API Reference for C++ Language.
-keywords: api reference, C++
-needAutoGenerateSidebar: false
+title: Main Page - Dynamsoft Barcode Reader SDK C++ Edition API Reference
+description: This is the main page of Dynamsoft Barcode Reader SDK C++ Edition API Reference.
+keywords: api reference, c++
+needAutoGenerateSidebar: true
+needGenerateH3Content: true
+permalink: /programming/cplusplus/api-reference/index.html
 ---
 
-# API Reference - C++
+# C++ Language API Reference
+
+## CBarcodeReader class
+
+### Constructor and Destructor
+
+  | Method               | Description |
+  |----------------------|-------------|
+  | [`CBarcodeReader`](cbarcodereader-methods/constructor-and-destructor.md#cbarcodereader) | Default constructor of `CBarcodeReader` object.|
+  | [`~CBarcodeReader`](cbarcodereader-methods/constructor-and-destructor.md#~cbarcodereader) | Destructor of `CBarcodeReader` object.|
+  | [`GetInstance`](cbarcodereader-methods/constructor-and-destructor.md#getinstance) | Creates an instance of Dynamsoft Barcode Reader. |
+  | [`Recycle`](cbarcodereader-methods/constructor-and-destructor.md#recycle) | Destroys an instance of Dynamsoft Barcode Reader. |
+
+### License Methods
+  
+  | Method               | Description |
+  |----------------------|-------------|
+  | [`InitLicense`](cbarcodereader-methods/license.md#initlicense) | Initializes license key and activate the SDK. |
+  | [`GetDeviceUUID`](cbarcodereader-methods/license.md#getdeviceuuid) | Gets the device uuid used for license activating. |
+  | [`IsInstanceValid`](cbarcodereader-methods/license.md#isinstancevalid) | Gets whether the instance is valid when charging by concurrent instances count. |
+  | [`SetDeviceFriendlyName`](cbarcodereader-methods/license.md#setdevicefriendlyname) | Sets a human-readable name that identifies the device. |
+  | [`SetLicenseCachePath`](cbarcodereader-methods/license.md#setlicensecachepath) | Sets a directory path for saving the license cache. |
+  | [`SetMaxConcurrentInstanceCount`](cbarcodereader-methods/license.md#setmaxconcurrentinstancecount) | Sets the max concurrent instance count used for current device and process. |
+  | [`GetInstancePoolStatus`](cbarcodereader-methods/license.md#getinstancepoolstatus) | Gets a struct to represent the status of an instance pool. |
+  | [`GetIdleInstancesCount`](cbarcodereader-methods/license.md#getidleinstancescount) | `Deprecated` |
+  | [`InitLicenseFromServer`](cbarcodereader-methods/license.md#initlicensefromserver) | `Deprecated` |
+  | [`InitLicenseFromLicenseContent`](cbarcodereader-methods/license.md#initlicensefromlicensecontent) | `Deprecated` |
+  | [`OutputLicenseToString`](cbarcodereader-methods/license.md#outputlicensetostring) | `Deprecated` |
+  | [`OutputLicenseToStringPtr`](cbarcodereader-methods/license.md#outputlicensetostringptr) | `Deprecated` |
+  | [`FreeLicenseString`](cbarcodereader-methods/license.md#freelicensestring) | `Deprecated` |
+  | [`InitDLSConnectionParameters`](cbarcodereader-methods/license.md#initdlsconnectionparameters) | `Deprecated` |
+  | [`InitLicenseFromDLS`](cbarcodereader-methods/license.md#initlicensefromdls) | `Deprecated` |
+  | [`InitLTSConnectionParameters`](cbarcodereader-methods/license.md#initltsconnectionparameters) | `Deprecated` |
+  | [`InitLicenseFromLTS`](cbarcodereader-methods/license.md#initlicensefromlts) | `Deprecated` |
+   
+
+### Decode Methods
+   
+  | Method               | Description |
+  |----------------------|-------------|
+  | [`DecodeFile`](cbarcodereader-methods/decode.md#decodefile) | Decode barcodes from a specified image file. |
+  | [`DecodeFileInMemory`](cbarcodereader-methods/decode.md#decodefileinmemory) | Decode barcodes from an image file in memory. |
+  | [`DecodeBuffer`](cbarcodereader-methods/decode.md#decodebuffer) | Decode barcodes from raw buffer. |
+  | [`DecodeBase64String`](cbarcodereader-methods/decode.md#decodebase64string) | Decode barcodes from a base64 encoded string. |
+  | [`DecodeDIB`](cbarcodereader-methods/decode.md#decodedib) | Decode barcode from a handle of device-independent bitmap (DIB). |
+  | [`InitIntermediateResult`](cbarcodereader-methods/decode.md#initintermediateresult) | Inits an intermediateResult struct with default values. |
+  | [`DecodeIntermediateResults`](cbarcodereader-methods/decode.md#decodeintermediateresults) | Decodes barcode from intermediate results. |
+      
+### Basic Settings Methods
+   
+  | Method               | Description |
+  |----------------------|-------------|
+  | [`SetModeArgument`](cbarcodereader-methods/parameter-and-runtime-settings-basic.md#setmodeargument) | Set argument value for the specified mode parameter. |
+  | [`GetModeArgument`](cbarcodereader-methods/parameter-and-runtime-settings-basic.md#getmodeargument) | Get argument value for the specified mode parameter. |
+  | [`GetRuntimeSettings`](cbarcodereader-methods/parameter-and-runtime-settings-basic.md#getruntimesettings) | Get current runtime settings. |
+  | [`UpdateRuntimeSettings`](cbarcodereader-methods/parameter-and-runtime-settings-basic.md#updateruntimesettings) | Modify and update the current runtime settings. |
+  | [`ResetRuntimeSettings`](cbarcodereader-methods/parameter-and-runtime-settings-basic.md#resetruntimesettings) | Reset runtime settings to default. |
+
+### Advanced Settings Methods
+  
+  | Method               | Description |
+  |----------------------|-------------|
+  | [`InitRuntimeSettingsWithFile`](cbarcodereader-methods/parameter-and-runtime-settings-advanced.md#initruntimesettingswithfile)  | Initialize runtime settings with the settings in a given JSON file. |
+  | [`InitRuntimeSettingsWithString`](cbarcodereader-methods/parameter-and-runtime-settings-advanced.md#initruntimesettingswithstring) | Initialize runtime settings with the settings in a given JSON string. |
+  | [`AppendTplFileToRuntimeSettings`](cbarcodereader-methods/parameter-and-runtime-settings-advanced.md#appendtplfiletoruntimesettings) | Append a new template file to the current runtime settings. |
+  | [`AppendTplStringToRuntimeSettings`](cbarcodereader-methods/parameter-and-runtime-settings-advanced.md#appendtplstringtoruntimesettings) | Append a new template string to the current runtime settings. |
+  | [`GetParameterTemplateCount`](cbarcodereader-methods/parameter-and-runtime-settings-advanced.md#getparametertemplatecount) | Get the count of the parameter templates. |
+  | [`GetParameterTemplateName`](cbarcodereader-methods/parameter-and-runtime-settings-advanced.md#getparametertemplatename) | Get the parameter template name by index. |
+  | [`OutputSettingsToFile`](cbarcodereader-methods/parameter-and-runtime-settings-advanced.md#outputsettingstofile) | Output runtime settings to a settings file (JSON file). |
+  | [`OutputSettingsToString`](cbarcodereader-methods/parameter-and-runtime-settings-advanced.md#outputsettingstostring) | Output runtime settings to a string. |
+  | [`OutputSettingsToStringPtr`](cbarcodereader-methods/parameter-and-runtime-settings-advanced.md#outputsettingstostringptr) | Output runtime settings to a string. |
+  | [`FreeSettingsString`](cbarcodereader-methods/parameter-and-runtime-settings-advanced.md#freesettingsstring) | Free memory allocated for runtime settings string. |
+   
+      
 
 
-## DynamsoftCaptureVisionRouter
+   
+   
+   
 
-### [CCaptureVisionRouter]({{ site.dcvb_cpp_api }}capture-vision-router/capture-vision-router.html)
+   
+   
+### Result Methods
+   
+  | Method               | Description |
+  |----------------------|-------------|
+  | [`GetAllTextResults`](cbarcodereader-methods/result.md#getalltextresults) | Get all recognized barcode results. |
+  | [`FreeTextResults`](cbarcodereader-methods/result.md#freetextresults) | Free memory allocated for text results. |
+  | [`GetIntermediateResults`](cbarcodereader-methods/result.md#getintermediateresults) | Get intermediate results. |
+  | [`FreeIntermediateResults`](cbarcodereader-methods/result.md#freeintermediateresults) | Free memory allocated for the intermediate results. |
+   
+   
+### General Methods
+   
+  | Method               | Description |
+  |----------------------|-------------|
+  | [`GetErrorString`](cbarcodereader-methods/general.md#geterrorstring) | Get error message by error code.|
+  | [`GetVersion`](cbarcodereader-methods/general.md#getversion) | Get version information of SDK.|
+  | [`TransformCoordinates`](cbarcodereader-methods/general.md#transformcoordinates) | Transform the coordinates of a point based on the given transformation matrix. |
+  | [`FreeString`](cbarcodereader-methods/general.md#freestring) | Free memory allocated for string. |
 
-- [`Constructor and Destructor`]({{ site.dcvb_cpp_api }}capture-vision-router/instantiate.html)
-- [`Single-File Processing`]({{ site.dcvb_cpp_api }}capture-vision-router/single-file-processing.html)
-- [`Multiple-File Processing`]({{ site.dcvb_cpp_api }}capture-vision-router/multiple-file-processing.html)
-- [`Settings`]({{ site.dcvb_cpp_api }}capture-vision-router/settings.html)
-- [`Intermediate Result`]({{ site.dcvb_cpp_api }}capture-vision-router/intermediate-result.html)
-- [`Auxiliary Methods`]({{ site.dcvb_cpp_api }}capture-vision-router/auxiliary-methods.html)
+   
+### Video Methods
 
-### Classes
+#### Decode
+    
+   | Method               | Description |
+   |----------------------|-------------|
+   | [`StartFrameDecoding`](cbarcodereader-methods/video.md#startframedecoding) | Decode barcodes from inner frame queue. |
+   | [`StartFrameDecodingEx`](cbarcodereader-methods/video.md#startframedecodingex) | Decode barcodes from inner frame queue. |
+   | [`AppendFrame`](cbarcodereader-methods/video.md#appendframe) | Append a frame image buffer to the inner frame queue. |
+   | [`StopFrameDecoding`](cbarcodereader-methods/video.md#stopframedecoding) | Stop thread used for frame decoding. |
 
-- [`CCaptureStateListener`]({{ site.dcvb_cpp_api }}capture-vision-router/auxiliary-classes/capture-state-listener.html)
-- [`CCaptureVisionRouterModule`]({{ site.dcvb_cpp_api }}capture-vision-router/auxiliary-classes/capture-vision-router-module.html)
-- [`CCapturedResult`]({{ site.dcvb_cpp_api }}capture-vision-router/auxiliary-classes/captured-result.html)
-- [`CCapturedResultFilter`]({{ site.dcvb_cpp_api }}capture-vision-router/auxiliary-classes/captured-result-filter.html)
-- [`CCapturedResultReceiver`]({{ site.dcvb_cpp_api }}capture-vision-router/auxiliary-classes/captured-result-receiver.html)
-- [`CImageSourceStateListener`]({{ site.dcvb_cpp_api }}capture-vision-router/auxiliary-classes/image-source-state-listener.html)
-- [`CIntermediateResultManager`]({{ site.dcvb_cpp_api }}capture-vision-router/auxiliary-classes/intermediate-result-manager.html)
-- [`CIntermediateResultReceiver`]({{ site.dcvb_cpp_api }}capture-vision-router/auxiliary-classes/intermediate-result-receiver.html)
-- [`CPresetTemplate`]({{ site.dcvb_cpp_api }}capture-vision-router/auxiliary-classes/preset-template.html)
+#### Parameter
+   
+   | Method               | Description |
+   |----------------------|-------------|
+   | [`InitFrameDecodingParameters`](cbarcodereader-methods/video.md#initframedecodingparameters) | Initialize frame decoding parameter. |
 
-### Structs
+#### Callback
+   
+   | Method               | Description |
+   |----------------------|-------------|
+   | [`SetErrorCallback`](cbarcodereader-methods/video.md#seterrorcallback) | Set callback function to process errors which is triggered when the library finishes decoding a frame. |
+   | [`SetTextResultCallback`](cbarcodereader-methods/video.md#settextresultcallback) | Set callback function to process text results which is triggered when the library finishes decoding a frame. |
+  | [`SetUniqueBarcodeCallback`](cbarcodereader-methods/video.md#setuniquebarcodecallback) | Set callback function to process text results which is triggered when the library finishes decoding a frame and finds unique barcodes. |
+   | [`SetIntermediateResultCallback`](cbarcodereader-methods/video.md#setintermediateresultcallback) | Set callback function to process intermediate results which is triggered when the library finishes decoding a frame. |
 
-- [`SimplifiedCaptureVisionSettings`]({{ site.dcvb_cpp_api }}capture-vision-router/structs/simplified-capture-vision-settings.html)
-
-### Enums
-
-- [`CaptureState`]({{ site.dcvb_enumerations }}capture-vision-router/capture-state.html?lang=cpp)
-- [`ImageSourceState`]({{ site.dcvb_enumerations }}capture-vision-router/image-source-state.html?lang=cpp)
-
-## DynamsoftBarcodeReader
-
-### Classes
-
-- [`CAztecDetails`]({{ site.dbr_cpp_api }}aztec-details.html)
-- [`CBarcodeDetails`]({{ site.dbr_cpp_api }}barcode-details.html)
-- [`CBarcodeReaderModule`]({{ site.dbr_cpp_api }}barcode-reader-module.html)
-- [`CBarcodeResultItem`]({{ site.dbr_cpp_api }}barcode-result-item.html)
-- [`CCandidateBarcodeZone`]({{ site.dbr_cpp_api }}candidate-barcode-zone.html)
-- [`CCandidateBarcodeZonesUnit`]({{ site.dbr_cpp_api }}candidate-barcode-zones-unit.html)
-- [`CComplementedBarcodeImageUnit`]({{ site.dbr_cpp_api }}complemented-barcode-image-unit.html)
-- [`CDataMatrixDetails`]({{ site.dbr_cpp_api }}datamatrix-details.html)
-- [`CDecodedBarcodeElement`]({{ site.dbr_cpp_api }}decoded-barcode-element.html)
-- [`CDecodedBarcodesResult`]({{ site.dbr_cpp_api }}decoded-barcodes-result.html)
-- [`CDecodedBarcodesUnit`]({{ site.dbr_cpp_api }}decoded-barcodes-unit.html)
-- [`CDeformationResistedBarcode`]({{ site.dbr_cpp_api }}deformation-resisted-barcode.html)
-- [`CDeformationResistedBarcodeImageUnit`]({{ site.dbr_cpp_api }}deformation-resisted-barcode-image-unit.html)
-- [`CExtendedBarcodeResult`]({{ site.dbr_cpp_api }}extended-barcode-result.html)
-- [`CLocalizedBarcodeElement`]({{ site.dbr_cpp_api }}localized-barcode-element.html)
-- [`CLocalizedBarcodesUnit`]({{ site.dbr_cpp_api }}localized-barcodes-unit.html)
-- [`COneDCodeDetails`]({{ site.dbr_cpp_api }}oned-code-details.html)
-- [`CPDF417Details`]({{ site.dbr_cpp_api }}pdf417-details.html)
-- [`CQRCodeDetails`]({{ site.dbr_cpp_api }}qr-code-details.html)
-- [`CScaledUpBarcodeImageUnit`]({{ site.dbr_cpp_api }}scaled-up-barcode-image-unit.html)
-
-### Structs
-
-- [`SimplifiedBarcodeReaderSettings`]({{ site.dbr_cpp_api }}simplified-barcode-reader-settings.html)
-
-### Enums
-
-- [`BarcodeFormat`]({{ site.dcvb_enumerations }}barcode-reader/barcode-format.html?lang=cpp)
-- [`DeblurMode`]({{ site.dcvb_enumerations }}barcode-reader/deblur-mode.html?lang=cpp)
-- [`ExtendedBarcodeResultType`]({{ site.dcvb_enumerations }}barcode-reader/extended-barcode-result-type.html?lang=cpp)
-- [`LocalizationMode`]({{ site.dcvb_enumerations }}barcode-reader/localization-mode.html?lang=cpp)
-- [`QRCodeErrorCorrectionLevel`]({{ site.dcvb_enumerations }}barcode-reader/qr-code-error-correction-level.html?lang=cpp)
-
-## DynamsoftCore
-
-### Classes
-
-- [`CAbstractIntermediateResultReceiver`]({{ site.dcvb_cpp_api }}core/intermediate-results/abstract-intermediate-result-receiver.html)
-- [`CBinaryImageUnit`]({{ site.dcvb_cpp_api }}core/intermediate-results/binary-image-unit.html)
-- [`CCapturedResultItem`]({{ site.dcvb_cpp_api }}core/basic-structures/captured-result-item.html)
-- [`CColourImageUnit`]({{ site.dcvb_cpp_api }}core/intermediate-results/colour-image-unit.html)
-- [`CContoursUnit`]({{ site.dcvb_cpp_api }}core/intermediate-results/contours-unit.html)
-- [`CContour`]({{ site.dcvb_cpp_api }}core/basic-structures/contour.html)
-- [`CCoreModule`]({{ site.dcvb_cpp_api }}core/basic-structures/core-module.html)
-- [`CCorner`]({{ site.dcvb_cpp_api }}core/basic-structures/corner.html)
-- [`CEdge`]({{ site.dcvb_cpp_api }}core/basic-structures/edge.html)
-- [`CEnhancedGrayscaleImageUnit`]({{ site.dcvb_cpp_api }}core/intermediate-results/enhanced-grayscale-image-unit.html)
-- [`CFileImageTag`]({{ site.dcvb_cpp_api }}core/basic-structures/file-image-tag.html)
-- [`CGrayscaleImageUnit`]({{ site.dcvb_cpp_api }}core/intermediate-results/grayscale-image-unit.html)
-- [`CImageData`]({{ site.dcvb_cpp_api }}core/basic-structures/image-data.html)
-- [`CImageSourceAdapter`]({{ site.dcvb_cpp_api }}core/basic-structures/image-source-adapter.html)
-- [`CImageSourceErrorListener`]({{ site.dcvb_cpp_api }}core/basic-structures/image-source-error-listener.html)
-- [`CImageTag`]({{ site.dcvb_cpp_api }}core/basic-structures/image-tag.html)
-- [`CIntermediateResultUnit`]({{ site.dcvb_cpp_api }}core/intermediate-results/intermediate-result-unit.html)
-- [`CIntermediateResult`]({{ site.dcvb_cpp_api }}core/intermediate-results/intermediate-result.html)
-- [`CLineSegmentsUnit`]({{ site.dcvb_cpp_api }}core/intermediate-results/line-segments-unit.html)
-- [`CLineSegment`]({{ site.dcvb_cpp_api }}core/basic-structures/line-segment.html)
-- [`CObservationParameters`]({{ site.dcvb_cpp_api }}core/intermediate-results/observed-parameters.html)
-- [`COriginalImageResultItem`]({{ site.dcvb_cpp_api }}core/basic-structures/original-image-result-item.html)
-- [`CPDFReadingParameter`]({{ site.dcvb_cpp_api }}core/basic-structures/pdf-reading-parameter.html)
-- [`CPoint`]({{ site.dcvb_cpp_api }}core/basic-structures/point.html)
-- [`CPredetectedRegionElement`]({{ site.dcvb_cpp_api }}core/intermediate-results/predetected-region-element.html)
-- [`CPredetectedRegionsUnit`]({{ site.dcvb_cpp_api }}core/intermediate-results/predetected-regions-unit.html)
-- [`CQuadrilateral`]({{ site.dcvb_cpp_api }}core/basic-structures/quadrilateral.html)
-- [`CRect`]({{ site.dcvb_cpp_api }}core/basic-structures/rect.html)
-- [`CRegionObjectElement`]({{ site.dcvb_cpp_api }}core/intermediate-results/region-object-element.html)
-- [`CScaledDownColourImageUnit`]({{ site.dcvb_cpp_api }}core/intermediate-results/scaled-down-colour-image-unit.html)
-- [`CShortLinesUnit`]({{ site.dcvb_cpp_api }}core/intermediate-results/short-lines-unit.html)
-- [`CTextRemovedBinaryImageUnit`]({{ site.dcvb_cpp_api }}core/intermediate-results/text-removed-binary-image-unit.html)
-- [`CTextZone`]({{ site.dcvb_cpp_api }}core/intermediate-results/text-zone.html)
-- [`CTextZonesUnit`]({{ site.dcvb_cpp_api }}core/intermediate-results/text-zones-unit.html)
-- [`CTextureDetectionResultUnit`]({{ site.dcvb_cpp_api }}core/intermediate-results/texture-detection-result-unit.html)
-- [`CTextureRemovedBinaryImageUnit`]({{ site.dcvb_cpp_api }}core/intermediate-results/texture-removed-binary-image-unit.html)
-- [`CTextureRemovedGrayscaleImageUnit`]({{ site.dcvb_cpp_api }}core/intermediate-results/texture-removed-grayscale-image-unit.html)
-- [`CTransformedGrayscaleImageUnit`]({{ site.dcvb_cpp_api }}core/intermediate-results/transformed-grayscale-image-unit.html)
-- [`CVector4`]({{ site.dcvb_cpp_api }}core/basic-structures/vector4.html)
-- [`CVideoFrameTag`]({{ site.dcvb_cpp_api }}core/basic-structures/video-frame-tag.html)
-
-### Structs
-
-- [`IntermediateResultExtraInfo`]({{ site.dcvb_cpp_api }}core/structs/intermediate-result-extra-info.html)
-
-### Enums
-
-- [`BufferOverflowProtectionMode`]({{ site.dcvb_enumerations }}core/buffer-overflow-protection-mode.html?lang=cpp)
-- [`CapturedResultItemType`]({{ site.dcvb_enumerations }}core/captured-result-item-type.html?lang=cpp)
-- [`ColourChannelUsageType`]({{ site.dcvb_enumerations }}core/colour-channel-usage-type.html?lang=cpp)
-- [`CornerType`]({{ site.dcvb_enumerations }}core/corner-type.html?lang=cpp)
-- [`ErrorCode`]({{ site.dcvb_enumerations }}core/error-code.html?lang=cpp)
-- [`GrayscaleEnhancementMode`]({{ site.dcvb_enumerations }}core/grayscale-enhancement-mode.html?lang=cpp)
-- [`GrayscaleTransformationMode`]({{ site.dcvb_enumerations }}core/grayscale-transformation-mode.html?lang=cpp)
-- [`ImageCaptureDistanceMode`]({{ site.dcvb_enumerations }}core/image-capture-distance-mode.html?lang=cpp)
-- [`ImagePixelFormat`]({{ site.dcvb_enumerations }}core/image-pixel-format.html?lang=cpp)
-- [`ImageTagType`]({{ site.dcvb_enumerations }}core/image-tag-type.html?lang=cpp)
-- [`IntermediateResultUnitType`]({{ site.dcvb_enumerations }}core/intermediate-result-unit-type.html?lang=cpp)
-- [`PDFReadingMode`]({{ site.dcvb_enumerations }}core/pdf-reading-mode.html?lang=cpp)                
-- [`RasterDataSource`]({{ site.dcvb_enumerations }}core/raster-data-source.html?lang=cpp)
-- [`RegionObjectElementType`]({{ site.dcvb_enumerations }}core/region-object-element-type.html?lang=cpp)
-- [`SectionType`]({{ site.dcvb_enumerations }}core/section-type.html?lang=cpp)
-- [`TransformMatrixType`]({{ site.dcvb_enumerations }}core/transform-matrix-type.html?lang=cpp)
-- [`VideoFrameQuality`]({{ site.dcvb_enumerations }}core/video-frame-quality.html?lang=cpp)
-
-## DynamsoftUtility
-
-- [`CDirectoryFetcher`]({{ site.dcvb_cpp_api }}utility/directory-fetcher.html)
-- [`CFileFetcher`]({{ site.dcvb_cpp_api }}utility/file-fetcher.html)
-- [`CImageManager`]({{ site.dcvb_cpp_api }}utility/image-manager.html)
-- [`CMultiFrameResultCrossFilter`]({{ site.dcvb_cpp_api }}utility/multi-frame-result-cross-filter.html)
-- [`CProactiveImageSourceAdapter`]({{ site.dcvb_cpp_api }}utility/proactive-image-source-adapter.html)
-- [`CUtilityModule`]({{ site.dcvb_cpp_api }}utility/utility-module.html)
-
-## DynamsoftLicense
-
-- [`CLicenseManager`]({{ site.dcvb_cpp_api }}license/license-manager.html)
-- [`CLicenseModule`]({{ site.dcvb_cpp_api }}license/license-module.html)
+#### Status retrieval
+   
+   | Method               | Description |
+   |----------------------|-------------|
+   | [`GetLengthOfFrameQueue`](cbarcodereader-methods/video.md#getlengthofframequeue) | Get length of current inner frame queue. |
+ 
 
 
-## DynamsoftImageProcessing
+## Structs
 
-- [`CImageProcessingModule`]({{ site.dcvb_cpp_api }}image-processing/image-processing-module.html)
+ | Struct | Description |
+ | ------ | ----------- |
+ | [`AztecDetails`]({{ site.dbr_structs }}AztecDetails.html?src=cpp) | Stores the Aztec details. |
+ | [`Contour`]({{ site.dbr_structs }}Contour.html?src=cpp) | Stores the contour information. |
+ | [`DBRPoint`]({{ site.dbr_structs }}DBRPoint.html?src=cpp) | Stores an x- and y-coordinate pair in two-dimensional space. |
+ | [`DataMatrixDetails`]({{ site.dbr_structs }}DataMatrixDetails.html?src=cpp) | Stores the DataMatrix details. |	
+ | [`DM_DLSConnectionParameters`]({{ site.dbr_structs }}DMDLSConnectionParameters.html?src=c) | `Deprecated` |
+ | [`DM_LTSConnectionParameters`]({{ site.dbr_structs }}DMLTSConnectionParameters.html?src=c) | `Deprecated` |
+ | [`ExtendedResult`]({{ site.dbr_structs }}ExtendedResult.html?src=cpp) | Stores the extended result. |
+ | [`FrameDecodingParameters`]({{ site.dbr_structs }}FrameDecodingParameters.html?src=cpp) | Defines a struct to configure the frame decoding Parameters. |
+ | [`FurtherModes`]({{ site.dbr_structs }}FurtherModes.html?src=cpp) | Stores the FurtherModes. |
+ | [`ImageData`]({{ site.dbr_structs }}ImageData.html?src=cpp) | Stores the image data. |
+ | [`InstancePoolStatus`]({{ site.dbr_structs }}InstancePoolStatus.html?src=cpp) | Stores the status of an instance pool. |
+ | [`IntermediateResult`]({{ site.dbr_structs }}IntermediateResult.html?src=cpp) | Stores the intermediate result. |
+ | [`IntermediateResultArray`]({{ site.dbr_structs }}IntermediateResultArray.html?src=cpp) | Stores the intermediate result array. |
+ | [`LineSegment`]({{ site.dbr_structs }}LineSegment.html?src=cpp) | Stores line segment data. |
+ | [`LocalizationResult`]({{ site.dbr_structs }}LocalizationResult.html?src=cpp) | Stores the localization result. |
+ | [`OneDCodeDetails`]({{ site.dbr_structs }}OneDCodeDetails.html?src=cpp) | Stores the OneD code details. |
+ | [`PDF417Details`]({{ site.dbr_structs }}PDF417Details.html?src=cpp) | Stores the PDF417 details. |
+ | [`PublicRuntimeSettings`]({{ site.dbr_structs }}PublicRuntimeSettings.html?src=cpp) | Defines a struct to configure the barcode reading runtime settings. |
+ | [`QRCodeDetails`]({{ site.dbr_structs }}QRCodeDetails.html?src=cpp) | Stores the QRCode details. |
+ | [`Quadrilateral`]({{ site.dbr_structs }}Quadrilateral.html?src=cpp) | Stores the quadrilateral.  |
+ | [`RegionDefinition`]({{ site.dbr_structs }}RegionDefinition.html?src=cpp) | Stores the region information. |
+ | [`RegionOfInterest`]({{ site.dbr_structs }}RegionOfInterest.html?src=cpp) | Stores the region of interest. |
+ | [`SamplingImageData`]({{ site.dbr_structs }}SamplingImageData.html?src=cpp) | Stores the sampling image data.  |
+ | [`TextResult`]({{ site.dbr_structs }}TextResult.html?src=cpp) | Stores the text result. |
+ | [`TextResultArray`]({{ site.dbr_structs }}TextResultArray.html?src=cpp) | Stores the text result array. |
 
+
+
+## Enumerations  
+
+### Format Enumeration
+
+  | Enumeration | Description |
+  |-------------|-------------|
+  | [`BarcodeFormat`]({{ site.dbr_c_cpp_enumerations }}format-enums.html?src=cpp#barcodeformat) | Describes the barcode types in BarcodeFormat group 1. |
+  | [`BarcodeFormat_2`]({{ site.dbr_c_cpp_enumerations }}format-enums.html?src=cpp#barcodeformat_2) | Describes the barcode types in BarcodeFormat group 2. |
+
+### Parameter Mode Enumeration
+
+  | Enumeration | Description |
+  |-------------|-------------|
+  | [`BarcodeColourMode`]({{ site.dbr_c_cpp_enumerations }}parameter-mode-enums.html?src=cpp#barcodecolourmode) | Describes the barcode colour mode. |
+  | [`BarcodeComplementMode`]({{ site.dbr_c_cpp_enumerations }}parameter-mode-enums.html?src=cpp#barcodecomplementmode) | Describes the barcode complement mode. |
+  | [`BinarizationMode`]({{ site.dbr_c_cpp_enumerations }}parameter-mode-enums.html?src=cpp#binarizationmode) | Describes the binarization mode. |
+  | [`ColourClusteringMode`]({{ site.dbr_c_cpp_enumerations }}parameter-mode-enums.html?src=cpp#colourclusteringmode) | Describes the colour clustering mode. |
+  | [`ColourConversionMode`]({{ site.dbr_c_cpp_enumerations }}parameter-mode-enums.html?src=cpp#colourconversionmode) | Describes the colour conversion mode. |
+  | [`ConflictMode`]({{ site.dbr_c_cpp_enumerations }}parameter-mode-enums.html?src=cpp#conflictmode) | Describes the conflict mode. |
+  | [`DeblurMode`]({{ site.dbr_c_cpp_enumerations }}parameter-mode-enums.html?src=cpp#deblurmode) | Describes the deblur mode. |
+  | [`DeformationResistingMode`]({{ site.dbr_c_cpp_enumerations }}parameter-mode-enums.html?src=cpp#deformationresistingmode) | Describes the deformation resisting mode. |
+  | [`DPMCodeReadingMode`]({{ site.dbr_c_cpp_enumerations }}parameter-mode-enums.html?src=cpp#dpmcodereadingmode) | Describes the DPM code reading mode. |
+  | [`GrayscaleTransformationMode`]({{ site.dbr_c_cpp_enumerations }}parameter-mode-enums.html?src=cpp#grayscaletransformationmode) | Describes the grayscale transformation mode. |
+  | [`ImagePreprocessingMode`]({{ site.dbr_c_cpp_enumerations }}parameter-mode-enums.html?src=cpp#imagepreprocessingmode) | Describes the image preprocessing mode. |
+  | [`LocalizationMode`]({{ site.dbr_c_cpp_enumerations }}parameter-mode-enums.html?src=cpp#localizationmode) | Describes the localization mode. | 
+  | [`PDFReadingMode`]({{ site.dbr_c_cpp_enumerations }}parameter-mode-enums.html?src=cpp#pdfreadingmode) | Describes the PDF reading mode. |
+  | [`RegionPredetectionMode`]({{ site.dbr_c_cpp_enumerations }}parameter-mode-enums.html?src=cpp#regionpredetectionmode) | Describes the region predetection mode. |
+  | [`ScaleUpMode`]({{ site.dbr_c_cpp_enumerations }}parameter-mode-enums.html?src=cpp#scaleupmode) | Describes the scale up mode. |
+  | [`TerminatePhase`]({{ site.dbr_c_cpp_enumerations }}parameter-mode-enums.html?src=cpp#terminatephase) | Describes the terminate phase. |
+  | [`TextFilterMode`]({{ site.dbr_c_cpp_enumerations }}parameter-mode-enums.html?src=cpp#textfiltermode) | Describes the text filter mode. |
+  | [`TextureDetectionMode`]({{ site.dbr_c_cpp_enumerations }}parameter-mode-enums.html?src=cpp#texturedetectionmode) | Describes the texture detection mode. | 
+
+### Result Related Enumeration
+
+  | Enumeration | Description |
+  |-------------|-------------|
+  | [`IMResultDataType`]({{ site.dbr_c_cpp_enumerations }}result-enums.html?src=cpp#imresultdatatype) | Describes the intermediate result data type. |
+  | [`IntermediateResultSavingMode`]({{ site.dbr_c_cpp_enumerations }}result-enums.html?src=cpp#intermediateresultsavingmode) | Describes the intermediate result saving mode. |
+  | [`IntermediateResultType`]({{ site.dbr_c_cpp_enumerations }}result-enums.html?src=cpp#intermediateresulttype) | Describes the intermediate result type. |
+  | [`ResultCoordinateType`]({{ site.dbr_c_cpp_enumerations }}result-enums.html?src=cpp#resultcoordinatetype) | Describes the result coordinate type. |
+  | [`ResultType`]({{ site.dbr_c_cpp_enumerations }}result-enums.html?src=cpp#resulttype) | Describes the extended result type. |
+  | [`TextResultOrderMode`]({{ site.dbr_c_cpp_enumerations }}result-enums.html?src=cpp#textresultordermode) | Describes the text result order mode. |
+
+### Frame Decoding Enumeration
+
+  | Enumeration | Description |
+  |-------------|-------------|
+  | [`ClarityCalculationMethod`]({{ site.dbr_c_cpp_enumerations }}frame-decoding-enums.html?src=cpp#claritycalculationmethod) | Describes the clarity calculation method. |
+  | [`ClarityFilterMode`]({{ site.dbr_c_cpp_enumerations }}frame-decoding-enums.html?src=cpp#clarityfiltermode) | Describes the clarity filter mode. |
+  
+### Other Enumeration
+
+  | Enumeration | Description |
+  |-------------|-------------|
+  | [`DM_ChargeWay`]({{ site.dbr_c_cpp_enumerations }}other-enums.html?src=cpp#dm_chargeway) | `Deprecated` |
+  | [`DM_DeploymentType`]({{ site.dbr_c_cpp_enumerations }}other-enums.html?src=cpp#dm_deploymenttype) | `Deprecated` |
+  | [`DM_LicenseModule`]({{ site.dbr_c_cpp_enumerations }}other-enums.html?src=cpp#dm_licensemodule) | `Deprecated` |
+  | [`DM_UUIDGenerationMethod`]({{ site.dbr_c_cpp_enumerations }}other-enums.html?src=cpp#dm_uuidgenerationmethod) | `Deprecated` |
+  | [`ImagePixelFormat`]({{ site.dbr_c_cpp_enumerations }}other-enums.html?src=cpp#imagepixelformat) | Describes the image pixel format. |
+  | [`QRCodeErrorCorrectionLevel`]({{ site.dbr_c_cpp_enumerations }}other-enums.html?src=cpp#qrcodeerrorcorrectionlevel) | Describes the QR Code error correction level. |
+  | [`Product`]({{ site.dbr_c_cpp_enumerations }}other-enums.html?src=cpp#product) | `Deprecated` |
+
+### [Error Code]({{ site.dbr_c_cpp_enumerations }}error-code.html?src=cpp)
+
+## Callbacks
+
+  | Method | Description |
+  |----------|-------------|
+  | [`CB_Error`](function-pointer.md#cb_error) | Represents the method that will handle the error code returned by the SDK. |
+  | [`CB_IntermediateResult`](function-pointer.md#cb_intermediateresult) | Represents the method that will handle the intermediate result array returned by the SDK. |
+  | [`CB_TextResult`](function-pointer.md#cb_textresult) | Represents the method that will handle the text result array returned by the SDK. | 

@@ -1,48 +1,41 @@
 ---
-title: Introduction - Dynamsoft Barcode Reader C++ Edition
-keywords: c++, cplusplus, documentation
-description: This page introduces the C++ edition of Dynamsoft Barcode Reader
+layout: default-layout
+title: Main Page - Dynamsoft Barcode Reader SDK C++ Edition
+description: This is the main page of Dynamsoft Barcode Reader SDK C++ Edition.
+keywords: c++
 needAutoGenerateSidebar: false
+breadcrumbText: C++
 permalink: /programming/cplusplus/index.html
 ---
 
-# Dynamsoft Barcode Reader Documentation for C++ Edition
+# Dynamsoft Barcode Reader C++ Edition Introduction
 
-Dynamsoft Barcode Reader (DBR) SDK C++ Edition is a barcode reading tool designed specifically for C++ developers.
+## User Guide
 
-Leveraging the efficiency and flexibility of the C++ language, DBR C++ Edition provides rich APIs for developers to easily integrate barcode reading functionality into your c++ applications. Please take a look at [API Reference]({{site.dbr_cpp_api}}index.html) to see details.
+- [Getting Started]({{site.dbr_cpp}}user-guide.html)
+- [Explore Features]({{site.dbr_cpp}}user-guide/explore-features/index.html)
+- [Check Use Cases]({{site.dbr_cpp}}user-guide/use-cases/index.html)
 
-In addition, DBR C++ Edition provides cross-platform support, running on multiple operating systems such as Windows, Linux, and Mac, to meet the needs of different development environments
+## Samples and Demo
 
-As one of the functional products of the Dynamsoft Capture Vision (DCV) framework, DBR is also designed to seamlessly integrate with other DCV components and provide developers with a comprehensive set of image processing tools, which cover image capturing, content understanding, result parsing, and interactive workflow. If you are building such a capturing and processing solution, take a look at [Introduction to Dynamsoft Capture Vision]({{site.dcvb_architecture}}).
+- <a href="https://github.com/Dynamsoft/barcode-reader-c-cpp-samples/tree/v9.x/samples/C%2B%2B" target="_blank">C++ Samples</a>
+- <a href="https://demo.dynamsoft.com/barcode-reader/" target="_blank">Online Demo</a>
 
-Furthermore, DBR provides a powerful parameter system in order to cope with various scenarios. Read <a href="{{site.dbr_parameters_reference}}index.html">Parameter Reference</a> for details.
+## API Reference
 
-## Getting Started with DBR C++ Edition
+- [API Reference]({{site.dbr_cpp_api}}index.html)
 
-The best way to start with the Dynamsoft Barcode Reader C++ Edition, is following the [`User Guide`]({{site.dbr_cpp}}user-guide.html) to build your first barcode reading application. Please note that the system requirements is as below:
+## Release Notes
 
-### System Requirements
+- [Version 9.x](release-notes/cpp-9.md)
+- [Version 8.x](release-notes/cpp-8.md)
+- [Version 7.6.0 and below](release-notes/cpp-7.md)
 
-- Windows:
-  - Supported Versions: Windows 7 and higher, or Windows Server 2003 and higher
-  - Architecture: x64 and x86
-  - Development Environment: Visual Studio 2012 or higher.
+## Upgrade Instructions
 
-- Linux:
-  - Supported Distributions: Ubuntu 14.04.4+ LTS, Debian 8+, CentOS 6+
-  - Architectures: x64, ARM 64-bit, ARM 32-bit (for versions below 9.6.40.2)
-  - Minimum GLIBC Version: GLIBC_2.18 or higher
-  - Compiler: G++ 5.4 or higher
+- [How to upgrade to latest version]({{site.dbr_cpp}}upgrade-instruction.html)
 
-- MacOS 64bit: 10.12+ (not included in the trial package, contact us to get the SDK)
+## Online Store
 
+- <a href="https://www.dynamsoft.com/store/dynamsoft-barcode-reader/#desktop" target="_blank">Get Pricing For Dynamsoft Barcode Reader</a>
 
-## License Subscription
-
-To develop and run your application with Dynamsoft Barcode Reader SDK, you need an active license key:
-* <a href="https://www.dynamsoft.com/customer/license/trialLicense?utm_source=docs&product=dbr&package=c_cpp" target="_blank">Request a 30-day free trial license</a>
-
-## Contact Us
-
-<a href="https://www.dynamsoft.com/company/customer-service/#contact" target="_blank">Feel free to contact us if you have any questions.</a>

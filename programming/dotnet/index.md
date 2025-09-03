@@ -1,53 +1,41 @@
 ---
-title: Introduction - Dynamsoft Barcode Reader .NET Edition
-keywords: .NET, documentation
-description: This page introduces the .NET Edition of Dynamsoft Barcode Reader
+layout: default-layout
+title: Main Page - Dynamsoft Barcode Reader SDK .NET Edition
+description: This is the main page of Dynamsoft Barcode Reader SDK .NET Edition.
+keywords: .Net
 needAutoGenerateSidebar: false
+breadcrumbText: .NET
+permalink: /programming/dotnet/index.html
 ---
 
-# Introduction to Dynamsoft Barcode Reader .NET Edition
+# Dynamsoft Barcode Reader .NET Edition Introduction
 
-Dynamsoft Barcode Reader (DBR) SDK .NET Edition is a barcode reading tool designed specifically for .NET developers.
+## User Guide
 
-Leveraging the efficiency and flexibility of the .NET language, DBR .NET Edition provides rich APIs for developers to easily integrate barcode reading functionality into your .NET applications. Please take a look at [API Reference]({{ site.dbr_dotnet_api}}index.html) to see details.
+- [Getting Started]({{site.dbr_dotnet}}user-guide.html)
+- [Explore Features]({{site.dbr_dotnet}}user-guide/explore-features/index.html)
+- [Check Use Cases]({{site.dbr_dotnet}}user-guide/use-cases/index.html)
 
-As one of the functional products of the Dynamsoft Capture Vision (DCV) framework, DBR is also designed to seamlessly integrate with other DCV components and provide developers with a comprehensive set of image processing tools, which cover image capturing, content understanding, result parsing, and interactive workflow. If you are building such a capturing and processing solution, take a look at [Introduction to Dynamsoft Capture Vision]({{site.dcvb_architecture}}).
+## Samples and Demo
 
-Furthermore, DBR provides a powerful parameter system in order to cope with various scenarios. Read <a href="{{site.dbr_parameters_reference}}index.html">Parameter Reference</a> for details.
-
-## Getting Started with DBR .NET Edition
-
-The best way to start with the Dynamsoft Barcode Reader .NET Edition, is following the [`User Guide`]({{ site.dbr_dotnet}}user-guide.html) to build your first barcode reading application. Please note that the system requirements is as below:
-
-### System Requirements
-
-- Windows:
-  - Supported Versions: Windows 7 and higher, or Windows Server 2003 and higher
-  - Architecture: x64 and x86
-  - Development Environment: Visual Studio 2012 or higher.
-
-- Linux:
-  - Supported Distributions: Ubuntu 14.04.4+ LTS, Debian 8+, CentOS 6+
-  - Architectures: x64
-  - Minimum GLIBC Version: GLIBC_2.18 or higher
-
-- Supported .NET versions
-  - .NET Framework 3.5 and above
-  - .NET 6, 7, 8
+- <a href="https://github.com/Dynamsoft/barcode-reader-dotnet-samples" target="_blank">.NET Samples</a>
+- <a href="https://www.dynamsoft.com/barcode-reader/resources/code-gallery/?tag=vb.net" target="_blank">Code Gallery - VB.NET</a>
+- <a href="https://demo.dynamsoft.com/barcode-reader/" target="_blank">Online Demo</a>
 
 ## API Reference
 
-For an overview of the APIs, see the [API Reference]({{ site.dbr_dotnet_api }}).
+- [API Reference]({{site.dbr_dotnet_api}}index.html)
 
 ## Release Notes
 
-For a peek of DBR .NET Edition history, check the [Release Notes]({{ site.dbr_dotnet_release_notes }}).
+- [Version 9.x](release-notes/dotnet-9.md)
+- [Version 8.x](release-notes/dotnet-8.md)
+- [Version 7.6.0 and below](release-notes/dotnet-7.md)
 
-## License Subscription
+## Upgrade Instructions
 
-To develop and run your application with Dynamsoft Barcode Reader SDK, you need an active license key:
-* <a href="https://www.dynamsoft.com/customer/license/trialLicense?utm_source=docs&product=dbr&package=dotnet" target="_blank">Request a 30-day free trial license</a>
+- [How to upgrade to latest version]({{site.dbr_dotnet}}upgrade-instruction.html)
 
-## Contact Us
+## Online Store
 
-<a href="https://www.dynamsoft.com/company/customer-service/#contact" target="_blank">Feel free to contact us if you have any questions.</a>
+- <a href="https://www.dynamsoft.com/store/dynamsoft-barcode-reader/#desktop" target="_blank">Get Pricing For Dynamsoft Barcode Reader</a>

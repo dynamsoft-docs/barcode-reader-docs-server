@@ -1,0 +1,94 @@
+---
+layout: default-layout
+title: TextResult Class - Dynamsoft Barcode Reader SDK .NET Edition API Reference
+description: This page shows the TextResult Class of Dynamsoft Barcode Reader SDK .NET Edition.
+keywords: TextResult, class, api reference, .Net
+needAutoGenerateSidebar: false
+permalink: /programming/dotnet/api-reference/class/TextResult-v7.6.0.html
+---
+
+
+# TextResult
+Stores the text result.
+
+```csharp
+public class TextResult
+```  
+
+## Attributes
+  
+| Attribute | Type |
+|---------- | ---- |
+| [`BarcodeFormat`](#barcodeformat) | [`EnumBarcodeFormat`]({{ site.dbr_dotnet_enumerations }}format-enums.html#barcodeformat) |
+| [`BarcodeFormatString`](#barcodeformatstring) | *string* |
+| [`BarcodeFormat_2`](#barcodeformat_2) | [`EnumBarcodeFormat_2`]({{ site.dbr_dotnet_enumerations }}format-enums.html#barcodeformat_2) |
+| [`BarcodeFormatString_2`](#barcodeformatstring_2) | *string* |
+| [`BarcodeText`](#barcodetext) | *string* |
+| [`BarcodeBytes`](#barcodebytes) | *byte[ ]* |
+| [`LocalizationResult`](#localizationresult) | *[`LocalizationResult`](LocalizationResult.md)* |
+| [`DetailedResult`](#detailedresult) | *object* |
+| [`Results`](#results) | *[`ExtendedResult`](ExtendedResult.md)[ ]* |
+
+
+### BarcodeFormat
+Barcode type in BarcodeFormat group 1.
+
+```csharp
+EnumBarcodeFormat Dynamsoft.Barcode.TextResult.BarcodeFormat
+```
+
+### BarcodeFormatString
+Barcode type in BarcodeFormat group 1 as string.
+
+```csharp
+string Dynamsoft.Barcode.TextResult.BarcodeFormatString
+```
+
+### BarcodeFormat_2
+Barcode type in BarcodeFormat group 2.
+
+```csharp
+EnumBarcodeFormat_2 Dynamsoft.Barcode.TextResult.BarcodeFormat_2
+```
+
+### BarcodeFormatString_2
+Barcode type in BarcodeFormat group 2 as string.
+
+```csharp
+string Dynamsoft.Barcode.TextResult.BarcodeFormatString_2
+```
+
+### BarcodeText
+The barcode text, ends by '\0'.
+
+```csharp
+string Dynamsoft.Barcode.TextResult.BarcodeText
+```
+
+### BarcodeBytes
+The barcode content in a byte array.
+
+```csharp
+byte[] Dynamsoft.Barcode.TextResult.BarcodeBytes
+```
+
+### LocalizationResult
+The corresponding localization result.
+
+```csharp
+LocalizationResult Dynamsoft.Barcode.TextResult.LocalizationResult
+```
+
+### DetailedResult
+One of the following: [`QRCodeDetails`](QRCodeDetails.md), [`PDF417Details`](PDF417Details.md), [`DataMatrixDetails`](DataMatrixDetails.md), [`AztecDetails`](AztecDetails.md), [`OneDCodeDetails`](OneDCodeDetails.md).
+
+```csharp
+object Dynamsoft.Barcode.TextResult.DetailedResult
+```
+
+### Results
+The extended result array.
+
+```csharp
+ExtendedResult[] Dynamsoft.Barcode.TextResult.Results
+```

@@ -8,13 +8,14 @@ noTitleIndex: false
 
 # Explore Features
 
-Once you have got an application running with Dynamsoft Barcode Reader .NET Edition, you can explore the many features of the SDK to see how to make the best out of the SDK.
+Once you have got an application running with Dynamsoft Barcode Reader .NET edition, you can explore the many features of the SDK to see how to make the best out of the SDK.
 
-> If you are just getting started with Dynamsoft Barcode Reader .NET Edition, we recommend that you read [Getting Started]({{ site.dbr_dotnet}}user-guide.html) first.
+> If you are just getting started with Dynamsoft Barcode Reader .NET Edition, we recommend that you read [Getting Started]({{site.dbr_dotnet}}user-guide.html) first.
 
 ## Basic Features
 
 * [Specify barcode formats and count]({{site.features}}barcode-formats-and-count.html?lang=csharp)
+* [Read barcode from image]({{site.features}}read-different-source.html?lang=csharp)
 * [Read a specific area/region]({{site.features}}barcode-scan-region.html?lang=csharp)
 
 ## Handle Difficult Scenarios
@@ -40,9 +41,10 @@ While the SDK has been carefully tuned to provide the best possible performance 
 * [Get barcode location]({{site.features}}get-barcode-location.html?lang=csharp)
 * [Get detailed barcode information]({{site.features}}get-detailed-info.html?lang=csharp)
 * [Filter and sort decoding results]({{site.features}}filter-and-sort.html?lang=csharp)
+* [Use intermediate results]({{site.features}}use-intermidiate-results.html?lang=csharp)
 
 ## Advanced Features
 
 * [Control when to terminate a decoding process]({{site.features}}control-terminate-phase.html?lang=csharp)
-* [Use SimplifiedSettings or Templates]({{site.features}}use-runtimesettings-or-templates.html?lang=csharp)
+* [Use RuntimeSettings or Templates]({{site.features}}use-runtimesettings-or-templates.html?lang=csharp)
 * [Use format specific configurations]({{site.features}}use-format-specific-configuration.html?lang=csharp)

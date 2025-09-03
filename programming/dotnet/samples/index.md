@@ -4,36 +4,24 @@ title: Samples - Dynamsoft Barcode Reader SDK .NET Edition
 description: Sample list page of Dynamsoft Barcode Reader .NET Edition.
 keywords: .net
 needAutoGenerateSidebar: false
+permalink: /programming/dotnet/samples/index.html
 ---
 
 # Samples and Demos - .NET Edition
 
+
 ## Samples
 
-### Basic Barcode Reader Samples
-
 | Sample Name | Description |
 | --- | --- |
-| <a href="https://github.com/Dynamsoft/barcode-reader-dotnet-samples/tree/main/Samples/HelloWorld/ReadAnImage" target="_blank">ReadAnImage</a> | This sample demonstrates the simplest way to read barcodes from an image file and output barcode format and text. |
-| <a href="https://github.com/Dynamsoft/barcode-reader-dotnet-samples/tree/main/Samples/HelloWorld/ReadMultipleImages" target="_blank">ReadMultipleImages</a> | This sample demonstrates the simplest way to read barcodes from directory with image files and output barcode format and text. |
-| <a href="https://github.com/Dynamsoft/barcode-reader-dotnet-samples/tree/main/Samples/GeneralSettings" target="_blank">GeneralSettings</a> | This sample demonstrates how to configure general used settings and read barcodes from an image file. |
-| <a href="https://github.com/Dynamsoft/barcode-reader-dotnet-samples/tree/main/Samples/ReadDPMBarcode" target="_blank">ReadDPMBarcode</a> | This sample demonstrates how to read DPM (Direct Part Marking) barcodes and get barcode results. |
-| <a href="https://github.com/Dynamsoft/barcode-reader-dotnet-samples/tree/main/Samples/ParameterTuner" target="_blank">ParameterTuner</a> | This sample demonstrates how to adjust and test different parameter settings to optimize barcode recognition performance. |
-| <a href="https://github.com/Dynamsoft/barcode-reader-dotnet-samples/tree/main/Samples/ShowLocalizedVSDecodedBarcodes" target="_blank">ShowLocalizedVSDecodedBarcodes</a> | This sample demonstrates how to highlight successfully decoded and only-localized barcodes with different styles of rectangles. |
-| <a href="https://github.com/Dynamsoft/barcode-reader-dotnet-samples/tree/main/Samples/ServerSideBarcodeDecoder" target="_blank">ServerSideBarcodeDecoder</a> | This sample demonstrates how to decode barcodes on the server side by sending images from a client application. |
-
-### Additional Samples using Capture Vision SDK
-
-In addition to the classic barcode decoding samples listed above, the following samples go a step further by parsing the decoded results and showcasing more structured workflows.
-
-> [!IMPORTANT]
-> These samples use the `Dynamsoft.DotNet.CaptureVision.Bundle` package instead of `Dynamsoft.DotNet.BarcodeReader.Bundle`. If you're switching to these samples, make sure to install and use the correct package.
-
-| Sample Name | Description |
-| --- | --- |
-| <a href="https://github.com/Dynamsoft/capture-vision-dotnet-samples/tree/main/Samples/DriverLicenseScanner" target="_blank">DriverLicenseScanner</a> | Shows how to capture and extract user's information from driver license/ID. |
-| <a href="https://github.com/Dynamsoft/capture-vision-dotnet-samples/tree/main/Samples/VINScanner" target="_blank">VINScanner</a> | Shows how to capture and extract vehicle's information from Vehicle Identification Number (VIN). |
-| <a href="https://github.com/Dynamsoft/capture-vision-dotnet-samples/tree/main/Samples/GS1AIScanner" target="_blank">GS1AIScanner</a> | Shows how to extract and interpret GS1 Application Identifiers (AIs) from GS1 barcodes. |
+| <a href="https://github.com/Dynamsoft/barcode-reader-dotnet-samples/tree/v9.x/samples/HelloWorld" target="_blank">HelloWorld</a> | This sample demonstrates the simplest way to read barcodes from an image file and output barcode format and text. |
+| <a href="https://github.com/Dynamsoft/barcode-reader-dotnet-samples/tree/v9.x/samples/GeneralSettings" target="_blank">GeneralSettings</a> | This sample demonstrates how to configure general used settings and read barcodes from an image file. |
+| <a href="https://github.com/Dynamsoft/barcode-reader-dotnet-samples/tree/v9.x/samples/UseCases/ProcessDocumentsByBarcodes" target="_blank">ProcessDocumentsByBarcodes</a> | This sample demonstrates how to renaming, splitting or classifying a batch of documents using barcodes result. |
+| <a href="https://github.com/Dynamsoft/barcode-reader-dotnet-samples/tree/v9.x/samples/UseCases/DecodeFromScannerAndWebcam" target="_blank">DecodeFromScannerAndWebcam</a> | This sample demonstrates how to read barcodes from scanner, webcam and local files. |
+| <a href="https://github.com/Dynamsoft/barcode-reader-dotnet-samples/tree/v9.x/samples/ImageDecoding" target="_blank">ImageDecoding</a> | This sample demonstrates how to decode images in various format (including Disk File/File Bytes in Memory/Raw Buffer/Base64 String/Bitmap) when using Dynamsoft Barcode Reader. |
+| <a href="https://github.com/Dynamsoft/barcode-reader-dotnet-samples/tree/v9.x/samples/Performance/SpeedFirstSettings" target="_blank">SpeedFirstSettings</a> | This sample demonstrates how to configure Dynamsoft Barcode Reader to read barcodes as fast as possible. The downside is that read-rate and accuracy might be affected. |
+| <a href="https://github.com/Dynamsoft/barcode-reader-dotnet-samples/tree/v9.x/samples/Performance/ReadRateFirstSettings" target="_blank">ReadRateFirstSettings</a> | This sample demonstrates how to configure Dynamsoft Barcode Reader to read as many barcodes as possible at one time. The downside is that speed and accuracy might be affected. It is recommended to apply these configurations when decoding multiple barcodes from a single image. |
+| <a href="https://github.com/Dynamsoft/barcode-reader-dotnet-samples/tree/v9.x/samples/Performance/AccuracyFirstSettings" target="_blank">AccuracyFirstSettings</a> | This sample demonstrates how to configure Dynamsoft Barcode Reader to read barcodes as accurately as possible. The downside is that speed and read-rate might be affected. It is recommended to apply these configurations when misreading is unbearable. |
 
 ## Official Online Demo
 This <a href="https://demo.dynamsoft.com/barcode-reader/" target="_blank">Online Demo</a> is an online barcode scanner for all barcode types. All supported parameters are opened for customization to see how Dynamsoft Barcode Reader works in different usage scenarios. 

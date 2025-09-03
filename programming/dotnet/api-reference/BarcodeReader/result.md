@@ -1,0 +1,49 @@
+---
+layout: default-layout
+title: BarcodeReader Result Methods - Dynamsoft Barcode Reader SDK .NET Edition API Reference
+description: This page shows BarcodeReader Result methods of Dynamsoft Barcode Reader SDK .NET Edition.
+keywords: GetIntermediateResults, result methods, BarcodeReader, api reference, .Net
+needAutoGenerateSidebar: true
+permalink: /programming/dotnet/api-reference/BarcodeReader/result.html
+---
+
+
+# Result Methods
+
+  | Method               | Description |
+  |----------------------|-------------|
+  | [`GetIntermediateResults`](#getintermediateresults) | Returns intermediate results containing the original image, the colour clustered image, the binarized Image, contours, Lines, TextBlocks, etc.  |
+
+
+
+ 
+
+
+## GetIntermediateResults
+Returns intermediate results containing the original image, the colour clustered image, the binarized Image, contours, Lines, TextBlocks, etc.
+
+```csharp
+IntermediateResult[] Dynamsoft.DBR.BarcodeReader.GetIntermediateResults() 
+```   
+
+**Return Value**  
+[`IntermediateResult`](../class/IntermediateResult.md) array.
+
+**Code Snippet**  
+```csharp
+string errorMsg;
+BarcodeReader.InitLicense("YOUR-LICENSE-KEY", out errorMsg);
+BarcodeReader reader = BarcodeReader.GetInstance();
+if (reader != null)
+{
+	PublicRuntimeSettings settings = new PublicRuntimeSettings();
+	settings = reader.GetRuntimeSettings();
+	settings.IntermediateResultTypes = (int)(EnumIntermediateResultType.IRT_ORIGINAL_IMAGE | EnumIntermediateResultType.IRT_COLOUR_CLUSTERED_IMAGE | EnumIntermediateResultType.IRT_COLOUR_CONVERTED_GRAYSCALE_IMAGE);
+	reader.UpdateRuntimeSettings(settings);
+	string fileName = @"C:\Program Files (x86)\Dynamsoft\{Version number}\Images\AllSupportedBarcodeTypes.tif";
+	TextResult[] textResult = demo.DecodeFile(fileName, "");
+	IntermediateResult[] intermediateResults = reader.GetIntermediateResults();
+	//... add further process
+    reader.Recycle();
+}
+```

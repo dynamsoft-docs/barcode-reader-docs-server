@@ -1,116 +1,260 @@
 ---
 layout: default-layout
-title: Dynamsoft Barcode Reader .NET API Reference - Main Page
-description: This is the main page of Dynamsoft Barcode Reader SDK API Reference for .NET Language.
-keywords: api reference, .NET
-needAutoGenerateSidebar: false
+title: Main Page - Dynamsoft Barcode Reader SDK .NET Edition API Reference
+description: This is the main page of Dynamsoft Barcode Reader SDK .NET Edition API Reference.
+keywords: api reference, .Net
+needAutoGenerateSidebar: true
+needGenerateH3Content: true
+permalink: /programming/dotnet/api-reference/index.html
 ---
 
-# API Reference - .NET
+# .Net API Reference
 
-## DynamsoftCaptureVisionRouter
+## BarcodeReader Class
 
-### [CaptureVisionRouter]({{ site.dcvb_dotnet_api }}capture-vision-router/capture-vision-router.html)
+### `BarcodeReader` Attributes
+  
+  | Attribute            | Description |
+  |----------------------|-------------|
+  | `ProductKeys`  | Product keys used for Dynamsoft Barcode Reader. |
 
-- [`Constructor and Destructor`]({{ site.dcvb_dotnet_api }}capture-vision-router/instantiate.html)
-- [`Single-File Processing`]({{ site.dcvb_dotnet_api }}capture-vision-router/single-file-processing.html)
-- [`Multiple-File Processing`]({{ site.dcvb_dotnet_api }}capture-vision-router/multiple-file-processing.html)
-- [`Settings`]({{ site.dcvb_dotnet_api }}capture-vision-router/settings.html)
+### Constructor and Destructor
+   
+  | Method               | Description |
+  |----------------------|-------------|
+  | [`BarcodeReader`](BarcodeReader/constructor-and-destructor.md#barcodereader) | Constructor of `BarcodeReader` object.|
+  | [`Dispose`](BarcodeReader/constructor-and-destructor.md#dispose) | Destroys an instance of Dynamsoft Barcode Reader. |
+  | [`GetInstance`](BarcodeReader/constructor-and-destructor.md#getinstance) | Creates an instance of Dynamsoft Barcode Reader. |
+  | [`Recycle`](BarcodeReader/constructor-and-destructor.md#recycle) | Destroys an instance of Dynamsoft Barcode Reader. |
+   
+ 
+   
 
-### Classes
+### License Methods
+  
+  | Method               | Description |
+  |----------------------|-------------|
+  | [`InitLicense`](BarcodeReader/license.md#initlicense) | Initializes license key and activate the SDK. |
+  | [`GetDeviceUUID`](BarcodeReader/license.md#getdeviceuuid) | Gets the device uuid used for license activating. |
+  | [`IsInstanceValid`](BarcodeReader/license.md#isinstancevalid) | Gets whether the instance is valid when charging by concurrent instances count. |
+  | [`SetDeviceFriendlyName`](BarcodeReader/license.md#setdevicefriendlyname) | Sets a human-readable name that identifies the device. |
+  | [`SetLicenseCachePath`](BarcodeReader/license.md#setlicensecachepath) | Sets a directory path for saving the license cache. |
+  | [`SetMaxConcurrentInstanceCount`](BarcodeReader/license.md#setmaxconcurrentinstancecount) | Sets the max concurrent instance count used for current device and process. |
+  | [`GetInstancePoolStatus`](BarcodeReader/license.md#getinstancepoolstatus) | Gets a class to represent the status of an instance pool |
+  | [`GetIdleInstancesCount`](BarcodeReader/license.md#getidleinstancescount) | `Deprecated` |
+  | [`InitLicenseFromServer`](BarcodeReader/license.md#initlicensefromserver) | `Deprecated` |
+  | [`InitLicenseFromLicenseContent`](BarcodeReader/license.md#initlicensefromlicensecontent) | `Deprecated` |
+  | [`OutputLicenseToString`](BarcodeReader/license.md#outputlicensetostring) | `Deprecated`|
+  | [`InitDLSConnectionParameters`](BarcodeReader/license.md#initdlsconnectionparameters) | `Deprecated` |
+  | [`InitLicenseFromDLS`](BarcodeReader/license.md#initlicensefromdls) | `Deprecated` |
+  | [`InitLTSConnectionParameters`](BarcodeReader/license.md#initltsconnectionparameters) | `Deprecated` |
+  | [`InitLicenseFromLTS`](BarcodeReader/license.md#initlicensefromlts) | `Deprecated` |
+   
+   
 
-- [`CapturedResult`]({{ site.dcvb_dotnet_api }}capture-vision-router/auxiliary-classes/captured-result.html)
-- [`CapturedResultFilter`]({{ site.dcvb_dotnet_api }}capture-vision-router/auxiliary-classes/captured-result-filter.html)
-- [`CapturedResultReceiver`]({{ site.dcvb_dotnet_api }}capture-vision-router/auxiliary-classes/captured-result-receiver.html)
-- [`CaptureVisionRouterModule`]({{ site.dcvb_dotnet_api }}capture-vision-router/auxiliary-classes/capture-vision-router-module.html)
-- [`PresetTemplate`]({{ site.dcvb_dotnet_api }}capture-vision-router/auxiliary-classes/preset-template.html)
-- [`SimplifiedCaptureVisionSettings`]({{ site.dcvb_dotnet_api }}capture-vision-router/auxiliary-classes/simplified-capture-vision-settings.html)
+### Decode Methods
+   
+  | Method               | Description |
+  |----------------------|-------------|
+  | [`DecodeFile`](BarcodeReader/decode.md#decodefile) | Decodes barcodes from a specified image file. |
+  | [`DecodeFileInMemory`](BarcodeReader/decode.md#decodefileinmemory) | Decode barcodes from an image file in memory. |
+  | [`DecodeBuffer`](BarcodeReader/decode.md#decodebuffer) | Decodes barcodes from the memory buffer containing image pixels in defined format. |
+  | [`DecodeBase64String`](BarcodeReader/decode.md#decodebase64string) | Decodes barcodes from a base64 encoded string. |
+  | [`DecodeBitmap`](BarcodeReader/decode.md#decodebitmap) | Decodes barcode from a bitmap. |
+  | [`InitIntermediateResult`](BarcodeReader/decode.md#initintermediateresult) | Inits an intermediateResult struct with default values. |
+  | [`DecodeIntermediateResults`](BarcodeReader/decode.md#decodeintermediateresults) | Decodes barcode from intermediate results. |
+  
+   
+ 
+   
+   
+   
 
-### Interfaces
+### Basic Settings Methods
+   
+  | Method               | Description |
+  |----------------------|-------------|
+  | [`SetModeArgument`](BarcodeReader/parameter-and-runtime-settings-basic.md#setmodeargument) | Sets the optional argument for a specified mode in Modes parameters. |
+  | [`GetModeArgument`](BarcodeReader/parameter-and-runtime-settings-basic.md#getmodeargument) | Gets the optional argument for a specified mode in Modes parameters.  |
+  | [`GetRuntimeSettings`](BarcodeReader/parameter-and-runtime-settings-basic.md#getruntimesettings) | Gets current runtime settings. |
+  | [`UpdateRuntimeSettings`](BarcodeReader/parameter-and-runtime-settings-basic.md#updateruntimesettings) | Update runtime settings with a given struct. |
+  | [`ResetRuntimeSettings`](BarcodeReader/parameter-and-runtime-settings-basic.md#resetruntimesettings) | Resets all parameters to default values. |
 
-- [`ICaptureStateListener`]({{ site.dcvb_dotnet_api }}capture-vision-router/auxiliary-classes/capture-state-listener.html)
-- [`IImageSourceStateListener`]({{ site.dcvb_dotnet_api }}capture-vision-router/auxiliary-classes/image-source-state-listener.html)
+### Advanced Settings Methods
+  
+  | Method               | Description |
+  |----------------------|-------------|
+  | [`InitRuntimeSettingsWithFile`](BarcodeReader/parameter-and-runtime-settings-advanced.md#initruntimesettingswithfile)  | Initializes runtime settings with the settings in a given JSON file. |
+  | [`InitRuntimeSettingsWithString`](BarcodeReader/parameter-and-runtime-settings-advanced.md#initruntimesettingswithstring) | Initializes runtime settings with the settings in a given JSON string. |
+  | [`AppendTplFileToRuntimeSettings`](BarcodeReader/parameter-and-runtime-settings-advanced.md#appendtplfiletoruntimesettings) | Appends a new template file to the current runtime settings. |
+  | [`AppendTplStringToRuntimeSettings`](BarcodeReader/parameter-and-runtime-settings-advanced.md#appendtplstringtoruntimesettings) | Appends a new template string to the current runtime settings. |
+  | [`GetAllParameterTemplateNames`](BarcodeReader/parameter-and-runtime-settings-advanced.md#getallparametertemplatenames) | Gets the parameter templates name array. |
+  | [`OutputSettingsToFile`](BarcodeReader/parameter-and-runtime-settings-advanced.md#outputsettingstofile) | Outputs runtime settings to a settings file (JSON file). |
+  | [`OutputSettingsToString`](BarcodeReader/parameter-and-runtime-settings-advanced.md#outputsettingstostring) | Outputs runtime settings to a string. |
+   
+      
+ 
 
-### Enums
+   
+### General Methods
+   
+  | Method               | Description |
+  |----------------------|-------------|
+  | [`GetVersion`](BarcodeReader/general.md#getversion) | Gets version information of SDK. |
+  | [`TransformCoordinates`](BarcodeReader/general.md#transformcoordinates) | Transform the coordinates of a point based on the given transformation matrix. |
+   
+      
+ 
 
-- [`EnumCaptureState`]({{ site.dcvb_enumerations }}capture-vision-router/capture-state.html?lang=dotnet)
-- [`EnumImageSourceState`]({{ site.dcvb_enumerations }}capture-vision-router/image-source-state.html?lang=dotnet)
+   
+### Video Methods
 
-## DynamsoftBarcodeReader
+#### Decode
+    
+   | Method               | Description |
+   |----------------------|-------------|
+   | [`StartFrameDecoding`](BarcodeReader/video.md#startframedecoding) | Starts a new thread to decode barcodes from the inner frame queue. |
+   | [`StartFrameDecodingEx`](BarcodeReader/video.md#startframedecodingex) | Starts a new thread to decode barcodes from the inner frame queue. |
+   | [`AppendFrame`](BarcodeReader/video.md#appendframe) | Appends a frame image buffer to the inner frame queue. |
+   | [`StopFrameDecoding`](BarcodeReader/video.md#stopframedecoding) | Stops the frame decoding thread created by StartFrameDecoding. |
 
-### Classes
-
-- [`AztecDetails`]({{ site.dbr_dotnet_api }}aztec-details.html)
-- [`BarcodeDetails`]({{ site.dbr_dotnet_api }}barcode-details.html)
-- [`BarcodeReaderModule`]({{ site.dbr_dotnet_api }}barcode-reader-module.html)
-- [`BarcodeResultItem`]({{ site.dbr_dotnet_api }}barcode-result-item.html)
-- [`DataMatrixDetails`]({{ site.dbr_dotnet_api }}datamatrix-details.html)
-- [`DecodedBarcodesResult`]({{ site.dbr_dotnet_api }}decoded-barcodes-result.html)
-- [`OneDCodeDetails`]({{ site.dbr_dotnet_api }}oned-code-details.html)
-- [`PDF417Details`]({{ site.dbr_dotnet_api }}pdf417-details.html)
-- [`QRCodeDetails`]({{ site.dbr_dotnet_api }}qr-code-details.html)
-- [`SimplifiedBarcodeReaderSettings`]({{ site.dbr_dotnet_api }}simplified-barcode-reader-settings.html)
-
-### Enums
-
-- [`EnumBarcodeFormat`]({{ site.dcvb_enumerations }}barcode-reader/barcode-format.html?lang=dotnet)
-- [`EnumDeblurMode`]({{ site.dcvb_enumerations }}barcode-reader/deblur-mode.html?lang=dotnet)
-- [`EnumExtendedBarcodeResultType`]({{ site.dcvb_enumerations }}barcode-reader/extended-barcode-result-type.html?lang=dotnet)
-- [`EnumLocalizationMode`]({{ site.dcvb_enumerations }}barcode-reader/localization-mode.html?lang=dotnet)
-- [`EnumQRCodeErrorCorrectionLevel`]({{ site.dcvb_enumerations }}barcode-reader/qr-code-error-correction-level.html?lang=dotnet)
-
-## DynamsoftCore
-
-### Classes
-
-- [`CapturedResultItem`]({{ site.dcvb_dotnet_api }}core/basic-classes/captured-result-item.html)
-- [`CoreModule`]({{ site.dcvb_dotnet_api }}core/basic-classes/core-module.html)
-- [`FileImageTag`]({{ site.dcvb_dotnet_api }}core/basic-classes/file-image-tag.html)
-- [`ImageData`]({{ site.dcvb_dotnet_api }}core/basic-classes/image-data.html)
-- [`ImageSourceAdapter`]({{ site.dcvb_dotnet_api }}core/basic-classes/image-source-adapter.html)
-- [`ImageTag`]({{ site.dcvb_dotnet_api }}core/basic-classes/image-tag.html)
-- [`OriginalImageResultItem`]({{ site.dcvb_dotnet_api }}core/basic-classes/original-image-result-item.html)
-- [`PDFReadingParameter`]({{ site.dcvb_dotnet_api }}core/basic-classes/pdf-reading-parameter.html)
-- [`Point`]({{ site.dcvb_dotnet_api }}core/basic-classes/point.html)
-- [`Quadrilateral`]({{ site.dcvb_dotnet_api }}core/basic-classes/quadrilateral.html)
-- [`Rect`]({{ site.dcvb_dotnet_api }}core/basic-classes/rect.html)
-- [`VideoFrameTag`]({{ site.dcvb_dotnet_api }}core/basic-classes/video-frame-tag.html)
-
-### Interface
-
-- [`IImageSourceErrorListener`]({{ site.dcvb_dotnet_api }}core/basic-classes/image-source-error-listener.html)
-
-### Enums
-
-- [`EnumBufferOverflowProtectionMode`]({{ site.dcvb_enumerations }}core/buffer-overflow-protection-mode.html?lang=dotnet)
-- [`EnumCapturedResultItemType`]({{ site.dcvb_enumerations }}core/captured-result-item-type.html?lang=dotnet)
-- [`EnumColourChannelUsageType`]({{ site.dcvb_enumerations }}core/colour-channel-usage-type.html?lang=dotnet)
-- [`EnumErrorCode`]({{ site.dcvb_enumerations }}core/error-code.html?lang=dotnet)
-- [`EnumGrayscaleEnhancementMode`]({{ site.dcvb_enumerations }}core/grayscale-enhancement-mode.html?lang=dotnet)
-- [`EnumGrayscaleTransformationMode`]({{ site.dcvb_enumerations }}core/grayscale-transformation-mode.html?lang=dotnet)
-- [`EnumImageCaptureDistanceMode`]({{ site.dcvb_enumerations }}core/image-capture-distance-mode.html?lang=dotnet)
-- [`EnumImagePixelFormat`]({{ site.dcvb_enumerations }}core/image-pixel-format.html?lang=dotnet)
-- [`EnumImageTagType`]({{ site.dcvb_enumerations }}core/image-tag-type.html?lang=dotnet)
-- [`EnumPDFReadingMode`]({{ site.dcvb_enumerations }}core/pdf-reading-mode.html?lang=dotnet)                
-- [`EnumRasterDataSource`]({{ site.dcvb_enumerations }}core/raster-data-source.html?lang=dotnet)
-- [`EnumVideoFrameQuality`]({{ site.dcvb_enumerations }}core/video-frame-quality.html?lang=dotnet)
-
-## DynamsoftUtility
-
-- [`DirectoryFetcher`]({{ site.dcvb_dotnet_api }}utility/directory-fetcher.html)
-- [`FileFetcher`]({{ site.dcvb_dotnet_api }}utility/file-fetcher.html)
-- [`ImageManager`]({{ site.dcvb_dotnet_api }}utility/image-manager.html)
-- [`MultiFrameResultCrossFilter`]({{ site.dcvb_dotnet_api }}utility/multi-frame-result-cross-filter.html)
-- [`ProactiveImageSourceAdapter`]({{ site.dcvb_dotnet_api }}utility/proactive-image-source-adapter.html)
-- [`UtilityModule`]({{ site.dcvb_dotnet_api }}utility/utility-module.html)
-
-## DynamsoftLicense
-
-- [`LicenseManager`]({{ site.dcvb_dotnet_api }}license/license-manager.html)
-- [`LicenseModule`]({{ site.dcvb_dotnet_api }}license/license-module.html)
+#### Parameter
+   
+   | Method               | Description |
+   |----------------------|-------------|
+   | [`InitFrameDecodingParameters`](BarcodeReader/video.md#initframedecodingparameters) | Initializes frame decoding parameters. |
 
 
-## DynamsoftImageProcessing
+#### Callback
 
-- [`ImageProcessingModule`]({{ site.dcvb_dotnet_api }}image-processing/image-processing-module.html)
+   | Method               | Description |
+   |----------------------|-------------|
+   | [`SetErrorCallback`](BarcodeReader/video.md#seterrorcallback) | Set callback function to process errors which is triggered when the library finishes decoding a frame. |
+   | [`SetTextResultCallback`](BarcodeReader/video.md#settextresultcallback) | Set callback function to process text results which is triggered when the library finishes decoding a frame. |
+   | [`SetUniqueBarcodeCallback`](BarcodeReader/video.md#setuniquebarcodecallback) | Set callback function to process text results which is triggered when the library finishes decoding a frame and finds unique barcodes. |
+   | [`SetIntermediateResultCallback`](BarcodeReader/video.md#setintermediateresultcallback) | Set callback function to process intermediate results which is triggered when the library finishes decoding a frame. |
 
+#### Status retrieval
+   
+   | Method               | Description |
+   |----------------------|-------------|
+   | [`GetLengthOfFrameQueue`](BarcodeReader/video.md#getlengthofframequeue) | Gets length of current inner frame queue. |
+ 
+   
+ 
+
+
+### Result Methods
+
+   | Method               | Description |
+   |----------------------|-------------|
+   | [`GetIntermediateResults`](BarcodeReader/result.md#getintermediateresults) | Returns intermediate results containing the original image, the colour clustered image, the binarized Image, contours, Lines, TextBlocks, etc.  |
+
+
+ 
+
+## Auxiliary Classes
+
+- [`AztecDetails`](class/AztecDetails.md)	 
+- [`BarcodeReaderException`](class/BarcodeReaderException.md)	
+- [`Contour`](class/Contour.md)	 
+- [`DataMatrixDetails`](class/DataMatrixDetails.md)	
+- [`DMDLSConnectionParameters`](class/DMDLSConnectionParameters.md) 
+- [`DMLTSConnectionParameters`](class/DMLTSConnectionParameters.md) 
+- [`ExtendedResult`](class/ExtendedResult.md)	
+- [`FrameDecodingParameters`](class/FrameDecodingParameters.md)	
+- [`ImageData`](class/ImageData.md)	 
+- [`InstancePoolStatus`](class/InstancePoolStatus.md)
+- [`IntermediateResult`](class/IntermediateResult.md)	
+- [`LineSegment`](class/LineSegment.md)	 
+- [`LocalizationResult`](class/LocalizationResult.md)	
+- [`OneDCodeDetails`](class/OneDCodeDetails.md)	
+- [`PDF417Details`](class/PDF417Details.md)	
+- [`QRCodeDetails`](class/QRCodeDetails.md)	
+- [`Quadrilateral`](class/Quadrilateral.md)	 
+- [`RegionOfInterest`](class/RegionOfInterest.md)	 
+- [`SamplingImageData`](class/SamplingImageData.md)	 
+- [`TextResult`](class/TextResult.md)	
+
+## Structs
+
+- [`FurtherModes`](struct/FurtherModes.md)		
+- [`PublicRuntimeSettings`](struct/PublicRuntimeSettings.md)		
+- [`RegionDefinition`](struct/RegionDefinition.md)		
+
+
+## Enumerations  
+
+### Format Enumeration
+
+  | Enumeration | Description |
+  |-------------|-------------|
+  | [`BarcodeFormat`]({{ site.dbr_dotnet_enumerations }}format-enums.html#barcodeformat) | Describes the barcode types in BarcodeFormat group 1. |
+  | [`BarcodeFormat_2`]({{ site.dbr_dotnet_enumerations }}format-enums.html#barcodeformat_2) | Describes the barcode types in BarcodeFormat group 2. |
+
+### Parameter Mode Enumeration
+
+  | Enumeration | Description |
+  |-------------|-------------|
+  | [`BarcodeColourMode`]({{ site.dbr_dotnet_enumerations }}parameter-mode-enums.html#barcodecolourmode) | Describes the barcode colour mode. |
+  | [`BarcodeComplementMode`]({{ site.dbr_dotnet_enumerations }}parameter-mode-enums.html#barcodecomplementmode) | Describes the barcode complement mode. |
+  | [`BinarizationMode`]({{ site.dbr_dotnet_enumerations }}parameter-mode-enums.html#binarizationmode) | Describes the binarization mode. |
+  | [`ColourClusteringMode`]({{ site.dbr_dotnet_enumerations }}parameter-mode-enums.html#colourclusteringmode) | Describes the colour clustering mode. |
+  | [`ColourConversionMode`]({{ site.dbr_dotnet_enumerations }}parameter-mode-enums.html#colourconversionmode) | Describes the colour conversion mode. |
+  | [`ConflictMode`]({{ site.dbr_dotnet_enumerations }}parameter-mode-enums.html#conflictmode) | Describes the conflict mode. |
+  | [`DeblurMode`]({{ site.dbr_dotnet_enumerations }}parameter-mode-enums.html#deblurmode) | Describes the deblur mode. |
+  | [`DeformationResistingMode`]({{ site.dbr_dotnet_enumerations }}parameter-mode-enums.html#deformationresistingmode) | Describes the deformation resisting mode. |
+  | [`DPMCodeReadingMode`]({{ site.dbr_dotnet_enumerations }}parameter-mode-enums.html#dpmcodereadingmode) | Describes the DPM code reading mode. |
+  | [`GrayscaleTransformationMode`]({{ site.dbr_dotnet_enumerations }}parameter-mode-enums.html#grayscaletransformationmode) | Describes the grayscale transformation mode. |
+  | [`ImagePreprocessingMode`]({{ site.dbr_dotnet_enumerations }}parameter-mode-enums.html#imagepreprocessingmode) | Describes the image preprocessing mode. |
+  | [`LocalizationMode`]({{ site.dbr_dotnet_enumerations }}parameter-mode-enums.html#localizationmode) | Describes the localization mode. | 
+  | [`PDFReadingMode`]({{ site.dbr_dotnet_enumerations }}parameter-mode-enums.html#pdfreadingmode) | Describes the PDF reading mode. |
+  | [`RegionPredetectionMode`]({{ site.dbr_dotnet_enumerations }}parameter-mode-enums.html#regionpredetectionmode) | Describes the region predetection mode. |
+  | [`ScaleUpMode`]({{ site.dbr_dotnet_enumerations }}parameter-mode-enums.html#scaleupmode) | Describes the scale up mode. |
+  | [`TerminatePhase`]({{ site.dbr_dotnet_enumerations }}parameter-mode-enums.html#terminatephase) | Describes the terminate phase. |
+  | [`TextFilterMode`]({{ site.dbr_dotnet_enumerations }}parameter-mode-enums.html#textfiltermode) | Describes the text filter mode. |
+  | [`TextureDetectionMode`]({{ site.dbr_dotnet_enumerations }}parameter-mode-enums.html#texturedetectionmode) | Describes the texture detection mode. | 
+
+### Result Related Enumeration
+
+  | Enumeration | Description |
+  |-------------|-------------|
+  | [`IMResultDataType`]({{ site.dbr_dotnet_enumerations }}result-enums.html#imresultdatatype) | Describes the intermediate result data type. |
+  | [`IntermediateResultSavingMode`]({{ site.dbr_dotnet_enumerations }}result-enums.html#intermediateresultsavingmode) | Describes the intermediate result saving mode. |
+  | [`IntermediateResultType`]({{ site.dbr_dotnet_enumerations }}result-enums.html#intermediateresulttype) | Describes the intermediate result type. |
+  | [`ResultCoordinateType`]({{ site.dbr_dotnet_enumerations }}result-enums.html#resultcoordinatetype) | Describes the result coordinate type. |
+  | [`ResultType`]({{ site.dbr_dotnet_enumerations }}result-enums.html#resulttype) | Describes the extended result type. |
+  | [`TextResultOrderMode`]({{ site.dbr_dotnet_enumerations }}result-enums.html#textresultordermode) | Describes the text result order mode. |
+
+### Frame Decoding Enumeration
+
+  | Enumeration | Description |
+  |-------------|-------------|
+  | [`ClarityCalculationMethod`]({{ site.dbr_dotnet_enumerations }}frame-decoding-enums.html#claritycalculationmethod) | Describes the clarity calculation method. |
+  | [`ClarityFilterMode`]({{ site.dbr_dotnet_enumerations }}frame-decoding-enums.html#clarityfiltermode) | Describes the clarity filter mode. |
+  
+### Other Enumeration
+
+  | Enumeration | Description |
+  |-------------|-------------|
+  | [`DM_ChargeWay`]({{ site.dbr_dotnet_enumerations }}other-enums.html#dm_chargeway) | `Deprecated` |
+  | [`DM_DeploymentType`]({{ site.dbr_dotnet_enumerations }}other-enums.html#dm_deploymenttype) | `Deprecated` |
+  | [`DM_LicenseModule`]({{ site.dbr_dotnet_enumerations }}other-enums.html#dm_licensemodule) | `Deprecated` |
+  | [`DM_UUIDGenerationMethod`]({{ site.dbr_dotnet_enumerations }}other-enums.html#dm_uuidgenerationmethod) | `Deprecated` |
+  | [`ImagePixelFormat`]({{ site.dbr_dotnet_enumerations }}other-enums.html#imagepixelformat) | Describes the image pixel format. |
+  | [`QRCodeErrorCorrectionLevel`]({{ site.dbr_dotnet_enumerations }}other-enums.html#qrcodeerrorcorrectionlevel) | Describes the QR Code error correction level. |
+  | [`Product`]({{ site.dbr_dotnet_enumerations }}other-enums.html#product) | `Deprecated` |
+
+### [Error Code]({{ site.dbr_dotnet_enumerations }}error-code.html)
+
+
+## Delegates
+
+  | Delegate | Description |
+  |----------|-------------|
+  | [`CB_Error`](function-pointer.md#cb_error) | Represents the method that will handle the error code returned by the SDK. |
+  | [`CB_IntermediateResult`](function-pointer.md#cb_intermediateresult) | Represents the method that will handle the intermediate result array returned by the SDK. |
+  | [`CB_TextResult`](function-pointer.md#cb_textresult) | Represents the method that will handle the text result array returned by the SDK. | 
+
+   
+ 
