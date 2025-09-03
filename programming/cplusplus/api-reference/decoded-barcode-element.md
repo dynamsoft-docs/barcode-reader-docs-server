@@ -60,7 +60,7 @@ Returns the format of the barcode.
 
 **See Also**
 
-[Enumeration BarcodeFormat]({{ site.dbr_cpp_api }}enum-barcode-format.html?src=cpp&&lang=cpp)
+[Enumeration BarcodeFormat]({{ site.dcvb_enumerations }}barcode-reader/barcode-format.html?src=cpp&&lang=cpp)
 
 ### GetFormatString
 
@@ -237,7 +237,7 @@ virtual void SetFormat(BarcodeFormat format) = 0;
 
 **See Also**
 
-[Enumeration BarcodeFormat]({{ site.dbr_cpp_api }}enum-barcode-format.html?src=cpp&&lang=cpp)
+[Enumeration BarcodeFormat]({{ site.dcvb_enumerations }}barcode-reader/barcode-format.html?src=cpp&&lang=cpp)
 
 ### SetText
 

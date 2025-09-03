@@ -70,14 +70,14 @@ The following submodules are included in this SDK release along with their respe
   - [`codewordsCount`]({{ site.dbr_cpp_api }}qr-code-details.html#codewordsCount)
 - Added a new function [`AddItem`]({{ site.dbr_cpp_api }}decoded-barcodes-result.html#additem) to the class [`CDecodedBarcodesResult`]({{ site.dbr_cpp_api }}decoded-barcodes-result.html).
 - Added a new function [`SetLocation`]({{ site.dbr_cpp_api }}barcode-result-item.html#setlocation) to the class [`CBarcodeResultItem`]({{ site.dbr_cpp_api }}barcode-result-item.html).
-- Added a new function [`Clone`]({{ site.dcv_cpp_api }}core/basic-structures/captured-result-item.html#clone) to the class [`CCapturedResultItem`]({{ site.dcv_cpp_api }}core/basic-structures/captured-result-item.html).
-- Added a new function [`AddItem`]({{ site.dcv_cpp_api }}capture-vision-router/auxiliary-classes/captured-result.html#additem) to the class [`CCapturedResult`]({{ site.dcv_cpp_api }}capture-vision-router/auxiliary-classes/captured-result.html).
+- Added a new function [`Clone`]({{ site.dcvb_cpp_api }}core/basic-structures/captured-result-item.html#clone) to the class [`CCapturedResultItem`]({{ site.dcvb_cpp_api }}core/basic-structures/captured-result-item.html).
+- Added a new function [`AddItem`]({{ site.dcvb_cpp_api }}capture-vision-router/auxiliary-classes/captured-result.html#additem) to the class [`CCapturedResult`]({{ site.dcvb_cpp_api }}capture-vision-router/auxiliary-classes/captured-result.html).
 
 ### Changed
 
-- Changed the maximum length of the `name` parameter to 255 for the [`SetDeviceFriendlyName`]({{ site.dcv_cpp_api }}license/license-manager.html#setdevicefriendlyname) method. If the length exceeds 255, it will be truncated.
+- Changed the maximum length of the `name` parameter to 255 for the [`SetDeviceFriendlyName`]({{ site.dcvb_cpp_api }}license/license-manager.html#setdevicefriendlyname) method. If the length exceeds 255, it will be truncated.
 
-- Changed the default value of the `waitForThreadExit` parameter to `true` for the [`StopCapturing`]({{ site.dcv_cpp_api }}capture-vision-router/multiple-file-processing.html#stopcapturing) method.
+- Changed the default value of the `waitForThreadExit` parameter to `true` for the [`StopCapturing`]({{ site.dcvb_cpp_api }}capture-vision-router/multiple-file-processing.html#stopcapturing) method.
  
 ### Fixed
 
@@ -90,7 +90,7 @@ The following submodules are included in this SDK release along with their respe
 ### Improved
 
 - Security update for `DynamsoftBarcodeReader` library and other corresponding libraries.
-- Supported multiple instances of the class [`CCaptureVisionRouter`]({{ site.dcv_cpp_api }}capture-vision-router/capture-vision-router.html).
+- Supported multiple instances of the class [`CCaptureVisionRouter`]({{ site.dcvb_cpp_api }}capture-vision-router/capture-vision-router.html).
 - Improved the usage count logic of the concurrent license mode.
 - Improved the experience of local cache usage when failing to connect the license server. The renewal of the local cache is optimized as well.
 - Improved the barcode decoding performance:
@@ -102,19 +102,19 @@ The following submodules are included in this SDK release along with their respe
 - Added new error codes:
   - `EC_RESULT_TYPE_MISMATCH_IRREPLACEABLE`
   - `EC_LICENSE_CACHE_USED`
-- Added a virtual destructor to the interface [`CImageSourceErrorListener`]({{ site.dcv_cpp_api }}core/basic-structures/image-source-error-listener.html) to prevent memory leaks.
-- Added a new function [`GetDecodedBarcodesResult`]({{ site.dcv_cpp_api }}capture-vision-router/auxiliary-classes/captured-result.html#getdecodedbarcodesresult) to the `CCapturedResult` class to get all the result items with the type `CRIT_BARCODE`.
+- Added a virtual destructor to the interface [`CImageSourceErrorListener`]({{ site.dcvb_cpp_api }}core/basic-structures/image-source-error-listener.html) to prevent memory leaks.
+- Added a new function [`GetDecodedBarcodesResult`]({{ site.dcvb_cpp_api }}capture-vision-router/auxiliary-classes/captured-result.html#getdecodedbarcodesresult) to the `CCapturedResult` class to get all the result items with the type `CRIT_BARCODE`.
 - Added new virtual destructors to the following interfaces to prevent memory leaks.
-  - [`CCaptureStateListener`]({{ site.dcv_cpp_api }}capture-vision-router/auxiliary-classes/capture-state-listener.html)
-  - [`CImageSourceStateListener`]({{ site.dcv_cpp_api }}capture-vision-router/auxiliary-classes/image-source-state-listener.html)
+  - [`CCaptureStateListener`]({{ site.dcvb_cpp_api }}capture-vision-router/auxiliary-classes/capture-state-listener.html)
+  - [`CImageSourceStateListener`]({{ site.dcvb_cpp_api }}capture-vision-router/auxiliary-classes/image-source-state-listener.html)
 
 ### Changed
 
-- Changed the internal logic of the function [`SetResultUnitTypesOnlyForInput`]({{ site.dcv_cpp_api }}core/intermediate-results/observed-parameters.html#setresultunittypesonlyforinput) of `ObservationParameters`. The function only takes effect when the callback of the specified result unit is implemented.
+- Changed the internal logic of the function [`SetResultUnitTypesOnlyForInput`]({{ site.dcvb_cpp_api }}core/intermediate-results/observed-parameters.html#setresultunittypesonlyforinput) of `ObservationParameters`. The function only takes effect when the callback of the specified result unit is implemented.
 
 ### Fixed
 
-- Fixed a crash bug of the Replace method of the [`IntermediateResultUnit`]({{ site.dcv_cpp_api }}core/intermediate-results/intermediate-result-unit.html) class. The method will return the error code `EC_RESULT_TYPE_MISMATCH_IRREPLACEABLE` when the result type is mismatched.
+- Fixed a crash bug of the Replace method of the [`IntermediateResultUnit`]({{ site.dcvb_cpp_api }}core/intermediate-results/intermediate-result-unit.html) class. The method will return the error code `EC_RESULT_TYPE_MISMATCH_IRREPLACEABLE` when the result type is mismatched.
 - Fixed a bug where error messages are not output when parsing the parameter templates.
 - Fixed a misreading bug of the PDF417 barcodes on the South Carolina driver's license.
 - Internal changes to prevent crash bugs in barcode decoding.

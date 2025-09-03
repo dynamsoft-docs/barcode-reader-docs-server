@@ -63,7 +63,7 @@ QRCodeErrorCorrectionLevel errorCorrectionLevel
 
 **See Also**
 
-[Enumeration QRCodeErrorCorrectionLevel]({{ site.dbr_cpp_api }}enum-qr-code-error-correction-level.html?src=cpp&&lang=cpp)
+[Enumeration QRCodeErrorCorrectionLevel]({{ site.dcvb_enumerations }}barcode-reader/qr-code-error-correction-level.html?src=cpp&&lang=cpp)
 
 ### version
 

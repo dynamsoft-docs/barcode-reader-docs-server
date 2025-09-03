@@ -32,43 +32,11 @@ jobs:
       doc-url: barcode-reader/docs/server
     secrets: inherit
 
-          
-#  Build-Preview:
-#    if: ${{ github.ref == 'refs/heads/preview' }}
-#    # The type of runner that the job will run on
-#    runs-on: [self-hosted, r3]
-#
-#    # Steps represent a sequence of tasks that will be executed as part of the job
-#    steps:
-#      # Runs a set of commands using the runners shell
-#      - name: Build the site - Preview
-#        run: |
-#          cd /home/ubuntu
-#          [ ! -d DBRDocServer-preview ] && mkdir -p DBRDocServer-preview
-#          [ ! -d barcode-reader-docs-server-preview ] && git clone --depth 1 --branch preview https://github.com/dynamsoft-docs/barcode-reader-docs-server.git barcode-reader-docs-server-preview
-#          [ ! -d Docs-Template-Repo-Preview-R3 ] && git clone --depth 1 --branch preview https://github.com/dynamsoft-docs/Docs-Template-Repo.git Docs-Template-Repo-Preview-R3
-#          cd barcode-reader-docs-server-preview && git pull && cd .. && cp -rfp ./barcode-reader-docs-server-preview/* ./DBRDocServer-preview/
-#          cd Docs-Template-Repo-Preview-R3 && git pull && cd .. && cp -rfp ./Docs-Template-Repo-Preview-R3/* ./DBRDocServer-preview/
-#          sed -i -e "1,3s/blob\/master$/blob\/preview/" \
-#          -e "1,3s/blob\/main$/blob\/preview/" /home/ubuntu/DBRDocServer-preview/_config.yml
-#          cd DBRDocServer-preview && bundle exec jekyll build --incremental
-# 
-#  Upload-Preview:
-#    if: ${{ github.ref == 'refs/heads/preview' }}
-#    # The type of runner that the job will run on
-#    runs-on: [self-hosted, r3]
-#    needs: Build-Preview
-#
-#    # Steps represent a sequence of tasks that will be executed as part of the job
-#    steps:
-#      # Runs a set of commands using the runners shell
-#      - name: Sync files
-#        uses: SamKirkland/FTP-Deploy-Action@4.3.0
-#        with:
-#          server: ${{ secrets.FTP_TEST_SITE_SERVER }}
-#          username: ${{ secrets.FTP_TEST_SITE_USER }}
-#          password: ${{ secrets.FTP_TEST_SITE_PASSWORD }}
-#          port: 7500 
-#          local-dir: /home/ubuntu/DBRDocServer-preview/_site/
-#          server-dir: /www.dynamsoft.com/barcode-reader/docs/server/        
-          
+  Build-v10:
+    if: ${{ github.ref == 'refs/heads/v10' }}
+    uses: dynamsoft-docs/Docs-Template-Repo/.github/workflows/called-workflow-build-sync-production.yml@DCV-v2
+    with:
+      doc-repo: barcode-reader-docs-server
+      doc-url: barcode-reader/docs/v10/server
+      doc-branch: v10
+    secrets: inherit

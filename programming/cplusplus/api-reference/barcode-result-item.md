@@ -57,7 +57,7 @@ Returns the format of the decoded barcode result.
 
 **See Also**
 
-[Enumeration BarcodeFormat]({{ site.dbr_cpp_api }}enum-barcode-format.html?src=cpp&&lang=cpp)
+[Enumeration BarcodeFormat]({{ site.dcvb_enumerations }}barcode-reader/barcode-format.html?src=cpp&&lang=cpp)
 
 ### GetFormatString
 
@@ -146,10 +146,6 @@ virtual int GetAngle() const = 0;
 **Return value**
 
 Returns the angle of the decoded barcode result.
-
-**See Also**
-
-[How the angle is calculated for different barcode types]({{site.features}}get-confidence-rotation.html?lang=cpp#barcode-rotation-angle)
 
 ### GetModuleSize
 

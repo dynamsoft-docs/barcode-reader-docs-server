@@ -6,42 +6,11 @@ needAutoGenerateSidebar: true
 needGenerateH3Content: true
 ---
 
-# How to Upgrade to Version 11.x
+# How to Upgrade
 
-## From version 10.x
+## From version 9.x or earlier to version 10.x
 
-To upgrade from version 10.x to 11.x, we recommend you to take the following steps.
-
-### 1. Update the License Key
-
-#### Request a 30-Day Free Trial License
-
-Visit the [Request a Trial License](https://www.dynamsoft.com/customer/license/trialLicense?product=dbr&utm_source=docs){:target="_blank"} page to obtain a 30-day free license. This option is ideal for initial evaluation or testing of new SDK features.
-
-#### Annual Online Full License
-
-If you are using an Annual Online Full License, your license will continue to work with the current SDK version without the need for updates. Go to <a href="https://www.dynamsoft.com/customer/license/fullLicense" target="_blank">Customer Portal</a> to get your license key.
-
-#### Perpetual License
-
-For users with a Perpetual License, please contact our sales team to update your license. You can reach out through our [Contacting Us](https://www.dynamsoft.com/contact/){:target="_blank"} page for assistance.
-
-### 2. Upgrade the Assembly Files
-
-Run the following command to upgrade the assembly files.
-
-```bash
-pip install dynamsoft-barcode-reader-bundle --upgrade
-```
-
-### 3. Migrate Your Templates
-
-The template system is upgraded. The template you used for the previous version can't be directly recognized by the new version. Please use the <a href="https://www.dynamsoft.com/tools/template-upgrade/" target="_blank">template upgrade tool</a> to upgrade your template.
-
-
-## From version 9.x or earlier
-
-Dynamsoft Barcode Reader SDK has been refactored to integrate with [`DynamsoftCaptureVision (DCV)`]({{ site.dcvb_architecture }}) architecture. To upgrade from version 9.x or earlier to 11.x, we recommend you to follow the [User Guide]({{ site.dbr_python }}user-guide.html) and re-write your codes. This section highlights only the key changes and necessary actions for upgrading the SDK.
+Dynamsoft Barcode Reader SDK has been refactored to integrate with [`DynamsoftCaptureVision (DCV)`]({{ site.dcvb_architecture }}) architecture. To upgrade from version 9.x or earlier to 10.x, we recommend you to follow the [User Guide]({{ site.dbr_python }}user-guide.html) and re-write your codes.
 
 ### Update the License Key
 
@@ -75,7 +44,7 @@ Starting from 10.0, we have unified the API for setting licenses across differen
 
 ### Update Single Image Decoding APIs
 
-The APIs for decoding single image have been adjusted as follows:
+The APIs for decoding single image has been adjusted as follows:
 
 | Old APIs | New APIs |
 | :----------- | :------- |
@@ -93,7 +62,7 @@ The APIs for decoding single image have been adjusted as follows:
 
 ### Migrate Your Templates
 
-The template system is upgraded. The template you used for the previous version can't be directly recognized by the new version. Please use the <a href="https://www.dynamsoft.com/tools/template-upgrade/" target="_blank">template upgrade tool</a> to upgrade your template.
+The template system is upgraded. The template you used for the previous version can't be directly recognized by the new version. Please <a href="https://download2.dynamsoft.com/dcv/TemplateConverter.zip" target="_blank">download the TemplateConverter tool</a> or <a href="https://www.dynamsoft.com/company/customer-service/#contact" target="_blank">contact us</a> to upgrade your template.
 
 The template-based APIs have been updated as follows:
 
@@ -112,7 +81,7 @@ The template-based APIs have been updated as follows:
 
 The class `PublicRuntimeSetting` has been refactored. It retains commonly used properties via `SimplifiedCaptureVisionSettings` while removing the previously complex property settings, which are now exclusively supported through templates.
 
-The APIs for accessing and updating runtime settings have been adjusted as follows:
+The APIs for accessing and updating runtime settings has been adjusted as follows:
 
 | Old APIs | New APIs |
 | :----------- | :------- |
@@ -154,23 +123,25 @@ The following properties are replaced by similar properties under `SimplifiedBar
 
 #### Migrate to Template File
 
-The following properties can only be set via a template file. Please call `BarcodeReader.output_settings_to_json_file` first with the old version to export the settings and then use the <a href="https://www.dynamsoft.com/tools/template-upgrade/" target="_blank">template upgrade tool</a> to upgrade your template.
+The following properties can only be set via a template file. Please [contact us](https://www.dynamsoft.com/company/customer-service/#contact){:target="_blank"} so that we can help you to transform your current settings to a new template file.
 
 | PublicRuntimeSetting Property | Template File Parameter |
 | ------------------------------- | ----------------------- |
-| `scale_down_threshold` | [`ImageParameter.ImageScaleSettings`]({{ site.dcvb_parameters_reference }}image-parameter/image-scale-settings.html) |
+| `scale_down_threshold` | [`ImageParameter.ScaleDownThreshold`]({{ site.dcvb_parameters_reference }}image-parameter/scale-down-threshold.html) |
 | `binarization_modes` | [`ImageParameter.BinarizationModes`]({{ site.dcvb_parameters_reference }}image-parameter/binarization-modes.html) |
 | `text_result_order_modes` | [`BarcodeReaderTaskSetting.TextResultOrderModes`]({{ site.dcvb_parameters_reference }}barcode-reader-task-settings/text-result-order-modes.html) |
 | `return_barcode_zone_clarity` | [`BarcodeReaderTaskSetting.ReturnBarcodeZoneClarity`]({{ site.dcvb_parameters_reference }}barcode-reader-task-settings/return-barcode-zone-clarity.html) |
-| `scale_up_modes` | [`BarcodeReaderTaskSetting.BarcodeScaleModes`]({{ site.dcvb_parameters_reference }}barcode-reader-task-settings/barcode-scale-modes.html) |
+| `scale_up_modes` | [`ImageParameter.ScaleUpModes`]({{ site.dcvb_parameters_reference }}image-parameter/scale-up-modes.html) |
 | `barcode_zone_min_distance_to_image_borders` | [`BarcodeFormatSpecification.BarcodeZoneMinDistanceToImageBorders`]({{ site.dcvb_parameters_reference }}barcode-format-specification/barcode-zone-min-distance-to-image-borders.html) |
+| `terminate_phase` | [`BarcodeReaderTaskSetting.TerminateSettings`]({{ site.dcvb_parameters_reference }}barcode-reader-task-settings/terminate-setting.html) |
 | `colour_conversion_modes` | [`ImageParameter.ColourConversionModes`]({{ site.dcvb_parameters_reference }}image-parameter/colour-conversion-modes.html) |
-| `region_predetection_modes` | [`BarcodeReaderTaskSetting.RegionPredetectionModes`]({{ site.dcvb_parameters_reference }}image-parameter/region-predetection-modes.html) |
+| `region_predetection_modes` | [`ImageParameter.RegionPredetectionModes`]({{ site.dcvb_parameters_reference }}image-parameter/region-predetection-modes.html) |
 | `texture_detection_modes` | [`ImageParameter.TextureDetectionModes`]({{ site.dcvb_parameters_reference }}image-parameter/texture-detection-modes.html) |
 | `text_filter_modes` | [`ImageParameter.TextDetectionMode`]({{ site.dcvb_parameters_reference }}image-parameter/text-detection-mode.html) & [`ImageParameter.IfEraseTextZone`]({{ site.dcvb_parameters_reference }}image-parameter/if-erase-text-zone.html) |
 | `dpm_code_reading_modes` | [`BarcodeReaderTaskSetting.DPMCodeReadingModes`]({{ site.dcvb_parameters_reference }}barcode-reader-task-settings/dpm-code-reading-modes.html) |
 | `deformation_resisting_modes` | [`BarcodeReaderTaskSetting.DeformationResistingModes`]({{ site.dcvb_parameters_reference }}barcode-reader-task-settings/deformation-resisting-modes.html) |
 | `barcode_complement_modes` | [`BarcodeReaderTaskSetting.BarcodeComplementModes`]({{ site.dcvb_parameters_reference }}barcode-reader-task-settings/barcode-complement-modes.html) |
+| `barcode_colour_modes` | [`BarcodeReaderTaskSetting.BarcodeColourModes`]({{ site.dcvb_parameters_reference }}barcode-reader-task-settings/barcode-colour-modes.html) |
 
 #### Migrate to Other APIs
 
@@ -194,9 +165,7 @@ The following properties are removed.
 
 | PublicRuntimeSetting Property|
 | --------------------- |
-| `barcode_colour_modes` |
 | `result_coordinate_type` |
-| `terminate_phase` |
 
 | FurtherModes Property|
 | --------------------- |

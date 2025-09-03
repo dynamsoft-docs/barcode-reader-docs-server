@@ -44,7 +44,7 @@ Returns the type of the extended barcode result.
 
 **See Also**
 
-[Enumeration ExtendedBarcodeResultType]({{ site.dbr_cpp_api }}enum-extended-barcode-result-type.html?src=cpp&&lang=cpp)
+[Enumeration ExtendedBarcodeResultType]({{ site.dcvb_enumerations }}barcode-reader/extended-barcode-result-type.html?src=cpp&&lang=cpp)
 
 ### GetDeformation
 
