@@ -7,11 +7,7 @@ searchIndexName: Crawler-DBR-Docs-New
 searchNeedFilter: true
 
 useVersionTree: true
-
-
-dcv_cpp_api: /capture-vision/docs-archive/server/programming/cplusplus/api-reference/
-dcv_parameters_reference: /capture-vision/docs-archive/core/parameters/reference/
-dcv_enumerations: /capture-vision/docs-archive/core/enums/
+useJSVersionV3: true
 
 dcvb_cpp_api: /capture-vision/docs/server/programming/cplusplus/api-reference/
 dcvb_dotnet_api: /capture-vision/docs/server/programming/dotnet/api-reference/
@@ -26,41 +22,34 @@ dcvb_parameters: /capture-vision/docs/core/parameters/
 
 dbr_introduction: /barcode-reader/docs/core/introduction/
 dbr_parameters: /barcode-reader/docs/core/parameters/
-dbr_parameters_reference: /barcode-reader/docs/core/parameters/reference/
 dbr_performance: /barcode-reader/docs/core/performance/
-dbr_c_cpp_enumerations: /barcode-reader/docs/server/programming/c-cplusplus/enumeration/
-dbr_structs: /barcode-reader/docs/server/programming/c-cplusplus/struct/
 
-dbr_c: /barcode-reader/docs/server/programming/c/
-dbr_c_api: /barcode-reader/docs/server/programming/c/api-reference/
-dbr_c_methods: /barcode-reader/docs/server/programming/c/api-reference/methods/
-dbr_c_release_notes: /barcode-reader/docs/server/programming/c/release-notes/
+dbr_c: /barcode-reader/docs/v9/server/programming/c/
 
 dbr_cpp: /barcode-reader/docs/server/programming/cplusplus/
 dbr_cpp_api: /barcode-reader/docs/server/programming/cplusplus/api-reference/
-dbr_cpp_methods: /barcode-reader/docs/server/programming/cplusplus/api-reference/cbarcodereader-methods/
 dbr_cpp_release_notes: /barcode-reader/docs/server/programming/cplusplus/release-notes/
+dbr_cpp_release_notes_v9: /barcode-reader/docs/v9/server/programming/cplusplus/release-notes/
+dbr_cpp_release_notes_v10: /barcode-reader/docs/v10/server/programming/cplusplus/release-notes/
 
 dbr_dotnet: /barcode-reader/docs/server/programming/dotnet/
 dbr_dotnet_api: /barcode-reader/docs/server/programming/dotnet/api-reference/
-dbr_dotnet_methods: /barcode-reader/docs/server/programming/dotnet/api-reference/BarcodeReader/
-dbr_dotnet_class: /barcode-reader/docs/server/programming/dotnet/api-reference/class/
 dbr_dotnet_release_notes: /barcode-reader/docs/server/programming/dotnet/release-notes/
-dbr_dotnet_enumerations: /barcode-reader/docs/server/programming/dotnet/api-reference/enumeration/
+dbr_dotnet_release_notes_v9: /barcode-reader/docs/v9/server/programming/dotnet/release-notes/
+dbr_dotnet_release_notes_v10: /barcode-reader/docs/v10/server/programming/dotnet/release-notes/
 
 dbr_java: /barcode-reader/docs/server/programming/java/
 dbr_java_api: /barcode-reader/docs/server/programming/java/api-reference/
 dbr_java_methods: /barcode-reader/docs/server/programming/java/api-reference/BarcodeReader/
 dbr_java_class: /barcode-reader/docs/server/programming/java/api-reference/class/
 dbr_java_release_notes: /barcode-reader/docs/server/programming/java/release-notes/
-dbr_java_enumerations: /barcode-reader/docs/server/programming/java/api-reference/enumeration/
+dbr_java_release_notes_v9: /barcode-reader/docs/v9/server/programming/java/release-notes/
 
 dbr_python: /barcode-reader/docs/server/programming/python/
 dbr_python_api: /barcode-reader/docs/server/programming/python/api-reference/
-dbr_python_methods: /barcode-reader/docs/server/programming/python/api-reference/BarcodeReader/
-dbr_python_class: /barcode-reader/docs/server/programming/python/api-reference/class/
 dbr_python_release_notes: /barcode-reader/docs/server/programming/python/release-notes/
-dbr_python_enumerations: /barcode-reader/docs/server/programming/python/api-reference/enumeration/
+dbr_python_release_notes_v9: /barcode-reader/docs/v9/server/programming/python/release-notes/
+dbr_python_release_notes_v10: /barcode-reader/docs/v10/server/programming/python/release-notes/
 
 
 dbr_js: /barcode-reader/docs/web/programming/javascript/
@@ -97,57 +86,24 @@ defaults:
       path: "programming/c"
     values:
       docRootName: "Barcode Reader C Edition" 
-      docHomePage: "/barcode-reader/docs/server/programming/c/"
-  - scope:
-      path: "programming-old/c"
-    values:
-      docRootName: "Barcode Reader C Edition" 
-      docHomePage: "/barcode-reader/docs/server/programming/c/"
+      docHomePage: "/barcode-reader/docs/v9/server/programming/c/"
   - scope:
       path: "programming/cplusplus"
     values:
       docRootName: "Barcode Reader C++ Edition" 
       docHomePage: "/barcode-reader/docs/server/programming/cplusplus/"
   - scope:
-      path: "programming-old/cplusplus"
-    values:
-      docRootName: "Barcode Reader C++ Edition" 
-      docHomePage: "/barcode-reader/docs/server/programming/cplusplus/"
-      ignore: true
-  - scope:
-      path: "programming/c-cplusplus"
-    values:
-      category: "original-repo"
-      edition: "desktop"
-  - scope:
       path: "programming/dotnet"
     values:
       docRootName: "Barcode Reader DotNet Edition" 
       docHomePage: "/barcode-reader/docs/server/programming/dotnet/"
-  - scope:
-      path: "programming-old/dotnet"
-    values:
-      docRootName: "Barcode Reader DotNet Edition" 
-      docHomePage: "/barcode-reader/docs/server/programming/dotnet/"
-      ignore: true
   - scope:
       path: "programming/python"
     values:
       docRootName: "Barcode Reader Python Edition" 
       docHomePage: "/barcode-reader/docs/server/programming/python/"
   - scope:
-      path: "programming-old/python"
-    values:
-      docRootName: "Barcode Reader Python Edition" 
-      docHomePage: "/barcode-reader/docs/server/programming/python/"
-      ignore: true
-  - scope:
       path: "programming/java"
-    values:
-      docRootName: "Barcode Reader Java Edition" 
-      docHomePage: "/barcode-reader/docs/server/programming/java/"
-  - scope:
-      path: "programming-old/java"
     values:
       docRootName: "Barcode Reader Java Edition" 
       docHomePage: "/barcode-reader/docs/server/programming/java/"
