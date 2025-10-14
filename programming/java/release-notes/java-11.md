@@ -46,7 +46,7 @@ needGenerateH3Content: false
 ### Changed
 
 - Updated the default value of parameter [`MaxThreadsInOneTask`]({{ site.dcvb_parameters_reference }}barcode-reader-task-settings/max-threads-in-one-task.html) from 4 to 0 (auto-detection).
-- Updated the default value of parameter [`IncludeTrailingCheckDigit`]({{ site.dcvb_parameters_reference }}barcode-format-specification/include-trailing-check-digit.html) from 1 to 0.
+- Updated the default value of parameter [`IncludeTrailingCheckDigit`]({{ site.dcvb_parameters_reference }}barcode-format-specification/include-trailing-check-digit.html) from 1 to 0. This means Code128 barcode results will no longer include the trailing check digit in the decoded bytes by default, improving compatibility with industry standards.
 - Deprecated argument `DeblurModelNameArray` of parameter [`DeblurModes`]({{ site.dcvb_parameters_reference }}barcode-reader-task-settings/deblur-modes.html), use `ModelNameArray` instead.
 - Deprecated method `appendModelBuffer` of class [`CaptureVisionRouter`]({{ site.dcvb_java_api }}capture-vision-router/capture-vision-router.html), use [`appendDLModelBuffer`]({{ site.dcvb_java_api }}capture-vision-router/auxiliary-methods.html#appenddlmodelbuffer) instead.
 
