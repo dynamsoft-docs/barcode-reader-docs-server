@@ -31,6 +31,8 @@ public @interface EnumLocalizationMode {
     int LM_CENTRE = 0x80;
     //Localizes 1D barcodes fast.
     int LM_ONED_FAST_SCAN = 0x100;
+    //Localizes barcodes by utilizing a neural network model. Introduced in version 11.2.1000.
+    int LM_NEURAL_NETWORK = 0x200;
     //Reserved setting for localization mode.
     int LM_REV = 0x80000000;
     //End marker for localization mode.

@@ -42,6 +42,9 @@ For embedded or ARM-based platforms, we recommend using a device with performanc
   - 4 GB RAM
   - Linux-based OS (e.g., Raspberry Pi OS, Ubuntu Server)
 
+> [!NOTE]
+> Other architectures and operating systems, such as ESP32, MIPS, FreeRTOS, and Micrium uC/OS, are not supported.
+
 ## License Subscription
 
 To develop and run your application with Dynamsoft Barcode Reader SDK, you need an active license key:

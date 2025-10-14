@@ -31,6 +31,8 @@ public enum EnumLocalizationMode
    LM_CENTRE = 0x80,
    /**Localizes 1D barcodes fast. Check @ref LM for available argument settings. */
    LM_ONED_FAST_SCAN = 0x100,
+   /**Localizes barcodes by utilizing a neural network model. Introduced in version 11.2.1000. */
+   LM_NEURAL_NETWORK = 0x200,
    /**Reserved setting for localization mode. */
    LM_REV = -2147483648,
    /**Placeholder value with no functional meaning.*/

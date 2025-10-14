@@ -8,10 +8,11 @@ needAutoGenerateSidebar: false
 
 # Release Notes - C++ Edition
 
-- [11.0.6000 (08/06/2025)]({{ site.dbr_cpp_release_notes }}cpp-11.html#1106000-08062025)
-- [11.0.4000 (07/15/2025)]({{ site.dbr_cpp_release_notes }}cpp-11.html#1104000-07152025)
-- [11.0.3000 (05/13/2025)]({{ site.dbr_cpp_release_notes }}cpp-11.html#1103000-05132025)
-- [11.0.1000 (03/04/2025)]({{ site.dbr_cpp_release_notes }}cpp-11.html#1101000-03042025)
+- [11.2.1000 (10/14/2025)]({{ site.dbr_cpp_release_notes_v11 }}cpp-11.html#1121000-10142025)
+- [11.0.6000 (08/06/2025)]({{ site.dbr_cpp_release_notes_v11 }}cpp-11.html#1106000-08062025)
+- [11.0.4000 (07/15/2025)]({{ site.dbr_cpp_release_notes_v11 }}cpp-11.html#1104000-07152025)
+- [11.0.3000 (05/13/2025)]({{ site.dbr_cpp_release_notes_v11 }}cpp-11.html#1103000-05132025)
+- [11.0.1000 (03/04/2025)]({{ site.dbr_cpp_release_notes_v11 }}cpp-11.html#1101000-03042025)
 - [10.4.2000 (10/10/2024)]({{ site.dbr_cpp_release_notes_v10 }}cpp-10.html#1042000-10102024)
 - [10.4.10 (07/23/2024)]({{ site.dbr_cpp_release_notes_v10 }}cpp-10.html#10410-07232024)
 - [10.2.10 (03/01/2024)]({{ site.dbr_cpp_release_notes_v10 }}cpp-10.html#10210-03012024)
