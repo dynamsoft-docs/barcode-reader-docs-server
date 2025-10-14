@@ -8,8 +8,9 @@ needAutoGenerateSidebar: false
 
 # Release Notes for Java Edition
 
-- [11.0.6100 (08/19/2025)]({{ site.dbr_java_release_notes }}java-11.html#1106100-08192025)
-- [11.0.6000 (08/06/2025)]({{ site.dbr_java_release_notes }}java-11.html#1106000-08062025)
+- [11.2.1000 (10/14/2025)]({{ site.dbr_java_release_notes_v11 }}java-11.html#1121000-10142025)
+- [11.0.6100 (08/19/2025)]({{ site.dbr_java_release_notes_v11 }}java-11.html#1106100-08192025)
+- [11.0.6000 (08/06/2025)]({{ site.dbr_java_release_notes_v11 }}java-11.html#1106000-08062025)
 - [9.6.40 (03/14/2024)]({{ site.dbr_java_release_notes_v9 }}java-9.html#9640-03142024)
 - [9.6.30 (08/29/2023)]({{ site.dbr_java_release_notes_v9 }}java-9.html#9630-08292023)
 - [9.6.20 (03/16/2023)]({{ site.dbr_java_release_notes_v9 }}java-9.html#9620-03162023)

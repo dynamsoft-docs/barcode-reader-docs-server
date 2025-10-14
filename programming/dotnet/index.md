@@ -35,6 +35,9 @@ The best way to start with the Dynamsoft Barcode Reader .NET Edition, is followi
   - .NET Framework 3.5 and above
   - .NET 6, 7, 8
 
+> [!NOTE]
+> Other architectures and operating systems, such as ESP32, MIPS, FreeRTOS, and Micrium uC/OS, are not supported.
+
 ## API Reference
 
 For an overview of the APIs, see the [API Reference]({{ site.dbr_dotnet_api }}).

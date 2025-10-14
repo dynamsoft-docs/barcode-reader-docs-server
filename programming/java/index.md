@@ -34,6 +34,9 @@ For embedded or ARM-based platforms, we recommend using a device with performanc
   - 4 GB RAM
   - Linux-based OS (e.g., Raspberry Pi OS, Ubuntu Server)
 
+> [!NOTE]
+> Other architectures and operating systems, such as ESP32, MIPS, FreeRTOS, and Micrium uC/OS, are not supported.
+
 ## API Reference
 
 For an overview of the APIs, see the [API Reference]({{ site.dbr_java_api }}).
