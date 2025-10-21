@@ -10,45 +10,50 @@ needGenerateH3Content: false
 
 ## 11.2.1000 (10/14/2025)
 
-🎉 **Milestone Release** - This version introduces groundbreaking AI-powered enhancements that significantly improve accuracy and performance across various barcode processing scenarios.
+### 🎉Milestone Release
+Version 11.2.1000 introduces a series of AI-driven improvements designed to enhance barcode detection accuracy, processing speed, and configuration flexibility.
+
+This release focuses on practical performance gains for production environments across retail, logistics, and manufacturing workflows.
 
 ### ✨ Key Highlights
+#### AI-Powered Barcode Detection and Decoding
 
-**AI-Powered Barcode Detection & Decoding**
-- 🧠 **First-to-Market AI Localization**: Revolutionary [`OneDLocalization`]({{ site.dcvb_parameters_reference }}barcode-reader-task-settings/localization-modes.html#modelnamearray) and [`DataMatrixQRCodeLocalization`]({{ site.dcvb_parameters_reference }}barcode-reader-task-settings/localization-modes.html#modelnamearray) neural network models for superior detection of **blurred/low-resolution 1D codes** and **DataMatrix/QR codes with missing or damaged finder patterns**
-- ⚡ **Specialized Decoders**: Cutting-edge [`EAN13Decoder`]({{ site.dcvb_parameters_reference }}barcode-reader-task-settings/deblur-modes.html#modelnamearray) and [`Code128Decoder`]({{ site.dcvb_parameters_reference }}barcode-reader-task-settings/deblur-modes.html#modelnamearray) models deliver unprecedented accuracy for **blurred and long-distance** scenarios
-- 🔍 **Enhanced Clarity Processing**: Completely redesigned [`OneDDeblur`]({{ site.dcvb_parameters_reference }}barcode-reader-task-settings/deblur-modes.html#modelnamearray) model with superior **motion blur and focus blur** recovery algorithms
-- 🎯 **Flexible Model Configuration**: Advanced `ModelNameArray` parameter enables on-demand model loading and precise selection for specific barcode scenarios
+- New Localization Models – Introduces [`OneDLocalization`]({{ site.dcvb_parameters_reference }}barcode-reader-task-settings/localization-modes.html#modelnamearray) and [`DataMatrixQRCodeLocalization`]({{ site.dcvb_parameters_reference }}barcode-reader-task-settings/localization-modes.html#modelnamearray) neural network models for improved detection of **blurred / low-resolution 1D codes**, or **partially damaged DataMatrix/QR codes**.
+- Specialized Decoders – Adds [`EAN13Decoder`]({{ site.dcvb_parameters_reference }}barcode-reader-task-settings/deblur-modes.html#modelnamearray) and [`Code128Decoder`]({{ site.dcvb_parameters_reference }}barcode-reader-task-settings/deblur-modes.html#modelnamearray) models optimized for **long-distance** and **motion-blurred** decoding scenarios.
+- Redesigned Deblur Model – The [`OneDDeblur`]({{ site.dcvb_parameters_reference }}barcode-reader-task-settings/deblur-modes.html#modelnamearray) model now provides more effective recovery from **motion and focus blur**.
+- Configurable Model Selection – The new `ModelNameArray` parameter supports flexible model loading and fine-grained control for specific barcode types.
 
-**Precision Control**
-- ⚙️ **Granular Deblur Methods**: Fine-tuned [`DM_DEEP_ANALYSIS`]({{ site.dcvb_parameters_reference }}barcode-reader-task-settings/deblur-modes.html#dm_deep_analysis) with specialized method control - `OneDGeneral`, `TwoDGeneral`, and `EAN13Enhanced` for targeted optimization
-- 🎯 **Smart Barcode Counting**: New [`ExpectedBarcodesCount`]({{ site.dcvb_parameters_reference }}barcode-format-specification/expected-barcodes-count.html) parameter enables **format-specific quantity control** and **early termination optimization** for known-quantity scenarios
-- 🔍 **Advanced Region Detection**: New [`RPM_GRAY_CONSISTENCY`]({{ site.dcvb_parameters_reference }}image-parameter/region-predetection-modes.html#rpm_gray_consistency) mode enables precise region detection based on **grayscale uniformity** and **local consistency** for document and label processing
+#### Precision and Processing Control
 
+- Enhanced Deblur Methods – [`DM_DEEP_ANALYSIS`]({{ site.dcvb_parameters_reference }}barcode-reader-task-settings/deblur-modes.html#dm_deep_analysis) now includes sub-level control with `OneDGeneral`, `TwoDGeneral`, and `EAN13Enhanced` options.
+- Barcode Count Expectation – The new [`ExpectedBarcodesCount`]({{ site.dcvb_parameters_reference }}barcode-format-specification/expected-barcodes-count.html) parameter enables **format-specific quantity control** and **early termination** in fixed-count workflows.
+- Improved Region Detection – The new [`RPM_GRAY_CONSISTENCY`]({{ site.dcvb_parameters_reference }}image-parameter/region-predetection-modes.html#rpm_gray_consistency) mode provides more precise region extraction based on **grayscale uniformity** and **local consistency** for document and label processing.
 
-### 💡 What This Means for You
+### Performance Highlights
 
-**For Challenging Barcode Scenarios**
-- **Blurred conditions**: 26.5% better read rates with 44% faster processing - ideal for handheld scanning and moving objects
-- **Extended distance capability**: Breakthrough support for reading distances beyond 75cm - revolutionizing warehouse automation and high-shelf scanning
-- **Damaged 2D codes**: Enhanced detection of DataMatrix and QR codes with missing or damaged finder patterns - perfect for manufacturing and logistics applications
+#### Barcode Workflows
 
-**For Enterprise Integration**
-- **Retail environments**: Enhanced performance for blurred handheld scanning and long-distance shelf reading
-- **Logistics & shipping**: Improved recognition for package tracking with better blur and long-distance scanning capabilities
-- **Manufacturing QC**: Improved 2D code reading on printed/etched parts with wear damage
+- Up to **26.5%** higher read rates under blur conditions with as much as **44%** faster processing.
+- Reliable decoding of DataMatrix and QR codes with missing or damaged finder patterns.
+- Extended operational range beyond 75 cm for long-distance barcode scanning.
 
-**For Developers**
-- **Backward Compatible**: Seamless upgrade with existing code and easy migration path
-- **Flexible Configuration**: Extensive parameter customization for specific use cases and comprehensive model configuration options
-- **Enterprise Ready**: Battle-tested stability for production environments
+### Developer Notes
+
+- Backward Compatibility – Fully compatible with existing integrations; no code-level changes required for upgrade.
+- Configuration Flexibility – Expanded parameter set allows comprehensive model configuration for scenario-specific tuning.
+- Production Stability – All new models validated in enterprise environments.
 
 ### Changed
 
-- Updated the default value of parameter [`MaxThreadsInOneTask`]({{ site.dcvb_parameters_reference }}barcode-reader-task-settings/max-threads-in-one-task.html) from 4 to 0 (auto-detection).
-- Updated the default value of parameter [`IncludeTrailingCheckDigit`]({{ site.dcvb_parameters_reference }}barcode-format-specification/include-trailing-check-digit.html) from 1 to 0. This means Code128 barcode results will no longer include the trailing check digit in the decoded bytes by default, improving compatibility with industry standards.
-- Deprecated argument `DeblurModelNameArray` of parameter [`DeblurModes`]({{ site.dcvb_parameters_reference }}barcode-reader-task-settings/deblur-modes.html), use `ModelNameArray` instead.
-- Deprecated method `appendModelBuffer` of class [`CaptureVisionRouter`]({{ site.dcvb_java_api }}capture-vision-router/capture-vision-router.html), use [`appendDLModelBuffer`]({{ site.dcvb_java_api }}capture-vision-router/auxiliary-methods.html#appenddlmodelbuffer) instead.
+#### Parameter Defaults
+
+- [`MaxThreadsInOneTask`]({{ site.dcvb_parameters_reference }}barcode-reader-task-settings/max-threads-in-one-task.html): default changed from 4 → 0 (auto-detection).
+- [`IncludeTrailingCheckDigit`]({{ site.dcvb_parameters_reference }}barcode-format-specification/include-trailing-check-digit.html): default changed from 1 → 0. Code128 results will no longer include the trailing check digit by default for improved compliance with standard decoding practices.
+
+### Deprecations
+
+- `DeblurModelNameArray` argument of [`DeblurModes`]({{ site.dcvb_parameters_reference }}barcode-reader-task-settings/deblur-modes.html) → use `ModelNameArray`.
+- `AppendModelBuffer` method of `CaptureVisionRouter` → use [`AppendDLModelBuffer`]({{ site.dcvb_java_api }}capture-vision-router/auxiliary-methods.html#appenddlmodelbuffer).
 
 ### Fixed
 
