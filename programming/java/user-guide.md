@@ -71,7 +71,7 @@ mvn archetype:generate -DgroupId=com.dynamsoft -DartifactId=dbr-hello-world -Dar
 
 Let's start by creating a console application which demonstrates how to use the minimum code to read barcodes from an image file.
 
-> You can <a href="https://github.com/Dynamsoft/barcode-reader-java-samples/tree/main/samples/HelloWorld" target="_blank">download the entire source code from here</a>.
+> You can <a href="https://github.com/Dynamsoft/barcode-reader-java-samples/tree/main/Samples/HelloWorld" target="_blank">download the entire source code from here</a>.
 
 ### Create a New Project
 
