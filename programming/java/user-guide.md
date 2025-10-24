@@ -98,20 +98,26 @@ import com.dynamsoft.license.LicenseManager;
 Add the following code inside the `main` method to initialize the license for using the SDK in the application:
 
 ```java
-try {
-    LicenseError licenseError = LicenseManager.initLicense("DLS2eyJvcmdhbml6YXRpb25JRCI6IjIwMDAwMSJ9");
-    if (licenseError.getErrorCode() != EnumErrorCode.EC_OK) {
-        System.out.println("License initialization failed: ErrorCode: " + licenseError.getErrorCode() + ", ErrorString: " + licenseError.getErrorString());
-        return;
+public class ReadAnImage {
+    public static void main(String[] args) {
+        try {
+            LicenseError licenseError = LicenseManager.initLicense("DLS2eyJvcmdhbml6YXRpb25JRCI6IjIwMDAwMSJ9");
+            if (licenseError.getErrorCode() != EnumErrorCode.EC_OK) {
+                System.out.println("License initialization failed: ErrorCode: " + licenseError.getErrorCode()
+                        + ", ErrorString: " + licenseError.getErrorString());
+                return;
+            }
+        } catch (LicenseException e) {
+            System.out.println("License initialization failed: ErrorCode: " + e.getErrorCode() + ", ErrorString: "
+                    + e.getErrorString());
+            return;
+        }
+        // codes from following steps
     }
-} catch (LicenseException e) {
-    System.out.println("License initialization failed: ErrorCode: " + e.getErrorCode() + ", ErrorString: " + e.getErrorString());
-    return;
 }
-// codes from following steps
 ```
 
-> The string "DLS2eyJvcmdhbml6YXRpb25JRCI6IjIwMDAwMSJ9" here is a free public trial license. Note that network connection is required for this license to work. When it expires, you can request a 30-day free trial license from the <a href="https://www.dynamsoft.com/customer/license/trialLicense?utm_source=guide&product=dbr&package=java" target="_blank">Customer Portal</a>.
+> The string "DLS2eyJvcmdhbml6YXRpb25JRCI6IjIwMDAwMSJ9" here is a free public trial license. Note that network connection is required for this license to work. Alternatively, you can request a 30-day free offline trial license from the <a href="https://www.dynamsoft.com/customer/license/trialLicense?utm_source=guide&product=dbr&package=java" target="_blank">Customer Portal</a>.
 
 ### Create a CaptureVisionRouter Instance
 
