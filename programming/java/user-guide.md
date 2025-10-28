@@ -62,7 +62,7 @@ mvn archetype:generate -DgroupId=com.dynamsoft -DartifactId=dbr-hello-world -Dar
     <dependency>
         <groupId>com.dynamsoft</groupId>
         <artifactId>dbr</artifactId>
-        <version>11.0.6100</version>
+        <version>11.2.1100</version>
     </dependency>
 </dependencies>
 ```
@@ -103,13 +103,11 @@ public class ReadAnImage {
         try {
             LicenseError licenseError = LicenseManager.initLicense("DLS2eyJvcmdhbml6YXRpb25JRCI6IjIwMDAwMSJ9");
             if (licenseError.getErrorCode() != EnumErrorCode.EC_OK) {
-                System.out.println("License initialization failed: ErrorCode: " + licenseError.getErrorCode()
-                        + ", ErrorString: " + licenseError.getErrorString());
+                System.out.println("License initialization failed: ErrorCode: " + licenseError.getErrorCode() + ", ErrorString: " + licenseError.getErrorString());
                 return;
             }
         } catch (LicenseException e) {
-            System.out.println("License initialization failed: ErrorCode: " + e.getErrorCode() + ", ErrorString: "
-                    + e.getErrorString());
+            System.out.println("License initialization failed: ErrorCode: " + e.getErrorCode() + ", ErrorString: " + e.getErrorString());
             return;
         }
         // codes from following steps
@@ -190,7 +188,7 @@ If, instead of processing one single image, you need to process many images at o
 
 > These steps follow the step [Create a CaptureVisionRouter Instance](#create-a-capturevisionrouter-instance) mentioned above.
 
-> You can <a href="https://github.com/Dynamsoft/barcode-reader-java-samples/tree/main/samples/HelloWorld" target="_blank">download the entire source code from here</a>.
+> You can <a href="https://github.com/Dynamsoft/barcode-reader-java-samples/tree/main/Samples/HelloWorld" target="_blank">download the entire source code from here</a>.
 
 
 ### Create an ImageSource as the Input
@@ -301,4 +299,3 @@ During the process, the callback method `onDecodedBarcodesReceived()` is trigger
 ### Build and Run the Project Again
 
 Please refer to [Build and Run the Project](#build-and-run-the-project).
-
