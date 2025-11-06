@@ -25,7 +25,7 @@ The best way to start with the Dynamsoft Barcode Reader Java Edition, is followi
   - Windows Windows: Windows 8 and higher, or Windows Server 2012 and higher
   - Linux x64 (Ubuntu 14.04.4+ LTS, Debian 8+, CentOS 7+, etc.)
   - Linux arm 64bit
-  - macOS universal 10.15+
+  - macOS (Universal) 12+
 - JDK 1.8 and above
 
 - For Embedded Devices:
