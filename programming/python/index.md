@@ -24,7 +24,7 @@ The best way to start with the Dynamsoft Barcode Reader Python Edition, is follo
 - Operating Systems:
   - Windows x64
   - Linux x64, ARM 64-bit, ARM 32-bit (for versions below DBR 9.6.40.2)
-  - macOS (10.15+)
+  - macOS (Universal) 12+
 
 - Python Versions:
   - Python 3.13
