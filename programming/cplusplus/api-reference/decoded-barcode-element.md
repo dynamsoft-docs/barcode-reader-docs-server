@@ -41,10 +41,14 @@ class CDecodedBarcodeElement : public CRegionObjectElement
 | [`SetText`](#settext) | Sets the text of the decoded barcode. |
 | [`SetBytes`](#setbytes)| Sets the raw bytes of the decoded barcode.|
 | [`SetConfidence`](#setconfidence) | Sets the confidence score of the barcode recognition result. |
-
-### Inherited Methods
-
-{%- include inherited-methods/region-object-element.md -%}
+| Inherited Methods from [CRegionObjectElement]({{ site.dcvb_cpp_api }}core/intermediate-results/region-object-element.html): | |
+| [`GetLocation`]({{ site.dcvb_cpp_api }}core/intermediate-results/region-object-element.html#getlocation) | Gets the location of the region object element. |
+| [`GetReferencedElement`]({{ site.dcvb_cpp_api }}core/intermediate-results/region-object-element.html#getreferencedelement) | Gets a pointer to a referenced region object element. |
+| [`GetElementType`]({{ site.dcvb_cpp_api }}core/intermediate-results/region-object-element.html#getelementtype) | Gets the type of the region object element. |
+| [`GetImageData`]({{ site.dcvb_cpp_api }}core/intermediate-results/region-object-element.html#getimagedata) | Gets the imageData of the region object element. |
+| [`Clone`]({{ site.dcvb_cpp_api }}core/intermediate-results/region-object-element.html#clone) | Clone the region object element. |
+| [`Retain`]({{ site.dcvb_cpp_api }}core/intermediate-results/region-object-element.html#retain) | Increases the reference count of the `CRegionObjectElement` object. |
+| [`Release`]({{ site.dcvb_cpp_api }}core/intermediate-results/region-object-element.html#release) | Decreases the reference count of the `CRegionObjectElement` object. |
 
 ### GetFormat
 
