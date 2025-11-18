@@ -32,6 +32,12 @@ class CDecodedBarcodesResult: public CCapturedResultBase
 | [`Retain`](#retain) | Increases the reference count of the `CDecodedBarcodesResult` object. |
 | [`operator[]`](#operator)           | Gets a pointer to the `CBarcodeResultItem` object at the specified index.|
 | [`AddItem`](#additem) | Adds a specific item to the array in the decoded barcodes result. |
+| **Methods Inherited from [CCapturedResultBase]({{ site.dcvb_cpp_api }}core/basic-structures/captured-result-base.html):** | |
+| [`GetOriginalImageHashId`]({{ site.dcvb_cpp_api }}core/basic-structures/captured-result-base.html#getoriginalimagehashid) | Gets the hash ID of the original image. |
+| [`GetOriginalImageTag`]({{ site.dcvb_cpp_api }}core/basic-structures/captured-result-base.html#getoriginalimagetag) | Gets the tag of the original image. |
+| [`GetRotationTransformMatrix`]({{ site.dcvb_cpp_api }}core/basic-structures/captured-result-base.html#getrotationtransformmatrix) | Gets the rotation transformation matrix of the original image relative to the rotated image. |
+| [`GetErrorCode`]({{ site.dcvb_cpp_api }}core/basic-structures/captured-result-base.html#geterrorcode) | Gets the error code of the recognition result, if an error occurred. |
+| [`GetErrorString`]({{ site.dcvb_cpp_api }}core/basic-structures/captured-result-base.html#geterrorstring) | Gets the error message of the recognition result, if an error occurred. |
 
 ### GetItemsCount
 
