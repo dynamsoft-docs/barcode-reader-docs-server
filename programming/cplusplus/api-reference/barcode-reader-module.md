@@ -21,7 +21,7 @@ The `CBarcodeReaderModule` class defines general functions in the barcode reader
 class CBarcodeReaderModule 
 ```
 
-## Methods Summary
+## Methods
 
 | Method                                                    | Description                                        |
 | --------------------------------------------------------- | -------------------------------------------------- |

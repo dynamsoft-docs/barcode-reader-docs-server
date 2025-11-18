@@ -31,7 +31,7 @@ class CLocalizedBarcodesUnit: public CIntermediateResultUnit
 | [`RemoveLocalizedBarcode`](#removelocalizedbarcode)           | Removes a localized barcode at the specified index.|
 | [`SetLocalizedBarcode`](#setlocalizedbarcode)           | Sets a localized barcode at the specified index.|
 | [`operator[]`](#operator)           | Gets a pointer to a specific localized barcode element.|
-| Inherited Methods from [CIntermediateResultUnit]({{ site.dcvb_cpp_api }}core/intermediate-results/intermediate-result-unit.html): | |
+| **Methods Inherited from [CIntermediateResultUnit]({{ site.dcvb_cpp_api }}core/intermediate-results/intermediate-result-unit.html):** | |
 | [`GetHashId`]({{ site.dcvb_cpp_api }}core/intermediate-results/intermediate-result-unit.html#gethashid) | Gets the hash ID of the unit.|
 | [`GetOriginalImageHashId`]({{ site.dcvb_cpp_api }}core/intermediate-results/intermediate-result-unit.html#getoriginalimagehashid) | Gets the hash ID of the original image. |
 | [`GetOriginalImageTag`]({{ site.dcvb_cpp_api }}core/intermediate-results/intermediate-result-unit.html#getoriginalimagetag) | Gets the image tag of the original image. |

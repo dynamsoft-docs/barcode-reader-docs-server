@@ -26,7 +26,7 @@ class CComplementedBarcodeImageUnit: public CIntermediateResultUnit
 | [`GetImageData`](#getimagedata) | Gets the complemented barcode image data.|
 | [`GetLocation`](#getlocation) | Gets the location of the complemented barcode in a quadrilateral.|
 | [`SetLocation`](#setlocation) | Sets the location of the complemented barcode in a quadrilateral.|
-| Inherited Methods from [CIntermediateResultUnit]({{ site.dcvb_cpp_api }}core/intermediate-results/intermediate-result-unit.html): | |
+| **Methods Inherited from [CIntermediateResultUnit]({{ site.dcvb_cpp_api }}core/intermediate-results/intermediate-result-unit.html):** | |
 | [`GetHashId`]({{ site.dcvb_cpp_api }}core/intermediate-results/intermediate-result-unit.html#gethashid) | Gets the hash ID of the unit.|
 | [`GetOriginalImageHashId`]({{ site.dcvb_cpp_api }}core/intermediate-results/intermediate-result-unit.html#getoriginalimagehashid) | Gets the hash ID of the original image. |
 | [`GetOriginalImageTag`]({{ site.dcvb_cpp_api }}core/intermediate-results/intermediate-result-unit.html#getoriginalimagetag) | Gets the image tag of the original image. |

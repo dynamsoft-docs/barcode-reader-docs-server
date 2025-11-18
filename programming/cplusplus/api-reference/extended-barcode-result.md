@@ -29,7 +29,7 @@ class CExtendedBarcodeResult : public CDecodedBarcodeElement
 | [`GetDeformation`](#getdeformation) | Gets the deformation of the barcode. |
 | [`GetClarity`](#getclarity) | Gets the clarity of the barcode. |
 | [`GetSamplingImage`](#getsamplingimage) | Gets the sampling image of the barcode. |
-| Inherited Methods from [CDecodedBarcodeElement]({{ site.dbr_cpp_api }}decoded-barcode-element.html): | |
+| **Methods Inherited from [CDecodedBarcodeElement]({{ site.dbr_cpp_api }}decoded-barcode-element.html):** | |
 | [`GetFormat`]({{ site.dbr_cpp_api }}decoded-barcode-element.html#getformat) | Gets the format of the barcode. |
 | [`GetFormatString`]({{ site.dbr_cpp_api }}decoded-barcode-element.html#getformatstring) | Gets the string representation of the barcode format. |
 | [`GetText`]({{ site.dbr_cpp_api }}decoded-barcode-element.html#gettext) | Gets the text of the decoded barcode. |

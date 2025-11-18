@@ -32,7 +32,7 @@ class CDecodedBarcodesResult: public CCapturedResultBase
 | [`Retain`](#retain) | Increases the reference count of the `CDecodedBarcodesResult` object. |
 | [`operator[]`](#operator)           | Gets a pointer to the `CBarcodeResultItem` object at the specified index.|
 | [`AddItem`](#additem) | Adds a specific item to the array in the decoded barcodes result. |
-| Inherited Methods from [CCapturedResultBase]({{ site.dcvb_cpp_api }}core/basic-structures/captured-result-base.html): | |
+| **Methods Inherited from [CCapturedResultBase]({{ site.dcvb_cpp_api }}core/basic-structures/captured-result-base.html):** | |
 | [`GetOriginalImageHashId`]({{ site.dcvb_cpp_api }}core/basic-structures/captured-result-base.html#getoriginalimagehashid) | Gets the hash ID of the original image. |
 | [`GetOriginalImageTag`]({{ site.dcvb_cpp_api }}core/basic-structures/captured-result-base.html#getoriginalimagetag) | Gets the tag of the original image. |
 | [`GetRotationTransformMatrix`]({{ site.dcvb_cpp_api }}core/basic-structures/captured-result-base.html#getrotationtransformmatrix) | Gets the rotation transformation matrix of the original image relative to the rotated image. |
