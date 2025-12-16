@@ -8,6 +8,20 @@ needGenerateH3Content: false
 
 # Release Notes for C++ Edition - 11.x
 
+## 11.2.5000 (12/16/2025)
+
+This release includes security maintenance updates to ensure continued protection of the product.
+
+### Security Updates
+
+- Updated third-party libraries to incorporate the latest security fixes.
+
+### Bug Fixes
+
+- Fixed memory leak, crash, and hang issues in various scenarios.
+- Improved stability in multi-threading operations.
+
+
 ## 11.2.1000 (10/14/2025)
 
 ### 🎉Milestone Release
