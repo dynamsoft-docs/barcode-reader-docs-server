@@ -165,7 +165,7 @@ delete cvRouter, cvRouter = NULL;
 1. In Visual Studio, set the solution to build as `Release|x64`.
 2. Build the project to generate the program `DBRCPPSample.exe`.
 3. Copy **ALL** `*.dll` files under `[INSTALLATION FOLDER]/DynamsoftBarcodeReader/Dist/Lib/Windows/x64` to the same folder as the `DBRCPPSample.exe`.
-4. Copy the folder `[INSTALLATION FOLDER]/DynamsoftBarcodeReader/Dist/Templates` to the same folder as the `DBRCPPSample.exe`.
+4. Copy the folder `Templates` and `Models` under `[INSTALLATION FOLDER]/DynamsoftBarcodeReader/Dist/` to the same folder as the `DBRCPPSample.exe`.
 5. Run the program `DBRCPPSample.exe`.
 
 #### For Linux
@@ -177,10 +177,11 @@ delete cvRouter, cvRouter = NULL;
     g++ -o DBRCPPSample DBRCPPSample.cpp -lDynamsoftCaptureVisionRouter -lDynamsoftLicense -lDynamsoftCore -lDynamsoftUtility -L ../Dist/Lib/Linux/x64 -Wl,-rpath=../Dist/Lib/Linux/x64 -std=c++11
     ```
 
-3. Copy the preset template:
+3. Copy the preset template and model files:
 
     ```bash
     cp -r ../Dist/Templates ../Dist/Lib/Linux/x64/
+    cp -r ../Dist/Models ../Dist/Lib/Linux/x64/
     ```
 
 4. Run the program:
