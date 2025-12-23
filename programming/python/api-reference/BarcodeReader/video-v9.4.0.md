@@ -32,18 +32,18 @@ BarcodeReader.start_video_mode(frame_decoding_parameters, text_result_callback_f
 `[in] text_result_callback_func` <*function pointer*> : Sets callback function to process text results which is triggered when the library finishes decoding a frame.  
 - This callback function pointer must follow the following format: callback_func_name(frameId, results, user_data);  
 - Or you can inherit the abstract class TextResultCallBack to implement the abstract method text_results_callback_func.  
-- If you would like to learn how to use it, please refer to the [sample](https://github.com/Dynamsoft/barcode-reader-python-samples/blob/master/samples/video-decoding.py).
+- If you would like to learn how to use it, please refer to the [sample](https://github.com/Dynamsoft/barcode-reader-python-samples/tree/v9.x/samples/video-decoding.py).
 
 `[in] template_name` (optional)<*str*> : The template name.  
 `[in] intermediate_result_callback_func` (optional)<*function pointer*> : Sets callback function to process intermediate results which is triggered when the library finishes decoding a frame. 
 - This callback function pointer must follow the following format: callback_func_name(frameId, results, user_data); 
 - Or you can inherit the abstract class IntermediateResultCallBack to implement the abstract method intermediate_results_callback_func.  
-- If you would like to learn how to use it, please refer to the [sample](https://github.com/Dynamsoft/barcode-reader-python-samples/blob/master/samples/video-decoding.py).
+- If you would like to learn how to use it, please refer to the [sample](https://github.com/Dynamsoft/barcode-reader-python-samples/tree/v9.x/samples/video-decoding.py).
 
 `[in] error_callback_func` (optional)<*function pointer*> : Sets callback function to process errors which is triggered when the library finishes decoding a frame.  
 - This callback function pointer must follow the following format: callback_func_name(frameId, error, user_data);  
 - Or you can inherit the abstract class ErrorCallBack to implement the abstract method error_callback_func.
-- If you would like to learn how to use it, please refer to the [sample](https://github.com/Dynamsoft/barcode-reader-python-samples/blob/master/samples/video-decoding.py).
+- If you would like to learn how to use it, please refer to the [sample](https://github.com/Dynamsoft/barcode-reader-python-samples/tree/v9.x/samples/video-decoding.py).
 
 `[in] user_data` (optional)<*object*> : Customizes arguments passed to your function.
 

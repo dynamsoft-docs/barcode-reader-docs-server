@@ -18,7 +18,7 @@ permalink: /programming/cplusplus/index-v9.6.20.html
 
 ## Samples and Demo
 
-- <a href="https://github.com/Dynamsoft/barcode-reader-c-cpp-samples/tree/v9.6.10/samples/C%2B%2B" target="_blank">C++ Samples</a>
+- <a href="https://github.com/Dynamsoft/barcode-reader-c-cpp-samples/tree/v9.x/samples/C%2B%2B" target="_blank">C++ Samples</a>
 - <a href="https://demo.dynamsoft.com/barcode-reader/" target="_blank">Online Demo</a>
 
 ## API Reference

@@ -40,7 +40,7 @@ If you haven't downloaded the SDK yet, download the `Java Package` now from <a h
 ## Build Your First Application
 
 Let's start by creating a console application which demonstrates how to use the minimum code to read barcodes from an image file.  
-> You can <a href="https://github.com/Dynamsoft/barcode-reader-java-samples/blob/main/samples/GeneralSettings/src/main/java/GeneralSettings.java" target="_blank">download the entire source code here</a>.
+> You can <a href="https://github.com/Dynamsoft/barcode-reader-java-samples/tree/v9.x/samples/GeneralSettings/src/main/java/GeneralSettings.java" target="_blank">download the entire source code here</a>.
 
 ### Create a New Project
 
@@ -148,7 +148,7 @@ Please change all `[INSTALLATION FOLDER]` in above code snippet to your unpackin
 
 1. Right click the project, click Run As > Java Application.
 
-> You can <a href="https://github.com/Dynamsoft/barcode-reader-java-samples/blob/main/samples/GeneralSettings/src/main/java/GeneralSettings.java" target="_blank">download the entire source code here</a>.
+> You can <a href="https://github.com/Dynamsoft/barcode-reader-java-samples/tree/v9.x/samples/GeneralSettings/src/main/java/GeneralSettings.java" target="_blank">download the entire source code here</a>.
 
 ## Next Steps
 

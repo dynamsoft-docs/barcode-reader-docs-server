@@ -41,7 +41,7 @@ If you haven't downloaded the SDK yet, download the `.NET Package` now from <a h
 ## Build Your First Application
 
 Let's start by creating a console application which demonstrates how to use the minimum code to read barcodes from an image file.  
-> You can <a href="https://github.com/Dynamsoft/barcode-reader-dotnet-samples/blob/main/samples/GeneralSettings/Program.cs" target="_blank">download the entire source code here</a>.
+> You can <a href="https://github.com/Dynamsoft/barcode-reader-dotnet-samples/tree/v9.x/samples/GeneralSettings/Program.cs" target="_blank">download the entire source code here</a>.
 
 ### Create a New Project
 
@@ -161,7 +161,7 @@ Please change all `[INSTALLATION FOLDER]` in above code snippet to your unpackin
 
  >If you got the exception "Failed to create compression directory" or "Failed to load module dll", please copy `x64` and `x86` folders to the folder where `Dynamsoft.BarcodeReader.dll` and `DynamsoftCommon.dll` resides and try again. The `x64` and `x86` folders can be found under `[INSTALLATION FOLDER]\Lib\2.0` or `[INSTALLATION FOLDER]\Lib\4.0`.
 
-> You can <a href="https://github.com/Dynamsoft/barcode-reader-dotnet-samples/blob/main/samples/GeneralSettings/Program.cs" target="_blank">download the entire source code here</a>.
+> You can <a href="https://github.com/Dynamsoft/barcode-reader-dotnet-samples/tree/v9.x/samples/GeneralSettings/Program.cs" target="_blank">download the entire source code here</a>.
 
 ## Next Steps
 

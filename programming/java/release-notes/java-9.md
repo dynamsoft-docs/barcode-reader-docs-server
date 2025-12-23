@@ -9,6 +9,12 @@ permalink: /programming/java/release-notes/java-9.html
 
 # Release Notes for Java Edition - 9.x
 
+## 9.6.60 (12/23/2025)
+
+### Security Updates
+
+- Updated third-party libraries to incorporate the latest security fixes.
+
 ## 9.6.40 (03/14/2024)
 
 ### Improved

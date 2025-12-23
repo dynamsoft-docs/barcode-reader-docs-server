@@ -46,7 +46,7 @@ pip install dbr
 ## Build Your First Application
 
 Let's start by creating a console application which demonstrates how to use the minimum code to read barcodes from an image file.  
-> You can <a href="https://github.com/Dynamsoft/barcode-reader-python-samples/blob/master/samples/general-settings.py" target="_blank">download the entire source code here</a>.
+> You can <a href="https://github.com/Dynamsoft/barcode-reader-python-samples/tree/v9.x/samples/general-settings.py" target="_blank">download the entire source code here</a>.
 
 ### Create a New Project
 
@@ -157,7 +157,7 @@ if reader != None:
 python DBRPythonSample.py
 ```
 
-> You can <a href="https://github.com/Dynamsoft/barcode-reader-python-samples/blob/master/samples/general-settings.py" target="_blank">download the entire source code here</a>.
+> You can <a href="https://github.com/Dynamsoft/barcode-reader-python-samples/tree/v9.x/samples/general-settings.py" target="_blank">download the entire source code here</a>.
 
 ## Next Steps
 
