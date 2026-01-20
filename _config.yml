@@ -72,7 +72,7 @@ dnt_icon: /barcode-reader/docs/server/assets/img-icon/icon-dnt.svg
 features: /barcode-reader/docs/core/programming/features/
 usecases: /barcode-reader/docs/core/programming/usecases/
 license_activation: /barcode-reader/docs/core/license-activation/
-faq_general: /barcode-reader/docs/core/faq/general/
+faq: /faq/barcode-reader/
 
 baseurl: "/barcode-reader/docs/server"
 plugins:
