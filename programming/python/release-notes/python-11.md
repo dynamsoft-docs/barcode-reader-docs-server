@@ -54,10 +54,9 @@ needGenerateH3Content: false
 
 - [`convert_to_binary_global()`]({{ site.dcvb_python_api }}utility/image-processor.html#convert_to_binary_global) and [`convert_to_binary_local()`]({{ site.dcvb_python_api }}utility/image-processor.html#convert_to_binary_local) of `ImageProcessor` class now support color and binary images as input in addition to grayscale images.
 
-### Deprecated
+- Removed `DataMatrixModuleIsotropic` parameter – use [`BarcodeZoneWidthToHeightRatioRangeArray`]({{ site.dcvb_parameters_reference }}barcode-format-specification/barcode-zone-width-to-height-ratio-range-array.html) instead.
 
-- `DataMatrixModuleIsotropic` parameter – use [`BarcodeZoneWidthToHeightRatioRangeArray`]({{ site.dcvb_parameters_reference }}barcode-format-specification/barcode-zone-width-to-height-ratio-range-array.html) instead.
-- `MinRatioOfBarcodeZoneWidthToHeight` parameter – use [`BarcodeZoneWidthToHeightRatioRangeArray`]({{ site.dcvb_parameters_reference }}barcode-format-specification/barcode-zone-width-to-height-ratio-range-array.html) instead.
+- Removed `MinRatioOfBarcodeZoneWidthToHeight` parameter – use [`BarcodeZoneWidthToHeightRatioRangeArray`]({{ site.dcvb_parameters_reference }}barcode-format-specification/barcode-zone-width-to-height-ratio-range-array.html) instead.
 
 ### Fixed
 
