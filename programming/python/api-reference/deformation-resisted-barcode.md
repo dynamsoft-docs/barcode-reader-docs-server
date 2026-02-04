@@ -10,7 +10,7 @@ The `DeformationResistedBarcode` class represents a deformation resisted barcode
 
 ## Definition
 
-*Module:* dynamsoft_barcode_readers
+*Module:* dbr
 
 ```python
 class DeformationResistedBarcode

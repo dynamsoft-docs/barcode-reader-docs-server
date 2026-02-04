@@ -13,7 +13,7 @@ The `SimplifiedBarcodeReaderSettings` class contains settings for barcode decodi
 
 ## Definition
 
-*Module:* dynamsoft_barcode_reader
+*Module:* dbr
 
 ```python
 class SimplifiedBarcodeReaderSettings

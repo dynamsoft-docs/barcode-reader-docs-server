@@ -10,7 +10,7 @@ The `DataMatrixDetails` class represents the details of a DataMatrix barcode. It
 
 ## Definition
 
-*Module:* dynamsoft_barcode_reader
+*Module:* dbr
 
 *Inheritance:* [BarcodeDetails]({{ site.dbr_python_api }}barcode-details.html) -> DataMatrixDetails
 

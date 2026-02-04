@@ -10,7 +10,7 @@ The `QRCodeDetails` class represents the details of a QR Code. It is derived fro
 
 ## Definition
 
-*Module:* dynamsoft_barcode_reader
+*Module:* dbr
 
 *Inheritance:* [BarcodeDetails]({{ site.dbr_python_api }}barcode-details.html) -> QRCodeDetails
 

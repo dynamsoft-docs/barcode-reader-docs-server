@@ -10,7 +10,7 @@ The `DecodedBarcodeElement` class represents a decoded barcode element. It inher
 
 ## Definition
 
-*Module:* dynamsoft_barcode_readers
+*Module:* dbr
 
 *Inheritance:* [RegionObjectElement]({{ site.dcvb_python_api }}core/intermediate-results/region-object-element.html) -> DecodedBarcodeElement
 
@@ -39,6 +39,7 @@ class DecodedBarcodeElement(RegionObjectElement)
 | [`set_text`](#set_text) | Sets the text of the decoded barcode. |
 | [`set_bytes`](#set_bytes)| Sets the raw bytes of the decoded barcode.|
 | [`set_confidence`](#set_confidence) | Sets the confidence score of the barcode recognition result. |
+| [`get_eci_segments`](#get_eci_segments) | Gets all the ECI segments in the barcode. |
 
 ### \_\_init\_\_
 
@@ -264,4 +265,24 @@ def set_confidence(self, confidence: int) -> None:
 **Parameters**
 
 `confidence` The confidence of the barcode.
+
+### get_eci_segments
+
+Gets all the ECI segments in the barcode.
+
+```python
+def get_eci_segments(self) -> List[ECISegment]:
+```
+
+**Return Value**
+
+Returns a list of [`ECISegment`]({{ site.dbr_python_api }}eci-segment.html) objects. Returns an empty list if no ECI information is present.
+
+**See Also**
+
+[ECISegment]({{ site.dbr_python_api }}eci-segment.html)
+
+**Remarks**
+
+Introduced in Dynamsoft Barcode Reader SDK version 11.4.1000 and Dynamsoft Capture Vision version 3.4.1000.
 

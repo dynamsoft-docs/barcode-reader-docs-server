@@ -38,6 +38,8 @@ class CBarcodeResultItem : public CCapturedResultItem
 | [`IsDPM`](#isdpm) | Gets whether the decoded barcode is a DPM code. |
 | [`IsMirrored`](#ismirrored) | Gets whether the decoded barcode is a mirrored barcode. |
 | [`SetLocation`](#setlocation) | Set the location of the barcode item. |
+| [`GetECISegmentsCount`](#getecisegmentscount) | Gets the number of ECI segments in the barcode. |
+| [`GetECISegment`](#getecisegment) | Gets the ECI segment at the specified index. |
 | **Methods Inherited from [CCapturedResultItem]({{ site.dcvb_cpp_api }}core/basic-structures/captured-result-item.html):** | |
 | [`GetType`]({{ site.dcvb_cpp_api }}core/basic-structures/captured-result-item.html#gettype) | Gets the type of the captured result item. |
 | [`GetReferenceItem`]({{ site.dcvb_cpp_api }}core/basic-structures/captured-result-item.html#getreferenceitem) | Gets a pointer to the referenced item in the captured result. |
@@ -86,6 +88,12 @@ virtual const char* GetText() const = 0;
 **Return value**
 
 Returns the text result of the decoded barcode.
+
+**Remarks**
+
+The text result is returned in UTF-8 encoding. The SDK will automatically attempt to detect and convert the barcode bytes to UTF-8 based on ECI information or common character encodings.
+
+If the returned text contains unexpected characters, it may indicate that the automatic encoding detection did not match the actual encoding of the barcode data. In this case, you should use [`GetBytes`](#getbytes) to retrieve the raw byte data and convert it to the appropriate character encoding yourself.
 
 ### GetBytes
 
@@ -231,3 +239,43 @@ Returns an error code. Zero indicates success.
 **See Also**
 
 [CQuadrilateral]({{ site.dcvb_cpp_api }}core/basic-structures/quadrilateral.html)
+
+### GetECISegmentsCount
+
+Gets the number of ECI segments in the barcode.
+
+```cpp
+virtual int GetECISegmentsCount() const = 0;
+```
+
+**Return value**
+
+Returns the count of ECI segments. Returns 0 if no ECI information is present.
+
+**Remarks**
+
+Introduced in Dynamsoft Barcode Reader SDK version 11.4.1000 and Dynamsoft Capture Vision version 3.4.1000.
+
+### GetECISegment
+
+Gets the ECI segment at the specified index.
+
+```cpp
+virtual const CECISegment* GetECISegment(int index) const = 0;
+```
+
+**Parameters**
+
+`[in] index` The zero-based index of the ECI segment to retrieve.
+
+**Return value**
+
+Returns a pointer to the [`CECISegment`]({{ site.dbr_cpp_api }}eci-segment.html) object, or NULL if the index is out of range.
+
+**See Also**
+
+[CECISegment]({{ site.dbr_cpp_api }}eci-segment.html)
+
+**Remarks**
+
+Introduced in Dynamsoft Barcode Reader SDK version 11.4.1000 and Dynamsoft Capture Vision version 3.4.1000.

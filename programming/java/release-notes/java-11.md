@@ -8,6 +8,64 @@ needGenerateH3Content: false
 
 # Release Notes for Java Edition - 11.x
 
+## 11.4.1000 (02/05/2026)
+
+### Highlights
+
+#### AI-Powered Barcode Detection and Decoding
+
+- **PDF417 Localization Model** – Introduces the [`PDF417Localization`]({{ site.dcvb_parameters_reference }}barcode-reader-task-settings/localization-modes.html#modelnamearray) neural network model for improved detection of PDF417 barcodes, especially in challenging conditions.
+
+- **Code39/ITF Decoding Model** – Adds the [`Code39ITFDecoder`]({{ site.dcvb_parameters_reference }}barcode-reader-task-settings/deblur-modes.html#modelnamearray) model for enhanced decoding of Code 39 and ITF barcodes under blur or low-resolution conditions.
+
+- **Deblur Models for 2D Barcodes** – New [`DataMatrixQRCodeDeblur`]({{ site.dcvb_parameters_reference }}barcode-reader-task-settings/deblur-modes.html#modelnamearray) and [`PDF417Deblur`]({{ site.dcvb_parameters_reference }}barcode-reader-task-settings/deblur-modes.html#modelnamearray) models provide more effective recovery from motion and focus blur for DataMatrix, QR Code, and PDF417 barcodes.
+
+#### ECI (Extended Channel Interpretation) Support
+
+- **ECI Information Return** – Added support for retrieving Extended Channel Interpretation (ECI) data from barcodes. The new [`ECISegment`]({{ site.dbr_java_api }}eci-segment.html) class along with `getECISegments()` method in [`BarcodeResultItem`]({{ site.dbr_java_api }}barcode-result-item.html#getecisegments) and [`DecodedBarcodeElement`]({{ site.dbr_java_api }}decoded-barcode-element.html#getecisegments) classes enable access to character encoding information embedded in barcodes.
+
+- **Automatic UTF-8 Conversion** – Barcode text is now automatically converted to UTF-8 based on ECI segments when available, improving compatibility with international character sets.
+
+#### Performance Improvements
+
+- **On-Demand Model Loading** – Implemented lazy loading for AI models, reducing initialization time by loading models only when first needed.
+
+- **Smart Model Selection** – Models are now loaded based on configured barcode formats, minimizing memory usage by excluding unused models.
+
+- **Improved Confidence Scoring** – Enhanced confidence score calculation for results from neural network models, providing more accurate quality indicators.
+
+- **DPM Barcode Optimization** – Improved recognition rate for Direct Part Marking (DPM) barcodes commonly used in industrial and manufacturing environments.
+
+### New
+
+- Added [`BarcodeZoneWidthToHeightRatioRangeArray`]({{ site.dcvb_parameters_reference }}barcode-format-specification/barcode-zone-width-to-height-ratio-range-array.html) parameter for filtering barcodes based on aspect ratio constraints.
+
+- Added [`setResultCrossVerificationCriteria()`]({{ site.dcvb_java_api }}utility/multi-frame-result-cross-filter.html#setresultcrossverificationcriteria) and [`getResultCrossVerificationCriteria()`]({{ site.dcvb_java_api }}utility/multi-frame-result-cross-filter.html#getresultcrossverificationcriteria) methods to `MultiFrameResultCrossFilter` for configurable multi-frame result verification.
+
+### Changed
+
+- `captureMultiPages` now returns results sorted by page number.
+
+- Barcode text encoding fallback changed from UTF-8 to ISO-8859-1 when no ECI information is present in the barcode.
+
+- Improved license binding stability on MacOS devices.
+
+- Updated default value of `compensation` parameter in [`ImageProcessor.convertToBinaryLocal()`]({{ site.dcvb_java_api }}utility/image-processor.html#converttobinarylocal) from 0 to 10.
+
+- [`convertToBinaryGlobal()`]({{ site.dcvb_java_api }}utility/image-processor.html#converttobinaryglobal) and [`convertToBinaryLocal()`]({{ site.dcvb_java_api }}utility/image-processor.html#converttobinarylocal) of `ImageProcessor` class now support color and binary images as input in addition to grayscale images.
+
+### Deprecated
+
+- `DataMatrixModuleIsotropic` parameter – use [`BarcodeZoneWidthToHeightRatioRangeArray`]({{ site.dcvb_parameters_reference }}barcode-format-specification/barcode-zone-width-to-height-ratio-range-array.html) instead.
+- `MinRatioOfBarcodeZoneWidthToHeight` parameter – use [`BarcodeZoneWidthToHeightRatioRangeArray`]({{ site.dcvb_parameters_reference }}barcode-format-specification/barcode-zone-width-to-height-ratio-range-array.html) instead.
+
+### Fixed
+
+- Fixed incorrect coordinate in barcode result when using neural network models with a specified region.
+- Fixed crash and hang issues that could occur in certain scenarios.
+- Fixed various minor bugs and improved overall stability.
+
+
 ## 11.2.5000 (12/16/2025)
 
 This release includes security maintenance updates to ensure continued protection of the product.

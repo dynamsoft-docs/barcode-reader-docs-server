@@ -10,7 +10,7 @@ The `DeformationResistedBarcodeImageUnit` class represents a unit that contains 
 
 ## Definition
 
-*Module:* dynamsoft_barcode_readers
+*Module:* dbr
 
 *Inheritance:* [IntermediateResultUnit]({{ site.dcvb_python_api }}core/intermediate-results/intermediate-result-unit.html) -> DeformationResistedBarcodeImageUnit
 

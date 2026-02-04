@@ -10,7 +10,7 @@ The `PDF417Details` class represents a barcode in PDF417 format. It inherits fro
 
 ## Definition
 
-*Module:* dynamsoft_barcode_reader
+*Module:* dbr
 
 *Inheritance:* [BarcodeDetails]({{ site.dbr_python_api }}barcode-details.html) -> PDF417Details
 

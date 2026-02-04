@@ -13,7 +13,7 @@ The `BarcodeReaderModule` class defines general functions in the barcode reader 
 
 ## Definition
 
-*Module:* dynamsoft_barcode_reader
+*Module:* dbr
 
 ```python
 class BarcodeReaderModule

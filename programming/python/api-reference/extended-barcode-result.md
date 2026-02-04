@@ -10,7 +10,7 @@ The `ExtendedBarcodeResult` class represents an extended barcode result in a dec
 
 ## Definition
 
-*Module:* dynamsoft_barcode_readers
+*Module:* dbr
 
 *Inheritance:* [DecodedBarcodeElement]({{ site.dbr_python_api }}decoded-barcode-element.html) -> ExtendedBarcodeResult
 

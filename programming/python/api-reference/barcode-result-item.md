@@ -11,7 +11,7 @@ The `BarcodeResultItem` class represents a barcode result item decoded by barcod
 
 ## Definition
 
-*Module:* dynamsoft_barcode_reader
+*Module:* dbr
 
 *Inheritance:* [CapturedResultItem]({{ site.dcvb_python_api }}core/basic-classes/captured-result-item.html) -> BarcodeResultItem
 
@@ -34,6 +34,7 @@ class BarcodeResultItem(dynamsoft_core.CapturedResultItem)
 | [`get_details`](#get_details) | Gets the details of the decoded barcode result. |
 | [`is_dpm`](#is_dpm) | Gets whether the decoded barcode is a DPM code. |
 | [`is_mirrored`](#is_mirrored) | Gets whether the decoded barcode is a mirrored barcode. |
+| [`get_eci_segments`](#get_eci_segments) | Gets all the ECI segments in the barcode. |
 
 ### get_format
 
@@ -187,4 +188,24 @@ def is_mirrored(self) -> bool:
 **Return Value**
 
 Returns whether the decoded barcode is mirrored.
+
+### get_eci_segments
+
+Gets all the ECI segments in the barcode.
+
+```python
+def get_eci_segments(self) -> List[ECISegment]:
+```
+
+**Return Value**
+
+Returns a list of [`ECISegment`]({{ site.dbr_python_api }}eci-segment.html) objects. Returns an empty list if no ECI information is present.
+
+**See Also**
+
+[ECISegment]({{ site.dbr_python_api }}eci-segment.html)
+
+**Remarks**
+
+Introduced in Dynamsoft Barcode Reader SDK version 11.4.1000 and Dynamsoft Capture Vision version 3.4.1000.
 

@@ -42,6 +42,7 @@ class DecodedBarcodeElement : RegionObjectElement
 | [`SetBytes`](#setbytes)| Sets the raw bytes of the decoded barcode.|
 | [`SetConfidence`](#setconfidence) | Sets the confidence score of the barcode recognition result. |
 | [`SetLocation`](#setlocation) | Sets the location of the current object. |
+| [`GetECISegments`](#getecisegments) | Gets all the ECI segments in the barcode. |
 
 ### Inherited Methods
 
@@ -307,3 +308,24 @@ void SetLocation(Quadrilateral location)
 **See Also**
 
 [Quadrilateral]({{ site.dcvb_dotnet_api }}core/basic-classes/quadrilateral.html)
+
+### GetECISegments
+
+Gets all the ECI segments in the barcode.
+
+```csharp
+ECISegment[] GetECISegments()
+```
+
+**Return Value**
+
+Returns an array of [`ECISegment`]({{ site.dbr_dotnet_api }}eci-segment.html) objects. Returns an empty array if no ECI information is present.
+
+**See Also**
+
+[ECISegment]({{ site.dbr_dotnet_api }}eci-segment.html)
+
+**Remarks**
+
+Introduced in Dynamsoft Barcode Reader SDK version 11.4.1000 and Dynamsoft Capture Vision version 3.4.1000.
+

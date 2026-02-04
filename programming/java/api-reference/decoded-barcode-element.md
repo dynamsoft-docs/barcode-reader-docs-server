@@ -41,6 +41,7 @@ public class DecodedBarcodeElement extends RegionObjectElement
 | [`setBytes`](#setbytes)| Sets the raw bytes of the decoded barcode.|
 | [`setConfidence`](#setconfidence) | Sets the confidence score of the barcode recognition result. |
 | [`setLocation`](#setlocation) | Sets the location of the decoded barcode. |
+| [`getECISegments`](#getecisegments) | Gets all the ECI segments in the barcode. |
 
 ### DecodedBarcodeElement
 
@@ -304,4 +305,24 @@ public void setLocation(Quadrilateral location) throws BarcodeReaderException
 [Quadrilateral]({{ site.dcvb_java_api }}core/basic-classes/quadrilateral.html)
 
 [BarcodeReaderException]({{ site.dbr_java_api }}barcode-reader-exception.html)
+
+### getECISegments
+
+Gets all the ECI segments in the barcode.
+
+```java
+public ECISegment[] getECISegments()
+```
+
+**Return Value**
+
+Returns an array of [`ECISegment`]({{ site.dbr_java_api }}eci-segment.html) objects. Returns an empty array if no ECI information is present.
+
+**See Also**
+
+[ECISegment]({{ site.dbr_java_api }}eci-segment.html)
+
+**Remarks**
+
+Introduced in Dynamsoft Barcode Reader SDK version 11.4.1000 and Dynamsoft Capture Vision version 3.4.1000.
 

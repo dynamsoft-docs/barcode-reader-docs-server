@@ -10,7 +10,7 @@ The `DecodedBarcodesUnit` class represents a unit that contains decoded barcode 
 
 ## Definition
 
-*Module:* dynamsoft_barcode_readers
+*Module:* dbr
 
 *Inheritance:* [IntermediateResultUnit]({{ site.dcvb_python_api }}core/intermediate-results/intermediate-result-unit.html) -> DecodedBarcodesUnit
 

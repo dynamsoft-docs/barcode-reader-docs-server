@@ -37,6 +37,7 @@ public class BarcodeResultItem extends CapturedResultItem
 | [`setLocation`](#setlocation) | Sets the location of the decoded barcode. |
 | [`setText`](#settext) | Sets the text of the decoded barcode. |
 | [`setBytes`](#setbytes) | Sets the bytes of the decoded barcode. |
+| [`getECISegments`](#getecisegments) | Gets all the ECI segments in the barcode. |
 
 ## Method Details
 
@@ -236,4 +237,24 @@ public void setBytes(byte[] bytes)
 **Parameters**
 
 `bytes`: The bytes of the decoded barcode.
+
+### getECISegments
+
+Gets all the ECI segments in the barcode.
+
+```java
+public ECISegment[] getECISegments()
+```
+
+**Return Value**
+
+Returns an array of [`ECISegment`]({{ site.dbr_java_api }}eci-segment.html) objects. Returns an empty array if no ECI information is present.
+
+**See Also**
+
+[ECISegment]({{ site.dbr_java_api }}eci-segment.html)
+
+**Remarks**
+
+Introduced in Dynamsoft Barcode Reader SDK version 11.4.1000 and Dynamsoft Capture Vision version 3.4.1000.
 

@@ -9,7 +9,7 @@ The `ComplementedBarcodeImageUnit` class represents a unit that contains complem
 
 ## Definition
 
-*Module:* dynamsoft_barcode_readers
+*Module:* dbr
 
 *Inheritance:* [IntermediateResultUnit]({{ site.dcvb_python_api }}core/intermediate-results/intermediate-result-unit.html) -> ComplementedBarcodeImageUnit
 
