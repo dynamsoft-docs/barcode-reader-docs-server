@@ -14,27 +14,27 @@ needGenerateH3Content: false
 
 #### AI-Powered Barcode Detection and Decoding
 
-- **PDF417 Localization Model** – Introduces the [`PDF417Localization`]({{ site.dcvb_parameters_reference }}barcode-reader-task-settings/localization-modes.html#modelnamearray) neural network model for improved detection of PDF417 barcodes, especially in challenging conditions.
+- **PDF417 Localization Model** – Introduces the [`PDF417Localization`]({{ site.dcvb_parameters_reference }}barcode-reader-task-settings/localization-modes.html#modelnamearray) neural network model for improved detection of PDF417 barcodes, especially under challenging conditions.
 
-- **Code39/ITF Decoding Model** – Adds the [`Code39ITFDecoder`]({{ site.dcvb_parameters_reference }}barcode-reader-task-settings/deblur-modes.html#modelnamearray) model for enhanced decoding of Code 39 and ITF barcodes under blur or low-resolution conditions.
+- **Code39/ITF Decoding Model** – Adds the [`Code39ITFDecoder`]({{ site.dcvb_parameters_reference }}barcode-reader-task-settings/deblur-modes.html#modelnamearray) model for enhanced decoding of Code 39 and ITF barcodes under blurred or low-resolution conditions.
 
-- **Deblur Models for 2D Barcodes** – New [`DataMatrixQRCodeDeblur`]({{ site.dcvb_parameters_reference }}barcode-reader-task-settings/deblur-modes.html#modelnamearray) and [`PDF417Deblur`]({{ site.dcvb_parameters_reference }}barcode-reader-task-settings/deblur-modes.html#modelnamearray) models provide more effective recovery from motion and focus blur for DataMatrix, QR Code, and PDF417 barcodes.
+- **Deblur Models for 2D Barcodes** – Adds the [`DataMatrixQRCodeDeblur`]({{ site.dcvb_parameters_reference }}barcode-reader-task-settings/deblur-modes.html#modelnamearray) and [`PDF417Deblur`]({{ site.dcvb_parameters_reference }}barcode-reader-task-settings/deblur-modes.html#modelnamearray) models to provide more effective recovery from motion and focus blur for DataMatrix, QR Code, and PDF417 barcodes.
 
 #### ECI (Extended Channel Interpretation) Support
 
-- **ECI Information Return** – Added support for retrieving Extended Channel Interpretation (ECI) data from barcodes. The new [`CECISegment`]({{ site.dbr_cpp_api }}eci-segment.html) class along with `GetECISegmentsCount()` and `GetECISegment()` methods in [`CBarcodeResultItem`]({{ site.dbr_cpp_api }}barcode-result-item.html#getecisegment) and [`CDecodedBarcodeElement`]({{ site.dbr_cpp_api }}decoded-barcode-element.html#getecisegment) classes enable access to character encoding information embedded in barcodes.
+- **ECI Information Return** – Adds support for retrieving Extended Channel Interpretation (ECI) data from barcodes. The new [`CECISegment`]({{ site.dbr_cpp_api }}eci-segment.html) class, along with the `GetECISegmentsCount()` and `GetECISegment()` methods in the [`CBarcodeResultItem`]({{ site.dbr_cpp_api }}barcode-result-item.html#getecisegment) and [`CDecodedBarcodeElement`]({{ site.dbr_cpp_api }}decoded-barcode-element.html#getecisegment) classes, enables access to character encoding information embedded in barcodes.
 
-- **Automatic UTF-8 Conversion** – Barcode text now respects ECI segments when available, improving compatibility with international character sets.
+- **Automatic UTF-8 Conversion** – Adds support for interpreting ECI segments during barcode decoding, improving compatibility with international character sets.
 
 #### Performance Improvements
 
-- **On-Demand Model Loading** – Implemented lazy loading for AI models, reducing initialization time by loading models only when first needed.
+- **On-Demand Model Loading** – Implements lazy loading for AI models, reducing initialization time by loading models only when first needed.
 
 - **Smart Model Selection** – Models are now loaded based on configured barcode formats, minimizing memory usage by excluding unused models.
 
-- **Improved Confidence Scoring** – Enhanced confidence score calculation for results from neural network models, providing more accurate quality indicators.
+- **Improved Confidence Scoring** – Enhances confidence score calculation for results from neural network models, providing more accurate quality indicators.
 
-- **DPM Barcode Optimization** – Improved recognition rate for Direct Part Marking (DPM) barcodes commonly used in industrial and manufacturing environments.
+- **DPM Barcode Optimization** – Improves recognition rate for Direct Part Marking (DPM) barcodes commonly used in industrial and manufacturing environments.
 
 ### New
 
@@ -48,11 +48,15 @@ needGenerateH3Content: false
 
 - Barcode text encoding fallback changed from UTF-8 to ISO-8859-1 when no ECI information is present in the barcode.
 
-- Improved license binding stability on MacOS devices.
-
 - Updated default value of `compensation` parameter in [`CImageProcessor::ConvertToBinaryLocal()`]({{ site.dcvb_cpp_api }}utility/image-processor.html#converttobinarylocal) from 0 to 10.
 
-- [`ConvertToBinaryGlobal()`]({{ site.dcvb_cpp_api }}utility/image-processor.html#converttobinaryglobal) and [`ConvertToBinaryLocal()`]({{ site.dcvb_cpp_api }}utility/image-processor.html#converttobinarylocal) of `CImageProcessor` class now support color and binary images as input in addition to grayscale images.
+- [`ConvertToBinaryGlobal()`]({{ site.dcvb_cpp_api }}utility/image-processor.html#converttobinaryglobal) and [`ConvertToBinaryLocal()`]({{ site.dcvb_cpp_api }}utility/image-processor.html#converttobinarylocal) of `CImageProcessor` class now support color, binary and grayscale images as input.
+
+### Improved
+
+- Improved license binding stability on macOS devices.
+
+### Removed
 
 - Removed `DataMatrixModuleIsotropic` parameter – use [`BarcodeZoneWidthToHeightRatioRangeArray`]({{ site.dcvb_parameters_reference }}barcode-format-specification/barcode-zone-width-to-height-ratio-range-array.html) instead.
 
