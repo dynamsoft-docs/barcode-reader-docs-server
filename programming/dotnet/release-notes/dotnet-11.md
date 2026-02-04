@@ -24,7 +24,7 @@ needGenerateH3Content: false
 
 - **ECI Information Return** – Added support for retrieving Extended Channel Interpretation (ECI) data from barcodes. The new [`ECISegment`]({{ site.dbr_dotnet_api }}eci-segment.html) class along with `GetECISegmentsCount()` and `GetECISegment()` methods in [`BarcodeResultItem`]({{ site.dbr_dotnet_api }}barcode-result-item.html#getecisegment) and [`DecodedBarcodeElement`]({{ site.dbr_dotnet_api }}decoded-barcode-element.html#getecisegment) classes enable access to character encoding information embedded in barcodes.
 
-- **Automatic UTF-8 Conversion** – Barcode text is now automatically converted to UTF-8 based on ECI segments when available, improving compatibility with international character sets.
+- **Automatic UTF-8 Conversion** – Barcode text now respects ECI segments when available, improving compatibility with international character sets.
 
 #### Performance Improvements
 
