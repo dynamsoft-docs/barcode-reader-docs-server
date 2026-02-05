@@ -1,8 +1,6 @@
 <li lang="java" class="category">DEVELOPMENT</li>
-<li lang="java" ><a href="{{ site.dbr_java }}user-guide/index.html" class="otherLinkColour">User Guide</a>
+<li lang="java" ><a href="{{ site.dbr_java }}user-guide.html" class="otherLinkColour">User Guide</a>
     <ul>
-        <li><a href="{{ site.dbr_java }}user-guide.html" class="otherLinkColour">Getting Started</a> </li>
-
         <li><a href="{{ site.dbr_java }}user-guide/explore-features/index.html" class="otherLinkColour">Explore Features</a>
             <ul>
                 <li><a class="otherLinkColour">Basic Features</a>
@@ -264,7 +262,12 @@
         <li><a href="{{ site.dbr_java_release_notes_v9 }}java-7.html" class="otherLinkColour">Version 7.6.0 and below</a></li>
     </ul>
 </li>
-<li lang="java"><a href="{{ site.dbr_java }}upgrade-instruction.html" class="otherLinkColour">Upgrade Instructions</a></li>
+<li lang="java"><a class="otherLinkColour">Migration Guides</a>
+    <ul>
+        <li><a href="{{ site.dbr_java }}migrate-10-to-11.html" class="otherLinkColour">Migrate from 10.x to 11.x</a></li>
+        <li><a href="{{ site.dbr_java }}migrate-9-to-11.html" class="otherLinkColour">Migrate from 9.x to 11.x</a></li>
+    </ul>
+</li>
 <li lang="java"><a href="{{ site.license_activation }}index.html" class="otherLinkColour">License Initialization</a></li>
 {%- include liquid_searchVersionTreeFile.html ver=include.ver curPath=include.curPath lang=include.lang targetRelativePath="sidelist-faq.html" -%}
 
