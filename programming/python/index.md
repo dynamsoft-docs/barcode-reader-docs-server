@@ -27,6 +27,7 @@ The best way to start with the Dynamsoft Barcode Reader Python Edition, is follo
   - macOS (Universal) 12+
 
 - Python Versions:
+  - Python 3.14
   - Python 3.13
   - Python 3.12
   - Python 3.11
