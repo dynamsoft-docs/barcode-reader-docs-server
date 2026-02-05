@@ -10,7 +10,7 @@ The `CandidateBarcodeZone` class represents a candidate zone for barcode detecti
 
 ## Definition
 
-*Module:* dynamsoft_barcode_readers
+*Module:* dbr
 
 ```python
 class CandidateBarcodeZone

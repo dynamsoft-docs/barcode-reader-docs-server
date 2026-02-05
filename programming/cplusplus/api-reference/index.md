@@ -58,6 +58,7 @@ needAutoGenerateSidebar: false
 - [`CDecodedBarcodesUnit`]({{ site.dbr_cpp_api }}decoded-barcodes-unit.html)
 - [`CDeformationResistedBarcode`]({{ site.dbr_cpp_api }}deformation-resisted-barcode.html)
 - [`CDeformationResistedBarcodeImageUnit`]({{ site.dbr_cpp_api }}deformation-resisted-barcode-image-unit.html)
+- [`CECISegment`]({{ site.dbr_cpp_api }}eci-segment.html)
 - [`CExtendedBarcodeResult`]({{ site.dbr_cpp_api }}extended-barcode-result.html)
 - [`CLocalizedBarcodeElement`]({{ site.dbr_cpp_api }}localized-barcode-element.html)
 - [`CLocalizedBarcodesUnit`]({{ site.dbr_cpp_api }}localized-barcodes-unit.html)

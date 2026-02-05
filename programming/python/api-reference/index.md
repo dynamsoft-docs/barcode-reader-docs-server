@@ -55,6 +55,7 @@ needAutoGenerateSidebar: false
 - [`DecodedBarcodesUnit`]({{ site.dbr_python_api }}decoded-barcodes-unit.html)
 - [`DeformationResistedBarcodeImageUnit`]({{ site.dbr_python_api }}deformation-resisted-barcode-image-unit.html)
 - [`DeformationResistedBarcode`]({{ site.dbr_python_api }}deformation-resisted-barcode.html)
+- [`ECISegment`]({{ site.dbr_python_api }}eci-segment.html)
 - [`ExtendedBarcodeResult`]({{ site.dbr_python_api }}extended-barcode-result.html)
 - [`LocalizedBarcodeElement`]({{ site.dbr_python_api }}localized-barcode-element.html)
 - [`LocalizedBarcodesUnit`]({{ site.dbr_python_api }}localized-barcodes-unit.html)

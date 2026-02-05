@@ -11,7 +11,7 @@ The `BarcodeDetails` class represents the details of a barcode. It is an abstrac
 
 ## Definition
 
-*Module:* dynamsoft_barcode_reader
+*Module:* dbr
 
 ```python
 class BarcodeDetails

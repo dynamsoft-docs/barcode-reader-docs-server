@@ -10,7 +10,7 @@ The `OneDCodeDetails` class represents detailed information about a one-dimensio
 
 ## Definition
 
-*Module:* dynamsoft_barcode_reader
+*Module:* dbr
 
 *Inheritance:* [BarcodeDetails]({{ site.dbr_python_api }}barcode-details.html) -> OneDCodeDetails
 

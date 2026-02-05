@@ -10,7 +10,7 @@ The `ScaledBarcodeImageUnit` class represents a unit that contains scaled up bar
 
 ## Definition
 
-*Module:* dynamsoft_barcode_readers
+*Module:* dbr
 
 *Inheritance:* [IntermediateResultUnit]({{ site.dcvb_python_api }}core/intermediate-results/intermediate-result-unit.html) -> ScaledBarcodeImageUnit
 

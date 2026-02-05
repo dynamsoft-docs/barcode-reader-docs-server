@@ -10,7 +10,7 @@ The `LocalizedBarcodeElement` class represents a localized barcode element detec
 
 ## Definition
 
-*Module:* dynamsoft_barcode_reader
+*Module:* dbr
 
 *Inheritance:* [RegionObjectElement]({{ site.dcvb_python_api }}core/intermediate-results/region-object-element.html) -> LocalizedBarcodeElement
 

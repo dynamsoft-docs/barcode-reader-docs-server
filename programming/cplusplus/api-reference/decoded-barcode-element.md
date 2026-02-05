@@ -41,6 +41,8 @@ class CDecodedBarcodeElement : public CRegionObjectElement
 | [`SetText`](#settext) | Sets the text of the decoded barcode. |
 | [`SetBytes`](#setbytes)| Sets the raw bytes of the decoded barcode.|
 | [`SetConfidence`](#setconfidence) | Sets the confidence score of the barcode recognition result. |
+| [`GetECISegmentsCount`](#getecisegmentscount) | Gets the number of ECI segments in the barcode. |
+| [`GetECISegment`](#getecisegment) | Gets the ECI segment at the specified index. |
 | **Methods Inherited from [CRegionObjectElement]({{ site.dcvb_cpp_api }}core/intermediate-results/region-object-element.html):** | |
 | [`GetLocation`]({{ site.dcvb_cpp_api }}core/intermediate-results/region-object-element.html#getlocation) | Gets the location of the region object element. |
 | [`GetReferencedElement`]({{ site.dcvb_cpp_api }}core/intermediate-results/region-object-element.html#getreferencedelement) | Gets a pointer to a referenced region object element. |
@@ -281,3 +283,42 @@ virtual void SetConfidence(int confidence) = 0;
 
 `[in] confidence` The confidence of the barcode.
 
+### GetECISegmentsCount
+
+Gets the number of ECI segments in the barcode.
+
+```cpp
+virtual int GetECISegmentsCount() const = 0;
+```
+
+**Return value**
+
+Returns the count of ECI segments. Returns 0 if no ECI information is present.
+
+**Remarks**
+
+Introduced in Dynamsoft Barcode Reader SDK version 11.4.1000 and Dynamsoft Capture Vision version 3.4.1000.
+
+### GetECISegment
+
+Gets the ECI segment at the specified index.
+
+```cpp
+virtual const CECISegment* GetECISegment(int index) const = 0;
+```
+
+**Parameters**
+
+`[in] index` The zero-based index of the ECI segment to retrieve.
+
+**Return value**
+
+Returns a pointer to the [`CECISegment`]({{ site.dbr_cpp_api }}eci-segment.html) object, or NULL if the index is out of range.
+
+**See Also**
+
+[CECISegment]({{ site.dbr_cpp_api }}eci-segment.html)
+
+**Remarks**
+
+Introduced in Dynamsoft Barcode Reader SDK version 11.4.1000 and Dynamsoft Capture Vision version 3.4.1000.
