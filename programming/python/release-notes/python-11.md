@@ -38,6 +38,8 @@ needGenerateH3Content: false
 
 ### New
 
+- Added support for Python 3.14.
+
 - Added [`BarcodeZoneWidthToHeightRatioRangeArray`]({{ site.dcvb_parameters_reference }}barcode-format-specification/barcode-zone-width-to-height-ratio-range-array.html) parameter for filtering barcodes based on aspect ratio constraints.
 
 - Added [`set_result_cross_verification_criteria()`]({{ site.dcvb_python_api }}utility/multi-frame-result-cross-filter.html#set_result_cross_verification_criteria) and [`get_result_cross_verification_criteria()`]({{ site.dcvb_python_api }}utility/multi-frame-result-cross-filter.html#get_result_cross_verification_criteria) methods to `MultiFrameResultCrossFilter` for configurable multi-frame result verification.
