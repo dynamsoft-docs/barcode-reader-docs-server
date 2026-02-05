@@ -62,7 +62,7 @@ mvn archetype:generate -DgroupId=com.dynamsoft -DartifactId=dbr-hello-world -Dar
     <dependency>
         <groupId>com.dynamsoft</groupId>
         <artifactId>dbr</artifactId>
-        <version>11.2.1100</version>
+        <version>11.4.1000</version>
     </dependency>
 </dependencies>
 ```
