@@ -24,7 +24,7 @@ needGenerateH3Content: false
 
 - **ECI Information Return** – Adds support for retrieving Extended Channel Interpretation (ECI) data from barcodes. The new [`CECISegment`]({{ site.dbr_cpp_api }}eci-segment.html) class, along with the `GetECISegmentsCount()` and `GetECISegment()` methods in the [`CBarcodeResultItem`]({{ site.dbr_cpp_api }}barcode-result-item.html#getecisegment) and [`CDecodedBarcodeElement`]({{ site.dbr_cpp_api }}decoded-barcode-element.html#getecisegment) classes, enables access to character encoding information embedded in barcodes.
 
-- **Automatic UTF-8 Conversion** – Adds support for interpreting ECI segments during barcode decoding, improving compatibility with international character sets.
+- **ECI-Based Text Interpretation** – Adds support for interpreting ECI segments during barcode decoding, improving compatibility with international character sets.
 
 #### Performance Improvements
 
@@ -65,7 +65,9 @@ needGenerateH3Content: false
 ### Fixed
 
 - Fixed incorrect coordinate in barcode result when using neural network models with a specified region.
+
 - Fixed crash and hang issues that could occur in certain scenarios.
+
 - Fixed various minor bugs and improved overall stability.
 
 ## 11.2.5000 (12/16/2025)
