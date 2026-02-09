@@ -3,7 +3,6 @@ layout: default-layout
 title: CAztecDetails Class - Dynamsoft Barcode Reader C++ Edition API Reference
 description: This page shows CAztecDetails class definition of Dynamsoft Barcode Reader SDK C++ Edition.
 keywords: rows, columns, layerNumber, CAztecDetails, api reference
-permalink: /programming/cplusplus/api-reference/aztec-details.html
 ---
 # CAztecDetails
 

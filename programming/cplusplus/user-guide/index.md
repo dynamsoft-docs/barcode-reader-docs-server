@@ -3,7 +3,6 @@ layout: default-layout
 title: CPP Edition User Guide Index
 description: This is the user guide index page of Dynamsoft Barcode Reader CPP Edition.
 keywords: user guide index, CPP
-permalink: /programming/cplusplus/user-guide/index.html
 ---
 
 # CPP Edition User Guide
