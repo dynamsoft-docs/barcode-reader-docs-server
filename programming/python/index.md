@@ -17,7 +17,7 @@ Furthermore, DBR provides a powerful parameter system in order to cope with vari
 
 ## Getting Started with DBR Python Edition
 
-The best way to start with the Dynamsoft Barcode Reader Python Edition, is following the [`User Guide`]({{ site.dbr_python }}user-guide.html) to build your first barcode reading application. Please note that the system requirements is as below:
+If you are new to Dynamsoft Barcode Reader Python Edition, follow the [`User Guide`]({{ site.dbr_python }}user-guide.html) to build your first barcode reading application. Please note that the system requirements is as below:
 
 ### System Requirements
 
@@ -47,6 +47,13 @@ For embedded or ARM-based platforms, we recommend using a device with performanc
 
 > [!NOTE]
 > Other architectures and operating systems, such as ESP32, MIPS, FreeRTOS, and Micrium uC/OS, are not supported.
+
+## Migration Guides
+
+If you are upgrading from a previous version of Dynamsoft Barcode Reader, please refer to the following guides:
+
+- [Migrate from v10.x to v11.x]({{ site.dbr_python }}migrate-from-v10/) - For users upgrading from version 10.x
+- [Migrate from v9.x to v11.x]({{ site.dbr_python }}migrate-from-v9/) - For users upgrading from version 9.x
 
 ## API Reference
 
