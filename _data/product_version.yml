@@ -3,4 +3,4 @@ useGroupedVersion: true
 version_info_list_desktop:
   - value: latest version
   - value: 10.x_cplusplus_dotnet_python
-  - value: 9.x or older
+  - value: 9.x
