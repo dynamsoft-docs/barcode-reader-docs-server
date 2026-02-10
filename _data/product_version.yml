@@ -2,4 +2,4 @@ useGroupedVersion: true
 
 version_info_list_desktop:
   - value: 10.x
-  - value: 9.x or older
+  - value: 9.x
