@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: DeformationResistedBarcode Class - Dynamsoft Barcode Reader Java Edition API Reference
-description: This page shows DeformationResistedBarcode class definition of Dynamsoft Barcode Reader SDK Java Edition.
+description: API reference for the DeformationResistedBarcode class in Dynamsoft Barcode Reader Java Edition, storing the location, format, and image data of a barcode after deformation resistance processing.
 keywords: getLocation, setLocation, getFormat, setFormat, getImageData, setImageData, DeformationResistedBarcode, api reference
 ---
 # DeformationResistedBarcode Class

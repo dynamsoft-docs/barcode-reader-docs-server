@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: CECISegment Class - Dynamsoft Barcode Reader C++ Edition API Reference
-description: This page shows CECISegment class definition of Dynamsoft Barcode Reader SDK C++ Edition.
+description: API reference for the CECISegment class in Dynamsoft Barcode Reader C++ Edition, representing an Extended Channel Interpretation (ECI) segment that specifies the character encoding for a portion of a decoded barcode's bytes.
 keywords: CECISegment, ECI, Extended Channel Interpretation, api reference
 ---
 

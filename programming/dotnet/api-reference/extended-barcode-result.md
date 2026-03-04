@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: ExtendedBarcodeResult Class - Dynamsoft Barcode Reader .NET Edition API Reference
-description: This page shows ExtendedBarcodeResult class definition of Dynamsoft Barcode Reader SDK .NET Edition.
+description: API reference for the ExtendedBarcodeResult class in Dynamsoft Barcode Reader .NET Edition, providing additional decode details such as result type, deformation level, clarity score, and a sampling image.
 keywords: GetDeformation, GetClarity, GetSamplingImage, GetExtendedBarcodeResultType, ExtendedBarcodeResult, api reference
 ---
 # ExtendedBarcodeResult Class

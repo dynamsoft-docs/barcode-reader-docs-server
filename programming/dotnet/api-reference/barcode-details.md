@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: BarcodeDetails Class - Dynamsoft Barcode Reader Module .NET Edition API Reference
-description: Definition of BarcodeDetails class in Dynamsoft Barcode Reader Module .NET Edition.
+description: API reference for the BarcodeDetails abstract base class in Dynamsoft Barcode Reader .NET Edition, which is the parent class for all barcode-format-specific detail classes.
 keywords: BarcodeDetails, api reference
 ---
 

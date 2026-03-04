@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: DeblurMode - Dynamsoft Barcode Reader Python Enumerations
-description: The enumeration DeblurMode of Dynamsoft Barcode Reader describes deblur modes that implemented on the localized barcodes.
+description: Reference for the DeblurMode enumeration in DBR Python Edition, listing image processing algorithms applied to localized barcode zones to generate a binary image for final barcode decoding.
 keywords: Deblur mode
 codeAutoHeight: true
 ---

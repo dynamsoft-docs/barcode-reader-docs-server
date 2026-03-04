@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: ExtendedBarcodeResultType - Dynamsoft Barcode Reader .NET Enumerations
-description: The enumeration ExtendedBarcodeResultType describes the type of the extended barcode result for .NET Edition.
+description: Reference for the ExtendedBarcodeResultType enumeration in DBR .NET Edition, which classifies the type of text result returned from a barcode scan (e.g., standard, candidate, partial).
 keywords: Extended barcode result type
 codeAutoHeight: true
 ---

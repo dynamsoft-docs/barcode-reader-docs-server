@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: LocalizedBarcodesUnit Class - Dynamsoft Barcode Reader .NET Edition API Reference
-description: This page shows LocalizedBarcodesUnit class definition of Dynamsoft Barcode Reader SDK .NET Edition.
+description: API reference for the LocalizedBarcodesUnit class in Dynamsoft Barcode Reader .NET Edition, an intermediate result unit that holds all localized (but not yet decoded) barcode elements found in an image.
 keywords: GetCount, GetLocalizedBarcode, AddLocalizedBarcode, RemoveAllLocalizedBarcodes, RemoveLocalizedBarcode, SetLocalizedBarcode, LocalizedBarcodesUnit, api reference
 ---
 # LocalizedBarcodesUnit Class

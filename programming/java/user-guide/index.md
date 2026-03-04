@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: Java Edition User Guide Index
-description: This is the user guide index page of Dynamsoft Barcode Reader Java Edition.
+description: Index page for DBR Java Edition user guide, linking to Getting Started, Explore Features, and Use Cases articles.
 keywords: user guide index, java
 ---
 

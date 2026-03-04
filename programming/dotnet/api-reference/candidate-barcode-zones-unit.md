@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: CandidateBarcodeZonesUnit Class - Dynamsoft Barcode Reader .NET Edition API Reference
-description: This page shows CandidateBarcodeZonesUnit class definition of Dynamsoft Barcode Reader SDK .NET Edition.
+description: API reference for the CandidateBarcodeZonesUnit class in Dynamsoft Barcode Reader .NET Edition, an intermediate result unit that holds a collection of candidate barcode zones detected during processing.
 keywords: GetCount, GetCandidateBarcodeZone, AddCandidateBarcodeZone, RemoveAllCandidateBarcodeZones, RemoveCandidateBarcodeZone, SetCandidateBarcodeZone, CandidateBarcodeZonesUnit, api reference
 ---
 # CandidateBarcodeZonesUnit Class

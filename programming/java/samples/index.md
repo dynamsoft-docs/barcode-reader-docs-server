@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: Samples - Dynamsoft Barcode Reader SDK Java Edition
-description: Sample list page of Dynamsoft Barcode Reader Java Edition.
+description: A list of Java code samples for DBR, including hello-world and various feature demonstration samples.
 keywords: java
 needAutoGenerateSidebar: false
 ---

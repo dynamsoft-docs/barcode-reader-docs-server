@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: Release Notes - Dynamsoft Barcode Reader SDK C++ Edition
-description: This is the release notes page of Dynamsoft Barcode Reader SDK C++ Edition.
+description: Chronological release notes index for Dynamsoft Barcode Reader SDK C++ Edition, covering all versions from 5.x through 11.x.
 keywords: release notes, c++
 needAutoGenerateSidebar: false
 ---

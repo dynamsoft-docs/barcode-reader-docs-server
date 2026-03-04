@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: DecodedBarcodeElement Class - Dynamsoft Barcode Reader Python Edition API Reference
-description: This page shows DecodedBarcodeElement class definition of Dynamsoft Barcode Reader SDK Python Edition.
+description: API reference for the DecodedBarcodeElement class in Dynamsoft Barcode Reader Python Edition, providing format, text, raw bytes, angle, confidence, DPM flag, and ECI segment data for a decoded barcode.
 keywords: get_format, get_text, get_bytes, get_angle, get_confidence, is_dpm, DecodedBarcodeElement, api reference
 ---
 # DecodedBarcodeElement Class

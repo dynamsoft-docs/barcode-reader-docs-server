@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: CandidateBarcodeZonesUnit Class - Dynamsoft Barcode Reader Java Edition API Reference
-description: This page shows CandidateBarcodeZonesUnit class definition of Dynamsoft Barcode Reader SDK Java Edition.
+description: API reference for the CandidateBarcodeZonesUnit class in Dynamsoft Barcode Reader Java Edition, an intermediate result unit that holds a collection of candidate barcode zones detected during processing.
 keywords: getCount, getCandidateBarcodeZone, addCandidateBarcodeZone, removeAllCandidateBarcodeZones, removeCandidateBarcodeZone, CandidateBarcodeZonesUnit, api reference
 ---
 # CandidateBarcodeZonesUnit Class

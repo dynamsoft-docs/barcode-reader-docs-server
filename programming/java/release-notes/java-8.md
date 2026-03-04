@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: Release Notes v8.x - Dynamsoft Barcode Reader SDK Java Edition
-description: This is the release notes page of Dynamsoft Barcode Reader SDK Java Edition v8.x.
+description: Release notes for DBR SDK Java Edition v8.x, covering new localization modes, confidence scoring improvements, and other enhancements.
 keywords: release notes, java
 needAutoGenerateSidebar: true
 needGenerateH3Content: false

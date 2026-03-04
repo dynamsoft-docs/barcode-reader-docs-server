@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: BarcodeResultItem Class - Dynamsoft Barcode Reader Module .NET Edition API Reference
-description: Definition of BarcodeResultItem class in Dynamsoft Barcode Reader Module .NET Edition.
+description: API reference for the BarcodeResultItem class in Dynamsoft Barcode Reader .NET Edition, representing a single decoded barcode with methods to retrieve format, text, location, confidence, and module size.
 keywords: GetFormat, GetText, GetLocation, GetConfidence, GetModuleSize, BarcodeResultItem, api reference
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: Explore Features - Dynamsoft Barcode Reader SDK .NET Edition User Guide
-description: This page lists the topics to explore the features of Dynamsoft Barcode Reader .NET Edition.
+description: A curated list of feature topics for Dynamsoft Barcode Reader .NET Edition, covering barcode format control, difficult-scenario handling, result filtering, and advanced template usage.
 keywords: user guide, explore features, .NET
 noTitleIndex: false
 ---

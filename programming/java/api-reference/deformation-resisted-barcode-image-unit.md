@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: DeformationResistedBarcodeImageUnit Class - Dynamsoft Barcode Reader Java Edition API Reference
-description: This page shows DeformationResistedBarcodeImageUnit class definition of Dynamsoft Barcode Reader SDK Java Edition.
+description: API reference for the DeformationResistedBarcodeImageUnit class in Dynamsoft Barcode Reader Java Edition, an intermediate result unit containing the deformation-resisted barcode image used during decoding.
 keywords: getDeformationResistedBarcode, setDeformationResistedBarcode, DeformationResistedBarcodeImageUnit, api reference
 ---
 # DeformationResistedBarcodeImageUnit Class

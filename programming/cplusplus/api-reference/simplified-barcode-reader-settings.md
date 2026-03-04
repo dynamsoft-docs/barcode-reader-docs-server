@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: SimplifiedBarcodeReaderSettings Struct - Dynamsoft Barcode Reader C++ Edition API Reference
-description: This page shows the SimplifiedBarcodeReaderSettings struct of the CCaptureVisionRouter class of the Dynamsoft Barcode Reader C++ Edition.
+description: API reference for the SimplifiedBarcodeReaderSettings struct in Dynamsoft Barcode Reader C++ Edition, covering configurable properties such as barcode formats, expected count, localization modes, deblur modes, and grayscale processing settings.
 keywords: struct, c++, SimplifiedBarcodeReaderSettings
 needAutoGenerateSidebar: true
 needGenerateH3Content: true

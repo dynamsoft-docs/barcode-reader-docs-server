@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: CDecodedBarcodesResult Class - Dynamsoft Barcode Reader C++ Edition API Reference
-description: This page shows CDecodedBarcodesResult class definition of Dynamsoft Barcode Reader SDK C++ Edition.
+description: API reference for the CDecodedBarcodesResult class in Dynamsoft Barcode Reader C++ Edition, which aggregates all decoded barcode items from a single capture, along with source image hash, error code, and error message.
 keywords: GetOriginalImageHashId, GetItemsCount, GetErrorCode, CDecodedBarcodesResult, api reference
 ---
 # CDecodedBarcodesResult Class

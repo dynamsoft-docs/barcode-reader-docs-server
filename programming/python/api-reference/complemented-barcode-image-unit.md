@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: ComplementedBarcodeImageUnit Class - Dynamsoft Barcode Reader Python Edition API Reference
-description: This page shows ComplementedBarcodeImageUnit class definition of Dynamsoft Barcode Reader SDK Python Edition.
+description: API reference for the ComplementedBarcodeImageUnit class in Dynamsoft Barcode Reader Python Edition, an intermediate result unit containing the complemented image data and location of a barcode.
 keywords: get_image_data, get_location, set_location, ComplementedBarcodeImageUnit, api reference
 ---
 # ComplementedBarcodeImageUnit Class

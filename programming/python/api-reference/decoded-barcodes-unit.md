@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: DecodedBarcodesUnit Class - Dynamsoft Barcode Reader Python Edition API Reference
-description: This page shows DecodedBarcodesUnit class definition of Dynamsoft Barcode Reader SDK Python Edition.
+description: API reference for the DecodedBarcodesUnit class in Dynamsoft Barcode Reader Python Edition, an intermediate result unit that holds the collection of successfully decoded barcode elements.
 keywords: get_count, get_decoded_barcode, remove_all_decoded_barcodes, set_decoded_barcode, DecodedBarcodesUnit, api reference
 ---
 # DecodedBarcodesUnit Class

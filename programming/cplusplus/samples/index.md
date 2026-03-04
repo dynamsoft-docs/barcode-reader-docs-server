@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: Samples - Dynamsoft Barcode Reader SDK C++ Edition
-description: Sample list page of Dynamsoft Barcode Reader C++ Edition.
+description: A list of C++ code samples for Dynamsoft Barcode Reader, including hello-world, multi-thread decoding, video decoding, DPM barcode reading, and parameter tuning demos.
 keywords: c++
 needAutoGenerateSidebar: false
 ---

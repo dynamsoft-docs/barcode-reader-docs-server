@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: CComplementedBarcodeImageUnit Class - Dynamsoft Barcode Reader C++ Edition API Reference
-description: This page shows CComplementedBarcodeImageUnit class definition of Dynamsoft Barcode Reader SDK C++ Edition.
+description: API reference for the CComplementedBarcodeImageUnit class in Dynamsoft Barcode Reader C++ Edition, an intermediate result unit containing the complemented image data and location of a barcode.
 keywords: GetImageData, GetLocation, SetLocation, CComplementedBarcodeImageUnit, api reference
 ---
 # CComplementedBarcodeImageUnit Class

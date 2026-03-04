@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: BarcodeReaderException Class - Dynamsoft Barcode Reader Module Java Edition API Reference
-description: Definition of BarcodeReaderException class in Dynamsoft Barcode Reader Module Java Edition.
+description: API reference for the BarcodeReaderException class in Dynamsoft Barcode Reader Java Edition, which extends CoreException and provides specific error handling for barcode reader operations.
 keywords: barcode reader module, java
 needAutoGenerateSidebar: true
 needGenerateH3Content: true

@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: CandidateBarcodeZone Class - Dynamsoft Barcode Reader Python Edition API Reference
-description: This page shows CandidateBarcodeZone class definition of Dynamsoft Barcode Reader SDK Python Edition.
+description: API reference for the CandidateBarcodeZone class in Dynamsoft Barcode Reader Python Edition, representing a candidate barcode region with location and possible format information.
 keywords: get_location, set_location, get_possible_formats, set_possible_formats, CandidateBarcodeZone, api reference
 ---
 # CandidateBarcodeZone Class

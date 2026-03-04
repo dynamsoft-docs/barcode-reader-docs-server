@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: ExtendedBarcodeResult Class - Dynamsoft Barcode Reader C++ Edition API Reference
-description: This page shows ExtendedBarcodeResult class definition of Dynamsoft Barcode Reader SDK C++ Edition.
+description: API reference for the ExtendedBarcodeResult class in Dynamsoft Barcode Reader Python Edition, providing additional decode details such as result type, deformation level, clarity score, and a sampling image.
 keywords: get_deformation, get_clarity, get_sampling_image, get_extended_barcode_result_type, ExtendedBarcodeResult, api reference
 ---
 # ExtendedBarcodeResult Class

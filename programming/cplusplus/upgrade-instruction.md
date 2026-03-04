@@ -1,7 +1,7 @@
 ---
 title: Upgrade Instructions - Dynamsoft Barcode Reader SDK C++ Edition
 keywords: c++, cplusplus, upgrade
-description: This page introduces how to upgrade Dynamsoft Barcode Reader SDK C++ Edition
+description: Step-by-step instructions for upgrading Dynamsoft Barcode Reader SDK C++ Edition to version 11.x, covering license key update, SDK file replacement, template migration, and project rebuild.
 needAutoGenerateSidebar: true
 needGenerateH3Content: true
 ---

@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: OneDCodeDetails Class - Dynamsoft Barcode Reader Module .NET Edition API Reference
-description: Definition of OneDCodeDetails class in Dynamsoft Barcode Reader Module .NET Edition.
+description: API reference for the OneDCodeDetails class in Dynamsoft Barcode Reader .NET Edition, providing start characters, stop characters, and check digit bytes for a decoded 1D barcode.
 keywords: startchar, stopchars, OneDCodeDetails, api reference
 ---
 # OneDCodeDetails

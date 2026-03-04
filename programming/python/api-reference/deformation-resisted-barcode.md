@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: DeformationResistedBarcode Class - Dynamsoft Barcode Reader Python Edition API Reference
-description: This page shows DeformationResistedBarcode class definition of Dynamsoft Barcode Reader SDK Python Edition.
+description: API reference for the DeformationResistedBarcode class in Dynamsoft Barcode Reader Python Edition, storing the location, format, and image data of a barcode after deformation resistance processing.
 keywords: get_location, set_location, get_format, set_format, get_image_data, set_image_data, DeformationResistedBarcode, api reference
 ---
 # DeformationResistedBarcode Class

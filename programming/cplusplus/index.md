@@ -1,7 +1,7 @@
 ---
 title: Introduction - Dynamsoft Barcode Reader C++ Edition
 keywords: c++, cplusplus, documentation
-description: This page introduces the C++ edition of Dynamsoft Barcode Reader
+description: Overview of Dynamsoft Barcode Reader C++ Edition, including feature highlights, system requirements, and links to the user guide, API reference, and migration guides.
 needAutoGenerateSidebar: false
 ---
 

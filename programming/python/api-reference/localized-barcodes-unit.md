@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: LocalizedBarcodesUnit Class - Dynamsoft Barcode Reader Python Edition API Reference
-description: This page shows LocalizedBarcodesUnit class definition of Dynamsoft Barcode Reader SDK Python Edition.
+description: API reference for the LocalizedBarcodesUnit class in Dynamsoft Barcode Reader Python Edition, an intermediate result unit that holds all localized (but not yet decoded) barcode elements found in an image.
 keywords: get_count, get_localized_barcode, add_localized_barcode, remove_all_localized_barcodes, remove_localized_barcode, set_localized_barcode, LocalizedBarcodesUnit, api reference
 ---
 # LocalizedBarcodesUnit Class

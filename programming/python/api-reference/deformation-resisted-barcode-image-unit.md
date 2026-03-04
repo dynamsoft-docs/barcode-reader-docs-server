@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: DeformationResistedBarcodeImageUnit Class - Dynamsoft Barcode Reader Python Edition API Reference
-description: This page shows DeformationResistedBarcodeImageUnit class definition of Dynamsoft Barcode Reader SDK Python Edition.
+description: API reference for the DeformationResistedBarcodeImageUnit class in Dynamsoft Barcode Reader Python Edition, an intermediate result unit containing the deformation-resisted barcode image used during decoding.
 keywords: get_deformation_resisted_barcode, set_deformation_resisted_barcode, DeformationResistedBarcodeImageUnit, api reference
 ---
 # DeformationResistedBarcodeImageUnit Class

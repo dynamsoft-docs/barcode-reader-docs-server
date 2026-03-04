@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: DeformationResistedBarcodeImageUnit Class - Dynamsoft Barcode Reader .NET Edition API Reference
-description: This page shows DeformationResistedBarcodeImageUnit class definition of Dynamsoft Barcode Reader SDK .NET Edition.
+description: API reference for the DeformationResistedBarcodeImageUnit class in Dynamsoft Barcode Reader .NET Edition, an intermediate result unit containing the deformation-resisted barcode image used during decoding.
 keywords: GetDeformationResistedBarcode, SetDeformationResistedBarcode, DeformationResistedBarcodeImageUnit, api reference
 ---
 # DeformationResistedBarcodeImageUnit Class

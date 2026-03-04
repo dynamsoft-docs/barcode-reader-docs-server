@@ -1,7 +1,7 @@
 ---
 title: Introduction - Dynamsoft Barcode Reader Python Edition
 keywords: python, documentation
-description: This page introduces the Python Edition of Dynamsoft Barcode Reader
+description: Overview of DBR Python Edition, including feature highlights, system requirements, and links to the user guide, API reference, and migration guides.
 needAutoGenerateSidebar: false
 ---
 

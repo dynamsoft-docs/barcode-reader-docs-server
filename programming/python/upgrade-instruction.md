@@ -1,7 +1,7 @@
 ---
 title: Upgrade Instructions - Dynamsoft Barcode Reader SDK Python Edition
 keywords: python, upgrade
-description: This page introduces how to upgrade Dynamsoft Barcode Reader SDK Python Edition
+description: Step-by-step instructions for upgrading DBR SDK Python Edition to version 11.x, covering license key update, pip package update, template migration, and project rebuild.
 needAutoGenerateSidebar: true
 needGenerateH3Content: true
 ---

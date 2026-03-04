@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: OneDCodeDetails Class - Dynamsoft Barcode Reader Module Python Edition API Reference
-description: Definition of OneDCodeDetails class in Dynamsoft Barcode Reader Module Python Edition.
+description: API reference for the OneDCodeDetails class in Dynamsoft Barcode Reader Python Edition, providing start characters, stop characters, and check digit bytes for a decoded 1D barcode.
 keywords: startchar, stopchars, OneDCodeDetails, api reference
 ---
 # OneDCodeDetails

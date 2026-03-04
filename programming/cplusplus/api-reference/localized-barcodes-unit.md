@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: CLocalizedBarcodesUnit Class - Dynamsoft Barcode Reader C++ Edition API Reference
-description: This page shows CLocalizedBarcodesUnit class definition of Dynamsoft Barcode Reader SDK C++ Edition.
+description: API reference for the CLocalizedBarcodesUnit class in Dynamsoft Barcode Reader C++ Edition, an intermediate result unit that holds all localized (but not yet decoded) barcode elements found in an image.
 keywords: GetCount, GetLocalizedBarcode, AddLocalizedBarcode, RemoveAllLocalizedBarcodes, RemoveLocalizedBarcode, SetLocalizedBarcode, CLocalizedBarcodesUnit, api reference
 ---
 # CLocalizedBarcodesUnit Class

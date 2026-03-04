@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: Dynamsoft Barcode Reader .NET API Reference - Main Page
-description: This is the main page of Dynamsoft Barcode Reader SDK API Reference for .NET Language.
+description: Full API reference index for Dynamsoft Barcode Reader .NET Edition, listing all classes, structs, and enumerations across the DynamsoftBarcodeReader and DynamsoftCaptureVisionRouter modules.
 keywords: api reference, .NET
 needAutoGenerateSidebar: false
 ---

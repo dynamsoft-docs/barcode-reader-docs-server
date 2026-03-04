@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: Release Notes - Dynamsoft Barcode Reader SDK .NET Edition
-description: This is the release notes page of Dynamsoft Barcode Reader SDK .NET Edition.
+description: Chronological release notes index for Dynamsoft Barcode Reader SDK .NET Edition, covering all versions from 7.x through 11.x.
 keywords: release notes, .NET, dotnet
 needAutoGenerateSidebar: false
 ---

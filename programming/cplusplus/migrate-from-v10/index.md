@@ -1,7 +1,7 @@
 ---
 title: Migrate from v10.x to v11.x - Dynamsoft Barcode Reader SDK C++ Edition
 keywords: c++, cplusplus, upgrade, migrate, v10, v11
-description: This page introduces how to migrate Dynamsoft Barcode Reader SDK C++ Edition from version 10.x to 11.x
+description: Migration guide from Dynamsoft Barcode Reader C++ Edition v10.x to v11.x. Covers license key update, SDK file changes (directory rename, removed DLL), template upgrade, and project rebuild.
 needAutoGenerateSidebar: true
 needGenerateH3Content: true
 ---

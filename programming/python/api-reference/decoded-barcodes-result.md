@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: DecodedBarcodesResult Class - Dynamsoft Barcode Reader Module Python Edition API Reference
-description: Definition of DecodedBarcodesResult class in Dynamsoft Barcode Reader Module Python Edition.
+description: API reference for the DecodedBarcodesResult class in Dynamsoft Barcode Reader Python Edition, which aggregates all decoded barcode items from a single capture along with source image hash, error code, and error message.
 keywords: get_original_image_hash_id, get_items, get_error_code, DecodedBarcodesResult, api reference
 ---
 # DecodedBarcodesResult Class

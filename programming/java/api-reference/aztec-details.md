@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: AztecDetails Class - Dynamsoft Barcode Reader Java Edition API Reference
-description: Definition of AztecDetails class in Dynamsoft Barcode Reader Java Edition.
+description: API reference for the AztecDetails class in Dynamsoft Barcode Reader Java Edition, which stores the row count, column count, and layer number of a decoded Aztec barcode.
 keywords: rows, columns, layerNumber, AztecDetails, api reference
 ---
 

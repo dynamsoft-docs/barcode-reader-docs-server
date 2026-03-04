@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: CandidateBarcodeZone Class - Dynamsoft Barcode Reader Java Edition API Reference
-description: This page shows CandidateBarcodeZone class definition of Dynamsoft Barcode Reader SDK Java Edition.
+description: API reference for the CandidateBarcodeZone class in Dynamsoft Barcode Reader Java Edition, representing a candidate barcode region with location and possible format information.
 keywords: getLocation, setLocation, getPossibleFormats, setPossibleFormats, CandidateBarcodeZone, api reference
 ---
 # CandidateBarcodeZone Class

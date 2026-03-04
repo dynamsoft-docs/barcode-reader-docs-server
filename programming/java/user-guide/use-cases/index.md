@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: Use Cases - Dynamsoft Barcode Reader SDK Java Edition User Guide
-description: This page explores the use cases of Dynamsoft Barcode Reader Java Edition.
+description: Use case articles for DBR Java Edition, including how to read DPM codes and postal codes.
 keywords: user guide, use cases, java
 
 ---

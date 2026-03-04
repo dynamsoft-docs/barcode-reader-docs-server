@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: Release Notes v10.x - Dynamsoft Barcode Reader SDK .NET Edition
-description: This is the release notes page of Dynamsoft Barcode Reader SDK .NET Edition v10.x.
+description: Release notes for Dynamsoft Barcode Reader SDK .NET Edition v10.x, detailing new features, bug fixes, and API changes introduced across the v10 releases under the DCV architecture.
 keywords: release notes, .NET
 needGenerateH3Content: false
 ---

@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: CDecodedBarcodesUnit Class - Dynamsoft Barcode Reader C++ Edition API Reference
-description: This page shows CDecodedBarcodesUnit class definition of Dynamsoft Barcode Reader SDK C++ Edition.
+description: API reference for the CDecodedBarcodesUnit class in Dynamsoft Barcode Reader C++ Edition, an intermediate result unit that holds the collection of successfully decoded barcode elements.
 keywords: GetCount, GetDecodedBarcode, RemoveAllDecodedBarcodes, SetDecodedBarcode, CDecodedBarcodesUnit, api reference
 ---
 # CDecodedBarcodesUnit Class

@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: DecodedBarcodesResult Class - Dynamsoft Barcode Reader Java Edition API Reference
-description: Definition of DecodedBarcodesResult class in Dynamsoft Barcode Reader Java Edition.
+description: API reference for the DecodedBarcodesResult class in Dynamsoft Barcode Reader Java Edition, which aggregates all decoded barcode items from a single capture along with source image hash, error code, and error message.
 keywords: getItemsCount, getItem, getItems, DecodedBarcodesResult, api reference
 ---
 # DecodedBarcodesResult Class

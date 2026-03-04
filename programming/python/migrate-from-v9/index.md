@@ -1,7 +1,7 @@
 ---
 title: Migrate from v9.x to v11.x - Dynamsoft Barcode Reader SDK Python Edition
 keywords: python, upgrade, migrate, v9, v11
-description: This page introduces how to migrate Dynamsoft Barcode Reader SDK Python Edition from version 9.x to 11.x
+description: Migration guide from DBR Python Edition v9.x to v11.x. Details API changes for license, decoding, template, runtime settings, and removed properties under DCV architecture.
 needAutoGenerateSidebar: true
 needGenerateH3Content: true
 ---
@@ -10,7 +10,7 @@ needGenerateH3Content: true
 
 Dynamsoft Barcode Reader SDK has been refactored to integrate with the [`DynamsoftCaptureVision (DCV)`]({{ site.dcvb_architecture }}) architecture since version 10.0. This guide helps you upgrade from version 9.x by highlighting the key API changes and providing migration paths.
 
-The actual migration effort depends on which APIs you currently use. In many cases, only the interfaces you actively use need to be updated — review the sections below to identify the changes that affect your integration.
+The actual migration effort depends on which APIs you currently use. In many cases, only the interfaces you actively use need to be updated - review the sections below to identify the changes that affect your integration.
 
 > [!NOTE]
 > If you are new to the DCV architecture and prefer to start fresh, refer to the [User Guide]({{ site.dbr_python }}user-guide.html) for a quick-start tutorial.
