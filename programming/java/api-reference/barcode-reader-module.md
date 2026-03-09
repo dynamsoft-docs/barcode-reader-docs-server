@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: BarcodeReaderModule Class - Dynamsoft Barcode Reader Java Edition API Reference
-description: This page shows the Java Edition of the class BarcodeReaderModule in Barcode Reader Module.
+description: API reference for the BarcodeReaderModule class in Dynamsoft Barcode Reader Java Edition, providing module-level utilities such as version retrieval and factory methods for barcode elements.
 keywords: barcode reader module, java
 needAutoGenerateSidebar: true
 needGenerateH3Content: true

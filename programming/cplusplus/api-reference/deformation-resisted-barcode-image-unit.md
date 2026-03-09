@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: CDeformationResistedBarcodeImageUnit Class - Dynamsoft Barcode Reader C++ Edition API Reference
-description: This page shows CDeformationResistedBarcodeImageUnit class definition of Dynamsoft Barcode Reader SDK C++ Edition.
+description: API reference for the CDeformationResistedBarcodeImageUnit class in Dynamsoft Barcode Reader C++ Edition, an intermediate result unit containing the deformation-resisted barcode image used during decoding.
 keywords: GetDeformationResistedBarcode, SetDeformationResistedBarcode, CDeformationResistedBarcodeImageUnit, api reference
 ---
 # CDeformationResistedBarcodeImageUnit Class

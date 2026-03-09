@@ -1,7 +1,7 @@
 ---
 title: Migrate from v10.x to v11.x - Dynamsoft Barcode Reader SDK .NET Edition
 keywords: .NET, upgrade, migrate, v10, v11
-description: This page introduces how to migrate Dynamsoft Barcode Reader SDK .NET Edition from version 10.x to 11.x
+description: Migration guide from Dynamsoft Barcode Reader .NET Edition v10.x to v11.x. Covers license key update, NuGet package update, and template upgrade steps.
 needAutoGenerateSidebar: true
 needGenerateH3Content: true
 ---

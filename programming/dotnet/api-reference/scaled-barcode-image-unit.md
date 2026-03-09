@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: ScaledBarcodeImageUnit Class - Dynamsoft Barcode Reader .NET Edition API Reference
-description: This page shows ScaledBarcodeImageUnit class definition of Dynamsoft Barcode Reader SDK .NET Edition.
+description: API reference for the ScaledBarcodeImageUnit class in Dynamsoft Barcode Reader .NET Edition, an intermediate result unit containing a scaled barcode image used to improve decoding of small or low-resolution barcodes.
 keywords: GetImageData, SetImageData, ScaledBarcodeImageUnit, api reference
 ---
 # ScaledBarcodeImageUnit Class

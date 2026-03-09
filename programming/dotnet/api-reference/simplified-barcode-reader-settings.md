@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: SimplifiedBarcodeReaderSettings Class - Dynamsoft Barcode Reader Module .NET Edition API Reference
-description: Definition of the SimplifiedBarcodeReaderSettings class of the CaptureVisionRouter class in Dynamsoft Barcode Reader Module .NET Edition.
+description: API reference for the SimplifiedBarcodeReaderSettings class in Dynamsoft Barcode Reader .NET Edition, covering configurable properties such as barcode formats, expected count, localization modes, deblur modes, and grayscale processing settings.
 keywords: class, .NET, SimplifiedBarcodeReaderSettings
 needAutoGenerateSidebar: true
 needGenerateH3Content: true

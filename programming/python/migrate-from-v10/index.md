@@ -1,7 +1,7 @@
 ---
 title: Migrate from v10.x to v11.x - Dynamsoft Barcode Reader SDK Python Edition
 keywords: python, upgrade, migrate, v10, v11
-description: This page introduces how to migrate Dynamsoft Barcode Reader SDK Python Edition from version 10.x to 11.x
+description: Migration guide from DBR Python Edition v10.x to v11.x. Covers license key update, pip package update, and template upgrade steps.
 needAutoGenerateSidebar: true
 needGenerateH3Content: true
 ---

@@ -1,7 +1,7 @@
 ---
 title: Upgrade Instructions - Dynamsoft Barcode Reader SDK .NET Edition
 keywords: .NET, upgrade
-description: This page introduces how to upgrade Dynamsoft Barcode Reader SDK .NET Edition
+description: Step-by-step instructions for upgrading Dynamsoft Barcode Reader SDK .NET Edition to version 11.x, covering license key update, NuGet package update, template migration, and project rebuild.
 needAutoGenerateSidebar: true
 needGenerateH3Content: true
 ---

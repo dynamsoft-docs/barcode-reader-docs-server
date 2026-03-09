@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: SimplifiedBarcodeReaderSettings Class - Dynamsoft Barcode Reader Module Python Edition API Reference
-description: Definition of the SimplifiedBarcodeReaderSettings class in Dynamsoft Barcode Reader Module Python Edition.
+description: API reference for the SimplifiedBarcodeReaderSettings class in Dynamsoft Barcode Reader Python Edition, covering configurable properties such as barcode formats, expected count, localization modes, deblur modes, and grayscale processing settings.
 keywords: class, python, SimplifiedBarcodeReaderSettings
 needAutoGenerateSidebar: true
 needGenerateH3Content: true

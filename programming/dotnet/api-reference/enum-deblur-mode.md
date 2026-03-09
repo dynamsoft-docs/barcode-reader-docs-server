@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: DeblurMode - Dynamsoft Barcode Reader .NET Enumerations
-description: The enumeration DeblurMode describes deblur modes that implemented on the localized barcodes for .NET Edition.
+description: Reference for the DeblurMode enumeration in DBR .NET Edition, listing image processing algorithms applied to localized barcode zones to generate a binary image for final barcode decoding.
 keywords: Deblur mode
 codeAutoHeight: true
 ---

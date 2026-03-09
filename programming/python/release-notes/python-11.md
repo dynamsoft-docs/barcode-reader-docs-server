@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: Release Notes v11.x - Dynamsoft Barcode Reader SDK Python Edition
-description: This is the release notes page of Dynamsoft Barcode Reader SDK Python Edition v11.x.
+description: Release notes for DBR SDK Python Edition v11.x, highlighting AI-powered barcode detection models, ECI support, on-demand model loading, and performance improvements.
 keywords: release notes, python
 needGenerateH3Content: false
 ---

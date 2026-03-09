@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: LocalizationMode - Dynamsoft Barcode Reader .NET Enumerations
-description: The enumeration LocalizationMode describes the localization modes of the barcodes for .NET Edition.
+description: Reference for the LocalizationMode enumeration in DBR .NET Edition, listing the strategies used to identify barcode locations within an image, such as connected blocks, statistics, and scan-direct modes.
 keywords: Localization mode
 codeAutoHeight: true
 ---

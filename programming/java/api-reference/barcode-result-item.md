@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: BarcodeResultItem Class - Dynamsoft Barcode Reader Java Edition API Reference
-description: Definition of BarcodeResultItem class in Dynamsoft Barcode Reader Java Edition.
+description: API reference for the BarcodeResultItem class in Dynamsoft Barcode Reader Java Edition, representing a single decoded barcode with methods to retrieve format, text, location, confidence, and module size.
 keywords: getFormat, getText, getLocation, getConfidence, getModuleSize, BarcodeResultItem, api reference
 ---
 

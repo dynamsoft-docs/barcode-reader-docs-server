@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: OneDCodeDetails Class - Dynamsoft Barcode Reader Java Edition API Reference
-description: Definition of OneDCodeDetails class in Dynamsoft Barcode Reader Java Edition.
+description: API reference for the OneDCodeDetails class in Dynamsoft Barcode Reader Java Edition, providing start characters, stop characters, and check digit bytes for a decoded 1D barcode.
 keywords: startCharsBytes, stopCharsBytes, OneDCodeDetails, api reference
 ---
 # OneDCodeDetails

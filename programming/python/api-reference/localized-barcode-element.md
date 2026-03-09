@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: LocalizedBarcodeElement Class - Dynamsoft Barcode Reader Python Edition API Reference
-description: This page shows LocalizedBarcodeElement class definition of Dynamsoft Barcode Reader SDK Python Edition.
+description: API reference for the LocalizedBarcodeElement class in Dynamsoft Barcode Reader Python Edition, representing a detected but not yet decoded barcode region with angle, confidence, possible formats, and module size.
 keywords: get_angle, get_confidence, get_possible_formats, get_possible_formats_string, get_module_size, set_possible_formats, LocalizedBarcodeElement, api reference
 ---
 # LocalizedBarcodeElement Class

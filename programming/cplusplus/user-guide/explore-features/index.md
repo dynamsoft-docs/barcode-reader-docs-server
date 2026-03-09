@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: Explore Features - Dynamsoft Barcode Reader SDK C++ Edition User Guide
-description: This page lists the topics to explore the features of Dynamsoft Barcode Reader CPP Edition.
+description: A curated list of feature topics for Dynamsoft Barcode Reader C++ Edition, covering barcode format control, difficult-scenario handling, result filtering, and advanced template usage.
 keywords: user guide, explore features, cpp
 noTitleIndex: false
 ---

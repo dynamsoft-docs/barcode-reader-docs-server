@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: BarcodeDetails Class - Dynamsoft Barcode Reader Java Edition API Reference
-description: Definition of BarcodeDetails class in Dynamsoft Barcode Reader Java Edition.
+description: API reference for the BarcodeDetails class in Dynamsoft Barcode Reader Java Edition, an abstract base class that is the parent class for all barcode-format-specific detail classes.
 keywords: BarcodeDetails, api reference
 ---
 

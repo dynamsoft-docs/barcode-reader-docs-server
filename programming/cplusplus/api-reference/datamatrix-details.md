@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: CDataMatrixDetails Class - Dynamsoft Barcode Reader C++ Edition API Reference
-description: This page shows CDataMatrixDetails class definition of Dynamsoft Barcode Reader SDK C++ Edition.
+description: API reference for the CDataMatrixDetails class in Dynamsoft Barcode Reader C++ Edition, storing the row count, column count, data region dimensions, and region number of a decoded DataMatrix barcode.
 keywords: rows, columns, CDataMatrixDetails, api reference
 ---
 # CDataMatrixDetails

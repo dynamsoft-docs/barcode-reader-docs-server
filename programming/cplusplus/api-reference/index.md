@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: Dynamsoft Barcode Reader C++ API Reference - Main Page
-description: This is the main page of Dynamsoft Barcode Reader SDK API Reference for C++ Language.
+description: Full API reference index for Dynamsoft Barcode Reader C++ Edition, listing all classes, structs, and enumerations across the DynamsoftBarcodeReader and DynamsoftCaptureVisionRouter modules.
 keywords: api reference, C++
 needAutoGenerateSidebar: false
 ---

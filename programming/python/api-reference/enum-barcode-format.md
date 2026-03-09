@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: BarcodeFormat - Dynamsoft Barcode Reader Python Enumerations
-description: The enumeration BarcodeFormat of Dynamsoft Barcode Reader defines the supported barcode formats.
+description: Reference for the BarcodeFormat enumeration in DBR Python Edition, listing all supported barcode symbologies including 1D, QR Code, DataMatrix, PDF417, Aztec, and many others.
 keywords: Barcode formats
 codeAutoHeight: true
 ---

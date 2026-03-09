@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: DataMatrixDetails Class - Dynamsoft Barcode Reader Module Python Edition API Reference
-description: Definition of DataMatrixDetails class in Dynamsoft Barcode Reader Module Python Edition.
+description: API reference for the DataMatrixDetails class in Dynamsoft Barcode Reader Python Edition, storing the row count, column count, data region dimensions, and region number of a decoded DataMatrix barcode.
 keywords: rows, columns, data_region_rows, data_region_columns, data_region_number, DataMatrixDetails, api reference
 ---
 # DataMatrixDetails

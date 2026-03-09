@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: Samples - Dynamsoft Barcode Reader SDK .NET Edition
-description: Sample list page of Dynamsoft Barcode Reader .NET Edition.
+description: A list of .NET code samples for Dynamsoft Barcode Reader, including hello-world, general settings, DPM barcode reading, and other usage demos.
 keywords: .net
 needAutoGenerateSidebar: false
 ---

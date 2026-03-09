@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: CandidateBarcodeZone Class - Dynamsoft Barcode Reader .NET Edition API Reference
-description: This page shows CandidateBarcodeZone class definition of Dynamsoft Barcode Reader SDK .NET Edition.
+description: API reference for the CandidateBarcodeZone class in Dynamsoft Barcode Reader .NET Edition, representing a candidate barcode region with location and possible format information.
 keywords: GetLocation, SetLocation, GetPossibleFormats, SetPossibleFormats, CandidateBarcodeZone, api reference
 ---
 # CandidateBarcodeZone Class

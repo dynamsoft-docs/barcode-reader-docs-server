@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: Explore Features - Dynamsoft Barcode Reader SDK Java Edition User Guide
-description: This page lists the topics to explore the features of Dynamsoft Barcode Reader Java Edition.
+description: A curated list of feature topics for DBR Java Edition, covering barcode format control, difficult-scenario handling, result filtering, and advanced template usage.
 keywords: user guide, explore features, java
 noTitleIndex: false
 ---

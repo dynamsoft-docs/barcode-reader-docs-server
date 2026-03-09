@@ -1,7 +1,7 @@
 ---
 layout: default-layout
-title: ExtendedBarcodeResultType - Dynamsoft Barcode Reader Enumerations
-description: The enumeration ExtendedBarcodeResultType of Dynamsoft Barcode Reader describes the type of the extended barcode result.
+title: ExtendedBarcodeResultType - Dynamsoft Barcode Reader C++ Enumerations
+description: Reference for the ExtendedBarcodeResultType enumeration in DBR C++ Edition, which classifies the type of text result returned from a barcode scan (e.g., standard, candidate, partial).
 keywords: Extended barcode result type
 codeAutoHeight: true
 ---

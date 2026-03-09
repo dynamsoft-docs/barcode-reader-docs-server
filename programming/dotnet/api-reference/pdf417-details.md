@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: PDF417Details Class - Dynamsoft Barcode Reader Module .NET Edition API Reference
-description: Definition of PDF417Details class in Dynamsoft Barcode Reader Module .NET Edition.
+description: API reference for the PDF417Details class in Dynamsoft Barcode Reader .NET Edition, storing the row count, column count, error correction level, and codeword data of a decoded PDF417 barcode.
 keywords: rows, columns, errorCorrectionLevel, PDF417Details, api reference
 ---
 # PDF417Details

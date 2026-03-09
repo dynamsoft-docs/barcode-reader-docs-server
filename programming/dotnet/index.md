@@ -1,7 +1,7 @@
 ---
 title: Introduction - Dynamsoft Barcode Reader .NET Edition
 keywords: .NET, documentation
-description: This page introduces the .NET Edition of Dynamsoft Barcode Reader
+description: Overview of Dynamsoft Barcode Reader .NET Edition, including feature highlights, system requirements, and links to the user guide, API reference, and migration guides.
 needAutoGenerateSidebar: false
 ---
 
@@ -33,7 +33,7 @@ If you are new to Dynamsoft Barcode Reader .NET Edition, follow the [`User Guide
 
 - Supported .NET versions
   - .NET Framework 3.5 and above
-  - .NET 6, 7, 8
+  - .NET 6 and above
 
 > [!NOTE]
 > Other architectures and operating systems, such as ESP32, MIPS, FreeRTOS, and Micrium uC/OS, are not supported.

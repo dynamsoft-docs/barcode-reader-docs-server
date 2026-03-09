@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: QRCodeErrorCorrectionLevel - Dynamsoft Barcode Reader .NET Enumerations
-description: The enumeration QRCodeErrorCorrectionLevel describes the error correction level when processing the QR code for .NET Edition.
+description: Reference for the QRCodeErrorCorrectionLevel enumeration in DBR .NET Edition, defining the four error correction levels (L, M, Q, H) used when encoding or decoding QR codes.
 keywords: QR code error correction level
 codeAutoHeight: true
 ---

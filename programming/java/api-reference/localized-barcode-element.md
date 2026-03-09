@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: LocalizedBarcodeElement Class - Dynamsoft Barcode Reader Java Edition API Reference
-description: This page shows LocalizedBarcodeElement class definition of Dynamsoft Barcode Reader SDK Java Edition.
+description: API reference for the LocalizedBarcodeElement class in Dynamsoft Barcode Reader Java Edition, representing a detected but not yet decoded barcode region with angle, confidence, possible formats, and module size.
 keywords: getAngle, getConfidence, getPossibleFormats, getPossibleFormatsString, getModuleSize, setPossibleFormats, LocalizedBarcodeElement, api reference
 ---
 # LocalizedBarcodeElement Class

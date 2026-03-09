@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: CScaledBarcodeImageUnit Class - Dynamsoft Barcode Reader C++ Edition API Reference
-description: This page shows CScaledBarcodeImageUnit class definition of Dynamsoft Barcode Reader SDK C++ Edition.
+description: API reference for the CScaledBarcodeImageUnit class in Dynamsoft Barcode Reader C++ Edition, an intermediate result unit containing a scaled barcode image used to improve decoding of small or low-resolution barcodes.
 keywords: GetImageData, SetImageData, CScaledBarcodeImageUnit, api reference
 ---
 # CScaledBarcodeImageUnit Class

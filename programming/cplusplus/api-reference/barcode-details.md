@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: CBarcodeDetails Class - Dynamsoft Barcode Reader C++ Edition API Reference
-description: This page shows CBarcodeDetails class definition of Dynamsoft Barcode Reader SDK C++ Edition.
+description: API reference for the CBarcodeDetails abstract base class in Dynamsoft Barcode Reader C++ Edition, which is the parent class for all barcode-format-specific detail classes.
 keywords: CBarcodeDetails, api reference
 ---
 # CBarcodeDetails

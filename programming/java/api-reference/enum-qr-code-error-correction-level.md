@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: QRCodeErrorCorrectionLevel - Dynamsoft Barcode Reader Java Enumerations
-description: The enumeration QRCodeErrorCorrectionLevel of Dynamsoft Barcode Reader describes the error correction level when processing the QR code.
+description: Reference for the QRCodeErrorCorrectionLevel enumeration in DBR Java Edition, defining the four error correction levels (L, M, Q, H) used when encoding or decoding QR codes.
 keywords: QR code error correction level
 codeAutoHeight: true
 ---

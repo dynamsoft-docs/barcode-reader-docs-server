@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: ECISegment Class - Dynamsoft Barcode Reader Module .NET Edition API Reference
-description: This page shows ECISegment class definition of Dynamsoft Barcode Reader Module .NET Edition.
+description: API reference for the ECISegment class in Dynamsoft Barcode Reader .NET Edition, representing an Extended Channel Interpretation (ECI) segment that specifies the character encoding for a portion of a decoded barcode's bytes.
 keywords: ECISegment, ECI, Extended Channel Interpretation, api reference
 ---
 

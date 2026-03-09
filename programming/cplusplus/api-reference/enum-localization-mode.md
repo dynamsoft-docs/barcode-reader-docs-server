@@ -1,7 +1,7 @@
 ---
 layout: default-layout
-title: LocalizationMode - Dynamsoft Barcode Reader Enumerations
-description: The enumeration LocalizationMode of Dynamsoft Barcode Reader describes the localization modes of the barcodes.
+title: LocalizationMode - Dynamsoft Barcode Reader C++ Enumerations
+description: Reference for the LocalizationMode enumeration in DBR C++ Edition, listing the strategies used to identify barcode locations within an image, such as connected blocks, statistics, and scan-direct modes.
 keywords: Localization mode
 codeAutoHeight: true
 ---

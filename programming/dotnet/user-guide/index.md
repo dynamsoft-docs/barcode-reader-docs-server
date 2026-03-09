@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: .NET Edition User Guide Index
-description: This is the user guide index page of Dynamsoft Barcode Reader .NET Edition.
+description: Index page for the Dynamsoft Barcode Reader .NET Edition user guide, linking to Getting Started, Explore Features, and Use Cases articles.
 keywords: user guide index, .NET
 ---
 

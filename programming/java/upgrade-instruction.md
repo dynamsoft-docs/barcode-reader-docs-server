@@ -1,7 +1,7 @@
 ---
 title: Upgrade Instructions - Dynamsoft Barcode Reader SDK Java Edition
 keywords: java, upgrade
-description: This page introduces how to upgrade Dynamsoft Barcode Reader SDK Java Edition
+description: Step-by-step instructions for upgrading DBR SDK Java Edition to version 11.x, covering license key update, Maven dependency update, template migration, and project rebuild.
 needAutoGenerateSidebar: true
 needGenerateH3Content: true
 ---

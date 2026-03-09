@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: BarcodeResultItem Class - Dynamsoft Barcode Reader Module Python Edition API Reference
-description: Definition of BarcodeResultItem class in Dynamsoft Barcode Reader Module Python Edition.
+description: API reference for the BarcodeResultItem class in Dynamsoft Barcode Reader Python Edition, representing a single decoded barcode with methods to retrieve format, text, location, confidence, and module size.
 keywords: get_format, get_text, get_location, get_confidence, get_module_size, BarcodeResultItem, api reference
 ---
 

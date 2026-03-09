@@ -1,7 +1,7 @@
 ---
 title: Introduction - Dynamsoft Barcode Reader Java Edition
 keywords: java, documentation
-description: This page introduces the Java Edition of Dynamsoft Barcode Reader
+description: Overview of DBR Java Edition, including feature highlights, system requirements, and links to the user guide, API reference, and migration guides.
 needAutoGenerateSidebar: false
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: CandidateBarcodeZonesUnit Class - Dynamsoft Barcode Reader Python Edition API Reference
-description: This page shows CandidateBarcodeZonesUnit class definition of Dynamsoft Barcode Reader SDK Python Edition.
+description: API reference for the CandidateBarcodeZonesUnit class in Dynamsoft Barcode Reader Python Edition, an intermediate result unit that holds a collection of candidate barcode zones detected during processing.
 keywords: get_count, get_candidate_barcode_zone, add_candidate_barcode_zone, remove_all_candidate_barcode_zones, remove_candidate_barcode_zone, set_candidate_barcode_zone, CandidateBarcodeZonesUnit, api reference
 ---
 # CandidateBarcodeZonesUnit Class

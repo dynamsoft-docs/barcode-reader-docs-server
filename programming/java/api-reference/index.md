@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: Dynamsoft Barcode Reader Java Edition API Reference - Main Page
-description: This is the main page of Dynamsoft Barcode Reader SDK API Reference for Java Edition.
+description: Full API reference index for DBR Java Edition, listing all classes, structs, and enumerations across the DynamsoftBarcodeReader and DynamsoftCaptureVisionRouter modules.
 keywords: api reference, java
 needAutoGenerateSidebar: false
 ---

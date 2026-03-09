@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: COneDCodeDetails Class - Dynamsoft Barcode Reader C++ Edition API Reference
-description: This page shows COneDCodeDetails class definition of Dynamsoft Barcode Reader SDK C++ Edition.
+description: API reference for the COneDCodeDetails class in Dynamsoft Barcode Reader C++ Edition, providing start characters, stop characters, and check digit bytes for a decoded 1D barcode.
 keywords: startchar, stopchars, COneDCodeDetails, api reference
 ---
 # COneDCodeDetails

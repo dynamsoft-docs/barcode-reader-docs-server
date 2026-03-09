@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: BarcodeFormat - Dynamsoft Barcode Reader .NET Enumerations
-description: The enumeration BarcodeFormat defines the supported barcode formats for .NET Edition.
+description: Reference for the BarcodeFormat enumeration in DBR .NET Edition, listing all supported barcode symbologies including 1D, QR Code, DataMatrix, PDF417, Aztec, and many others.
 keywords: Barcode formats
 codeAutoHeight: true
 ---

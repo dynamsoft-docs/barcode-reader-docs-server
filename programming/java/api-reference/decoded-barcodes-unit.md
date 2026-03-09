@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: DecodedBarcodesUnit Class - Dynamsoft Barcode Reader Java Edition API Reference
-description: This page shows DecodedBarcodesUnit class definition of Dynamsoft Barcode Reader SDK Java Edition.
+description: API reference for the DecodedBarcodesUnit class in Dynamsoft Barcode Reader Java Edition, an intermediate result unit that holds the collection of successfully decoded barcode elements.
 keywords: getCount, getDecodedBarcode, removeAllDecodedBarcodes, setDecodedBarcode, DecodedBarcodesUnit, api reference
 ---
 # DecodedBarcodesUnit Class

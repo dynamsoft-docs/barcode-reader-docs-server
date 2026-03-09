@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: DecodedBarcodesUnit Class - Dynamsoft Barcode Reader .NET Edition API Reference
-description: This page shows DecodedBarcodesUnit class definition of Dynamsoft Barcode Reader SDK .NET Edition.
+description: API reference for the DecodedBarcodesUnit class in Dynamsoft Barcode Reader .NET Edition, an intermediate result unit that holds the collection of successfully decoded barcode elements.
 keywords: GetCount, GetDecodedBarcode, RemoveAllDecodedBarcodes, SetDecodedBarcode, DecodedBarcodesUnit, api reference
 ---
 # DecodedBarcodesUnit Class

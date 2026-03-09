@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: DecodedBarcodeElement Class - Dynamsoft Barcode Reader Java Edition API Reference
-description: This page shows DecodedBarcodeElement class definition of Dynamsoft Barcode Reader SDK Java Edition.
+description: API reference for the DecodedBarcodeElement class in Dynamsoft Barcode Reader Java Edition, providing format, text, raw bytes, angle, confidence, DPM flag, and ECI segment data for a decoded barcode.
 keywords: getFormat, getText, getBytes, getAngle, getConfidence, isDPM, DecodedBarcodeElement, api reference
 ---
 # DecodedBarcodeElement Class

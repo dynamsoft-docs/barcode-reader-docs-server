@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: Release Notes v11.x - Dynamsoft Barcode Reader SDK C++ Edition
-description: This is the release notes page of Dynamsoft Barcode Reader SDK C++ Edition v11.x.
+description: Release notes for Dynamsoft Barcode Reader SDK C++ Edition v11.x, highlighting AI-powered barcode detection models, ECI support, on-demand model loading, and performance improvements.
 keywords: release notes, c++
 needGenerateH3Content: false
 ---

@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: ScaledBarcodeImageUnit Class - Dynamsoft Barcode Reader Python Edition API Reference
-description: This page shows ScaledBarcodeImageUnit class definition of Dynamsoft Barcode Reader SDK Python Edition.
+description: API reference for the ScaledBarcodeImageUnit class in Dynamsoft Barcode Reader Python Edition, an intermediate result unit containing a scaled barcode image used to improve decoding of small or low-resolution barcodes.
 keywords: get_image_data, set_image_data, ScaledBarcodeImageUnit, api reference
 ---
 # ScaledBarcodeImageUnit Class

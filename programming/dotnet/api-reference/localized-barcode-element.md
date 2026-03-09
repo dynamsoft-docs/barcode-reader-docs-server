@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: LocalizedBarcodeElement Class - Dynamsoft Barcode Reader .NET Edition API Reference
-description: This page shows LocalizedBarcodeElement class definition of Dynamsoft Barcode Reader SDK .NET Edition.
+description: API reference for the LocalizedBarcodeElement class in Dynamsoft Barcode Reader .NET Edition, representing a detected but not yet decoded barcode region with angle, confidence, possible formats, and module size.
 keywords: GetAngle, GetConfidence, GetPossibleFormats, GetPossibleFormatsString, GetModuleSize, SetPossibleFormats, LocalizedBarcodeElement, api reference
 ---
 # LocalizedBarcodeElement Class

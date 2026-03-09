@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: QRCodeDetails Class - Dynamsoft Barcode Reader Module .NET Edition API Reference
-description: Definition of QRCodeDetails class in Dynamsoft Barcode Reader Module .NET Edition.
+description: API reference for the QRCodeDetails class in Dynamsoft Barcode Reader .NET Edition, providing rows, columns, error correction level, version, model, and other QR Code structural attributes.
 keywords: rows, columns, errorCorrectionLevel, version, model, mode, page, totalPage, parityData, QRCodeDetails, api reference
 ---
 # QRCodeDetails

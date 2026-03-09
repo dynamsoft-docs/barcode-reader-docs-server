@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: QRCodeDetails Class - Dynamsoft Barcode Reader Module Python Edition API Reference
-description: Definition of QRCodeDetails class in Dynamsoft Barcode Reader Module Python Edition.
+description: API reference for the QRCodeDetails class in Dynamsoft Barcode Reader Python Edition, providing rows, columns, error correction level, version, model, and other QR Code structural attributes.
 keywords: rows, columns, error_correction_level, version, model, mode, page, total_page, parity_data, QRCodeDetails, api reference
 ---
 # QRCodeDetails

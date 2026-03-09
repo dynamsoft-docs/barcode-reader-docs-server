@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: ExtendedBarcodeResult Class - Dynamsoft Barcode Reader Java Edition API Reference
-description: This page shows ExtendedBarcodeResult class definition of Dynamsoft Barcode Reader SDK Java Edition.
+description: API reference for the ExtendedBarcodeResult class in Dynamsoft Barcode Reader Java Edition, providing additional decode details such as result type, deformation level, clarity score, and a sampling image.
 keywords: getDeformation, getClarity, getSamplingImage, getExtendedBarcodeResultType, ExtendedBarcodeResult, api reference
 ---
 # ExtendedBarcodeResult Class

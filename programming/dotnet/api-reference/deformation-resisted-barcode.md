@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: DeformationResistedBarcode Class - Dynamsoft Barcode Reader .NET Edition API Reference
-description: This page shows DeformationResistedBarcode class definition of Dynamsoft Barcode Reader SDK .NET Edition.
+description: API reference for the DeformationResistedBarcode class in Dynamsoft Barcode Reader .NET Edition, storing the location, format, and image data of a barcode after deformation resistance processing.
 keywords: GetLocation, SetLocation, GetFormat, SetFormat, GetImageData, SetImageData, DeformationResistedBarcode, api reference
 ---
 # DeformationResistedBarcode Class

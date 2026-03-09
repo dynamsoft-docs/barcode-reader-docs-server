@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: CQRCodeDetails Class - Dynamsoft Barcode Reader C++ Edition API Reference
-description: This page shows CQRCodeDetails class definition of Dynamsoft Barcode Reader SDK C++ Edition.
+description: API reference for the CQRCodeDetails class in Dynamsoft Barcode Reader C++ Edition, providing rows, columns, error correction level, version, model, and other QR Code structural attributes.
 keywords: rows, columns, errorCorrectionLevel, version, model, CQRCodeDetails, api reference
 ---
 # CQRCodeDetails

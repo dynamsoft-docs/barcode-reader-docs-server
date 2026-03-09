@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: User Guide - Dynamsoft Barcode Reader SDK .NET Edition
-description: This is the user guide of Dynamsoft Barcode Reader SDK .NET Edition.
+description: A step-by-step guide to building your first barcode reading application with Dynamsoft Barcode Reader SDK .NET Edition using C#, covering NuGet installation, single-image decoding, and multi-image processing.
 keywords: user guide, .NET
 needAutoGenerateSidebar: true
 needGenerateH3Content: true

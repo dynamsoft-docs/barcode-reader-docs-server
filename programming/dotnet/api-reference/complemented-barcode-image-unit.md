@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: ComplementedBarcodeImageUnit Class - Dynamsoft Barcode Reader .NET Edition API Reference
-description: This page shows ComplementedBarcodeImageUnit class definition of Dynamsoft Barcode Reader SDK .NET Edition.
+description: API reference for the ComplementedBarcodeImageUnit class in Dynamsoft Barcode Reader .NET Edition, an intermediate result unit containing the complemented image data and location of a barcode.
 keywords: GetImageData, GetLocation, SetLocation, ComplementedBarcodeImageUnit, api reference
 ---
 # ComplementedBarcodeImageUnit Class

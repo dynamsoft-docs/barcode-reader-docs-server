@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: Samples - Dynamsoft Barcode Reader SDK Python Edition
-description: Sample list page of Dynamsoft Barcode Reader Python Edition.
+description: A list of Python code samples for DBR, including hello-world and various feature demonstration samples.
 keywords: python
 needAutoGenerateSidebar: false
 ---

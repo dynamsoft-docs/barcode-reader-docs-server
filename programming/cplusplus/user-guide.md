@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: User Guide - Dynamsoft Barcode Reader SDK C++ Edition
-description: This is the user guide of Dynamsoft Barcode Reader SDK C++ Edition.
+description: A step-by-step guide to building your first barcode reading application with Dynamsoft Barcode Reader SDK C++ Edition, covering installation, single-image decoding, and multi-image processing with code samples.
 keywords: user guide, c++
 needAutoGenerateSidebar: true
 needGenerateH3Content: true

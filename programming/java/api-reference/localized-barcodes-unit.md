@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: LocalizedBarcodesUnit Class - Dynamsoft Barcode Reader Java Edition API Reference
-description: This page shows LocalizedBarcodesUnit class definition of Dynamsoft Barcode Reader SDK Java Edition.
+description: API reference for the LocalizedBarcodesUnit class in Dynamsoft Barcode Reader Java Edition, an intermediate result unit that holds all localized (but not yet decoded) barcode elements found in an image.
 keywords: getCount, getLocalizedBarcode, addLocalizedBarcode, removeAllLocalizedBarcodes, removeLocalizedBarcode, setLocalizedBarcode, LocalizedBarcodesUnit, api reference
 ---
 # LocalizedBarcodesUnit Class

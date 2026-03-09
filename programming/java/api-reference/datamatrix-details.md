@@ -1,7 +1,7 @@
 ---
 layout: default-layout
 title: DataMatrixDetails Class - Dynamsoft Barcode Reader Java Edition API Reference
-description: Definition of DataMatrixDetails class in Dynamsoft Barcode Reader Java Edition.
+description: API reference for the DataMatrixDetails class in Dynamsoft Barcode Reader Java Edition, storing the row count, column count, data region dimensions, and region number of a decoded DataMatrix barcode.
 keywords: rows, columns, dataRegionRows, dataRegionColumns, dataRegionNumber, DataMatrixDetails, api reference
 ---
 # DataMatrixDetails
