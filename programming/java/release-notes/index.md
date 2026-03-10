@@ -10,6 +10,7 @@ permalink: /programming/java/release-notes/index.html
 
 # Release Notes for Java Edition
 
+- [9.6.60.1 (03/10/2026)](java-9.md#96601-03102026)
 - [9.6.60 (12/23/2025)](java-9.md#9660-12232025)
 - [9.6.40 (03/14/2024)](java-9.md#9640-03142024)
 - [9.6.30 (08/29/2023)](java-9.md#9630-08292023)
