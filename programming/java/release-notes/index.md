@@ -14,6 +14,8 @@ needAutoGenerateSidebar: false
 - [11.2.1000 (10/14/2025)]({{ site.dbr_java_release_notes }}java-11.html#1121000-10142025)
 - [11.0.6100 (08/19/2025)]({{ site.dbr_java_release_notes }}java-11.html#1106100-08192025)
 - [11.0.6000 (08/06/2025)]({{ site.dbr_java_release_notes }}java-11.html#1106000-08062025)
+- [9.6.60.1 (03/10/2026)]({{ site.dbr_java_release_notes }}java-9.html#96601-03102026)
+- [9.6.60 (12/23/2025)]({{ site.dbr_java_release_notes }}java-9.html#9660-12232025)
 - [9.6.40 (03/14/2024)]({{ site.dbr_java_release_notes }}java-9.html#9640-03142024)
 - [9.6.30 (08/29/2023)]({{ site.dbr_java_release_notes }}java-9.html#9630-08292023)
 - [9.6.20 (03/16/2023)]({{ site.dbr_java_release_notes }}java-9.html#9620-03162023)

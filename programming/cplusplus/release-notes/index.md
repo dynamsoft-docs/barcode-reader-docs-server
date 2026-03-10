@@ -22,6 +22,8 @@ needAutoGenerateSidebar: false
 - [10.0.20 (10/26/2023)]({{ site.dbr_cpp_release_notes }}cpp-10.html#10020-10262023)
 - [10.0.10 (08/08/2023)]({{ site.dbr_cpp_release_notes }}cpp-10.html#10010-08082023)
 - [10.0.0 (07/04/2023)]({{ site.dbr_cpp_release_notes }}cpp-10.html#1000-07042023)
+- [9.6.60.1 (03/10/2026)]({{ site.dbr_cpp_release_notes }}cpp-9.html#96601-03102026)
+- [9.6.60 (12/23/2025)]({{ site.dbr_cpp_release_notes }}cpp-9.html#9660-12232025)
 - [9.6.40 (03/14/2024)]({{ site.dbr_cpp_release_notes }}cpp-9.html#9640-03142024)
 - [9.6.30 (08/29/2023)]({{ site.dbr_cpp_release_notes }}cpp-9.html#9630-08292023)
 - [9.6.20 (03/16/2023)]({{ site.dbr_cpp_release_notes }}cpp-9.html#9620-03162023)

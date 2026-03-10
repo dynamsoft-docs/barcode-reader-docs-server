@@ -18,6 +18,8 @@ needAutoGenerateSidebar: false
 - [10.2.12 (06/19/2024)]({{ site.dbr_dotnet_release_notes }}dotnet-10.html#10212-06192024)
 - [10.2.11 (06/12/2024)]({{ site.dbr_dotnet_release_notes }}dotnet-10.html#10211-06122024)
 - [10.2.10 (05/30/2024)]({{ site.dbr_dotnet_release_notes }}dotnet-10.html#10210-05302024)
+- [9.6.61 (03/10/2026)]({{ site.dbr_dotnet_release_notes }}dotnet-9.html#9661-03102026)
+- [9.6.60 (12/23/2025)]({{ site.dbr_dotnet_release_notes }}dotnet-9.html#9660-12232025)
 - [9.6.40 (03/14/2024)]({{ site.dbr_dotnet_release_notes }}dotnet-9.html#9640-03142024)
 - [9.6.30 (08/29/2023)]({{ site.dbr_dotnet_release_notes }}dotnet-9.html#9630-08292023)
 - [9.6.20 (03/16/2023)]({{ site.dbr_dotnet_release_notes }}dotnet-9.html#9620-03162023)
