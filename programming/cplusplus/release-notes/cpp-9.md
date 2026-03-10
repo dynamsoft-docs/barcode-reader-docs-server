@@ -8,6 +8,12 @@ needGenerateH3Content: false
 
 # Release Notes for C++ Edition - 9.x
 
+## 9.6.60.1 (03/10/2026)
+
+### Security Updates
+
+- Updated third-party libraries to incorporate the latest security fixes.
+
 ## 9.6.60 (12/23/2025)
 
 ### Security Updates

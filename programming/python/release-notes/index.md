@@ -18,6 +18,8 @@ needAutoGenerateSidebar: false
 - [10.5.2100 (12/05/2024)]({{ site.dbr_python_release_notes }}python-10.html#1052100-12052024)
 - [10.4.2100 (11/07/2024)]({{ site.dbr_python_release_notes }}python-10.html#1042100-11072024)
 - [10.4.2000 (10/10/2024)]({{ site.dbr_python_release_notes }}python-10.html#1042000-10102024)
+- [9.6.60.1 (03/10/2026)]({{ site.dbr_python_release_notes }}python-9.html#96601-03102026)
+- [9.6.60 (12/23/2025)]({{ site.dbr_python_release_notes }}python-9.html#9660-12232025)
 - [9.6.40 (03/14/2024)]({{ site.dbr_python_release_notes }}python-9.html#9640-03142024)
 - [9.6.30 (08/29/2023)]({{ site.dbr_python_release_notes }}python-9.html#9630-08292023)
 - [9.6.20 (03/16/2023)]({{ site.dbr_python_release_notes }}python-9.html#9620-03162023)
