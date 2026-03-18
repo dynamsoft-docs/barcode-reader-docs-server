@@ -16,7 +16,7 @@ needGenerateH3Content: false
 
 ### Bug Fixes
 
-- Fixed an issue where the system might attempt to load corrupted model resource files in rare cases.
+- Fixed an issue where the SDk might attempt to load corrupted model resource files in rare cases.
 
 ## 11.4.1000 (02/05/2026)
 
