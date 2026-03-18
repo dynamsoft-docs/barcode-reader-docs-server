@@ -8,6 +8,16 @@ needGenerateH3Content: false
 
 # Release Notes for Java Edition - 11.x
 
+## 11.4.2000 (03/18/2026)
+
+### Security Updates
+
+- Updated third-party libraries to incorporate the latest security fixes.
+
+### Bug Fixes
+
+- Fixed an issue where the system might attempt to load corrupted model resource files in rare cases.
+
 ## 11.4.1000 (02/05/2026)
 
 ### Highlights
