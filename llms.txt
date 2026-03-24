@@ -1,0 +1,53 @@
+---
+layout: null
+sitemap: false
+---
+
+# Feature Layer - Barcode Recognition - Server Editions (v11.x)
+
+> Root Documentation: https://www.dynamsoft.com/barcode-reader/docs/llms.txt
+> This Layer URL: https://www.dynamsoft.com/barcode-reader/docs/server/
+
+This documentation covers Dynamsoft Barcode Reader SDK v11.x. It defines the Barcode Recognition Feature Layer APIs for server-side language editions.
+
+**Language Editions:**
+- Python: https://www.dynamsoft.com/barcode-reader/docs/server/programming/python/
+- Java: https://www.dynamsoft.com/barcode-reader/docs/server/programming/java/
+- .NET: https://www.dynamsoft.com/barcode-reader/docs/server/programming/dotnet/
+- C++: https://www.dynamsoft.com/barcode-reader/docs/server/programming/cplusplus/
+
+## LLM Guidance
+
+- This layer provides barcode-specific result classes and enumerations. It does NOT contain the main entry point (CaptureVisionRouter) - that is in the Workflow Layer.
+- DecodedBarcodesResult is the primary result class; BarcodeResultItem contains individual barcode data (text, bytes, format, location).
+- SimplifiedBarcodeReaderSettings provides a quick configuration API; for full control, use JSON parameters from the Core Concepts & Parameter Layer.
+- Barcode format-specific details (QR ECC level, PDF417 rows/columns, DataMatrix data region info) are available through the corresponding details classes.
+- When explaining barcode reading workflows, combine CaptureVisionRouter (from Workflow Layer) with DecodedBarcodesResult (from this layer) and parameter configuration (from Core Concepts & Parameter Layer).
+- API shapes are equivalent across language editions; C++ uses pointers, Java/.NET use managed objects, Python uses Pythonic wrappers.
+
+## Related Layers
+
+**Workflow Layer APIs:**
+- Server Editions: https://www.dynamsoft.com/capture-vision/docs/server/llms.txt
+- Web Editions: https://www.dynamsoft.com/capture-vision/docs/web/llms.txt
+- Mobile Editions: https://www.dynamsoft.com/capture-vision/docs/mobile/llms.txt
+
+**Core Concepts & Parameter Layer:**
+- Parameter & Architecture Reference: https://www.dynamsoft.com/capture-vision/docs/core/llms.txt
+- Barcode Knowledge Base: https://www.dynamsoft.com/barcode-reader/docs/core/llms.txt
+
+**Other Barcode Recognition Feature Layer Language Editions:**
+- Web Editions: https://www.dynamsoft.com/barcode-reader/docs/web/llms.txt
+- Mobile Editions: https://www.dynamsoft.com/barcode-reader/docs/mobile/llms.txt
+
+## Pages
+
+{% for article in site.pages %}{% if article.title %}- [{{article.title}}](https://www.dynamsoft.com{{ article.url | relative_url }}): {{ article.description }}{% endif %}
+{% endfor %}
+
+## Samples
+
+- [Python Edition Samples](https://github.com/Dynamsoft/barcode-reader-python-samples): Samples of Dynamsoft Barcode Reader SDK Python Edition
+- [.NET Edition Samples](https://github.com/Dynamsoft/barcode-reader-dotnet-samples): Samples of Dynamsoft Barcode Reader SDK .NET Edition
+- [C++ Edition Samples](https://github.com/Dynamsoft/barcode-reader-c-cpp-samples): Samples of Dynamsoft Barcode Reader SDK C++ Edition
+- [Java Edition Samples](https://github.com/Dynamsoft/barcode-reader-java-samples): Samples of Dynamsoft Barcode Reader SDK Java Edition
