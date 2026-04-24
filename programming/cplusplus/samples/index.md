@@ -34,7 +34,6 @@ In addition to the classic barcode decoding samples listed above, the following 
 | Sample Name | Description |
 | --- | --- |
 | <a href="https://github.com/Dynamsoft/capture-vision-cpp-samples/tree/main/Samples/DriverLicenseScanner" target="_blank">DriverLicenseScanner</a> | Shows how to capture and extract user's information from driver license/ID. |
-| <a href="https://github.com/Dynamsoft/capture-vision-cpp-samples/tree/main/Samples/VINScanner" target="_blank">VINScanner</a> | Shows how to capture and extract vehicle's information from Vehicle Identification Number (VIN). |
 | <a href="https://github.com/Dynamsoft/capture-vision-cpp-samples/tree/main/Samples/GS1AIScanner" target="_blank">GS1AIScanner</a> | Shows how to extract and interpret GS1 Application Identifiers (AIs) from GS1 barcodes. |
 
 ## Official Online Demo
