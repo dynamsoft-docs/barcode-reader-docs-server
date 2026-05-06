@@ -167,7 +167,7 @@ if (results == null || results.length == 0) {
 3. Compile and run the project using Maven:
 
 ```
-mvn compile exec:java -Dexec.mainClass="ReadAnImage"
+mvn compile exec:java -Dexec.mainClass=ReadAnImage
 ```
 
 4. You will see the output message in the console like
