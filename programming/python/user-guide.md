@@ -82,6 +82,12 @@ else:
 ```python
 cvr_instance = CaptureVisionRouter()
 ```
+ 
+> [!IMPORTANT]
+> Instances of `CaptureVisionRouter` are not thread-safe.  
+> Do not access the same `CaptureVisionRouter` instance from multiple threads concurrently.  
+> Create a separate instance for each thread if concurrent processing is required.
+
 
 ### Invoke the Barcode Capturing
 

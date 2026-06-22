@@ -113,6 +113,11 @@ CLicenseManager::InitLicense("DLS2eyJvcmdhbml6YXRpb25JRCI6IjIwMDAwMSJ9", errorMs
 ```cpp
 CCaptureVisionRouter* cvRouter = new CCaptureVisionRouter;
 ```
+ 
+> [!IMPORTANT]
+> Instances of `CCaptureVisionRouter` are not thread-safe.  
+> Do not access the same `CCaptureVisionRouter` instance from multiple threads concurrently.  
+> Create a separate instance for each thread if concurrent processing is required.
 
 ---
 
