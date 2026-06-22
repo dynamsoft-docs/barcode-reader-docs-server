@@ -58,6 +58,11 @@ For a peek of DBR .NET Edition history, check the [Release Notes]({{ site.dbr_do
 To develop and run your application with Dynamsoft Barcode Reader SDK, you need an active license key:
 * <a href="https://www.dynamsoft.com/customer/license/trialLicense?utm_source=docs&product=dbr&package=dotnet" target="_blank">Request a 30-day free trial license</a>
 
+## Thread Safety
+
+The SDK supports multi-threaded applications, but individual SDK instances are not thread-safe.  
+For concurrent processing, create a separate instance for each thread.
+
 ## Contact Us
 
 <a href="https://www.dynamsoft.com/company/customer-service/#contact" target="_blank">Feel free to contact us if you have any questions.</a>
