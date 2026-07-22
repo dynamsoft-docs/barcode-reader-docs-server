@@ -147,20 +147,37 @@ needAutoGenerateSidebar: false
 - [`PDFReadingMode`]({{ site.dcvb_cpp_api }}core/enum-pdf-reading-mode.html?lang=cpp)
 - [`RasterDataSource`]({{ site.dcvb_cpp_api }}core/enum-raster-data-source.html?lang=cpp)
 - [`RegionObjectElementType`]({{ site.dcvb_cpp_api }}core/enum-region-object-element-type.html?lang=cpp)
+- [`MeasureUnit`]({{ site.dcvb_cpp_api }}core/enum-measure-unit.html?lang=cpp)
 - [`SectionType`]({{ site.dcvb_cpp_api }}core/enum-section-type.html?lang=cpp)
 - [`TransformMatrixType`]({{ site.dcvb_cpp_api }}core/enum-transform-matrix-type.html?lang=cpp)
 - [`VideoFrameQuality`]({{ site.dcvb_cpp_api }}core/enum-video-frame-quality.html?lang=cpp)
 
 ## DynamsoftUtility
 
+### Classes
+
 - [`CDirectoryFetcher`]({{ site.dcvb_cpp_api }}utility/directory-fetcher.html)
 - [`CFileFetcher`]({{ site.dcvb_cpp_api }}utility/file-fetcher.html)
 - [`CImageDrawer`]({{ site.dcvb_cpp_api }}utility/image-drawer.html)
 - [`CImageIO`]({{ site.dcvb_cpp_api }}utility/image-io.html)
 - [`CImageProcessor`]({{ site.dcvb_cpp_api }}utility/image-processor.html)
+- [`CLayoutAnalyzer`]({{ site.dcvb_cpp_api }}utility/layout-analyzer.html)
 - [`CMultiFrameResultCrossFilter`]({{ site.dcvb_cpp_api }}utility/multi-frame-result-cross-filter.html)
 - [`CProactiveImageSourceAdapter`]({{ site.dcvb_cpp_api }}utility/proactive-image-source-adapter.html)
 - [`CUtilityModule`]({{ site.dcvb_cpp_api }}utility/utility-module.html)
+
+### Structs
+
+- [`LayoutAxis`]({{ site.dcvb_cpp_api }}utility/layout-axis.html)
+- [`LayoutAnalysisParameter`]({{ site.dcvb_cpp_api }}utility/layout-analysis-parameter.html)
+- [`LayoutElement`]({{ site.dcvb_cpp_api }}utility/layout-element.html)
+- [`LayoutAnalysisResult`]({{ site.dcvb_cpp_api }}utility/layout-analysis-result.html)
+
+### Enums
+
+- [`FilterType`]({{ site.dcvb_cpp_api }}utility/enum-filter-type.html)
+- [`LayoutPattern`]({{ site.dcvb_cpp_api }}utility/enum-layout-pattern.html?lang=cpp)
+- [`LayoutElementSource`]({{ site.dcvb_cpp_api }}utility/enum-layout-element-source.html?lang=cpp)
 
 ## DynamsoftLicense
 

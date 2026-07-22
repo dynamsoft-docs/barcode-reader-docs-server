@@ -35,7 +35,7 @@ needGenerateH3Content: false
 
 ### New
 
-- Added [`PDFRM_MULTIMODAL`]({{ site.dcvb_dotnet_api }}core/enum-pdf-reading-mode.html) value to [`PDFReadingMode`]({{ site.dcvb_dotnet_api }}core/enum-pdf-reading-mode.html) enumeration for multimodal PDF content extraction. [`PDFRM_VECTOR`]({{ site.dcvb_dotnet_api }}core/enum-pdf-reading-mode.html) is now deprecated.
+- Added [`PDFRM_MULTIMODAL`]({{ site.dcvb_dotnet_api }}core/enum-pdf-reading-mode.html) value to [`PDFReadingMode`]({{ site.dcvb_dotnet_api }}core/enum-pdf-reading-mode.html) enumeration for multimodal PDF content extraction.
 
 - Added [`AutoDetectColorInversion`]({{ site.dcvb_parameters_reference }}barcode-format-specification/auto-detect-color-inversion.html) parameter for `BarcodeFormatSpecification` to support automatic color-inversion detection for DataMatrix barcodes.
 
@@ -57,7 +57,7 @@ needGenerateH3Content: false
 
 - Default [`PDFReadingMode`]({{ site.dcvb_dotnet_api }}core/enum-pdf-reading-mode.html) in [`PDFReadingParameter`]({{ site.dcvb_dotnet_api }}core/basic-classes/pdf-reading-parameter.html) constructor changed from [`PDFRM_RASTER`]({{ site.dcvb_dotnet_api }}core/enum-pdf-reading-mode.html) to [`PDFRM_MULTIMODAL`]({{ site.dcvb_dotnet_api }}core/enum-pdf-reading-mode.html).
 
-- [`MaxParallelTasks`]({{ site.dcvb_parameters_reference }}capture-vision-template/max-parallel-tasks.html) now controls the total number of Work-level threads in the CVR thread pool. For DBR tasks, each Localization Work and Decoding Work occupies one thread slot. DLR and DDN tasks continue to occupy one thread per task.
+- [`MaxParallelTasks`]({{ site.dcvb_parameters_reference }}capture-vision-template/max-parallel-tasks.html) now controls the total number of Work-level threads in the CVR thread pool. For DBR tasks, each Localization Work and Decoding Work occupies one thread slot.
 
 - [`SetDeviceFriendlyName()`]({{ site.dcvb_dotnet_api }}license/license-manager.html#setdevicefriendlyname) now enforces parameter constraints: maximum 64 characters, allowed characters are letters (a-z, A-Z), digits (0-9), hyphen (-), underscore (_), and period (.), and must start and end with a letter or digit. Returns [`EC_PARAMETER_VALUE_INVALID`]({{ site.dcvb_dotnet_api }}core/enum-error-code.html) if constraints are not met.
 
