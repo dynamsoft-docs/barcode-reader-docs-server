@@ -13,27 +13,29 @@ Leveraging the efficiency and flexibility of the .NET language, DBR .NET Edition
 
 As one of the functional products of the Dynamsoft Capture Vision (DCV) framework, DBR is also designed to seamlessly integrate with other DCV components and provide developers with a comprehensive set of image processing tools, which cover image capturing, content understanding, result parsing, and interactive workflow. If you are building such a capturing and processing solution, take a look at [Introduction to Dynamsoft Capture Vision]({{ site.dcvb_architecture }}).
 
-Furthermore, DBR provides a powerful parameter system in order to cope with various scenarios. Read [Parameters]({{ site.dbr_parameters }}structure-and-interfaces-of-parameters.html) for details.
+Furthermore, DBR provides a powerful parameter system in order to cope with various scenarios. Read [Parameters]({{ site.dcvb_parameters }}file/index.html) for details.
 
 ## Getting Started with DBR .NET Edition
 
 If you are new to Dynamsoft Barcode Reader .NET Edition, follow the [`User Guide`]({{ site.dbr_dotnet}}user-guide.html) to build your first barcode reading application. Please note that the system requirements is as below:
 
-### System Requirements
+## System Requirements
 
-- Windows:
-  - Supported Versions: Windows 8 and higher, or Windows Server 2012 and higher
-  - Architecture: x64 and x86
-  - Development Environment: Visual Studio 2012 or higher.
+### Supported Platforms
 
-- Linux:
-  - Supported Distributions: Ubuntu 14.04.4+ LTS, Debian 8+, CentOS 7+
-  - Architectures: x64
-  - Minimum GLIBC Version: GLIBC_2.18 or higher
+**Windows**
+- Supported Versions: Windows 8 and higher, or Windows Server 2012 and higher
+- Architectures: x64, x86
 
-- Supported .NET versions
-  - .NET Framework 3.5 and above
-  - .NET 6 and above
+**Linux**
+- Supported Distributions: Ubuntu 16.04+ LTS, Debian 8+, CentOS 7+
+- Architectures: x64
+- Dependencies: glibc 2.17 or higher
+
+### Runtime Environment
+
+- .NET Framework 3.5 and above
+- .NET 6, 7, 8, 9, 10
 
 > [!NOTE]
 > Other architectures and operating systems, such as ESP32, MIPS, FreeRTOS, and Micrium uC/OS, are not supported.
