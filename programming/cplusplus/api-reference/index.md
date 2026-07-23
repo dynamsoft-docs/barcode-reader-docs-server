@@ -38,8 +38,8 @@ needAutoGenerateSidebar: false
 
 ### Enums
 
-- [`CaptureState`]({{ site.dcvb_cpp_api }}capture-vision-router/enum-capture-state.html?lang=cpp)
-- [`ImageSourceState`]({{ site.dcvb_cpp_api }}capture-vision-router/enum-image-source-state.html?lang=cpp)
+- [`CaptureState`]({{ site.dcvb_cpp_api }}capture-vision-router/enum-capture-state.html)
+- [`ImageSourceState`]({{ site.dcvb_cpp_api }}capture-vision-router/enum-image-source-state.html)
 
 ## DynamsoftBarcodeReader
 
@@ -73,11 +73,11 @@ needAutoGenerateSidebar: false
 
 ### Enums
 
-- [`BarcodeFormat`]({{ site.dbr_cpp_api }}enum-barcode-format.html?lang=cpp)
-- [`DeblurMode`]({{ site.dbr_cpp_api }}enum-deblur-mode.html?lang=cpp)
-- [`ExtendedBarcodeResultType`]({{ site.dbr_cpp_api }}enum-extended-barcode-result-type.html?lang=cpp)
-- [`LocalizationMode`]({{ site.dbr_cpp_api }}enum-localization-mode.html?lang=cpp)
-- [`QRCodeErrorCorrectionLevel`]({{ site.dbr_cpp_api }}enum-qr-code-error-correction-level.html?lang=cpp)
+- [`BarcodeFormat`]({{ site.dbr_cpp_api }}enum-barcode-format.html)
+- [`DeblurMode`]({{ site.dbr_cpp_api }}enum-deblur-mode.html)
+- [`ExtendedBarcodeResultType`]({{ site.dbr_cpp_api }}enum-extended-barcode-result-type.html)
+- [`LocalizationMode`]({{ site.dbr_cpp_api }}enum-localization-mode.html)
+- [`QRCodeErrorCorrectionLevel`]({{ site.dbr_cpp_api }}enum-qr-code-error-correction-level.html)
 
 ## DynamsoftCore
 
@@ -131,26 +131,26 @@ needAutoGenerateSidebar: false
 
 ### Enums
 
-- [`BufferOverflowProtectionMode`]({{ site.dcvb_cpp_api }}core/enum-buffer-overflow-protection-mode.html?lang=cpp)
-- [`CapturedResultItemType`]({{ site.dcvb_cpp_api }}core/enum-captured-result-item-type.html?lang=cpp)
-- [`ColourChannelUsageType`]({{ site.dcvb_cpp_api }}core/enum-colour-channel-usage-type.html?lang=cpp)
-- [`CornerType`]({{ site.dcvb_cpp_api }}core/enum-corner-type.html?lang=cpp)
-- [`CrossVerificationStatus`]({{ site.dcvb_cpp_api }}core/enum-cross-verification-status.html?lang=cpp)
-- [`ErrorCode`]({{ site.dcvb_cpp_api }}core/enum-error-code.html?lang=cpp)
-- [`GrayscaleEnhancementMode`]({{ site.dcvb_cpp_api }}core/enum-grayscale-enhancement-mode.html?lang=cpp)
-- [`GrayscaleTransformationMode`]({{ site.dcvb_cpp_api }}core/enum-grayscale-transformation-mode.html?lang=cpp)
-- [`ImageCaptureDistanceMode`]({{ site.dcvb_cpp_api }}core/enum-image-capture-distance-mode.html?lang=cpp)
-- [`ImageFileFormat`]({{ site.dcvb_cpp_api }}core/enum-image-file-format.html?lang=cpp)
-- [`ImagePixelFormat`]({{ site.dcvb_cpp_api }}core/enum-image-pixel-format.html?lang=cpp)
-- [`ImageTagType`]({{ site.dcvb_cpp_api }}core/enum-image-tag-type.html?lang=cpp)
-- [`IntermediateResultUnitType`]({{ site.dcvb_cpp_api }}core/enum-intermediate-result-unit-type.html?lang=cpp)
-- [`PDFReadingMode`]({{ site.dcvb_cpp_api }}core/enum-pdf-reading-mode.html?lang=cpp)
-- [`RasterDataSource`]({{ site.dcvb_cpp_api }}core/enum-raster-data-source.html?lang=cpp)
-- [`RegionObjectElementType`]({{ site.dcvb_cpp_api }}core/enum-region-object-element-type.html?lang=cpp)
-- [`MeasureUnit`]({{ site.dcvb_cpp_api }}core/enum-measure-unit.html?lang=cpp)
-- [`SectionType`]({{ site.dcvb_cpp_api }}core/enum-section-type.html?lang=cpp)
-- [`TransformMatrixType`]({{ site.dcvb_cpp_api }}core/enum-transform-matrix-type.html?lang=cpp)
-- [`VideoFrameQuality`]({{ site.dcvb_cpp_api }}core/enum-video-frame-quality.html?lang=cpp)
+- [`BufferOverflowProtectionMode`]({{ site.dcvb_cpp_api }}core/enum-buffer-overflow-protection-mode.html)
+- [`CapturedResultItemType`]({{ site.dcvb_cpp_api }}core/enum-captured-result-item-type.html)
+- [`ColourChannelUsageType`]({{ site.dcvb_cpp_api }}core/enum-colour-channel-usage-type.html)
+- [`CornerType`]({{ site.dcvb_cpp_api }}core/enum-corner-type.html)
+- [`CrossVerificationStatus`]({{ site.dcvb_cpp_api }}core/enum-cross-verification-status.html)
+- [`ErrorCode`]({{ site.dcvb_cpp_api }}core/enum-error-code.html)
+- [`GrayscaleEnhancementMode`]({{ site.dcvb_cpp_api }}core/enum-grayscale-enhancement-mode.html)
+- [`GrayscaleTransformationMode`]({{ site.dcvb_cpp_api }}core/enum-grayscale-transformation-mode.html)
+- [`ImageCaptureDistanceMode`]({{ site.dcvb_cpp_api }}core/enum-image-capture-distance-mode.html)
+- [`ImageFileFormat`]({{ site.dcvb_cpp_api }}core/enum-image-file-format.html)
+- [`ImagePixelFormat`]({{ site.dcvb_cpp_api }}core/enum-image-pixel-format.html)
+- [`ImageTagType`]({{ site.dcvb_cpp_api }}core/enum-image-tag-type.html)
+- [`IntermediateResultUnitType`]({{ site.dcvb_cpp_api }}core/enum-intermediate-result-unit-type.html)
+- [`PDFReadingMode`]({{ site.dcvb_cpp_api }}core/enum-pdf-reading-mode.html)
+- [`RasterDataSource`]({{ site.dcvb_cpp_api }}core/enum-raster-data-source.html)
+- [`RegionObjectElementType`]({{ site.dcvb_cpp_api }}core/enum-region-object-element-type.html)
+- [`MeasureUnit`]({{ site.dcvb_cpp_api }}core/enum-measure-unit.html)
+- [`SectionType`]({{ site.dcvb_cpp_api }}core/enum-section-type.html)
+- [`TransformMatrixType`]({{ site.dcvb_cpp_api }}core/enum-transform-matrix-type.html)
+- [`VideoFrameQuality`]({{ site.dcvb_cpp_api }}core/enum-video-frame-quality.html)
 
 ## DynamsoftUtility
 
@@ -176,8 +176,8 @@ needAutoGenerateSidebar: false
 ### Enums
 
 - [`FilterType`]({{ site.dcvb_cpp_api }}utility/enum-filter-type.html)
-- [`LayoutPattern`]({{ site.dcvb_cpp_api }}utility/enum-layout-pattern.html?lang=cpp)
-- [`LayoutElementSource`]({{ site.dcvb_cpp_api }}utility/enum-layout-element-source.html?lang=cpp)
+- [`LayoutPattern`]({{ site.dcvb_cpp_api }}utility/enum-layout-pattern.html)
+- [`LayoutElementSource`]({{ site.dcvb_cpp_api }}utility/enum-layout-element-source.html)
 
 ## DynamsoftLicense
 
