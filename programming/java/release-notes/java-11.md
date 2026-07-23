@@ -63,6 +63,8 @@ needGenerateH3Content: false
 
 - The Linux ARM64 minimum requirement is now glibc 2.27 (Ubuntu 18.04+, Debian 10+, and CentOS/RHEL 8+).
 
+- Removed the VC++ Redistributable runtime dependency for the JNI DLL on Windows (runtime linkage changed from MD to MT).
+
 ### Fixed
 
 - Fixed a crash that could occur in AWS Lambda environments under certain conditions.
