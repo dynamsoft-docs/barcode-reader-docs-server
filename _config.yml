@@ -19,8 +19,6 @@ dcvb_architecture: /capture-vision/docs/core/architecture/
 dcvb_parameters: /capture-vision/docs/core/parameters/
 
 
-dbr_introduction: /barcode-reader/docs/core/introduction/
-dbr_parameters: /barcode-reader/docs/core/parameters/
 dbr_performance: /barcode-reader/docs/core/performance/
 
 dbr_cpp: /barcode-reader/docs/server/programming/cplusplus/

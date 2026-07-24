@@ -18,12 +18,13 @@ needAutoGenerateSidebar: false
 | <a href="https://github.com/Dynamsoft/barcode-reader-python-samples/blob/master/Samples/read_an_image.py" target="_blank">ReadAnImage</a> | Shows the simplest way to read barcodes from an image file and output barcode format and text. |
 | <a href="https://github.com/Dynamsoft/barcode-reader-python-samples/blob/master/Samples/read_multiple_images.py" target="_blank">ReadMultipleImages</a> | Shows the simplest way to read barcodes from directory with image files and output barcode format and text. |
 | <a href="https://github.com/Dynamsoft/barcode-reader-python-samples/blob/master/Samples/general_settings.py" target="_blank">GeneralSettings</a> | Shows how to adjust general scan settings, e.g., barcode format, barcode count, scan region. |
-| <a href="https://github.com/Dynamsoft/barcode-reader-python-samples/blob/master/Samples/read_dpm_barcode.py" target="_blank">ReadDPMBarcode</a> | Shows how to read DPM (Direct Part Mark) barcodes. |
-| <a href="https://github.com/Dynamsoft/barcode-reader-python-samples/blob/master/Samples/video_decoding.py" target="_blank">VideoDecoding</a> | Shows how to decode barcodes from live video or video file. |
+| <a href="https://github.com/Dynamsoft/barcode-reader-python-samples/blob/master/Samples/grid_barcode_scanner.py" target="_blank">GridBarcodeScanner</a> | This sample demonstrates a multi-phase pipeline for decoding a large barcode grid from a single image, maximizing the decode rate with low latency. |
 | <a href="https://github.com/Dynamsoft/barcode-reader-python-samples/blob/master/Samples/multi_format_image_processing.py" target="_blank">MultiFormatImageProcessing</a> | Shows how to decode barcodes from various image format. |
 | <a href="https://github.com/Dynamsoft/barcode-reader-python-samples/blob/master/Samples/parameter_tuner.py" target="_blank">ParameterTuner</a> | This sample demonstrates how to adjust and test different parameter settings to optimize barcode recognition performance. |
-| <a href="https://github.com/Dynamsoft/barcode-reader-python-samples/blob/master/Samples/show_localized_vs_decoded_barcodes.py" target="_blank">ShowLocalizedVSDecodedBarcodes</a> | This sample demonstrates how to highlight successfully decoded and only-localized barcodes with different styles of rectangles. |
+| <a href="https://github.com/Dynamsoft/barcode-reader-python-samples/blob/master/Samples/read_dpm_barcode.py" target="_blank">ReadDPMBarcode</a> | Shows how to read DPM (Direct Part Mark) barcodes. |
 | <a href="https://github.com/Dynamsoft/barcode-reader-python-samples/blob/master/Samples/server_side_barcode_decoder.py" target="_blank">ServerSideBarcodeDecoder</a> | This sample demonstrates how to decode barcodes on the server side by sending images from a client application. |
+| <a href="https://github.com/Dynamsoft/barcode-reader-python-samples/blob/master/Samples/show_localized_vs_decoded_barcodes.py" target="_blank">ShowLocalizedVSDecodedBarcodes</a> | This sample demonstrates how to highlight successfully decoded and only-localized barcodes with different styles of rectangles. |
+| <a href="https://github.com/Dynamsoft/barcode-reader-python-samples/blob/master/Samples/video_decoding.py" target="_blank">VideoDecoding</a> | Shows how to decode barcodes from live video or video file. |
 
 ### Additional Samples using Capture Vision SDK
 

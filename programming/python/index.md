@@ -13,37 +13,53 @@ Leveraging the efficiency and flexibility of the python language, DBR Python Edi
 
 As one of the functional products of the Dynamsoft Capture Vision (DCV) framework, DBR is also designed to seamlessly integrate with other DCV components and provide developers with a comprehensive set of image processing tools, which cover image capturing, content understanding, result parsing, and interactive workflow. If you are building such a capturing and processing solution, take a look at [Introduction to Dynamsoft Capture Vision]({{ site.dcvb_architecture }}).
 
-Furthermore, DBR provides a powerful parameter system in order to cope with various scenarios. Read [Parameters]({{ site.dbr_parameters }}structure-and-interfaces-of-parameters.html) for details.
+Furthermore, DBR provides a powerful parameter system in order to cope with various scenarios. Read [Parameters]({{ site.dcvb_parameters }}file/index.html) for details.
 
 ## Getting Started with DBR Python Edition
 
 If you are new to Dynamsoft Barcode Reader Python Edition, follow the [`User Guide`]({{ site.dbr_python }}user-guide.html) to build your first barcode reading application. Please note that the system requirements is as below:
 
-### System Requirements
+## System Requirements
 
-- Operating Systems:
-  - Windows x64
-  - Linux x64, ARM 64-bit, ARM 32-bit (for versions below DBR 9.6.40.2)
-  - macOS (Universal) 12+
+### Supported Platforms
 
-- Python Versions:
-  - Python 3.14
-  - Python 3.13
-  - Python 3.12
-  - Python 3.11
-  - Python 3.10
-  - Python 3.9
-  - Python 3.8
-  - Python 3.7 (for versions below DBR 9.6.40.2)
-  - Python 3.6 (for versions below DBR 9.6.40.2)
-  - Python 3.5 (for versions below DBR 7.5)
-  - Python 2.7 (for versions below DBR 7.2.2.3)
+**Windows**
+- Supported Versions: Windows 8 and higher, or Windows Server 2012 and higher
+- Architectures: x64
 
-- For Embedded Devices:
-For embedded or ARM-based platforms, we recommend using a device with performance equivalent to or better than a Raspberry Pi 4 Model B (4GB RAM). Minimum recommended specs:
-  - Quad-core ARM Cortex-A72 processor (or equivalent)
-  - 4 GB RAM
-  - Linux-based OS (e.g., Raspberry Pi OS, Ubuntu Server)
+**Linux**
+- **x64**
+	- Supported Distributions: Ubuntu 16.04+ LTS, Debian 8+, CentOS 7+
+	- Dependencies: glibc 2.17
+- **ARM64**
+	- Supported Distributions: Ubuntu 18.04+ LTS, Debian 10+, CentOS/RHEL 8+
+	- Dependencies: glibc 2.27
+
+**macOS**
+- Supported Versions: macOS 12 (Monterey) and higher
+- Architectures: universal (x64, Apple Silicon)
+
+### Supported Python Versions
+
+- Python 3.14
+- Python 3.13
+- Python 3.12
+- Python 3.11
+- Python 3.10
+- Python 3.9
+- Python 3.8
+- Python 3.7 (for versions below DBR 9.6.40.2)
+- Python 3.6 (for versions below DBR 9.6.40.2)
+- Python 3.5 (for versions below DBR 7.5)
+- Python 2.7 (for versions below DBR 7.2.2.3)
+
+### Embedded Devices
+
+For embedded or ARM-based platforms, we recommend using a device with performance equivalent to or better than a Raspberry Pi 4 Model B (4 GB RAM). Minimum recommended specs:
+
+- Quad-core ARM Cortex-A72 processor or equivalent
+- 4 GB RAM
+- Linux-based OS, such as Raspberry Pi OS or Ubuntu Server
 
 > [!NOTE]
 > Other architectures and operating systems, such as ESP32, MIPS, FreeRTOS, and Micrium uC/OS, are not supported.

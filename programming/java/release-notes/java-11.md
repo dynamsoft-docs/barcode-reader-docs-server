@@ -8,6 +8,74 @@ needGenerateH3Content: false
 
 # Release Notes for Java Edition - 11.x
 
+## 11.6.1000 (07/23/2026)
+
+### Highlights
+
+#### Multimodal PDF Content Extraction
+
+- **New PDF Reading Mode** - Added [`PDFRM_MULTIMODAL`]({{ site.dcvb_java_api }}core/enum-pdf-reading-mode.html) to [`PDFReadingMode`]({{ site.dcvb_java_api }}core/enum-pdf-reading-mode.html), now the default for [`PDFReadingParameter`]({{ site.dcvb_java_api }}core/basic-classes/pdf-reading-parameter.html). It extracts vector graphics, text content, and embedded images from PDF files, enabling stronger barcode reading performance in multimodal PDF scenarios.
+- **Performance Behavior Update** - Compared with full-page raster rendering, [`PDFRM_MULTIMODAL`]({{ site.dcvb_java_api }}core/enum-pdf-reading-mode.html) usually improves speed by avoiding unnecessary rendering of irrelevant regions.
+
+#### Multi-Threaded Barcode Decoding
+
+- **Get results sooner with parallel processing** - Barcode decoding now uses a breadth-first strategy that decomposes a single DBR Task into one Localization Work and one or more Decoding Works. This improves thread utilization and reduces the chance that a slow `DeblurMode` attempt blocks other faster decoding attempts, helping valid results come back sooner.
+
+#### DataMatrix Color Inversion Detection
+
+- **Handle normal and inverted DataMatrix more efficiently** - Added [`AutoDetectColorInversion`]({{ site.dcvb_parameters_reference }}barcode-format-specification/auto-detect-color-inversion.html) to automatically handle both normal and inverted DataMatrix barcodes. Instead of processing the whole image twice, the SDK applies dual-polarity handling only to localized DataMatrix regions, which makes processing faster in dual-polarity scenarios.
+
+#### Barcode Layout Analysis
+
+- **Decode dense grid barcodes more completely** - Added [`LayoutAnalyzer`]({{ site.dcvb_java_api }}utility/layout-analyzer.html) to organize barcode locations into logical line or matrix layouts and infer unrecognized barcode regions when gaps exist, enabling workflows such as fast first-pass decoding, missing-region inference, and targeted second-pass decoding on dense N*M barcode layouts.
+
+#### Cross-Version License Support
+
+- **Use a single license across SDK versions** - Full License 1.0 keys (starting with "f") that are non-perpetual are no longer version-checked, so the same key can be used across SDK versions without reactivation.
+
+### New
+
+- Added [`PDFRM_MULTIMODAL`]({{ site.dcvb_java_api }}core/enum-pdf-reading-mode.html) value to [`PDFReadingMode`]({{ site.dcvb_java_api }}core/enum-pdf-reading-mode.html) enumeration for multimodal PDF content extraction.
+
+- Added [`AutoDetectColorInversion`]({{ site.dcvb_parameters_reference }}barcode-format-specification/auto-detect-color-inversion.html) parameter for `BarcodeFormatSpecification` to support automatic color-inversion detection for DataMatrix barcodes.
+
+- Added a new overload of [`captureMultiPages()`]({{ site.dcvb_java_api }}capture-vision-router/single-file-processing.html#capturemultipages) that accepts a [`FileFetcher`]({{ site.dcvb_java_api }}utility/file-fetcher.html) parameter for more flexible file input handling.
+
+- Added [`LayoutAnalyzer`]({{ site.dcvb_java_api }}utility/layout-analyzer.html) class with [`analyze()`]({{ site.dcvb_java_api }}utility/layout-analyzer.html#analyze) static method for quadrilateral layout analysis.
+
+- Added [`LayoutPattern`]({{ site.dcvb_java_api }}utility/enum-layout-pattern.html) enumeration with values `LP_UNKNOWN`, `LP_LINES`, and `LP_MATRIX`.
+
+- Added [`LayoutElementSource`]({{ site.dcvb_java_api }}utility/enum-layout-element-source.html) enumeration with values `LES_NONE`, `LES_INPUT`, and `LES_INFERRED`.
+
+- Added [`MeasureUnit`]({{ site.dcvb_java_api }}core/enum-measure-unit.html) enumeration with values `MU_PIXEL` and `MU_PERCENTAGE`.
+
+- Added structures [`LayoutAxis`]({{ site.dcvb_java_api }}utility/layout-axis.html), [`LayoutAnalysisParameter`]({{ site.dcvb_java_api }}utility/layout-analysis-parameter.html), [`LayoutElement`]({{ site.dcvb_java_api }}utility/layout-element.html), and [`LayoutAnalysisResult`]({{ site.dcvb_java_api }}utility/layout-analysis-result.html) for layout analysis configuration and results.
+
+- Added a new `GridBarcodeScanner` sample (with `sample_grid.png`) to demonstrate how to use [`LayoutAnalyzer`]({{ site.dcvb_java_api }}utility/layout-analyzer.html) for barcode grid layout detection and logical row/column mapping.
+
+### Changed
+
+- Default [`PDFReadingMode`]({{ site.dcvb_java_api }}core/enum-pdf-reading-mode.html) in [`PDFReadingParameter`]({{ site.dcvb_java_api }}core/basic-classes/pdf-reading-parameter.html) constructor changed from [`PDFRM_RASTER`]({{ site.dcvb_java_api }}core/enum-pdf-reading-mode.html) to [`PDFRM_MULTIMODAL`]({{ site.dcvb_java_api }}core/enum-pdf-reading-mode.html).
+
+- [`MaxParallelTasks`]({{ site.dcvb_parameters_reference }}capture-vision-template/max-parallel-tasks.html) now controls the total number of Work-level threads in the CVR thread pool. For DBR tasks, each Localization Work and Decoding Work occupies one thread slot.
+
+- [`setDeviceFriendlyName()`]({{ site.dcvb_java_api }}license/license-manager.html#setdevicefriendlyname) now enforces parameter constraints: maximum 64 characters, allowed characters are letters (a-z, A-Z), digits (0-9), hyphen (-), underscore (_), and period (.), and must start and end with a letter or digit. Returns [`EC_PARAMETER_VALUE_INVALID`]({{ site.dcvb_java_api }}core/enum-error-code.html) if constraints are not met.
+
+- The Linux ARM64 minimum requirement is now glibc 2.27 (Ubuntu 18.04+, Debian 10+, and CentOS/RHEL 8+).
+
+- Removed the VC++ Redistributable runtime dependency for the JNI DLL on Windows (runtime linkage changed from MD to MT).
+
+### Fixed
+
+- Fixed a crash that could occur in AWS Lambda environments under certain conditions.
+
+- Fixed an issue in GS1-Databar AI `17` (YYMMDD) results where the month field could be missing a leading zero.
+
+### Deprecations
+
+- Marked `PDFRM_VECTOR` as deprecated (covered by [`PDFRM_MULTIMODAL`]({{ site.dcvb_java_api }}core/enum-pdf-reading-mode.html)).
+
+
 ## 11.4.3000 (06/30/2026)
 
 ### Security Updates

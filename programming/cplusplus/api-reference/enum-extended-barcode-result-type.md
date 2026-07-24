@@ -10,10 +10,6 @@ codeAutoHeight: true
 
 `ExtendedBarcodeResultType` determines the type of text result returned from a barcode scan.
 
-<div class="sample-code-prefix template2"></div>
-   >- C++
-   >
->
 ```cpp
 typedef enum ExtendedBarcodeResultType
 {

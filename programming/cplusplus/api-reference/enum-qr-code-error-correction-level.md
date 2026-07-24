@@ -10,10 +10,6 @@ codeAutoHeight: true
 
 `QRCodeErrorCorrectionLevel` describes the error correction level when processing the QR code.
 
-<div class="sample-code-prefix template2"></div>
-   >- C++
-   >
->
 ```cpp
 typedef enum QRCodeErrorCorrectionLevel
 {

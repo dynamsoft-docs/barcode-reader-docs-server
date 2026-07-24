@@ -10,10 +10,6 @@ codeAutoHeight: true
 
 `LocalizationMode` specifies the strategies used to identify the locations of barcodes within an image.
 
-<div class="sample-code-prefix template2"></div>
-   >- C++
-   >
->
 ```cpp
 typedef enum LocalizationMode
 {

@@ -13,26 +13,43 @@ Leveraging the efficiency and flexibility of the java language, DBR Java Edition
 
 As one of the functional products of the Dynamsoft Capture Vision (DCV) framework, DBR is also designed to seamlessly integrate with other DCV components and provide developers with a comprehensive set of image processing tools, which cover image capturing, content understanding, result parsing, and interactive workflow. If you are building such a capturing and processing solution, take a look at [Introduction to Dynamsoft Capture Vision]({{ site.dcvb_architecture }}).
 
-Furthermore, DBR provides a powerful parameter system in order to cope with various scenarios. Read [Parameters]({{ site.dbr_parameters }}structure-and-interfaces-of-parameters.html) for details.
+Furthermore, DBR provides a powerful parameter system in order to cope with various scenarios. Read [Parameters]({{ site.dcvb_parameters }}file/index.html) for details.
 
 ## Getting Started with DBR Java Edition
 
 If you are new to Dynamsoft Barcode Reader Java Edition, follow the [`User Guide`]({{ site.dbr_java }}user-guide.html) to build your first barcode reading application. Please note that the system requirements is as below:
 
-### System Requirements
+## System Requirements
 
-- Operating systems:
-  - Windows Windows: Windows 8 and higher, or Windows Server 2012 and higher
-  - Linux x64 (Ubuntu 14.04.4+ LTS, Debian 8+, CentOS 7+, etc.)
-  - Linux arm 64bit
-  - macOS (Universal) 12+
+### Supported Platforms
+
+**Windows**
+- Supported Versions: Windows 8 and higher, or Windows Server 2012 and higher
+- Architectures: x64, x86
+
+**Linux**
+- **x64**
+	- Supported Distributions: Ubuntu 16.04+ LTS, Debian 8+, CentOS 7+
+	- Dependencies: glibc 2.17
+- **ARM64**
+	- Supported Distributions: Ubuntu 18.04+ LTS, Debian 10+, CentOS/RHEL 8+
+	- Dependencies: glibc 2.27
+
+**macOS**
+- Supported Versions: macOS 12 (Monterey) and higher
+- Architectures: universal (x64, Apple Silicon)
+
+### Runtime Environment
+
 - JDK 1.8 and above
 
-- For Embedded Devices:
-For embedded or ARM-based platforms, we recommend using a device with performance equivalent to or better than a Raspberry Pi 4 Model B (4GB RAM). Minimum recommended specs:
-  - Quad-core ARM Cortex-A72 processor (or equivalent)
-  - 4 GB RAM
-  - Linux-based OS (e.g., Raspberry Pi OS, Ubuntu Server)
+### Embedded Devices
+
+For embedded or ARM-based platforms, we recommend using a device with performance equivalent to or better than a Raspberry Pi 4 Model B (4 GB RAM). Minimum recommended specs:
+
+- Quad-core ARM Cortex-A72 processor or equivalent
+- 4 GB RAM
+- Linux-based OS, such as Raspberry Pi OS or Ubuntu Server
 
 > [!NOTE]
 > Other architectures and operating systems, such as ESP32, MIPS, FreeRTOS, and Micrium uC/OS, are not supported.

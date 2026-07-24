@@ -15,35 +15,48 @@ In addition, DBR C++ Edition provides cross-platform support, running on multipl
 
 As one of the functional products of the Dynamsoft Capture Vision (DCV) framework, DBR is also designed to seamlessly integrate with other DCV components and provide developers with a comprehensive set of image processing tools, which cover image capturing, content understanding, result parsing, and interactive workflow. If you are building such a capturing and processing solution, take a look at [Introduction to Dynamsoft Capture Vision]({{ site.dcvb_architecture }}).
 
-Furthermore, DBR provides a powerful parameter system in order to cope with various scenarios. Read [Parameters]({{ site.dbr_parameters }}structure-and-interfaces-of-parameters.html) for details.
+Furthermore, DBR provides a powerful parameter system in order to cope with various scenarios. Read [Parameters]({{ site.dcvb_parameters }}file/index.html) for details.
 
 ## Getting Started with DBR C++ Edition
 
 If you are new to Dynamsoft Barcode Reader C++ Edition, follow the [`User Guide`]({{site.dbr_cpp}}user-guide.html) to build your first barcode reading application. Please note that the system requirements is as below:
 
-### System Requirements
+## System Requirements
 
-- Windows:
-  - Supported Versions: Windows 8 and higher, or Windows Server 2012 and higher
-  - Architecture: x64 and x86
-  - Development Environment: Visual Studio 2012 or higher.
+### Supported Platforms
 
-- Linux:
-  - Supported Distributions: Ubuntu 14.04.4+ LTS, Debian 8+, CentOS 7+
-  - Architectures: x64, ARM 64-bit, ARM 32-bit (for versions below 9.6.40.2)
-  - Minimum GLIBC Version: GLIBC_2.18 or higher
-  - Compiler: G++ 5.4 or higher
+**Windows**
+- Supported Versions: Windows 8 and higher, or Windows Server 2012 and higher
+- Architectures: x64, x86
 
-- macOS (Universal) 12+ (not included in the trial package, contact us to get the SDK)
+**Linux**
+- **x64**
+	- Supported Distributions: Ubuntu 16.04+ LTS, Debian 8+, CentOS 7+
+	- Dependencies: glibc 2.17
+- **ARM64**
+	- Supported Distributions: Ubuntu 18.04+ LTS, Debian 10+, CentOS/RHEL 8+
+	- Dependencies: glibc 2.27
 
-- For Embedded Devices:
-For embedded or ARM-based platforms, we recommend using a device with performance equivalent to or better than a Raspberry Pi 4 Model B (4GB RAM). Minimum recommended specs:
-  - Quad-core ARM Cortex-A72 processor (or equivalent)
-  - 4 GB RAM
-  - Linux-based OS (e.g., Raspberry Pi OS, Ubuntu Server)
+**macOS** (contact us to get the SDK)
+- Supported Versions: macOS 12 (Monterey) and higher
+- Architectures: universal (x64, Apple Silicon)
+
+### Development Environment
+
+- Visual Studio 2015 or higher
+- GCC 6.3.0+ / G++ 6.3.0+
+
+### Embedded Devices
+
+For embedded or ARM-based platforms, we recommend using a device with performance equivalent to or better than a Raspberry Pi 4 Model B (4 GB RAM). Minimum recommended specs:
+
+- Quad-core ARM Cortex-A72 processor or equivalent
+- 4 GB RAM
+- Linux-based OS, such as Raspberry Pi OS or Ubuntu Server
 
 > [!NOTE]
-> Other architectures and operating systems, such as ESP32, MIPS, FreeRTOS, and Micrium uC/OS, are not supported.
+> Other architectures and operating systems, such as ESP32, MIPS, FreeRTOS, and Micrium uC/OS, are not supported.  
+> ARM 32-bit is only supported in versions below 9.6.40.2.
 
 ## Migration Guides
 

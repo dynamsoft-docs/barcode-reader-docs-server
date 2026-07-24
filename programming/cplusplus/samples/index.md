@@ -16,13 +16,14 @@ needAutoGenerateSidebar: false
 | --- | --- |
 | <a href="https://github.com/Dynamsoft/barcode-reader-c-cpp-samples/tree/main/Samples/HelloWorld/ReadAnImage" target="_blank">ReadAnImage</a> | This sample demonstrates the simplest way to read barcodes from an image file and output barcode format and text. |
 | <a href="https://github.com/Dynamsoft/barcode-reader-c-cpp-samples/tree/main/Samples/HelloWorld/ReadMultipleImages" target="_blank">ReadMultipleImages</a> | This sample demonstrates the simplest way to read barcodes from directory with image files and output barcode format and text. |
-| <a href="https://github.com/Dynamsoft/barcode-reader-c-cpp-samples/tree/main/Samples/MultiThreadDecoding" target="_blank">MultiThreadDecoding</a> | This sample demonstrates how to read barcodes and get barcode results in self-managed thread. |
-| <a href="https://github.com/Dynamsoft/barcode-reader-c-cpp-samples/tree/main/Samples/VideoDecoding" target="_blank">VideoDecoding</a> | This sample demonstrates how to read barcodes from video frames. |
 | <a href="https://github.com/Dynamsoft/barcode-reader-c-cpp-samples/tree/main/Samples/BarcodePerformanceEvaluator" target="_blank">BarcodePerformanceEvaluator</a> | This sample demonstrates how to read barcodes from files in the specified directory and return results plus performance metrics. |
 | <a href="https://github.com/Dynamsoft/barcode-reader-c-cpp-samples/tree/main/Samples/GeneralSettings" target="_blank">GeneralSettings</a> | This sample demonstrates how to configure general used settings and read barcodes from an image file. |
-| <a href="https://github.com/Dynamsoft/barcode-reader-c-cpp-samples/tree/main/Samples/ReadDPMBarcode" target="_blank">ReadDPMBarcode</a> | This sample demonstrates how to read DPM (Direct Part Marking) barcodes and get barcode results. |
+| <a href="https://github.com/Dynamsoft/barcode-reader-c-cpp-samples/tree/main/Samples/GridBarcodeScanner" target="_blank">GridBarcodeScanner</a> | This sample demonstrates a multi-phase pipeline for decoding a large barcode grid from a single image, maximizing the decode rate with low latency. |
+| <a href="https://github.com/Dynamsoft/barcode-reader-c-cpp-samples/tree/main/Samples/MultiThreadDecoding" target="_blank">MultiThreadDecoding</a> | This sample demonstrates how to read barcodes and get barcode results in self-managed thread. |
 | <a href="https://github.com/Dynamsoft/barcode-reader-c-cpp-samples/tree/main/Samples/ParameterTuner" target="_blank">ParameterTuner</a> | This sample demonstrates how to adjust and test different parameter settings to optimize barcode recognition performance. |
+| <a href="https://github.com/Dynamsoft/barcode-reader-c-cpp-samples/tree/main/Samples/ReadDPMBarcode" target="_blank">ReadDPMBarcode</a> | This sample demonstrates how to read DPM (Direct Part Marking) barcodes and get barcode results. |
 | <a href="https://github.com/Dynamsoft/barcode-reader-c-cpp-samples/tree/main/Samples/ShowLocalizedVSDecodedBarcodes" target="_blank">ShowLocalizedVSDecodedBarcodes</a> | This sample demonstrates how to highlight successfully decoded and only-localized barcodes with different styles of rectangles. |
+| <a href="https://github.com/Dynamsoft/barcode-reader-c-cpp-samples/tree/main/Samples/VideoDecoding" target="_blank">VideoDecoding</a> | This sample demonstrates how to read barcodes from video frames. |
 
 ### Additional Samples using Capture Vision SDK
 
