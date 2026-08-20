@@ -8,6 +8,27 @@ needGenerateH3Content: false
 
 # Release Notes for Python Edition - 11.x
 
+## 11.6.3000 (08/20/2026)
+
+### Improved
+
+- Improved localization stability for GS1 DataBar Stacked barcodes when the bars are short.
+
+### Fixed
+
+- Fixed an issue where MicroPDF417 decoding results did not match the expected output.
+
+- Fixed a hang that could occur during multi-threaded processing.
+
+- Fixed hangs and crashes that could occur with certain input images and templates.
+
+- Fixed a crash that could occur during initialization on Linux ARM64.
+
+### Security Updates
+
+- Updated third-party libraries to incorporate the latest security fixes.
+
+
 ## 11.6.1000 (07/23/2026)
 
 ### Highlights
