@@ -102,9 +102,8 @@ public class ReadAnImage {
     public static void main(String[] args) {
         try {
             LicenseError licenseError = LicenseManager.initLicense("DLS2eyJvcmdhbml6YXRpb25JRCI6IjIwMDAwMSJ9");
-            if (licenseError.getErrorCode() != EnumErrorCode.EC_OK) {
-                System.out.println("License initialization failed: ErrorCode: " + licenseError.getErrorCode() + ", ErrorString: " + licenseError.getErrorString());
-                return;
+            if (licenseError.getErrorCode() == EnumErrorCode.EC_LICENSE_WARNING) {
+                System.out.println("License initialization warning: " + licenseError.getErrorString());
             }
         } catch (LicenseException e) {
             System.out.println("License initialization failed: ErrorCode: " + e.getErrorCode() + ", ErrorString: " + e.getErrorString());
