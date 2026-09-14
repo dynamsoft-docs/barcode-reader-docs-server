@@ -15,7 +15,7 @@ In addition, DBR C++ Edition provides cross-platform support, running on multipl
 
 As one of the functional products of the Dynamsoft Capture Vision (DCV) framework, DBR is also designed to seamlessly integrate with other DCV components and provide developers with a comprehensive set of image processing tools, which cover image capturing, content understanding, result parsing, and interactive workflow. If you are building such a capturing and processing solution, take a look at [Introduction to Dynamsoft Capture Vision]({{ site.dcvb_architecture }}).
 
-Furthermore, DBR provides a powerful parameter system in order to cope with various scenarios. Read [Parameters]({{ site.dcvb_parameters }}file/index.html) for details.
+Furthermore, DBR provides a powerful parameter system in order to cope with various scenarios. Read [Parameters]({{ site.dcvb_parameters_reference }}index.html) for details.
 
 ## Getting Started with DBR C++ Edition
 
