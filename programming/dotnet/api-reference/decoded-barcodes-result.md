@@ -12,7 +12,7 @@ The `DecodedBarcodesResult` class represents the result of a barcode reading pro
 
 *Namespace:* Dynamsoft.DBR
 
-*Inheritance:* [CapturedResultBase]({{ site.dcv_dotnet_api }}core/basic-classes/captured-result-base.html) -> DecodedBarcodesResult
+*Inheritance:* [CapturedResultBase]({{ site.dcvb_dotnet_api }}core/basic-classes/captured-result-base.html) -> DecodedBarcodesResult
 
 ```csharp
 public class DecodedBarcodesResult : CapturedResultBase, IEnumerable<BarcodeResultItem>

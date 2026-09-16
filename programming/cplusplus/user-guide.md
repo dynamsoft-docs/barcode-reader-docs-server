@@ -102,8 +102,17 @@ using namespace dynamsoft::dbr;
 #### Initialize the License Key
 
 ```cpp
+int errorCode = 1;
 char errorMsg[512];
-CLicenseManager::InitLicense("DLS2eyJvcmdhbml6YXRpb25JRCI6IjIwMDAwMSJ9", errorMsg, 512);
+errorCode = CLicenseManager::InitLicense("DLS2eyJvcmdhbml6YXRpb25JRCI6IjIwMDAwMSJ9", errorMsg, 512);
+if (errorCode != ErrorCode::EC_OK && errorCode != ErrorCode::EC_LICENSE_WARNING)
+{
+    cout << "License initialization failed: ErrorCode: " << errorCode << ", ErrorString: " << errorMsg << endl;
+}
+else
+{
+    // codes from following steps
+}
 ```
 
 > The string "DLS2eyJvcmdhbml6YXRpb25JRCI6IjIwMDAwMSJ9" here is a free public trial license. Note that network connection is required for this license to work. Alternatively, you can request a 30-day **offline** free trial license from the <a href="https://www.dynamsoft.com/customer/license/trialLicense?utm_source=guide&product=dbr&package=c_cpp" target="_blank">Customer Portal</a>.
