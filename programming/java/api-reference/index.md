@@ -77,7 +77,7 @@ needAutoGenerateSidebar: false
 
 ### Classes
 
-- [`AbstractIntermediateResultReceiver`]({{ site.dcvb_java_api }}core/intermediate-results/abstract-intermediate-result-receiver.html)
+- [`AuxiliaryRegionElement`]({{ site.dcvb_java_api }}core/intermediate-results/auxiliary-region-element.html)
 - [`BinaryImageUnit`]({{ site.dcvb_java_api }}core/intermediate-results/binary-image-unit.html)
 - [`CapturedResultBase`]({{ site.dcvb_java_api }}core/basic-classes/captured-result-base.html)
 - [`CapturedResultItem`]({{ site.dcvb_java_api }}core/basic-classes/captured-result-item.html)
