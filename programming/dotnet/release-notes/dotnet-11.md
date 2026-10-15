@@ -8,6 +8,23 @@ needGenerateH3Content: false
 
 # Release Notes for .NET Edition - 11.x
 
+## 11.6.4000 (10/15/2026)
+
+### Improved
+
+- Improved GS1 Composite decoding success rate in challenging black-on-dark-background scenarios.
+
+### Fixed
+
+- Refined descriptions for `EC_LICENSE_WARNING` and `EC_LICENSE_CACHE_USED` to improve diagnostic clarity.
+- Fixed a crash in `Capture()` when input byte data cannot be parsed.
+- Fixed an angle calculation issue during postal code processing.
+
+### Security Updates
+
+- Updated third-party libraries to incorporate the latest security fixes.
+
+
 ## 11.6.3000 (08/20/2026)
 
 ### Improved
