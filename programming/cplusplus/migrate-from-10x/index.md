@@ -4,6 +4,9 @@ keywords: c++, cplusplus, upgrade, migrate, v10, v11
 description: Migration guide from Dynamsoft Barcode Reader C++ Edition v10.x to v11.x. Covers license key update, SDK file changes (directory rename, removed DLL), template upgrade, and project rebuild.
 needAutoGenerateSidebar: true
 needGenerateH3Content: true
+redirect_from:
+  - /programming/cplusplus/migrate-from-v10/
+  - /programming/cplusplus/migrate-from-v10.html
 ---
 
 # Migrate from 10.x to 11.x

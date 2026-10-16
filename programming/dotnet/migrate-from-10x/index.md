@@ -4,6 +4,9 @@ keywords: .NET, upgrade, migrate, v10, v11
 description: Migration guide from Dynamsoft Barcode Reader .NET Edition v10.x to v11.x. Covers license key update, NuGet package update, and template upgrade steps.
 needAutoGenerateSidebar: true
 needGenerateH3Content: true
+redirect_from:
+  - /programming/dotnet/migrate-from-v10/
+  - /programming/dotnet/migrate-from-v10.html
 ---
 
 # Migrate from 10.x to 11.x
