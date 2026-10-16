@@ -4,6 +4,9 @@ keywords: python, upgrade, migrate, v10, v11
 description: Migration guide from DBR Python Edition v10.x to v11.x. Covers license key update, pip package update, and template upgrade steps.
 needAutoGenerateSidebar: true
 needGenerateH3Content: true
+redirect_from:
+  - /programming/python/migrate-from-v10/
+  - /programming/python/migrate-from-v10.html
 ---
 
 # Migrate from 10.x to 11.x

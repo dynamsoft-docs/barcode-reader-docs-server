@@ -58,7 +58,7 @@ For embedded or ARM-based platforms, we recommend using a device with performanc
 
 If you are upgrading from a previous version of Dynamsoft Barcode Reader, please refer to the following guides:
 
-- [Migrate from v9.x to v11.x]({{ site.dbr_java }}migrate-from-v9/) - For users upgrading from version 9.x
+- [Migrate from v9.x to v11.x]({{ site.dbr_java }}migrate-from-9x/) - For users upgrading from version 9.x
 
 ## API Reference
 
