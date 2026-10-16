@@ -4,6 +4,9 @@ keywords: java, upgrade, migrate, v9, v11
 description: Migration guide from DBR Java Edition v9.x to v11.x. Details API changes for license, decoding, template, runtime settings, and removed properties under DCV architecture.
 needAutoGenerateSidebar: true
 needGenerateH3Content: true
+redirect_from:
+  - /programming/java/migrate-from-v9/
+  - /programming/java/migrate-from-v9.html
 ---
 
 # Migrate from 9.x to 11.x

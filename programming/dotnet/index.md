@@ -44,8 +44,8 @@ If you are new to Dynamsoft Barcode Reader .NET Edition, follow the [`User Guide
 
 If you are upgrading from a previous version of Dynamsoft Barcode Reader, please refer to the following guides:
 
-- [Migrate from v10.x to v11.x]({{ site.dbr_dotnet }}migrate-from-v10/) - For users upgrading from version 10.x
-- [Migrate from v9.x to v11.x]({{ site.dbr_dotnet }}migrate-from-v9/) - For users upgrading from version 9.x
+- [Migrate from v10.x to v11.x]({{ site.dbr_dotnet }}migrate-from-10x/) - For users upgrading from version 10.x
+- [Migrate from v9.x to v11.x]({{ site.dbr_dotnet }}migrate-from-9x/) - For users upgrading from version 9.x
 
 ## API Reference
 

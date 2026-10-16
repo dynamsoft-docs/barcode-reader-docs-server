@@ -4,6 +4,9 @@ keywords: c++, cplusplus, upgrade, migrate, v9, v11
 description: Migration guide from Dynamsoft Barcode Reader C++ Edition v9.x to v11.x. Details API changes for license activation, single-image and video decoding, template handling, runtime settings, and removed properties under the DCV architecture.
 needAutoGenerateSidebar: true
 needGenerateH3Content: true
+redirect_from:
+  - /programming/cplusplus/migrate-from-v9/
+  - /programming/cplusplus/migrate-from-v9.html
 ---
 
 # Migrate from 9.x to 11.x
