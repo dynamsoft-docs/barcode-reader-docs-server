@@ -43,13 +43,13 @@ If you are new to Dynamsoft Barcode Reader Java Edition, follow the [`User Guide
 
 - JDK 1.8 and above
 
-### Embedded Devices
+### Embedded Linux Devices
 
 For embedded or ARM-based platforms, we recommend using a device with performance equivalent to or better than a Raspberry Pi 4 Model B (4 GB RAM). Minimum recommended specs:
 
 - Quad-core ARM Cortex-A72 processor or equivalent
 - 4 GB RAM
-- Linux-based OS, such as Raspberry Pi OS or Ubuntu Server
+- 64-bit Linux-based OS, such as Raspberry Pi OS (64-bit) or Ubuntu Server
 
 > [!NOTE]
 > Other architectures and operating systems, such as ESP32, MIPS, FreeRTOS, and Micrium uC/OS, are not supported.
