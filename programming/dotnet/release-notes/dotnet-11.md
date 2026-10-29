@@ -8,6 +8,16 @@ needGenerateH3Content: false
 
 # Release Notes for .NET Edition - 11.x
 
+## 11.6.5000 (10/29/2026)
+
+### Fixed
+
+- Fixed multiple crashes caused by invalid input data.
+
+### Security Updates
+
+- Updated third-party libraries to incorporate the latest security fixes.
+
 ## 11.6.4000 (10/15/2026)
 
 ### Improved

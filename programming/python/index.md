@@ -53,13 +53,13 @@ If you are new to Dynamsoft Barcode Reader Python Edition, follow the [`User Gui
 - Python 3.5 (for versions below DBR 7.5)
 - Python 2.7 (for versions below DBR 7.2.2.3)
 
-### Embedded Devices
+### Embedded Linux Devices
 
 For embedded or ARM-based platforms, we recommend using a device with performance equivalent to or better than a Raspberry Pi 4 Model B (4 GB RAM). Minimum recommended specs:
 
 - Quad-core ARM Cortex-A72 processor or equivalent
 - 4 GB RAM
-- Linux-based OS, such as Raspberry Pi OS or Ubuntu Server
+- 64-bit Linux-based OS, such as Raspberry Pi OS (64-bit) or Ubuntu Server
 
 > [!NOTE]
 > Other architectures and operating systems, such as ESP32, MIPS, FreeRTOS, and Micrium uC/OS, are not supported.
