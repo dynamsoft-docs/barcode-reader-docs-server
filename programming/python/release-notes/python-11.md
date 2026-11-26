@@ -8,6 +8,25 @@ needGenerateH3Content: false
 
 # Release Notes for Python Edition - 11.x
 
+## 11.6.6000 (11/26/2026)
+
+### New
+
+- Added [`is_inverted()`]({{ site.dbr_python_api }}barcode-result-item.html#is_inverted) to `BarcodeResultItem` and [`DecodedBarcodeElement`]({{ site.dbr_python_api }}decoded-barcode-element.html#is_inverted) to expose the decoded barcode's color inversion status.
+- Added support for Python 3.15.
+
+### Improved
+
+- Improved decoding performance for 1D barcodes with perspective distortion.
+
+### Fixed
+
+- Fixed various minor bugs and improved overall stability.
+
+### Security Updates
+
+- Updated third-party libraries to incorporate the latest security fixes.
+
 ## 11.6.5000 (10/29/2026)
 
 ### Fixed

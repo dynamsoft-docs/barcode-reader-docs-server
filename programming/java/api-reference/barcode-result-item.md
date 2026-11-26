@@ -34,6 +34,7 @@ public class BarcodeResultItem extends CapturedResultItem
 | [`getDetails`](#getdetails) | Gets the details of the decoded barcode result. |
 | [`isDPM`](#isdpm) | Gets whether the decoded barcode is a DPM code. |
 | [`isMirrored`](#ismirrored) | Gets whether the decoded barcode is a mirrored barcode. |
+| [`isInverted`](#isinverted) | Gets whether the decoded barcode has an inverted color pattern. |
 | [`setLocation`](#setlocation) | Sets the location of the decoded barcode. |
 | [`setText`](#settext) | Sets the text of the decoded barcode. |
 | [`setBytes`](#setbytes) | Sets the bytes of the decoded barcode. |
@@ -193,6 +194,22 @@ public boolean isMirrored()
 **Return Value**
 
 Returns whether the decoded barcode is mirrored.
+
+### isInverted
+
+Gets whether the decoded barcode has an inverted color pattern.
+
+```java
+public boolean isInverted()
+```
+
+**Return Value**
+
+Returns `true` if the barcode is inverted; `false` if it is normal.
+
+**Remarks**
+
+Introduced in Dynamsoft Barcode Reader SDK version 11.6.6000 and Dynamsoft Capture Vision version 3.6.6000.
 
 ### setLocation
 

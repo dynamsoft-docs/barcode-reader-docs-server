@@ -37,6 +37,7 @@ class CBarcodeResultItem : public CCapturedResultItem
 | [`GetDetails`](#getdetails) | Gets the details of the decoded barcode result. |
 | [`IsDPM`](#isdpm) | Gets whether the decoded barcode is a DPM code. |
 | [`IsMirrored`](#ismirrored) | Gets whether the decoded barcode is a mirrored barcode. |
+| [`IsInverted`](#isinverted) | Gets whether the decoded barcode has an inverted color pattern. |
 | [`SetLocation`](#setlocation) | Set the location of the barcode item. |
 | [`GetECISegmentsCount`](#getecisegmentscount) | Gets the number of ECI segments in the barcode. |
 | [`GetECISegment`](#getecisegment) | Gets the ECI segment at the specified index. |
@@ -219,6 +220,22 @@ virtual bool IsMirrored() const = 0;
 **Return value**
 
 Returns whether the decoded barcode is mirrored.
+
+### IsInverted
+
+Gets whether the decoded barcode has an inverted color pattern.
+
+```cpp
+virtual bool IsInverted() const = 0;
+```
+
+**Return value**
+
+Returns `true` if the barcode is inverted; `false` if it is normal.
+
+**Remarks**
+
+Introduced in Dynamsoft Barcode Reader SDK version 11.6.6000 and Dynamsoft Capture Vision version 3.6.6000.
 
 ### SetLocation
 

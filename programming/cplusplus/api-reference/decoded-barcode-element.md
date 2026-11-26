@@ -32,6 +32,7 @@ class CDecodedBarcodeElement : public CRegionObjectElement
 | [`GetDetails`](#getdetails) | Gets the details of the decoded barcode.|
 | [`IsDPM`](#isdpm)| Determines whether the decoded barcode is a DPM (Direct Part Marking) code.|
 | [`IsMirrored`](#ismirrored)| Determines whether the decoded barcode is mirrored.|
+| [`IsInverted`](#isinverted) | Gets whether the decoded barcode has an inverted color pattern. |
 | [`GetAngle`](#getangle) | Gets the orientation angle of the barcode. |
 | [`GetModuleSize`](#getmodulesize) | Gets the module size of the barcode. |
 | [`GetConfidence`](#getconfidence) | Gets the confidence score of the barcode recognition result. |
@@ -160,6 +161,22 @@ virtual bool IsMirrored() const = 0;
 **Return value**
 
 Returns true if the decoded barcode is mirrored, false otherwise.
+
+### IsInverted
+
+Gets whether the decoded barcode has an inverted color pattern.
+
+```cpp
+virtual bool IsInverted() const = 0;
+```
+
+**Return value**
+
+Returns `true` if the barcode is inverted; `false` if it is normal.
+
+**Remarks**
+
+Introduced in Dynamsoft Barcode Reader SDK version 11.6.6000 and Dynamsoft Capture Vision version 3.6.6000.
 
 ### GetAngle
 
