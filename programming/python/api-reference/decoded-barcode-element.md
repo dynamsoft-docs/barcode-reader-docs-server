@@ -30,6 +30,7 @@ class DecodedBarcodeElement(RegionObjectElement)
 | [`get_details`](#get_details) | Gets the details of the decoded barcode.|
 | [`is_dpm`](#is_dpm)| Determines whether the decoded barcode is a DPM (Direct Part Marking) code.|
 | [`is_mirrored`](#is_mirrored)| Determines whether the decoded barcode is mirrored.|
+| [`is_inverted`](#is_inverted) | Gets whether the decoded barcode has an inverted color pattern. |
 | [`get_angle`](#get_angle) | Gets the orientation angle of the barcode. |
 | [`get_module_size`](#get_module_size) | Gets the module size of the barcode. |
 | [`get_confidence`](#get_confidence) | Gets the confidence score of the barcode recognition result. |
@@ -145,6 +146,22 @@ def is_mirrored(self) -> bool:
 **Return value**
 
 Returns true if the decoded barcode is mirrored, false otherwise.
+
+### is_inverted
+
+Gets whether the decoded barcode has an inverted color pattern.
+
+```python
+def is_inverted(self) -> bool:
+```
+
+**Return value**
+
+Returns `True` if the barcode is inverted; `False` if it is normal.
+
+**Remarks**
+
+Introduced in Dynamsoft Barcode Reader SDK version 11.6.6000 and Dynamsoft Capture Vision version 3.6.6000.
 
 ### get_angle
 

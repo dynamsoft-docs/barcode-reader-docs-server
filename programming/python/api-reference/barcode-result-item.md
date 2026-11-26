@@ -34,6 +34,7 @@ class BarcodeResultItem(dynamsoft_core.CapturedResultItem)
 | [`get_details`](#get_details) | Gets the details of the decoded barcode result. |
 | [`is_dpm`](#is_dpm) | Gets whether the decoded barcode is a DPM code. |
 | [`is_mirrored`](#is_mirrored) | Gets whether the decoded barcode is a mirrored barcode. |
+| [`is_inverted`](#is_inverted) | Gets whether the decoded barcode has an inverted color pattern. |
 | [`get_eci_segments`](#get_eci_segments) | Gets all the ECI segments in the barcode. |
 
 ### get_format
@@ -188,6 +189,22 @@ def is_mirrored(self) -> bool:
 **Return Value**
 
 Returns whether the decoded barcode is mirrored.
+
+### is_inverted
+
+Gets whether the decoded barcode has an inverted color pattern.
+
+```python
+def is_inverted(self) -> bool:
+```
+
+**Return Value**
+
+Returns `True` if the barcode is inverted; `False` if it is normal.
+
+**Remarks**
+
+Introduced in Dynamsoft Barcode Reader SDK version 11.6.6000 and Dynamsoft Capture Vision version 3.6.6000.
 
 ### get_eci_segments
 

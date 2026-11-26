@@ -8,6 +8,25 @@ needGenerateH3Content: false
 
 # Release Notes for C++ Edition - 11.x
 
+## 11.6.6000 (11/26/2026)
+
+### New
+
+- Added [`IsInverted()`]({{ site.dbr_cpp_api }}barcode-result-item.html#isinverted) to `CBarcodeResultItem` and [`CDecodedBarcodeElement`]({{ site.dbr_cpp_api }}decoded-barcode-element.html#isinverted) to expose the decoded barcode's color inversion status.
+- Added macOS libraries to the standard C++ release package.
+
+### Improved
+
+- Improved decoding performance for 1D barcodes with perspective distortion.
+
+### Fixed
+
+- Fixed various minor bugs and improved overall stability.
+
+### Security Updates
+
+- Updated third-party libraries to incorporate the latest security fixes.
+
 ## 11.6.5000 (10/29/2026)
 
 ### Fixed

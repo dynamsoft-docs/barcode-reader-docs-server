@@ -30,6 +30,7 @@ public class DecodedBarcodeElement extends RegionObjectElement
 | [`getDetails`](#getdetails) | Gets the details of the decoded barcode.|
 | [`isDPM`](#isdpm)| Determines whether the decoded barcode is a DPM (Direct Part Marking) code.|
 | [`isMirrored`](#ismirrored)| Determines whether the decoded barcode is mirrored.|
+| [`isInverted`](#isinverted) | Gets whether the decoded barcode has an inverted color pattern. |
 | [`getAngle`](#getangle) | Gets the orientation angle of the barcode. |
 | [`getModuleSize`](#getmodulesize) | Gets the module size of the barcode. |
 | [`getConfidence`](#getconfidence) | Gets the confidence score of the barcode recognition result. |
@@ -147,6 +148,22 @@ public boolean isMirrored()
 **Return value**
 
 Returns true if the decoded barcode is mirrored, false otherwise.
+
+### isInverted
+
+Gets whether the decoded barcode has an inverted color pattern.
+
+```java
+public boolean isInverted()
+```
+
+**Return value**
+
+Returns `true` if the barcode is inverted; `false` if it is normal.
+
+**Remarks**
+
+Introduced in Dynamsoft Barcode Reader SDK version 11.6.6000 and Dynamsoft Capture Vision version 3.6.6000.
 
 ### getAngle
 
